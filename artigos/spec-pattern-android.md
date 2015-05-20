@@ -9,6 +9,20 @@ Specification Pattern é um padrão descrito por Martin Fowler e Eric Evans em 1
 
 ## Entendendo melhor
 
+Cada entidade do domínio tem suas responsabilidades, e é interessante imaginar que um classe tem que ser capaz de verificar se o que ela "promete" entregar, é válido.
+A melhor maneira é criar um método capaz de certificar que certos atributos estão dentro do esperado.
+Existem validações complexas, que podem envolver mais de uma classe, que geralmente são criadas em classes diferentes com o sufixo Specification. São inseridos apenas os métodos de validação nela.
+
 ## Aplicando no domínio
 
+Exemplo simples de aplicação:
+Classe pertence ao domínio:
+
+
+
+
+
+
 ## Referências
+
+http://martinfowler.com/apsupp/spec.pdf
