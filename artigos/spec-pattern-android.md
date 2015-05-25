@@ -1,4 +1,4 @@
-Specifications Pattern no Android
+Specification Pattern no Android
 ====================
 
 ## Introdução
