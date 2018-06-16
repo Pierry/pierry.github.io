@@ -37,8 +37,11 @@ Espresso
 
 ### Agile
 
-- SCRUM
-- 
+- Daily meeting
+- Planning
+- Sprints
+- Releases
+- Retrospectiva
 
 ### Proatividade
 
@@ -51,6 +54,17 @@ Ferramentas
 ===
 
 - [x] Firebase
+- [x] Fabric
+- [x] Fastlane
+
+Libs favoritas
+===
+
+- ButterKnife
+- Dagger 2
+- Retrofit
+- Android Debug DB
+- 
 
 Projetos
 ===
