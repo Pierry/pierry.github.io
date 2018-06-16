@@ -1,2 +1,17 @@
-# Pierry.github.io
-pierry.github.io
+Pierry Borges
+==
+
+Skills
+==
+
+Projetos
+===
+
+Artigos
+===
+
+Apresentações
+===
+
+Trajetória
+===
