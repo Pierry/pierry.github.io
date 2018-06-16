@@ -1,7 +1,7 @@
 Pierry Borges
 ==
 
-- Skills
+- Experiência
 - Projetos
 - Artigos
 - Apresentações
