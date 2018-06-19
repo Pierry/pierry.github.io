@@ -74,17 +74,28 @@ Fastlane
 
 Fastlane
 
-Libs favoritas
+Linguagens
 ===
 
-- ButterKnife
-- Dagger 2
-- Retrofit
-- Android Debug DB
-- 
+| Linguagem | Qualificação |
+|-----------|--------------|
+| Android | :white_square_button: :white_square_button: :white_square_button: :white_square_button: :white_square_button: |
+| Kotlin | :white_square_button: :white_square_button: :white_square_button: |
+| Java | :white_square_button: :white_square_button: :white_square_button: :white_square_button: :white_square_button: |
+| C# | :white_square_button: :white_square_button: :white_square_button: :white_square_button: :white_square_button: |
+| JavaScript | :white_square_button: :white_square_button: |
 
 Projetos
 ===
+
+- BRF Integrados
+- JR Pedidos
+- ExpenseMobi
+- Vex Mobile
+- Noute (Pessoal)
+- SimpleToast - Library (Pessoal) - 180+ stars
+- Clima clean(Pessoal)
+- Teste Meu QI (Pessoal) - 50K+ downloads Google Play
 
 Artigos
 ===
