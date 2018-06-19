@@ -12,7 +12,7 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacin
 Experiência
 ==
 
-![](https://lh3.googleusercontent.com/DmNrsQomgLn-_qVJwjrK20QSzM4l8GHYjRDA2fhVTBJU1YwHJOF7vnRvcm2kJe5sAogYIMhDLFMwew=w2880-h1562)
+![](https://raw.githubusercontent.com/Pierry/pierry.github.io/master/hexagon-chart%20(1).png)
 
 ### Arquitetura
 
