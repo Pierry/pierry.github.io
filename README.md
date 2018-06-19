@@ -16,15 +16,17 @@ Experiência
 
 ### Arquitetura
 
-- [x] MVP
-- [x] DDD
-- [x] SOLID
-- [x] DRY
-- [x] CRQS
+- MVP
+- DDD
+- SOLID
+- DRY
+- CRQS
+- Event Sourcing
+- Feature by Package
 
 ### Design
 
-Material Design
+Facilidade em reproduzir designs complexos, com componentes nativos, evitando o uso de imagens, procurando utilizar Android VectorDrawable.
 
 ### Testes
 
@@ -50,12 +52,27 @@ Espresso
 ### Liderança
 
 
-Ferramentas
+Firebase 
 ===
 
-- [x] Firebase
-- [x] Fabric
-- [x] Fastlane
+### Notificações
+
+### Controle de eventos
+
+### Fabric/Crashlytics
+
+CI/CD/CD
+===
+
+### Continuous Integration
+
+### Continuous Delivery
+
+Fastlane
+
+### Continuous Deployment
+
+Fastlane
 
 Libs favoritas
 ===
