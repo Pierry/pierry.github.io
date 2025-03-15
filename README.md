@@ -1,108 +1,69 @@
-Pierry Borges
-==
+# Welcome to your Lovable project
 
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+## Project info
 
-- Experiência
-- Projetos
-- Artigos
-- Apresentações
-- Trajétoria
+**URL**: https://lovable.dev/projects/9ca90d15-58bd-46bf-8ae1-b14e032a404a
 
-Experiência
-==
+## How can I edit this code?
 
-![](https://raw.githubusercontent.com/Pierry/pierry.github.io/master/hexagon-chart%20(1).png)
+There are several ways of editing your application.
 
-### Arquitetura
+**Use Lovable**
 
-- MVP
-- DDD
-- SOLID
-- DRY
-- CRQS
-- Event Sourcing
-- Feature by Package
+Simply visit the [Lovable Project](https://lovable.dev/projects/9ca90d15-58bd-46bf-8ae1-b14e032a404a) and start prompting.
 
-### Design
+Changes made via Lovable will be committed automatically to this repo.
 
-Facilidade em reproduzir designs complexos, com componentes nativos, evitando o uso de imagens, procurando utilizar Android VectorDrawable.
+**Use your preferred IDE**
 
-### Testes
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-JaCoCo
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-JUnit
+Follow these steps:
 
-Espresso
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-### Agile
+# Step 3: Install the necessary dependencies.
+npm i
 
-- Daily meeting
-- Planning
-- Sprints
-- Releases
-- Retrospectiva
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-### Proatividade
+**Edit a file directly in GitHub**
 
-### Equipe
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-### Liderança
+**Use GitHub Codespaces**
 
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-Firebase 
-===
+## What technologies are used for this project?
 
-### Notificações
+This project is built with .
 
-### Controle de eventos
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-### Fabric/Crashlytics
+## How can I deploy this project?
 
-CI/CD/CD
-===
+Simply open [Lovable](https://lovable.dev/projects/9ca90d15-58bd-46bf-8ae1-b14e032a404a) and click on Share -> Publish.
 
-### Continuous Integration
+## I want to use a custom domain - is that possible?
 
-### Continuous Delivery
-
-Fastlane
-
-### Continuous Deployment
-
-Fastlane
-
-Linguagens
-===
-
-| Linguagem | Qualificação |
-|-----------|--------------|
-| Android | :white_square_button: :white_square_button: :white_square_button: :white_square_button: :white_square_button: |
-| Kotlin | :white_square_button: :white_square_button: :white_square_button: |
-| Java | :white_square_button: :white_square_button: :white_square_button: :white_square_button: :white_square_button: |
-| C# | :white_square_button: :white_square_button: :white_square_button: :white_square_button: :white_square_button: |
-| JavaScript | :white_square_button: :white_square_button: |
-
-Projetos
-===
-
-- BRF Integrados
-- JR Pedidos
-- ExpenseMobi
-- Vex Mobile
-- Noute (Pessoal)
-- SimpleToast - Library (Pessoal) - 180+ stars
-- Clima clean(Pessoal)
-- Teste Meu QI (Pessoal) - 50K+ downloads Google Play
-
-Artigos
-===
-
-Apresentações
-===
-
-Trajetória
-===
- 
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
