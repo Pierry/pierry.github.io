@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/table";
 import { articles } from "@/articles";
 import { getMonthYear } from "@/utils/dateUtils";
-import ReadmeDisplay from "@/components/ReadmeDisplay";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -116,56 +115,9 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* GitHub Stats Section */}
-      <section className="pt-20 pb-8 px-6 bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-white mb-2">GitHub Activity</h2>
-            <p className="text-gray-400">Track my development progress and contributions</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
-              <div className="text-2xl font-bold text-white mb-1">
-                <img src="https://github-readme-stats.vercel.app/api?username=pierry&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&text_color=ffffff&icon_color=3b82f6&title_color=8b5cf6" alt="GitHub Stats" className="w-full rounded-lg" />
-              </div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20 md:col-span-1 lg:col-span-2">
-              <div className="text-2xl font-bold text-white mb-1">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pierry&layout=compact&theme=dark&hide_border=true&bg_color=00000000&text_color=ffffff&title_color=8b5cf6" alt="Top Languages" className="w-full rounded-lg" />
-              </div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
-              <div className="text-2xl font-bold text-white mb-1">
-                <img src="https://github-readme-streak-stats.herokuapp.com/?user=pierry&theme=dark&hide_border=true&background=00000000&stroke=ffffff&ring=8b5cf6&fire=3b82f6&currStreakLabel=ffffff" alt="GitHub Streak" className="w-full rounded-lg" />
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center">
-            <a 
-              href="https://github.com/Pierry" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm"
-            >
-              <Github size={20} />
-              View Full Profile
-              <ExternalLink size={16} />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Current Focus Section */}
-      <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto">
-          <ReadmeDisplay username="Pierry" repo="pierry" />
-        </div>
-      </section>
 
       {/* Articles Section */}
-      <section id="articles" className="pt-24 pb-20 px-6">
+      <section id="articles" className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
