@@ -209,22 +209,112 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 text-center">
             <h3 className="text-4xl font-bold text-slate-900 mb-4">Projects</h3>
-            <p className="text-lg text-slate-600">Open source work and contributions</p>
+            <p className="text-lg text-slate-600">My applications and contributions</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-blue-500"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500"></div>
+              {/* App Icon/Image */}
+              <div className="w-full h-48 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white">
+                    <path d="M13.5 2C13.5 2 15.5 3.5 15.5 6.5C15.5 9.5 13.5 11 13.5 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M10.5 2C10.5 2 8.5 3.5 8.5 6.5C8.5 9.5 10.5 11 10.5 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M12 11V22" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M8 15L16 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M9 18L15 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                  </svg>
+                </div>
+              </div>
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-slate-900">Coming Soon</CardTitle>
+                <CardTitle className="text-xl font-bold text-slate-900">How Much I Run</CardTitle>
                 <CardDescription className="text-slate-600">
-                  New projects will be added here
+                  iOS running app with Apple Health integration
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  A comprehensive run tracking app that seamlessly integrates with Apple Health. Features detailed analytics, performance tracking, motivational support, and multi-language support for runners of all levels.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge className="bg-blue-50 text-blue-700 border border-blue-200">iOS App</Badge>
+                  <Badge className="bg-green-50 text-green-700 border border-green-200">Health & Fitness</Badge>
+                  <Badge className="bg-purple-50 text-purple-700 border border-purple-200">Free</Badge>
+                </div>
+                <a 
+                  href="https://apps.apple.com/us/app/how-much-i-run/id6748591105" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors text-sm font-medium"
+                >
+                  View on App Store <ExternalLink size={14} />
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-pink-400"></div>
+              {/* SpaceMetrics Icon/Image */}
+              <div className="w-full h-48 bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white">
+                    <path d="M3 3V21H21V3H3Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
+                    <path d="M7 8L17 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M7 12L17 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M7 16L13 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <circle cx="18" cy="6" r="3" fill="currentColor"/>
+                  </svg>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-slate-900">SpaceMetrics.ai</CardTitle>
+                <CardDescription className="text-slate-600">
+                  Engineering Productivity Analytics Platform
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  A comprehensive analytics platform designed to measure and optimize engineering team productivity. Provides insights and metrics to help development teams improve their performance and delivery efficiency.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge className="bg-purple-50 text-purple-700 border border-purple-200">Analytics</Badge>
+                  <Badge className="bg-blue-50 text-blue-700 border border-blue-200">SaaS</Badge>
+                  <Badge className="bg-green-50 text-green-700 border border-green-200">Productivity</Badge>
+                </div>
+                <a 
+                  href="https://spacemetrics.ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors text-sm font-medium"
+                >
+                  Visit Website <ExternalLink size={14} />
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-blue-400"></div>
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-slate-900">More Projects</CardTitle>
+                <CardDescription className="text-slate-600">
+                  Additional projects and contributions
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-slate-600">
-                  This section will be updated with interesting projects and open source contributions.
+                  Explore more projects and open source contributions on GitHub.
                 </p>
+                <div className="mt-4">
+                  <a 
+                    href="https://github.com/Pierry" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors text-sm font-medium"
+                  >
+                    View on GitHub <ExternalLink size={14} />
+                  </a>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -237,6 +327,87 @@ const Index = () => {
           <div className="mb-16 text-center">
             <h3 className="text-4xl font-bold text-slate-900 mb-4">Contact</h3>
             <p className="text-lg text-slate-600">Let's connect!</p>
+          </div>
+
+          {/* Contact Form */}
+          <div className="max-w-2xl mx-auto mb-16">
+            <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold text-slate-900">Send me a message</CardTitle>
+                <CardDescription className="text-slate-600">
+                  I'll get back to you as soon as possible
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form 
+                  action="https://formspree.io/f/xpwzkkld"
+                  method="POST"
+                  className="space-y-6"
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                        placeholder="your.email@example.com"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      required
+                      className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      placeholder="What's this about?"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={5}
+                      className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-vertical"
+                      placeholder="Tell me about your project, question, or just say hello!"
+                    />
+                  </div>
+                  <Button 
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Mail size={18} className="mr-2" />
+                    Send Message
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -290,9 +461,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-slate-900 border-t border-slate-800">
+      <footer className="py-8 px-6 bg-slate-100 border-t border-slate-200">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-sm text-slate-400">
+          <p className="text-sm text-slate-600">
             © 2025 Pierry Borges. All rights reserved.
           </p>
         </div>
