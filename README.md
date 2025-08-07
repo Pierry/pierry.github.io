@@ -9,13 +9,9 @@ A modern, professional single-page personal blog built with React, TypeScript, a
 - [Architecture](#architecture)
 - [Quick Start](#quick-start)
 - [Content Management](#content-management)
-- [Design System](#design-system)
 - [Deployment](#deployment)
-- [Features](#features)
 - [Development Statistics](#development-statistics)
 - [Available Scripts](#available-scripts)
-- [Browser Support](#browser-support)
-- [Contributing](#contributing)
 - [Contact](#contact)
 
 ## Live Site
@@ -205,66 +201,6 @@ export const articles: Article[] = [
 ];
 ```
 
-### GitHub Integration Features
-
-**Statistics Display**
-- Automatically retrieves repository statistics via GitHub API
-- Displays contribution graphs, language usage, and activity streaks
-- Updates automatically without manual intervention
-
-**README Integration**
-- Fetches README content from specified repositories
-- Renders markdown content with proper formatting
-- Provides real-time updates when source repository changes
-
-**Error Handling**
-- Graceful fallbacks for API failures
-- Loading states for better user experience
-- Informative error messages for debugging
-
-## Design System
-
-### Visual Identity
-
-The design system emphasizes professionalism and readability while maintaining visual interest through subtle interactions and carefully chosen typography.
-
-**Color Palette**
-- Primary colors utilize blue to purple gradients for modern appeal
-- Background gradients use subtle slate-to-blue transitions
-- Text hierarchy implemented through slate color variations
-- Accent colors provide visual emphasis without overwhelming content
-
-**Typography Hierarchy**
-- Noto Sans serves as the primary font family for optimal readability
-- JetBrains Mono used for code snippets and technical content
-- Responsive font scaling adapts to different screen sizes
-- Font weights range from 300 to 800 for proper content hierarchy
-
-**Layout Principles**
-- Card-based design creates clear content separation
-- Subtle shadows and backdrop blur effects add depth
-- Consistent spacing using Tailwind's spacing scale
-- Grid layouts adapt responsively to screen dimensions
-
-### Component Design Philosophy
-
-**Badge System**
-- Muted, sophisticated styling prioritizes content over decoration
-- Color-coded categories maintain consistency across the application
-- "Tested" badges provide credibility indicators for recommended tools
-- Subtle hover effects enhance interactivity without distraction
-
-**Navigation Elements**
-- Fixed header ensures consistent access to navigation
-- Smooth scrolling provides seamless transitions between sections
-- Active states clearly indicate current page location
-- Mobile-responsive hamburger menu for smaller screens
-
-**Interactive Elements**
-- Hover animations provide immediate feedback
-- Gradient backgrounds create visual interest
-- Transition effects enhance perceived performance
-- Card elevation changes indicate interactive elements
 
 ## Deployment
 
@@ -292,24 +228,6 @@ The build process optimizes all assets, minifies code, and generates static file
 3. Deployment to gh-pages branch via automated script
 4. GitHub Pages automatic publication of updated content
 
-## Features
-
-### Current Implementation Status
-
-**Implemented Features**
-- GitHub Statistics Integration with real-time data
-- Dynamic README Display from external repositories
-- Article Management System with TypeScript safety
-- Responsive Design optimized for all devices
-- Professional Badge System with sophisticated styling
-- Contact Information with direct links
-- SEO Optimization with proper meta tags and structure
-
-**Planned Enhancements**
-- Dark and Light Mode Toggle for user preference
-- Search Functionality for content discovery
-- RSS Feed Generation for content syndication
-- Analytics Integration for usage insights and optimization
 
 ## Development Statistics
 
@@ -341,46 +259,6 @@ This entire project was built in one session using Claude Code AI assistance.
 | `npm run deploy` | GitHub Pages Deploy | Publishes built site to gh-pages branch |
 | `npm run lint` | Code Quality Check | Runs ESLint for code consistency |
 
-## Browser Support
-
-### Compatibility Matrix
-
-**Desktop Browsers**
-- Chrome: Latest 2 versions (full support)
-- Firefox: Latest 2 versions (full support)
-- Safari: Latest 2 versions (full support)
-- Edge: Latest 2 versions (full support)
-
-**Mobile Browsers**
-- iOS Safari: Latest 2 versions (optimized)
-- Chrome Mobile: Latest 2 versions (optimized)
-- Samsung Internet: Latest version (supported)
-
-**Progressive Enhancement**
-- Core functionality works on all modern browsers
-- Advanced features degrade gracefully on older browsers
-- Mobile-first approach ensures optimal mobile experience
-
-## Contributing
-
-While this repository serves as a personal blog, contributions and suggestions are welcome from the development community.
-
-### Contribution Process
-
-**Getting Started**
-1. Fork the repository to your GitHub account
-2. Create a feature branch with descriptive naming (`git checkout -b feature/improvement-description`)
-3. Implement changes with proper testing and documentation
-4. Commit changes with clear, descriptive messages (`git commit -m 'Add specific improvement'`)
-5. Push changes to your forked repository (`git push origin feature/improvement-description`)
-6. Submit a Pull Request with detailed description of changes
-
-**Contribution Guidelines**
-- Maintain existing code style and conventions
-- Ensure TypeScript compilation without errors
-- Test changes across multiple browsers and devices
-- Update documentation for significant changes
-- Follow existing commit message conventions
 
 ## Contact
 
