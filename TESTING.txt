@@ -1,0 +1,1 @@
+This file proves we are in the right directory with Medium design changes.

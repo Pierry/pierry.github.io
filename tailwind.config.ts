@@ -21,7 +21,8 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				display: ['SF Pro Display', 'Inter', 'sans-serif']
+				display: ['SF Pro Display', 'Inter', 'sans-serif'],
+				serif: ['Georgia', 'Charter', 'Times New Roman', 'serif']
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -114,5 +115,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
 } satisfies Config;
