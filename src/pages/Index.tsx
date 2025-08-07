@@ -12,12 +12,15 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { articles } from "@/articles";
+import { Link } from "react-router-dom";
 import { getMonthYear } from "@/utils/dateUtils";
-import { estimateReadingTime } from "@/utils/readingTime";
+import { estimateReadingTime, estimateReadingTimeFromMarkdown } from "@/utils/readingTime";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("articles");
+
+  // Medium-inspired layout below
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
@@ -132,7 +135,14 @@ const Index = () => {
 
           {/* Articles List */}
           <div className="space-y-12">
-            {articles.map((article) => (
+            {articles.length === 0 && (
+              <div className="text-gray-600">No articles yet. Add a new <code className="bg-gray-100 px-1 rounded">.md</code> file into <code className="bg-gray-100 px-1 rounded">src/articles/</code>.</div>
+            )}
+            {articles.map((article) => {
+              const minutes = article.markdown
+                ? estimateReadingTimeFromMarkdown(article.markdown as string)
+                : estimateReadingTime(article.content);
+              return (
               <article key={article.slug} className="group">
                 {/* Article Header */}
                 <div className="mb-6">
@@ -146,85 +156,23 @@ const Index = () => {
                       <span>·</span>
                       <span>{getMonthYear(article.createdAt)}</span>
                       <span>·</span>
-                      <span>{estimateReadingTime(article.content)} min read</span>
+                      <span>{minutes} min read</span>
                     </div>
                   </div>
 
                   {/* Title and Description */}
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-gray-700 transition-colors">
-                    {article.title}
-                  </h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-gray-700 transition-colors">
+                <Link to={`/article/${article.slug}`} className="hover:underline">
+                  {article.title}
+                </Link>
+              </h3>
                   <p className="text-base text-gray-600 leading-relaxed mb-4">
                     {article.description}
                   </p>
                 </div>
 
                 {/* Article Content */}
-                {article.slug === 'ai-tools-catalog-2025' && (
-                  <div className="prose prose-lg max-w-none">
-                    <div className="bg-gray-50 border-l-4 border-gray-300 pl-6 py-4 mb-8">
-                      <p className="text-gray-700 italic mb-0">
-                        This comprehensive catalog features personally tested tools and services across different categories. 
-                        Each tool includes practical insights from real-world usage.
-                      </p>
-                    </div>
-
-                    {Object.entries(article.content.categories).map(([category, tools]) => (
-                      <div key={category} className="mb-12">
-                        {/* Category Header */}
-                        <h4 className="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-                          {category}
-                        </h4>
-                        
-                        {/* Tools Grid */}
-                        <div className="space-y-6">
-                          {(tools as any[]).map((tool) => (
-                            <div key={tool.name} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-                              {/* Tool Header */}
-                              <div className="flex items-start justify-between mb-3">
-                                <h5 className="text-lg font-semibold text-gray-900">
-                                  {tool.name}
-                                </h5>
-                                <div className="flex gap-2 flex-shrink-0">
-                                  {tool.tested && (
-                                    <span className="inline-flex items-center gap-1 px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">
-                                      <CheckCircle size={12} />
-                                      Tested
-                                    </span>
-                                  )}
-                                  <span className={`px-2 py-1 text-xs font-medium rounded-full ${
-                                    tool.cost === "Free" || tool.cost === "Open-source" 
-                                      ? "bg-blue-100 text-blue-800"
-                                      : tool.cost === "Freemium"
-                                      ? "bg-yellow-100 text-yellow-800"
-                                      : "bg-gray-100 text-gray-800"
-                                  }`}>
-                                    {tool.cost}
-                                  </span>
-                                </div>
-                              </div>
-
-                              {/* Tool Description */}
-                              <p className="text-gray-600 leading-relaxed mb-4 text-base">
-                                {tool.description}
-                              </p>
-
-                              {/* Tool Link */}
-                              <a 
-                                href={tool.link} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
-                              >
-                                Visit {tool.name} <ExternalLink size={14} />
-                              </a>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
+                {/* Markdown articles are shown on their own page; home shows preview only */}
 
                 {/* Article Footer */}
                 <div className="mt-8 pt-6 border-t border-gray-200">
@@ -236,12 +184,12 @@ const Index = () => {
                       </span>
                     </div>
                     <div className="text-sm text-gray-500">
-                      {estimateReadingTime(article.content)} min read
+                      {minutes} min read
                     </div>
                   </div>
                 </div>
               </article>
-            ))}
+            );})}
           </div>
         </div>
       </section>

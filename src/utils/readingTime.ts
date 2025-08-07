@@ -23,3 +23,17 @@ export function estimateReadingTime(content: any): number {
   
   return Math.max(1, readingTime); // Minimum 1 minute
 }
+
+// Estimate from plain markdown string (roughly Medium-style)
+export function estimateReadingTimeFromMarkdown(markdown: string): number {
+  if (!markdown) return 1;
+  const text = markdown
+    .replace(/`{1,3}[^`]*`{1,3}/g, ' ') // inline/code fences
+    .replace(/\[.*?\]\(.*?\)/g, ' ') // links
+    .replace(/[#>*_\-]+/g, ' ') // md syntax chars
+    .replace(/\s+/g, ' ')
+    .trim();
+  const words = text.split(' ').filter(Boolean).length;
+  const wordsPerMinute = 200;
+  return Math.max(1, Math.ceil(words / wordsPerMinute));
+}
