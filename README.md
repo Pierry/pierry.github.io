@@ -204,29 +204,38 @@ export const articles: Article[] = [
 
 ## Deployment
 
-### Automated Deployment Process
+### ⚠️ IMPORTANT: Deployment Fix for MIME Type Issues
 
-The deployment system uses GitHub Pages with a streamlined workflow for consistent and reliable publishing.
+This project now uses a proper **GitHub Actions workflow** to deploy to GitHub Pages. This fixes critical production issues where the site was serving development files instead of built production assets.
 
-**Build Process**
+### GitHub Actions Deployment (Recommended)
+
+The site automatically deploys when changes are pushed to the `master` branch using `.github/workflows/deploy.yml`:
+
+1. **Builds production bundle** → Creates optimized `dist/` folder
+2. **Deploys `dist/` contents** → Serves correct built files (not development files)  
+3. **Fixes MIME types** → JavaScript modules load with correct `text/javascript` MIME type
+4. **Resolves 404 errors** → Static assets like `favicon.svg` load properly
+
+### Previous Issue Resolution
+
+**❌ Problem**: Site was serving development files causing:
+- `Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "application/octet-stream"`
+- `favicon.svg:1 Failed to load resource: the server responded with a status of 404`
+
+**✅ Solution**: GitHub Actions now deploys the `dist/` folder (not root) with proper build assets.
+
+### Manual Build Process
 ```bash
-npm run build    # Creates optimized production bundle
-npm run deploy   # Publishes to gh-pages branch
+npm run build    # Creates optimized production bundle in dist/
+# The dist/ folder contains the production-ready files with correct references
 ```
 
-The build process optimizes all assets, minifies code, and generates static files ready for production hosting.
-
-**GitHub Pages Configuration**
-- Source branch configured to serve from gh-pages
-- Automatic deployment when gh-pages branch updates
-- Custom domain configuration available but not currently implemented
-- HTTPS enabled by default through GitHub Pages
-
-**Deployment Workflow**
-1. Local development and testing
-2. Production build generation with asset optimization
-3. Deployment to gh-pages branch via automated script
-4. GitHub Pages automatic publication of updated content
+### GitHub Pages Configuration
+- **Source**: GitHub Actions deployment (recommended)
+- **Alternative**: gh-pages branch (legacy, may cause MIME issues)
+- **Domain**: Custom domain available but not implemented  
+- **HTTPS**: Enabled by default
 
 
 ## Development Statistics
