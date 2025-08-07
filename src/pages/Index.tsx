@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/table";
 import { articles } from "@/articles";
 import { getMonthYear } from "@/utils/dateUtils";
+import { estimateReadingTime } from "@/utils/readingTime";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,12 +38,12 @@ const Index = () => {
   const latestArticle = articles[0];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200/50 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-4">
+      <nav className="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
+        <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-medium text-gray-900">
               Pierry Borges
             </h1>
             
@@ -50,65 +51,65 @@ const Index = () => {
             <div className="hidden md:flex space-x-8">
               <button 
                 onClick={() => scrollToSection("articles")}
-                className={`text-sm font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+                className={`text-sm font-normal transition-colors ${
                   activeSection === "articles" 
-                    ? "bg-blue-100 text-blue-700" 
-                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-100"
+                    ? "text-gray-900 border-b-2 border-gray-900 pb-1" 
+                    : "text-gray-600 hover:text-gray-900"
                 }`}
               >
-                Articles
+                Stories
               </button>
               <button 
                 onClick={() => scrollToSection("projects")}
-                className={`text-sm font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+                className={`text-sm font-normal transition-colors ${
                   activeSection === "projects" 
-                    ? "bg-blue-100 text-blue-700" 
-                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-100"
+                    ? "text-gray-900 border-b-2 border-gray-900 pb-1" 
+                    : "text-gray-600 hover:text-gray-900"
                 }`}
               >
                 Projects
               </button>
               <button 
                 onClick={() => scrollToSection("contact")}
-                className={`text-sm font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+                className={`text-sm font-normal transition-colors ${
                   activeSection === "contact" 
-                    ? "bg-blue-100 text-blue-700" 
-                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-100"
+                    ? "text-gray-900 border-b-2 border-gray-900 pb-1" 
+                    : "text-gray-600 hover:text-gray-900"
                 }`}
               >
-                Contact
+                About
               </button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+              className="md:hidden p-2 hover:bg-gray-100 transition-colors rounded"
             >
-              {mobileMenuOpen ? <X size={24} className="text-slate-600" /> : <Menu size={24} className="text-slate-600" />}
+              {mobileMenuOpen ? <X size={20} className="text-gray-600" /> : <Menu size={20} className="text-gray-600" />}
             </button>
           </div>
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden mt-4 pb-4 space-y-2 border-t border-slate-200 pt-4">
+            <div className="md:hidden mt-4 pb-4 space-y-1 border-t border-gray-200 pt-4">
               <button 
                 onClick={() => scrollToSection("articles")}
-                className="block w-full text-left px-3 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-lg transition-colors"
+                className="block w-full text-left px-3 py-2 text-sm font-normal text-gray-600 hover:text-gray-900 transition-colors"
               >
-                Articles
+                Stories
               </button>
               <button 
                 onClick={() => scrollToSection("projects")}
-                className="block w-full text-left px-3 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-lg transition-colors"
+                className="block w-full text-left px-3 py-2 text-sm font-normal text-gray-600 hover:text-gray-900 transition-colors"
               >
                 Projects
               </button>
               <button 
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-3 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-lg transition-colors"
+                className="block w-full text-left px-3 py-2 text-sm font-normal text-gray-600 hover:text-gray-900 transition-colors"
               >
-                Contact
+                About
               </button>
             </div>
           )}
@@ -116,89 +117,130 @@ const Index = () => {
       </nav>
 
 
-      {/* Articles Section */}
-      <section id="articles" className="pt-32 pb-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-16 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Articles
+      {/* Articles Section - Medium Style */}
+      <section id="articles" className="pt-24 pb-16 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="mb-16 border-b border-gray-200 pb-8">
+            <h2 className="text-2xl font-normal text-gray-900 mb-2 tracking-tight">
+              Latest stories
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Exploring technology, AI, and software development
+            <p className="text-base text-gray-600 font-normal">
+              Thoughts on technology, AI, and software development
             </p>
           </div>
 
           {/* Articles List */}
-          <div className="space-y-8">
+          <div className="space-y-12">
             {articles.map((article) => (
-              <Card key={article.slug} className="border-0 shadow-xl bg-white/80 backdrop-blur-sm overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
-                <CardHeader className="pb-6">
-                  <div className="flex items-center gap-2 text-sm text-slate-500 mb-3">
-                    <Calendar size={16} />
-                    <span>{getMonthYear(article.createdAt)}</span>
+              <article key={article.slug} className="group">
+                {/* Article Header */}
+                <div className="mb-6">
+                  {/* Author and Meta Info */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                      <span className="text-white text-sm font-medium">P</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <span className="font-medium text-gray-900">Pierry Borges</span>
+                      <span>·</span>
+                      <span>{getMonthYear(article.createdAt)}</span>
+                      <span>·</span>
+                      <span>{estimateReadingTime(article.content)} min read</span>
+                    </div>
                   </div>
-                  <CardTitle className="text-3xl font-bold text-slate-900 mb-2">
+
+                  {/* Title and Description */}
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-gray-700 transition-colors">
                     {article.title}
-                  </CardTitle>
-                  <CardDescription className="text-lg text-slate-600 leading-relaxed">
+                  </h3>
+                  <p className="text-base text-gray-600 leading-relaxed mb-4">
                     {article.description}
-                  </CardDescription>
-                </CardHeader>
-                
+                  </p>
+                </div>
+
                 {/* Article Content */}
                 {article.slug === 'ai-tools-catalog-2025' && (
-                  <CardContent className="space-y-10">
+                  <div className="prose prose-lg max-w-none">
+                    <div className="bg-gray-50 border-l-4 border-gray-300 pl-6 py-4 mb-8">
+                      <p className="text-gray-700 italic mb-0">
+                        This comprehensive catalog features personally tested tools and services across different categories. 
+                        Each tool includes practical insights from real-world usage.
+                      </p>
+                    </div>
+
                     {Object.entries(article.content.categories).map(([category, tools]) => (
-                      <div key={category} className="space-y-6">
-                        <div className="flex items-center gap-3 mb-6">
-                          <div className="w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
-                          <h4 className="text-xl font-bold text-slate-900">{category}</h4>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      <div key={category} className="mb-12">
+                        {/* Category Header */}
+                        <h4 className="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+                          {category}
+                        </h4>
+                        
+                        {/* Tools Grid */}
+                        <div className="space-y-6">
                           {(tools as any[]).map((tool) => (
-                            <div key={tool.name} className="group p-4 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <div key={tool.name} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                              {/* Tool Header */}
                               <div className="flex items-start justify-between mb-3">
-                                <h5 className="font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                <h5 className="text-lg font-semibold text-gray-900">
                                   {tool.name}
                                 </h5>
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 flex-shrink-0">
                                   {tool.tested && (
-                                    <Badge className="bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-1 border border-slate-200">
+                                    <span className="inline-flex items-center gap-1 px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">
                                       <CheckCircle size={12} />
                                       Tested
-                                    </Badge>
+                                    </span>
                                   )}
-                                  <Badge variant={getCostBadgeVariant(tool.cost)} className={
+                                  <span className={`px-2 py-1 text-xs font-medium rounded-full ${
                                     tool.cost === "Free" || tool.cost === "Open-source" 
-                                      ? "bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200"
+                                      ? "bg-blue-100 text-blue-800"
                                       : tool.cost === "Freemium"
-                                      ? "bg-gray-50 text-gray-600 hover:bg-gray-100 border border-gray-200"
-                                      : "bg-neutral-50 text-neutral-600 hover:bg-neutral-100 border border-neutral-200"
-                                  }>
+                                      ? "bg-yellow-100 text-yellow-800"
+                                      : "bg-gray-100 text-gray-800"
+                                  }`}>
                                     {tool.cost}
-                                  </Badge>
+                                  </span>
                                 </div>
                               </div>
-                              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+
+                              {/* Tool Description */}
+                              <p className="text-gray-600 leading-relaxed mb-4 text-base">
                                 {tool.description}
                               </p>
+
+                              {/* Tool Link */}
                               <a 
                                 href={tool.link} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
                               >
-                                Visit <ExternalLink size={14} />
+                                Visit {tool.name} <ExternalLink size={14} />
                               </a>
                             </div>
                           ))}
                         </div>
                       </div>
                     ))}
-                  </CardContent>
+                  </div>
                 )}
-              </Card>
+
+                {/* Article Footer */}
+                <div className="mt-8 pt-6 border-t border-gray-200">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4 text-sm text-gray-500">
+                      <span className="flex items-center gap-1">
+                        <Calendar size={14} />
+                        Published {getMonthYear(article.createdAt)}
+                      </span>
+                    </div>
+                    <div className="text-sm text-gray-500">
+                      {estimateReadingTime(article.content)} min read
+                    </div>
+                  </div>
+                </div>
+              </article>
             ))}
           </div>
         </div>
