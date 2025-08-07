@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found - Pierry Borges</title>
+  <meta name="description" content="The page you are looking for could not be found." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #334155;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      color: #1e293b;
+      margin: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem 0;
+      color: #64748b;
+    }
+    a {
+      display: inline-block;
+      background: linear-gradient(to right, #3b82f6, #8b5cf6);
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+    a:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <p>The page you are looking for could not be found.</p>
+    <a href="/">Return Home</a>
+  </div>
+  <script>
+    // For SPA routing - redirect to index.html with the path as a query parameter
+    if (window.location.pathname !== '/404.html') {
+      const path = window.location.pathname;
+      window.location.replace('/#' + path);
+    }
+  </script>
+</body>
+</html>
