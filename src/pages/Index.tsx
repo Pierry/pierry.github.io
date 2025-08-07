@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Github, Linkedin, Mail, ExternalLink, Calendar, ChevronRight } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, ExternalLink, Calendar, ChevronRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,68 +11,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
-const aiToolsData = {
-  "Engenharia de Software": [
-    { name: "Devin", description: "Assistente de codificação avançado", cost: "Freemium", link: "https://devin.ai" },
-    { name: "Claude Code (Anthropic)", description: "Geração de código por prompts", cost: "Pago", link: "https://claude.ai/code" },
-    { name: "GitHub Copilot", description: "Autocompletar e sugerir códigos", cost: "Pago", link: "https://github.com/features/copilot" },
-    { name: "Cursor", description: "IDE com geração de código por instruções", cost: "Freemium", link: "https://www.cursor.com" },
-    { name: "Codeium (Windsurf)", description: "IDE baseada em agentes GPT", cost: "Gratuita", link: "https://codeium.com/windsurf" },
-    { name: "JetBrains AI Assistant", description: "Assistente IA integrado nas IDEs JetBrains", cost: "Pago", link: "https://www.jetbrains.com/ai" },
-    { name: "MetaGPT", description: "Framework multi-agente para desenvolvimento", cost: "Open-source", link: "https://github.com/geekan/MetaGPT" },
-    { name: "Factory AI", description: "Automação completa do ciclo dev com agentes", cost: "Pago", link: "https://www.factory.ai" },
-    { name: "Spur", description: "QA automatizado com agentes virtuais", cost: "Pago", link: "https://www.spurtest.com" },
-    { name: "Neon.tech", description: "Banco de dados PostgreSQL serverless", cost: "Freemium", link: "https://neon.tech" },
-    { name: "OmniAI", description: "OCR avançado com visão computacional", cost: "Pago", link: "https://getomni.ai" },
-    { name: "RepoMix", description: "Compactar código para análise por IA", cost: "Open-source", link: "https://github.com/yamadashy/repomix" },
-  ],
-  "Observabilidade e AIOps": [
-    { name: "PromptLayer", description: "Gerenciamento e versionamento de prompts", cost: "Freemium", link: "https://www.promptlayer.com" },
-    { name: "LlamaIndex", description: "Conecta bases documentais a modelos GPT", cost: "Freemium", link: "https://www.llamaindex.ai" },
-    { name: "Helicone", description: "Monitoramento e observabilidade para chamadas LLM", cost: "Open-source", link: "https://www.helicone.ai" },
-    { name: "Shadow", description: "Assistente IA para reuniões (transcrição/sumário)", cost: "Freemium", link: "https://www.shadow.do" },
-    { name: "Glama MCP", description: "Integração IA com ferramentas (Sentry/GitHub/Postgres)", cost: "Pago", link: "https://glama.ai" },
-  ],
-  "Gestão de Produto": [
-    { name: "ChatPRD", description: "Geração rápida de PRDs usando IA", cost: "Freemium", link: "https://www.chatprd.ai" },
-    { name: "Kraftful", description: "Pesquisa automatizada com usuários", cost: "Pago", link: "https://www.kraftful.com" },
-    { name: "Wordware", description: "Criação de agentes/workflows IA sem código", cost: "Freemium", link: "https://wordware.ai" },
-    { name: "ElevenLabs Scribe", description: "Transcrição de áudio em texto", cost: "Pago", link: "https://elevenlabs.io/blog/meet-scribe" },
-    { name: "Google AI Studio", description: "Análise e sumário de conteúdo em vídeo", cost: "Freemium", link: "https://aistudio.google.com" },
-    { name: "ChatGPT", description: "Suporte geral à gestão de produto", cost: "Freemium", link: "https://chat.openai.com" },
-  ],
-  "Prototipagem Rápida": [
-    { name: "Replit", description: "Plataforma completa para PoCs com assistente IA", cost: "Freemium", link: "https://replit.com" },
-    { name: "Lovable", description: "Criação de protótipos via chat com IA", cost: "Freemium", link: "https://lovable.dev" },
-    { name: "Vercel v0", description: "Construção de interfaces avançadas usando IA", cost: "Gratuita", link: "https://v0.dev" },
-  ],
-  "Operações e Automação": [
-    { name: "Quadratic", description: "Planilhas inteligentes com IA integrada", cost: "Freemium", link: "https://www.quadratichq.com" },
-    { name: "Chatbase", description: "Chatbots treinados com bases internas", cost: "Freemium", link: "https://www.chatbase.co" },
-    { name: "Nanobrowser", description: "Automação no navegador usando agentes IA", cost: "Open-source", link: "https://github.com/nanobrowser/nanobrowser" },
-  ],
-  "Design e Interface": [
-    { name: "Magic Patterns", description: "Geração rápida de protótipos UI com IA", cost: "Pago", link: "https://www.magicpatterns.com" },
-    { name: "Anima", description: "Conversão automática de design em código", cost: "Freemium", link: "https://www.animaapp.com" },
-    { name: "Zeplin", description: "Organização e documentação para dev handoff", cost: "Freemium", link: "https://zeplin.io" },
-  ],
-  "Marketing e Criativos": [
-    { name: "Pika", description: "Geração de vídeos curtos a partir de texto", cost: "Freemium", link: "https://pika.art" },
-    { name: "Runway ML", description: "Geração criativa de vídeos/imagens", cost: "Freemium", link: "https://runwayml.com" },
-    { name: "Casixty", description: "Automação de engajamento no Reddit", cost: "Pago", link: "https://casixty.com" },
-  ],
-};
-
-const insightsData = [
-  { name: "Ben's Bites", description: "Newsletter popular sobre IA", link: "https://bensbites.com/newsletter" },
-  { name: "TLDR AI", description: "Curadoria de novidades sobre IA", link: "https://tldr.tech/ai" },
-  { name: "AlphaSignal", description: "Informações técnicas avançadas sobre IA", link: "https://alphasignal.ai" },
-  { name: "YC Companies", description: "Diretório startups AI por data de lançamento", link: "https://www.ycombinator.com/companies" },
-  { name: "Product Hunt", description: "Descoberta de novos produtos IA", link: "https://www.producthunt.com" },
-  { name: "Sean Goedecke - LLMs", description: "Como usar LLMs em provas de conceito", link: "https://www.seangoedecke.com/how-i-use-llms" },
-  { name: "Angular Ventures Insights", description: "Tendências estratégicas sobre software e IA", link: "https://www.angularventures.com/blog/the-end-state-of-software" },
-];
+import { articles } from "@/articles";
+import { getMonthYear } from "@/utils/dateUtils";
+import ReadmeDisplay from "@/components/ReadmeDisplay";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -88,211 +29,249 @@ const Index = () => {
   };
 
   const getCostBadgeVariant = (cost: string) => {
-    if (cost === "Gratuita" || cost === "Open-source") return "default";
+    if (cost === "Free" || cost === "Open-source") return "default";
     if (cost === "Freemium") return "secondary";
     return "outline";
   };
 
+  // Get the latest article (AI Tools Catalog)
+  const latestArticle = articles[0];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200/50 z-50 shadow-sm">
+        <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-xl font-semibold text-gray-900">Pierry Borges</h1>
+            <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Pierry Borges
+            </h1>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button 
                 onClick={() => scrollToSection("articles")}
-                className={`text-sm font-medium transition-colors ${activeSection === "articles" ? "text-gray-900" : "text-gray-600 hover:text-gray-900"}`}
+                className={`text-sm font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+                  activeSection === "articles" 
+                    ? "bg-blue-100 text-blue-700" 
+                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-100"
+                }`}
               >
-                Artigos
+                Articles
               </button>
               <button 
                 onClick={() => scrollToSection("projects")}
-                className={`text-sm font-medium transition-colors ${activeSection === "projects" ? "text-gray-900" : "text-gray-600 hover:text-gray-900"}`}
+                className={`text-sm font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+                  activeSection === "projects" 
+                    ? "bg-blue-100 text-blue-700" 
+                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-100"
+                }`}
               >
-                Projetos
+                Projects
               </button>
               <button 
                 onClick={() => scrollToSection("contact")}
-                className={`text-sm font-medium transition-colors ${activeSection === "contact" ? "text-gray-900" : "text-gray-600 hover:text-gray-900"}`}
+                className={`text-sm font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+                  activeSection === "contact" 
+                    ? "bg-blue-100 text-blue-700" 
+                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-100"
+                }`}
               >
-                Contato
+                Contact
               </button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2"
+              className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenuOpen ? <X size={24} className="text-slate-600" /> : <Menu size={24} className="text-slate-600" />}
             </button>
           </div>
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden mt-4 pb-4 space-y-2">
+            <div className="md:hidden mt-4 pb-4 space-y-2 border-t border-slate-200 pt-4">
               <button 
                 onClick={() => scrollToSection("articles")}
-                className="block w-full text-left px-2 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
+                className="block w-full text-left px-3 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-lg transition-colors"
               >
-                Artigos
+                Articles
               </button>
               <button 
                 onClick={() => scrollToSection("projects")}
-                className="block w-full text-left px-2 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
+                className="block w-full text-left px-3 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-lg transition-colors"
               >
-                Projetos
+                Projects
               </button>
               <button 
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-2 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
+                className="block w-full text-left px-3 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-lg transition-colors"
               >
-                Contato
+                Contact
               </button>
             </div>
           )}
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Olá, sou Pierry Borges
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Engenheiro de software apaixonado por tecnologia, inovação e compartilhamento de conhecimento. 
-              Aqui você encontra artigos, ferramentas e insights sobre o mundo da tecnologia.
-            </p>
+      {/* GitHub Stats Section */}
+      <section className="pt-20 pb-8 px-6 bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-white mb-2">GitHub Activity</h2>
+            <p className="text-gray-400">Track my development progress and contributions</p>
           </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
+              <div className="text-2xl font-bold text-white mb-1">
+                <img src="https://github-readme-stats.vercel.app/api?username=pierry&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&text_color=ffffff&icon_color=3b82f6&title_color=8b5cf6" alt="GitHub Stats" className="w-full rounded-lg" />
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20 md:col-span-1 lg:col-span-2">
+              <div className="text-2xl font-bold text-white mb-1">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pierry&layout=compact&theme=dark&hide_border=true&bg_color=00000000&text_color=ffffff&title_color=8b5cf6" alt="Top Languages" className="w-full rounded-lg" />
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
+              <div className="text-2xl font-bold text-white mb-1">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=pierry&theme=dark&hide_border=true&background=00000000&stroke=ffffff&ring=8b5cf6&fire=3b82f6&currStreakLabel=ffffff" alt="GitHub Streak" className="w-full rounded-lg" />
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <a 
+              href="https://github.com/Pierry" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm"
+            >
+              <Github size={20} />
+              View Full Profile
+              <ExternalLink size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Current Focus Section */}
+      <section className="py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          <ReadmeDisplay username="Pierry" repo="pierry" />
         </div>
       </section>
 
       {/* Articles Section */}
-      <section id="articles" className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-2">Artigos</h3>
-            <p className="text-gray-600">Explorando tecnologia, IA e desenvolvimento de software</p>
+      <section id="articles" className="pt-24 pb-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+              Articles
+            </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Exploring technology, AI, and software development
+            </p>
           </div>
 
-          {/* Featured Article */}
-          <Card className="mb-12 border-0 shadow-sm">
-            <CardHeader>
-              <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                <Calendar size={16} />
-                <span>Janeiro 2025</span>
-              </div>
-              <CardTitle className="text-2xl">Catálogo de Ferramentas de IA (2025)</CardTitle>
-              <CardDescription className="text-base">
-                Uma curadoria completa das melhores ferramentas de IA para profissionais de tecnologia, 
-                produto e criação de conteúdo.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-8">
-              {Object.entries(aiToolsData).map(([category, tools]) => (
-                <div key={category}>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">{category}</h4>
-                  <div className="overflow-x-auto">
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead className="font-medium">Ferramenta</TableHead>
-                          <TableHead className="font-medium">Descrição</TableHead>
-                          <TableHead className="font-medium">Custo</TableHead>
-                          <TableHead className="font-medium text-right">Link</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {tools.map((tool) => (
-                          <TableRow key={tool.name}>
-                            <TableCell className="font-medium">{tool.name}</TableCell>
-                            <TableCell className="text-gray-600">{tool.description}</TableCell>
-                            <TableCell>
-                              <Badge variant={getCostBadgeVariant(tool.cost)}>
-                                {tool.cost}
-                              </Badge>
-                            </TableCell>
-                            <TableCell className="text-right">
+          {/* Articles List */}
+          <div className="space-y-8">
+            {articles.map((article) => (
+              <Card key={article.slug} className="border-0 shadow-xl bg-white/80 backdrop-blur-sm overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                <CardHeader className="pb-6">
+                  <div className="flex items-center gap-2 text-sm text-slate-500 mb-3">
+                    <Calendar size={16} />
+                    <span>{getMonthYear(article.createdAt)}</span>
+                  </div>
+                  <CardTitle className="text-3xl font-bold text-slate-900 mb-2">
+                    {article.title}
+                  </CardTitle>
+                  <CardDescription className="text-lg text-slate-600 leading-relaxed">
+                    {article.description}
+                  </CardDescription>
+                </CardHeader>
+                
+                {/* Article Content */}
+                {article.slug === 'ai-tools-catalog-2025' && (
+                  <CardContent className="space-y-10">
+                    {Object.entries(article.content.categories).map(([category, tools]) => (
+                      <div key={category} className="space-y-6">
+                        <div className="flex items-center gap-3 mb-6">
+                          <div className="w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
+                          <h4 className="text-xl font-bold text-slate-900">{category}</h4>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                          {(tools as any[]).map((tool) => (
+                            <div key={tool.name} className="group p-4 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                              <div className="flex items-start justify-between mb-3">
+                                <h5 className="font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                  {tool.name}
+                                </h5>
+                                <div className="flex gap-2">
+                                  {tool.tested && (
+                                    <Badge className="bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-1 border border-slate-200">
+                                      <CheckCircle size={12} />
+                                      Tested
+                                    </Badge>
+                                  )}
+                                  <Badge variant={getCostBadgeVariant(tool.cost)} className={
+                                    tool.cost === "Free" || tool.cost === "Open-source" 
+                                      ? "bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200"
+                                      : tool.cost === "Freemium"
+                                      ? "bg-gray-50 text-gray-600 hover:bg-gray-100 border border-gray-200"
+                                      : "bg-neutral-50 text-neutral-600 hover:bg-neutral-100 border border-neutral-200"
+                                  }>
+                                    {tool.cost}
+                                  </Badge>
+                                </div>
+                              </div>
+                              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+                                {tool.description}
+                              </p>
                               <a 
                                 href={tool.link} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
                               >
-                                <ExternalLink size={16} />
+                                Visit <ExternalLink size={14} />
                               </a>
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </div>
-                </div>
-              ))}
-
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Insights Estratégicos e Referências</h4>
-                <div className="overflow-x-auto">
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="font-medium">Recurso</TableHead>
-                        <TableHead className="font-medium">Descrição</TableHead>
-                        <TableHead className="font-medium text-right">Link</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {insightsData.map((resource) => (
-                        <TableRow key={resource.name}>
-                          <TableCell className="font-medium">{resource.name}</TableCell>
-                          <TableCell className="text-gray-600">{resource.description}</TableCell>
-                          <TableCell className="text-right">
-                            <a 
-                              href={resource.link} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center text-blue-600 hover:text-blue-800"
-                            >
-                              <ExternalLink size={16} />
-                            </a>
-                          </TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </CardContent>
+                )}
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-2">Projetos</h3>
-            <p className="text-gray-600">Trabalhos e contribuições open source</p>
+      <section id="projects" className="py-20 px-6 bg-white/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 text-center">
+            <h3 className="text-4xl font-bold text-slate-900 mb-4">Projects</h3>
+            <p className="text-lg text-slate-600">Open source work and contributions</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Project cards will go here */}
-            <Card className="border-0 shadow-sm hover:shadow-md transition-shadow">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-blue-500"></div>
               <CardHeader>
-                <CardTitle className="text-lg">Em breve</CardTitle>
-                <CardDescription>
-                  Novos projetos serão adicionados aqui
+                <CardTitle className="text-xl font-bold text-slate-900">Coming Soon</CardTitle>
+                <CardDescription className="text-slate-600">
+                  New projects will be added here
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600">
-                  Esta seção será atualizada com projetos interessantes e contribuições open source.
+                <p className="text-sm text-slate-600">
+                  This section will be updated with interesting projects and open source contributions.
                 </p>
               </CardContent>
             </Card>
@@ -301,62 +280,68 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-2">Contato</h3>
-            <p className="text-gray-600">Vamos conversar!</p>
+      <section id="contact" className="py-20 px-6 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 text-center">
+            <h3 className="text-4xl font-bold text-slate-900 mb-4">Contact</h3>
+            <p className="text-lg text-slate-600">Let's connect!</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <a 
-              href="https://github.com/pierry" 
+              href="https://github.com/Pierry" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow"
+              className="group flex items-center gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200/50"
             >
-              <Github size={24} className="text-gray-700" />
-              <div>
-                <p className="font-medium text-gray-900">GitHub</p>
-                <p className="text-sm text-gray-600">@pierry</p>
+              <div className="p-3 rounded-xl bg-gradient-to-br from-gray-700 to-gray-900 text-white group-hover:scale-110 transition-transform">
+                <Github size={24} />
               </div>
-              <ChevronRight size={20} className="ml-auto text-gray-400" />
+              <div>
+                <p className="font-semibold text-slate-900">GitHub</p>
+                <p className="text-sm text-slate-600">@pierry</p>
+              </div>
+              <ChevronRight size={20} className="ml-auto text-slate-400 group-hover:text-blue-600 transition-colors" />
             </a>
 
             <a 
-              href="https://linkedin.com/in/pierry" 
+              href="https://www.linkedin.com/in/pierryborges/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow"
+              className="group flex items-center gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200/50"
             >
-              <Linkedin size={24} className="text-gray-700" />
-              <div>
-                <p className="font-medium text-gray-900">LinkedIn</p>
-                <p className="text-sm text-gray-600">Conecte-se comigo</p>
+              <div className="p-3 rounded-xl bg-gradient-to-br from-blue-600 to-blue-800 text-white group-hover:scale-110 transition-transform">
+                <Linkedin size={24} />
               </div>
-              <ChevronRight size={20} className="ml-auto text-gray-400" />
+              <div>
+                <p className="font-semibold text-slate-900">LinkedIn</p>
+                <p className="text-sm text-slate-600">Connect with me</p>
+              </div>
+              <ChevronRight size={20} className="ml-auto text-slate-400 group-hover:text-blue-600 transition-colors" />
             </a>
 
             <a 
-              href="mailto:contato@pierry.com" 
-              className="flex items-center gap-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow"
+              href="mailto:pieerry@gmail.com" 
+              className="group flex items-center gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200/50"
             >
-              <Mail size={24} className="text-gray-700" />
-              <div>
-                <p className="font-medium text-gray-900">Email</p>
-                <p className="text-sm text-gray-600">Entre em contato</p>
+              <div className="p-3 rounded-xl bg-gradient-to-br from-purple-600 to-purple-800 text-white group-hover:scale-110 transition-transform">
+                <Mail size={24} />
               </div>
-              <ChevronRight size={20} className="ml-auto text-gray-400" />
+              <div>
+                <p className="font-semibold text-slate-900">Email</p>
+                <p className="text-sm text-slate-600">Get in touch</p>
+              </div>
+              <ChevronRight size={20} className="ml-auto text-slate-400 group-hover:text-purple-600 transition-colors" />
             </a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 border-t border-gray-100">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-sm text-gray-600">
-            © 2025 Pierry Borges. Todos os direitos reservados.
+      <footer className="py-8 px-6 bg-slate-900 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-sm text-slate-400">
+            © 2025 Pierry Borges. All rights reserved.
           </p>
         </div>
       </footer>

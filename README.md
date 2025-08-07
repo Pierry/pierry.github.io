@@ -1,69 +1,193 @@
-# Welcome to your Lovable project
+# Pierry Borges - Personal Blog & Portfolio
 
-## Project info
+A modern, professional single-page personal blog built with React, TypeScript, and Tailwind CSS. This repository powers my GitHub Pages site at [pierry.github.io](https://pierry.github.io).
 
-**URL**: https://lovable.dev/projects/9ca90d15-58bd-46bf-8ae1-b14e032a404a
+## 🌐 Live Site
 
-## How can I edit this code?
+**Visit:** [https://pierry.github.io](https://pierry.github.io)
 
-There are several ways of editing your application.
+## 📋 Project Overview
 
-**Use Lovable**
+This is my personal blog and portfolio website featuring:
+- **Dynamic GitHub Stats**: Live data from my repositories and contributions
+- **Current Focus Display**: Real-time README from my main [pierry](https://github.com/Pierry/pierry) repository
+- **Articles System**: Technical articles and tool reviews with "tested" badges
+- **Professional Design**: Clean, sophisticated layout with Noto Sans typography
+- **Responsive**: Mobile-first design that works on all devices
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9ca90d15-58bd-46bf-8ae1-b14e032a404a) and start prompting.
+## 🏗️ Architecture
 
-Changes made via Lovable will be committed automatically to this repo.
+### Tech Stack
+- **Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui components
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages via gh-pages
+- **Icons**: Lucide React
+- **Fonts**: Noto Sans + JetBrains Mono
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Project Structure
+```
+src/
+├── articles/           # Dynamic article system
+│   ├── index.ts       # Article registry
+│   ├── README.md      # Article creation guide
+│   └── *.ts           # Individual article files
+├── components/
+│   ├── ui/            # Reusable UI components (shadcn/ui)
+│   └── ReadmeDisplay.tsx  # GitHub README fetcher
+├── pages/
+│   └── Index.tsx      # Main page component
+├── utils/
+│   └── dateUtils.ts   # Date formatting utilities
+└── lib/
+    └── utils.ts       # Utility functions
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Quick Start
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
 
-**Use GitHub Codespaces**
+### Development Setup
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Pierry/pierry.github.io.git
+   cd pierry.github.io
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## What technologies are used for this project?
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-This project is built with .
+4. **Open browser**
+   ```
+   http://localhost:5173
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📝 Content Management
 
-## How can I deploy this project?
+### Adding Articles
+Articles are managed through TypeScript files for type safety and easy maintenance:
 
-Simply open [Lovable](https://lovable.dev/projects/9ca90d15-58bd-46bf-8ae1-b14e032a404a) and click on Share -> Publish.
+1. **Create new article file**: `src/articles/my-article.ts`
+   ```typescript
+   export const myArticle = {
+     title: "My Article Title",
+     description: "Brief description",
+     slug: "my-article-slug",
+     createdAt: "2025-08-07", // YYYY-MM-DD
+     content: {
+       categories: {
+         "Tools": [
+           { 
+             name: "Tool Name", 
+             description: "Description", 
+             cost: "Free|Freemium|Paid|Open-source", 
+             link: "https://example.com",
+             tested: true // Shows green "Tested" badge
+           }
+         ]
+       }
+     }
+   };
+   ```
 
-## I want to use a custom domain - is that possible?
+2. **Register in index**: Add to `src/articles/index.ts`
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+### GitHub Integration
+- **Stats**: Automatically pulls from GitHub API
+- **README Display**: Fetches and renders README from [Pierry/pierry](https://github.com/Pierry/pierry) repository
+- **Live Updates**: Content updates when repository changes
+
+## 🎨 Design System
+
+### Visual Identity
+- **Colors**: Professional blue/purple gradients with sophisticated gray badges
+- **Typography**: Noto Sans for readability, JetBrains Mono for code
+- **Layout**: Card-based design with subtle shadows and blur effects
+- **Badges**: Muted, sophisticated styling instead of bright colors
+
+### Components
+- **Navigation**: Fixed header with smooth scrolling
+- **Stats Cards**: GitHub activity visualization
+- **Article Cards**: Clean layout with tested badges
+- **Contact Cards**: Interactive hover effects
+
+## 🚀 Deployment
+
+### Automatic Deployment
+```bash
+npm run build    # Build for production
+npm run deploy   # Deploy to gh-pages branch
+```
+
+### GitHub Pages Configuration
+- **Source**: Deploy from `gh-pages` branch
+- **Custom Domain**: Not configured (using pierry.github.io)
+- **Build Process**: Manual via npm scripts
+
+## 📊 Features
+
+### Current Implementation
+✅ **GitHub Stats Integration**  
+✅ **Dynamic README Display**  
+✅ **Article Management System**  
+✅ **Responsive Design**  
+✅ **Professional Badge System**  
+✅ **Contact Information**  
+✅ **SEO Optimized**  
+
+### Planned Enhancements
+🔄 **Dark/Light Mode Toggle**  
+🔄 **Search Functionality**  
+🔄 **RSS Feed**  
+🔄 **Analytics Integration**  
+
+## 🔧 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run deploy` | Deploy to GitHub Pages |
+| `npm run lint` | Run ESLint |
+
+## 🌍 Browser Support
+
+- **Chrome**: ✅ Latest 2 versions
+- **Firefox**: ✅ Latest 2 versions  
+- **Safari**: ✅ Latest 2 versions
+- **Edge**: ✅ Latest 2 versions
+- **Mobile**: ✅ iOS Safari, Chrome Mobile
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+While this is a personal blog, suggestions and improvements are welcome:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit changes (`git commit -m 'Add improvement'`)
+4. Push to branch (`git push origin feature/improvement`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+- **GitHub**: [@Pierry](https://github.com/Pierry)
+- **LinkedIn**: [pierryborges](https://www.linkedin.com/in/pierryborges/)
+- **Email**: pieerry@gmail.com
+
+---
+
+**© 2025 Pierry Borges. All rights reserved.**
