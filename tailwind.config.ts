@@ -20,8 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				display: ['SF Pro Display', 'Inter', 'sans-serif'],
+				sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+				display: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
 				serif: ['Georgia', 'Charter', 'Times New Roman', 'serif']
 			},
 			colors: {
