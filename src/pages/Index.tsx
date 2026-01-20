@@ -202,6 +202,50 @@ const Index = () => {
               </a>
               <span className="text-sm text-slate-500">iOS App</span>
             </div>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <a
+                href="https://todone.site/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+              >
+                Todone
+              </a>
+              <span className="text-sm text-slate-500">Task management app</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Apps Section */}
+        <section className="mb-16">
+          <h2 className="text-sm font-medium text-slate-500 uppercase tracking-wide mb-6">
+            Apps
+          </h2>
+
+          <div className="space-y-6">
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
+                  href="https://where-i-would-have-been-born.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                >
+                  Where I Would Have Been Born
+                </a>
+                <a
+                  href="https://github.com/Pierry/where-i-would-have-been-born"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-500 hover:text-blue-600 transition-colors"
+                >
+                  View Code
+                </a>
+              </div>
+              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.
+              </p>
+            </div>
           </div>
         </section>
 
