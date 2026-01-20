@@ -216,13 +216,37 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Apps Section */}
+        {/* Open-source Apps Section */}
         <section className="mb-16">
           <h2 className="text-sm font-medium text-slate-500 uppercase tracking-wide mb-6">
-            Apps
+            Open-source Apps
           </h2>
 
           <div className="space-y-6">
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
+                  href="https://meeting-messaging-app.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                >
+                  Meeting Message
+                </a>
+                <a
+                  href="https://github.com/Pierry/meeting-messaging"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-500 hover:text-blue-600 transition-colors"
+                >
+                  View Code
+                </a>
+              </div>
+              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                A simple messaging app for meetings and team communication.
+              </p>
+            </div>
+
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
