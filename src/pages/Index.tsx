@@ -271,6 +271,30 @@ const Index = () => {
                 A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.
               </p>
             </div>
+
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
+                  href="https://plugins.jetbrains.com/plugin/26878-cloud-dancer-theme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                >
+                  Cloud Dancer Theme
+                </a>
+                <a
+                  href="https://github.com/Pierry/cloud-dancer-theme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-500 hover:text-blue-600 transition-colors"
+                >
+                  View Code
+                </a>
+              </div>
+              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.
+              </p>
+            </div>
           </div>
         </section>
 
