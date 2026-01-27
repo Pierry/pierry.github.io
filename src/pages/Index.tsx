@@ -275,7 +275,7 @@ const Index = () => {
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
-                  href="https://plugins.jetbrains.com/plugin/26878-cloud-dancer-theme"
+                  href="https://plugins.jetbrains.com/plugin/29931-cloud-dancer-theme"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base text-slate-900 hover:text-blue-600 transition-colors"
