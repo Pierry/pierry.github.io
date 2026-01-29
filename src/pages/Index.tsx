@@ -308,6 +308,23 @@ const Index = () => {
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
+                  href="https://open.spotify.com/episode/5oARH9ayPqwvO1PHpDF0x6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                >
+                  Agentic AI Transformation: Workforce Strategy & Leadership
+                </a>
+                <span className="text-sm text-slate-500">Jan 2026</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                Podcast episode exploring how agentic AI is reshaping workforce strategy and what leaders need to know.
+              </p>
+            </div>
+
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
                   href="https://mikefisher.substack.com/p/speed-is-never-just-speed"
                   target="_blank"
                   rel="noopener noreferrer"
