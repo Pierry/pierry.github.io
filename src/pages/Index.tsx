@@ -308,6 +308,23 @@ const Index = () => {
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
+                  href="https://mikefisher.substack.com/p/speed-is-never-just-speed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                >
+                  Speed Is Never Just Speed
+                </a>
+                <span className="text-sm text-slate-500">Jan 2026</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                Mike Fisher on how speed emerges from focus, collaboration, transformation, and psychological safety — using rugby as a powerful metaphor for high-performing teams.
+              </p>
+            </div>
+
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
                   href="https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
