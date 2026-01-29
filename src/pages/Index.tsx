@@ -308,6 +308,23 @@ const Index = () => {
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
+                  href="https://github.com/clawdbot/clawdbot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                >
+                  Clawdbot
+                </a>
+                <span className="text-sm text-slate-500">Open Source</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                A personal AI assistant you run on your own devices. Works with WhatsApp, Telegram, Slack, Discord, and more.
+              </p>
+            </div>
+
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
                   href="https://open.spotify.com/episode/5oARH9ayPqwvO1PHpDF0x6"
                   target="_blank"
                   rel="noopener noreferrer"
