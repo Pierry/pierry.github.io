@@ -359,7 +359,7 @@ const Index = () => {
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
-                  href="https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf"
+                  href="https://drive.google.com/file/d/18AsBgiv6uiG6YEpfy_OEvtvplEw4Oo7E/view"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base text-slate-900 hover:text-blue-600 transition-colors"
