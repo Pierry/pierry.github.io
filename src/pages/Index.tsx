@@ -295,6 +295,30 @@ const Index = () => {
                 A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.
               </p>
             </div>
+
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
+                  href="https://github.com/space-metrics-ai/clawdbot-awesome"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                >
+                  Awesome Clawdbot
+                </a>
+                <a
+                  href="https://github.com/space-metrics-ai/clawdbot-awesome"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-500 hover:text-blue-600 transition-colors"
+                >
+                  View Code
+                </a>
+              </div>
+              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                A curated collection of awesome use cases, prompts, workflows, and resources for Clawdbot.
+              </p>
+            </div>
           </div>
         </section>
 
