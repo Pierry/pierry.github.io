@@ -1,9 +1,87 @@
-import { useState } from "react";
-import { Menu, X, Github, Linkedin } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X, Github, Linkedin, Check, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
+
+// Recommended items with added dates for "New" badge logic
+const recommendedItems = [
+  {
+    id: "clawdbot",
+    title: "Clawdbot",
+    href: "https://github.com/clawdbot/clawdbot",
+    date: "Open Source",
+    description: "A personal AI assistant you run on your own devices. Works with WhatsApp, Telegram, Slack, Discord, and more.",
+    addedAt: "2026-01-30",
+  },
+  {
+    id: "agentic-ai-podcast",
+    title: "Agentic AI Transformation: Workforce Strategy & Leadership",
+    href: "https://open.spotify.com/episode/5oARH9ayPqwvO1PHpDF0x6",
+    date: "Jan 2026",
+    description: "Podcast episode exploring how agentic AI is reshaping workforce strategy and what leaders need to know.",
+    addedAt: "2026-01-29",
+  },
+  {
+    id: "speed-never-just-speed",
+    title: "Speed Is Never Just Speed",
+    href: "https://mikefisher.substack.com/p/speed-is-never-just-speed",
+    date: "Jan 2026",
+    description: "Mike Fisher on how speed emerges from focus, collaboration, transformation, and psychological safety — using rugby as a powerful metaphor for high-performing teams.",
+    addedAt: "2026-01-29",
+  },
+  {
+    id: "state-of-ai-2025",
+    title: "State of AI in Business 2025",
+    href: "https://drive.google.com/file/d/18AsBgiv6uiG6YEpfy_OEvtvplEw4Oo7E/view",
+    date: "Jan 2025",
+    description: "A comprehensive report on how companies are adopting AI across industries. Great insights on trends, challenges, and what's coming next.",
+    addedAt: "2025-01-15",
+  },
+];
+
+const STORAGE_KEY = "pierry-site-seen-items";
+const NEW_THRESHOLD_DAYS = 3;
+
+const isNew = (addedAt: string): boolean => {
+  const added = new Date(addedAt);
+  const now = new Date();
+  const diffTime = now.getTime() - added.getTime();
+  const diffDays = diffTime / (1000 * 60 * 60 * 24);
+  return diffDays <= NEW_THRESHOLD_DAYS;
+};
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [seenItems, setSeenItems] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored);
+        setSeenItems(new Set(parsed));
+      } catch {
+        // Invalid JSON, ignore
+      }
+    }
+  }, []);
+
+  const markAsSeen = (id: string) => {
+    setSeenItems((prev) => {
+      const next = new Set(prev);
+      next.add(id);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...next]));
+      return next;
+    });
+  };
+
+  const markAsUnseen = (id: string) => {
+    setSeenItems((prev) => {
+      const next = new Set(prev);
+      next.delete(id);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...next]));
+      return next;
+    });
+  };
 
   return (
     <div className="min-h-screen bg-[#F5F5F7]">
@@ -329,74 +407,59 @@ const Index = () => {
           </h2>
 
           <div className="space-y-6">
-            <div>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-                <a
-                  href="https://github.com/clawdbot/clawdbot"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
-                >
-                  Clawdbot
-                </a>
-                <span className="text-sm text-slate-500">Open Source</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
-                A personal AI assistant you run on your own devices. Works with WhatsApp, Telegram, Slack, Discord, and more.
-              </p>
-            </div>
+            {recommendedItems.map((item) => {
+              const itemIsNew = isNew(item.addedAt);
+              const isSeen = seenItems.has(item.id);
 
-            <div>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-                <a
-                  href="https://open.spotify.com/episode/5oARH9ayPqwvO1PHpDF0x6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
-                >
-                  Agentic AI Transformation: Workforce Strategy & Leadership
-                </a>
-                <span className="text-sm text-slate-500">Jan 2026</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
-                Podcast episode exploring how agentic AI is reshaping workforce strategy and what leaders need to know.
-              </p>
-            </div>
-
-            <div>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-                <a
-                  href="https://mikefisher.substack.com/p/speed-is-never-just-speed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
-                >
-                  Speed Is Never Just Speed
-                </a>
-                <span className="text-sm text-slate-500">Jan 2026</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
-                Mike Fisher on how speed emerges from focus, collaboration, transformation, and psychological safety — using rugby as a powerful metaphor for high-performing teams.
-              </p>
-            </div>
-
-            <div>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-                <a
-                  href="https://drive.google.com/file/d/18AsBgiv6uiG6YEpfy_OEvtvplEw4Oo7E/view"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
-                >
-                  State of AI in Business 2025
-                </a>
-                <span className="text-sm text-slate-500">Jan 2025</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
-                A comprehensive report on how companies are adopting AI across industries.
-                Great insights on trends, challenges, and what's coming next.
-              </p>
-            </div>
+              return (
+                <div key={item.id}>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                      >
+                        {item.title}
+                      </a>
+                      {itemIsNew && !isSeen && (
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+                          New
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm text-slate-500">{item.date}</span>
+                      <button
+                        onClick={() => isSeen ? markAsUnseen(item.id) : markAsSeen(item.id)}
+                        className={`inline-flex items-center gap-1 px-2 py-1 rounded text-xs font-medium transition-colors ${
+                          isSeen
+                            ? "bg-slate-200 text-slate-600 hover:bg-slate-300"
+                            : "bg-slate-100 text-slate-500 hover:bg-slate-200"
+                        }`}
+                        title={isSeen ? "Mark as unread" : "Mark as seen"}
+                      >
+                        {isSeen ? (
+                          <>
+                            <Check size={12} />
+                            Seen
+                          </>
+                        ) : (
+                          <>
+                            <Eye size={12} />
+                            Mark Seen
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
 
