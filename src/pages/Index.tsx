@@ -178,10 +178,18 @@ const Index = () => {
             .
           </p>
 
-          <p className="text-base text-slate-500 leading-relaxed mb-8">
+          <p className="text-base text-slate-500 leading-relaxed mb-6">
             I care about system design, mobile development (Android, iOS, Flutter),
             architecture, distributed systems, AI-assisted coding, and helping teams
             deliver better software.
+          </p>
+
+          <p className="text-base text-slate-500 leading-relaxed mb-8">
+            I have a personal AI assistant named Rocky. You can follow what he's up to on{" "}
+            <a href="https://www.moltbook.com/u/RockyPB" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              Moltbook
+            </a>
+            .
           </p>
 
           {/* Social Links */}
