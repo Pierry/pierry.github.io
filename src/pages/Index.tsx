@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 // Recommended items with added dates for "New" badge logic
 const recommendedItems = [
   {
+    id: "fowler-harness-engineering",
+    title: "Harness Engineering",
+    href: "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
+    date: "Martin Fowler",
+    description: "Thoughts on OpenAI's approach to AI-maintained codebases — using harnesses (tooling, linters, structural tests) to keep AI agents in check.",
+    addedAt: "2026-02-19",
+  },
+  {
     id: "mckinsey-dev-productivity-genai",
     title: "Unleashing Developer Productivity with Generative AI",
     href: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/unleashing-developer-productivity-with-generative-ai",
