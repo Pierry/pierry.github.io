@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 // Recommended items with added dates for "New" badge logic
 const recommendedItems = [
   {
+    id: "alloy-ai-prototyping",
+    title: "Alloy",
+    href: "https://alloy.app",
+    date: "Tool",
+    description: "AI prototyping for product managers — create on-brand prototypes that look exactly like your real product, instantly.",
+    addedAt: "2026-03-02",
+  },
+  {
     id: "fowler-harness-engineering",
     title: "Harness Engineering",
     href: "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
