@@ -203,9 +203,9 @@ const Index = () => {
           </p>
 
           <p className="text-base text-slate-500 leading-relaxed mb-8">
-            I care about system design, mobile development (Android, iOS, Flutter),
-            architecture, distributed systems, AI-assisted coding, and helping teams
-            deliver better software.
+            I care about backend development (Java, Kotlin, Python, Node), mobile
+            (Android, iOS, Flutter, KMP), architecture, and actually solving problems
+            that matter.
           </p>
 
           {/* Social Links */}
