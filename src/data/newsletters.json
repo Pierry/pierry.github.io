@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-04",
+      "date": "2026-03-04",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Codex",
+          "author": "Saurabh Dashora",
+          "title": {
+            "en": "What Happens to an SQL Query? The Journey Through the DB",
+            "pt": "O Que Acontece com uma Query SQL? A Jornada pelo Banco de Dados"
+          },
+          "summary": {
+            "en": "When you execute a simple SELECT query, it travels through multiple internal database layers before returning results. The article traces this complete journey: from the Transport Subsystem that manages connections and performs initial authentication, through the Query Processor which parses and optimizes (creating a parse tree and efficient execution plan), to the Execution Engine that coordinates each step. At the base, the Storage Engine orchestrates specialized 'employees': Transaction Manager ensures consistency, Lock Manager prevents conflicts, Buffer Manager checks if data is already in memory, and Recovery Manager logs operations for rollback.",
+            "pt": "Quando você executa um simples SELECT, a query passa por múltiplas camadas internas do banco de dados antes de retornar resultados. O artigo detalha essa jornada completa: desde o Transport Subsystem que gerencia conexões e faz autenticação inicial, passando pelo Query Processor que faz parsing e otimização (criando árvore de parse e plano de execução eficiente), até o Execution Engine que coordena cada passo. Na base, o Storage Engine orquestra 'funcionários' especializados: Transaction Manager garante consistência, Lock Manager previne conflitos, Buffer Manager verifica se dados já estão em memória, e Recovery Manager registra operações para rollback."
+          },
+          "insights": {
+            "en": [
+              "The Query Optimizer is the brain that decides *how* to execute your query — understanding this helps write more efficient queries",
+              "Buffer Manager is key for performance: data in memory = fast; data on disk = slow",
+              "Every query, even a simple SELECT, activates this entire machinery — that's why batch queries and connection pooling matter"
+            ],
+            "pt": [
+              "O Query Optimizer é o cérebro que decide *como* executar sua query — entender isso ajuda a escrever queries mais eficientes",
+              "Buffer Manager é chave para performance: dados em memória = rápido; dados em disco = lento",
+              "Cada query, mesmo um simples SELECT, ativa toda essa maquinaria — por isso batch queries e connection pooling importam"
+            ]
+          },
+          "link": "https://newsletter.systemdesigncodex.com/p/what-happens-to-an-sql-query"
+        }
+      ]
+    },
+    {
       "id": "2026-03-03",
       "date": "2026-03-03",
       "entries": [
