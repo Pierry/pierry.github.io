@@ -128,7 +128,7 @@ const Newsletters = () => {
               <div className="flex items-center gap-4 mb-8">
                 <div className="h-px flex-1 bg-slate-300" />
                 <span className="text-sm font-medium text-slate-500 uppercase tracking-wide">
-                  {new Date(digest.date).toLocaleDateString(lang === "en" ? "en-US" : "pt-BR", {
+                  {new Date(digest.date + "T12:00:00").toLocaleDateString(lang === "en" ? "en-US" : "pt-BR", {
                     weekday: "long",
                     year: "numeric",
                     month: "long",
