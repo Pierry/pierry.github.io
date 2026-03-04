@@ -1,0 +1,88 @@
+{
+  "digests": [
+    {
+      "id": "2026-03-03",
+      "date": "2026-03-03",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "Context Engineering vs Prompt Engineering",
+            "pt": "Context Engineering vs Prompt Engineering"
+          },
+          "summary": {
+            "en": "Context engineering is the new frontier in AI development. While prompt engineering focuses on crafting the right question, context engineering is about providing the AI with the right information at the right time. The article explores how companies like Anthropic and OpenAI are shifting focus from prompt optimization to context management, using techniques like RAG, memory systems, and dynamic context windows to improve AI responses.",
+            "pt": "Context engineering é a nova fronteira no desenvolvimento de IA. Enquanto prompt engineering foca em criar a pergunta certa, context engineering trata de fornecer à IA a informação certa no momento certo. O artigo explora como empresas como Anthropic e OpenAI estão mudando o foco de otimização de prompts para gestão de contexto, usando técnicas como RAG, sistemas de memória e janelas de contexto dinâmicas."
+          },
+          "insights": {
+            "en": [
+              "Context > Prompt: The quality of context matters more than the cleverness of your prompt",
+              "RAG is just the beginning - memory systems and dynamic context are the next evolution",
+              "Engineers need to think about context pipelines, not just prompt templates"
+            ],
+            "pt": [
+              "Contexto > Prompt: A qualidade do contexto importa mais que a sofisticação do prompt",
+              "RAG é só o começo - sistemas de memória e contexto dinâmico são a próxima evolução",
+              "Engenheiros precisam pensar em pipelines de contexto, não só templates de prompt"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/context-engineering"
+        },
+        {
+          "rank": 2,
+          "newsletter": "Engineering Leadership",
+          "author": "Gregor Ojstersek",
+          "title": {
+            "en": "The Evolution of Software Engineering Productivity",
+            "pt": "A Evolução da Produtividade em Engenharia de Software"
+          },
+          "summary": {
+            "en": "Productivity measurement in engineering has evolved from lines of code to story points to DORA metrics, and now to outcome-based measures. The article traces this evolution and argues that the future lies in measuring business impact, not output. Gregor presents a framework for balancing individual productivity with team effectiveness, emphasizing that the best teams optimize for flow and value delivery.",
+            "pt": "A medição de produtividade em engenharia evoluiu de linhas de código para story points, depois métricas DORA, e agora para medidas baseadas em outcome. O artigo traça essa evolução e argumenta que o futuro está em medir impacto no negócio, não output. Gregor apresenta um framework para equilibrar produtividade individual com efetividade do time."
+          },
+          "insights": {
+            "en": [
+              "Output metrics (commits, PRs) correlate poorly with actual value delivered",
+              "DORA metrics are a step forward but still miss business impact",
+              "The best productivity measure is 'problems solved per unit of time'"
+            ],
+            "pt": [
+              "Métricas de output (commits, PRs) correlacionam mal com valor entregue",
+              "Métricas DORA são um avanço mas ainda perdem impacto no negócio",
+              "A melhor medida de produtividade é 'problemas resolvidos por unidade de tempo'"
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/evolution-of-productivity"
+        },
+        {
+          "rank": 3,
+          "newsletter": "AlgoMaster",
+          "author": "Ashish Pratap Singh",
+          "title": {
+            "en": "300+ Engineering Articles to Level Up Your System Design Skills",
+            "pt": "300+ Artigos de Engenharia para Evoluir suas Habilidades de System Design"
+          },
+          "summary": {
+            "en": "A curated mega-list of system design resources organized by topic: databases, caching, messaging, distributed systems, and real-world case studies. Ashish categorizes articles by difficulty and provides a recommended reading order. Standout sections include deep dives into how Netflix, Uber, and Stripe architect their systems, plus interview-specific preparation guides.",
+            "pt": "Uma mega-lista curada de recursos de system design organizada por tópico: bancos de dados, caching, messaging, sistemas distribuídos, e casos reais. Ashish categoriza artigos por dificuldade e dá uma ordem de leitura recomendada. Destaques incluem deep dives em como Netflix, Uber e Stripe arquitetam seus sistemas, além de guias de preparação para entrevistas."
+          },
+          "insights": {
+            "en": [
+              "Start with fundamentals (CAP theorem, consistency models) before diving into case studies",
+              "Real company engineering blogs are the best learning resource",
+              "Practice designing systems you use daily (WhatsApp, YouTube) before interviews"
+            ],
+            "pt": [
+              "Comece pelos fundamentos (teorema CAP, modelos de consistência) antes dos case studies",
+              "Blogs de engenharia de empresas reais são o melhor recurso de aprendizado",
+              "Pratique projetar sistemas que você usa diariamente (WhatsApp, YouTube) antes de entrevistas"
+            ]
+          },
+          "link": "https://blog.algomaster.io/p/300-engineering-articles"
+        }
+      ]
+    }
+  ]
+}

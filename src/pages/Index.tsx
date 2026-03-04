@@ -119,6 +119,12 @@ const Index = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
+              <Link
+                to="/newsletters"
+                className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+              >
+                Newsletters
+              </Link>
               <a
                 href="/cv.pdf"
                 target="_blank"
@@ -147,6 +153,12 @@ const Index = () => {
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
             <div className="md:hidden mt-4 pb-2 space-y-2 border-t border-slate-200 pt-4">
+              <Link
+                to="/newsletters"
+                className="block text-sm text-slate-600 hover:text-slate-900 transition-colors py-1"
+              >
+                Newsletters
+              </Link>
               <a
                 href="/cv.pdf"
                 target="_blank"
