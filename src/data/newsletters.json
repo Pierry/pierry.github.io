@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-05",
+      "date": "2026-03-05",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Gregor Ojstersek",
+          "title": {
+            "en": "Inside OpenAI's Engineering Culture: How the Teams Behind ChatGPT Work",
+            "pt": "Por Dentro da Cultura de Engenharia da OpenAI: Como Funcionam os Times do ChatGPT"
+          },
+          "summary": {
+            "en": "Gregor interviewed Sulman Choudhry, Head of Engineering for ChatGPT, revealing how OpenAI operates internally. The team is surprisingly lean: the PM-to-engineer ratio is 1:30 (at Codex, it's 1:40!). The structure combines horizontal infrastructure teams with vertical product teams, and research + engineering sit together in the same teams — a radical break from the traditional model. Engineers own problems end-to-end, PMs sometimes prototype code, and designers write code beyond Figma. Every project has a DRI (Directly Responsible Individual) who owns everything, not just eng or product. They hire 'barbell style': extreme generalists who move across mobile/frontend/backend AND extreme specialists (like the WebRTC standard author). 80% of ideas come bottom-up through demos and prototypes, not lengthy docs.",
+            "pt": "Gregor entrevistou Sulman Choudhry, Head of Engineering do ChatGPT, revelando como a OpenAI funciona por dentro. O time é surpreendentemente enxuto: a proporção PM:engenheiro é 1:30 (no Codex, 1:40!). A estrutura combina times horizontais de infraestrutura com times verticais de produto, e pesquisa + engenharia sentam juntos nas mesmas equipes — uma quebra radical do modelo tradicional. Engenheiros são donos end-to-end dos problemas, PMs às vezes prototipam código, e designers escrevem código além do Figma. Cada projeto tem um DRI (Directly Responsible Individual) que é dono de tudo, não só da eng ou do produto. Contratam no estilo 'barbell': generalistas extremos que transitam entre mobile/frontend/backend E especialistas extremos (como o autor do padrão WebRTC). 80% das ideias vêm de baixo para cima através de demos e protótipos, não docs extensos."
+          },
+          "insights": {
+            "en": [
+              "Total DRI: each project has a Directly Responsible Individual who owns everything (not just eng or product) — this accelerates decisions and eliminates silos",
+              "Talent Barbell: they hire extreme generalists (who move across mobile/frontend/backend) AND extreme specialists (like the WebRTC standard author) — together they create a mentorship culture",
+              "80% Bottom-Up: most ideas come from below — engineers prototype and show demos instead of writing docs; structure is only added when there's real potential"
+            ],
+            "pt": [
+              "DRI Total: cada projeto tem um Directly Responsible Individual que é dono de tudo (não só da eng ou produto) — isso acelera decisões e elimina silos",
+              "Barbell de Talentos: contratam generalistas extremos (que transitam entre mobile/frontend/backend) E especialistas extremos (como o autor do padrão WebRTC) — juntos criam cultura de mentoria",
+              "80% Bottom-Up: a maioria das ideias vem de baixo — engenheiros prototipam e mostram demos ao invés de escrever docs; estrutura só é adicionada quando há potencial real"
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/inside-openais-engineering-culture"
+        }
+      ]
+    },
+    {
       "id": "2026-03-04",
       "date": "2026-03-04",
       "entries": [
