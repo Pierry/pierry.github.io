@@ -188,6 +188,23 @@ const Newsletters = () => {
                           </ul>
                         </div>
 
+                        {/* Examples / How to Apply */}
+                        {entry.examples && entry.examples[lang] && (
+                          <div className="bg-primary/5 border border-primary/10 rounded-lg p-4 mb-4">
+                            <h4 className="text-sm font-medium text-foreground/80 mb-2">
+                              {lang === "en" ? "How to Apply" : "Como Aplicar"}
+                            </h4>
+                            <ul className="space-y-3">
+                              {entry.examples[lang].map((example: string, i: number) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                  <span className="text-primary mt-0.5">→</span>
+                                  <span>{example}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
                         {/* Link */}
                         <a
                           href={entry.link}
