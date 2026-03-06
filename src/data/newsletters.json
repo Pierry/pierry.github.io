@@ -41,6 +41,32 @@
             ]
           },
           "link": "https://newsletter.eng-leadership.com/p/software-engineering-is-becoming"
+        },
+        {
+          "rank": 2,
+          "newsletter": "Tech With Tim",
+          "author": "Tim Ruscica",
+          "title": {
+            "en": "My Honest Thoughts on AI and the Job Market in 2026",
+            "pt": "Minhas Opiniões Honestas sobre IA e o Mercado de Trabalho em 2026"
+          },
+          "summary": {
+            "en": "Tim delivers a pragmatic, no-hype analysis of what's actually happening in the software job market in 2026. No doom-and-gloom, no techno-optimism — just observations from someone actively building and hiring.\n\n5 critical shifts he identifies:\n\n1. **Nobody writes code from scratch anymore.** AI coding tools (Copilot, Cursor, Claude) are now table stakes. The differentiator isn't using them — it's knowing when NOT to use them. Blindly accepting AI suggestions creates technical debt.\n\n2. **AI tools became commodity.** Everyone has access to the same tools. The competitive advantage shifted from tooling to judgment, architecture decisions, and system thinking.\n\n3. **The skill gap is exploding.** Seniors who leverage AI multiply their output. Juniors who rely on AI without understanding fundamentals produce fragile code. The middle is hollowing out.\n\n4. **Juniors are 'cooked'.** Entry-level tasks (CRUD, boilerplate, simple bug fixes) are being automated. Junior devs need to rapidly level up or pivot. The traditional 'junior → mid → senior' path is breaking.\n\n5. **Soft skills dominate.** Technical interviews still exist, but companies increasingly filter for communication, collaboration, and product thinking. You can teach someone to code; teaching them to work well with others is harder.",
+            "pt": "Tim entrega uma análise pragmática e sem hype do que está realmente acontecendo no mercado de trabalho de software em 2026. Sem catastrofismo, sem otimismo tecnológico — apenas observações de alguém ativamente construindo e contratando.\n\n5 mudanças críticas que ele identifica:\n\n1. **Ninguém mais escreve código do zero.** Ferramentas de AI coding (Copilot, Cursor, Claude) agora são básicas. O diferencial não é usá-las — é saber quando NÃO usar. Aceitar sugestões de AI cegamente cria dívida técnica.\n\n2. **Ferramentas de AI viraram commodity.** Todo mundo tem acesso às mesmas ferramentas. A vantagem competitiva mudou de ferramentas para julgamento, decisões de arquitetura e pensamento sistêmico.\n\n3. **O gap de habilidades está explodindo.** Seniors que alavancam AI multiplicam seu output. Juniors que dependem de AI sem entender fundamentos produzem código frágil. O meio está se esvaziando.\n\n4. **Juniors estão 'fritos'.** Tarefas de nível inicial (CRUD, boilerplate, bug fixes simples) estão sendo automatizadas. Devs juniors precisam evoluir rápido ou pivotar. O caminho tradicional 'junior → mid → senior' está quebrando.\n\n5. **Soft skills dominam.** Entrevistas técnicas ainda existem, mas empresas cada vez mais filtram por comunicação, colaboração e pensamento de produto. Você pode ensinar alguém a codar; ensinar a trabalhar bem com outros é mais difícil."
+          },
+          "insights": {
+            "en": [
+              "AI tools are table stakes now — the differentiator is knowing when NOT to use them and having the judgment to evaluate AI output critically.",
+              "The junior-to-senior pipeline is breaking. Entry-level work is being automated. New devs need to skip steps or find niches AI can't touch.",
+              "Soft skills became the moat. Companies can find technical competence anywhere; they pay premium for people who communicate well and think about product."
+            ],
+            "pt": [
+              "Ferramentas de AI agora são básicas — o diferencial é saber quando NÃO usar e ter julgamento para avaliar output de AI criticamente.",
+              "O pipeline junior-para-senior está quebrando. Trabalho de nível inicial está sendo automatizado. Novos devs precisam pular etapas ou encontrar nichos que AI não alcança.",
+              "Soft skills viraram o diferencial. Empresas encontram competência técnica em qualquer lugar; pagam premium por pessoas que comunicam bem e pensam em produto."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=PEFso88LkC4"
         }
       ]
     },
