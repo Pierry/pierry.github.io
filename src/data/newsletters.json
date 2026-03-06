@@ -1,6 +1,50 @@
 {
   "digests": [
     {
+      "id": "2026-03-06",
+      "date": "2026-03-06",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Gregor Ojstersek",
+          "title": {
+            "en": "Software Engineering is Becoming Position-Less",
+            "pt": "Engenharia de Software Está se Tornando Sem Posição Fixa"
+          },
+          "summary": {
+            "en": "Gregor draws a fascinating parallel between the evolution of basketball and software engineering — and the comparison is surprisingly illuminating.\n\nIn basketball, the 1990s and 2000s were defined by specialized positions. Every team needed a dominant center, the game revolved around post plays and mid-range shots, and players had clearly defined roles. Fast forward to 2024: the game has become 'position-less'. The best teams now field versatile players who can shoot threes, handle the ball, rebound, and pass at elite levels — while still valuing specialists who excel at specific skills like three-point shooting or lockdown defense.\n\nSoftware engineering is following the same arc. In the early days, we had programmers, analysts, and testers. The 2000s and 2010s brought specialization: frontend vs backend, QA engineers, DevOps, Scrum Masters. Clear titles, defined responsibilities.\n\nBut now? The boundaries are dissolving. Companies care less about your title and more about your impact. Engineers are expected to think about product and business, not just code. Managers are becoming more hands-on. The 'Product Engineer' role is exploding — people who own the why, what, when, AND the how.\n\nThe Amazon effect accelerated this: when they increased their manager-to-IC ratio by 15%, other companies followed. Suddenly everyone wears multiple hats. Engineering Managers take on Staff Engineer work. Staff Engineers pick up management responsibilities. Architects code. The lines blur.\n\nOpenAI exemplifies this shift. Their Codex team has 40 people — only 1 PM and 2 designers. Everyone else is an engineer expected to have product/business mindset. Titles like 'Member of Technical Staff' replace traditional hierarchies. What matters is impact, not position.",
+            "pt": "Gregor traça um paralelo fascinante entre a evolução do basquete e da engenharia de software — e a comparação é surpreendentemente esclarecedora.\n\nNo basquete, as décadas de 1990 e 2000 foram definidas por posições especializadas. Todo time precisava de um pivô dominante, o jogo girava em torno de jogadas no garrafão e arremessos de meia distância, e jogadores tinham papéis claramente definidos. Avançando para 2024: o jogo se tornou 'sem posição'. Os melhores times agora têm jogadores versáteis que podem arremessar de três, conduzir a bola, pegar rebotes e passar em níveis de elite — enquanto ainda valorizam especialistas que se destacam em habilidades específicas.\n\nEngenharia de software está seguindo o mesmo arco. Nos primeiros dias, tínhamos programadores, analistas e testadores. Os anos 2000 e 2010 trouxeram especialização: frontend vs backend, engenheiros de QA, DevOps, Scrum Masters. Títulos claros, responsabilidades definidas.\n\nMas agora? As fronteiras estão se dissolvendo. Empresas se importam menos com seu título e mais com seu impacto. Engenheiros devem pensar sobre produto e negócio, não apenas código. Managers estão se tornando mais hands-on. O papel de 'Product Engineer' está explodindo — pessoas que são donas do porquê, o quê, quando E o como.\n\nO efeito Amazon acelerou isso: quando aumentaram a proporção manager-para-IC em 15%, outras empresas seguiram. De repente todos usam múltiplos chapéus. Engineering Managers assumem trabalho de Staff Engineer. Staff Engineers pegam responsabilidades de gestão. Arquitetos codam. As linhas se borram.\n\nA OpenAI exemplifica essa mudança. O time do Codex tem 40 pessoas — apenas 1 PM e 2 designers. Todos os outros são engenheiros que devem ter mentalidade de produto/negócio. Títulos como 'Member of Technical Staff' substituem hierarquias tradicionais. O que importa é impacto, não posição."
+          },
+          "insights": {
+            "en": [
+              "The barbell model: companies increasingly want EITHER extreme generalists who can do everything (frontend, backend, mobile, product thinking) OR extreme specialists who think outside the box and bring unique expertise. The middle ground is shrinking.",
+              "Product Engineer is the new default: startups like Lovable hire product engineers who own idea-to-execution. Engineers are expected to understand distribution, user testing, and business impact — not just write code.",
+              "Titles are becoming meaningless: 'Member of Technical Staff' at AI companies signals that what you DO matters more than what you're CALLED. Impact over hierarchy."
+            ],
+            "pt": [
+              "O modelo barbell: empresas cada vez mais querem OU generalistas extremos que fazem tudo (frontend, backend, mobile, pensamento de produto) OU especialistas extremos que pensam fora da caixa e trazem expertise única. O meio-termo está encolhendo.",
+              "Product Engineer é o novo padrão: startups como Lovable contratam product engineers que são donos da ideia até execução. Engenheiros devem entender distribuição, testes com usuários e impacto no negócio — não apenas escrever código.",
+              "Títulos estão se tornando sem sentido: 'Member of Technical Staff' em empresas de IA sinaliza que o que você FAZ importa mais do que como você é CHAMADO. Impacto sobre hierarquia."
+            ]
+          },
+          "examples": {
+            "en": [
+              "Audit your own versatility: list 5 skills outside your core role. Can you write a product spec? Run a user interview? Deploy to production? Debug a frontend issue? The more you can do, the more valuable you become.",
+              "Try wearing a different hat this sprint: if you're a backend engineer, pair with the PM on customer discovery. If you're a manager, write some code. Stretch beyond your title.",
+              "Evaluate your team through the barbell lens: do you have true generalists who can own anything end-to-end? Do you have specialists with rare, deep expertise? Or is everyone stuck in the shrinking middle?"
+            ],
+            "pt": [
+              "Audite sua própria versatilidade: liste 5 habilidades fora do seu papel principal. Você consegue escrever uma spec de produto? Conduzir uma entrevista com usuário? Fazer deploy em produção? Debugar um problema de frontend? Quanto mais você consegue fazer, mais valioso você se torna.",
+              "Tente usar um chapéu diferente nesta sprint: se você é engenheiro backend, pareie com o PM em descoberta de cliente. Se você é manager, escreva um pouco de código. Estique-se além do seu título.",
+              "Avalie seu time pela lente do barbell: você tem generalistas verdadeiros que podem ser donos de qualquer coisa end-to-end? Tem especialistas com expertise rara e profunda? Ou todos estão presos no meio que está encolhendo?"
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/software-engineering-is-becoming"
+        }
+      ]
+    },
+    {
       "id": "2026-03-05",
       "date": "2026-03-05",
       "entries": [
