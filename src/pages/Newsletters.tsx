@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu, X, Github, Linkedin, Globe, ExternalLink } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, Github, Linkedin, Globe, ExternalLink, Share2, Check } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import newslettersData from "../data/newsletters.json";
 
@@ -16,8 +16,32 @@ const rankEmoji = (rank: number): string => {
 const Newsletters = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [lang, setLang] = useState<Lang>("en");
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+  const location = useLocation();
 
   const toggleLang = () => setLang(lang === "en" ? "pt" : "en");
+
+  const generateEntryId = (digestId: string, rank: number) => `${digestId}-${rank}`;
+
+  const copyShareLink = async (entryId: string) => {
+    const url = `${window.location.origin}${window.location.pathname}#${entryId}`;
+    await navigator.clipboard.writeText(url);
+    setCopiedId(entryId);
+    setTimeout(() => setCopiedId(null), 2000);
+  };
+
+  // Scroll to entry if hash is present
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.slice(1);
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  }, [location.hash]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -143,8 +167,10 @@ const Newsletters = () => {
 
               {/* Entries */}
               <div className="space-y-10">
-                {digest.entries.map((entry, idx) => (
-                  <article key={idx} className="relative">
+                {digest.entries.map((entry, idx) => {
+                  const entryId = generateEntryId(digest.id, entry.rank);
+                  return (
+                  <article key={idx} id={entryId} className="relative scroll-mt-24">
                     {/* Rank Badge */}
                     <div className="flex items-start gap-4">
                       <span className="text-2xl" title={`Rank #${entry.rank}`}>
@@ -163,10 +189,23 @@ const Newsletters = () => {
                           </span>
                         </div>
 
-                        {/* Title */}
-                        <h3 className="text-xl font-semibold text-foreground mb-3">
-                          {entry.title[lang]}
-                        </h3>
+                        {/* Title with Share Button */}
+                        <div className="flex items-start gap-2 mb-3">
+                          <h3 className="text-xl font-semibold text-foreground flex-1">
+                            {entry.title[lang]}
+                          </h3>
+                          <button
+                            onClick={() => copyShareLink(entryId)}
+                            className="p-1.5 rounded-md hover:bg-accent transition-colors text-muted-foreground hover:text-foreground"
+                            title={lang === "en" ? "Copy link to share" : "Copiar link para compartilhar"}
+                          >
+                            {copiedId === entryId ? (
+                              <Check size={16} className="text-green-500" />
+                            ) : (
+                              <Share2 size={16} />
+                            )}
+                          </button>
+                        </div>
 
                         {/* Summary */}
                         <p className="text-base text-muted-foreground leading-relaxed mb-4">
@@ -201,7 +240,8 @@ const Newsletters = () => {
                       </div>
                     </div>
                   </article>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}
