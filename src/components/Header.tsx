@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from './ThemeToggle';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,16 +61,20 @@ const Header = () => {
           <button onClick={() => scrollToSection('services')} className="nav-link">Services</button>
           <button onClick={() => scrollToSection('projects')} className="nav-link">Work</button>
           <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
+          <ThemeToggle />
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden flex items-center p-2 text-foreground" 
-          onClick={toggleMobileMenu}
-          aria-label="Toggle menu"
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button 
+            className="flex items-center p-2 text-foreground" 
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
