@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Github, Linkedin, Check, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 // Recommended items with added dates for "New" badge logic
 const recommendedItems = [
@@ -108,12 +109,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F5F7]">
+    <div className="min-h-screen bg-background">
       {/* Navigation - Minimal, Joel Becker inspired */}
-      <nav className="fixed top-0 w-full bg-[#F5F5F7]/95 backdrop-blur-sm z-50">
+      <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
         <div className="max-w-3xl mx-auto px-6 py-5">
           <div className="flex justify-between items-center">
-            <Link to="/" className="text-lg font-medium text-slate-900 hover:text-slate-700 transition-colors">
+            <Link to="/" className="text-lg font-medium text-foreground hover:text-foreground/80 transition-colors">
               Pierry Borges
             </Link>
 
@@ -121,7 +122,7 @@ const Index = () => {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 to="/newsletters"
-                className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 Newsletters
               </Link>
@@ -129,33 +130,37 @@ const Index = () => {
                 href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 CV
               </a>
               <a
                 href="mailto:pieerry@gmail.com"
-                className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 Contact
               </a>
+              <ThemeToggle />
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-1 hover:bg-slate-200/50 transition-colors rounded"
-            >
-              {mobileMenuOpen ? <X size={20} className="text-slate-600" /> : <Menu size={20} className="text-slate-600" />}
-            </button>
+            <div className="md:hidden flex items-center gap-2">
+              <ThemeToggle />
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-1 hover:bg-accent/50 transition-colors rounded"
+              >
+                {mobileMenuOpen ? <X size={20} className="text-muted-foreground" /> : <Menu size={20} className="text-muted-foreground" />}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden mt-4 pb-2 space-y-2 border-t border-slate-200 pt-4">
+            <div className="md:hidden mt-4 pb-2 space-y-2 border-t border-border pt-4">
               <Link
                 to="/newsletters"
-                className="block text-sm text-slate-600 hover:text-slate-900 transition-colors py-1"
+                className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
               >
                 Newsletters
               </Link>
@@ -163,13 +168,13 @@ const Index = () => {
                 href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-sm text-slate-600 hover:text-slate-900 transition-colors py-1"
+                className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
               >
                 CV
               </a>
               <a
                 href="mailto:pieerry@gmail.com"
-                className="block text-sm text-slate-600 hover:text-slate-900 transition-colors py-1"
+                className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
               >
                 Contact
               </a>
@@ -193,28 +198,28 @@ const Index = () => {
           </div>
 
           {/* Big Name */}
-          <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900 tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl font-semibold text-foreground tracking-tight mb-6">
             Hey, I'm Pierry.
           </h1>
 
-          <p className="text-xl text-slate-600 leading-relaxed mb-4">
+          <p className="text-xl text-muted-foreground leading-relaxed mb-4">
             Engineering Manager focused on delivering real value through technology, understanding what users truly need, and helping teams reach their full potential.
           </p>
 
-          <p className="text-base text-slate-500 leading-relaxed mb-6">
+          <p className="text-base text-muted-foreground/80 leading-relaxed mb-6">
             14 years shipping software across fintech, healthtech, and logistics. Currently leading
             engineering at Intelipost and building{" "}
-            <a href="https://spacemetrics.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://spacemetrics.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
               SpaceMetrics.ai
             </a>
             , a platform for engineering delivery metrics. I'm also maintaining an open-source{" "}
-            <a href="https://github.com/space-metrics-ai/engineering-delivery-playbook" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://github.com/space-metrics-ai/engineering-delivery-playbook" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
               Engineering Delivery Playbook
             </a>
             .
           </p>
 
-          <p className="text-base text-slate-500 leading-relaxed mb-8">
+          <p className="text-base text-muted-foreground/80 leading-relaxed mb-8">
             I care about backend development (Java, Kotlin, Python, Node), mobile
             (Android, iOS, Flutter, KMP), architecture, and actually solving problems
             that matter.
@@ -226,7 +231,7 @@ const Index = () => {
               href="https://github.com/Pierry"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-slate-900 transition-colors"
+              className="text-muted-foreground/60 hover:text-foreground transition-colors"
               aria-label="GitHub"
             >
               <Github size={22} />
@@ -235,7 +240,7 @@ const Index = () => {
               href="https://www.linkedin.com/in/pierryborges/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-slate-900 transition-colors"
+              className="text-muted-foreground/60 hover:text-foreground transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={22} />
@@ -245,41 +250,41 @@ const Index = () => {
 
         {/* Experience Section */}
         <section className="mb-16">
-          <h2 className="text-sm font-medium text-slate-500 uppercase tracking-wide mb-6">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
             Experience
           </h2>
 
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-              <span className="text-base text-slate-900">Intelipost</span>
-              <span className="text-sm text-slate-500">Engineering Manager, 2023–Present</span>
+              <span className="text-base text-foreground">Intelipost</span>
+              <span className="text-sm text-muted-foreground">Engineering Manager, 2023–Present</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-              <span className="text-base text-slate-900">PicPay</span>
-              <span className="text-sm text-slate-500">Engineering Manager, 2022–2023</span>
+              <span className="text-base text-foreground">PicPay</span>
+              <span className="text-sm text-muted-foreground">Engineering Manager, 2022–2023</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-              <span className="text-base text-slate-900">Grupo Fleury</span>
-              <span className="text-sm text-slate-500">Engineering Manager, 2018–2022</span>
+              <span className="text-base text-foreground">Grupo Fleury</span>
+              <span className="text-sm text-muted-foreground">Engineering Manager, 2018–2022</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-              <span className="text-base text-slate-900">4bus</span>
-              <span className="text-sm text-slate-500">Mobile Architect, 2018</span>
+              <span className="text-base text-foreground">4bus</span>
+              <span className="text-sm text-muted-foreground">Mobile Architect, 2018</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-              <span className="text-base text-slate-900">Expense Mobi</span>
-              <span className="text-sm text-slate-500">Technical Lead, 2016–2018</span>
+              <span className="text-base text-foreground">Expense Mobi</span>
+              <span className="text-sm text-muted-foreground">Technical Lead, 2016–2018</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-              <span className="text-base text-slate-900">Deloitte</span>
-              <span className="text-sm text-slate-500">Mobile Engineer, 2016</span>
+              <span className="text-base text-foreground">Deloitte</span>
+              <span className="text-sm text-muted-foreground">Mobile Engineer, 2016</span>
             </div>
           </div>
         </section>
 
         {/* Projects Section */}
         <section className="mb-16">
-          <h2 className="text-sm font-medium text-slate-500 uppercase tracking-wide mb-6">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
             Projects
           </h2>
 
@@ -289,51 +294,51 @@ const Index = () => {
                 href="https://spacemetrics.ai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                className="text-base text-foreground hover:text-primary transition-colors"
               >
                 SpaceMetrics.ai
               </a>
-              <span className="text-sm text-slate-500">Engineering delivery analytics</span>
+              <span className="text-sm text-muted-foreground">Engineering delivery analytics</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
                 href="https://github.com/space-metrics-ai/engineering-delivery-playbook"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                className="text-base text-foreground hover:text-primary transition-colors"
               >
                 Engineering Delivery Playbook
               </a>
-              <span className="text-sm text-slate-500">Open source</span>
+              <span className="text-sm text-muted-foreground">Open source</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
                 href="https://apps.apple.com/us/app/how-much-i-run/id6748591105"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                className="text-base text-foreground hover:text-primary transition-colors"
               >
                 How Much I Run
               </a>
-              <span className="text-sm text-slate-500">iOS App</span>
+              <span className="text-sm text-muted-foreground">iOS App</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
                 href="https://todone.site/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                className="text-base text-foreground hover:text-primary transition-colors"
               >
                 Todone
               </a>
-              <span className="text-sm text-slate-500">Task management app</span>
+              <span className="text-sm text-muted-foreground">Task management app</span>
             </div>
           </div>
         </section>
 
         {/* Open-source Apps Section */}
         <section className="mb-16">
-          <h2 className="text-sm font-medium text-slate-500 uppercase tracking-wide mb-6">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
             Open-source Apps
           </h2>
 
@@ -344,7 +349,7 @@ const Index = () => {
                   href="https://meeting-messaging-app.web.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                  className="text-base text-foreground hover:text-primary transition-colors"
                 >
                   Meeting Message
                 </a>
@@ -352,12 +357,12 @@ const Index = () => {
                   href="https://github.com/Pierry/meeting-messaging"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-slate-500 hover:text-blue-600 transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   View Code
                 </a>
               </div>
-              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 A simple messaging app for meetings and team communication.
               </p>
             </div>
@@ -368,7 +373,7 @@ const Index = () => {
                   href="https://where-i-would-have-been-born.web.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                  className="text-base text-foreground hover:text-primary transition-colors"
                 >
                   Where I Would Have Been Born
                 </a>
@@ -376,12 +381,12 @@ const Index = () => {
                   href="https://github.com/Pierry/where-i-would-have-been-born"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-slate-500 hover:text-blue-600 transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   View Code
                 </a>
               </div>
-              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.
               </p>
             </div>
@@ -392,7 +397,7 @@ const Index = () => {
                   href="https://plugins.jetbrains.com/plugin/29931-cloud-dancer-theme"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                  className="text-base text-foreground hover:text-primary transition-colors"
                 >
                   Cloud Dancer Theme
                 </a>
@@ -400,12 +405,12 @@ const Index = () => {
                   href="https://github.com/Pierry/cloud-dancer-theme"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-slate-500 hover:text-blue-600 transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   View Code
                 </a>
               </div>
-              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.
               </p>
             </div>
@@ -416,7 +421,7 @@ const Index = () => {
                   href="https://github.com/space-metrics-ai/clawdbot-awesome"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                  className="text-base text-foreground hover:text-primary transition-colors"
                 >
                   Awesome Clawdbot
                 </a>
@@ -424,12 +429,12 @@ const Index = () => {
                   href="https://github.com/space-metrics-ai/clawdbot-awesome"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-slate-500 hover:text-blue-600 transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   View Code
                 </a>
               </div>
-              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                 A curated collection of awesome use cases, prompts, workflows, and resources for Clawdbot.
               </p>
             </div>
@@ -438,7 +443,7 @@ const Index = () => {
 
         {/* Recommended Section */}
         <section className="mb-16">
-          <h2 className="text-sm font-medium text-slate-500 uppercase tracking-wide mb-6">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
             Recommended
           </h2>
 
@@ -455,24 +460,24 @@ const Index = () => {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-base text-slate-900 hover:text-blue-600 transition-colors"
+                        className="text-base text-foreground hover:text-primary transition-colors"
                       >
                         {item.title}
                       </a>
                       {itemIsNew && !isSeen && (
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200">
                           New
                         </span>
                       )}
                     </div>
                     <div className="flex items-center gap-3">
-                      <span className="text-sm text-slate-500">{item.date}</span>
+                      <span className="text-sm text-muted-foreground">{item.date}</span>
                       <button
                         onClick={() => isSeen ? markAsUnseen(item.id) : markAsSeen(item.id)}
                         className={`inline-flex items-center gap-1 px-2 py-1 rounded text-xs font-medium transition-colors ${
                           isSeen
-                            ? "bg-slate-200 text-slate-600 hover:bg-slate-300"
-                            : "bg-slate-100 text-slate-500 hover:bg-slate-200"
+                            ? "bg-accent text-muted-foreground hover:bg-accent/80"
+                            : "bg-accent/50 text-muted-foreground/80 hover:bg-accent"
                         }`}
                         title={isSeen ? "Mark as unread" : "Mark as seen"}
                       >
@@ -490,7 +495,7 @@ const Index = () => {
                       </button>
                     </div>
                   </div>
-                  <p className="text-sm text-slate-500 mt-1 leading-relaxed">
+                  <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -502,10 +507,10 @@ const Index = () => {
       </main>
 
       {/* Footer - Minimal */}
-      <footer className="border-t border-slate-200">
+      <footer className="border-t border-border">
         <div className="max-w-3xl mx-auto px-6 py-8">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <p className="text-sm text-slate-500">
+            <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Pierry Borges
             </p>
             <div className="flex items-center space-x-4">
@@ -513,7 +518,7 @@ const Index = () => {
                 href="https://github.com/Pierry"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-400 hover:text-slate-600 transition-colors"
+                className="text-muted-foreground/60 hover:text-muted-foreground transition-colors"
                 aria-label="GitHub"
               >
                 <Github size={18} />
@@ -522,7 +527,7 @@ const Index = () => {
                 href="https://www.linkedin.com/in/pierryborges/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-400 hover:text-slate-600 transition-colors"
+                className="text-muted-foreground/60 hover:text-muted-foreground transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
