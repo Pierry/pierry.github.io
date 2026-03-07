@@ -15,11 +15,21 @@ const rankEmoji = (rank: number): string => {
 
 const Newsletters = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('lang') as Lang | null;
+      if (stored === 'en' || stored === 'pt') return stored;
+    }
+    return 'en';
+  });
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const location = useLocation();
 
-  const toggleLang = () => setLang(lang === "en" ? "pt" : "en");
+  const toggleLang = () => {
+    const newLang = lang === "en" ? "pt" : "en";
+    setLang(newLang);
+    localStorage.setItem('lang', newLang);
+  };
 
   const generateEntryId = (digestId: string, rank: number) => `${digestId}-${rank}`;
 
