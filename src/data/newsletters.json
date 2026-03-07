@@ -1,6 +1,90 @@
 {
   "digests": [
     {
+      "id": "2026-03-07",
+      "date": "2026-03-07",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "ByteByteGo",
+          "author": "Sualeh Asif (Cursor Co-founder)",
+          "title": {
+            "en": "Lessons from Building Cursor",
+            "pt": "Lições da Construção do Cursor"
+          },
+          "summary": {
+            "en": "Sualeh Asif, co-founder of Cursor, shares invaluable insights from building the most hyped AI coding tool of 2026 at The Pragmatic Summit. The conversation covers Composer 1.5's new agentic model, the shift toward cloud agents, and what software engineering will look like in one year. He reveals lessons learned from building a browser in just one week and offers concrete advice for engineers navigating the AI-augmented development landscape. Key revelation: Cursor's approach treats AI as a true pair programmer, not just an autocomplete tool — and this philosophy is reshaping how we think about developer productivity.",
+            "pt": "Sualeh Asif, cofundador do Cursor, compartilha insights valiosos da construção da ferramenta de AI coding mais hypada de 2026 no The Pragmatic Summit. A conversa aborda o novo modelo agêntico do Composer 1.5, a mudança para agentes na nuvem, e como será a engenharia de software daqui a um ano. Ele revela lições aprendidas ao construir um browser em apenas uma semana e oferece conselhos concretos para engenheiros navegando o cenário de desenvolvimento aumentado por IA. Revelação chave: a abordagem do Cursor trata IA como um verdadeiro pair programmer, não apenas autocomplete — e essa filosofia está reformulando como pensamos sobre produtividade de desenvolvedores."
+          },
+          "insights": {
+            "en": [
+              "Cloud agents are the future: Cursor's Composer 1.5 moves computation to the cloud, enabling more powerful agentic workflows that can reason across entire codebases",
+              "Software engineering in 1 year will be fundamentally different — engineers will orchestrate AI agents rather than write most code themselves",
+              "Build fast, learn faster: the team built a functional browser in one week as a learning exercise, proving that rapid prototyping with AI is now the norm"
+            ],
+            "pt": [
+              "Agentes na nuvem são o futuro: o Composer 1.5 do Cursor move computação para a nuvem, habilitando workflows agênticos mais poderosos que raciocinam sobre codebases inteiras",
+              "Engenharia de software em 1 ano será fundamentalmente diferente — engenheiros vão orquestrar agentes de IA ao invés de escrever a maior parte do código",
+              "Construa rápido, aprenda mais rápido: o time construiu um browser funcional em uma semana como exercício de aprendizado, provando que prototipagem rápida com IA agora é norma"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=dUMsFQ8y3gM"
+        },
+        {
+          "rank": 2,
+          "newsletter": "Milan Jovanović",
+          "author": "Milan Jovanović",
+          "title": {
+            "en": "5 Architecture Tests You Should Add to Your .NET Projects",
+            "pt": "5 Testes de Arquitetura Que Você Deveria Adicionar aos Seus Projetos .NET"
+          },
+          "summary": {
+            "en": "Every project starts with good architectural intentions — layer boundaries, naming conventions, dependency direction. Six months later, someone violates these rules and nobody catches it in code review. Milan presents a practical solution: architecture tests using ArchUnitNET that run in CI and fail the build when violations occur. The article covers five essential test types: layer dependency tests (ensuring inner layers never reference outer ones), naming convention tests (CommandHandler suffix enforcement), visibility tests (internal vs public), domain model purity tests, and dependency injection tests. These tests serve as living documentation of your intended architecture and catch drift before it becomes technical debt.",
+            "pt": "Todo projeto começa com boas intenções arquiteturais — fronteiras de camadas, convenções de nomenclatura, direção de dependências. Seis meses depois, alguém viola essas regras e ninguém percebe no code review. Milan apresenta uma solução prática: testes de arquitetura usando ArchUnitNET que rodam no CI e quebram o build quando violações ocorrem. O artigo cobre cinco tipos essenciais de testes: testes de dependência de camadas (garantindo que camadas internas nunca referenciem externas), testes de convenção de nomenclatura (forçando sufixo CommandHandler), testes de visibilidade (internal vs public), testes de pureza do domain model, e testes de dependency injection. Esses testes servem como documentação viva da arquitetura pretendida."
+          },
+          "insights": {
+            "en": [
+              "Layer dependency tests are the #1 priority: they're your safety net even when project references already prevent obvious violations (NuGet transitives can leak)",
+              "Naming conventions compound: when you have 50 command handlers and 3 are named wrong, searching the codebase becomes unreliable — automate this check",
+              "Architecture tests are living documentation: they communicate intent better than diagrams on Confluence that nobody maintains"
+            ],
+            "pt": [
+              "Testes de dependência de camadas são prioridade #1: são sua rede de segurança mesmo quando referências de projeto já previnem violações óbvias (transitivos de NuGet podem vazar)",
+              "Convenções de nomenclatura se acumulam: quando você tem 50 command handlers e 3 estão nomeados errado, buscar no codebase se torna não confiável — automatize essa verificação",
+              "Testes de arquitetura são documentação viva: comunicam intenção melhor que diagramas no Confluence que ninguém mantém"
+            ]
+          },
+          "link": "https://www.milanjovanovic.tech/blog/5-architecture-tests-you-should-add-to-your-dotnet-projects"
+        },
+        {
+          "rank": 3,
+          "newsletter": "Coding Challenges",
+          "author": "John Crickett",
+          "title": {
+            "en": "Coding Challenge #110 - RTFM For Me Agent",
+            "pt": "Coding Challenge #110 - Agente RTFM For Me"
+          },
+          "summary": {
+            "en": "John presents a hands-on challenge to build an AI-powered documentation assistant using Retrieval-Augmented Generation (RAG). Instead of relying solely on what an AI model was trained on, you build a system that retrieves specific documents relevant to a question and feeds them as context — producing grounded, accurate answers with source citations. Redis is the backbone: it handles vector search for finding relevant documents, semantic caching to avoid redundant AI calls, session storage for conversation history, and long-term memory. The challenge walks through building a complete pipeline: document ingestion (chunking + embeddings), vector indexing in Redis, RAG-based answer generation, and a REST API wrapper.",
+            "pt": "John apresenta um desafio hands-on para construir um assistente de documentação powered by AI usando Retrieval-Augmented Generation (RAG). Ao invés de depender apenas do que o modelo de IA foi treinado, você constrói um sistema que recupera documentos específicos relevantes para uma pergunta e os alimenta como contexto — produzindo respostas fundamentadas e precisas com citações de fonte. Redis é a espinha dorsal: ele lida com busca vetorial para encontrar documentos relevantes, caching semântico para evitar chamadas redundantes de IA, armazenamento de sessão para histórico de conversas, e memória de longo prazo. O desafio percorre a construção de um pipeline completo: ingestão de documentos (chunking + embeddings), indexação vetorial no Redis, geração de respostas baseada em RAG, e um wrapper de API REST."
+          },
+          "insights": {
+            "en": [
+              "RAG is the practical AI skill of 2026: knowing how to build retrieval pipelines that ground LLM responses in real data is essential for production AI systems",
+              "Redis as AI infrastructure: vector search, semantic caching, and session storage in one tool simplifies architecture significantly",
+              "The 'RTFM' problem is solved: instead of telling users to read docs, you build an agent that reads for them — this pattern applies to any documentation-heavy domain"
+            ],
+            "pt": [
+              "RAG é a skill prática de IA de 2026: saber construir pipelines de recuperação que fundamentam respostas de LLM em dados reais é essencial para sistemas de IA em produção",
+              "Redis como infraestrutura de IA: busca vetorial, caching semântico e armazenamento de sessão em uma ferramenta simplifica arquitetura significativamente",
+              "O problema 'RTFM' está resolvido: ao invés de dizer para usuários lerem docs, você constrói um agente que lê para eles — esse padrão se aplica a qualquer domínio pesado em documentação"
+            ]
+          },
+          "link": "https://codingchallenges.substack.com/p/coding-challenge-110-rtfm-for-me"
+        }
+      ]
+    },
+    {
       "id": "2026-03-06",
       "date": "2026-03-06",
       "entries": [
