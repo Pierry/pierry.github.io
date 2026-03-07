@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { Menu, X, Github, Linkedin, Globe, ExternalLink, Share2, Check } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import newslettersData from "../data/newsletters.json";
@@ -24,6 +24,7 @@ const Newsletters = () => {
   });
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const location = useLocation();
+  const { entryId: routeEntryId } = useParams<{ entryId?: string }>();
 
   const toggleLang = () => {
     const newLang = lang === "en" ? "pt" : "en";
@@ -34,24 +35,24 @@ const Newsletters = () => {
   const generateEntryId = (digestId: string, rank: number) => `${digestId}-${rank}`;
 
   const copyShareLink = async (entryId: string) => {
-    const url = `${window.location.origin}${window.location.pathname}#${entryId}`;
+    const url = `${window.location.origin}/newsletters/${entryId}`;
     await navigator.clipboard.writeText(url);
     setCopiedId(entryId);
     setTimeout(() => setCopiedId(null), 2000);
   };
 
-  // Scroll to entry if hash is present
+  // Scroll to entry if path param is present
   useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.slice(1);
+    const targetId = routeEntryId || (location.hash ? location.hash.slice(1) : null);
+    if (targetId) {
       setTimeout(() => {
-        const element = document.getElementById(id);
+        const element = document.getElementById(targetId);
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }, 100);
     }
-  }, [location.hash]);
+  }, [routeEntryId, location.hash]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -66,7 +67,7 @@ const Newsletters = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <Link
-                to="/#/newsletters"
+                to="/newsletters"
                 className="text-sm text-foreground font-medium"
               >
                 Newsletters
