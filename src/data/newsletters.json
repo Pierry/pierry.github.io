@@ -32,29 +32,29 @@
         },
         {
           "rank": 2,
-          "newsletter": "Milan Jovanović",
-          "author": "Milan Jovanović",
+          "newsletter": "Anthropic Research",
+          "author": "Judy Hanwen Shen & Alex Tamkin",
           "title": {
-            "en": "5 Architecture Tests You Should Add to Your .NET Projects",
-            "pt": "5 Testes de Arquitetura Que Você Deveria Adicionar aos Seus Projetos .NET"
+            "en": "How AI Assistance Impacts the Formation of Coding Skills",
+            "pt": "Como Assistência de IA Impacta a Formação de Habilidades de Coding"
           },
           "summary": {
-            "en": "Every project starts with good architectural intentions — layer boundaries, naming conventions, dependency direction. Six months later, someone violates these rules and nobody catches it in code review. Milan presents a practical solution: architecture tests using ArchUnitNET that run in CI and fail the build when violations occur. The article covers five essential test types: layer dependency tests (ensuring inner layers never reference outer ones), naming convention tests (CommandHandler suffix enforcement), visibility tests (internal vs public), domain model purity tests, and dependency injection tests. These tests serve as living documentation of your intended architecture and catch drift before it becomes technical debt.",
-            "pt": "Todo projeto começa com boas intenções arquiteturais — fronteiras de camadas, convenções de nomenclatura, direção de dependências. Seis meses depois, alguém viola essas regras e ninguém percebe no code review. Milan apresenta uma solução prática: testes de arquitetura usando ArchUnitNET que rodam no CI e quebram o build quando violações ocorrem. O artigo cobre cinco tipos essenciais de testes: testes de dependência de camadas (garantindo que camadas internas nunca referenciem externas), testes de convenção de nomenclatura (forçando sufixo CommandHandler), testes de visibilidade (internal vs public), testes de pureza do domain model, e testes de dependency injection. Esses testes servem como documentação viva da arquitetura pretendida."
+            "en": "Anthropic ran a randomized controlled trial with 52 software developers to investigate whether AI coding assistance impacts skill development. The results are striking: developers using AI scored 17% lower on mastery quizzes — nearly two letter grades — compared to those who coded by hand. The largest gap was in debugging skills, which is ironic given that debugging AI-generated code is becoming increasingly important. Crucially, HOW developers used AI determined outcomes: those who delegated everything learned little, while those who asked for explanations alongside code generation retained knowledge. The study identifies specific interaction patterns: low-scoring behaviors (AI delegation, progressive reliance, iterative AI debugging) vs high-scoring ones (generation-then-comprehension, hybrid code-explanation, conceptual inquiry).",
+            "pt": "A Anthropic conduziu um estudo controlado com 52 desenvolvedores para investigar se assistência de IA para código impacta o desenvolvimento de habilidades. Os resultados são marcantes: desenvolvedores usando IA tiveram notas 17% menores em quizzes de compreensão — quase duas notas na escola — comparados aos que codaram na mão. A maior diferença foi em habilidades de debugging, o que é irônico dado que debugar código gerado por IA está se tornando cada vez mais importante. Crucialmente, COMO desenvolvedores usaram IA determinou os resultados: quem delegou tudo aprendeu pouco, enquanto quem pediu explicações junto com geração de código reteve conhecimento. O estudo identifica padrões de interação específicos: comportamentos de baixa pontuação (delegação total, dependência progressiva, debugging iterativo via AI) vs alta pontuação (geração-então-compreensão, código-explicação híbrido, consultas conceituais)."
           },
           "insights": {
             "en": [
-              "Layer dependency tests are the #1 priority: they're your safety net even when project references already prevent obvious violations (NuGet transitives can leak)",
-              "Naming conventions compound: when you have 50 command handlers and 3 are named wrong, searching the codebase becomes unreliable — automate this check",
-              "Architecture tests are living documentation: they communicate intent better than diagrams on Confluence that nobody maintains"
+              "The productivity vs learning tradeoff is real: AI group finished ~2 min faster but scored 17% lower on comprehension — speed came at the cost of understanding",
+              "Debugging skills suffer most: the biggest gap was in debugging questions — exactly the skill you need when AI-generated code breaks",
+              "HOW you use AI matters: asking 'explain this code' after generation preserves learning; blindly copy-pasting destroys it"
             ],
             "pt": [
-              "Testes de dependência de camadas são prioridade #1: são sua rede de segurança mesmo quando referências de projeto já previnem violações óbvias (transitivos de NuGet podem vazar)",
-              "Convenções de nomenclatura se acumulam: quando você tem 50 command handlers e 3 estão nomeados errado, buscar no codebase se torna não confiável — automatize essa verificação",
-              "Testes de arquitetura são documentação viva: comunicam intenção melhor que diagramas no Confluence que ninguém mantém"
+              "O tradeoff produtividade vs aprendizado é real: grupo AI terminou ~2 min mais rápido mas teve nota 17% menor em compreensão — velocidade veio ao custo de entendimento",
+              "Habilidades de debugging sofrem mais: a maior diferença foi em questões de debugging — exatamente a skill que você precisa quando código gerado por IA quebra",
+              "COMO você usa IA importa: perguntar 'explica esse código' após geração preserva aprendizado; copy-paste cego destrói"
             ]
           },
-          "link": "https://www.milanjovanovic.tech/blog/5-architecture-tests-you-should-add-to-your-dotnet-projects"
+          "link": "https://www.anthropic.com/research/AI-assistance-coding-skills"
         },
         {
           "rank": 3,
