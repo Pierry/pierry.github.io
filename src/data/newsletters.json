@@ -44,6 +44,32 @@
         },
         {
           "rank": 2,
+          "newsletter": "Confluent",
+          "author": "Sean Falconer",
+          "title": {
+            "en": "Event-Driven Design for Agents and Multi-Agent Systems",
+            "pt": "Design Orientado a Eventos para Agentes e Sistemas Multi-Agente"
+          },
+          "summary": {
+            "en": "Sean Falconer from Confluent delivers a comprehensive guide on why event-driven architecture is the backbone of scalable AI agent systems.\n\nThe ebook traces AI's evolution through three waves: Predictive AI (narrow, domain-specific models), Generative AI (foundation models like LLMs), and now Agentic AI — systems that don't just generate, but have agency to act, adapt, and collaborate in real time.\n\nThe core insight: AI agents function like microservices. Just as microservices evolved from tightly-coupled request/response patterns to event-driven architectures for scalability, AI agents need the same shift.",
+            "pt": "Sean Falconer da Confluent entrega um guia abrangente sobre por que arquitetura orientada a eventos é a espinha dorsal de sistemas de agentes de IA escaláveis.\n\nO ebook traça a evolução da IA através de três ondas: IA Preditiva, IA Generativa, e agora IA Agêntica — sistemas que não apenas geram, mas têm agência para agir, adaptar e colaborar em tempo real.\n\nO insight central: agentes de IA funcionam como microserviços. Assim como microserviços evoluíram de padrões request/response para arquiteturas orientadas a eventos, agentes de IA precisam da mesma mudança."
+          },
+          "insights": {
+            "en": [
+              "Agents = Microservices 2.0: Just as microservices needed event-driven architecture to scale, AI agents need the same shift.",
+              "The Blackboard Pattern is powerful: Instead of agents querying each other directly, they publish to a shared streaming topic.",
+              "Shift Left: Process data closer to the source for real-time decision-making."
+            ],
+            "pt": [
+              "Agentes = Microserviços 2.0: Assim como microserviços precisaram de arquitetura orientada a eventos para escalar, agentes de IA precisam da mesma mudança.",
+              "O Padrão Blackboard é poderoso: Em vez de agentes consultarem uns aos outros diretamente, eles publicam em um tópico streaming compartilhado.",
+              "Shift Left: Processe dados mais perto da fonte para tomada de decisão em tempo real."
+            ]
+          },
+          "link": "https://www.confluent.io/resources/ebook/event-driven-design-for-agents/"
+        },
+        {
+          "rank": 3,
           "newsletter": "Tech With Tim",
           "author": "Tim Ruscica",
           "title": {
