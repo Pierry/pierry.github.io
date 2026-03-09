@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
-import { Menu, X, Github, Linkedin, Globe, ExternalLink, Share2, Check } from "lucide-react";
+import { Menu, X, Github, Linkedin, Globe, ExternalLink, Share2, Check, Headphones } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import newslettersData from "../data/newsletters.json";
 
@@ -165,14 +165,28 @@ const Newsletters = () => {
               {/* Date Header */}
               <div className="flex items-center gap-4 mb-8">
                 <div className="h-px flex-1 bg-border" />
-                <span className="text-sm font-medium text-muted-foreground uppercase tracking-wide">
-                  {new Date(digest.date + "T12:00:00").toLocaleDateString(lang === "en" ? "en-US" : "pt-BR", {
-                    weekday: "long",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric"
-                  })}
-                </span>
+                <div className="flex items-center gap-3">
+                  <span className="text-sm font-medium text-muted-foreground uppercase tracking-wide">
+                    {new Date(digest.date + "T12:00:00").toLocaleDateString(lang === "en" ? "en-US" : "pt-BR", {
+                      weekday: "long",
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric"
+                    })}
+                  </span>
+                  {(digest as any).podcastLink && (
+                    <a
+                      href={(digest as any).podcastLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#1DB954]/10 text-[#1DB954] hover:bg-[#1DB954]/20 transition-colors text-xs font-medium"
+                      title={lang === "en" ? "Listen on Spotify" : "Ouvir no Spotify"}
+                    >
+                      <Headphones size={14} />
+                      <span>Podcast</span>
+                    </a>
+                  )}
+                </div>
                 <div className="h-px flex-1 bg-border" />
               </div>
 
