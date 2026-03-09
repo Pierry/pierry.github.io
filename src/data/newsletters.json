@@ -1,6 +1,90 @@
 {
   "digests": [
     {
+      "id": "2026-03-09",
+      "date": "2026-03-09",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Abdirahman Jama (AWS)",
+          "title": {
+            "en": "I Struggled With System Design Interview Until I Learned This Framework",
+            "pt": "Eu Sofria com Entrevistas de System Design Até Aprender Este Framework"
+          },
+          "summary": {
+            "en": "Abdirahman Jama, an L5 Software Engineer at AWS who conducts system design interviews, shares his journey from failing Amazon's interview in 2021 to becoming an interviewer himself. The core revelation: most engineers who fail aren't bad engineers — they just lack a framework for turning vague problems into structured conversations. He presents a 5-step framework with precise time allocation: Requirements & Scope (5 min), Data Model & API Design (10 min), High-Level Design (15 min), Scalability & Fault Tolerance (5 min), and Wrap-Up (5 min). The article reveals what interviewers actually evaluate: collaboration skills, problem decomposition, trade-off analysis, handling failure modes, and time management. Key insight: interviewers aren't looking for the 'right answer' — there isn't one! They're evaluating whether you can think systematically about ambiguous problems.",
+            "pt": "Abdirahman Jama, engenheiro L5 na AWS que conduz entrevistas de system design, compartilha sua jornada de reprovar na entrevista da Amazon em 2021 até se tornar ele mesmo um entrevistador. A revelação central: a maioria dos engenheiros que reprova não são engenheiros ruins — apenas falta um framework para transformar problemas vagos em conversas estruturadas. Ele apresenta um framework de 5 passos com alocação de tempo precisa: Requirements & Scope (5 min), Data Model & API Design (10 min), High-Level Design (15 min), Scalability & Fault Tolerance (5 min), e Wrap-Up (5 min). O artigo revela o que entrevistadores realmente avaliam: habilidades de colaboração, decomposição de problemas, análise de trade-offs, tratamento de modos de falha, e gerenciamento de tempo. Insight chave: entrevistadores não procuram a 'resposta certa' — não existe uma! Eles avaliam se você consegue pensar sistematicamente sobre problemas ambíguos."
+          },
+          "insights": {
+            "en": [
+              "Never jump straight to drawing boxes — spend first 5 minutes clarifying requirements and validating assumptions with the interviewer",
+              "Trade-off articulation is critical: don't just say 'use PostgreSQL' — explain WHY based on the specific requirements (read/write ratio, consistency needs, scale)",
+              "Design for failure, not just the happy path — interviewers spot engineers who've shipped production systems by how they discuss failure modes and recovery strategies"
+            ],
+            "pt": [
+              "Nunca pule direto para desenhar boxes — passe os primeiros 5 minutos clarificando requisitos e validando suposições com o entrevistador",
+              "Articulação de trade-offs é crítica: não diga apenas 'usar PostgreSQL' — explique POR QUÊ baseado nos requisitos específicos (ratio leitura/escrita, necessidades de consistência, escala)",
+              "Projete para falha, não só o caminho feliz — entrevistadores identificam engenheiros que já shiparam sistemas de produção por como discutem modos de falha e estratégias de recovery"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/how-to-prepare-for-system-design-interview"
+        },
+        {
+          "rank": 2,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "CAP Questions Almost Never Appear Labeled as 'CAP Theorem'",
+            "pt": "Questões de CAP Quase Nunca Aparecem Rotuladas como 'Teorema CAP'"
+          },
+          "summary": {
+            "en": "Raul tackles one of the trickiest interview questions: 'Can a system be accurate but inconsistent?' The answer isn't an oxymoron — it's fundamental to distributed systems. The article distinguishes accuracy (data reflects real-world value) from consistency (in CAP terms, linearizability where reads see the most recent write). A user updating their email demonstrates accuracy-without-consistency: the primary has the correct value (accurate), but replicas temporarily show the old value (inconsistent). Conversely, a bug writing the wrong tax rate shows consistency-without-accuracy: every node agrees on the same wrong value. The key insight: strong consistency protects agreement about the ORDER of writes, not the TRUTH of the data. Truth depends on application validation, business rules, and domain logic. The article explains why banking/payments need strong consistency (double-charge prevention) while social feeds/analytics can tolerate eventual consistency (a post appearing seconds later doesn't hurt UX).",
+            "pt": "Raul aborda uma das perguntas mais difíceis de entrevistas: 'Um sistema pode ser preciso mas inconsistente?' A resposta não é um oxímoro — é fundamental para sistemas distribuídos. O artigo distingue precisão (dados refletem valor do mundo real) de consistência (em termos CAP, linearizabilidade onde leituras veem a escrita mais recente). Um usuário atualizando seu email demonstra precisão-sem-consistência: o primário tem o valor correto (preciso), mas réplicas temporariamente mostram o valor antigo (inconsistente). Inversamente, um bug escrevendo a taxa de imposto errada mostra consistência-sem-precisão: todo nó concorda no mesmo valor errado. O insight chave: consistência forte protege acordo sobre a ORDEM das escritas, não a VERDADE dos dados. Verdade depende de validação da aplicação, regras de negócio e lógica de domínio. O artigo explica por que banking/payments precisam de consistência forte (prevenção de cobrança dupla) enquanto feeds sociais/analytics toleram consistência eventual (um post aparecer segundos depois não prejudica UX)."
+          },
+          "insights": {
+            "en": [
+              "CAP interview questions come disguised as simple data questions — recognize the pattern: any question about 'what if two users see different values' is testing CAP understanding",
+              "Strong consistency ≠ correct data. A bug that writes wrong values will consistently return wrong values everywhere — consistency is about agreement, not truth",
+              "Choose your trade-off by domain: financial transactions need strong consistency (can't double-charge); social feeds can be eventually consistent (seeing a post 2 seconds later is fine)"
+            ],
+            "pt": [
+              "Questões de CAP em entrevistas vêm disfarçadas como perguntas simples sobre dados — reconheça o padrão: qualquer pergunta sobre 'e se dois usuários verem valores diferentes' está testando entendimento de CAP",
+              "Consistência forte ≠ dados corretos. Um bug que escreve valores errados vai consistentemente retornar valores errados em todo lugar — consistência é sobre acordo, não verdade",
+              "Escolha seu trade-off por domínio: transações financeiras precisam de consistência forte (não pode cobrar duas vezes); feeds sociais podem ser eventualmente consistentes (ver um post 2 segundos depois está ok)"
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/consistency-vs-accuracy-distributed-systems"
+        },
+        {
+          "rank": 3,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér",
+          "title": {
+            "en": "How DeepMind's New AI Predicts What It Cannot See",
+            "pt": "Como a Nova IA do DeepMind Prevê o Que Não Consegue Ver"
+          },
+          "summary": {
+            "en": "DeepMind introduces D4RT (Denoising Diffusion for Ray Tracing), a breakthrough in neural rendering that predicts what's hidden from the camera. Traditional rendering requires tracing millions of rays to capture indirect lighting, reflections, and shadows — computationally expensive. D4RT uses diffusion models to 'imagine' the parts of a scene that rays haven't directly sampled, dramatically reducing the rays needed while maintaining visual quality. The technique learns the statistical patterns of how light behaves in scenes, allowing it to fill in gaps with physically plausible results. This has major implications for real-time graphics in games, VR, and architectural visualization. The research demonstrates how AI can augment traditional computer graphics pipelines rather than replace them entirely — a pattern that's emerging across many engineering domains.",
+            "pt": "DeepMind apresenta D4RT (Denoising Diffusion for Ray Tracing), um avanço em renderização neural que prevê o que está escondido da câmera. Renderização tradicional requer traçar milhões de raios para capturar iluminação indireta, reflexos e sombras — computacionalmente caro. D4RT usa modelos de difusão para 'imaginar' as partes de uma cena que raios não amostraram diretamente, reduzindo dramaticamente os raios necessários mantendo qualidade visual. A técnica aprende padrões estatísticos de como luz se comporta em cenas, permitindo preencher lacunas com resultados fisicamente plausíveis. Isso tem implicações importantes para gráficos em tempo real em jogos, VR e visualização arquitetônica. A pesquisa demonstra como IA pode aumentar pipelines tradicionais de computação gráfica ao invés de substituí-los totalmente — um padrão emergente em muitos domínios de engenharia."
+          },
+          "insights": {
+            "en": [
+              "AI augmentation > AI replacement: D4RT shows the pattern of AI enhancing existing pipelines (ray tracing) rather than replacing them — relevant for how we integrate AI into engineering workflows",
+              "Diffusion models beyond images: the same technique powering Midjourney/DALL-E is now being applied to physics simulation and rendering — expect this pattern across more domains",
+              "Real-time implications: reducing computational cost while maintaining quality has direct applications in game engines, VR, and any latency-sensitive visualization"
+            ],
+            "pt": [
+              "Aumento por IA > Substituição por IA: D4RT mostra o padrão de IA melhorando pipelines existentes (ray tracing) ao invés de substituí-los — relevante para como integramos IA em workflows de engenharia",
+              "Modelos de difusão além de imagens: a mesma técnica por trás de Midjourney/DALL-E agora está sendo aplicada a simulação física e renderização — espere esse padrão em mais domínios",
+              "Implicações em tempo real: reduzir custo computacional mantendo qualidade tem aplicações diretas em game engines, VR e qualquer visualização sensível a latência"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=ssbHkYB0jYM"
+        }
+      ]
+    },
+    {
       "id": "2026-03-07",
       "date": "2026-03-07",
       "entries": [
