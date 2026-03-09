@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Digest por Pierry</title>
+    <link>https://pierry.github.io</link>
+    <atom:link href="https://pierry.github.io/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Resumo semanal das melhores newsletters e vídeos de tech, engenharia de software e system design. Gerado com NotebookLM AI.</description>
+    <language>pt-br</language>
+    <copyright>© 2026 Pierry Borges</copyright>
+    <lastBuildDate>Sun, 09 Mar 2026 12:00:00 -0300</lastBuildDate>
+    <itunes:author>Pierry Borges</itunes:author>
+    <itunes:summary>Resumo semanal das melhores newsletters e vídeos de tech, engenharia de software e system design. Gerado com NotebookLM AI.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Pierry Borges</itunes:name>
+      <itunes:email>pierry@example.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology"/>
+    <itunes:image href="https://pierry.github.io/podcast/cover.jpg"/>
+    
+    <!-- EPISODES GO HERE -->
+    <!-- Template for new episodes:
+    <item>
+      <title>Episode Title</title>
+      <description>Episode description here</description>
+      <pubDate>Sun, 09 Mar 2026 08:00:00 -0300</pubDate>
+      <enclosure url="https://pierry.github.io/podcast/episodes/ep-001.mp3" length="12345678" type="audio/mpeg"/>
+      <guid isPermaLink="false">ep-001-2026-03-09</guid>
+      <itunes:duration>10:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+    -->
+
+  </channel>
+</rss>
