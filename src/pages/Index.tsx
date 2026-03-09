@@ -1,10 +1,18 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Github, Linkedin, Check, Eye } from "lucide-react";
+import { Menu, X, Github, Linkedin, Check, Eye, Headphones } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 // Recommended items with added dates for "New" badge logic
 const recommendedItems = [
+  {
+    id: "tech-digest-podcast-ep1",
+    title: "🎙️ Tech Digest Podcast",
+    href: "https://open.spotify.com/episode/7b99MFyh2qDKxw5ut6rSaD",
+    date: "Podcast",
+    description: "Weekly tech digest: System Design interviews, CAP Theorem patterns, and DeepMind's AI breakthrough in spatial reasoning.",
+    addedAt: "2026-03-09",
+  },
   {
     id: "alloy-ai-prototyping",
     title: "Alloy",
@@ -244,6 +252,16 @@ const Index = () => {
               aria-label="LinkedIn"
             >
               <Linkedin size={22} />
+            </a>
+            <a
+              href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground/60 hover:text-[#1DB954] transition-colors"
+              aria-label="Tech Digest Podcast"
+              title="Pierry's Tech Digest Podcast"
+            >
+              <Headphones size={22} />
             </a>
           </div>
         </section>
