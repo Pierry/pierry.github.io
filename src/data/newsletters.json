@@ -1,6 +1,90 @@
 {
   "digests": [
     {
+      "id": "2026-03-10",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Fireship",
+          "author": "Jeff Delaney",
+          "title": {
+            "en": "The Greatest Unsolved Problem in Computer Science",
+            "pt": "O Maior Problema Não Resolvido da Ciência da Computação"
+          },
+          "summary": {
+            "en": "Jeff tackles P vs NP — arguably the most famous unsolved problem in computer science, worth $1 million from the Clay Mathematics Institute. The core question: if you can verify a solution quickly, can you also find that solution quickly? P represents problems solvable in polynomial time (efficiently), while NP represents problems whose solutions can be verified in polynomial time. The video explores why proving P=NP (or P≠NP) is so hard: we'd need to prove something about ALL possible algorithms, not just the ones we know. The implications are massive — if P=NP, cryptography breaks (RSA, blockchain), optimization problems become trivial, and AI could solve protein folding instantly. Most computer scientists believe P≠NP, but nobody can prove it. The video explains reductions, NP-completeness, and why the Traveling Salesman Problem is the poster child for NP-hard problems.",
+            "pt": "Jeff aborda P vs NP — indiscutivelmente o problema não resolvido mais famoso da ciência da computação, valendo $1 milhão do Clay Mathematics Institute. A questão central: se você consegue verificar uma solução rapidamente, também consegue encontrar essa solução rapidamente? P representa problemas resolvíveis em tempo polinomial (eficientemente), enquanto NP representa problemas cujas soluções podem ser verificadas em tempo polinomial. O vídeo explora por que provar P=NP (ou P≠NP) é tão difícil: precisaríamos provar algo sobre TODOS os algoritmos possíveis, não apenas os que conhecemos. As implicações são massivas — se P=NP, criptografia quebra (RSA, blockchain), problemas de otimização se tornam triviais, e IA poderia resolver protein folding instantaneamente. A maioria dos cientistas da computação acredita que P≠NP, mas ninguém consegue provar."
+          },
+          "insights": {
+            "en": [
+              "Understanding P vs NP is foundational for senior engineers: it explains why some problems have no 'fast' solution and why we resort to heuristics and approximations",
+              "Cryptographic security relies on the assumption P≠NP — if proven wrong, RSA, Bitcoin, and most security protocols would break overnight",
+              "NP-completeness is practical knowledge: when you can reduce your problem to a known NP-complete problem, you know to stop looking for a perfect algorithm and start looking for approximations"
+            ],
+            "pt": [
+              "Entender P vs NP é fundamental para engenheiros seniores: explica por que alguns problemas não têm solução 'rápida' e por que recorremos a heurísticas e aproximações",
+              "Segurança criptográfica depende da suposição P≠NP — se provado errado, RSA, Bitcoin e a maioria dos protocolos de segurança quebrariam da noite pro dia",
+              "NP-completude é conhecimento prático: quando você reduz seu problema a um problema NP-completo conhecido, você sabe que deve parar de procurar um algoritmo perfeito e começar a procurar aproximações"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=x36UmiSiEzc"
+        },
+        {
+          "rank": 2,
+          "newsletter": "System Design Codex",
+          "author": "Saurabh Dashora",
+          "title": {
+            "en": "How Agoda Load Balanced Kafka",
+            "pt": "Como a Agoda Balanceou Carga no Kafka"
+          },
+          "summary": {
+            "en": "Agoda processes hundreds of terabytes of data daily through Kafka for their travel booking platform, handling 1.5 million price updates per minute from suppliers. The article reveals why traditional round-robin partitioning failed: heterogeneous hardware (different server generations) and uneven workloads (some messages require API calls, others just DB queries) led to massive over-provisioning. Their solution? Lag-aware producers and consumers. The lag-aware producer dynamically routes fewer messages to partitions with high lag, using algorithms like Same-Queue Length (equalizing lag across partitions) and Outlier Detection (temporarily stopping publishing to slow partitions). The lag-aware consumer triggers Kafka rebalances when a consumer falls behind, redistributing partitions based on actual processing capacity. This approach eliminates the need for homogeneous hardware or manual weight tuning.",
+            "pt": "Agoda processa centenas de terabytes de dados diariamente pelo Kafka para sua plataforma de reservas de viagem, lidando com 1.5 milhão de atualizações de preço por minuto dos fornecedores. O artigo revela por que particionamento round-robin tradicional falhou: hardware heterogêneo (gerações diferentes de servidores) e workloads desiguais (algumas mensagens requerem chamadas API, outras só queries de DB) levaram a over-provisioning massivo. A solução? Producers e consumers cientes de lag. O producer ciente de lag roteia dinamicamente menos mensagens para partições com alto lag, usando algoritmos como Same-Queue Length (equalizando lag entre partições) e Outlier Detection (parando temporariamente publicação em partições lentas). O consumer ciente de lag dispara rebalances do Kafka quando um consumer fica para trás, redistribuindo partições baseado na capacidade real de processamento."
+          },
+          "insights": {
+            "en": [
+              "Round-robin is a lie in heterogeneous environments: when your pods run on different hardware generations, equal message distribution ≠ equal load — you end up over-provisioning by 40-60%",
+              "Lag is the true signal: instead of guessing capacity, measure actual lag and let that drive distribution — this is dynamic load balancing in action",
+              "Kafka's cooperative rebalance (2.4+) is a game changer: it enables frequent, low-impact partition reassignments, making lag-aware strategies practical without causing consumer group instability"
+            ],
+            "pt": [
+              "Round-robin é uma mentira em ambientes heterogêneos: quando seus pods rodam em gerações diferentes de hardware, distribuição igual de mensagens ≠ carga igual — você acaba provisionando 40-60% a mais",
+              "Lag é o sinal verdadeiro: ao invés de adivinhar capacidade, meça o lag real e deixe isso guiar a distribuição — isso é load balancing dinâmico em ação",
+              "Rebalance cooperativo do Kafka (2.4+) muda o jogo: permite reassignments de partição frequentes e de baixo impacto, tornando estratégias cientes de lag práticas sem causar instabilidade no consumer group"
+            ]
+          },
+          "link": "https://newsletter.systemdesigncodex.com/p/how-agoda-load-balanced-kafka"
+        },
+        {
+          "rank": 3,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér",
+          "title": {
+            "en": "NVIDIA's New AI Just Cracked The Hardest Part Of Self Driving",
+            "pt": "A Nova IA da NVIDIA Resolveu a Parte Mais Difícil dos Carros Autônomos"
+          },
+          "summary": {
+            "en": "NVIDIA introduces Alpamayo, an AI system that tackles the hardest problem in autonomous driving: understanding and predicting the behavior of other road users in complex, unstructured environments. Traditional self-driving approaches struggle with edge cases — pedestrians jaywalking, cyclists making unexpected turns, vehicles behaving erratically. Alpamayo uses a novel architecture that combines perception, prediction, and planning in a unified framework. Instead of treating these as separate modules (detect → predict → plan), the system learns end-to-end from real driving data. The key innovation is 'world modeling' — the AI builds an internal simulation of how the scene will evolve, allowing it to reason about what other agents might do next. This enables handling of long-tail scenarios that rule-based systems can't anticipate. The research demonstrates that learned world models outperform hand-crafted prediction rules in complex urban environments.",
+            "pt": "NVIDIA apresenta Alpamayo, um sistema de IA que aborda o problema mais difícil da direção autônoma: entender e prever o comportamento de outros usuários da estrada em ambientes complexos e não estruturados. Abordagens tradicionais de direção autônoma lutam com casos extremos — pedestres atravessando fora da faixa, ciclistas fazendo curvas inesperadas, veículos se comportando erraticamente. Alpamayo usa uma arquitetura nova que combina percepção, predição e planejamento em um framework unificado. Em vez de tratar como módulos separados (detectar → prever → planejar), o sistema aprende end-to-end de dados reais de direção. A inovação chave é 'world modeling' — a IA constrói uma simulação interna de como a cena vai evoluir, permitindo raciocinar sobre o que outros agentes podem fazer. Isso habilita tratamento de cenários de cauda longa que sistemas baseados em regras não conseguem antecipar."
+          },
+          "insights": {
+            "en": [
+              "End-to-end learning beats modular systems for complex real-world tasks: separating perception/prediction/planning creates information loss at each boundary — unified learning preserves context",
+              "World modeling is the key to robust AI: instead of reactive decisions, the AI simulates possible futures and plans accordingly — this is how humans drive too",
+              "Long-tail problems require learned solutions: you can't hand-code rules for every edge case — ML systems that learn from millions of driving hours capture patterns humans couldn't articulate"
+            ],
+            "pt": [
+              "Aprendizado end-to-end supera sistemas modulares para tarefas complexas do mundo real: separar percepção/predição/planejamento cria perda de informação em cada fronteira — aprendizado unificado preserva contexto",
+              "World modeling é a chave para IA robusta: ao invés de decisões reativas, a IA simula futuros possíveis e planeja de acordo — é assim que humanos dirigem também",
+              "Problemas de cauda longa requerem soluções aprendidas: você não consegue codificar regras para cada caso extremo — sistemas ML que aprendem de milhões de horas de direção capturam padrões que humanos não conseguiriam articular"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=s9SnEE7JXU4"
+        }
+      ]
+    },
+    {
       "id": "2026-03-09",
       "date": "2026-03-09",
       "entries": [
