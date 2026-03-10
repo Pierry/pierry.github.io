@@ -183,7 +183,7 @@ const Newsletters = () => {
                       title={lang === "en" ? "Listen on Spotify" : "Ouvir no Spotify"}
                     >
                       <Headphones size={14} />
-                      <span>Podcast</span>
+                      <span>Podcast {(digest as any).podcastLang === "pt" ? "🇧🇷" : "🇺🇸"}</span>
                     </a>
                   )}
                 </div>
