@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Github, Linkedin, Check, Eye, Headphones, Globe } from "lucide-react";
+import { Menu, X, Github, Linkedin, Check, Eye, Headphones, Globe, ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import newslettersData from "../data/newsletters.json";
 
 type Lang = "en" | "pt";
 
@@ -154,6 +155,12 @@ const t = {
     ossWhere: "A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.",
     ossCloudDancer: "A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.",
     ossAwesome: "A curated collection of awesome use cases, prompts, workflows, and resources for Clawdbot.",
+    // Daily Digest section
+    dailyDigest: "📰 Daily Tech Digest",
+    dailyDigestDesc: "Curated insights from top tech newsletters, every day.",
+    viewAll: "View all →",
+    listenPodcast: "Listen to Podcast",
+    readArticle: "Read",
   },
   pt: {
     newsletters: "Newsletters",
@@ -199,6 +206,12 @@ const t = {
     ossWhere: "Uma visualização divertida que mostra onde no mundo você teria nascido baseado na distribuição populacional global na sua data de nascimento.",
     ossCloudDancer: "Um tema sereno e claro para IDEs JetBrains inspirado na Cor do Ano 2026 da Pantone.",
     ossAwesome: "Uma coleção curada de casos de uso, prompts, workflows e recursos para o Clawdbot.",
+    // Daily Digest section
+    dailyDigest: "📰 Tech Digest Diário",
+    dailyDigestDesc: "Insights curados das melhores newsletters de tech, todo dia.",
+    viewAll: "Ver todos →",
+    listenPodcast: "Ouvir Podcast",
+    readArticle: "Ler",
   }
 };
 
@@ -412,6 +425,72 @@ const Index = () => {
             >
               <Linkedin size={22} />
             </a>
+          </div>
+        </section>
+
+        {/* Daily Tech Digest Section */}
+        <section className="mb-20">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide">
+              {i18n.dailyDigest}
+            </h2>
+            <a
+              href="https://open.spotify.com/show/7lDGFYZNOM6ERjPCRLIrb5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1DB954] hover:underline"
+            >
+              <Headphones size={14} />
+              {i18n.listenPodcast}
+            </a>
+          </div>
+
+          <p className="text-sm text-muted-foreground mb-6">
+            {i18n.dailyDigestDesc}
+          </p>
+
+          <div className="space-y-4">
+            {newslettersData.digests.slice(0, 3).map((digest) => (
+              <div key={digest.id} className="border border-border rounded-lg p-4 hover:bg-accent/30 transition-colors">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-xs text-muted-foreground">
+                        {new Date(digest.date + "T12:00:00").toLocaleDateString(lang === "en" ? "en-US" : "pt-BR", {
+                          month: "short",
+                          day: "numeric"
+                        })}
+                      </span>
+                      <span className="text-xs text-muted-foreground/50">•</span>
+                      <span className="text-xs text-primary">{digest.entries[0]?.newsletter}</span>
+                    </div>
+                    <h3 className="text-base font-medium text-foreground mb-1 line-clamp-1">
+                      {digest.entries[0]?.title[lang]}
+                    </h3>
+                    <p className="text-sm text-muted-foreground line-clamp-2">
+                      {digest.entries[0]?.summary[lang].slice(0, 150)}...
+                    </p>
+                  </div>
+                  <Link
+                    to={`/newsletters/${digest.id}-1`}
+                    className="flex-shrink-0 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
+                  >
+                    {i18n.readArticle}
+                    <ExternalLink size={12} />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-4">
+            <Link
+              to="/newsletters"
+              className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+            >
+              {i18n.viewAll}
+              <ArrowRight size={14} />
+            </Link>
           </div>
         </section>
 
