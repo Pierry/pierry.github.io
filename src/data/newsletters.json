@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-11",
+      "date": "2026-03-11",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "I Struggled With System Design Until I Learned These 114 Concepts (Part 3)",
+            "pt": "Eu Lutava com System Design Até Aprender Esses 114 Conceitos (Parte 3)"
+          },
+          "summary": {
+            "en": "Neo Kim delivers the final part of his comprehensive system design fundamentals series, covering 38 essential concepts including Webhooks, WebRTC, CQRS, Event Sourcing, Service Discovery, Circuit Breaker Pattern, Observability, Distributed Tracing, Vector Databases, and more. Each concept is explained with real-world analogies, tradeoffs, and practical applications. This is a must-read reference for engineers building production-ready distributed systems.",
+            "pt": "Neo Kim entrega a parte final de sua série abrangente sobre fundamentos de system design, cobrindo 38 conceitos essenciais incluindo Webhooks, WebRTC, CQRS, Event Sourcing, Service Discovery, Circuit Breaker Pattern, Observability, Distributed Tracing, Vector Databases e mais. Cada conceito é explicado com analogias do mundo real, tradeoffs e aplicações práticas. Uma leitura obrigatória para engenheiros construindo sistemas distribuídos production-ready."
+          },
+          "insights": {
+            "en": [
+              "Webhooks eliminate polling overhead but require handling retries, securing endpoints, and managing duplicate/out-of-order events — combine with message queues for reliability",
+              "CQRS separates read and write models, enabling independent scaling and specialized data views, but adds complexity — only use when read/write workloads differ significantly",
+              "Event Sourcing stores every change as an immutable event, enabling full audit trails and time-travel debugging — powerful for financial systems but increases storage and complexity"
+            ],
+            "pt": [
+              "Webhooks eliminam overhead de polling mas exigem handling de retries, segurança de endpoints e gerenciamento de eventos duplicados/fora de ordem — combine com message queues para confiabilidade",
+              "CQRS separa modelos de leitura e escrita, permitindo escala independente e views especializadas, mas adiciona complexidade — use apenas quando workloads de read/write diferem significativamente",
+              "Event Sourcing armazena cada mudança como evento imutável, habilitando audit trails completos e debugging de time-travel — poderoso para sistemas financeiros mas aumenta storage e complexidade"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/system-design-fundamentals"
+        }
+      ]
+    },
+    {
       "id": "2026-03-10",
       "date": "2026-03-10",
       "entries": [
