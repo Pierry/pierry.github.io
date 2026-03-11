@@ -127,6 +127,7 @@ const t = {
     podcastDescCont: "I curate the top 3 most relevant articles from tech newsletters and YouTube channels, covering system design, AI breakthroughs, engineering leadership, and dev productivity.",
     podcastAI: "🤖 Powered by AI — Each morning I use NotebookLM to transform my curated research into conversational audio. Perfect for your commute, workout, or whenever you want to stay sharp without reading walls of text.",
     listenSpotify: "Listen on Spotify",
+    podcastCompact: "Daily episodes with top 3 curated articles from tech newsletters. New every morning!",
     experience: "Experience",
     projects: "Projects",
     openSourceApps: "Open-source Apps",
@@ -170,6 +171,7 @@ const t = {
     podcastDescCont: "Eu curo os 3 artigos mais relevantes de newsletters e canais do YouTube, cobrindo system design, avanços em IA, liderança de engenharia e produtividade dev.",
     podcastAI: "🤖 Powered by AI — Toda manhã uso NotebookLM pra transformar minha pesquisa curada em áudio conversacional. Perfeito pro seu trajeto, treino, ou quando quiser se atualizar sem ler paredes de texto.",
     listenSpotify: "Ouvir no Spotify",
+    podcastCompact: "Episódios diários com os 3 melhores artigos de newsletters tech. Novo toda manhã!",
     experience: "Experiência",
     projects: "Projetos",
     openSourceApps: "Apps Open-source",
@@ -376,7 +378,7 @@ const Index = () => {
           </p>
 
           {/* Social Links */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 mb-8">
             <a
               href="https://github.com/Pierry"
               target="_blank"
@@ -395,63 +397,31 @@ const Index = () => {
             >
               <Linkedin size={22} />
             </a>
-            <a
-              href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground/60 hover:text-[#1DB954] transition-colors"
-              aria-label="Tech Digest Podcast"
-              title="Pierry's Tech Digest Podcast"
-            >
-              <Headphones size={22} />
-            </a>
           </div>
-        </section>
 
-        {/* Podcast Section */}
-        <section className="mb-20">
-          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
-            {i18n.podcastSection}
-          </h2>
-
-          <div className="flex flex-col lg:flex-row gap-6 items-start">
-            {/* Spotify Embed */}
-            <div className="w-full lg:w-auto flex-shrink-0">
-              <iframe
-                style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/show/7IDGFYZNOM6ERjPCRLlrb5?utm_source=generator&theme=0"
-                width="100%"
-                height="352"
-                frameBorder="0"
-                allowFullScreen
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-                className="lg:w-[300px]"
-              ></iframe>
+          {/* Podcast Card - Compact */}
+          <a
+            href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-4 p-4 rounded-xl bg-accent/50 hover:bg-accent transition-colors group"
+          >
+            <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-[#1DB954] to-[#191414] flex items-center justify-center flex-shrink-0">
+              <Headphones size={28} className="text-white" />
             </div>
-
-            {/* Podcast Info */}
-            <div className="flex-1">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                {i18n.podcastTitle}
-              </h3>
-              <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                <strong>{i18n.podcastDesc}</strong> {i18n.podcastDescCont}
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 mb-1">
+                <Headphones size={16} className="text-[#1DB954]" />
+                <span className="text-sm font-semibold text-foreground">Pierry's Tech Digest</span>
+              </div>
+              <p className="text-sm text-muted-foreground line-clamp-2">
+                {i18n.podcastCompact}
               </p>
-              <p className="text-sm text-muted-foreground/80 leading-relaxed mb-4">
-                {i18n.podcastAI}
-              </p>
-              <a
-                href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1DB954] text-white text-sm font-medium hover:bg-[#1ed760] transition-colors"
-              >
-                <Headphones size={16} />
-                {i18n.listenSpotify}
-              </a>
             </div>
-          </div>
+            <span className="text-xs text-[#1DB954] font-medium group-hover:underline flex-shrink-0">
+              Spotify →
+            </span>
+          </a>
         </section>
 
         {/* Experience Section */}
