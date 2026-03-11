@@ -121,6 +121,7 @@ const t = {
     heroDescCont: ", a platform for engineering delivery metrics. I'm also maintaining an open-source",
     heroPlaybook: "Engineering Delivery Playbook",
     heroTech: "I care about backend development (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), architecture, and actually solving problems that matter.",
+    heroPodcast: "I also run a daily podcast with curated tech insights —",
     podcastSection: "🎙️ Podcast",
     podcastTitle: "Pierry's Tech Digest",
     podcastDesc: "New episode every day.",
@@ -165,6 +166,7 @@ const t = {
     heroDescCont: ", uma plataforma de métricas de delivery de engenharia. Também mantenho um",
     heroPlaybook: "Engineering Delivery Playbook",
     heroTech: "Curto desenvolvimento backend (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), arquitetura, e resolver problemas que realmente importam.",
+    heroPodcast: "Também tenho um podcast diário com insights de tech curados —",
     podcastSection: "🎙️ Podcast",
     podcastTitle: "Pierry's Tech Digest",
     podcastDesc: "Episódio novo todo dia.",
@@ -373,12 +375,25 @@ const Index = () => {
             .
           </p>
 
-          <p className="text-base text-muted-foreground/80 leading-relaxed mb-8">
+          <p className="text-base text-muted-foreground/80 leading-relaxed mb-6">
             {i18n.heroTech}
           </p>
 
+          <p className="text-base text-muted-foreground/80 leading-relaxed mb-8">
+            {i18n.heroPodcast}{" "}
+            <a
+              href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#1DB954] hover:underline font-medium"
+            >
+              Pierry's Tech Digest
+            </a>
+            .
+          </p>
+
           {/* Social Links */}
-          <div className="flex items-center space-x-4 mb-8">
+          <div className="flex items-center space-x-4">
             <a
               href="https://github.com/Pierry"
               target="_blank"
@@ -398,23 +413,6 @@ const Index = () => {
               <Linkedin size={22} />
             </a>
           </div>
-
-          {/* Podcast Card - Compact */}
-          <a
-            href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 p-4 rounded-xl bg-accent/50 hover:bg-accent transition-colors group"
-          >
-            <Headphones size={20} className="text-[#1DB954] flex-shrink-0" />
-            <div className="flex-1 min-w-0">
-              <span className="text-sm font-semibold text-foreground">Pierry's Tech Digest</span>
-              <span className="text-sm text-muted-foreground"> — {i18n.podcastCompact}</span>
-            </div>
-            <span className="text-xs text-[#1DB954] font-medium group-hover:underline flex-shrink-0">
-              Spotify →
-            </span>
-          </a>
         </section>
 
         {/* Experience Section */}
