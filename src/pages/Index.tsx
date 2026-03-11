@@ -266,6 +266,55 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Podcast Section */}
+        <section className="mb-20">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
+            🎙️ Podcast
+          </h2>
+
+          <div className="flex flex-col lg:flex-row gap-6 items-start">
+            {/* Spotify Embed */}
+            <div className="w-full lg:w-auto flex-shrink-0">
+              <iframe
+                style={{ borderRadius: "12px" }}
+                src="https://open.spotify.com/embed/show/7IDGFYZNOM6ERjPCRLlrb5?utm_source=generator&theme=0"
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="lg:w-[300px]"
+              ></iframe>
+            </div>
+
+            {/* Podcast Info */}
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold text-foreground mb-3">
+                Pierry's Tech Digest
+              </h3>
+              <p className="text-base text-muted-foreground leading-relaxed mb-4">
+                Weekly deep dives into the most relevant topics for senior developers and engineering managers. 
+                Each episode covers system design patterns, AI breakthroughs, leadership insights, and curated 
+                highlights from top tech newsletters and YouTube channels.
+              </p>
+              <p className="text-sm text-muted-foreground/80 leading-relaxed mb-4">
+                🤖 Powered by AI — I use NotebookLM to generate conversational audio from my daily tech research, 
+                making it easy to stay updated during your commute or workout.
+              </p>
+              <a
+                href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1DB954] text-white text-sm font-medium hover:bg-[#1ed760] transition-colors"
+              >
+                <Headphones size={16} />
+                Listen on Spotify
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Experience Section */}
         <section className="mb-16">
           <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
