@@ -404,19 +404,12 @@ const Index = () => {
             href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 p-4 rounded-xl bg-accent/50 hover:bg-accent transition-colors group"
+            className="flex items-center gap-3 p-4 rounded-xl bg-accent/50 hover:bg-accent transition-colors group"
           >
-            <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-[#1DB954] to-[#191414] flex items-center justify-center flex-shrink-0">
-              <Headphones size={28} className="text-white" />
-            </div>
+            <Headphones size={20} className="text-[#1DB954] flex-shrink-0" />
             <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-1">
-                <Headphones size={16} className="text-[#1DB954]" />
-                <span className="text-sm font-semibold text-foreground">Pierry's Tech Digest</span>
-              </div>
-              <p className="text-sm text-muted-foreground line-clamp-2">
-                {i18n.podcastCompact}
-              </p>
+              <span className="text-sm font-semibold text-foreground">Pierry's Tech Digest</span>
+              <span className="text-sm text-muted-foreground"> — {i18n.podcastCompact}</span>
             </div>
             <span className="text-xs text-[#1DB954] font-medium group-hover:underline flex-shrink-0">
               Spotify →
