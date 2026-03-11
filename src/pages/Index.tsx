@@ -294,13 +294,12 @@ const Index = () => {
                 Pierry's Tech Digest
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                Weekly deep dives into the most relevant topics for senior developers and engineering managers. 
-                Each episode covers system design patterns, AI breakthroughs, leadership insights, and curated 
-                highlights from top tech newsletters and YouTube channels.
+                <strong>New episode every day.</strong> I curate the top 3 most relevant articles from tech newsletters 
+                and YouTube channels, covering system design, AI breakthroughs, engineering leadership, and dev productivity.
               </p>
               <p className="text-sm text-muted-foreground/80 leading-relaxed mb-4">
-                🤖 Powered by AI — I use NotebookLM to generate conversational audio from my daily tech research, 
-                making it easy to stay updated during your commute or workout.
+                🤖 Powered by AI — Each morning I use NotebookLM to transform my curated research into conversational audio. 
+                Perfect for your commute, workout, or whenever you want to stay sharp without reading walls of text.
               </p>
               <a
                 href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
