@@ -119,8 +119,7 @@ const t = {
     heroGreeting: "Hey, I'm Pierry.",
     heroIntro: "Engineering Manager focused on delivering real value through technology, understanding what users truly need, and helping teams reach their full potential.",
     heroDesc: "14 years shipping software across fintech, healthtech, and logistics. Currently leading engineering at Intelipost and building",
-    heroDescCont: ", a platform for engineering delivery metrics. I'm also maintaining an open-source",
-    heroPlaybook: "Engineering Delivery Playbook",
+    heroDescCont: ", a platform for engineering delivery metrics.",
     heroTech: "I care about backend development (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), architecture, and actually solving problems that matter.",
     heroPodcast: "I also run a daily podcast with curated tech insights —",
     podcastSection: "🎙️ Podcast",
@@ -170,8 +169,7 @@ const t = {
     heroGreeting: "E aí, sou o Pierry.",
     heroIntro: "Engineering Manager focado em entregar valor real através de tecnologia, entendendo o que os usuários realmente precisam e ajudando times a alcançar seu potencial máximo.",
     heroDesc: "14 anos entregando software em fintech, healthtech e logística. Atualmente liderando engenharia na Intelipost e construindo",
-    heroDescCont: ", uma plataforma de métricas de delivery de engenharia. Também mantenho um",
-    heroPlaybook: "Engineering Delivery Playbook",
+    heroDescCont: ", uma plataforma de métricas de delivery de engenharia.",
     heroTech: "Curto desenvolvimento backend (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), arquitetura, e resolver problemas que realmente importam.",
     heroPodcast: "Também tenho um podcast diário com insights de tech curados —",
     podcastSection: "🎙️ Podcast",
@@ -381,11 +379,7 @@ const Index = () => {
             <a href="https://spacemetrics.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
               SpaceMetrics.ai
             </a>
-            {i18n.heroDescCont}{" "}
-            <a href="https://github.com/space-metrics-ai/engineering-delivery-playbook" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              {i18n.heroPlaybook}
-            </a>
-            .
+            {i18n.heroDescCont}
           </p>
 
           <p className="text-base text-muted-foreground/80 leading-relaxed mb-6">
