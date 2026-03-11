@@ -471,13 +471,26 @@ const Index = () => {
                       {digest.entries[0]?.summary[lang].slice(0, 150)}...
                     </p>
                   </div>
-                  <Link
-                    to={`/newsletters/${digest.id}-1`}
-                    className="flex-shrink-0 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
-                  >
-                    {i18n.readArticle}
-                    <ExternalLink size={12} />
-                  </Link>
+                  <div className="flex flex-col gap-2 flex-shrink-0">
+                    {(digest as any).podcastLink && (
+                      <a
+                        href={(digest as any).podcastLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs font-medium text-[#1DB954] hover:underline"
+                      >
+                        <Headphones size={12} />
+                        🎧
+                      </a>
+                    )}
+                    <Link
+                      to={`/newsletters/${digest.id}-1`}
+                      className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
+                    >
+                      {i18n.readArticle}
+                      <ExternalLink size={12} />
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
