@@ -471,16 +471,16 @@ const Index = () => {
                       {digest.entries[0]?.summary[lang].slice(0, 150)}...
                     </p>
                   </div>
-                  <div className="flex flex-col gap-2 flex-shrink-0">
+                  <div className="flex items-center gap-3 flex-shrink-0">
                     {(digest as any).podcastLink && (
                       <a
                         href={(digest as any).podcastLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs font-medium text-[#1DB954] hover:underline"
+                        className="text-[#1DB954] hover:text-[#1ed760] transition-colors"
+                        title={lang === "en" ? "Listen on Spotify" : "Ouvir no Spotify"}
                       >
-                        <Headphones size={12} />
-                        🎧
+                        <Headphones size={18} />
                       </a>
                     )}
                     <Link
