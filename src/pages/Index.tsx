@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Github, Linkedin, Check, Eye, Headphones } from "lucide-react";
+import { Menu, X, Github, Linkedin, Check, Eye, Headphones, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/ThemeToggle";
+
+type Lang = "en" | "pt";
 
 // Recommended items with added dates for "New" badge logic
 const recommendedItems = [
@@ -10,7 +12,10 @@ const recommendedItems = [
     title: "🎙️ Tech Digest Podcast",
     href: "https://open.spotify.com/episode/7b99MFyh2qDKxw5ut6rSaD",
     date: "Podcast",
-    description: "Weekly tech digest: System Design interviews, CAP Theorem patterns, and DeepMind's AI breakthrough in spatial reasoning.",
+    description: {
+      en: "Weekly tech digest: System Design interviews, CAP Theorem patterns, and DeepMind's AI breakthrough in spatial reasoning.",
+      pt: "Digest semanal de tech: entrevistas de System Design, padrões do CAP Theorem e o avanço da DeepMind em raciocínio espacial."
+    },
     addedAt: "2026-03-09",
   },
   {
@@ -18,7 +23,10 @@ const recommendedItems = [
     title: "Alloy",
     href: "https://alloy.app",
     date: "Tool",
-    description: "AI prototyping for product managers — create on-brand prototypes that look exactly like your real product, instantly.",
+    description: {
+      en: "AI prototyping for product managers — create on-brand prototypes that look exactly like your real product, instantly.",
+      pt: "Prototipagem com IA para PMs — crie protótipos que parecem exatamente com seu produto real, instantaneamente."
+    },
     addedAt: "2026-03-02",
   },
   {
@@ -26,7 +34,10 @@ const recommendedItems = [
     title: "Harness Engineering",
     href: "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
     date: "Martin Fowler",
-    description: "Thoughts on OpenAI's approach to AI-maintained codebases — using harnesses (tooling, linters, structural tests) to keep AI agents in check.",
+    description: {
+      en: "Thoughts on OpenAI's approach to AI-maintained codebases — using harnesses (tooling, linters, structural tests) to keep AI agents in check.",
+      pt: "Reflexões sobre a abordagem da OpenAI para codebases mantidas por IA — usando harnesses (tooling, linters, testes estruturais) para manter agentes de IA sob controle."
+    },
     addedAt: "2026-02-19",
   },
   {
@@ -34,7 +45,10 @@ const recommendedItems = [
     title: "Unleashing Developer Productivity with Generative AI",
     href: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/unleashing-developer-productivity-with-generative-ai",
     date: "McKinsey",
-    description: "McKinsey's research on how generative AI is transforming software development and boosting developer productivity.",
+    description: {
+      en: "McKinsey's research on how generative AI is transforming software development and boosting developer productivity.",
+      pt: "Pesquisa da McKinsey sobre como IA generativa está transformando o desenvolvimento de software e aumentando a produtividade dos devs."
+    },
     addedAt: "2026-02-02",
   },
   {
@@ -42,7 +56,10 @@ const recommendedItems = [
     title: "Clawdbot",
     href: "https://github.com/clawdbot/clawdbot",
     date: "Open Source",
-    description: "A personal AI assistant you run on your own devices. Works with WhatsApp, Telegram, Slack, Discord, and more.",
+    description: {
+      en: "A personal AI assistant you run on your own devices. Works with WhatsApp, Telegram, Slack, Discord, and more.",
+      pt: "Um assistente pessoal de IA que roda nos seus próprios dispositivos. Funciona com WhatsApp, Telegram, Slack, Discord e mais."
+    },
     addedAt: "2026-01-30",
   },
   {
@@ -50,7 +67,10 @@ const recommendedItems = [
     title: "Agentic AI Transformation: Workforce Strategy & Leadership",
     href: "https://open.spotify.com/episode/5oARH9ayPqwvO1PHpDF0x6",
     date: "Jan 2026",
-    description: "Podcast episode exploring how agentic AI is reshaping workforce strategy and what leaders need to know.",
+    description: {
+      en: "Podcast episode exploring how agentic AI is reshaping workforce strategy and what leaders need to know.",
+      pt: "Episódio de podcast explorando como IA agêntica está reformulando estratégia de workforce e o que líderes precisam saber."
+    },
     addedAt: "2026-01-29",
   },
   {
@@ -58,7 +78,10 @@ const recommendedItems = [
     title: "Speed Is Never Just Speed",
     href: "https://mikefisher.substack.com/p/speed-is-never-just-speed",
     date: "Jan 2026",
-    description: "Mike Fisher on how speed emerges from focus, collaboration, transformation, and psychological safety — using rugby as a powerful metaphor for high-performing teams.",
+    description: {
+      en: "Mike Fisher on how speed emerges from focus, collaboration, transformation, and psychological safety — using rugby as a powerful metaphor for high-performing teams.",
+      pt: "Mike Fisher sobre como velocidade emerge de foco, colaboração, transformação e segurança psicológica — usando rugby como metáfora para times de alta performance."
+    },
     addedAt: "2026-01-29",
   },
   {
@@ -66,7 +89,10 @@ const recommendedItems = [
     title: "State of AI in Business 2025",
     href: "https://drive.google.com/file/d/18AsBgiv6uiG6YEpfy_OEvtvplEw4Oo7E/view",
     date: "Jan 2025",
-    description: "A comprehensive report on how companies are adopting AI across industries. Great insights on trends, challenges, and what's coming next.",
+    description: {
+      en: "A comprehensive report on how companies are adopting AI across industries. Great insights on trends, challenges, and what's coming next.",
+      pt: "Um relatório abrangente sobre como empresas estão adotando IA em diversas indústrias. Ótimos insights sobre tendências, desafios e o que vem por aí."
+    },
     addedAt: "2025-01-15",
   },
 ];
@@ -82,9 +108,114 @@ const isNew = (addedAt: string): boolean => {
   return diffDays <= NEW_THRESHOLD_DAYS;
 };
 
+// Translations
+const t = {
+  en: {
+    newsletters: "Newsletters",
+    cv: "CV",
+    contact: "Contact",
+    home: "Home",
+    heroGreeting: "Hey, I'm Pierry.",
+    heroIntro: "Engineering Manager focused on delivering real value through technology, understanding what users truly need, and helping teams reach their full potential.",
+    heroDesc: "14 years shipping software across fintech, healthtech, and logistics. Currently leading engineering at Intelipost and building",
+    heroDescCont: ", a platform for engineering delivery metrics. I'm also maintaining an open-source",
+    heroPlaybook: "Engineering Delivery Playbook",
+    heroTech: "I care about backend development (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), architecture, and actually solving problems that matter.",
+    podcastSection: "🎙️ Podcast",
+    podcastTitle: "Pierry's Tech Digest",
+    podcastDesc: "New episode every day.",
+    podcastDescCont: "I curate the top 3 most relevant articles from tech newsletters and YouTube channels, covering system design, AI breakthroughs, engineering leadership, and dev productivity.",
+    podcastAI: "🤖 Powered by AI — Each morning I use NotebookLM to transform my curated research into conversational audio. Perfect for your commute, workout, or whenever you want to stay sharp without reading walls of text.",
+    listenSpotify: "Listen on Spotify",
+    experience: "Experience",
+    projects: "Projects",
+    openSourceApps: "Open-source Apps",
+    recommended: "Recommended",
+    viewCode: "View Code",
+    new: "New",
+    seen: "Seen",
+    markSeen: "Mark Seen",
+    // Experience
+    expIntelipost: "Engineering Manager, 2023–Present",
+    expPicPay: "Engineering Manager, 2022–2023",
+    expFleury: "Engineering Manager, 2018–2022",
+    exp4bus: "Mobile Architect, 2018",
+    expExpense: "Technical Lead, 2016–2018",
+    expDeloitte: "Mobile Engineer, 2016",
+    // Projects
+    projSpaceMetrics: "Engineering delivery analytics",
+    projPlaybook: "Open source",
+    projHowMuch: "iOS App",
+    projTodone: "Task management app",
+    // Open-source descriptions
+    ossMeeting: "A simple messaging app for meetings and team communication.",
+    ossWhere: "A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.",
+    ossCloudDancer: "A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.",
+    ossAwesome: "A curated collection of awesome use cases, prompts, workflows, and resources for Clawdbot.",
+  },
+  pt: {
+    newsletters: "Newsletters",
+    cv: "CV",
+    contact: "Contato",
+    home: "Início",
+    heroGreeting: "E aí, sou o Pierry.",
+    heroIntro: "Engineering Manager focado em entregar valor real através de tecnologia, entendendo o que os usuários realmente precisam e ajudando times a alcançar seu potencial máximo.",
+    heroDesc: "14 anos entregando software em fintech, healthtech e logística. Atualmente liderando engenharia na Intelipost e construindo",
+    heroDescCont: ", uma plataforma de métricas de delivery de engenharia. Também mantenho um",
+    heroPlaybook: "Engineering Delivery Playbook",
+    heroTech: "Curto desenvolvimento backend (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), arquitetura, e resolver problemas que realmente importam.",
+    podcastSection: "🎙️ Podcast",
+    podcastTitle: "Pierry's Tech Digest",
+    podcastDesc: "Episódio novo todo dia.",
+    podcastDescCont: "Eu curo os 3 artigos mais relevantes de newsletters e canais do YouTube, cobrindo system design, avanços em IA, liderança de engenharia e produtividade dev.",
+    podcastAI: "🤖 Powered by AI — Toda manhã uso NotebookLM pra transformar minha pesquisa curada em áudio conversacional. Perfeito pro seu trajeto, treino, ou quando quiser se atualizar sem ler paredes de texto.",
+    listenSpotify: "Ouvir no Spotify",
+    experience: "Experiência",
+    projects: "Projetos",
+    openSourceApps: "Apps Open-source",
+    recommended: "Recomendados",
+    viewCode: "Ver Código",
+    new: "Novo",
+    seen: "Visto",
+    markSeen: "Marcar Visto",
+    // Experience
+    expIntelipost: "Engineering Manager, 2023–Atual",
+    expPicPay: "Engineering Manager, 2022–2023",
+    expFleury: "Engineering Manager, 2018–2022",
+    exp4bus: "Mobile Architect, 2018",
+    expExpense: "Technical Lead, 2016–2018",
+    expDeloitte: "Mobile Engineer, 2016",
+    // Projects
+    projSpaceMetrics: "Analytics de delivery de engenharia",
+    projPlaybook: "Open source",
+    projHowMuch: "App iOS",
+    projTodone: "App de gestão de tarefas",
+    // Open-source descriptions
+    ossMeeting: "Um app simples de mensagens para reuniões e comunicação de times.",
+    ossWhere: "Uma visualização divertida que mostra onde no mundo você teria nascido baseado na distribuição populacional global na sua data de nascimento.",
+    ossCloudDancer: "Um tema sereno e claro para IDEs JetBrains inspirado na Cor do Ano 2026 da Pantone.",
+    ossAwesome: "Uma coleção curada de casos de uso, prompts, workflows e recursos para o Clawdbot.",
+  }
+};
+
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [seenItems, setSeenItems] = useState<Set<string>>(new Set());
+  const [lang, setLang] = useState<Lang>(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('lang') as Lang | null;
+      if (stored === 'en' || stored === 'pt') return stored;
+    }
+    return 'en';
+  });
+
+  const toggleLang = () => {
+    const newLang = lang === "en" ? "pt" : "en";
+    setLang(newLang);
+    localStorage.setItem('lang', newLang);
+  };
+
+  const i18n = t[lang];
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -132,7 +263,7 @@ const Index = () => {
                 to="/newsletters"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                Newsletters
+                {i18n.newsletters}
               </Link>
               <a
                 href="/cv.pdf"
@@ -140,19 +271,33 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                CV
+                {i18n.cv}
               </a>
               <a
                 href="mailto:pieerry@gmail.com"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                Contact
+                {i18n.contact}
               </a>
+              <button
+                onClick={toggleLang}
+                className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                title={lang === "en" ? "Switch to Portuguese" : "Mudar para Inglês"}
+              >
+                <Globe size={16} />
+                {lang === "en" ? "PT" : "EN"}
+              </button>
               <ThemeToggle />
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-2">
+              <button
+                onClick={toggleLang}
+                className="p-1 hover:bg-accent/50 transition-colors rounded text-sm text-muted-foreground"
+              >
+                {lang === "en" ? "PT" : "EN"}
+              </button>
               <ThemeToggle />
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -170,7 +315,7 @@ const Index = () => {
                 to="/newsletters"
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
               >
-                Newsletters
+                {i18n.newsletters}
               </Link>
               <a
                 href="/cv.pdf"
@@ -178,13 +323,13 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
               >
-                CV
+                {i18n.cv}
               </a>
               <a
                 href="mailto:pieerry@gmail.com"
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
               >
-                Contact
+                {i18n.contact}
               </a>
             </div>
           )}
@@ -207,30 +352,27 @@ const Index = () => {
 
           {/* Big Name */}
           <h1 className="text-4xl sm:text-5xl font-semibold text-foreground tracking-tight mb-6">
-            Hey, I'm Pierry.
+            {i18n.heroGreeting}
           </h1>
 
           <p className="text-xl text-muted-foreground leading-relaxed mb-4">
-            Engineering Manager focused on delivering real value through technology, understanding what users truly need, and helping teams reach their full potential.
+            {i18n.heroIntro}
           </p>
 
           <p className="text-base text-muted-foreground/80 leading-relaxed mb-6">
-            14 years shipping software across fintech, healthtech, and logistics. Currently leading
-            engineering at Intelipost and building{" "}
+            {i18n.heroDesc}{" "}
             <a href="https://spacemetrics.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
               SpaceMetrics.ai
             </a>
-            , a platform for engineering delivery metrics. I'm also maintaining an open-source{" "}
+            {i18n.heroDescCont}{" "}
             <a href="https://github.com/space-metrics-ai/engineering-delivery-playbook" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              Engineering Delivery Playbook
+              {i18n.heroPlaybook}
             </a>
             .
           </p>
 
           <p className="text-base text-muted-foreground/80 leading-relaxed mb-8">
-            I care about backend development (Java, Kotlin, Python, Node), mobile
-            (Android, iOS, Flutter, KMP), architecture, and actually solving problems
-            that matter.
+            {i18n.heroTech}
           </p>
 
           {/* Social Links */}
@@ -269,7 +411,7 @@ const Index = () => {
         {/* Podcast Section */}
         <section className="mb-20">
           <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
-            🎙️ Podcast
+            {i18n.podcastSection}
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-6 items-start">
@@ -291,15 +433,13 @@ const Index = () => {
             {/* Podcast Info */}
             <div className="flex-1">
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                Pierry's Tech Digest
+                {i18n.podcastTitle}
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                <strong>New episode every day.</strong> I curate the top 3 most relevant articles from tech newsletters 
-                and YouTube channels, covering system design, AI breakthroughs, engineering leadership, and dev productivity.
+                <strong>{i18n.podcastDesc}</strong> {i18n.podcastDescCont}
               </p>
               <p className="text-sm text-muted-foreground/80 leading-relaxed mb-4">
-                🤖 Powered by AI — Each morning I use NotebookLM to transform my curated research into conversational audio. 
-                Perfect for your commute, workout, or whenever you want to stay sharp without reading walls of text.
+                {i18n.podcastAI}
               </p>
               <a
                 href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
@@ -308,7 +448,7 @@ const Index = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1DB954] text-white text-sm font-medium hover:bg-[#1ed760] transition-colors"
               >
                 <Headphones size={16} />
-                Listen on Spotify
+                {i18n.listenSpotify}
               </a>
             </div>
           </div>
@@ -317,33 +457,33 @@ const Index = () => {
         {/* Experience Section */}
         <section className="mb-16">
           <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
-            Experience
+            {i18n.experience}
           </h2>
 
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <span className="text-base text-foreground">Intelipost</span>
-              <span className="text-sm text-muted-foreground">Engineering Manager, 2023–Present</span>
+              <span className="text-sm text-muted-foreground">{i18n.expIntelipost}</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <span className="text-base text-foreground">PicPay</span>
-              <span className="text-sm text-muted-foreground">Engineering Manager, 2022–2023</span>
+              <span className="text-sm text-muted-foreground">{i18n.expPicPay}</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <span className="text-base text-foreground">Grupo Fleury</span>
-              <span className="text-sm text-muted-foreground">Engineering Manager, 2018–2022</span>
+              <span className="text-sm text-muted-foreground">{i18n.expFleury}</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <span className="text-base text-foreground">4bus</span>
-              <span className="text-sm text-muted-foreground">Mobile Architect, 2018</span>
+              <span className="text-sm text-muted-foreground">{i18n.exp4bus}</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <span className="text-base text-foreground">Expense Mobi</span>
-              <span className="text-sm text-muted-foreground">Technical Lead, 2016–2018</span>
+              <span className="text-sm text-muted-foreground">{i18n.expExpense}</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <span className="text-base text-foreground">Deloitte</span>
-              <span className="text-sm text-muted-foreground">Mobile Engineer, 2016</span>
+              <span className="text-sm text-muted-foreground">{i18n.expDeloitte}</span>
             </div>
           </div>
         </section>
@@ -351,7 +491,7 @@ const Index = () => {
         {/* Projects Section */}
         <section className="mb-16">
           <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
-            Projects
+            {i18n.projects}
           </h2>
 
           <div className="space-y-4">
@@ -364,7 +504,7 @@ const Index = () => {
               >
                 SpaceMetrics.ai
               </a>
-              <span className="text-sm text-muted-foreground">Engineering delivery analytics</span>
+              <span className="text-sm text-muted-foreground">{i18n.projSpaceMetrics}</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
@@ -375,7 +515,7 @@ const Index = () => {
               >
                 Engineering Delivery Playbook
               </a>
-              <span className="text-sm text-muted-foreground">Open source</span>
+              <span className="text-sm text-muted-foreground">{i18n.projPlaybook}</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
@@ -386,7 +526,7 @@ const Index = () => {
               >
                 How Much I Run
               </a>
-              <span className="text-sm text-muted-foreground">iOS App</span>
+              <span className="text-sm text-muted-foreground">{i18n.projHowMuch}</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
@@ -397,7 +537,7 @@ const Index = () => {
               >
                 Todone
               </a>
-              <span className="text-sm text-muted-foreground">Task management app</span>
+              <span className="text-sm text-muted-foreground">{i18n.projTodone}</span>
             </div>
           </div>
         </section>
@@ -405,7 +545,7 @@ const Index = () => {
         {/* Open-source Apps Section */}
         <section className="mb-16">
           <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
-            Open-source Apps
+            {i18n.openSourceApps}
           </h2>
 
           <div className="space-y-6">
@@ -425,11 +565,11 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  View Code
+                  {i18n.viewCode}
                 </a>
               </div>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                A simple messaging app for meetings and team communication.
+                {i18n.ossMeeting}
               </p>
             </div>
 
@@ -449,11 +589,11 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  View Code
+                  {i18n.viewCode}
                 </a>
               </div>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.
+                {i18n.ossWhere}
               </p>
             </div>
 
@@ -473,11 +613,11 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  View Code
+                  {i18n.viewCode}
                 </a>
               </div>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.
+                {i18n.ossCloudDancer}
               </p>
             </div>
 
@@ -497,11 +637,11 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  View Code
+                  {i18n.viewCode}
                 </a>
               </div>
               <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                A curated collection of awesome use cases, prompts, workflows, and resources for Clawdbot.
+                {i18n.ossAwesome}
               </p>
             </div>
           </div>
@@ -510,7 +650,7 @@ const Index = () => {
         {/* Recommended Section */}
         <section className="mb-16">
           <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
-            Recommended
+            {i18n.recommended}
           </h2>
 
           <div className="space-y-6">
@@ -532,7 +672,7 @@ const Index = () => {
                       </a>
                       {itemIsNew && !isSeen && (
                         <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200">
-                          New
+                          {i18n.new}
                         </span>
                       )}
                     </div>
@@ -545,24 +685,24 @@ const Index = () => {
                             ? "bg-accent text-muted-foreground hover:bg-accent/80"
                             : "bg-accent/50 text-muted-foreground/80 hover:bg-accent"
                         }`}
-                        title={isSeen ? "Mark as unread" : "Mark as seen"}
+                        title={isSeen ? (lang === "en" ? "Mark as unread" : "Marcar como não lido") : (lang === "en" ? "Mark as seen" : "Marcar como visto")}
                       >
                         {isSeen ? (
                           <>
                             <Check size={12} />
-                            Seen
+                            {i18n.seen}
                           </>
                         ) : (
                           <>
                             <Eye size={12} />
-                            Mark Seen
+                            {i18n.markSeen}
                           </>
                         )}
                       </button>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                    {item.description}
+                    {item.description[lang]}
                   </p>
                 </div>
               );
