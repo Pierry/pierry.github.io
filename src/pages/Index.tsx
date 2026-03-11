@@ -382,7 +382,7 @@ const Index = () => {
           <p className="text-base text-muted-foreground/80 leading-relaxed mb-8">
             {i18n.heroPodcast}{" "}
             <a
-              href="https://open.spotify.com/show/7IDGFYZNOM6ERjPCRLlrb5"
+              href="https://open.spotify.com/show/7lDGFYZNOM6ERjPCRLIrb5"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#1DB954] hover:underline font-medium"
