@@ -1,6 +1,90 @@
 {
   "digests": [
     {
+      "id": "2026-03-12",
+      "date": "2026-03-12",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Gregor Ojstersek & Sulman Choudhry (OpenAI)",
+          "title": {
+            "en": "Inside OpenAI: How They Hire, Onboard, Promote, and Build Elite Engineering Teams",
+            "pt": "Por Dentro da OpenAI: Como Eles Contratam, Fazem Onboarding, Promovem e Constroem Times de Engenharia de Elite"
+          },
+          "summary": {
+            "en": "Part 2 of Gregor's conversation with Sulman Choudhry, Head of Engineering for ChatGPT at OpenAI. This deep-dive reveals the systems behind OpenAI's elite engineering teams. Their hiring process is tailored to candidates' strengths — if someone is stronger in Objective-C than Swift, they interview in Objective-C. They introduced a new combined product/technical interview where candidates work through an AI-first problem with interviewers, designing the product spec and system architecture together. They hire a deliberate mix of very senior AND very junior talent, with a strong internship-to-hire pipeline. Promotions happen continuously throughout the year, not in fixed cycles. The onboarding follows a defined 30/60/90-day plan where engineers are encouraged to ship code early and take ownership from day one. Knowledge sharing happens through demos, internal tools, and a culture where everyone teaches.",
+            "pt": "Parte 2 da conversa de Gregor com Sulman Choudhry, Head of Engineering do ChatGPT na OpenAI. Esse deep-dive revela os sistemas por trás dos times de engenharia de elite da OpenAI. O processo de contratação é adaptado aos pontos fortes dos candidatos — se alguém é mais forte em Objective-C que Swift, entrevistam em Objective-C. Introduziram uma nova entrevista combinada produto/técnica onde candidatos trabalham um problema AI-first com entrevistadores, projetando spec de produto e arquitetura de sistema juntos. Contratam uma mistura deliberada de talentos muito senior E muito junior, com forte pipeline de estágio-para-contratação. Promoções acontecem continuamente ao longo do ano, não em ciclos fixos. O onboarding segue um plano definido de 30/60/90 dias onde engenheiros são encorajados a shipar código cedo e assumir ownership desde o dia um."
+          },
+          "insights": {
+            "en": [
+              "Tailor interviews to strengths: OpenAI lets iOS candidates interview in Objective-C if that's their expertise — they evaluate engineering ability, not specific language knowledge",
+              "Continuous promotions > fixed cycles: instead of twice-yearly reviews, they promote anytime based on demonstrated impact — reduces gaming and rewards real performance",
+              "Ship early in onboarding: new engineers are encouraged to push code in the first week, building confidence and ownership faster than traditional 'learn first' approaches"
+            ],
+            "pt": [
+              "Adapte entrevistas aos pontos fortes: OpenAI permite que candidatos iOS entrevistem em Objective-C se essa é sua expertise — avaliam habilidade de engenharia, não conhecimento de linguagem específica",
+              "Promoções contínuas > ciclos fixos: ao invés de reviews semestrais, promovem a qualquer momento baseado em impacto demonstrado — reduz gaming e recompensa performance real",
+              "Shipe cedo no onboarding: novos engenheiros são encorajados a fazer push de código na primeira semana, construindo confiança e ownership mais rápido que abordagens tradicionais de 'aprender primeiro'"
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/inside-openai-how-they-hire-onboard"
+        },
+        {
+          "rank": 2,
+          "newsletter": "Computerphile",
+          "author": "Jane Street",
+          "title": {
+            "en": "Vector Search with LLMs",
+            "pt": "Busca Vetorial com LLMs"
+          },
+          "summary": {
+            "en": "Computerphile delivers a clear explanation of how vector search powers modern AI applications like RAG (Retrieval-Augmented Generation). The video explains how text is converted into high-dimensional vectors (embeddings) that capture semantic meaning, not just keywords. Similar concepts cluster together in vector space, enabling 'find things like this' queries that traditional keyword search can't handle. The practical applications are everywhere: semantic search, recommendation systems, and the RAG pattern that grounds LLM responses in real data. This is foundational knowledge for any engineer building AI-powered features in 2026.",
+            "pt": "Computerphile entrega uma explicação clara de como busca vetorial potencializa aplicações modernas de IA como RAG (Retrieval-Augmented Generation). O vídeo explica como texto é convertido em vetores de alta dimensão (embeddings) que capturam significado semântico, não apenas palavras-chave. Conceitos similares se agrupam no espaço vetorial, habilitando queries 'encontre coisas parecidas com isso' que busca por keyword tradicional não consegue. As aplicações práticas estão em todo lugar: busca semântica, sistemas de recomendação, e o padrão RAG que fundamenta respostas de LLM em dados reais. Conhecimento fundamental para qualquer engenheiro construindo features powered by AI em 2026."
+          },
+          "insights": {
+            "en": [
+              "Embeddings capture meaning, not words: 'king - man + woman = queen' works because embeddings encode semantic relationships, not string matching",
+              "Vector databases are the new infrastructure: just as every app needed a relational DB, every AI app now needs vector search — know your options (Pinecone, Weaviate, pgvector)",
+              "RAG is the production pattern: instead of fine-tuning LLMs (expensive, slow), retrieve relevant docs at query time and include them in the prompt — grounded, accurate, up-to-date"
+            ],
+            "pt": [
+              "Embeddings capturam significado, não palavras: 'rei - homem + mulher = rainha' funciona porque embeddings codificam relações semânticas, não matching de strings",
+              "Bancos de dados vetoriais são a nova infraestrutura: assim como toda app precisava de DB relacional, toda app de IA agora precisa de busca vetorial — conheça suas opções (Pinecone, Weaviate, pgvector)",
+              "RAG é o padrão de produção: ao invés de fine-tuning de LLMs (caro, lento), recupere docs relevantes no momento da query e inclua no prompt — fundamentado, preciso, atualizado"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=YDdKiQNw80c"
+        },
+        {
+          "rank": 3,
+          "newsletter": "Tech With Tim",
+          "author": "Tim Ruscica",
+          "title": {
+            "en": "Prompt Engineering Full Course",
+            "pt": "Curso Completo de Prompt Engineering"
+          },
+          "summary": {
+            "en": "Tim delivers a comprehensive 35-minute course covering everything developers need to know about prompt engineering in 2026. The course goes beyond basics to cover steering vs commanding, few-shot prompting, chain-of-thought reasoning, structured output, constraints and negatives, iterative refinement, and interview-style prompting. Advanced techniques include temperature and top-p parameters, system prompts, and common mistakes to avoid. The key insight: prompt engineering isn't about 'magic words' — it's about understanding how LLMs process context and structuring your input to get reliable, reproducible outputs. Essential viewing for any developer working with AI APIs.",
+            "pt": "Tim entrega um curso abrangente de 35 minutos cobrindo tudo que desenvolvedores precisam saber sobre prompt engineering em 2026. O curso vai além do básico para cobrir steering vs commanding, few-shot prompting, raciocínio chain-of-thought, output estruturado, constraints e negativas, refinamento iterativo, e prompting estilo entrevista. Técnicas avançadas incluem parâmetros de temperature e top-p, system prompts, e erros comuns a evitar. O insight chave: prompt engineering não é sobre 'palavras mágicas' — é sobre entender como LLMs processam contexto e estruturar seu input para obter outputs confiáveis e reproduzíveis. Essencial para qualquer dev trabalhando com APIs de IA."
+          },
+          "insights": {
+            "en": [
+              "Steering > Commanding: instead of telling the LLM what to do, guide it with context, examples, and constraints — more reliable results",
+              "Few-shot prompting works: giving 2-3 examples of desired input/output format dramatically improves consistency",
+              "Chain-of-thought for complex tasks: asking the model to 'think step by step' before answering improves reasoning accuracy on multi-step problems"
+            ],
+            "pt": [
+              "Steering > Commanding: ao invés de dizer ao LLM o que fazer, guie-o com contexto, exemplos e constraints — resultados mais confiáveis",
+              "Few-shot prompting funciona: dar 2-3 exemplos do formato desejado de input/output melhora dramaticamente a consistência",
+              "Chain-of-thought para tarefas complexas: pedir ao modelo para 'pensar passo a passo' antes de responder melhora precisão de raciocínio em problemas multi-step"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=2BpCk4d2Cc0"
+        }
+      ]
+    },
+    {
       "id": "2026-03-11",
       "date": "2026-03-11",
       "entries": [
@@ -205,334 +289,6 @@
       ],
       "podcastLink": "https://open.spotify.com/episode/7b99MFyh2qDKxw5ut6rSaD",
       "podcastLang": "en"
-    },
-    {
-      "id": "2026-03-07",
-      "date": "2026-03-07",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "ByteByteGo",
-          "author": "Sualeh Asif (Cursor Co-founder)",
-          "title": {
-            "en": "Lessons from Building Cursor",
-            "pt": "Lições da Construção do Cursor"
-          },
-          "summary": {
-            "en": "Sualeh Asif, co-founder of Cursor, shares invaluable insights from building the most hyped AI coding tool of 2026 at The Pragmatic Summit. The conversation covers Composer 1.5's new agentic model, the shift toward cloud agents, and what software engineering will look like in one year. He reveals lessons learned from building a browser in just one week and offers concrete advice for engineers navigating the AI-augmented development landscape. Key revelation: Cursor's approach treats AI as a true pair programmer, not just an autocomplete tool — and this philosophy is reshaping how we think about developer productivity.",
-            "pt": "Sualeh Asif, cofundador do Cursor, compartilha insights valiosos da construção da ferramenta de AI coding mais hypada de 2026 no The Pragmatic Summit. A conversa aborda o novo modelo agêntico do Composer 1.5, a mudança para agentes na nuvem, e como será a engenharia de software daqui a um ano. Ele revela lições aprendidas ao construir um browser em apenas uma semana e oferece conselhos concretos para engenheiros navegando o cenário de desenvolvimento aumentado por IA. Revelação chave: a abordagem do Cursor trata IA como um verdadeiro pair programmer, não apenas autocomplete — e essa filosofia está reformulando como pensamos sobre produtividade de desenvolvedores."
-          },
-          "insights": {
-            "en": [
-              "Cloud agents are the future: Cursor's Composer 1.5 moves computation to the cloud, enabling more powerful agentic workflows that can reason across entire codebases",
-              "Software engineering in 1 year will be fundamentally different — engineers will orchestrate AI agents rather than write most code themselves",
-              "Build fast, learn faster: the team built a functional browser in one week as a learning exercise, proving that rapid prototyping with AI is now the norm"
-            ],
-            "pt": [
-              "Agentes na nuvem são o futuro: o Composer 1.5 do Cursor move computação para a nuvem, habilitando workflows agênticos mais poderosos que raciocinam sobre codebases inteiras",
-              "Engenharia de software em 1 ano será fundamentalmente diferente — engenheiros vão orquestrar agentes de IA ao invés de escrever a maior parte do código",
-              "Construa rápido, aprenda mais rápido: o time construiu um browser funcional em uma semana como exercício de aprendizado, provando que prototipagem rápida com IA agora é norma"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=dUMsFQ8y3gM"
-        },
-        {
-          "rank": 2,
-          "newsletter": "Anthropic Research",
-          "author": "Judy Hanwen Shen & Alex Tamkin",
-          "title": {
-            "en": "How AI Assistance Impacts the Formation of Coding Skills",
-            "pt": "Como Assistência de IA Impacta a Formação de Habilidades de Coding"
-          },
-          "summary": {
-            "en": "Anthropic ran a randomized controlled trial with 52 software developers to investigate whether AI coding assistance impacts skill development. The results are striking: developers using AI scored 17% lower on mastery quizzes — nearly two letter grades — compared to those who coded by hand. The largest gap was in debugging skills, which is ironic given that debugging AI-generated code is becoming increasingly important. Crucially, HOW developers used AI determined outcomes: those who delegated everything learned little, while those who asked for explanations alongside code generation retained knowledge. The study identifies specific interaction patterns: low-scoring behaviors (AI delegation, progressive reliance, iterative AI debugging) vs high-scoring ones (generation-then-comprehension, hybrid code-explanation, conceptual inquiry).",
-            "pt": "A Anthropic conduziu um estudo controlado com 52 desenvolvedores para investigar se assistência de IA para código impacta o desenvolvimento de habilidades. Os resultados são marcantes: desenvolvedores usando IA tiveram notas 17% menores em quizzes de compreensão — quase duas notas na escola — comparados aos que codaram na mão. A maior diferença foi em habilidades de debugging, o que é irônico dado que debugar código gerado por IA está se tornando cada vez mais importante. Crucialmente, COMO desenvolvedores usaram IA determinou os resultados: quem delegou tudo aprendeu pouco, enquanto quem pediu explicações junto com geração de código reteve conhecimento. O estudo identifica padrões de interação específicos: comportamentos de baixa pontuação (delegação total, dependência progressiva, debugging iterativo via AI) vs alta pontuação (geração-então-compreensão, código-explicação híbrido, consultas conceituais)."
-          },
-          "insights": {
-            "en": [
-              "The productivity vs learning tradeoff is real: AI group finished ~2 min faster but scored 17% lower on comprehension — speed came at the cost of understanding",
-              "Debugging skills suffer most: the biggest gap was in debugging questions — exactly the skill you need when AI-generated code breaks",
-              "HOW you use AI matters: asking 'explain this code' after generation preserves learning; blindly copy-pasting destroys it"
-            ],
-            "pt": [
-              "O tradeoff produtividade vs aprendizado é real: grupo AI terminou ~2 min mais rápido mas teve nota 17% menor em compreensão — velocidade veio ao custo de entendimento",
-              "Habilidades de debugging sofrem mais: a maior diferença foi em questões de debugging — exatamente a skill que você precisa quando código gerado por IA quebra",
-              "COMO você usa IA importa: perguntar 'explica esse código' após geração preserva aprendizado; copy-paste cego destrói"
-            ]
-          },
-          "link": "https://www.anthropic.com/research/AI-assistance-coding-skills"
-        },
-        {
-          "rank": 3,
-          "newsletter": "Coding Challenges",
-          "author": "John Crickett",
-          "title": {
-            "en": "Coding Challenge #110 - RTFM For Me Agent",
-            "pt": "Coding Challenge #110 - Agente RTFM For Me"
-          },
-          "summary": {
-            "en": "John presents a hands-on challenge to build an AI-powered documentation assistant using Retrieval-Augmented Generation (RAG). Instead of relying solely on what an AI model was trained on, you build a system that retrieves specific documents relevant to a question and feeds them as context — producing grounded, accurate answers with source citations. Redis is the backbone: it handles vector search for finding relevant documents, semantic caching to avoid redundant AI calls, session storage for conversation history, and long-term memory. The challenge walks through building a complete pipeline: document ingestion (chunking + embeddings), vector indexing in Redis, RAG-based answer generation, and a REST API wrapper.",
-            "pt": "John apresenta um desafio hands-on para construir um assistente de documentação powered by AI usando Retrieval-Augmented Generation (RAG). Ao invés de depender apenas do que o modelo de IA foi treinado, você constrói um sistema que recupera documentos específicos relevantes para uma pergunta e os alimenta como contexto — produzindo respostas fundamentadas e precisas com citações de fonte. Redis é a espinha dorsal: ele lida com busca vetorial para encontrar documentos relevantes, caching semântico para evitar chamadas redundantes de IA, armazenamento de sessão para histórico de conversas, e memória de longo prazo. O desafio percorre a construção de um pipeline completo: ingestão de documentos (chunking + embeddings), indexação vetorial no Redis, geração de respostas baseada em RAG, e um wrapper de API REST."
-          },
-          "insights": {
-            "en": [
-              "RAG is the practical AI skill of 2026: knowing how to build retrieval pipelines that ground LLM responses in real data is essential for production AI systems",
-              "Redis as AI infrastructure: vector search, semantic caching, and session storage in one tool simplifies architecture significantly",
-              "The 'RTFM' problem is solved: instead of telling users to read docs, you build an agent that reads for them — this pattern applies to any documentation-heavy domain"
-            ],
-            "pt": [
-              "RAG é a skill prática de IA de 2026: saber construir pipelines de recuperação que fundamentam respostas de LLM em dados reais é essencial para sistemas de IA em produção",
-              "Redis como infraestrutura de IA: busca vetorial, caching semântico e armazenamento de sessão em uma ferramenta simplifica arquitetura significativamente",
-              "O problema 'RTFM' está resolvido: ao invés de dizer para usuários lerem docs, você constrói um agente que lê para eles — esse padrão se aplica a qualquer domínio pesado em documentação"
-            ]
-          },
-          "link": "https://codingchallenges.substack.com/p/coding-challenge-110-rtfm-for-me"
-        }
-      ]
-    },
-    {
-      "id": "2026-03-06",
-      "date": "2026-03-06",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "Engineering Leadership",
-          "author": "Gregor Ojstersek",
-          "title": {
-            "en": "Software Engineering is Becoming Position-Less",
-            "pt": "Engenharia de Software Está se Tornando Sem Posição Fixa"
-          },
-          "summary": {
-            "en": "Gregor draws a fascinating parallel between the evolution of basketball and software engineering — and the comparison is surprisingly illuminating.\n\nIn basketball, the 1990s and 2000s were defined by specialized positions. Every team needed a dominant center, the game revolved around post plays and mid-range shots, and players had clearly defined roles. Fast forward to 2024: the game has become 'position-less'. The best teams now field versatile players who can shoot threes, handle the ball, rebound, and pass at elite levels — while still valuing specialists who excel at specific skills like three-point shooting or lockdown defense.\n\nSoftware engineering is following the same arc. In the early days, we had programmers, analysts, and testers. The 2000s and 2010s brought specialization: frontend vs backend, QA engineers, DevOps, Scrum Masters. Clear titles, defined responsibilities.\n\nBut now? The boundaries are dissolving. Companies care less about your title and more about your impact. Engineers are expected to think about product and business, not just code. Managers are becoming more hands-on. The 'Product Engineer' role is exploding — people who own the why, what, when, AND the how.\n\nThe Amazon effect accelerated this: when they increased their manager-to-IC ratio by 15%, other companies followed. Suddenly everyone wears multiple hats. Engineering Managers take on Staff Engineer work. Staff Engineers pick up management responsibilities. Architects code. The lines blur.\n\nOpenAI exemplifies this shift. Their Codex team has 40 people — only 1 PM and 2 designers. Everyone else is an engineer expected to have product/business mindset. Titles like 'Member of Technical Staff' replace traditional hierarchies. What matters is impact, not position.",
-            "pt": "Gregor traça um paralelo fascinante entre a evolução do basquete e da engenharia de software — e a comparação é surpreendentemente esclarecedora.\n\nNo basquete, as décadas de 1990 e 2000 foram definidas por posições especializadas. Todo time precisava de um pivô dominante, o jogo girava em torno de jogadas no garrafão e arremessos de meia distância, e jogadores tinham papéis claramente definidos. Avançando para 2024: o jogo se tornou 'sem posição'. Os melhores times agora têm jogadores versáteis que podem arremessar de três, conduzir a bola, pegar rebotes e passar em níveis de elite — enquanto ainda valorizam especialistas que se destacam em habilidades específicas.\n\nEngenharia de software está seguindo o mesmo arco. Nos primeiros dias, tínhamos programadores, analistas e testadores. Os anos 2000 e 2010 trouxeram especialização: frontend vs backend, engenheiros de QA, DevOps, Scrum Masters. Títulos claros, responsabilidades definidas.\n\nMas agora? As fronteiras estão se dissolvendo. Empresas se importam menos com seu título e mais com seu impacto. Engenheiros devem pensar sobre produto e negócio, não apenas código. Managers estão se tornando mais hands-on. O papel de 'Product Engineer' está explodindo — pessoas que são donas do porquê, o quê, quando E o como.\n\nO efeito Amazon acelerou isso: quando aumentaram a proporção manager-para-IC em 15%, outras empresas seguiram. De repente todos usam múltiplos chapéus. Engineering Managers assumem trabalho de Staff Engineer. Staff Engineers pegam responsabilidades de gestão. Arquitetos codam. As linhas se borram.\n\nA OpenAI exemplifica essa mudança. O time do Codex tem 40 pessoas — apenas 1 PM e 2 designers. Todos os outros são engenheiros que devem ter mentalidade de produto/negócio. Títulos como 'Member of Technical Staff' substituem hierarquias tradicionais. O que importa é impacto, não posição."
-          },
-          "insights": {
-            "en": [
-              "The barbell model: companies increasingly want EITHER extreme generalists who can do everything (frontend, backend, mobile, product thinking) OR extreme specialists who think outside the box and bring unique expertise. The middle ground is shrinking.",
-              "Product Engineer is the new default: startups like Lovable hire product engineers who own idea-to-execution. Engineers are expected to understand distribution, user testing, and business impact — not just write code.",
-              "Titles are becoming meaningless: 'Member of Technical Staff' at AI companies signals that what you DO matters more than what you're CALLED. Impact over hierarchy."
-            ],
-            "pt": [
-              "O modelo barbell: empresas cada vez mais querem OU generalistas extremos que fazem tudo (frontend, backend, mobile, pensamento de produto) OU especialistas extremos que pensam fora da caixa e trazem expertise única. O meio-termo está encolhendo.",
-              "Product Engineer é o novo padrão: startups como Lovable contratam product engineers que são donos da ideia até execução. Engenheiros devem entender distribuição, testes com usuários e impacto no negócio — não apenas escrever código.",
-              "Títulos estão se tornando sem sentido: 'Member of Technical Staff' em empresas de IA sinaliza que o que você FAZ importa mais do que como você é CHAMADO. Impacto sobre hierarquia."
-            ]
-          },
-          "examples": {
-            "en": [
-              "Audit your own versatility: list 5 skills outside your core role. Can you write a product spec? Run a user interview? Deploy to production? Debug a frontend issue? The more you can do, the more valuable you become.",
-              "Try wearing a different hat this sprint: if you're a backend engineer, pair with the PM on customer discovery. If you're a manager, write some code. Stretch beyond your title.",
-              "Evaluate your team through the barbell lens: do you have true generalists who can own anything end-to-end? Do you have specialists with rare, deep expertise? Or is everyone stuck in the shrinking middle?"
-            ],
-            "pt": [
-              "Audite sua própria versatilidade: liste 5 habilidades fora do seu papel principal. Você consegue escrever uma spec de produto? Conduzir uma entrevista com usuário? Fazer deploy em produção? Debugar um problema de frontend? Quanto mais você consegue fazer, mais valioso você se torna.",
-              "Tente usar um chapéu diferente nesta sprint: se você é engenheiro backend, pareie com o PM em descoberta de cliente. Se você é manager, escreva um pouco de código. Estique-se além do seu título.",
-              "Avalie seu time pela lente do barbell: você tem generalistas verdadeiros que podem ser donos de qualquer coisa end-to-end? Tem especialistas com expertise rara e profunda? Ou todos estão presos no meio que está encolhendo?"
-            ]
-          },
-          "link": "https://newsletter.eng-leadership.com/p/software-engineering-is-becoming"
-        },
-        {
-          "rank": 2,
-          "newsletter": "Confluent",
-          "author": "Sean Falconer",
-          "title": {
-            "en": "Event-Driven Design for Agents and Multi-Agent Systems",
-            "pt": "Design Orientado a Eventos para Agentes e Sistemas Multi-Agente"
-          },
-          "summary": {
-            "en": "Sean Falconer from Confluent delivers a comprehensive guide on why event-driven architecture is the backbone of scalable AI agent systems.\n\nThe ebook traces AI's evolution through three waves: Predictive AI (narrow, domain-specific models), Generative AI (foundation models like LLMs), and now Agentic AI — systems that don't just generate, but have agency to act, adapt, and collaborate in real time.\n\nThe core insight: AI agents function like microservices. Just as microservices evolved from tightly-coupled request/response patterns to event-driven architectures for scalability, AI agents need the same shift.",
-            "pt": "Sean Falconer da Confluent entrega um guia abrangente sobre por que arquitetura orientada a eventos é a espinha dorsal de sistemas de agentes de IA escaláveis.\n\nO ebook traça a evolução da IA através de três ondas: IA Preditiva, IA Generativa, e agora IA Agêntica — sistemas que não apenas geram, mas têm agência para agir, adaptar e colaborar em tempo real.\n\nO insight central: agentes de IA funcionam como microserviços. Assim como microserviços evoluíram de padrões request/response para arquiteturas orientadas a eventos, agentes de IA precisam da mesma mudança."
-          },
-          "insights": {
-            "en": [
-              "Agents = Microservices 2.0: Just as microservices needed event-driven architecture to scale, AI agents need the same shift.",
-              "The Blackboard Pattern is powerful: Instead of agents querying each other directly, they publish to a shared streaming topic.",
-              "Shift Left: Process data closer to the source for real-time decision-making."
-            ],
-            "pt": [
-              "Agentes = Microserviços 2.0: Assim como microserviços precisaram de arquitetura orientada a eventos para escalar, agentes de IA precisam da mesma mudança.",
-              "O Padrão Blackboard é poderoso: Em vez de agentes consultarem uns aos outros diretamente, eles publicam em um tópico streaming compartilhado.",
-              "Shift Left: Processe dados mais perto da fonte para tomada de decisão em tempo real."
-            ]
-          },
-          "link": "https://www.confluent.io/resources/ebook/event-driven-design-for-agents/"
-        },
-        {
-          "rank": 3,
-          "newsletter": "Tech With Tim",
-          "author": "Tim Ruscica",
-          "title": {
-            "en": "My Honest Thoughts on AI and the Job Market in 2026",
-            "pt": "Minhas Opiniões Honestas sobre IA e o Mercado de Trabalho em 2026"
-          },
-          "summary": {
-            "en": "Tim delivers a pragmatic, no-hype analysis of what's actually happening in the software job market in 2026. No doom-and-gloom, no techno-optimism — just observations from someone actively building and hiring.\n\n5 critical shifts he identifies:\n\n1. **Nobody writes code from scratch anymore.** AI coding tools (Copilot, Cursor, Claude) are now table stakes. The differentiator isn't using them — it's knowing when NOT to use them. Blindly accepting AI suggestions creates technical debt.\n\n2. **AI tools became commodity.** Everyone has access to the same tools. The competitive advantage shifted from tooling to judgment, architecture decisions, and system thinking.\n\n3. **The skill gap is exploding.** Seniors who leverage AI multiply their output. Juniors who rely on AI without understanding fundamentals produce fragile code. The middle is hollowing out.\n\n4. **Juniors are 'cooked'.** Entry-level tasks (CRUD, boilerplate, simple bug fixes) are being automated. Junior devs need to rapidly level up or pivot. The traditional 'junior → mid → senior' path is breaking.\n\n5. **Soft skills dominate.** Technical interviews still exist, but companies increasingly filter for communication, collaboration, and product thinking. You can teach someone to code; teaching them to work well with others is harder.",
-            "pt": "Tim entrega uma análise pragmática e sem hype do que está realmente acontecendo no mercado de trabalho de software em 2026. Sem catastrofismo, sem otimismo tecnológico — apenas observações de alguém ativamente construindo e contratando.\n\n5 mudanças críticas que ele identifica:\n\n1. **Ninguém mais escreve código do zero.** Ferramentas de AI coding (Copilot, Cursor, Claude) agora são básicas. O diferencial não é usá-las — é saber quando NÃO usar. Aceitar sugestões de AI cegamente cria dívida técnica.\n\n2. **Ferramentas de AI viraram commodity.** Todo mundo tem acesso às mesmas ferramentas. A vantagem competitiva mudou de ferramentas para julgamento, decisões de arquitetura e pensamento sistêmico.\n\n3. **O gap de habilidades está explodindo.** Seniors que alavancam AI multiplicam seu output. Juniors que dependem de AI sem entender fundamentos produzem código frágil. O meio está se esvaziando.\n\n4. **Juniors estão 'fritos'.** Tarefas de nível inicial (CRUD, boilerplate, bug fixes simples) estão sendo automatizadas. Devs juniors precisam evoluir rápido ou pivotar. O caminho tradicional 'junior → mid → senior' está quebrando.\n\n5. **Soft skills dominam.** Entrevistas técnicas ainda existem, mas empresas cada vez mais filtram por comunicação, colaboração e pensamento de produto. Você pode ensinar alguém a codar; ensinar a trabalhar bem com outros é mais difícil."
-          },
-          "insights": {
-            "en": [
-              "AI tools are table stakes now — the differentiator is knowing when NOT to use them and having the judgment to evaluate AI output critically.",
-              "The junior-to-senior pipeline is breaking. Entry-level work is being automated. New devs need to skip steps or find niches AI can't touch.",
-              "Soft skills became the moat. Companies can find technical competence anywhere; they pay premium for people who communicate well and think about product."
-            ],
-            "pt": [
-              "Ferramentas de AI agora são básicas — o diferencial é saber quando NÃO usar e ter julgamento para avaliar output de AI criticamente.",
-              "O pipeline junior-para-senior está quebrando. Trabalho de nível inicial está sendo automatizado. Novos devs precisam pular etapas ou encontrar nichos que AI não alcança.",
-              "Soft skills viraram o diferencial. Empresas encontram competência técnica em qualquer lugar; pagam premium por pessoas que comunicam bem e pensam em produto."
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=PEFso88LkC4"
-        }
-      ]
-    },
-    {
-      "id": "2026-03-05",
-      "date": "2026-03-05",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "Engineering Leadership",
-          "author": "Gregor Ojstersek",
-          "title": {
-            "en": "Inside OpenAI's Engineering Culture: How the Teams Behind ChatGPT Work",
-            "pt": "Por Dentro da Cultura de Engenharia da OpenAI: Como Funcionam os Times do ChatGPT"
-          },
-          "summary": {
-            "en": "Gregor interviewed Sulman Choudhry, Head of Engineering for ChatGPT, revealing how OpenAI operates internally. The team is surprisingly lean: the PM-to-engineer ratio is 1:30 (at Codex, it's 1:40!). The structure combines horizontal infrastructure teams with vertical product teams, and research + engineering sit together in the same teams — a radical break from the traditional model. Engineers own problems end-to-end, PMs sometimes prototype code, and designers write code beyond Figma. Every project has a DRI (Directly Responsible Individual) who owns everything, not just eng or product. They hire 'barbell style': extreme generalists who move across mobile/frontend/backend AND extreme specialists (like the WebRTC standard author). 80% of ideas come bottom-up through demos and prototypes, not lengthy docs.",
-            "pt": "Gregor entrevistou Sulman Choudhry, Head of Engineering do ChatGPT, revelando como a OpenAI funciona por dentro. O time é surpreendentemente enxuto: a proporção PM:engenheiro é 1:30 (no Codex, 1:40!). A estrutura combina times horizontais de infraestrutura com times verticais de produto, e pesquisa + engenharia sentam juntos nas mesmas equipes — uma quebra radical do modelo tradicional. Engenheiros são donos end-to-end dos problemas, PMs às vezes prototipam código, e designers escrevem código além do Figma. Cada projeto tem um DRI (Directly Responsible Individual) que é dono de tudo, não só da eng ou do produto. Contratam no estilo 'barbell': generalistas extremos que transitam entre mobile/frontend/backend E especialistas extremos (como o autor do padrão WebRTC). 80% das ideias vêm de baixo para cima através de demos e protótipos, não docs extensos."
-          },
-          "insights": {
-            "en": [
-              "Total DRI: each project has a Directly Responsible Individual who owns everything (not just eng or product) — this accelerates decisions and eliminates silos",
-              "Talent Barbell: they hire extreme generalists (who move across mobile/frontend/backend) AND extreme specialists (like the WebRTC standard author) — together they create a mentorship culture",
-              "80% Bottom-Up: most ideas come from below — engineers prototype and show demos instead of writing docs; structure is only added when there's real potential"
-            ],
-            "pt": [
-              "DRI Total: cada projeto tem um Directly Responsible Individual que é dono de tudo (não só da eng ou produto) — isso acelera decisões e elimina silos",
-              "Barbell de Talentos: contratam generalistas extremos (que transitam entre mobile/frontend/backend) E especialistas extremos (como o autor do padrão WebRTC) — juntos criam cultura de mentoria",
-              "80% Bottom-Up: a maioria das ideias vem de baixo — engenheiros prototipam e mostram demos ao invés de escrever docs; estrutura só é adicionada quando há potencial real"
-            ]
-          },
-          "link": "https://newsletter.eng-leadership.com/p/inside-openais-engineering-culture"
-        }
-      ]
-    },
-    {
-      "id": "2026-03-04",
-      "date": "2026-03-04",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "System Design Codex",
-          "author": "Saurabh Dashora",
-          "title": {
-            "en": "What Happens to an SQL Query? The Journey Through the DB",
-            "pt": "O Que Acontece com uma Query SQL? A Jornada pelo Banco de Dados"
-          },
-          "summary": {
-            "en": "When you execute a simple SELECT query, it travels through multiple internal database layers before returning results. The article traces this complete journey: from the Transport Subsystem that manages connections and performs initial authentication, through the Query Processor which parses and optimizes (creating a parse tree and efficient execution plan), to the Execution Engine that coordinates each step. At the base, the Storage Engine orchestrates specialized 'employees': Transaction Manager ensures consistency, Lock Manager prevents conflicts, Buffer Manager checks if data is already in memory, and Recovery Manager logs operations for rollback.",
-            "pt": "Quando você executa um simples SELECT, a query passa por múltiplas camadas internas do banco de dados antes de retornar resultados. O artigo detalha essa jornada completa: desde o Transport Subsystem que gerencia conexões e faz autenticação inicial, passando pelo Query Processor que faz parsing e otimização (criando árvore de parse e plano de execução eficiente), até o Execution Engine que coordena cada passo. Na base, o Storage Engine orquestra 'funcionários' especializados: Transaction Manager garante consistência, Lock Manager previne conflitos, Buffer Manager verifica se dados já estão em memória, e Recovery Manager registra operações para rollback."
-          },
-          "insights": {
-            "en": [
-              "The Query Optimizer is the brain that decides *how* to execute your query — understanding this helps write more efficient queries",
-              "Buffer Manager is key for performance: data in memory = fast; data on disk = slow",
-              "Every query, even a simple SELECT, activates this entire machinery — that's why batch queries and connection pooling matter"
-            ],
-            "pt": [
-              "O Query Optimizer é o cérebro que decide *como* executar sua query — entender isso ajuda a escrever queries mais eficientes",
-              "Buffer Manager é chave para performance: dados em memória = rápido; dados em disco = lento",
-              "Cada query, mesmo um simples SELECT, ativa toda essa maquinaria — por isso batch queries e connection pooling importam"
-            ]
-          },
-          "link": "https://newsletter.systemdesigncodex.com/p/what-happens-to-an-sql-query"
-        }
-      ]
-    },
-    {
-      "id": "2026-03-03",
-      "date": "2026-03-03",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "System Design One",
-          "author": "Neo Kim",
-          "title": {
-            "en": "Context Engineering vs Prompt Engineering",
-            "pt": "Context Engineering vs Prompt Engineering"
-          },
-          "summary": {
-            "en": "Context engineering is the new frontier in AI development. While prompt engineering focuses on crafting the right question, context engineering is about providing the AI with the right information at the right time. The article explores how companies like Anthropic and OpenAI are shifting focus from prompt optimization to context management, using techniques like RAG, memory systems, and dynamic context windows to improve AI responses.",
-            "pt": "Context engineering é a nova fronteira no desenvolvimento de IA. Enquanto prompt engineering foca em criar a pergunta certa, context engineering trata de fornecer à IA a informação certa no momento certo. O artigo explora como empresas como Anthropic e OpenAI estão mudando o foco de otimização de prompts para gestão de contexto, usando técnicas como RAG, sistemas de memória e janelas de contexto dinâmicas."
-          },
-          "insights": {
-            "en": [
-              "Context > Prompt: The quality of context matters more than the cleverness of your prompt",
-              "RAG is just the beginning - memory systems and dynamic context are the next evolution",
-              "Engineers need to think about context pipelines, not just prompt templates"
-            ],
-            "pt": [
-              "Contexto > Prompt: A qualidade do contexto importa mais que a sofisticação do prompt",
-              "RAG é só o começo - sistemas de memória e contexto dinâmico são a próxima evolução",
-              "Engenheiros precisam pensar em pipelines de contexto, não só templates de prompt"
-            ]
-          },
-          "link": "https://newsletter.systemdesign.one/p/context-engineering"
-        },
-        {
-          "rank": 2,
-          "newsletter": "Engineering Leadership",
-          "author": "Gregor Ojstersek",
-          "title": {
-            "en": "The Evolution of Software Engineering Productivity",
-            "pt": "A Evolução da Produtividade em Engenharia de Software"
-          },
-          "summary": {
-            "en": "Productivity measurement in engineering has evolved from lines of code to story points to DORA metrics, and now to outcome-based measures. The article traces this evolution and argues that the future lies in measuring business impact, not output. Gregor presents a framework for balancing individual productivity with team effectiveness, emphasizing that the best teams optimize for flow and value delivery.",
-            "pt": "A medição de produtividade em engenharia evoluiu de linhas de código para story points, depois métricas DORA, e agora para medidas baseadas em outcome. O artigo traça essa evolução e argumenta que o futuro está em medir impacto no negócio, não output. Gregor apresenta um framework para equilibrar produtividade individual com efetividade do time."
-          },
-          "insights": {
-            "en": [
-              "Output metrics (commits, PRs) correlate poorly with actual value delivered",
-              "DORA metrics are a step forward but still miss business impact",
-              "The best productivity measure is 'problems solved per unit of time'"
-            ],
-            "pt": [
-              "Métricas de output (commits, PRs) correlacionam mal com valor entregue",
-              "Métricas DORA são um avanço mas ainda perdem impacto no negócio",
-              "A melhor medida de produtividade é 'problemas resolvidos por unidade de tempo'"
-            ]
-          },
-          "link": "https://newsletter.eng-leadership.com/p/evolution-of-productivity"
-        },
-        {
-          "rank": 3,
-          "newsletter": "AlgoMaster",
-          "author": "Ashish Pratap Singh",
-          "title": {
-            "en": "300+ Engineering Articles to Level Up Your System Design Skills",
-            "pt": "300+ Artigos de Engenharia para Evoluir suas Habilidades de System Design"
-          },
-          "summary": {
-            "en": "A curated mega-list of system design resources organized by topic: databases, caching, messaging, distributed systems, and real-world case studies. Ashish categorizes articles by difficulty and provides a recommended reading order. Standout sections include deep dives into how Netflix, Uber, and Stripe architect their systems, plus interview-specific preparation guides.",
-            "pt": "Uma mega-lista curada de recursos de system design organizada por tópico: bancos de dados, caching, messaging, sistemas distribuídos, e casos reais. Ashish categoriza artigos por dificuldade e dá uma ordem de leitura recomendada. Destaques incluem deep dives em como Netflix, Uber e Stripe arquitetam seus sistemas, além de guias de preparação para entrevistas."
-          },
-          "insights": {
-            "en": [
-              "Start with fundamentals (CAP theorem, consistency models) before diving into case studies",
-              "Real company engineering blogs are the best learning resource",
-              "Practice designing systems you use daily (WhatsApp, YouTube) before interviews"
-            ],
-            "pt": [
-              "Comece pelos fundamentos (teorema CAP, modelos de consistência) antes dos case studies",
-              "Blogs de engenharia de empresas reais são o melhor recurso de aprendizado",
-              "Pratique projetar sistemas que você usa diariamente (WhatsApp, YouTube) antes de entrevistas"
-            ]
-          },
-          "link": "https://blog.algomaster.io/p/300-engineering-articles"
-        }
-      ]
     }
   ]
 }
