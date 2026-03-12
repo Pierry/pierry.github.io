@@ -151,6 +151,7 @@ const t = {
     projHowMuch: "iOS App",
     projTodone: "Task management app",
     // Open-source descriptions
+    ossJsonEditor: "A modern, fast, and beautiful JSON editor built with React and Material Design 3. Features auto-format, multiple themes, and local storage.",
     ossMeeting: "A simple messaging app for meetings and team communication.",
     ossWhere: "A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.",
     ossCloudDancer: "A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.",
@@ -202,6 +203,7 @@ const t = {
     projHowMuch: "App iOS",
     projTodone: "App de gestão de tarefas",
     // Open-source descriptions
+    ossJsonEditor: "Um editor JSON moderno, rápido e bonito feito com React e Material Design 3. Auto-formatação, múltiplos temas e armazenamento local.",
     ossMeeting: "Um app simples de mensagens para reuniões e comunicação de times.",
     ossWhere: "Uma visualização divertida que mostra onde no mundo você teria nascido baseado na distribuição populacional global na sua data de nascimento.",
     ossCloudDancer: "Um tema sereno e claro para IDEs JetBrains inspirado na Cor do Ano 2026 da Pantone.",
@@ -546,17 +548,6 @@ const Index = () => {
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
-                href="https://contractor-7427c.web.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-base text-foreground hover:text-primary transition-colors"
-              >
-                JSON Editor
-              </a>
-              <span className="text-sm text-muted-foreground">{i18n.projJsonEditor}</span>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-              <a
                 href="https://spacemetrics.ai"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -609,6 +600,30 @@ const Index = () => {
           </h2>
 
           <div className="space-y-6">
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
+                  href="https://contractor-7427c.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-foreground hover:text-primary transition-colors"
+                >
+                  JSON Editor
+                </a>
+                <a
+                  href="https://github.com/Pierry/json-editor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {i18n.viewCode}
+                </a>
+              </div>
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+                {i18n.ossJsonEditor}
+              </p>
+            </div>
+
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
