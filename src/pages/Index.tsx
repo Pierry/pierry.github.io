@@ -145,6 +145,7 @@ const t = {
     expExpense: "Technical Lead, 2016–2018",
     expDeloitte: "Mobile Engineer, 2016",
     // Projects
+    projJsonEditor: "Modern JSON editor with themes",
     projSpaceMetrics: "Engineering delivery analytics",
     projPlaybook: "Open source",
     projHowMuch: "iOS App",
@@ -195,6 +196,7 @@ const t = {
     expExpense: "Technical Lead, 2016–2018",
     expDeloitte: "Mobile Engineer, 2016",
     // Projects
+    projJsonEditor: "Editor JSON moderno com temas",
     projSpaceMetrics: "Analytics de delivery de engenharia",
     projPlaybook: "Open source",
     projHowMuch: "App iOS",
@@ -542,6 +544,17 @@ const Index = () => {
           </h2>
 
           <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <a
+                href="https://contractor-7427c.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base text-foreground hover:text-primary transition-colors"
+              >
+                JSON Editor
+              </a>
+              <span className="text-sm text-muted-foreground">{i18n.projJsonEditor}</span>
+            </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
                 href="https://spacemetrics.ai"
