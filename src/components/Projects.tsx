@@ -9,6 +9,15 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "JSON Editor",
+      description: "A modern, fast, and beautiful JSON editor built with React 19 and Material Design 3. Features auto-format on paste, multiple themes, smart indentation, and local storage.",
+      imageSrc: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+      tags: ["Open Source", "React", "TypeScript"],
+      category: "Web",
+      link: "https://contractor-7427c.web.app/",
+      github: "https://github.com/Pierry/json-editor"
+    },
+    {
       title: "Devin",
       description: "Contributed to the development of Devin, an AI software engineer capable of solving complex programming tasks.",
       imageSrc: "https://images.unsplash.com/photo-1581092921461-7384206bf194?auto=format&fit=crop&w=1200&q=80",
@@ -87,6 +96,7 @@ const Projects = () => {
               imageSrc={project.imageSrc}
               tags={project.tags}
               link={project.link}
+              github={project.github}
             />
           </div>
         ))}

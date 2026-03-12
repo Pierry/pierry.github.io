@@ -1,6 +1,6 @@
 
 import { useState, useRef, useEffect } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 interface ProjectCardProps {
@@ -9,9 +9,10 @@ interface ProjectCardProps {
   imageSrc: string;
   tags: string[];
   link?: string;
+  github?: string;
 }
 
-const ProjectCard = ({ title, description, imageSrc, tags, link }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, imageSrc, tags, link, github }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
@@ -62,16 +63,28 @@ const ProjectCard = ({ title, description, imageSrc, tags, link }: ProjectCardPr
         <h3 className="text-xl font-medium mb-2">{title}</h3>
         <p className="text-foreground/70 text-base mb-4">{description}</p>
         
-        {link && (
-          <a 
-            href={link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-primary hover:text-primary/90 transition-colors"
-          >
-            View Project <ExternalLink className="ml-1 h-4 w-4" />
-          </a>
-        )}
+        <div className="flex items-center gap-4">
+          {link && (
+            <a 
+              href={link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-primary hover:text-primary/90 transition-colors"
+            >
+              View Project <ExternalLink className="ml-1 h-4 w-4" />
+            </a>
+          )}
+          {github && (
+            <a 
+              href={github} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-foreground/70 hover:text-foreground transition-colors"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
