@@ -1,6 +1,64 @@
 {
   "digests": [
     {
+      "id": "2026-03-13",
+      "date": "2026-03-13",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Fireship",
+          "author": "Jeff Delaney",
+          "title": {
+            "en": "7 New Open Source AI Tools You Need Right Now",
+            "pt": "7 Novas Ferramentas de IA Open Source Que Você Precisa Agora"
+          },
+          "summary": {
+            "en": "Jeff delivers a rapid-fire overview of 7 open source AI tools that are flying under the radar but deserve attention. The video covers Agency Agents for building multi-agent systems with built-in orchestration, PromptFoo for testing and evaluating LLM prompts systematically (essential for production AI), MicroFish for lightweight local inference, NanoChat for self-hosted chat interfaces, Impeccable for AI code review automation, Heretic for building AI workflows without vendor lock-in, and OpenViking for open-source RAG pipelines. The key insight: while big AI labs dominate headlines, the open source ecosystem is building the infrastructure that will let teams own their AI stack. For engineering managers, these tools represent the shift from 'use ChatGPT API' to 'build AI-native systems you control'. Essential viewing for anyone evaluating AI tooling for their team.",
+            "pt": "Jeff entrega uma visão rápida de 7 ferramentas de IA open source que estão passando despercebidas mas merecem atenção. O vídeo cobre Agency Agents para construir sistemas multi-agente com orquestração built-in, PromptFoo para testar e avaliar prompts de LLM sistematicamente (essencial para IA em produção), MicroFish para inferência local leve, NanoChat para interfaces de chat self-hosted, Impeccable para automação de code review com IA, Heretic para construir workflows de IA sem vendor lock-in, e OpenViking para pipelines RAG open-source. O insight chave: enquanto grandes labs de IA dominam manchetes, o ecossistema open source está construindo a infraestrutura que permitirá times serem donos de sua stack de IA. Para engineering managers, essas ferramentas representam a mudança de 'usar API do ChatGPT' para 'construir sistemas AI-native que você controla'. Essencial para quem está avaliando tooling de IA pro time."
+          },
+          "insights": {
+            "en": [
+              "Own your AI stack: open source alternatives to proprietary AI services reduce vendor lock-in and give you control over costs, privacy, and customization",
+              "PromptFoo is a must-have: systematic prompt testing and evaluation catches regressions before production — treat prompts like code with proper testing",
+              "Multi-agent orchestration is maturing: tools like Agency Agents show the pattern of multiple specialized AI agents coordinating tasks — the architecture pattern for complex AI systems"
+            ],
+            "pt": [
+              "Seja dono da sua stack de IA: alternativas open source a serviços proprietários de IA reduzem vendor lock-in e dão controle sobre custos, privacidade e customização",
+              "PromptFoo é essencial: testes e avaliação sistemática de prompts capturam regressões antes de produção — trate prompts como código com testes adequados",
+              "Orquestração multi-agente está amadurecendo: ferramentas como Agency Agents mostram o padrão de múltiplos agentes de IA especializados coordenando tarefas — o padrão de arquitetura para sistemas de IA complexos"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=Xn-gtHDsaPY"
+        },
+        {
+          "rank": 2,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér",
+          "title": {
+            "en": "This Physics Breakthrough Looks Impossible",
+            "pt": "Este Avanço em Física Parece Impossível"
+          },
+          "summary": {
+            "en": "Károly presents 'Dynamic Duo', a new physics simulation technique that achieves results previously thought impossible — highly detailed fluid and soft body interactions at near-real-time speeds. The research tackles the fundamental challenge of simulating materials with vastly different physical properties interacting (like honey flowing through a mesh of rubber bands). Traditional simulators either sacrifice detail for speed or take hours per frame. Dynamic Duo uses a novel dual-representation approach: a coarse grid for fast global dynamics and an adaptive fine mesh for detailed local interactions. The breakthrough is the bidirectional coupling that maintains physical accuracy while letting each representation operate at its optimal resolution. This has implications for VFX, games, engineering simulation, and any domain where realistic physics matters. The pattern of 'coarse + fine with smart coupling' is emerging across many computational domains.",
+            "pt": "Károly apresenta 'Dynamic Duo', uma nova técnica de simulação física que alcança resultados antes considerados impossíveis — interações altamente detalhadas de fluidos e corpos macios em velocidades quase tempo real. A pesquisa aborda o desafio fundamental de simular materiais com propriedades físicas vastamente diferentes interagindo (como mel fluindo através de uma malha de elásticos). Simuladores tradicionais ou sacrificam detalhe por velocidade ou levam horas por frame. Dynamic Duo usa uma abordagem de representação dual: uma grade grosseira para dinâmica global rápida e uma malha fina adaptativa para interações locais detalhadas. O avanço é o acoplamento bidirecional que mantém precisão física enquanto cada representação opera em sua resolução ótima. Isso tem implicações para VFX, games, simulação de engenharia, e qualquer domínio onde física realista importa. O padrão 'grosseiro + fino com acoplamento inteligente' está emergindo em muitos domínios computacionais."
+          },
+          "insights": {
+            "en": [
+              "Multi-resolution is the pattern: coarse representation for speed, fine representation for detail, smart coupling to maintain accuracy — this pattern applies beyond physics to many engineering problems",
+              "Real-time simulation unlocks new workflows: when iteration goes from hours to seconds, engineers can explore more designs and catch problems earlier",
+              "Hybrid approaches beat pure methods: neither pure grid nor pure mesh wins alone — the combination with intelligent coupling outperforms both"
+            ],
+            "pt": [
+              "Multi-resolução é o padrão: representação grosseira para velocidade, representação fina para detalhe, acoplamento inteligente para manter precisão — este padrão se aplica além de física para muitos problemas de engenharia",
+              "Simulação em tempo real destrava novos workflows: quando iteração vai de horas para segundos, engenheiros podem explorar mais designs e capturar problemas mais cedo",
+              "Abordagens híbridas superam métodos puros: nem grade pura nem mesh pura vence sozinha — a combinação com acoplamento inteligente supera ambas"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=RDQ4vHAPNls"
+        }
+      ]
+    },
+    {
       "id": "2026-03-12",
       "date": "2026-03-12",
       "entries": [
