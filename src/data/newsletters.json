@@ -1,6 +1,90 @@
 {
   "digests": [
     {
+      "id": "2026-03-14",
+      "date": "2026-03-14",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech With Tim",
+          "author": "Tim Ruscica",
+          "title": {
+            "en": "OpenClaw Optimization & Cost Savings Tutorial - Save 97% on Cost",
+            "pt": "Tutorial de Otimização do OpenClaw & Economia de Custos - Economize 97% em Custos"
+          },
+          "summary": {
+            "en": "Tim delivers a comprehensive 45-minute deep-dive into optimizing OpenClaw to dramatically reduce API costs — claiming savings of over 90%. The tutorial covers the full optimization stack: caching strategies to avoid redundant API calls, context pruning to minimize token usage, model routing to use cheaper models for simple tasks, and token auditing to actually measure what you're spending. The key insight: most developers use expensive models for everything when 80% of tasks can be handled by smaller, cheaper models. Tim demonstrates session initialization optimizations, local heartbeat with Ollama for low-cost background tasks, and spending limits to prevent runaway costs. For engineering managers evaluating AI tooling budgets, this is essential viewing — the techniques apply to any LLM-powered system, not just OpenClaw.",
+            "pt": "Tim entrega um deep-dive abrangente de 45 minutos sobre otimização do OpenClaw para reduzir drasticamente custos de API — alegando economias de mais de 90%. O tutorial cobre a stack completa de otimização: estratégias de caching para evitar chamadas redundantes de API, pruning de contexto para minimizar uso de tokens, roteamento de modelos para usar modelos mais baratos para tarefas simples, e auditoria de tokens para realmente medir o que você está gastando. O insight chave: a maioria dos desenvolvedores usa modelos caros para tudo quando 80% das tarefas podem ser tratadas por modelos menores e mais baratos. Tim demonstra otimizações de inicialização de sessão, heartbeat local com Ollama para tarefas de background de baixo custo, e limites de gastos para prevenir custos descontrolados. Para engineering managers avaliando orçamentos de tooling de IA, é visualização essencial — as técnicas se aplicam a qualquer sistema powered by LLM, não só OpenClaw."
+          },
+          "insights": {
+            "en": [
+              "Model routing is the biggest lever: use GPT-4/Claude for complex reasoning, but route simple tasks (summarization, formatting) to GPT-3.5 or local models — 10x cost difference for similar results",
+              "Token auditing reveals waste: most teams have no visibility into actual token usage — Tim's audit script shows exactly where money is going and often reveals 50%+ waste in context size",
+              "Caching is underutilized: identical or near-identical prompts are common in production — semantic caching can eliminate 30-40% of API calls with no quality loss"
+            ],
+            "pt": [
+              "Roteamento de modelo é a maior alavanca: use GPT-4/Claude para raciocínio complexo, mas roteie tarefas simples (sumarização, formatação) para GPT-3.5 ou modelos locais — diferença de 10x em custo para resultados similares",
+              "Auditoria de tokens revela desperdício: a maioria dos times não tem visibilidade do uso real de tokens — o script de auditoria do Tim mostra exatamente onde o dinheiro está indo e frequentemente revela 50%+ de desperdício em tamanho de contexto",
+              "Caching é subutilizado: prompts idênticos ou quase idênticos são comuns em produção — caching semântico pode eliminar 30-40% das chamadas de API sem perda de qualidade"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=lTXFv1Z0qfI"
+        },
+        {
+          "rank": 2,
+          "newsletter": ".NET & Software Architecture",
+          "author": "Milan Jovanović",
+          "title": {
+            "en": "Saga Orchestration With MassTransit",
+            "pt": "Orquestração de Saga Com MassTransit"
+          },
+          "summary": {
+            "en": "Milan delivers a comprehensive guide to implementing the Saga pattern for distributed transactions using MassTransit in .NET. The article addresses the fundamental problem: in microservices, you can't use database transactions across services, so how do you ensure data consistency when an order involves inventory, payment, and shipping services? The Saga pattern coordinates a sequence of local transactions, with compensating actions if any step fails. Milan contrasts choreography (services react to events) vs orchestration (a central coordinator directs the flow), recommending orchestration for complex workflows. The implementation uses MassTransit's StateMachine, defining states (OrderSubmitted, InventoryReserved, PaymentProcessed, etc.) and transitions. Key insight: sagas don't provide ACID guarantees — they provide eventual consistency with explicit compensation. The article includes full code examples for the state machine, message contracts, and compensation handlers.",
+            "pt": "Milan entrega um guia abrangente para implementar o padrão Saga para transações distribuídas usando MassTransit em .NET. O artigo aborda o problema fundamental: em microserviços, você não pode usar transações de banco de dados entre serviços, então como garantir consistência de dados quando um pedido envolve serviços de inventário, pagamento e envio? O padrão Saga coordena uma sequência de transações locais, com ações compensatórias se qualquer passo falhar. Milan contrasta coreografia (serviços reagem a eventos) vs orquestração (um coordenador central dirige o fluxo), recomendando orquestração para workflows complexos. A implementação usa StateMachine do MassTransit, definindo estados (OrderSubmitted, InventoryReserved, PaymentProcessed, etc.) e transições. Insight chave: sagas não fornecem garantias ACID — fornecem consistência eventual com compensação explícita. O artigo inclui exemplos de código completos para a state machine, contratos de mensagem, e handlers de compensação."
+          },
+          "insights": {
+            "en": [
+              "Orchestration > choreography for complex flows: choreography works for simple event chains, but when you have 5+ services with branching logic and compensation, a central orchestrator is clearer and more maintainable",
+              "Design compensation from day one: every saga step needs a compensating action — 'reserve inventory' needs 'release inventory', 'charge payment' needs 'refund payment' — this shapes your API design",
+              "MassTransit state machines are production-ready: they handle persistence, retries, timeouts, and concurrent state transitions — don't build this infrastructure yourself"
+            ],
+            "pt": [
+              "Orquestração > coreografia para fluxos complexos: coreografia funciona para cadeias simples de eventos, mas quando você tem 5+ serviços com lógica de branching e compensação, um orquestrador central é mais claro e manutenível",
+              "Projete compensação desde o dia um: cada passo da saga precisa de uma ação compensatória — 'reservar inventário' precisa de 'liberar inventário', 'cobrar pagamento' precisa de 'reembolsar pagamento' — isso molda seu design de API",
+              "State machines do MassTransit são production-ready: elas lidam com persistência, retries, timeouts e transições de estado concorrentes — não construa essa infraestrutura você mesmo"
+            ]
+          },
+          "link": "https://www.milanjovanovic.tech/blog/saga-orchestration-with-masstransit"
+        },
+        {
+          "rank": 3,
+          "newsletter": "Anton DevTips",
+          "author": "Anton Bohkanov",
+          "title": {
+            "en": "How to Use the New HybridCache in .NET 9",
+            "pt": "Como Usar o Novo HybridCache no .NET 9"
+          },
+          "summary": {
+            "en": "Anton explores HybridCache, a new caching abstraction in .NET 9 that combines in-memory (L1) and distributed (L2) caching in a single, simple API. The traditional approach required developers to manually coordinate IMemoryCache and IDistributedCache, handling serialization, cache stampede prevention, and fallback logic themselves. HybridCache does this automatically: it checks L1 first (fast, local), falls back to L2 (shared across instances), and only calls your factory method if both miss. The article demonstrates configuration with Redis as L2, custom serialization options, and tag-based invalidation for cache groups. Key insight: HybridCache also solves the 'thundering herd' problem — when a cache key expires, only one request fetches the new value while others wait, preventing database overload. For teams running multiple service instances behind a load balancer, this is the caching pattern you should adopt.",
+            "pt": "Anton explora HybridCache, uma nova abstração de cache no .NET 9 que combina cache in-memory (L1) e distribuído (L2) em uma única API simples. A abordagem tradicional exigia que desenvolvedores coordenassem manualmente IMemoryCache e IDistributedCache, lidando com serialização, prevenção de cache stampede e lógica de fallback por conta própria. HybridCache faz isso automaticamente: verifica L1 primeiro (rápido, local), faz fallback para L2 (compartilhado entre instâncias), e só chama seu factory method se ambos falharem. O artigo demonstra configuração com Redis como L2, opções de serialização customizada, e invalidação baseada em tags para grupos de cache. Insight chave: HybridCache também resolve o problema do 'thundering herd' — quando uma chave de cache expira, apenas uma request busca o novo valor enquanto outras esperam, prevenindo sobrecarga do banco de dados. Para times rodando múltiplas instâncias de serviço atrás de um load balancer, este é o padrão de cache que você deveria adotar."
+          },
+          "insights": {
+            "en": [
+              "L1+L2 caching should be the default: in-memory cache alone doesn't work with multiple instances; distributed cache alone is slower — HybridCache gives you both with one API",
+              "Thundering herd protection is built-in: HybridCache uses locking to ensure only one caller fetches a missing value — critical for high-traffic APIs with expensive data fetches",
+              "Tag-based invalidation simplifies cache busting: instead of tracking individual keys, tag related entries (e.g., 'user:123') and invalidate by tag when the user changes"
+            ],
+            "pt": [
+              "Cache L1+L2 deveria ser o padrão: cache in-memory sozinho não funciona com múltiplas instâncias; cache distribuído sozinho é mais lento — HybridCache te dá ambos com uma API",
+              "Proteção contra thundering herd é built-in: HybridCache usa locking para garantir que apenas um caller busque um valor faltante — crítico para APIs de alto tráfego com fetches de dados caros",
+              "Invalidação baseada em tags simplifica cache busting: ao invés de rastrear chaves individuais, marque entradas relacionadas (ex: 'user:123') e invalide por tag quando o usuário mudar"
+            ]
+          },
+          "link": "https://antondevtips.com/blog/how-to-use-the-new-hybridcache-in-dotnet-9"
+        }
+      ]
+    },
+    {
       "id": "2026-03-13",
       "date": "2026-03-13",
       "entries": [
