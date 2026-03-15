@@ -150,6 +150,7 @@ const t = {
     projPlaybook: "Open source",
     projHowMuch: "iOS App",
     projTodone: "Task management app",
+    projDevSimulator: "Indie game",
     // Open-source descriptions
     ossJsonEditor: "A modern, fast, and beautiful JSON editor built with React and Material Design 3. Features auto-format, multiple themes, and local storage.",
     ossMeeting: "A simple messaging app for meetings and team communication.",
@@ -202,6 +203,7 @@ const t = {
     projPlaybook: "Open source",
     projHowMuch: "App iOS",
     projTodone: "App de gestão de tarefas",
+    projDevSimulator: "Jogo indie",
     // Open-source descriptions
     ossJsonEditor: "Um editor JSON moderno, rápido e bonito feito com React e Material Design 3. Auto-formatação, múltiplos temas e armazenamento local.",
     ossMeeting: "Um app simples de mensagens para reuniões e comunicação de times.",
@@ -589,6 +591,17 @@ const Index = () => {
                 Todone
               </a>
               <span className="text-sm text-muted-foreground">{i18n.projTodone}</span>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <a
+                href="https://pierryborges.itch.io/dev-simulator"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base text-foreground hover:text-primary transition-colors"
+              >
+                Dev Simulator
+              </a>
+              <span className="text-sm text-muted-foreground">{i18n.projDevSimulator}</span>
             </div>
           </div>
         </section>
