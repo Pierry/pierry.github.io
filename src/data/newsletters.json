@@ -1,6 +1,90 @@
 {
   "digests": [
     {
+      "id": "2026-03-15",
+      "date": "2026-03-15",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": ".NET & Software Architecture",
+          "author": "Milan Jovanović",
+          "title": {
+            "en": "Optimizing Bulk Database Updates in .NET: From Naive to Lightning-Fast",
+            "pt": "Otimizando Updates em Massa no Banco de Dados em .NET: Do Ingênuo ao Ultrarrápido"
+          },
+          "summary": {
+            "en": "Milan benchmarks 7 different approaches for bulk database updates in .NET, measuring performance against 1,000, 10,000, and 25,000 rows in PostgreSQL. At 10,000 rows, the slowest approach (naive Dapper loop) took 2,414ms while the fastest (COPY with temp table) took just 41ms — a 59x improvement. The bottleneck is rarely the SQL itself; it's how many times your code talks to the database. The article covers: naive one-update-per-row (10K round trips), EF Core batched SaveChanges (still 10K statements, fewer round trips), Dapper with VALUES table (single statement), Npgsql batching, unnest with array parameters, temp table with COPY, and the ultimate winner: PostgreSQL COPY with a temp table and single UPDATE join. The key insight: when you need unique values per row (like timestamps), you can't use simple WHERE IN clauses — you need to supply the data inline. This is essential reading for anyone building outbox processors, job queues, or batch pipelines.",
+            "pt": "Milan faz benchmark de 7 abordagens diferentes para updates em massa em .NET, medindo performance contra 1.000, 10.000 e 25.000 linhas no PostgreSQL. Com 10.000 linhas, a abordagem mais lenta (loop naive Dapper) levou 2.414ms enquanto a mais rápida (COPY com temp table) levou apenas 41ms — uma melhoria de 59x. O gargalo raramente é o SQL em si; é quantas vezes seu código fala com o banco de dados. O artigo cobre: naive um-update-por-linha (10K round trips), EF Core batched SaveChanges (ainda 10K statements, menos round trips), Dapper com tabela VALUES (único statement), batching Npgsql, unnest com parâmetros de array, temp table com COPY, e o vencedor final: PostgreSQL COPY com temp table e único UPDATE join. O insight chave: quando você precisa de valores únicos por linha (como timestamps), você não pode usar cláusulas WHERE IN simples — precisa fornecer os dados inline. Leitura essencial para quem constrói outbox processors, job queues ou pipelines de batch."
+          },
+          "insights": {
+            "en": [
+              "Network round-trips are the killer: 10,000 individual UPDATEs means 10,000 network round-trips — batching into a single statement can give 50x+ speedup",
+              "EF Core batching helps but doesn't solve the problem: it packs multiple statements into fewer round-trips, but still generates N separate UPDATE statements — use raw SQL for true bulk operations",
+              "COPY + temp table is the PostgreSQL secret weapon: bulk-load data with COPY (binary format), then UPDATE with a single JOIN — this pattern handles millions of rows efficiently"
+            ],
+            "pt": [
+              "Round-trips de rede são o assassino: 10.000 UPDATEs individuais significa 10.000 round-trips de rede — agrupar em um único statement pode dar speedup de 50x+",
+              "Batching do EF Core ajuda mas não resolve o problema: empacota múltiplos statements em menos round-trips, mas ainda gera N statements UPDATE separados — use SQL raw para operações bulk de verdade",
+              "COPY + temp table é a arma secreta do PostgreSQL: faça bulk-load dos dados com COPY (formato binário), depois UPDATE com um único JOIN — esse padrão lida com milhões de linhas eficientemente"
+            ]
+          },
+          "link": "https://www.milanjovanovic.tech/blog/optimizing-bulk-database-updates-in-dotnet"
+        },
+        {
+          "rank": 2,
+          "newsletter": "Tech World With Milan",
+          "author": "Milan Milanović",
+          "title": {
+            "en": "You're Not Paid to Write Code",
+            "pt": "Você Não É Pago Para Escrever Código"
+          },
+          "summary": {
+            "en": "Milan challenges the deeply ingrained belief that software engineers are valued by their code output. The core argument: engineers who delivered the most value weren't the most productive coders — they were the ones who started with thinking, asking questions, pushing back on requirements, and making a plan. Sometimes they discovered coding wasn't even necessary. Every line of code is a liability: it must be maintained, understood, changed later. Code is not valuable until what it does earns more than what it costs to keep running. The article explores why teams default to coding first (incentives, praise, deadlines), how AI amplifies this by making code cheap to produce (leading to poor framing and unnecessary code at scale), and what 'thinking-first' actually looks like (short notes, lightweight docs, quick prototypes to test assumptions). The engineer's real job: judgment, trade-offs, architecture, validation, and deciding what should never be built.",
+            "pt": "Milan desafia a crença profundamente enraizada de que engenheiros de software são valorizados pelo output de código. O argumento central: engenheiros que entregaram mais valor não eram os coders mais produtivos — eram os que começavam pensando, fazendo perguntas, questionando requisitos e fazendo um plano. Às vezes descobriam que codar nem era necessário. Cada linha de código é um passivo: precisa ser mantida, entendida, alterada depois. Código não é valioso até que o que ele faz ganhe mais do que custa para manter rodando. O artigo explora por que times defaultam para codar primeiro (incentivos, elogios, deadlines), como IA amplifica isso tornando código barato de produzir (levando a framing ruim e código desnecessário em escala), e como 'pensar primeiro' realmente é (notas curtas, docs leves, protótipos rápidos para testar suposições). O trabalho real do engenheiro: julgamento, trade-offs, arquitetura, validação e decidir o que nunca deveria ser construído."
+          },
+          "insights": {
+            "en": [
+              "Code is a liability, not an asset: capabilities are assets, code is the cost you incur to produce them — the goal is maximum capability with minimum code",
+              "The best engineers ask 'should we build this?' before 'how do we build this?' — preventing unnecessary work is higher leverage than doing work faster",
+              "AI makes thinking-first even more critical: when code is cheap to produce, the bottleneck shifts entirely to judgment, problem framing, and deciding what's worth building"
+            ],
+            "pt": [
+              "Código é passivo, não ativo: capacidades são ativos, código é o custo que você incorre para produzi-las — o objetivo é máxima capacidade com mínimo código",
+              "Os melhores engenheiros perguntam 'devemos construir isso?' antes de 'como construímos isso?' — prevenir trabalho desnecessário é mais alavancagem do que fazer trabalho mais rápido",
+              "IA torna pensar-primeiro ainda mais crítico: quando código é barato de produzir, o gargalo muda inteiramente para julgamento, framing de problemas e decidir o que vale construir"
+            ]
+          },
+          "link": "https://newsletter.techworld-with-milan.com/p/youre-not-paid-to-write-code"
+        },
+        {
+          "rank": 3,
+          "newsletter": "The T-Shaped Dev",
+          "author": "Petar Ivanov",
+          "title": {
+            "en": "Screaming Architecture & Colocation: Let Your Project Structure Tell the Story",
+            "pt": "Screaming Architecture & Colocação: Deixe a Estrutura do Projeto Contar a História"
+          },
+          "summary": {
+            "en": "Petar makes the case for organizing code by what your app does, not by technical roles. Open most Node.js projects and you see controllers/, services/, models/, utils/ — but this tells you nothing about the business domain. Is it e-commerce? Healthcare? Social network? You'd have to read code to find out. Uncle Bob's 'Screaming Architecture' principle: your project structure should scream what the application does. A healthcare app should have patients/, appointments/, prescriptions/, billing/ at the top level. The benefits: discoverability (new devs find code faster), ownership (teams own features, not layers), change isolation (modifying 'appointments' doesn't touch 5 folders), and deletion (remove a feature by deleting one folder). The article covers the colocation principle for React: keep things as close as possible to where they're used. Don't prematurely extract to utils/ and helpers/ that become junk drawers. Structure enforcement with TypeScript project references ensures boundaries are maintained at compile time.",
+            "pt": "Petar defende organizar código pelo que seu app faz, não por papéis técnicos. Abra a maioria dos projetos Node.js e você vê controllers/, services/, models/, utils/ — mas isso não diz nada sobre o domínio de negócio. É e-commerce? Saúde? Rede social? Você teria que ler código para descobrir. Princípio do Uncle Bob 'Screaming Architecture': sua estrutura de projeto deveria gritar o que a aplicação faz. Um app de saúde deveria ter patients/, appointments/, prescriptions/, billing/ no nível superior. Os benefícios: descobribilidade (novos devs encontram código mais rápido), ownership (times são donos de features, não camadas), isolamento de mudanças (modificar 'appointments' não toca 5 pastas), e deleção (remova uma feature deletando uma pasta). O artigo cobre o princípio de colocação para React: mantenha coisas o mais perto possível de onde são usadas. Não extraia prematuramente para utils/ e helpers/ que viram lixeiras. Enforcement de estrutura com TypeScript project references garante que fronteiras são mantidas em tempo de compilação."
+          },
+          "insights": {
+            "en": [
+              "Folder structure is documentation: a new developer should understand what your app does in 5 seconds by looking at the top-level folders",
+              "Features > layers for organization: controllers, services, and models for the same feature belong together — scattered layers force you to jump between 5 folders for one change",
+              "Enforce boundaries at compile time: TypeScript project references let you define what each feature can import — the compiler catches violations, not code review"
+            ],
+            "pt": [
+              "Estrutura de pastas é documentação: um novo desenvolvedor deveria entender o que seu app faz em 5 segundos olhando as pastas de nível superior",
+              "Features > camadas para organização: controllers, services e models da mesma feature pertencem juntos — camadas espalhadas forçam você a pular entre 5 pastas para uma mudança",
+              "Aplique fronteiras em tempo de compilação: TypeScript project references deixam você definir o que cada feature pode importar — o compilador pega violações, não code review"
+            ]
+          },
+          "link": "https://thetshaped.dev/p/screaming-architecture-and-colocation-nodejs-typescript-react"
+        }
+      ]
+    },
+    {
       "id": "2026-03-14",
       "date": "2026-03-14",
       "entries": [
