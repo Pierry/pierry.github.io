@@ -2,12 +2,20 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 
-const CATEGORIES = ["All", "AI", "Mobile", "Web"];
+const CATEGORIES = ["All", "AI", "Games", "Mobile", "Web"];
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const projects = [
+    {
+      title: "Dev Simulator",
+      description: "Jogo indie onde você vive a rotina de um desenvolvedor de software. Gerencie seu tempo, resolva bugs, sobreviva às reuniões e tente não pirar antes do deploy.",
+      imageSrc: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+      tags: ["Game", "Indie", "Simulation"],
+      category: "Games",
+      link: "https://pierryborges.itch.io/dev-simulator"
+    },
     {
       title: "JSON Editor",
       description: "A modern, fast, and beautiful JSON editor built with React 19 and Material Design 3. Features auto-format on paste, multiple themes, smart indentation, and local storage.",
