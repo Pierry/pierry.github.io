@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-16",
+      "date": "2026-03-16",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Refactoring Databases Is a Different Animal",
+            "pt": "Refatorar Bancos de Dados É Um Bicho Diferente"
+          },
+          "summary": {
+            "en": "Raul explains why database refactoring is fundamentally harder than code refactoring: databases sit at the center of architectures, with mobile apps, admin portals, background jobs, and analytics pipelines all depending on the same schema. A simple migration that works perfectly in development can break multiple systems in production because the change wasn't backwards compatible. The solution is the Expand/Contract pattern: never introduce breaking schema changes. Instead, evolve the schema in stages. Expand: add new columns while keeping old ones. Migrate: backfill data into the new structure. Contract: remove old columns only after ALL consumers have migrated. During transition, dual writes keep both representations synchronized. For large tables, batch migrations avoid table locks. The article covers index and constraint handling, application-level vs database-level synchronization, and the organizational challenge of coordinating across teams.",
+            "pt": "Raul explica por que refatoração de banco de dados é fundamentalmente mais difícil que refatoração de código: bancos ficam no centro das arquiteturas, com apps mobile, portais admin, jobs de background e pipelines de analytics todos dependendo do mesmo schema. Uma migration simples que funciona perfeitamente em dev pode quebrar múltiplos sistemas em produção porque a mudança não era backwards compatible. A solução é o padrão Expand/Contract: nunca introduza mudanças de schema que quebram. Evolua o schema em estágios. Expand: adicione novas colunas mantendo as antigas. Migrate: preencha dados na nova estrutura. Contract: remova colunas antigas só depois que TODOS os consumers migrarem. Durante transição, dual writes mantém ambas representações sincronizadas. Para tabelas grandes, migrations em batch evitam locks de tabela. O artigo cobre handling de índices e constraints, sincronização em nível de aplicação vs banco, e o desafio organizacional de coordenar entre times."
+          },
+          "insights": {
+            "en": [
+              "Backwards compatibility is non-negotiable: direct schema changes (DROP COLUMN, rename) break running services — always expand first, contract after all consumers migrate",
+              "Dual writes during transition: keep old and new columns synchronized via application-level writes or database triggers — both representations must stay consistent until migration completes",
+              "Batch backfills for large tables: a single UPDATE on millions of rows locks the table and generates massive transaction logs — use incremental batch updates with LIMIT and resume logic"
+            ],
+            "pt": [
+              "Compatibilidade backwards é inegociável: mudanças diretas de schema (DROP COLUMN, rename) quebram serviços rodando — sempre expanda primeiro, contraia depois que todos consumers migrarem",
+              "Dual writes durante transição: mantenha colunas antigas e novas sincronizadas via writes em nível de aplicação ou triggers de banco — ambas representações devem ficar consistentes até migration completar",
+              "Backfills em batch para tabelas grandes: um único UPDATE em milhões de linhas trava a tabela e gera logs de transação massivos — use updates incrementais em batch com LIMIT e lógica de resume"
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/refactoring-databases-is-a-different-animal"
+        }
+      ]
+    },
+    {
       "id": "2026-03-15",
       "date": "2026-03-15",
       "entries": [
