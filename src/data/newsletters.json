@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-17",
+      "date": "2026-03-17",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "ByteByteGo",
+          "author": "Alex Xu & Sualeh Asif (Cursor)",
+          "title": {
+            "en": "Lessons from Building Cursor: AI Coding Assistants at Scale",
+            "pt": "Lições da Construção do Cursor: Assistentes de Código com IA em Escala"
+          },
+          "summary": {
+            "en": "Alex Xu interviews Sualeh Asif, co-founder of Cursor, the AI-powered code editor that's rapidly becoming the tool of choice for developers worldwide. The conversation dives deep into the architectural decisions behind Cursor's real-time AI assistance, including how they handle context windows, manage latency for code completions, and architect their system to scale. Sualeh reveals their approach to 'agentic' workflows — where AI doesn't just autocomplete but actively plans and executes multi-step coding tasks. Key discussions include: why they built on VS Code's architecture, how they balance local inference vs cloud models, their caching strategies for common code patterns, and the challenges of maintaining code quality when AI writes significant portions of the codebase. For engineering leaders evaluating AI coding tools, this provides rare insight into the engineering tradeoffs behind a tool processing millions of code completions daily. The conversation also touches on the future of software engineering — will developers become 'AI supervisors' rather than direct code writers?",
+            "pt": "Alex Xu entrevista Sualeh Asif, co-fundador do Cursor, o editor de código com IA que está rapidamente se tornando a ferramenta de escolha de desenvolvedores pelo mundo. A conversa mergulha fundo nas decisões arquiteturais por trás da assistência de IA em tempo real do Cursor, incluindo como eles lidam com janelas de contexto, gerenciam latência para completions de código, e arquitetam seu sistema para escalar. Sualeh revela a abordagem deles para workflows 'agênticos' — onde IA não apenas autocompleta mas ativamente planeja e executa tarefas de código multi-step. Discussões chave incluem: por que construíram sobre a arquitetura do VS Code, como balanceiam inferência local vs modelos cloud, estratégias de caching para padrões comuns de código, e os desafios de manter qualidade de código quando IA escreve porções significativas do codebase. Para líderes de engenharia avaliando ferramentas de código com IA, isso provê insight raro sobre os tradeoffs de engenharia por trás de uma ferramenta processando milhões de code completions diariamente. A conversa também toca no futuro da engenharia de software — desenvolvedores vão se tornar 'supervisores de IA' ao invés de escritores diretos de código?"
+          },
+          "insights": {
+            "en": [
+              "Context window management is the key challenge: Cursor maintains semantic understanding of your entire codebase while fitting relevant context into model limits — they use embeddings, caching, and smart retrieval to make this work",
+              "Local + cloud hybrid is the architecture pattern: simple completions run locally for speed, complex reasoning goes to cloud models — latency optimization requires this dual approach",
+              "The future is 'agentic' coding: instead of line-by-line autocomplete, Cursor is moving toward agents that plan, execute, and iterate on multi-file changes — developers become reviewers and directors"
+            ],
+            "pt": [
+              "Gerenciamento de janela de contexto é o desafio chave: Cursor mantém entendimento semântico de todo seu codebase enquanto encaixa contexto relevante nos limites do modelo — usam embeddings, caching e retrieval inteligente",
+              "Híbrido local + cloud é o padrão de arquitetura: completions simples rodam localmente para velocidade, raciocínio complexo vai para modelos cloud — otimização de latência requer essa abordagem dual",
+              "O futuro é código 'agêntico': ao invés de autocomplete linha por linha, Cursor está movendo para agentes que planejam, executam e iteram em mudanças multi-arquivo — desenvolvedores se tornam revisores e diretores"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=dUMsFQ8y3gM"
+        }
+      ]
+    },
+    {
       "id": "2026-03-16",
       "date": "2026-03-16",
       "entries": [
