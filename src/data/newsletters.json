@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-18",
+      "date": "2026-03-18",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim & Ashish Bamania",
+          "title": {
+            "en": "21 Reinforcement Learning Concepts Explained Simply",
+            "pt": "21 Conceitos de Reinforcement Learning Explicados de Forma Simples"
+          },
+          "summary": {
+            "en": "Reinforcement Learning (RL) is making a comeback and becoming mainstream — from humanoid robots and game-playing AIs that beat world champions to the LLMs you chat with every day. This comprehensive guide breaks down 21 key RL concepts in plain language without complex math. The article covers the fundamental building blocks: Agent (the entity that learns and acts), Environment (everything the agent interacts with), State (a snapshot of the environment at a moment), Action (what the agent can do), and Reward/Punishment (feedback that shapes learning). Using a deer foraging in a forest as an intuitive analogy, it then maps these concepts to LLMs: the agent is the model itself, the environment includes user inputs, system prompts, tools/APIs, and conversation context. This foundation is essential for understanding how modern AI systems like ChatGPT are trained using RLHF (Reinforcement Learning from Human Feedback) and why RL is experiencing a renaissance in the AI era.",
+            "pt": "Reinforcement Learning (RL) está voltando com tudo e se tornando mainstream — de robôs humanoides e IAs que jogam e vencem campeões mundiais até os LLMs com quem você conversa todo dia. Este guia abrangente decompõe 21 conceitos-chave de RL em linguagem simples sem matemática complexa. O artigo cobre os blocos fundamentais: Agent (a entidade que aprende e age), Environment (tudo com que o agente interage), State (um snapshot do ambiente em um momento), Action (o que o agente pode fazer), e Reward/Punishment (feedback que molda o aprendizado). Usando um cervo forrageando na floresta como analogia intuitiva, mapeia esses conceitos para LLMs: o agente é o próprio modelo, o ambiente inclui inputs do usuário, system prompts, tools/APIs e contexto da conversa. Essa fundação é essencial para entender como sistemas modernos de IA como ChatGPT são treinados usando RLHF (Reinforcement Learning from Human Feedback) e por que RL está vivendo um renascimento na era da IA."
+          },
+          "insights": {
+            "en": [
+              "RL is how modern LLMs learn to be helpful: RLHF (Reinforcement Learning from Human Feedback) is the key technique that turns raw language models into useful assistants — understanding RL fundamentals helps you understand AI behavior",
+              "The Agent-Environment loop applies everywhere: whether it's a robot navigating a warehouse, an LLM responding to prompts, or a recommendation system — the same RL framework describes how they learn from feedback",
+              "State representation is the key design decision: for LLMs, the 'state' is the entire context window — this is why context management and prompt engineering matter so much for AI performance"
+            ],
+            "pt": [
+              "RL é como LLMs modernos aprendem a ser úteis: RLHF (Reinforcement Learning from Human Feedback) é a técnica chave que transforma modelos de linguagem brutos em assistentes úteis — entender fundamentos de RL ajuda a entender comportamento de IA",
+              "O loop Agent-Environment se aplica em todo lugar: seja um robô navegando um armazém, um LLM respondendo prompts, ou um sistema de recomendação — o mesmo framework de RL descreve como aprendem com feedback",
+              "Representação de estado é a decisão de design chave: para LLMs, o 'estado' é toda a janela de contexto — é por isso que gerenciamento de contexto e prompt engineering importam tanto para performance de IA"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/what-is-reinforcement-learning"
+        }
+      ]
+    },
+    {
       "id": "2026-03-17",
       "date": "2026-03-17",
       "entries": [
@@ -415,6 +447,7 @@
         {
           "rank": 1,
           "newsletter": "Fireship",
+
           "author": "Jeff Delaney",
           "title": {
             "en": "The Greatest Unsolved Problem in Computer Science",
