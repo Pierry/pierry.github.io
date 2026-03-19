@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-19",
+      "date": "2026-03-19",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim & Fran Soto",
+          "title": {
+            "en": "How to Build AI Agents: From Manual Work to Autonomous Systems",
+            "pt": "Como Construir AI Agents: De Trabalho Manual a Sistemas Autônomos"
+          },
+          "summary": {
+            "en": "Fran Soto (Amazon/Ring engineer) presents a comprehensive 10-step framework to evolve from pure manual work to fully autonomous AI agents, using incident response as a practical example. The core insight: an LLM is like having customer support on the phone — they can explain things brilliantly, but they don't have hands to fix your problem. An agent combines the brain (LLM), hands (MCP tools), expertise (Agent Skills & SOPs), and memory (context files like AGENTS.md). The framework progresses through: 1) Document manual work as runbooks, 2) Use AI as analysis assistant, 3) Connect MCP tools for direct data access, 4) Create Agent Skills for domain expertise, 5) Add short and long-term memory, 6) Write Agent SOPs for autonomous execution, 7) Define agent dependencies, 8) Add autonomous triggers, 9) Integrate into production workflows, 10) Orchestrate multiple specialized agents. Key lesson: building agents is iterative — don't flip a switch expecting perfection; gradually offload cognitive load while maintaining human oversight for accountability.",
+            "pt": "Fran Soto (engenheiro Amazon/Ring) apresenta um framework abrangente de 10 passos para evoluir de trabalho manual puro para AI agents totalmente autônomos, usando incident response como exemplo prático. O insight central: um LLM é como ter suporte ao cliente no telefone — podem explicar coisas brilhantemente, mas não têm mãos para resolver seu problema. Um agent combina cérebro (LLM), mãos (ferramentas MCP), expertise (Agent Skills & SOPs), e memória (arquivos de contexto como AGENTS.md). O framework progride por: 1) Documentar trabalho manual como runbooks, 2) Usar IA como assistente de análise, 3) Conectar ferramentas MCP para acesso direto a dados, 4) Criar Agent Skills para expertise de domínio, 5) Adicionar memória de curto e longo prazo, 6) Escrever Agent SOPs para execução autônoma, 7) Definir dependências do agent, 8) Adicionar triggers autônomos, 9) Integrar em workflows de produção, 10) Orquestrar múltiplos agents especializados. Lição chave: construir agents é iterativo — não espere perfeição ao apertar um botão; gradualmente transfira carga cognitiva mantendo supervisão humana para accountability."
+          },
+          "insights": {
+            "en": [
+              "Agents = Brain + Hands + Memory + Skills: an LLM alone can only talk — MCP tools give it the ability to act, Agent Skills teach it HOW to act, and memory files give it context about your specific system",
+              "Agent SOPs are the key to autonomy: write step-by-step procedures in RFC 2119 format (MUST, SHOULD, MAY) that the agent follows — this is how you delegate entire workflows, not just individual tasks",
+              "Push humans to the right, not out: the goal isn't full automation — it's moving humans from 'doing the work' to 'overseeing the work' while maintaining accountability for production decisions"
+            ],
+            "pt": [
+              "Agents = Cérebro + Mãos + Memória + Skills: um LLM sozinho só consegue falar — ferramentas MCP dão capacidade de agir, Agent Skills ensinam COMO agir, e arquivos de memória dão contexto sobre seu sistema específico",
+              "Agent SOPs são a chave para autonomia: escreva procedimentos passo-a-passo em formato RFC 2119 (MUST, SHOULD, MAY) que o agent segue — assim você delega workflows inteiros, não apenas tarefas individuais",
+              "Empurre humanos para a direita, não para fora: o objetivo não é automação total — é mover humanos de 'fazer o trabalho' para 'supervisionar o trabalho' mantendo accountability por decisões de produção"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/how-do-ai-agents-work"
+        }
+      ]
+    },
+    {
       "id": "2026-03-18",
       "date": "2026-03-18",
       "entries": [
@@ -447,7 +479,6 @@
         {
           "rank": 1,
           "newsletter": "Fireship",
-
           "author": "Jeff Delaney",
           "title": {
             "en": "The Greatest Unsolved Problem in Computer Science",
