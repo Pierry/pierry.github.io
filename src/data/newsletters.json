@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-20",
+      "date": "2026-03-20",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Fireship",
+          "author": "Jeff Delaney",
+          "title": {
+            "en": "Google Stitch: AI-Powered UI/UX Design That Changes Everything",
+            "pt": "Google Stitch: Design UI/UX com IA Que Muda Tudo"
+          },
+          "summary": {
+            "en": "Jeff breaks down Google's newly announced Stitch — an AI-powered design tool that's generating massive buzz in the dev community. Stitch lets you describe a UI in natural language and generates not just mockups, but production-ready code. The demo shows generating complete dashboard interfaces, responsive layouts, and interactive components from simple text prompts. Unlike previous AI design tools that produced static images, Stitch outputs actual React/HTML/CSS that you can ship. The implications for product development are significant: designers can iterate faster, developers can skip repetitive UI scaffolding, and teams can prototype in hours instead of days. Jeff discusses the competitive landscape (v0.dev, Figma AI, Builder.io) and why Google's entry signals that AI-assisted UI generation is becoming mainstream infrastructure, not just experimental tooling. For engineering managers, this represents another shift in how teams allocate design and frontend development time.",
+            "pt": "Jeff analisa o recém-anunciado Stitch do Google — uma ferramenta de design com IA que está gerando enorme buzz na comunidade dev. Stitch permite descrever uma UI em linguagem natural e gera não apenas mockups, mas código production-ready. A demo mostra gerando interfaces de dashboard completas, layouts responsivos e componentes interativos a partir de prompts de texto simples. Diferente de ferramentas de design com IA anteriores que produziam imagens estáticas, Stitch produz React/HTML/CSS real que você pode shipar. As implicações para desenvolvimento de produto são significativas: designers podem iterar mais rápido, desenvolvedores podem pular scaffolding repetitivo de UI, e times podem prototipar em horas ao invés de dias. Jeff discute o cenário competitivo (v0.dev, Figma AI, Builder.io) e por que a entrada do Google sinaliza que geração de UI assistida por IA está se tornando infraestrutura mainstream, não apenas ferramental experimental. Para engineering managers, isso representa mais uma mudança em como times alocam tempo de design e desenvolvimento frontend."
+          },
+          "insights": {
+            "en": [
+              "AI UI generation is now production-grade: Stitch outputs deployable code, not just mockups — the gap between 'design' and 'implementation' is collapsing for standard UI patterns",
+              "Prompt-to-UI changes prototyping workflows: instead of wireframes → mockups → handoff → implementation, teams can go directly from product requirements to working prototypes in a single session",
+              "This shifts frontend time allocation: repetitive UI work (forms, tables, dashboards) can be generated — senior frontend time should focus on complex interactions, performance, and architecture"
+            ],
+            "pt": [
+              "Geração de UI com IA agora é production-grade: Stitch produz código deployável, não apenas mockups — a lacuna entre 'design' e 'implementação' está colapsando para padrões de UI standard",
+              "Prompt-to-UI muda workflows de prototipagem: ao invés de wireframes → mockups → handoff → implementação, times podem ir direto de requisitos de produto para protótipos funcionando em uma única sessão",
+              "Isso muda alocação de tempo frontend: trabalho repetitivo de UI (forms, tabelas, dashboards) pode ser gerado — tempo de frontend senior deve focar em interações complexas, performance e arquitetura"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=qaB5HF4ax9M"
+        }
+      ]
+    },
+    {
       "id": "2026-03-19",
       "date": "2026-03-19",
       "entries": [
