@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-21",
+      "date": "2026-03-21",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech With Tim",
+          "author": "Tim Ruscica",
+          "title": {
+            "en": "How to Become an AI Engineer Fast: The Complete 2026 Roadmap",
+            "pt": "Como Se Tornar um Engenheiro de IA Rapidamente: O Roadmap Completo de 2026"
+          },
+          "summary": {
+            "en": "Tim delivers a comprehensive step-by-step guide to becoming an AI Engineer — one of the most in-demand and highest-paying roles in tech right now. The video cuts through the noise and provides the exact topics you need to learn, in order. The 10-step progression covers: 1) Python fundamentals and data structures, 2) Math foundations (linear algebra, calculus, statistics), 3) Machine learning basics with scikit-learn, 4) Deep learning with PyTorch or TensorFlow, 5) Natural Language Processing and transformers, 6) LLM fundamentals and prompt engineering, 7) Vector databases and embeddings, 8) Building RAG applications, 9) AI agent frameworks (LangChain, CrewAI), and 10) MLOps and deployment. The key insight: AI engineering is NOT an entry-level role — you need solid software engineering fundamentals first. Tim recommends focusing on practical projects over certifications, building a portfolio that demonstrates end-to-end AI system development, and understanding that the field is evolving so rapidly that learning how to learn is more valuable than memorizing current tools.",
+            "pt": "Tim entrega um guia abrangente passo-a-passo para se tornar um Engenheiro de IA — uma das funções mais demandadas e bem pagas em tech agora. O vídeo corta o ruído e fornece os tópicos exatos que você precisa aprender, em ordem. A progressão de 10 passos cobre: 1) Fundamentos de Python e estruturas de dados, 2) Fundamentos de matemática (álgebra linear, cálculo, estatística), 3) Básico de machine learning com scikit-learn, 4) Deep learning com PyTorch ou TensorFlow, 5) Processamento de Linguagem Natural e transformers, 6) Fundamentos de LLM e prompt engineering, 7) Bancos de dados vetoriais e embeddings, 8) Construindo aplicações RAG, 9) Frameworks de AI agents (LangChain, CrewAI), e 10) MLOps e deployment. O insight chave: engenharia de IA NÃO é uma função de nível de entrada — você precisa de fundamentos sólidos de engenharia de software primeiro. Tim recomenda focar em projetos práticos ao invés de certificações, construir um portfólio que demonstre desenvolvimento de sistemas de IA end-to-end, e entender que o campo está evoluindo tão rapidamente que aprender a aprender é mais valioso do que memorizar ferramentas atuais."
+          },
+          "insights": {
+            "en": [
+              "AI Engineering requires software engineering first: don't skip fundamentals — you need to understand systems, APIs, databases, and deployment before adding AI on top",
+              "The LLM stack is the new must-have: embeddings → vector DBs → RAG → agents is the progression every AI engineer needs to master in 2026",
+              "Projects > Certifications: hiring managers care about what you've built, not what courses you've taken — build real AI applications and document them publicly"
+            ],
+            "pt": [
+              "Engenharia de IA requer engenharia de software primeiro: não pule fundamentos — você precisa entender sistemas, APIs, bancos de dados e deployment antes de adicionar IA",
+              "A stack de LLM é o novo must-have: embeddings → vector DBs → RAG → agents é a progressão que todo engenheiro de IA precisa dominar em 2026",
+              "Projetos > Certificações: hiring managers se importam com o que você construiu, não quais cursos você fez — construa aplicações de IA reais e documente publicamente"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=Zk9LxO_dB64"
+        }
+      ]
+    },
+    {
       "id": "2026-03-20",
       "date": "2026-03-20",
       "entries": [
