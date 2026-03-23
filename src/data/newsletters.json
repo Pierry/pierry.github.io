@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-23",
+      "date": "2026-03-23",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Craft Better Software",
+          "author": "Daniel Moka",
+          "title": {
+            "en": "Stop Using Claude Code Like a Chatbot: 5 Features That 10x Your Productivity",
+            "pt": "Pare de Usar Claude Code Como um Chatbot: 5 Recursos Que Multiplicam Sua Produtividade por 10x"
+          },
+          "summary": {
+            "en": "Daniel reveals that most developers use Claude Code at only 10% of its potential, treating it like a simple chatbot. After months of daily use on production Rust, Python, and JavaScript codebases with millions of lines of code, he shares 5 advanced features that completely transform the workflow. First, hierarchical CLAUDE.md files: Claude walks UP the directory tree loading every CLAUDE.md it finds, then lazily loads subdirectory files only when needed — perfect for monorepos where context is precious. Second, Skills: reusable workflows saved as markdown files triggered with /slash commands that can auto-discover based on context. Third, Subagents: separate contexts for different tasks — use a cheap fast model (Haiku) for research and exploration, smart models for actual coding. Fourth, MCP Servers: external tool connections, but be selective — every server eats context. The recommended trio: Context7 for up-to-date docs, Playwright for browser automation, Chrome DevTools for real debugging. Fifth, the killer combo: Skills + Agents together create safe, parallel, fully autonomous workflows with isolation (worktree), permission modes, and safety rails (maxTurns). The developers who treat Claude Code as a configurable engineering system, not a chat window, will build better software.",
+            "pt": "Daniel revela que a maioria dos desenvolvedores usa Claude Code em apenas 10% do seu potencial, tratando-o como um chatbot simples. Após meses de uso diário em codebases de produção em Rust, Python e JavaScript com milhões de linhas de código, ele compartilha 5 recursos avançados que transformam completamente o workflow. Primeiro, arquivos CLAUDE.md hierárquicos: Claude sobe pela árvore de diretórios carregando cada CLAUDE.md que encontra, depois carrega arquivos de subdiretórios preguiçosamente apenas quando necessário — perfeito para monorepos onde contexto é precioso. Segundo, Skills: workflows reutilizáveis salvos como arquivos markdown acionados com comandos /slash que podem auto-descobrir baseado no contexto. Terceiro, Subagents: contextos separados para diferentes tarefas — use um modelo barato e rápido (Haiku) para pesquisa e exploração, modelos inteligentes para código real. Quarto, MCP Servers: conexões de ferramentas externas, mas seja seletivo — cada servidor consome contexto. O trio recomendado: Context7 para docs atualizados, Playwright para automação de browser, Chrome DevTools para debugging real. Quinto, a combo matadora: Skills + Agents juntos criam workflows autônomos seguros, paralelos e totalmente automatizados com isolamento (worktree), modos de permissão e proteções de segurança (maxTurns). Os desenvolvedores que tratam Claude Code como um sistema de engenharia configurável, não uma janela de chat, vão construir software melhor."
+          },
+          "insights": {
+            "en": [
+              "Context is precious — protect it: Claude's hierarchical CLAUDE.md loading lets you have root-level conventions plus component-specific rules without polluting context; use .local.md (gitignored) for personal preferences",
+              "Skills + Subagents = autonomous engineering systems: the pattern is skill as trigger with safety rails, agent as worker with execution config — /implement spawns an isolated agent that researches, codes, tests, and commits autonomously",
+              "Less MCP servers = better output: a Reddit user with 15 servers ended up using only 4 — every server eats context, so be selective; Context7 + Playwright + Chrome DevTools cover most real needs"
+            ],
+            "pt": [
+              "Contexto é precioso — proteja-o: o carregamento hierárquico de CLAUDE.md permite ter convenções de nível raiz mais regras específicas de componentes sem poluir contexto; use .local.md (no gitignore) para preferências pessoais",
+              "Skills + Subagents = sistemas de engenharia autônomos: o padrão é skill como gatilho com proteções de segurança, agent como worker com config de execução — /implement spawna um agente isolado que pesquisa, codifica, testa e commita autonomamente",
+              "Menos MCP servers = melhor output: um usuário do Reddit com 15 servers acabou usando só 4 — cada servidor consome contexto, então seja seletivo; Context7 + Playwright + Chrome DevTools cobrem a maioria das necessidades reais"
+            ]
+          },
+          "link": "https://craftbettersoftware.com/p/stop-using-claude-code-like-a-chatbot"
+        }
+      ]
+    },
+    {
       "id": "2026-03-21",
       "date": "2026-03-21",
       "entries": [
