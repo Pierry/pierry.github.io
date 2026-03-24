@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-24",
+      "date": "2026-03-24",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech With Tim",
+          "author": "Tim Ruscica",
+          "title": {
+            "en": "AI Made Coding Worse: 5 Critical Observations After Months of AI-Assisted Development",
+            "pt": "IA Piorou o Código: 5 Observações Críticas Após Meses de Desenvolvimento Assistido por IA"
+          },
+          "summary": {
+            "en": "Tim shares brutally honest observations after months of heavy AI coding tool usage across multiple production projects. The core argument: AI has made coding worse in several unexpected ways. First, AI is confidently wrong — it generates plausible-looking code that passes initial review but contains subtle bugs that are harder to catch because you trust it more than you should. Second, you stop learning the codebase — when AI handles the grunt work, you lose the deep familiarity that comes from writing code yourself, making debugging and architecture decisions harder. Third, it doesn't scale — AI works great for small tasks and prototypes, but breaks down on complex multi-file changes where context and consistency matter. Fourth, AI creates new forms of tech debt — code that works but nobody fully understands, inconsistent patterns across the codebase, and over-engineered solutions to simple problems. Fifth, the 'fix it' loop is a trap — asking AI to fix its own bugs often spirals into more bugs, wasting more time than manual debugging. The key insight: AI coding tools are powerful but require deliberate usage strategies to avoid these pitfalls.",
+            "pt": "Tim compartilha observações brutalmente honestas após meses de uso intenso de ferramentas de código com IA em múltiplos projetos de produção. O argumento central: IA piorou o código de várias formas inesperadas. Primeiro, IA erra com confiança — gera código que parece plausível e passa na revisão inicial mas contém bugs sutis que são mais difíceis de capturar porque você confia mais do que deveria. Segundo, você para de aprender o codebase — quando IA lida com o trabalho pesado, você perde a familiaridade profunda que vem de escrever código você mesmo, dificultando debugging e decisões de arquitetura. Terceiro, não escala — IA funciona bem para tarefas pequenas e protótipos, mas quebra em mudanças complexas multi-arquivo onde contexto e consistência importam. Quarto, IA cria novas formas de tech debt — código que funciona mas ninguém entende completamente, padrões inconsistentes pelo codebase, e soluções over-engineered para problemas simples. Quinto, o loop de 'conserta isso' é uma armadilha — pedir pra IA consertar seus próprios bugs frequentemente espirala em mais bugs, desperdiçando mais tempo que debugging manual. O insight chave: ferramentas de código com IA são poderosas mas requerem estratégias deliberadas de uso para evitar essas armadilhas."
+          },
+          "insights": {
+            "en": [
+              "Trust but verify aggressively: AI-generated code needs MORE scrutiny than human-written code because its confident presentation masks subtle errors — treat AI output as a junior developer's first draft",
+              "Maintain codebase literacy deliberately: when using AI heavily, schedule time to read and understand the code it generates — lost context compounds into architectural decisions you can't make",
+              "Know when to stop the AI loop: if AI can't fix a bug in 2-3 attempts, switch to manual debugging — the 'fix it' spiral is a massive time sink that signals the problem needs human understanding"
+            ],
+            "pt": [
+              "Confie mas verifique agressivamente: código gerado por IA precisa de MAIS escrutínio que código escrito por humanos porque sua apresentação confiante mascara erros sutis — trate output de IA como primeiro rascunho de um dev júnior",
+              "Mantenha literacia do codebase deliberadamente: quando usar IA pesadamente, reserve tempo para ler e entender o código que ela gera — contexto perdido se acumula em decisões de arquitetura que você não consegue fazer",
+              "Saiba quando parar o loop de IA: se IA não consegue consertar um bug em 2-3 tentativas, mude para debugging manual — a espiral de 'conserta isso' é um sumidouro massivo de tempo que sinaliza que o problema precisa de entendimento humano"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=91utXFqgSok"
+        }
+      ]
+    },
+    {
       "id": "2026-03-23",
       "date": "2026-03-23",
       "entries": [
