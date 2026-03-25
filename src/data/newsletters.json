@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-25",
+      "date": "2026-03-25",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Product for Engineers (PostHog)",
+          "author": "Ian Vanagas",
+          "title": {
+            "en": "What We Wish We Knew About Building AI Agents",
+            "pt": "O Que Gostaríamos de Ter Sabido Sobre Construir AI Agents"
+          },
+          "summary": {
+            "en": "PostHog shares hard-won lessons from 2 years of building their AI product assistant, which evolved through three major architecture iterations. The core insight: don't build a custom agent until you've validated demand with simpler approaches. Consider MCP servers first — they're simpler, require less maintenance, and for PostHog, are used as much as their built-in agent (34% of AI-created dashboards came via MCP). Only go custom when users are non-engineers, compliance blocks external agents, or you need full UX control. When you do build, don't innovate on the agent harness — use Anthropic's SDK and proven patterns. Their three architecture generations taught them: 1) Sub-agent coordinators create black-box context loss, 2) Monolithic tool collections don't scale (they had 44 tools), 3) MCP tools + code sandbox + skills is the winning pattern. The 'beat Claude' question is key: your advantage is structured product context — MCP tools exposing your API, Skills teaching workflows, runtime context injection, and memory across sessions.",
+            "pt": "PostHog compartilha lições duramente conquistadas de 2 anos construindo seu assistente de IA de produto, que evoluiu por três iterações maiores de arquitetura. O insight central: não construa um agente customizado até validar demanda com abordagens mais simples. Considere MCP servers primeiro — são mais simples, requerem menos manutenção, e para o PostHog, são usados tanto quanto o agente built-in (34% dos dashboards criados por IA vieram via MCP). Só vá para custom quando usuários são não-engenheiros, compliance bloqueia agentes externos, ou você precisa de controle total de UX. Quando construir, não inove no harness do agente — use o SDK da Anthropic e padrões provados. Suas três gerações de arquitetura ensinaram: 1) Coordenadores de sub-agentes criam perda de contexto black-box, 2) Coleções monolíticas de ferramentas não escalam (tinham 44 ferramentas), 3) MCP tools + code sandbox + skills é o padrão vencedor. A pergunta 'vencer o Claude' é chave: sua vantagem é contexto estruturado de produto — MCP tools expondo sua API, Skills ensinando workflows, injeção de contexto em runtime, e memória entre sessões."
+          },
+          "insights": {
+            "en": [
+              "Validate with simpler before going custom: MCP servers, one-shot LLM calls, or hardcoded workflows often solve the problem — custom agents only when users can't use external tools or need full UX control",
+              "Don't innovate on the harness: PostHog went through 3 architectures learning this — use Anthropic's SDK, MCP standards, and proven patterns; your differentiation is product context, not plumbing",
+              "Structured context is your moat: MCP tools for actions, Skills (markdown workflows) for domain expertise, runtime context injection for user state, and a taxonomy tool for on-demand exploration — this is how you beat generic Claude"
+            ],
+            "pt": [
+              "Valide com simpler antes de ir para custom: MCP servers, chamadas LLM one-shot, ou workflows hardcoded frequentemente resolvem o problema — agentes custom só quando usuários não podem usar ferramentas externas ou precisam de controle total de UX",
+              "Não inove no harness: PostHog passou por 3 arquiteturas aprendendo isso — use SDK da Anthropic, padrões MCP e patterns provados; seu diferencial é contexto de produto, não encanamento",
+              "Contexto estruturado é seu moat: MCP tools para ações, Skills (workflows markdown) para expertise de domínio, injeção de contexto em runtime para estado do usuário, e ferramenta de taxonomia para exploração on-demand — assim você vence o Claude genérico"
+            ]
+          },
+          "link": "https://newsletter.posthog.com/p/what-we-wish-we-knew-before-building"
+        }
+      ]
+    },
+    {
       "id": "2026-03-24",
       "date": "2026-03-24",
       "entries": [
@@ -109,8 +141,8 @@
             "pt": "Google Stitch: Design UI/UX com IA Que Muda Tudo"
           },
           "summary": {
-            "en": "Jeff breaks down Google's newly announced Stitch — an AI-powered design tool that's generating massive buzz in the dev community. Stitch lets you describe a UI in natural language and generates not just mockups, but production-ready code. The demo shows generating complete dashboard interfaces, responsive layouts, and interactive components from simple text prompts. Unlike previous AI design tools that produced static images, Stitch outputs actual React/HTML/CSS that you can ship. The implications for product development are significant: designers can iterate faster, developers can skip repetitive UI scaffolding, and teams can prototype in hours instead of days. Jeff discusses the competitive landscape (v0.dev, Figma AI, Builder.io) and why Google's entry signals that AI-assisted UI generation is becoming mainstream infrastructure, not just experimental tooling. For engineering managers, this represents another shift in how teams allocate design and frontend development time.",
-            "pt": "Jeff analisa o recém-anunciado Stitch do Google — uma ferramenta de design com IA que está gerando enorme buzz na comunidade dev. Stitch permite descrever uma UI em linguagem natural e gera não apenas mockups, mas código production-ready. A demo mostra gerando interfaces de dashboard completas, layouts responsivos e componentes interativos a partir de prompts de texto simples. Diferente de ferramentas de design com IA anteriores que produziam imagens estáticas, Stitch produz React/HTML/CSS real que você pode shipar. As implicações para desenvolvimento de produto são significativas: designers podem iterar mais rápido, desenvolvedores podem pular scaffolding repetitivo de UI, e times podem prototipar em horas ao invés de dias. Jeff discute o cenário competitivo (v0.dev, Figma AI, Builder.io) e por que a entrada do Google sinaliza que geração de UI assistida por IA está se tornando infraestrutura mainstream, não apenas ferramental experimental. Para engineering managers, isso representa mais uma mudança em como times alocam tempo de design e desenvolvimento frontend."
+            "en": "Jeff breaks down Google's newly announced Stitch — an AI-powered design tool that's generating massive buzz in the dev community. Stitch lets you describe a UI in natural language and generates not just mockups, but production-ready code. The demo shows generating complete dashboard interfaces, responsive layouts, and interactive components from simple text prompts. Unlike previous AI design tools that produced static images, Stitch outputs actual React/HTML/CSS that you can ship. The implications for product development are significant: designers can iterate faster, developers can skip repetitive UI scaffolding, and teams can prototype in hours instead of days. Jeff discusses the competitive landscape (v0.dev, Figma AI, Builder.io) and why Google's entry signals that AI-assisted UI generation is becoming mainstream infrastructure, not just experimental tooling. For engineering managers evaluating AI tooling budgets, this represents another shift in how teams allocate design and frontend development time.",
+            "pt": "Jeff analisa o recém-anunciado Stitch do Google — uma ferramenta de design com IA que está gerando enorme buzz na comunidade dev. Stitch permite descrever uma UI em linguagem natural e gera não apenas mockups, mas código production-ready. A demo mostra gerando interfaces de dashboard completas, layouts responsivos e componentes interativos a partir de prompts de texto simples. Diferente de ferramentas de design com IA anteriores que produziam imagens estáticas, Stitch produz React/HTML/CSS real que você pode shipar. As implicações para desenvolvimento de produto são significativas: designers podem iterar mais rápido, desenvolvedores podem pular scaffolding repetitivo de UI, e times podem prototipar em horas ao invés de dias. Jeff discute o cenário competitivo (v0.dev, Figma AI, Builder.io) e por que a entrada do Google sinaliza que geração de UI assistida por IA está se tornando infraestrutura mainstream, não apenas ferramental experimental. Para engineering managers avaliando orçamentos de tooling de IA, isso representa mais uma mudança em como times alocam tempo de design e desenvolvimento frontend."
           },
           "insights": {
             "en": [
@@ -339,438 +371,6 @@
           "link": "https://thetshaped.dev/p/screaming-architecture-and-colocation-nodejs-typescript-react"
         }
       ]
-    },
-    {
-      "id": "2026-03-14",
-      "date": "2026-03-14",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "Tech With Tim",
-          "author": "Tim Ruscica",
-          "title": {
-            "en": "OpenClaw Optimization & Cost Savings Tutorial - Save 97% on Cost",
-            "pt": "Tutorial de Otimização do OpenClaw & Economia de Custos - Economize 97% em Custos"
-          },
-          "summary": {
-            "en": "Tim delivers a comprehensive 45-minute deep-dive into optimizing OpenClaw to dramatically reduce API costs — claiming savings of over 90%. The tutorial covers the full optimization stack: caching strategies to avoid redundant API calls, context pruning to minimize token usage, model routing to use cheaper models for simple tasks, and token auditing to actually measure what you're spending. The key insight: most developers use expensive models for everything when 80% of tasks can be handled by smaller, cheaper models. Tim demonstrates session initialization optimizations, local heartbeat with Ollama for low-cost background tasks, and spending limits to prevent runaway costs. For engineering managers evaluating AI tooling budgets, this is essential viewing — the techniques apply to any LLM-powered system, not just OpenClaw.",
-            "pt": "Tim entrega um deep-dive abrangente de 45 minutos sobre otimização do OpenClaw para reduzir drasticamente custos de API — alegando economias de mais de 90%. O tutorial cobre a stack completa de otimização: estratégias de caching para evitar chamadas redundantes de API, pruning de contexto para minimizar uso de tokens, roteamento de modelos para usar modelos mais baratos para tarefas simples, e auditoria de tokens para realmente medir o que você está gastando. O insight chave: a maioria dos desenvolvedores usa modelos caros para tudo quando 80% das tarefas podem ser tratadas por modelos menores e mais baratos. Tim demonstra otimizações de inicialização de sessão, heartbeat local com Ollama para tarefas de background de baixo custo, e limites de gastos para prevenir custos descontrolados. Para engineering managers avaliando orçamentos de tooling de IA, é visualização essencial — as técnicas se aplicam a qualquer sistema powered by LLM, não só OpenClaw."
-          },
-          "insights": {
-            "en": [
-              "Model routing is the biggest lever: use GPT-4/Claude for complex reasoning, but route simple tasks (summarization, formatting) to GPT-3.5 or local models — 10x cost difference for similar results",
-              "Token auditing reveals waste: most teams have no visibility into actual token usage — Tim's audit script shows exactly where money is going and often reveals 50%+ waste in context size",
-              "Caching is underutilized: identical or near-identical prompts are common in production — semantic caching can eliminate 30-40% of API calls with no quality loss"
-            ],
-            "pt": [
-              "Roteamento de modelo é a maior alavanca: use GPT-4/Claude para raciocínio complexo, mas roteie tarefas simples (sumarização, formatação) para GPT-3.5 ou modelos locais — diferença de 10x em custo para resultados similares",
-              "Auditoria de tokens revela desperdício: a maioria dos times não tem visibilidade do uso real de tokens — o script de auditoria do Tim mostra exatamente onde o dinheiro está indo e frequentemente revela 50%+ de desperdício em tamanho de contexto",
-              "Caching é subutilizado: prompts idênticos ou quase idênticos são comuns em produção — caching semântico pode eliminar 30-40% das chamadas de API sem perda de qualidade"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=lTXFv1Z0qfI"
-        },
-        {
-          "rank": 2,
-          "newsletter": ".NET & Software Architecture",
-          "author": "Milan Jovanović",
-          "title": {
-            "en": "Saga Orchestration With MassTransit",
-            "pt": "Orquestração de Saga Com MassTransit"
-          },
-          "summary": {
-            "en": "Milan delivers a comprehensive guide to implementing the Saga pattern for distributed transactions using MassTransit in .NET. The article addresses the fundamental problem: in microservices, you can't use database transactions across services, so how do you ensure data consistency when an order involves inventory, payment, and shipping services? The Saga pattern coordinates a sequence of local transactions, with compensating actions if any step fails. Milan contrasts choreography (services react to events) vs orchestration (a central coordinator directs the flow), recommending orchestration for complex workflows. The implementation uses MassTransit's StateMachine, defining states (OrderSubmitted, InventoryReserved, PaymentProcessed, etc.) and transitions. Key insight: sagas don't provide ACID guarantees — they provide eventual consistency with explicit compensation. The article includes full code examples for the state machine, message contracts, and compensation handlers.",
-            "pt": "Milan entrega um guia abrangente para implementar o padrão Saga para transações distribuídas usando MassTransit em .NET. O artigo aborda o problema fundamental: em microserviços, você não pode usar transações de banco de dados entre serviços, então como garantir consistência de dados quando um pedido envolve serviços de inventário, pagamento e envio? O padrão Saga coordena uma sequência de transações locais, com ações compensatórias se qualquer passo falhar. Milan contrasta coreografia (serviços reagem a eventos) vs orquestração (um coordenador central dirige o fluxo), recomendando orquestração para workflows complexos. A implementação usa StateMachine do MassTransit, definindo estados (OrderSubmitted, InventoryReserved, PaymentProcessed, etc.) e transições. Insight chave: sagas não fornecem garantias ACID — fornecem consistência eventual com compensação explícita. O artigo inclui exemplos de código completos para a state machine, contratos de mensagem, e handlers de compensação."
-          },
-          "insights": {
-            "en": [
-              "Orchestration > choreography for complex flows: choreography works for simple event chains, but when you have 5+ services with branching logic and compensation, a central orchestrator is clearer and more maintainable",
-              "Design compensation from day one: every saga step needs a compensating action — 'reserve inventory' needs 'release inventory', 'charge payment' needs 'refund payment' — this shapes your API design",
-              "MassTransit state machines are production-ready: they handle persistence, retries, timeouts, and concurrent state transitions — don't build this infrastructure yourself"
-            ],
-            "pt": [
-              "Orquestração > coreografia para fluxos complexos: coreografia funciona para cadeias simples de eventos, mas quando você tem 5+ serviços com lógica de branching e compensação, um orquestrador central é mais claro e manutenível",
-              "Projete compensação desde o dia um: cada passo da saga precisa de uma ação compensatória — 'reservar inventário' precisa de 'liberar inventário', 'cobrar pagamento' precisa de 'reembolsar pagamento' — isso molda seu design de API",
-              "State machines do MassTransit são production-ready: elas lidam com persistência, retries, timeouts e transições de estado concorrentes — não construa essa infraestrutura você mesmo"
-            ]
-          },
-          "link": "https://www.milanjovanovic.tech/blog/saga-orchestration-with-masstransit"
-        },
-        {
-          "rank": 3,
-          "newsletter": "Anton DevTips",
-          "author": "Anton Bohkanov",
-          "title": {
-            "en": "How to Use the New HybridCache in .NET 9",
-            "pt": "Como Usar o Novo HybridCache no .NET 9"
-          },
-          "summary": {
-            "en": "Anton explores HybridCache, a new caching abstraction in .NET 9 that combines in-memory (L1) and distributed (L2) caching in a single, simple API. The traditional approach required developers to manually coordinate IMemoryCache and IDistributedCache, handling serialization, cache stampede prevention, and fallback logic themselves. HybridCache does this automatically: it checks L1 first (fast, local), falls back to L2 (shared across instances), and only calls your factory method if both miss. The article demonstrates configuration with Redis as L2, custom serialization options, and tag-based invalidation for cache groups. Key insight: HybridCache also solves the 'thundering herd' problem — when a cache key expires, only one request fetches the new value while others wait, preventing database overload. For teams running multiple service instances behind a load balancer, this is the caching pattern you should adopt.",
-            "pt": "Anton explora HybridCache, uma nova abstração de cache no .NET 9 que combina cache in-memory (L1) e distribuído (L2) em uma única API simples. A abordagem tradicional exigia que desenvolvedores coordenassem manualmente IMemoryCache e IDistributedCache, lidando com serialização, prevenção de cache stampede e lógica de fallback por conta própria. HybridCache faz isso automaticamente: verifica L1 primeiro (rápido, local), faz fallback para L2 (compartilhado entre instâncias), e só chama seu factory method se ambos falharem. O artigo demonstra configuração com Redis como L2, opções de serialização customizada, e invalidação baseada em tags para grupos de cache. Insight chave: HybridCache também resolve o problema do 'thundering herd' — quando uma chave de cache expira, apenas uma request busca o novo valor enquanto outras esperam, prevenindo sobrecarga do banco de dados. Para times rodando múltiplas instâncias de serviço atrás de um load balancer, este é o padrão de cache que você deveria adotar."
-          },
-          "insights": {
-            "en": [
-              "L1+L2 caching should be the default: in-memory cache alone doesn't work with multiple instances; distributed cache alone is slower — HybridCache gives you both with one API",
-              "Thundering herd protection is built-in: HybridCache uses locking to ensure only one caller fetches a missing value — critical for high-traffic APIs with expensive data fetches",
-              "Tag-based invalidation simplifies cache busting: instead of tracking individual keys, tag related entries (e.g., 'user:123') and invalidate by tag when the user changes"
-            ],
-            "pt": [
-              "Cache L1+L2 deveria ser o padrão: cache in-memory sozinho não funciona com múltiplas instâncias; cache distribuído sozinho é mais lento — HybridCache te dá ambos com uma API",
-              "Proteção contra thundering herd é built-in: HybridCache usa locking para garantir que apenas um caller busque um valor faltante — crítico para APIs de alto tráfego com fetches de dados caros",
-              "Invalidação baseada em tags simplifica cache busting: ao invés de rastrear chaves individuais, marque entradas relacionadas (ex: 'user:123') e invalide por tag quando o usuário mudar"
-            ]
-          },
-          "link": "https://antondevtips.com/blog/how-to-use-the-new-hybridcache-in-dotnet-9"
-        }
-      ]
-    },
-    {
-      "id": "2026-03-13",
-      "date": "2026-03-13",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "Fireship",
-          "author": "Jeff Delaney",
-          "title": {
-            "en": "7 New Open Source AI Tools You Need Right Now",
-            "pt": "7 Novas Ferramentas de IA Open Source Que Você Precisa Agora"
-          },
-          "summary": {
-            "en": "Jeff delivers a rapid-fire overview of 7 open source AI tools that are flying under the radar but deserve attention. The video covers Agency Agents for building multi-agent systems with built-in orchestration, PromptFoo for testing and evaluating LLM prompts systematically (essential for production AI), MicroFish for lightweight local inference, NanoChat for self-hosted chat interfaces, Impeccable for AI code review automation, Heretic for building AI workflows without vendor lock-in, and OpenViking for open-source RAG pipelines. The key insight: while big AI labs dominate headlines, the open source ecosystem is building the infrastructure that will let teams own their AI stack. For engineering managers, these tools represent the shift from 'use ChatGPT API' to 'build AI-native systems you control'. Essential viewing for anyone evaluating AI tooling for their team.",
-            "pt": "Jeff entrega uma visão rápida de 7 ferramentas de IA open source que estão passando despercebidas mas merecem atenção. O vídeo cobre Agency Agents para construir sistemas multi-agente com orquestração built-in, PromptFoo para testar e avaliar prompts de LLM sistematicamente (essencial para IA em produção), MicroFish para inferência local leve, NanoChat para interfaces de chat self-hosted, Impeccable para automação de code review com IA, Heretic para construir workflows de IA sem vendor lock-in, e OpenViking para pipelines RAG open-source. O insight chave: enquanto grandes labs de IA dominam manchetes, o ecossistema open source está construindo a infraestrutura que permitirá times serem donos de sua stack de IA. Para engineering managers, essas ferramentas representam a mudança de 'usar API do ChatGPT' para 'construir sistemas AI-native que você controla'. Essencial para quem está avaliando tooling de IA pro time."
-          },
-          "insights": {
-            "en": [
-              "Own your AI stack: open source alternatives to proprietary AI services reduce vendor lock-in and give you control over costs, privacy, and customization",
-              "PromptFoo is a must-have: systematic prompt testing and evaluation catches regressions before production — treat prompts like code with proper testing",
-              "Multi-agent orchestration is maturing: tools like Agency Agents show the pattern of multiple specialized AI agents coordinating tasks — the architecture pattern for complex AI systems"
-            ],
-            "pt": [
-              "Seja dono da sua stack de IA: alternativas open source a serviços proprietários de IA reduzem vendor lock-in e dão controle sobre custos, privacidade e customização",
-              "PromptFoo é essencial: testes e avaliação sistemática de prompts capturam regressões antes de produção — trate prompts como código com testes adequados",
-              "Orquestração multi-agente está amadurecendo: ferramentas como Agency Agents mostram o padrão de múltiplos agentes de IA especializados coordenando tarefas — o padrão de arquitetura para sistemas de IA complexos"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=Xn-gtHDsaPY"
-        },
-        {
-          "rank": 2,
-          "newsletter": "Two Minute Papers",
-          "author": "Károly Zsolnai-Fehér",
-          "title": {
-            "en": "This Physics Breakthrough Looks Impossible",
-            "pt": "Este Avanço em Física Parece Impossível"
-          },
-          "summary": {
-            "en": "Károly presents 'Dynamic Duo', a new physics simulation technique that achieves results previously thought impossible — highly detailed fluid and soft body interactions at near-real-time speeds. The research tackles the fundamental challenge of simulating materials with vastly different physical properties interacting (like honey flowing through a mesh of rubber bands). Traditional simulators either sacrifice detail for speed or take hours per frame. Dynamic Duo uses a novel dual-representation approach: a coarse grid for fast global dynamics and an adaptive fine mesh for detailed local interactions. The breakthrough is the bidirectional coupling that maintains physical accuracy while letting each representation operate at its optimal resolution. This has implications for VFX, games, engineering simulation, and any domain where realistic physics matters. The pattern of 'coarse + fine with smart coupling' is emerging across many computational domains.",
-            "pt": "Károly apresenta 'Dynamic Duo', uma nova técnica de simulação física que alcança resultados antes considerados impossíveis — interações altamente detalhadas de fluidos e corpos macios em velocidades quase tempo real. A pesquisa aborda o desafio fundamental de simular materiais com propriedades físicas vastamente diferentes interagindo (como mel fluindo através de uma malha de elásticos). Simuladores tradicionais ou sacrificam detalhe por velocidade ou levam horas por frame. Dynamic Duo usa uma abordagem de representação dual: uma grade grosseira para dinâmica global rápida e uma malha fina adaptativa para interações locais detalhadas. O avanço é o acoplamento bidirecional que mantém precisão física enquanto cada representação opera em sua resolução ótima. Isso tem implicações para VFX, games, simulação de engenharia, e qualquer domínio onde física realista importa. O padrão 'grosseiro + fino com acoplamento inteligente' está emergindo em muitos domínios computacionais."
-          },
-          "insights": {
-            "en": [
-              "Multi-resolution is the pattern: coarse representation for speed, fine representation for detail, smart coupling to maintain accuracy — this pattern applies beyond physics to many engineering problems",
-              "Real-time simulation unlocks new workflows: when iteration goes from hours to seconds, engineers can explore more designs and catch problems earlier",
-              "Hybrid approaches beat pure methods: neither pure grid nor pure mesh wins alone — the combination with intelligent coupling outperforms both"
-            ],
-            "pt": [
-              "Multi-resolução é o padrão: representação grosseira para velocidade, representação fina para detalhe, acoplamento inteligente para manter precisão — este padrão se aplica além de física para muitos problemas de engenharia",
-              "Simulação em tempo real destrava novos workflows: quando iteração vai de horas para segundos, engenheiros podem explorar mais designs e capturar problemas mais cedo",
-              "Abordagens híbridas superam métodos puros: nem grade pura nem mesh pura vence sozinha — a combinação com acoplamento inteligente supera ambas"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=RDQ4vHAPNls"
-        }
-      ]
-    },
-    {
-      "id": "2026-03-12",
-      "date": "2026-03-12",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "Engineering Leadership",
-          "author": "Gregor Ojstersek & Sulman Choudhry (OpenAI)",
-          "title": {
-            "en": "Inside OpenAI: How They Hire, Onboard, Promote, and Build Elite Engineering Teams",
-            "pt": "Por Dentro da OpenAI: Como Eles Contratam, Fazem Onboarding, Promovem e Constroem Times de Engenharia de Elite"
-          },
-          "summary": {
-            "en": "Part 2 of Gregor's conversation with Sulman Choudhry, Head of Engineering for ChatGPT at OpenAI. This deep-dive reveals the systems behind OpenAI's elite engineering teams. Their hiring process is tailored to candidates' strengths — if someone is stronger in Objective-C than Swift, they interview in Objective-C. They introduced a new combined product/technical interview where candidates work through an AI-first problem with interviewers, designing the product spec and system architecture together. They hire a deliberate mix of very senior AND very junior talent, with a strong internship-to-hire pipeline. Promotions happen continuously throughout the year, not in fixed cycles. The onboarding follows a defined 30/60/90-day plan where engineers are encouraged to ship code early and take ownership from day one. Knowledge sharing happens through demos, internal tools, and a culture where everyone teaches.",
-            "pt": "Parte 2 da conversa de Gregor com Sulman Choudhry, Head of Engineering do ChatGPT na OpenAI. Esse deep-dive revela os sistemas por trás dos times de engenharia de elite da OpenAI. O processo de contratação é adaptado aos pontos fortes dos candidatos — se alguém é mais forte em Objective-C que Swift, entrevistam em Objective-C. Introduziram uma nova entrevista combinada produto/técnica onde candidatos trabalham um problema AI-first com entrevistadores, projetando spec de produto e arquitetura de sistema juntos. Contratam uma mistura deliberada de talentos muito senior E muito junior, com forte pipeline de estágio-para-contratação. Promoções acontecem continuamente ao longo do ano, não em ciclos fixos. O onboarding segue um plano definido de 30/60/90 dias onde engenheiros são encorajados a shipar código cedo e assumir ownership desde o dia um."
-          },
-          "insights": {
-            "en": [
-              "Tailor interviews to strengths: OpenAI lets iOS candidates interview in Objective-C if that's their expertise — they evaluate engineering ability, not specific language knowledge",
-              "Continuous promotions > fixed cycles: instead of twice-yearly reviews, they promote anytime based on demonstrated impact — reduces gaming and rewards real performance",
-              "Ship early in onboarding: new engineers are encouraged to push code in the first week, building confidence and ownership faster than traditional 'learn first' approaches"
-            ],
-            "pt": [
-              "Adapte entrevistas aos pontos fortes: OpenAI permite que candidatos iOS entrevistem em Objective-C se essa é sua expertise — avaliam habilidade de engenharia, não conhecimento de linguagem específica",
-              "Promoções contínuas > ciclos fixos: ao invés de reviews semestrais, promovem a qualquer momento baseado em impacto demonstrado — reduz gaming e recompensa performance real",
-              "Shipe cedo no onboarding: novos engenheiros são encorajados a fazer push de código na primeira semana, construindo confiança e ownership mais rápido que abordagens tradicionais de 'aprender primeiro'"
-            ]
-          },
-          "link": "https://newsletter.eng-leadership.com/p/inside-openai-how-they-hire-onboard"
-        },
-        {
-          "rank": 2,
-          "newsletter": "Computerphile",
-          "author": "Jane Street",
-          "title": {
-            "en": "Vector Search with LLMs",
-            "pt": "Busca Vetorial com LLMs"
-          },
-          "summary": {
-            "en": "Computerphile delivers a clear explanation of how vector search powers modern AI applications like RAG (Retrieval-Augmented Generation). The video explains how text is converted into high-dimensional vectors (embeddings) that capture semantic meaning, not just keywords. Similar concepts cluster together in vector space, enabling 'find things like this' queries that traditional keyword search can't handle. The practical applications are everywhere: semantic search, recommendation systems, and the RAG pattern that grounds LLM responses in real data. This is foundational knowledge for any engineer building AI-powered features in 2026.",
-            "pt": "Computerphile entrega uma explicação clara de como busca vetorial potencializa aplicações modernas de IA como RAG (Retrieval-Augmented Generation). O vídeo explica como texto é convertido em vetores de alta dimensão (embeddings) que capturam significado semântico, não apenas palavras-chave. Conceitos similares se agrupam no espaço vetorial, habilitando queries 'encontre coisas parecidas com isso' que busca por keyword tradicional não consegue. As aplicações práticas estão em todo lugar: busca semântica, sistemas de recomendação, e o padrão RAG que fundamenta respostas de LLM em dados reais. Conhecimento fundamental para qualquer engenheiro construindo features powered by AI em 2026."
-          },
-          "insights": {
-            "en": [
-              "Embeddings capture meaning, not words: 'king - man + woman = queen' works because embeddings encode semantic relationships, not string matching",
-              "Vector databases are the new infrastructure: just as every app needed a relational DB, every AI app now needs vector search — know your options (Pinecone, Weaviate, pgvector)",
-              "RAG is the production pattern: instead of fine-tuning LLMs (expensive, slow), retrieve relevant docs at query time and include them in the prompt — grounded, accurate, up-to-date"
-            ],
-            "pt": [
-              "Embeddings capturam significado, não palavras: 'rei - homem + mulher = rainha' funciona porque embeddings codificam relações semânticas, não matching de strings",
-              "Bancos de dados vetoriais são a nova infraestrutura: assim como toda app precisava de DB relacional, toda app de IA agora precisa de busca vetorial — conheça suas opções (Pinecone, Weaviate, pgvector)",
-              "RAG é o padrão de produção: ao invés de fine-tuning de LLMs (caro, lento), recupere docs relevantes no momento da query e inclua no prompt — fundamentado, preciso, atualizado"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=YDdKiQNw80c"
-        },
-        {
-          "rank": 3,
-          "newsletter": "Tech With Tim",
-          "author": "Tim Ruscica",
-          "title": {
-            "en": "Prompt Engineering Full Course",
-            "pt": "Curso Completo de Prompt Engineering"
-          },
-          "summary": {
-            "en": "Tim delivers a comprehensive 35-minute course covering everything developers need to know about prompt engineering in 2026. The course goes beyond basics to cover steering vs commanding, few-shot prompting, chain-of-thought reasoning, structured output, constraints and negatives, iterative refinement, and interview-style prompting. Advanced techniques include temperature and top-p parameters, system prompts, and common mistakes to avoid. The key insight: prompt engineering isn't about 'magic words' — it's about understanding how LLMs process context and structuring your input to get reliable, reproducible outputs. Essential viewing for any developer working with AI APIs.",
-            "pt": "Tim entrega um curso abrangente de 35 minutos cobrindo tudo que desenvolvedores precisam saber sobre prompt engineering em 2026. O curso vai além do básico para cobrir steering vs commanding, few-shot prompting, raciocínio chain-of-thought, output estruturado, constraints e negativas, refinamento iterativo, e prompting estilo entrevista. Técnicas avançadas incluem parâmetros de temperature e top-p, system prompts, e erros comuns a evitar. O insight chave: prompt engineering não é sobre 'palavras mágicas' — é sobre entender como LLMs processam contexto e estruturar seu input para obter outputs confiáveis e reproduzíveis. Essencial para qualquer dev trabalhando com APIs de IA."
-          },
-          "insights": {
-            "en": [
-              "Steering > Commanding: instead of telling the LLM what to do, guide it with context, examples, and constraints — more reliable results",
-              "Few-shot prompting works: giving 2-3 examples of desired input/output format dramatically improves consistency",
-              "Chain-of-thought for complex tasks: asking the model to 'think step by step' before answering improves reasoning accuracy on multi-step problems"
-            ],
-            "pt": [
-              "Steering > Commanding: ao invés de dizer ao LLM o que fazer, guie-o com contexto, exemplos e constraints — resultados mais confiáveis",
-              "Few-shot prompting funciona: dar 2-3 exemplos do formato desejado de input/output melhora dramaticamente a consistência",
-              "Chain-of-thought para tarefas complexas: pedir ao modelo para 'pensar passo a passo' antes de responder melhora precisão de raciocínio em problemas multi-step"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=2BpCk4d2Cc0"
-        }
-      ]
-    },
-    {
-      "id": "2026-03-11",
-      "date": "2026-03-11",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "System Design One",
-          "author": "Neo Kim",
-          "title": {
-            "en": "I Struggled With System Design Until I Learned These 114 Concepts (Part 3)",
-            "pt": "Eu Lutava com System Design Até Aprender Esses 114 Conceitos (Parte 3)"
-          },
-          "summary": {
-            "en": "Neo Kim delivers the final part of his comprehensive system design fundamentals series, covering 38 essential concepts including Webhooks, WebRTC, CQRS, Event Sourcing, Service Discovery, Circuit Breaker Pattern, Observability, Distributed Tracing, Vector Databases, and more. Each concept is explained with real-world analogies, tradeoffs, and practical applications. This is a must-read reference for engineers building production-ready distributed systems.",
-            "pt": "Neo Kim entrega a parte final de sua série abrangente sobre fundamentos de system design, cobrindo 38 conceitos essenciais incluindo Webhooks, WebRTC, CQRS, Event Sourcing, Service Discovery, Circuit Breaker Pattern, Observability, Distributed Tracing, Vector Databases e mais. Cada conceito é explicado com analogias do mundo real, tradeoffs e aplicações práticas. Uma leitura obrigatória para engenheiros construindo sistemas distribuídos production-ready."
-          },
-          "insights": {
-            "en": [
-              "Webhooks eliminate polling overhead but require handling retries, securing endpoints, and managing duplicate/out-of-order events — combine with message queues for reliability",
-              "CQRS separates read and write models, enabling independent scaling and specialized data views, but adds complexity — only use when read/write workloads differ significantly",
-              "Event Sourcing stores every change as an immutable event, enabling full audit trails and time-travel debugging — powerful for financial systems but increases storage and complexity"
-            ],
-            "pt": [
-              "Webhooks eliminam overhead de polling mas exigem handling de retries, segurança de endpoints e gerenciamento de eventos duplicados/fora de ordem — combine com message queues para confiabilidade",
-              "CQRS separa modelos de leitura e escrita, permitindo escala independente e views especializadas, mas adiciona complexidade — use apenas quando workloads de read/write diferem significativamente",
-              "Event Sourcing armazena cada mudança como evento imutável, habilitando audit trails completos e debugging de time-travel — poderoso para sistemas financeiros mas aumenta storage e complexidade"
-            ]
-          },
-          "link": "https://newsletter.systemdesign.one/p/system-design-fundamentals"
-        }
-      ],
-      "podcastLink": "https://open.spotify.com/episode/52Gecnqe2us5onhMADubqQ",
-      "podcastLang": "en"
-    },
-    {
-      "id": "2026-03-10",
-      "date": "2026-03-10",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "Fireship",
-          "author": "Jeff Delaney",
-          "title": {
-            "en": "The Greatest Unsolved Problem in Computer Science",
-            "pt": "O Maior Problema Não Resolvido da Ciência da Computação"
-          },
-          "summary": {
-            "en": "Jeff tackles P vs NP — arguably the most famous unsolved problem in computer science, worth $1 million from the Clay Mathematics Institute. The core question: if you can verify a solution quickly, can you also find that solution quickly? P represents problems solvable in polynomial time (efficiently), while NP represents problems whose solutions can be verified in polynomial time. The video explores why proving P=NP (or P≠NP) is so hard: we'd need to prove something about ALL possible algorithms, not just the ones we know. The implications are massive — if P=NP, cryptography breaks (RSA, blockchain), optimization problems become trivial, and AI could solve protein folding instantly. Most computer scientists believe P≠NP, but nobody can prove it. The video explains reductions, NP-completeness, and why the Traveling Salesman Problem is the poster child for NP-hard problems.",
-            "pt": "Jeff aborda P vs NP — indiscutivelmente o problema não resolvido mais famoso da ciência da computação, valendo $1 milhão do Clay Mathematics Institute. A questão central: se você consegue verificar uma solução rapidamente, também consegue encontrar essa solução rapidamente? P representa problemas resolvíveis em tempo polinomial (eficientemente), enquanto NP representa problemas cujas soluções podem ser verificadas em tempo polinomial. O vídeo explora por que provar P=NP (ou P≠NP) é tão difícil: precisaríamos provar algo sobre TODOS os algoritmos possíveis, não apenas os que conhecemos. As implicações são massivas — se P=NP, criptografia quebra (RSA, blockchain), problemas de otimização se tornam triviais, e IA poderia resolver protein folding instantaneamente. A maioria dos cientistas da computação acredita que P≠NP, mas ninguém consegue provar."
-          },
-          "insights": {
-            "en": [
-              "Understanding P vs NP is foundational for senior engineers: it explains why some problems have no 'fast' solution and why we resort to heuristics and approximations",
-              "Cryptographic security relies on the assumption P≠NP — if proven wrong, RSA, Bitcoin, and most security protocols would break overnight",
-              "NP-completeness is practical knowledge: when you can reduce your problem to a known NP-complete problem, you know to stop looking for a perfect algorithm and start looking for approximations"
-            ],
-            "pt": [
-              "Entender P vs NP é fundamental para engenheiros seniores: explica por que alguns problemas não têm solução 'rápida' e por que recorremos a heurísticas e aproximações",
-              "Segurança criptográfica depende da suposição P≠NP — se provado errado, RSA, Bitcoin e a maioria dos protocolos de segurança quebrariam da noite pro dia",
-              "NP-completude é conhecimento prático: quando você reduz seu problema a um problema NP-completo conhecido, você sabe que deve parar de procurar um algoritmo perfeito e começar a procurar aproximações"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=x36UmiSiEzc"
-        },
-        {
-          "rank": 2,
-          "newsletter": "System Design Codex",
-          "author": "Saurabh Dashora",
-          "title": {
-            "en": "How Agoda Load Balanced Kafka",
-            "pt": "Como a Agoda Balanceou Carga no Kafka"
-          },
-          "summary": {
-            "en": "Agoda processes hundreds of terabytes of data daily through Kafka for their travel booking platform, handling 1.5 million price updates per minute from suppliers. The article reveals why traditional round-robin partitioning failed: heterogeneous hardware (different server generations) and uneven workloads (some messages require API calls, others just DB queries) led to massive over-provisioning. Their solution? Lag-aware producers and consumers. The lag-aware producer dynamically routes fewer messages to partitions with high lag, using algorithms like Same-Queue Length (equalizing lag across partitions) and Outlier Detection (temporarily stopping publishing to slow partitions). The lag-aware consumer triggers Kafka rebalances when a consumer falls behind, redistributing partitions based on actual processing capacity. This approach eliminates the need for homogeneous hardware or manual weight tuning.",
-            "pt": "Agoda processa centenas de terabytes de dados diariamente pelo Kafka para sua plataforma de reservas de viagem, lidando com 1.5 milhão de atualizações de preço por minuto dos fornecedores. O artigo revela por que particionamento round-robin tradicional falhou: hardware heterogêneo (gerações diferentes de servidores) e workloads desiguais (algumas mensagens requerem chamadas API, outras só queries de DB) levaram a over-provisioning massivo. A solução? Producers e consumers cientes de lag. O producer ciente de lag roteia dinamicamente menos mensagens para partições com alto lag, usando algoritmos como Same-Queue Length (equalizando lag entre partições) e Outlier Detection (parando temporariamente publicação em partições lentas). O consumer ciente de lag dispara rebalances do Kafka quando um consumer fica para trás, redistribuindo partições baseado na capacidade real de processamento."
-          },
-          "insights": {
-            "en": [
-              "Round-robin is a lie in heterogeneous environments: when your pods run on different hardware generations, equal message distribution ≠ equal load — you end up over-provisioning by 40-60%",
-              "Lag is the true signal: instead of guessing capacity, measure actual lag and let that drive distribution — this is dynamic load balancing in action",
-              "Kafka's cooperative rebalance (2.4+) is a game changer: it enables frequent, low-impact partition reassignments, making lag-aware strategies practical without causing consumer group instability"
-            ],
-            "pt": [
-              "Round-robin é uma mentira em ambientes heterogêneos: quando seus pods rodam em gerações diferentes de hardware, distribuição igual de mensagens ≠ carga igual — você acaba provisionando 40-60% a mais",
-              "Lag é o sinal verdadeiro: ao invés de adivinhar capacidade, meça o lag real e deixe isso guiar a distribuição — isso é load balancing dinâmico em ação",
-              "Rebalance cooperativo do Kafka (2.4+) muda o jogo: permite reassignments de partição frequentes e de baixo impacto, tornando estratégias cientes de lag práticas sem causar instabilidade no consumer group"
-            ]
-          },
-          "link": "https://newsletter.systemdesigncodex.com/p/how-agoda-load-balanced-kafka"
-        },
-        {
-          "rank": 3,
-          "newsletter": "Two Minute Papers",
-          "author": "Károly Zsolnai-Fehér",
-          "title": {
-            "en": "NVIDIA's New AI Just Cracked The Hardest Part Of Self Driving",
-            "pt": "A Nova IA da NVIDIA Resolveu a Parte Mais Difícil dos Carros Autônomos"
-          },
-          "summary": {
-            "en": "NVIDIA introduces Alpamayo, an AI system that tackles the hardest problem in autonomous driving: understanding and predicting the behavior of other road users in complex, unstructured environments. Traditional self-driving approaches struggle with edge cases — pedestrians jaywalking, cyclists making unexpected turns, vehicles behaving erratically. Alpamayo uses a novel architecture that combines perception, prediction, and planning in a unified framework. Instead of treating these as separate modules (detect → predict → plan), the system learns end-to-end from real driving data. The key innovation is 'world modeling' — the AI builds an internal simulation of how the scene will evolve, allowing it to reason about what other agents might do next. This enables handling of long-tail scenarios that rule-based systems can't anticipate. The research demonstrates that learned world models outperform hand-crafted prediction rules in complex urban environments.",
-            "pt": "NVIDIA apresenta Alpamayo, um sistema de IA que aborda o problema mais difícil da direção autônoma: entender e prever o comportamento de outros usuários da estrada em ambientes complexos e não estruturados. Abordagens tradicionais de direção autônoma lutam com casos extremos — pedestres atravessando fora da faixa, ciclistas fazendo curvas inesperadas, veículos se comportando erraticamente. Alpamayo usa uma arquitetura nova que combina percepção, predição e planejamento em um framework unificado. Em vez de tratar como módulos separados (detectar → prever → planejar), o sistema aprende end-to-end de dados reais de direção. A inovação chave é 'world modeling' — a IA constrói uma simulação interna de como a cena vai evoluir, permitindo raciocinar sobre o que outros agentes podem fazer. Isso habilita tratamento de cenários de cauda longa que sistemas baseados em regras não conseguem antecipar."
-          },
-          "insights": {
-            "en": [
-              "End-to-end learning beats modular systems for complex real-world tasks: separating perception/prediction/planning creates information loss at each boundary — unified learning preserves context",
-              "World modeling is the key to robust AI: instead of reactive decisions, the AI simulates possible futures and plans accordingly — this is how humans drive too",
-              "Long-tail problems require learned solutions: you can't hand-code rules for every edge case — ML systems that learn from millions of driving hours capture patterns humans couldn't articulate"
-            ],
-            "pt": [
-              "Aprendizado end-to-end supera sistemas modulares para tarefas complexas do mundo real: separar percepção/predição/planejamento cria perda de informação em cada fronteira — aprendizado unificado preserva contexto",
-              "World modeling é a chave para IA robusta: ao invés de decisões reativas, a IA simula futuros possíveis e planeja de acordo — é assim que humanos dirigem também",
-              "Problemas de cauda longa requerem soluções aprendidas: você não consegue codificar regras para cada caso extremo — sistemas ML que aprendem de milhões de horas de direção capturam padrões que humanos não conseguiriam articular"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=s9SnEE7JXU4"
-        }
-      ],
-      "podcastLink": "https://open.spotify.com/episode/7wj3RtGF78JYIQt2CCfGrT",
-      "podcastLang": "pt"
-    },
-    {
-      "id": "2026-03-09",
-      "date": "2026-03-09",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "System Design One",
-          "author": "Abdirahman Jama (AWS)",
-          "title": {
-            "en": "I Struggled With System Design Interview Until I Learned This Framework",
-            "pt": "Eu Sofria com Entrevistas de System Design Até Aprender Este Framework"
-          },
-          "summary": {
-            "en": "Abdirahman Jama, an L5 Software Engineer at AWS who conducts system design interviews, shares his journey from failing Amazon's interview in 2021 to becoming an interviewer himself. The core revelation: most engineers who fail aren't bad engineers — they just lack a framework for turning vague problems into structured conversations. He presents a 5-step framework with precise time allocation: Requirements & Scope (5 min), Data Model & API Design (10 min), High-Level Design (15 min), Scalability & Fault Tolerance (5 min), and Wrap-Up (5 min). The article reveals what interviewers actually evaluate: collaboration skills, problem decomposition, trade-off analysis, handling failure modes, and time management. Key insight: interviewers aren't looking for the 'right answer' — there isn't one! They're evaluating whether you can think systematically about ambiguous problems.",
-            "pt": "Abdirahman Jama, engenheiro L5 na AWS que conduz entrevistas de system design, compartilha sua jornada de reprovar na entrevista da Amazon em 2021 até se tornar ele mesmo um entrevistador. A revelação central: a maioria dos engenheiros que reprova não são engenheiros ruins — apenas falta um framework para transformar problemas vagos em conversas estruturadas. Ele apresenta um framework de 5 passos com alocação de tempo precisa: Requirements & Scope (5 min), Data Model & API Design (10 min), High-Level Design (15 min), Scalability & Fault Tolerance (5 min), e Wrap-Up (5 min). O artigo revela o que entrevistadores realmente avaliam: habilidades de colaboração, decomposição de problemas, análise de trade-offs, tratamento de modos de falha, e gerenciamento de tempo. Insight chave: entrevistadores não procuram a 'resposta certa' — não existe uma! Eles avaliam se você consegue pensar sistematicamente sobre problemas ambíguos."
-          },
-          "insights": {
-            "en": [
-              "Never jump straight to drawing boxes — spend first 5 minutes clarifying requirements and validating assumptions with the interviewer",
-              "Trade-off articulation is critical: don't just say 'use PostgreSQL' — explain WHY based on the specific requirements (read/write ratio, consistency needs, scale)",
-              "Design for failure, not just the happy path — interviewers spot engineers who've shipped production systems by how they discuss failure modes and recovery strategies"
-            ],
-            "pt": [
-              "Nunca pule direto para desenhar boxes — passe os primeiros 5 minutos clarificando requisitos e validando suposições com o entrevistador",
-              "Articulação de trade-offs é crítica: não diga apenas 'usar PostgreSQL' — explique POR QUÊ baseado nos requisitos específicos (ratio leitura/escrita, necessidades de consistência, escala)",
-              "Projete para falha, não só o caminho feliz — entrevistadores identificam engenheiros que já shiparam sistemas de produção por como discutem modos de falha e estratégias de recovery"
-            ]
-          },
-          "link": "https://newsletter.systemdesign.one/p/how-to-prepare-for-system-design-interview"
-        },
-        {
-          "rank": 2,
-          "newsletter": "System Design Classroom",
-          "author": "Raul Junco",
-          "title": {
-            "en": "CAP Questions Almost Never Appear Labeled as 'CAP Theorem'",
-            "pt": "Questões de CAP Quase Nunca Aparecem Rotuladas como 'Teorema CAP'"
-          },
-          "summary": {
-            "en": "Raul tackles one of the trickiest interview questions: 'Can a system be accurate but inconsistent?' The answer isn't an oxymoron — it's fundamental to distributed systems. The article distinguishes accuracy (data reflects real-world value) from consistency (in CAP terms, linearizability where reads see the most recent write). A user updating their email demonstrates accuracy-without-consistency: the primary has the correct value (accurate), but replicas temporarily show the old value (inconsistent). Conversely, a bug writing the wrong tax rate shows consistency-without-accuracy: every node agrees on the same wrong value. The key insight: strong consistency protects agreement about the ORDER of writes, not the TRUTH of the data. Truth depends on application validation, business rules, and domain logic. The article explains why banking/payments need strong consistency (double-charge prevention) while social feeds/analytics can tolerate eventual consistency (a post appearing seconds later doesn't hurt UX).",
-            "pt": "Raul aborda uma das perguntas mais difíceis de entrevistas: 'Um sistema pode ser preciso mas inconsistente?' A resposta não é um oxímoro — é fundamental para sistemas distribuídos. O artigo distingue precisão (dados refletem valor do mundo real) de consistência (em termos CAP, linearizabilidade onde leituras veem a escrita mais recente). Um usuário atualizando seu email demonstra precisão-sem-consistência: o primário tem o valor correto (preciso), mas réplicas temporariamente mostram o valor antigo (inconsistente). Inversamente, um bug escrevendo a taxa de imposto errada mostra consistência-sem-precisão: todo nó concorda no mesmo valor errado. O insight chave: consistência forte protege acordo sobre a ORDEM das escritas, não a VERDADE dos dados. Verdade depende de validação da aplicação, regras de negócio e lógica de domínio. O artigo explica por que banking/payments precisam de consistência forte (prevenção de cobrança dupla) enquanto feeds sociais/analytics toleram consistência eventual (um post aparecer segundos depois não prejudica UX)."
-          },
-          "insights": {
-            "en": [
-              "CAP interview questions come disguised as simple data questions — recognize the pattern: any question about 'what if two users see different values' is testing CAP understanding",
-              "Strong consistency ≠ correct data. A bug that writes wrong values will consistently return wrong values everywhere — consistency is about agreement, not truth",
-              "Choose your trade-off by domain: financial transactions need strong consistency (can't double-charge); social feeds can be eventually consistent (seeing a post 2 seconds later is fine)"
-            ],
-            "pt": [
-              "Questões de CAP em entrevistas vêm disfarçadas como perguntas simples sobre dados — reconheça o padrão: qualquer pergunta sobre 'e se dois usuários verem valores diferentes' está testando entendimento de CAP",
-              "Consistência forte ≠ dados corretos. Um bug que escreve valores errados vai consistentemente retornar valores errados em todo lugar — consistência é sobre acordo, não verdade",
-              "Escolha seu trade-off por domínio: transações financeiras precisam de consistência forte (não pode cobrar duas vezes); feeds sociais podem ser eventualmente consistentes (ver um post 2 segundos depois está ok)"
-            ]
-          },
-          "link": "https://newsletter.systemdesignclassroom.com/p/consistency-vs-accuracy-distributed-systems"
-        },
-        {
-          "rank": 3,
-          "newsletter": "Two Minute Papers",
-          "author": "Károly Zsolnai-Fehér",
-          "title": {
-            "en": "How DeepMind's New AI Predicts What It Cannot See",
-            "pt": "Como a Nova IA do DeepMind Prevê o Que Não Consegue Ver"
-          },
-          "summary": {
-            "en": "DeepMind introduces D4RT (Denoising Diffusion for Ray Tracing), a breakthrough in neural rendering that predicts what's hidden from the camera. Traditional rendering requires tracing millions of rays to capture indirect lighting, reflections, and shadows — computationally expensive. D4RT uses diffusion models to 'imagine' the parts of a scene that rays haven't directly sampled, dramatically reducing the rays needed while maintaining visual quality. The technique learns the statistical patterns of how light behaves in scenes, allowing it to fill in gaps with physically plausible results. This has major implications for real-time graphics in games, VR, and architectural visualization. The research demonstrates how AI can augment traditional computer graphics pipelines rather than replace them entirely — a pattern that's emerging across many engineering domains.",
-            "pt": "DeepMind apresenta D4RT (Denoising Diffusion for Ray Tracing), um avanço em renderização neural que prevê o que está escondido da câmera. Renderização tradicional requer traçar milhões de raios para capturar iluminação indireta, reflexos e sombras — computacionalmente caro. D4RT usa modelos de difusão para 'imaginar' as partes de uma cena que raios não amostraram diretamente, reduzindo dramaticamente os raios necessários mantendo qualidade visual. A técnica aprende padrões estatísticos de como luz se comporta em cenas, permitindo preencher lacunas com resultados fisicamente plausíveis. Isso tem implicações importantes para gráficos em tempo real em jogos, VR e visualização arquitetônica. A pesquisa demonstra como IA pode aumentar pipelines tradicionais de computação gráfica ao invés de substituí-los totalmente — um padrão emergente em muitos domínios de engenharia."
-          },
-          "insights": {
-            "en": [
-              "AI augmentation > AI replacement: D4RT shows the pattern of AI enhancing existing pipelines (ray tracing) rather than replacing them — relevant for how we integrate AI into engineering workflows",
-              "Diffusion models beyond images: the same technique powering Midjourney/DALL-E is now being applied to physics simulation and rendering — expect this pattern across more domains",
-              "Real-time implications: reducing computational cost while maintaining quality has direct applications in game engines, VR, and any latency-sensitive visualization"
-            ],
-            "pt": [
-              "Aumento por IA > Substituição por IA: D4RT mostra o padrão de IA melhorando pipelines existentes (ray tracing) ao invés de substituí-los — relevante para como integramos IA em workflows de engenharia",
-              "Modelos de difusão além de imagens: a mesma técnica por trás de Midjourney/DALL-E agora está sendo aplicada a simulação física e renderização — espere esse padrão em mais domínios",
-              "Implicações em tempo real: reduzir custo computacional mantendo qualidade tem aplicações diretas em game engines, VR e qualquer visualização sensível a latência"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=ssbHkYB0jYM"
-        }
-      ],
-      "podcastLink": "https://open.spotify.com/episode/7b99MFyh2qDKxw5ut6rSaD",
-      "podcastLang": "en"
     }
   ]
 }
