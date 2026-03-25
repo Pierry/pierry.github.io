@@ -145,6 +145,35 @@ const Newsletters = () => {
 
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 pt-28 pb-16">
+        {/* Podcast Banner */}
+        <section className="mb-8">
+          <div className="flex items-center justify-between bg-accent/30 rounded-lg px-5 py-4">
+            <div className="flex items-center gap-3">
+              <span className="text-lg">📰</span>
+              <div>
+                <h2 className="text-sm font-semibold text-foreground uppercase tracking-wide">
+                  {lang === "en" ? "Daily Tech Digest" : "Tech Digest Diário"}
+                </h2>
+                <p className="text-sm text-muted-foreground">
+                  {lang === "en" 
+                    ? "Curated insights from top tech newsletters, every day."
+                    : "Insights curados das melhores newsletters de tech, todo dia."
+                  }
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://open.spotify.com/show/5K2aGzCdPHFvGxd5E3NqZc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1DB954]/10 text-[#1DB954] hover:bg-[#1DB954]/20 transition-colors text-sm font-medium whitespace-nowrap"
+            >
+              <Headphones size={16} />
+              <span>{lang === "en" ? "Listen to Podcast" : "Ouvir Podcast"}</span>
+            </a>
+          </div>
+        </section>
+
         {/* Header */}
         <section className="mb-12">
           <h1 className="text-3xl sm:text-4xl font-semibold text-foreground tracking-tight mb-4">
