@@ -158,9 +158,9 @@ const t = {
     ossWhere: "A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.",
     ossCloudDancer: "A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.",
     ossAwesome: "A curated collection of awesome use cases, prompts, workflows, and resources for Clawdbot.",
-    // Daily Digest section
-    dailyDigest: "📰 Tech Digest",
-    dailyDigestDesc: "Curated insights from top tech newsletters, every 3 days.",
+    // Newsletter section
+    dailyDigest: "📰 Latest from Newsletter",
+    dailyDigestDesc: "Curated insights from top tech newsletters.",
     viewAll: "View all →",
     listenPodcast: "Listen to Podcast",
     readArticle: "Read",
@@ -211,9 +211,9 @@ const t = {
     ossWhere: "Uma visualização divertida que mostra onde no mundo você teria nascido baseado na distribuição populacional global na sua data de nascimento.",
     ossCloudDancer: "Um tema sereno e claro para IDEs JetBrains inspirado na Cor do Ano 2026 da Pantone.",
     ossAwesome: "Uma coleção curada de casos de uso, prompts, workflows e recursos para o Clawdbot.",
-    // Daily Digest section
-    dailyDigest: "📰 Tech Digest",
-    dailyDigestDesc: "Insights curados das melhores newsletters de tech, a cada 3 dias.",
+    // Newsletter section
+    dailyDigest: "📰 Últimos da Newsletter",
+    dailyDigestDesc: "Insights curados das melhores newsletters de tech.",
     viewAll: "Ver todos →",
     listenPodcast: "Ouvir Podcast",
     readArticle: "Ler",
