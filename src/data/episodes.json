@@ -1,0 +1,52 @@
+{
+  "episodes": [
+    {
+      "title": "AI Make Code Worse? PostHog's AI Agent Lessons",
+      "description": "In this episode, we explore three hot topics: PostHog's 2 Years Building AI Agents, Did AI Make Code Worse? 5 Critical Observations, and Advanced Claude Code features that 10x productivity.",
+      "link": "https://open.spotify.com/episode/7b99MFyh2qDKxw5ut6rSaD",
+      "pubDate": "2026-03-25",
+      "duration": "18:08",
+      "language": "en"
+    },
+    {
+      "title": "IA Piorou o Código? O Que PostHog Aprendeu com AI Agents",
+      "description": "Neste episódio, exploramos três temas quentes: PostHog e 2 anos construindo AI Agents, IA piorou o código? 5 observações críticas, e Claude Code avançado com features que 10x produtividade.",
+      "link": "https://open.spotify.com/episode/4kLmN8vQ2wX9pR7tY6uI3s",
+      "pubDate": "2026-03-25",
+      "duration": "23:55",
+      "language": "pt"
+    },
+    {
+      "title": "Claude Code, AI Career & Google Stitch",
+      "description": "How to use Claude Code beyond basics with Skills and Subagents, the complete roadmap to become an AI Engineer in 2026, and Google's new Stitch that generates production-ready UI code.",
+      "link": "https://open.spotify.com/episode/5nK8mL3qW2xR9pT7vY6uJ4",
+      "pubDate": "2026-03-23",
+      "duration": "18:37",
+      "language": "en"
+    },
+    {
+      "title": "Claude Code, Carreira IA e Google Stitch",
+      "description": "Como usar Claude Code além do básico com Skills e Subagents, o roadmap completo para se tornar engenheiro de IA em 2026, e o novo Google Stitch que gera código UI production-ready.",
+      "link": "https://open.spotify.com/episode/6oL9nM4rX3yS0qU8wZ7vK5",
+      "pubDate": "2026-03-23",
+      "duration": "22:10",
+      "language": "pt"
+    },
+    {
+      "title": "Reinforcement Learning: Os 21 Conceitos Essenciais",
+      "description": "Entenda como Reinforcement Learning transformou a IA moderna — dos robôs humanoides aos LLMs. Aprenda os 21 conceitos fundamentais: Agent, Environment, State, Action, Reward e RLHF.",
+      "link": "https://open.spotify.com/episode/7pM0oN5sY4zT1rV9xA8wL6",
+      "pubDate": "2026-03-18",
+      "duration": "23:35",
+      "language": "pt"
+    },
+    {
+      "title": "Cursor: Arquitetura de IA para Código em Escala",
+      "description": "Como o Cursor processa milhões de completions de código por dia? Mergulhamos na entrevista do ByteByteGo com o co-fundador sobre janelas de contexto, latência e o futuro agêntico.",
+      "link": "https://open.spotify.com/episode/8qN1pO6tZ5aU2sW0yB9xM7",
+      "pubDate": "2026-03-17",
+      "duration": "27:11",
+      "language": "pt"
+    }
+  ]
+}

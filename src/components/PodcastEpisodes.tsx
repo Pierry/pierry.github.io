@@ -6,7 +6,7 @@ interface PodcastEpisodesProps {
 }
 
 const PodcastEpisodes = ({ lang }: PodcastEpisodesProps) => {
-  const { episodes, loading, error } = usePodcastEpisodes(10);
+  const { episodes } = usePodcastEpisodes(10);
 
   const i18n = {
     en: {
@@ -14,16 +14,12 @@ const PodcastEpisodes = ({ lang }: PodcastEpisodesProps) => {
       subtitle: 'New episodes every 3 days',
       listen: 'Listen',
       listenAll: 'Listen on Spotify',
-      loading: 'Loading episodes...',
-      error: 'Could not load episodes',
     },
     pt: {
       title: '🎙️ Últimos Episódios',
       subtitle: 'Novos episódios a cada 3 dias',
       listen: 'Ouvir',
       listenAll: 'Ouvir no Spotify',
-      loading: 'Carregando episódios...',
-      error: 'Não foi possível carregar os episódios',
     },
   };
 
@@ -48,19 +44,8 @@ const PodcastEpisodes = ({ lang }: PodcastEpisodesProps) => {
       .trim();
   };
 
-  if (loading) {
-    return (
-      <section className="mb-20">
-        <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-6">
-          {t.title}
-        </h2>
-        <p className="text-sm text-muted-foreground">{t.loading}</p>
-      </section>
-    );
-  }
-
-  if (error || episodes.length === 0) {
-    return null; // Fail silently
+  if (episodes.length === 0) {
+    return null;
   }
 
   return (
