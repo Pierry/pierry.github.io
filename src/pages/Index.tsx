@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Github, Linkedin, Check, Eye, Headphones, Globe, ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import PodcastEpisodes from "@/components/PodcastEpisodes";
 import newslettersData from "../data/newsletters.json";
 
 type Lang = "en" | "pt";
@@ -121,14 +122,14 @@ const t = {
     heroDesc: "14 years shipping software across fintech, healthtech, and logistics. Currently leading engineering at Intelipost and building",
     heroDescCont: ", a platform for engineering delivery metrics.",
     heroTech: "I care about backend development (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), architecture, and actually solving problems that matter.",
-    heroPodcast: "I also run a daily podcast with curated tech insights —",
+    heroPodcast: "I also run a podcast every 3 days with curated tech insights —",
     podcastSection: "🎙️ Podcast",
     podcastTitle: "Pierry's Tech Digest",
-    podcastDesc: "New episode every day.",
+    podcastDesc: "New episode every 3 days.",
     podcastDescCont: "I curate the top 3 most relevant articles from tech newsletters and YouTube channels, covering system design, AI breakthroughs, engineering leadership, and dev productivity.",
-    podcastAI: "🤖 Powered by AI — Each morning I use NotebookLM to transform my curated research into conversational audio. Perfect for your commute, workout, or whenever you want to stay sharp without reading walls of text.",
+    podcastAI: "🤖 Powered by AI — I use NotebookLM to transform my curated research into conversational audio. Perfect for your commute, workout, or whenever you want to stay sharp without reading walls of text.",
     listenSpotify: "Listen on Spotify",
-    podcastCompact: "Daily episodes with top 3 curated articles from tech newsletters. New every morning!",
+    podcastCompact: "Episodes every 3 days with top 3 curated articles from tech newsletters.",
     experience: "Experience",
     projects: "Projects",
     openSourceApps: "Open-source Apps",
@@ -158,8 +159,8 @@ const t = {
     ossCloudDancer: "A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.",
     ossAwesome: "A curated collection of awesome use cases, prompts, workflows, and resources for Clawdbot.",
     // Daily Digest section
-    dailyDigest: "📰 Daily Tech Digest",
-    dailyDigestDesc: "Curated insights from top tech newsletters, every day.",
+    dailyDigest: "📰 Tech Digest",
+    dailyDigestDesc: "Curated insights from top tech newsletters, every 3 days.",
     viewAll: "View all →",
     listenPodcast: "Listen to Podcast",
     readArticle: "Read",
@@ -174,14 +175,14 @@ const t = {
     heroDesc: "14 anos entregando software em fintech, healthtech e logística. Atualmente liderando engenharia na Intelipost e construindo",
     heroDescCont: ", uma plataforma de métricas de delivery de engenharia.",
     heroTech: "Curto desenvolvimento backend (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), arquitetura, e resolver problemas que realmente importam.",
-    heroPodcast: "Também tenho um podcast diário com insights de tech curados —",
+    heroPodcast: "Também tenho um podcast a cada 3 dias com insights de tech curados —",
     podcastSection: "🎙️ Podcast",
     podcastTitle: "Pierry's Tech Digest",
-    podcastDesc: "Episódio novo todo dia.",
+    podcastDesc: "Episódio novo a cada 3 dias.",
     podcastDescCont: "Eu curo os 3 artigos mais relevantes de newsletters e canais do YouTube, cobrindo system design, avanços em IA, liderança de engenharia e produtividade dev.",
-    podcastAI: "🤖 Powered by AI — Toda manhã uso NotebookLM pra transformar minha pesquisa curada em áudio conversacional. Perfeito pro seu trajeto, treino, ou quando quiser se atualizar sem ler paredes de texto.",
+    podcastAI: "🤖 Powered by AI — Uso NotebookLM pra transformar minha pesquisa curada em áudio conversacional. Perfeito pro seu trajeto, treino, ou quando quiser se atualizar sem ler paredes de texto.",
     listenSpotify: "Ouvir no Spotify",
-    podcastCompact: "Episódios diários com os 3 melhores artigos de newsletters tech. Novo toda manhã!",
+    podcastCompact: "Episódios a cada 3 dias com os 3 melhores artigos de newsletters tech.",
     experience: "Experiência",
     projects: "Projetos",
     openSourceApps: "Apps Open-source",
@@ -211,8 +212,8 @@ const t = {
     ossCloudDancer: "Um tema sereno e claro para IDEs JetBrains inspirado na Cor do Ano 2026 da Pantone.",
     ossAwesome: "Uma coleção curada de casos de uso, prompts, workflows e recursos para o Clawdbot.",
     // Daily Digest section
-    dailyDigest: "📰 Tech Digest Diário",
-    dailyDigestDesc: "Insights curados das melhores newsletters de tech, todo dia.",
+    dailyDigest: "📰 Tech Digest",
+    dailyDigestDesc: "Insights curados das melhores newsletters de tech, a cada 3 dias.",
     viewAll: "Ver todos →",
     listenPodcast: "Ouvir Podcast",
     readArticle: "Ler",
@@ -280,6 +281,15 @@ const Index = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
+              <a
+                href="https://open.spotify.com/show/7lDGFYZNOM6ERjPCRLIrb5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground hover:text-[#1DB954] transition-colors flex items-center gap-1"
+              >
+                <Headphones size={14} />
+                Podcast
+              </a>
               <Link
                 to="/newsletters"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -332,6 +342,15 @@ const Index = () => {
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
             <div className="md:hidden mt-4 pb-2 space-y-2 border-t border-border pt-4">
+              <a
+                href="https://open.spotify.com/show/7lDGFYZNOM6ERjPCRLIrb5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-[#1DB954] transition-colors py-1"
+              >
+                <Headphones size={14} />
+                Podcast
+              </a>
               <Link
                 to="/newsletters"
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
@@ -427,6 +446,9 @@ const Index = () => {
             </a>
           </div>
         </section>
+
+        {/* Podcast Episodes Section */}
+        <PodcastEpisodes lang={lang} />
 
         {/* Daily Tech Digest Section */}
         <section className="mb-20">
