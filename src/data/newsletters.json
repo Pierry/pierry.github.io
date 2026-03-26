@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-26",
+      "date": "2026-03-26",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech With Tim",
+          "author": "Tim Ruscica",
+          "title": {
+            "en": "How NOT to Become an AI Engineer: 7 Mistakes That Keep You Stuck",
+            "pt": "Como NÃO Se Tornar um Engenheiro de IA: 7 Erros Que Mantêm Você Travado"
+          },
+          "summary": {
+            "en": "Tim identifies the 7 critical mistakes he sees people make constantly when trying to become an AI engineer — explaining why some spend months or even over a year grinding through courses and tutorials but still feel like they're not getting anywhere. First, starting with AI before software engineering fundamentals — you can't build AI systems without understanding APIs, databases, and deployment. Second, tutorial hell: watching endless courses without building anything real. Third, learning outdated tools — the AI field moves so fast that 2024 content is already partially obsolete. Fourth, not understanding the math — you don't need a PhD, but skipping linear algebra and statistics will limit how far you can go. Fifth, ignoring system design — knowing how to fine-tune a model is useless if you can't deploy it reliably. Sixth, not building a portfolio — hiring managers care about what you've shipped, not your certificates. Seventh, trying to learn everything at once — focus on the LLM stack (embeddings → vector DBs → RAG → agents) rather than spreading thin across all ML domains.",
+            "pt": "Tim identifica os 7 erros críticos que ele vê pessoas cometendo constantemente ao tentar se tornar um engenheiro de IA — explicando por que alguns passam meses ou até mais de um ano moendo cursos e tutoriais mas ainda sentem que não estão chegando a lugar nenhum. Primeiro, começar com IA antes de fundamentos de engenharia de software — você não consegue construir sistemas de IA sem entender APIs, bancos de dados e deployment. Segundo, inferno de tutoriais: assistir cursos infinitos sem construir nada real. Terceiro, aprender ferramentas desatualizadas — o campo de IA se move tão rápido que conteúdo de 2024 já está parcialmente obsoleto. Quarto, não entender a matemática — você não precisa de PhD, mas pular álgebra linear e estatística vai limitar até onde você pode ir. Quinto, ignorar system design — saber como fine-tune um modelo é inútil se você não consegue fazer deploy de forma confiável. Sexto, não construir um portfólio — hiring managers se importam com o que você shippou, não seus certificados. Sétimo, tentar aprender tudo de uma vez — foque na stack de LLM (embeddings → vector DBs → RAG → agents) ao invés de se espalhar por todos os domínios de ML."
+          },
+          "insights": {
+            "en": [
+              "Software engineering comes first: AI engineering is NOT entry-level — you need solid foundations in systems, APIs, databases, and deployment before adding AI on top",
+              "The LLM stack is the 2026 focus: embeddings → vector DBs → RAG → agents is the progression that matters most — don't spread thin across all ML domains",
+              "Build real projects, skip more courses: the tutorial-to-job pipeline is broken — hiring managers want to see shipped AI applications in your portfolio, not a stack of certificates"
+            ],
+            "pt": [
+              "Engenharia de software vem primeiro: engenharia de IA NÃO é nível de entrada — você precisa de fundamentos sólidos em sistemas, APIs, bancos de dados e deployment antes de adicionar IA",
+              "A stack de LLM é o foco de 2026: embeddings → vector DBs → RAG → agents é a progressão que mais importa — não se espalhe por todos os domínios de ML",
+              "Construa projetos reais, pule mais cursos: o pipeline tutorial-para-emprego está quebrado — hiring managers querem ver aplicações de IA shippadas no seu portfólio, não uma pilha de certificados"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=nvc7xi6vZWw"
+        }
+      ]
+    },
+    {
       "id": "2026-03-25",
       "date": "2026-03-25",
       "entries": [
