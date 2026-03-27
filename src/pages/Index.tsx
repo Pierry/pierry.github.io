@@ -121,7 +121,7 @@ const t = {
     heroIntro: "Engineering Manager focused on delivering real value through technology, understanding what users truly need, and helping teams reach their full potential.",
     heroDesc: "14 years shipping software across fintech, healthtech, and logistics. Currently leading engineering at Intelipost and building",
     heroDescCont: ", a platform for engineering delivery metrics.",
-    heroTech: "I care about backend development (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), architecture, and actually solving problems that matter.",
+    heroTech: "I care about backend development (Java, Kotlin, Python, Node, Go), mobile (Android, iOS, Flutter, KMP, React Native), TypeScript, architecture, and actually solving problems that matter.",
     heroPodcast: "I also run a podcast every 3 days with curated tech insights —",
     podcastSection: "🎙️ Podcast",
     podcastTitle: "Pierry's Tech Digest",
