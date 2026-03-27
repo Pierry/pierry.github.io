@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Article from "./pages/Article";
 import Newsletters from "./pages/Newsletters";
+import DevSimulator from "./pages/DevSimulator";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/newsletters" element={<Newsletters />} />
           <Route path="/newsletters/:entryId" element={<Newsletters />} />
           <Route path="/article/:slug" element={<Article />} />
+          <Route path="/games/dev-simulator" element={<DevSimulator />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

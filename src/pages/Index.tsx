@@ -616,7 +616,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
-                href="https://pierryborges.itch.io/dev-simulator"
+                href="/games/dev-simulator"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-base text-foreground hover:text-primary transition-colors"
