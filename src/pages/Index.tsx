@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Github, Linkedin, Check, Eye, Headphones, Globe, ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { TechStack } from "@/components/TechStack";
 import PodcastEpisodes from "@/components/PodcastEpisodes";
 import newslettersData from "../data/newsletters.json";
 
@@ -407,9 +408,9 @@ const Index = () => {
             {i18n.heroDescCont}
           </p>
 
-          <p className="text-base text-muted-foreground/80 leading-relaxed mb-6">
-            {i18n.heroTech}
-          </p>
+          <div className="mb-6">
+            <TechStack lang={lang} />
+          </div>
 
           <p className="text-base text-muted-foreground/80 leading-relaxed mb-8">
             {i18n.heroPodcast}{" "}
