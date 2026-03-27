@@ -35,8 +35,8 @@ interface TechStackProps {
 
 export const TechStack = ({ lang }: TechStackProps) => {
   const intro = lang === "en" 
-    ? "Hands-on experience across backend, mobile, and architecture — with a strong focus on real-world impact."
-    : "Experiência prática em backend, mobile e arquitetura — com foco forte em impacto real.";
+    ? "Hands-on experience across backend, mobile, and architecture, with a strong focus on real-world impact."
+    : "Experiência prática em backend, mobile e arquitetura, com foco forte em impacto real.";
 
   return (
     <div className="space-y-4">
