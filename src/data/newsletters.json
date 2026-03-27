@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-27",
+      "date": "2026-03-27",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Fireship",
+          "author": "Jeff Delaney",
+          "title": {
+            "en": "Anthropic's Claude Computer Use: Real AI Agent or Just Hype?",
+            "pt": "Claude Computer Use da Anthropic: AI Agent Real ou Apenas Hype?"
+          },
+          "summary": {
+            "en": "Jeff puts Anthropic's newly released Claude Computer Use through its paces — the feature that lets Claude control your computer by seeing the screen and clicking/typing like a human. The core question: is this a genuine breakthrough in AI agents, or another overhyped demo that falls apart in practice? The video demonstrates Claude navigating browsers, filling forms, and executing multi-step workflows autonomously. Unlike API-only integrations, Computer Use operates through visual perception and direct screen interaction, making it potentially universal — it can work with any application without needing custom integrations. However, Jeff explores the practical limitations: latency issues (each action requires screenshot → analysis → decision cycle), accuracy problems on complex UIs, and the security implications of giving an AI literal control over your computer. The comparison to OpenAI's Operator and other computer-use agents reveals the competitive landscape in 'agentic AI' — where models don't just respond to prompts but actively take actions in the real world. For developers and engineering leaders, this represents a significant shift: AI moving from 'assistant' to 'autonomous worker' territory.",
+            "pt": "Jeff coloca o recém-lançado Claude Computer Use da Anthropic à prova — o recurso que permite Claude controlar seu computador vendo a tela e clicando/digitando como um humano. A questão central: isso é um breakthrough genuíno em AI agents, ou mais uma demo hypada que desmorona na prática? O vídeo demonstra Claude navegando browsers, preenchendo formulários e executando workflows multi-step autonomamente. Diferente de integrações apenas por API, Computer Use opera através de percepção visual e interação direta com a tela, tornando-o potencialmente universal — pode funcionar com qualquer aplicação sem precisar de integrações customizadas. Porém, Jeff explora as limitações práticas: problemas de latência (cada ação requer ciclo screenshot → análise → decisão), problemas de precisão em UIs complexas, e as implicações de segurança de dar a uma IA controle literal sobre seu computador. A comparação com o Operator da OpenAI e outros agentes de computer-use revela o cenário competitivo em 'agentic AI' — onde modelos não apenas respondem a prompts mas ativamente tomam ações no mundo real. Para desenvolvedores e líderes de engenharia, isso representa uma mudança significativa: IA movendo de território 'assistente' para 'trabalhador autônomo'."
+          },
+          "insights": {
+            "en": [
+              "Computer Use is universal but slow: visual-based interaction works with ANY application without integrations, but the screenshot → analysis → action loop adds significant latency compared to API-native tools",
+              "Security is the elephant in the room: giving an AI direct control of your screen raises serious questions — what happens if it clicks the wrong thing, or if the model is manipulated through prompt injection on a webpage?",
+              "The 'agentic AI' race is heating up: Anthropic's Computer Use, OpenAI's Operator, and open-source alternatives are all competing to be the first truly useful computer-controlling AI — 2026 will be the year this either works or fails spectacularly"
+            ],
+            "pt": [
+              "Computer Use é universal mas lento: interação baseada em visão funciona com QUALQUER aplicação sem integrações, mas o loop screenshot → análise → ação adiciona latência significativa comparado a ferramentas nativas de API",
+              "Segurança é o elefante na sala: dar a uma IA controle direto da sua tela levanta questões sérias — o que acontece se ela clicar na coisa errada, ou se o modelo for manipulado via prompt injection em uma webpage?",
+              "A corrida 'agentic AI' está esquentando: Computer Use da Anthropic, Operator da OpenAI, e alternativas open-source estão todas competindo para ser a primeira IA controladora de computador realmente útil — 2026 será o ano que isso funciona ou falha espetacularmente"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=wfeiCZK0mNs"
+        }
+      ]
+    },
+    {
       "id": "2026-03-26",
       "date": "2026-03-26",
       "entries": [
