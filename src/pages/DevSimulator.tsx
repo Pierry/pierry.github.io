@@ -12,7 +12,7 @@ const DevSimulator = () => {
   return (
     <div className="fixed inset-0 bg-[#141820]">
       <iframe
-        src="https://v6p9d9t4.ssl.hwcdn.net/html/16819555/index.html"
+        src="https://itch.io/embed-upload/16819555?color=141820"
         className="w-full h-full border-0"
         allowFullScreen
         title="Dev Simulator"
