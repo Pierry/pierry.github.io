@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1774573013|4661064';
+const CACHE_VERSION = '1774588129|4107219';
 /** @type {string} */
 const CACHE_PREFIX = 'Dev Simulator-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
