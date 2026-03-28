@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-28",
+      "date": "2026-03-28",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér",
+          "title": {
+            "en": "DeepMind's New AI Just Changed Science Forever",
+            "pt": "A Nova IA do DeepMind Acabou de Mudar a Ciência Para Sempre"
+          },
+          "summary": {
+            "en": "Two Minute Papers breaks down DeepMind's latest research breakthrough that represents a fundamental shift in how AI can assist scientific discovery. The paper introduces a new approach where AI systems don't just analyze existing data but actively propose novel hypotheses that human scientists hadn't considered. Unlike previous AI tools that excel at pattern recognition within defined boundaries, this system demonstrates what researchers call 'scientific creativity' — the ability to connect disparate fields and suggest experiments that lead to genuine discoveries. The video explains how this was achieved through a combination of massive multi-domain training data, reinforcement learning for hypothesis refinement, and crucially, a feedback loop with actual laboratory experiments. DeepMind validated the approach by having the AI propose experiments in materials science that led to compounds with properties no human team had predicted. For engineering leaders and developers, this signals a broader shift: AI moving from 'tool that helps you work faster' to 'collaborator that sees things you can't'. The implications extend beyond research labs — similar approaches could transform how we debug complex systems, architect solutions, or identify business opportunities that cross domain boundaries.",
+            "pt": "Two Minute Papers analisa a última descoberta de pesquisa do DeepMind que representa uma mudança fundamental em como IA pode auxiliar a descoberta científica. O paper introduz uma nova abordagem onde sistemas de IA não apenas analisam dados existentes mas ativamente propõem hipóteses novas que cientistas humanos não haviam considerado. Diferente de ferramentas de IA anteriores que se destacam em reconhecimento de padrões dentro de limites definidos, este sistema demonstra o que pesquisadores chamam de 'criatividade científica' — a habilidade de conectar campos díspares e sugerir experimentos que levam a descobertas genuínas. O vídeo explica como isso foi alcançado através de uma combinação de dados massivos de treinamento multi-domínio, reinforcement learning para refinamento de hipóteses, e crucialmente, um loop de feedback com experimentos reais de laboratório. DeepMind validou a abordagem tendo a IA propor experimentos em ciência de materiais que levaram a compostos com propriedades que nenhum time humano havia predito. Para líderes de engenharia e desenvolvedores, isso sinaliza uma mudança mais ampla: IA movendo de 'ferramenta que ajuda você trabalhar mais rápido' para 'colaborador que vê coisas que você não consegue'. As implicações se estendem além de laboratórios de pesquisa — abordagens similares poderiam transformar como debugamos sistemas complexos, arquitetamos soluções, ou identificamos oportunidades de negócio que cruzam fronteiras de domínio."
+          },
+          "insights": {
+            "en": [
+              "AI is moving from pattern recognition to hypothesis generation: the breakthrough isn't just analyzing data faster — it's proposing scientific ideas that humans hadn't considered, validated through real experiments",
+              "Cross-domain training enables 'creative leaps': by training on diverse scientific domains simultaneously, the AI can suggest connections between fields that specialists might miss due to siloed expertise",
+              "The lab-in-the-loop matters: this isn't pure theory — DeepMind validated AI-proposed hypotheses with actual experiments, proving the approach generates genuinely useful scientific contributions, not just plausible-sounding suggestions"
+            ],
+            "pt": [
+              "IA está movendo de reconhecimento de padrões para geração de hipóteses: a descoberta não é só analisar dados mais rápido — é propor ideias científicas que humanos não haviam considerado, validadas através de experimentos reais",
+              "Treinamento cross-domain permite 'saltos criativos': ao treinar em domínios científicos diversos simultaneamente, a IA pode sugerir conexões entre campos que especialistas podem perder devido a expertise isolada",
+              "O lab-in-the-loop importa: isso não é pura teoria — DeepMind validou hipóteses propostas pela IA com experimentos reais, provando que a abordagem gera contribuições científicas genuinamente úteis, não apenas sugestões que soam plausíveis"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=Io_GqmbNBbY"
+        }
+      ]
+    },
+    {
       "id": "2026-03-27",
       "date": "2026-03-27",
       "entries": [
