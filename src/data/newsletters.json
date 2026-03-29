@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-29",
+      "date": "2026-03-29",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér",
+          "title": {
+            "en": "DeepSeek Just Fixed One Of The Biggest Problems With AI",
+            "pt": "DeepSeek Acabou de Resolver Um dos Maiores Problemas da IA"
+          },
+          "summary": {
+            "en": "Two Minute Papers breaks down DeepSeek's Engram paper — a breakthrough in how LLMs handle memory that addresses one of the fundamental limitations of transformer architectures. The core problem: current LLMs have a fixed context window. Once you exceed it, they either forget earlier information or require expensive recomputation of the entire context. This creates real limitations for applications that need long-term memory, like coding assistants working on large codebases or conversational agents that should remember context from hours or days ago. DeepSeek's Engram introduces a hierarchical memory system inspired by how human memory works — distinguishing between working memory (immediate context), episodic memory (recent interactions), and semantic memory (compressed long-term knowledge). The key innovation is an efficient compression mechanism that decides what to keep, what to compress, and what to discard, without requiring the model to be retrained. The paper shows significant improvements in long-context benchmarks while using dramatically less compute than alternatives like extending context windows through position interpolation. For engineering teams building LLM-powered applications, this signals that memory-efficient architectures may soon become standard infrastructure — solving one of the biggest practical limitations for production AI systems.",
+            "pt": "Two Minute Papers analisa o paper Engram do DeepSeek — um avanço em como LLMs lidam com memória que aborda uma das limitações fundamentais de arquiteturas transformer. O problema central: LLMs atuais têm uma janela de contexto fixa. Uma vez que você excede, eles ou esquecem informação anterior ou requerem recomputação cara de todo o contexto. Isso cria limitações reais para aplicações que precisam de memória de longo prazo, como assistentes de código trabalhando em codebases grandes ou agentes conversacionais que deveriam lembrar contexto de horas ou dias atrás. O Engram do DeepSeek introduz um sistema de memória hierárquico inspirado em como memória humana funciona — distinguindo entre memória de trabalho (contexto imediato), memória episódica (interações recentes), e memória semântica (conhecimento de longo prazo comprimido). A inovação chave é um mecanismo de compressão eficiente que decide o que manter, o que comprimir, e o que descartar, sem requerer que o modelo seja retreinado. O paper mostra melhorias significativas em benchmarks de contexto longo enquanto usa dramaticamente menos compute que alternativas como estender janelas de contexto através de interpolação de posição. Para times de engenharia construindo aplicações com LLM, isso sinaliza que arquiteturas eficientes em memória podem em breve se tornar infraestrutura padrão — resolvendo uma das maiores limitações práticas para sistemas de IA em produção."
+          },
+          "insights": {
+            "en": [
+              "Context window limits are becoming solvable without massive compute: Engram shows you can have 'infinite' context through hierarchical compression — working, episodic, and semantic memory layers that mimic human cognition",
+              "No retraining required: the memory system works as an add-on to existing models, making it practical for teams to implement without training new models from scratch",
+              "Production AI just got more viable: applications that struggled with context limits — coding assistants, research agents, customer support bots with conversation history — can now handle much longer interactions efficiently"
+            ],
+            "pt": [
+              "Limites de janela de contexto estão se tornando solucionáveis sem compute massivo: Engram mostra que você pode ter contexto 'infinito' através de compressão hierárquica — camadas de memória de trabalho, episódica e semântica que imitam cognição humana",
+              "Sem necessidade de retreinar: o sistema de memória funciona como add-on para modelos existentes, tornando prático para times implementarem sem treinar novos modelos do zero",
+              "IA em produção ficou mais viável: aplicações que lutavam com limites de contexto — assistentes de código, agentes de pesquisa, bots de suporte com histórico de conversa — agora podem lidar com interações muito mais longas eficientemente"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=DmtoVnTkQnM"
+        }
+      ]
+    },
+    {
       "id": "2026-03-28",
       "date": "2026-03-28",
       "entries": [
