@@ -1,6 +1,38 @@
 {
   "digests": [
     {
+      "id": "2026-03-30b",
+      "date": "2026-03-30",
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim & Eric Roby",
+          "title": {
+            "en": "RAG - A Deep Dive: Understanding Retrieval-Augmented Generation",
+            "pt": "RAG - Um Deep Dive: Entendendo Retrieval-Augmented Generation"
+          },
+          "summary": {
+            "en": "Every LLM you use has lied to you — with confidence, fluency, and frequency. Hallucination rates can exceed 58% for complex tasks, and frozen training data means models are blind to everything after their cutoff. RAG solves this fundamental architectural limitation by externalizing knowledge: instead of baking data into model weights, it retrieves relevant context dynamically at inference time. The result is an AI system that stays current, traceable, and accurate. This deep dive covers the three-layer problem of LLM knowledge limitations, how the retrieval pipeline actually works (embedding, vector stores, semantic search), and practical patterns for building production-grade RAG systems. Unlike fine-tuning — which requires expensive retraining and still can't keep up with real-time data — RAG gives you the best of both worlds: a powerful model plus always-current knowledge.",
+            "pt": "Todo LLM que você usa já mentiu para você — com confiança, fluência e frequência. Taxas de alucinação podem exceder 58% em tarefas complexas, e os dados de treinamento congelados significam que os modelos são cegos a tudo após seu cutoff. RAG resolve essa limitação arquitetural fundamental ao externalizar o conhecimento: em vez de incorporar dados nos pesos do modelo, ele recupera contexto relevante dinamicamente no momento da inferência. O resultado é um sistema de IA que permanece atual, rastreável e preciso. Este deep dive cobre o problema de três camadas das limitações de conhecimento dos LLMs, como o pipeline de retrieval funciona (embedding, vector stores, busca semântica), e padrões práticos para construir sistemas RAG prontos para produção."
+          },
+          "insights": {
+            "en": [
+              "Hallucination is an architectural problem, not a bug: LLMs fill knowledge gaps with confident fabrication — rates range from 1% on simple tasks to 58%+ on complex ones, making RAG essential for any production AI use case",
+              "RAG externalizes knowledge vs fine-tuning bakes it in: this means updates are cheap (just update the vector store), answers are auditable (every response traces back to a source), and you avoid expensive model retraining cycles",
+              "The retrieval pipeline is the system design: embedding quality, chunking strategy, vector store choice, and re-ranking all compound — getting these tradeoffs right is what separates a working RAG from a production-grade one"
+            ],
+            "pt": [
+              "Alucinação é um problema arquitetural, não um bug: LLMs preenchem lacunas de conhecimento com fabricação confiante — taxas variam de 1% em tarefas simples a 58%+ em complexas, tornando RAG essencial para qualquer caso de uso de IA em produção",
+              "RAG externaliza o conhecimento vs fine-tuning o incorpora: isso significa que atualizações são baratas (basta atualizar o vector store), respostas são auditáveis (cada resposta rastreia até uma fonte), e você evita ciclos caros de retreinamento de modelo",
+              "O pipeline de retrieval É o system design: qualidade do embedding, estratégia de chunking, escolha do vector store e re-ranking se compõem — acertar esses tradeoffs é o que separa um RAG funcional de um pronto para produção"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/how-rag-works"
+        }
+      ]
+    },
+    {
       "id": "2026-03-30",
       "date": "2026-03-30",
       "entries": [
