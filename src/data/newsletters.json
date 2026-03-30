@@ -1,39 +1,6 @@
 {
   "digests": [
     {
-      "id": "2026-03-30c",
-      "date": "2026-03-30",
-      "tokensUsed": 14550,
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "System Design One",
-          "author": "Neo Kim & Shefali Jangid",
-          "title": {
-            "en": "The 53 Concepts for Highly Effective Mobile System Design",
-            "pt": "Os 53 Conceitos para um Design de Sistemas Mobile Altamente Eficaz"
-          },
-          "summary": {
-            "en": "Mobile system design is a discipline most engineers underestimate until they're sitting in an interview — or shipping a feature that breaks at scale. This issue covers 53 foundational concepts across client-server architecture, push notifications, offline-first design, and 16 other core areas. From how to handle intermittent connectivity and background sync, to designing efficient notification pipelines that don't drain batteries, these patterns apply whether you're building native apps, progressive web apps, or hybrid clients. The guide is framework-agnostic and stack-agnostic by design: the underlying architecture decisions are what matter, and those transfer across every mobile platform.",
-            "pt": "Design de sistemas mobile é uma disciplina que a maioria dos engenheiros subestima — até estar em uma entrevista ou entregando uma feature que quebra em escala. Esta edição cobre 53 conceitos fundamentais: arquitetura cliente-servidor, push notifications, design offline-first e outras 16 áreas centrais. Desde como lidar com conectividade intermitente e sync em background, até criar pipelines de notificação eficientes que não drenam bateria. Os padrões se aplicam a apps nativos, PWAs ou clientes híbridos — agnósticos de stack, porque as decisões arquiteturais são o que realmente importa."
-          },
-          "insights": {
-            "en": [
-              "Offline-first is an architectural decision, not a feature: designing for intermittent connectivity from day one means your data sync, conflict resolution, and local state management need explicit design — bolting it on later is a rewrite",
-              "Push notification pipelines are a system design problem: APNs/FCM are just delivery layers — the real design lives in the backend fan-out strategy, priority levels, batching, and how you avoid silent failures when devices are offline",
-              "Client-server boundary decisions are permanent: where you put logic (client vs server), how you version APIs, and how you handle schema evolution in a world where users never update their apps are decisions that compound and haunt you"
-            ],
-            "pt": [
-              "Offline-first é uma decisão arquitetural, não uma feature: projetar para conectividade intermitente desde o início significa que sync de dados, resolução de conflitos e gerenciamento de estado local precisam de design explícito — adicionar depois é uma reescrita",
-              "Pipelines de push notification são um problema de system design: APNs/FCM são apenas camadas de entrega — o design real está na estratégia de fan-out no backend, níveis de prioridade, batching e como evitar falhas silenciosas quando dispositivos estão offline",
-              "Decisões de fronteira cliente-servidor são permanentes: onde colocar a lógica (cliente vs servidor), como versionar APIs e como lidar com evolução de schema em um mundo onde usuários nunca atualizam seus apps são decisões que se compõem e assombram você"
-            ]
-          },
-          "link": "https://newsletter.systemdesign.one/p/mobile-system-design"
-        }
-      ]
-    },
-    {
       "id": "2026-03-30b",
       "date": "2026-03-30",
       "entries": [
@@ -62,38 +29,6 @@
             ]
           },
           "link": "https://newsletter.systemdesign.one/p/how-rag-works"
-        }
-      ]
-    },
-    {
-      "id": "2026-03-30",
-      "date": "2026-03-30",
-      "entries": [
-        {
-          "rank": 1,
-          "newsletter": "Tech With Tim",
-          "author": "Tim Ruscica",
-          "title": {
-            "en": "OpenClaw Architecture Deep Dive: Reduce Costs & Better Tools/API Use",
-            "pt": "Deep Dive na Arquitetura do OpenClaw: Reduza Custos e Use Melhor Ferramentas/API"
-          },
-          "summary": {
-            "en": "Tim delivers a comprehensive architectural breakdown of OpenClaw — if your API bill is higher than expected, your agent keeps forgetting context, or you're not getting the performance you feel you should, this video addresses exactly those problems. The deep dive covers memory architecture (how context windows work and why they matter for costs), the memory model that separates working memory from long-term storage, context window management strategies, and practical commands for controlling context size. Tim explains compacting and flushing mechanisms that help manage token usage, introduces vector memory search for efficient retrieval, and covers MCP tool integration using Composio for external connections. A crucial section on prompt caching explains how to dramatically reduce redundant API calls. The video includes a cost impact matrix showing which configuration choices have the biggest effect on your bill, optimization strategies for different use cases, and a config cheatsheet for quick reference. For anyone running AI agents in production, this is essential viewing — the difference between efficient and wasteful AI agent architecture can be 10x in costs.",
-            "pt": "Tim entrega uma análise arquitetural abrangente do OpenClaw — se sua conta de API está maior que o esperado, seu agente fica esquecendo contexto, ou você não está tendo a performance que sente que deveria, este vídeo aborda exatamente esses problemas. O deep dive cobre arquitetura de memória (como janelas de contexto funcionam e por que importam para custos), o modelo de memória que separa memória de trabalho de armazenamento de longo prazo, estratégias de gerenciamento de janela de contexto, e comandos práticos para controlar tamanho de contexto. Tim explica mecanismos de compactação e flush que ajudam a gerenciar uso de tokens, introduz busca de memória vetorial para retrieval eficiente, e cobre integração de ferramentas MCP usando Composio para conexões externas. Uma seção crucial sobre cache de prompt explica como reduzir dramaticamente chamadas de API redundantes. O vídeo inclui uma matriz de impacto de custo mostrando quais escolhas de configuração têm o maior efeito na sua conta, estratégias de otimização para diferentes casos de uso, e um cheatsheet de config para referência rápida. Para qualquer um rodando AI agents em produção, isso é visualização essencial — a diferença entre arquitetura de AI agent eficiente e desperdiçadora pode ser 10x em custos."
-          },
-          "insights": {
-            "en": [
-              "Context windows directly impact your bill: every token in context is charged — understanding when to compact, flush, or use vector retrieval instead of keeping everything in context is the key cost optimization lever",
-              "Prompt caching is underutilized: by structuring prompts so that common prefixes (system prompts, skills, tool definitions) stay consistent, you can dramatically reduce token charges through provider caching mechanisms",
-              "MCP tool sprawl kills performance: each connected tool adds context overhead — be selective about which integrations you enable, and consider the cost-benefit of each MCP server before adding it"
-            ],
-            "pt": [
-              "Janelas de contexto impactam diretamente sua conta: cada token em contexto é cobrado — entender quando compactar, fazer flush, ou usar retrieval vetorial ao invés de manter tudo em contexto é a alavanca chave de otimização de custo",
-              "Cache de prompt é subutilizado: ao estruturar prompts para que prefixos comuns (system prompts, skills, definições de ferramentas) fiquem consistentes, você pode reduzir dramaticamente cobranças de token através de mecanismos de cache do provider",
-              "Proliferação de ferramentas MCP mata performance: cada ferramenta conectada adiciona overhead de contexto — seja seletivo sobre quais integrações você habilita, e considere o custo-benefício de cada servidor MCP antes de adicionar"
-            ]
-          },
-          "link": "https://www.youtube.com/watch?v=lgecguWmMQg"
         }
       ]
     },
