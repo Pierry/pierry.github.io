@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-03-30c",
+      "date": "2026-03-30",
+      "tokensUsed": 14550,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim & Shefali Jangid",
+          "title": {
+            "en": "The 53 Concepts for Highly Effective Mobile System Design",
+            "pt": "Os 53 Conceitos para um Design de Sistemas Mobile Altamente Eficaz"
+          },
+          "summary": {
+            "en": "Mobile system design is a discipline most engineers underestimate until they're sitting in an interview — or shipping a feature that breaks at scale. This issue covers 53 foundational concepts across client-server architecture, push notifications, offline-first design, and 16 other core areas. From how to handle intermittent connectivity and background sync, to designing efficient notification pipelines that don't drain batteries, these patterns apply whether you're building native apps, progressive web apps, or hybrid clients. The guide is framework-agnostic and stack-agnostic by design: the underlying architecture decisions are what matter, and those transfer across every mobile platform.",
+            "pt": "Design de sistemas mobile é uma disciplina que a maioria dos engenheiros subestima — até estar em uma entrevista ou entregando uma feature que quebra em escala. Esta edição cobre 53 conceitos fundamentais: arquitetura cliente-servidor, push notifications, design offline-first e outras 16 áreas centrais. Desde como lidar com conectividade intermitente e sync em background, até criar pipelines de notificação eficientes que não drenam bateria. Os padrões se aplicam a apps nativos, PWAs ou clientes híbridos — agnósticos de stack, porque as decisões arquiteturais são o que realmente importa."
+          },
+          "insights": {
+            "en": [
+              "Offline-first is an architectural decision, not a feature: designing for intermittent connectivity from day one means your data sync, conflict resolution, and local state management need explicit design — bolting it on later is a rewrite",
+              "Push notification pipelines are a system design problem: APNs/FCM are just delivery layers — the real design lives in the backend fan-out strategy, priority levels, batching, and how you avoid silent failures when devices are offline",
+              "Client-server boundary decisions are permanent: where you put logic (client vs server), how you version APIs, and how you handle schema evolution in a world where users never update their apps are decisions that compound and haunt you"
+            ],
+            "pt": [
+              "Offline-first é uma decisão arquitetural, não uma feature: projetar para conectividade intermitente desde o início significa que sync de dados, resolução de conflitos e gerenciamento de estado local precisam de design explícito — adicionar depois é uma reescrita",
+              "Pipelines de push notification são um problema de system design: APNs/FCM são apenas camadas de entrega — o design real está na estratégia de fan-out no backend, níveis de prioridade, batching e como evitar falhas silenciosas quando dispositivos estão offline",
+              "Decisões de fronteira cliente-servidor são permanentes: onde colocar a lógica (cliente vs servidor), como versionar APIs e como lidar com evolução de schema em um mundo onde usuários nunca atualizam seus apps são decisões que se compõem e assombram você"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/mobile-system-design"
+        }
+      ]
+    },
+    {
       "id": "2026-03-30b",
       "date": "2026-03-30",
       "entries": [
