@@ -33,28 +33,6 @@ const recommendedItems = [
     addedAt: "2026-03-02",
   },
   {
-    id: "fowler-harness-engineering",
-    title: "Harness Engineering",
-    href: "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
-    date: "Martin Fowler",
-    description: {
-      en: "Thoughts on OpenAI's approach to AI-maintained codebases — using harnesses (tooling, linters, structural tests) to keep AI agents in check.",
-      pt: "Reflexões sobre a abordagem da OpenAI para codebases mantidas por IA — usando harnesses (tooling, linters, testes estruturais) para manter agentes de IA sob controle."
-    },
-    addedAt: "2026-02-19",
-  },
-  {
-    id: "mckinsey-dev-productivity-genai",
-    title: "Unleashing Developer Productivity with Generative AI",
-    href: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/unleashing-developer-productivity-with-generative-ai",
-    date: "McKinsey",
-    description: {
-      en: "McKinsey's research on how generative AI is transforming software development and boosting developer productivity.",
-      pt: "Pesquisa da McKinsey sobre como IA generativa está transformando o desenvolvimento de software e aumentando a produtividade dos devs."
-    },
-    addedAt: "2026-02-02",
-  },
-  {
     id: "clawdbot",
     title: "Clawdbot",
     href: "https://github.com/clawdbot/clawdbot",
@@ -64,39 +42,6 @@ const recommendedItems = [
       pt: "Um assistente pessoal de IA que roda nos seus próprios dispositivos. Funciona com WhatsApp, Telegram, Slack, Discord e mais."
     },
     addedAt: "2026-01-30",
-  },
-  {
-    id: "agentic-ai-podcast",
-    title: "Agentic AI Transformation: Workforce Strategy & Leadership",
-    href: "https://open.spotify.com/episode/5oARH9ayPqwvO1PHpDF0x6",
-    date: "Jan 2026",
-    description: {
-      en: "Podcast episode exploring how agentic AI is reshaping workforce strategy and what leaders need to know.",
-      pt: "Episódio de podcast explorando como IA agêntica está reformulando estratégia de workforce e o que líderes precisam saber."
-    },
-    addedAt: "2026-01-29",
-  },
-  {
-    id: "speed-never-just-speed",
-    title: "Speed Is Never Just Speed",
-    href: "https://mikefisher.substack.com/p/speed-is-never-just-speed",
-    date: "Jan 2026",
-    description: {
-      en: "Mike Fisher on how speed emerges from focus, collaboration, transformation, and psychological safety — using rugby as a powerful metaphor for high-performing teams.",
-      pt: "Mike Fisher sobre como velocidade emerge de foco, colaboração, transformação e segurança psicológica — usando rugby como metáfora para times de alta performance."
-    },
-    addedAt: "2026-01-29",
-  },
-  {
-    id: "state-of-ai-2025",
-    title: "State of AI in Business 2025",
-    href: "https://drive.google.com/file/d/18AsBgiv6uiG6YEpfy_OEvtvplEw4Oo7E/view",
-    date: "Jan 2025",
-    description: {
-      en: "A comprehensive report on how companies are adopting AI across industries. Great insights on trends, challenges, and what's coming next.",
-      pt: "Um relatório abrangente sobre como empresas estão adotando IA em diversas indústrias. Ótimos insights sobre tendências, desafios e o que vem por aí."
-    },
-    addedAt: "2025-01-15",
   },
 ];
 
