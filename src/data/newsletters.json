@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-03-31",
+      "date": "2026-03-31",
+      "tokensUsed": 8396,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim & Tjeerd in 't Veen",
+          "title": {
+            "en": "The Mobile Engineer's Guide to System Design Interviews",
+            "pt": "O Guia do Engenheiro Mobile para Entrevistas de System Design"
+          },
+          "summary": {
+            "en": "Most mobile engineers hit a wall when asked to design a system in an interview — not because they can't build great apps, but because they lack a structured framework to turn vague prompts into concrete architectures under pressure. This guide introduces a proven process: start by clarifying requirements (functional and non-functional), uncover hidden constraints specific to mobile (offline state, battery drain, app lifecycle, memory pressure, background sync), then build an architecture that maps client and backend responsibilities explicitly. The key insight is that mobile system design interviews aren't just backend with a mobile layer on top — the constraints fundamentally change the architecture. Things like optimistic UI updates, conflict resolution for offline-first data, binary protocols over JSON for bandwidth-constrained environments, and delta sync instead of full refreshes are all mobile-specific concerns that distinguish strong candidates. The same framework applies equally to real-world feature planning — when a PM says 'we need push notifications' or a designer drops a Figma, this structured thinking is what separates engineers who ship confidently from those who discover edge cases in production.",
+            "pt": "A maioria dos engenheiros mobile trava quando pedem para projetar um sistema em entrevista — não porque não conseguem construir ótimos apps, mas porque faltam um framework estruturado para transformar prompts vagos em arquiteturas concretas sob pressão. Este guia introduz um processo comprovado: comece clarificando requisitos (funcionais e não-funcionais), descubra restrições ocultas específicas de mobile (estado offline, dreno de bateria, ciclo de vida do app, pressão de memória, sync em background), depois construa uma arquitetura que mapeie responsabilidades do cliente e backend explicitamente. A percepção chave é que entrevistas de system design mobile não são apenas backend com uma camada mobile por cima — as restrições mudam fundamentalmente a arquitetura. Coisas como atualizações de UI otimistas, resolução de conflitos para dados offline-first, protocolos binários sobre JSON para ambientes com largura de banda limitada, e delta sync em vez de refresh completo são preocupações específicas de mobile que distinguem candidatos fortes. O mesmo framework se aplica igualmente ao planejamento real de features no dia a dia."
+          },
+          "insights": {
+            "en": [
+              "Mobile constraints fundamentally change architecture decisions: offline-first design, optimistic UI, binary protocols, delta sync — these aren't optional refinements, they're core requirements when bandwidth, battery, and connectivity are unreliable",
+              "The interview framework maps 1:1 to real feature work: requirements clarification → hidden constraint discovery → client/backend responsibility split — the same process you should run when your PM drops a vague feature request",
+              "Strong mobile candidates think in tradeoffs, not components: rather than naming which boxes to draw, they reason about when to use message queues vs direct API calls, when to cache vs always fetch, and how to handle conflict resolution in distributed mobile state"
+            ],
+            "pt": [
+              "Restrições mobile mudam fundamentalmente as decisões de arquitetura: design offline-first, UI otimista, protocolos binários, delta sync — não são refinamentos opcionais, são requisitos centrais quando largura de banda, bateria e conectividade são instáveis",
+              "O framework de entrevista mapeia 1:1 para trabalho real de feature: clarificação de requisitos → descoberta de restrições ocultas → divisão de responsabilidades cliente/backend — o mesmo processo que você deveria executar quando o PM traz um pedido vago",
+              "Candidatos fortes de mobile pensam em tradeoffs, não em componentes: em vez de apenas nomear quais caixas desenhar, eles raciocinam sobre quando usar filas de mensagens vs chamadas diretas de API, quando fazer cache vs sempre buscar, e como lidar com resolução de conflitos em estado mobile distribuído"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/mobile-system-design-interview"
+        }
+      ]
+    },
+    {
       "id": "2026-03-30b",
       "date": "2026-03-30",
       "entries": [
