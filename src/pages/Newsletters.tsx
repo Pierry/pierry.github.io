@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
-import { Menu, X, Github, Linkedin, Globe, ExternalLink, Share2, Check, Headphones } from "lucide-react";
+import { Menu, X, Github, Linkedin, Globe, ExternalLink, Share2, Check, Headphones, Zap } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import newslettersData from "../data/newsletters.json";
 
@@ -214,6 +214,17 @@ const Newsletters = () => {
                       <Headphones size={14} />
                       <span>Podcast {(digest as any).podcastLang === "pt" ? "🇧🇷" : "🇺🇸"}</span>
                     </a>
+                  )}
+                  {(digest as any).tokensUsed && (
+                    <span
+                      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-accent text-muted-foreground/70 text-xs"
+                      title={lang === "en" ? `~${(digest as any).tokensUsed.toLocaleString()} tokens used to generate` : `~${(digest as any).tokensUsed.toLocaleString()} tokens usados para gerar`}
+                    >
+                      <Zap size={11} />
+                      {(digest as any).tokensUsed >= 1000
+                        ? `${((digest as any).tokensUsed / 1000).toFixed(1)}k`
+                        : (digest as any).tokensUsed}
+                    </span>
                   )}
                 </div>
                 <div className="h-px flex-1 bg-border" />

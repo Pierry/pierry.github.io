@@ -1,52 +1,100 @@
 {
   "episodes": [
     {
-      "title": "AI Make Code Worse? PostHog's AI Agent Lessons",
-      "description": "In this episode, we explore three hot topics: PostHog's 2 Years Building AI Agents, Did AI Make Code Worse? 5 Critical Observations, and Advanced Claude Code features that 10x productivity.",
-      "link": "https://open.spotify.com/episode/7b99MFyh2qDKxw5ut6rSaD",
-      "pubDate": "2026-03-25",
-      "duration": "18:08",
+      "title": "Ep #10 [EN] From Pattern Recognition to Scientific Discovery: The Global Race for Agentic AI",
+      "description": "In this milestone 10th episode of <strong>Pierry&#39;s Tech Digest</strong>, we explore a week of massive breakthroughs that are fundamentally shifting the AI landscape from simple assistants to sophisticated, creative collaborators.<strong>What we cover in this episode:</strong><ul><ul><li><strong>",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117665818/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-30%2F6654849c-6176-acb3-d4c9-40acff26fa16.m4a",
+      "pubDate": "2026-03-30",
+      "duration": "00:19:38",
       "language": "en"
     },
     {
-      "title": "IA Piorou o Código? O Que PostHog Aprendeu com AI Agents",
-      "description": "Neste episódio, exploramos três temas quentes: PostHog e 2 anos construindo AI Agents, IA piorou o código? 5 observações críticas, e Claude Code avançado com features que 10x produtividade.",
-      "link": "https://open.spotify.com/episode/4kLmN8vQ2wX9pR7tY6uI3s",
+      "title": "Ep #9 [EN] - AI Make Code Worse? PostHog's AI Agent Lessons",
+      "description": "In this episode, we explore three hot topics:<br>🎯 PostHog: 2 Years Building AI Agents- Why MCP + Skills + Context is the winning pattern- 34% of dashboards created via MCP, not built-in agent- Don&#39;t build custom agent before validating with simpler approaches<br>🎯 Did AI Make Code Worse? 5 Crit",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117471432/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-25%2F9dd87583-e543-2252-eb72-c8904e21f236.m4a",
       "pubDate": "2026-03-25",
-      "duration": "23:55",
-      "language": "pt"
-    },
-    {
-      "title": "Claude Code, AI Career & Google Stitch",
-      "description": "How to use Claude Code beyond basics with Skills and Subagents, the complete roadmap to become an AI Engineer in 2026, and Google's new Stitch that generates production-ready UI code.",
-      "link": "https://open.spotify.com/episode/5nK8mL3qW2xR9pT7vY6uJ4",
-      "pubDate": "2026-03-23",
-      "duration": "18:37",
+      "duration": "00:18:08",
       "language": "en"
     },
     {
-      "title": "Claude Code, Carreira IA e Google Stitch",
-      "description": "Como usar Claude Code além do básico com Skills e Subagents, o roadmap completo para se tornar engenheiro de IA em 2026, e o novo Google Stitch que gera código UI production-ready.",
-      "link": "https://open.spotify.com/episode/6oL9nM4rX3yS0qU8wZ7vK5",
-      "pubDate": "2026-03-23",
-      "duration": "22:10",
+      "title": "Ep #9 [PTBR] - IA Piorou o Código? O Que PostHog Aprendeu com AI Agents",
+      "description": "Neste episódio, exploramos três temas quentes:<br />🎯 PostHog: Lições de 2 Anos Construindo AI Agents- Por que MCP + Skills + Context é o padrão vencedor- 34% dos dashboards via MCP, não agente built-in- Não construa agente custom antes de validar com abordagens simples<br />🎯 IA Piorou o Código? 5 ",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117471352/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-25%2F421ba98b-d65f-9112-184e-1a8d0fbdaa73.m4a",
+      "pubDate": "2026-03-25",
+      "duration": "00:23:55",
       "language": "pt"
     },
     {
-      "title": "Reinforcement Learning: Os 21 Conceitos Essenciais",
-      "description": "Entenda como Reinforcement Learning transformou a IA moderna — dos robôs humanoides aos LLMs. Aprenda os 21 conceitos fundamentais: Agent, Environment, State, Action, Reward e RLHF.",
-      "link": "https://open.spotify.com/episode/7pM0oN5sY4zT1rV9xA8wL6",
+      "title": "Ep #8 [EN] - Claude Code, AI Career & Google Stitch",
+      "description": "In this episode, we explore how to use Claude Code beyond basics with Skills and Subagents, the complete roadmap to become an AI Engineer in 2026, and Google&#39;s new Stitch that generates production-ready UI code from prompts.",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117351634/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-23%2F568d04c8-5e39-7c32-d5ed-7f107771e029.m4a",
+      "pubDate": "2026-03-23",
+      "duration": "00:18:37",
+      "language": "en"
+    },
+    {
+      "title": "Ep #8 [PTBR] - Claude Code, Carreira IA e Google Stitch",
+      "description": "Neste episódio, exploramos como usar Claude Code além do básico com Skills e Subagents, o roadmap completo para se tornar engenheiro de IA em 2026, e o novo Google Stitch que gera código UI production-ready a partir de prompts.",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117349334/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-23%2F1c5fc88c-7c72-aa5c-ed53-995e73b54727.m4a",
+      "pubDate": "2026-03-23",
+      "duration": "00:22:10",
+      "language": "pt"
+    },
+    {
+      "title": "Ep #7 [PTBR] - Reinforcement Learning: Os 21 Conceitos Essenciais",
+      "description": "Entenda como Reinforcement Learning transformou a IA moderna — dos robôs humanoides aos LLMs que você usa todo dia. Aprenda os 21 conceitos fundamentais explicados de forma simples: Agent, Environment, State, Action, Reward e como tudo isso se conecta ao RLHF por trás do ChatGPT",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117115081/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-18%2F55aec7d3-a956-367c-3473-d2c0b64431ee.m4a",
       "pubDate": "2026-03-18",
-      "duration": "23:35",
+      "duration": "00:23:35",
       "language": "pt"
     },
     {
-      "title": "Cursor: Arquitetura de IA para Código em Escala",
-      "description": "Como o Cursor processa milhões de completions de código por dia? Mergulhamos na entrevista do ByteByteGo com o co-fundador sobre janelas de contexto, latência e o futuro agêntico.",
-      "link": "https://open.spotify.com/episode/8qN1pO6tZ5aU2sW0yB9xM7",
+      "title": "Ep #6 [PTBR] - Cursor: Arquitetura de IA para Código em Escala",
+      "description": "Como o Cursor processa milhões de completions de código por dia? Neste episódio, mergulhamos na entrevista exclusiva do ByteByteGo com o co-fundador do Cursor sobre janelas de contexto, latência e o futuro \"agêntico\" do desenvolvimento. Essencial para líderes técnicos avaliando ferramentas de IA.<br",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117062119/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-17%2F4ca82e11-7f1f-865f-c0d6-487d58a21914.m4a",
       "pubDate": "2026-03-17",
-      "duration": "27:11",
+      "duration": "00:27:11",
       "language": "pt"
+    },
+    {
+      "title": "Ep #5 [EN] - Open Source AI Revolution & Real-Time Physics Breakthroughs",
+      "description": "In this episode, we explore the rapidly evolving landscape of open-source AI and a massive breakthrough in physics simulation. First, we dive into <strong>7 new open-source AI tools</strong> that are changing the game. From <strong>Agency Agents</strong> for multi-agent orchestration to <strong>Prom",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/116869998/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-13%2F39e5f1e8-a546-57e0-7d00-bcee67276cb7.m4a",
+      "pubDate": "2026-03-13",
+      "duration": "00:22:41",
+      "language": "en"
+    },
+    {
+      "title": "Ep #4 [PTBR] - Cultura OpenAI, Busca Vetorial e o Futuro dos Prompts",
+      "description": "Neste episódio do Pierry's Tech Digest, mergulhamos nas estratégias que estão moldando o cenário tecnológico em 2026. Exploramos os bastidores da <strong>OpenAI</strong>, revelando como eles constroem equipes de elite através de contratações baseadas em <strong>pontos fortes</strong>, promoções cont",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/116823026/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-12%2F26886be5-0f14-b393-1cd4-c37c25589aa1.m4a",
+      "pubDate": "2026-03-12",
+      "duration": "00:25:45",
+      "language": "pt"
+    },
+    {
+      "title": "Ep #3 [EN] - System Design, 38 Essential Concepts",
+      "description": "Deep dive into Webhooks, WebRTC, CQRS, Event Sourcing, Circuit Breaker Pattern, Observability, Vector Databases, and 31 more system design concepts every senior engineer should know.",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/116761495/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-11%2Fa46a4800-53ec-34fb-0ce1-89635bab383d.m4a",
+      "pubDate": "2026-03-11",
+      "duration": "00:21:57",
+      "language": "en"
+    },
+    {
+      "title": "Ep #2 [PTBR] - Estratégias de System Design e o Futuro da IA",
+      "description": "Aprenda o framework de 5 passos de um insider da AWS para dominar entrevistas de system design e articular trade-offs com clareza. Entenda a diferença crucial entre consistência e precisão em sistemas distribuídos e como escolher o modelo ideal para seu projeto. Descubra como o D4RT da DeepMind util",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/116711594/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-10%2F419729220-44100-2-f04ba53263a07.m4a",
+      "pubDate": "2026-03-10",
+      "duration": "00:30:02",
+      "language": "pt"
+    },
+    {
+      "title": "Ep #1 [EN] - Predicting the unseen in systems and AI",
+      "description": "Master <strong>System Design interviews</strong> using a structured new framework and learn to identify practical <strong>CAP Theorem patterns</strong> hidden in technical discussions. This episode also explores <strong>DeepMind's latest AI breakthrough</strong> in spatial reasoning and its transfor",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/116640777/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-9%2Fd2d7661e-7038-e24c-04fa-314e453d0e15.m4a",
+      "pubDate": "2026-03-09",
+      "duration": "00:11:00",
+      "language": "en"
     }
   ]
 }
