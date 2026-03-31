@@ -68,6 +68,8 @@ const t = {
     heroDesc: "14 years shipping software across fintech, healthtech, and logistics. Currently leading engineering at Intelipost and building",
     heroDescCont: ", a platform for engineering delivery metrics.",
     heroTech: "I care about backend development (Java, Kotlin, Python, Node, Go), mobile (Android, iOS, Flutter, KMP, React Native), TypeScript, architecture, and actually solving problems that matter.",
+    heroPlaybook: "I also open-sourced the",
+    heroPlaybookDesc: ", a turnkey framework with AI-powered agents, knowledge bases, and spec-driven workflows to help engineering teams ship production-grade code faster.",
     heroPodcast: "I also run a podcast every 3 days with curated tech insights —",
     podcastSection: "🎙️ Podcast",
     podcastTitle: "Pierry's Tech Digest",
@@ -78,7 +80,8 @@ const t = {
     podcastCompact: "Episodes every 3 days with top 3 curated articles from tech newsletters.",
     experience: "Experience",
     projects: "Projects",
-    openSourceApps: "Open-source Apps",
+    openSourceApps: "Open Source",
+    ossPlaybook: "A turnkey framework with 15 AI-powered agents (Java, Kotlin, Go, React, Flutter, and more), 14 knowledge bases, persistent memory architecture, and OpenSpec integration — giving your AI coding tools everything they need to deliver production-grade code.",
     recommended: "Recommended",
     viewCode: "View Code",
     new: "New",
@@ -121,6 +124,8 @@ const t = {
     heroDesc: "14 anos entregando software em fintech, healthtech e logística. Atualmente liderando engenharia na Intelipost e construindo",
     heroDescCont: ", uma plataforma de métricas de delivery de engenharia.",
     heroTech: "Curto desenvolvimento backend (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), arquitetura, e resolver problemas que realmente importam.",
+    heroPlaybook: "Também abri o",
+    heroPlaybookDesc: ", um framework completo com agentes de IA, bases de conhecimento e workflows spec-driven pra ajudar times de engenharia a entregar código de produção mais rápido.",
     heroPodcast: "Também tenho um podcast a cada 3 dias com insights de tech curados —",
     podcastSection: "🎙️ Podcast",
     podcastTitle: "Pierry's Tech Digest",
@@ -131,7 +136,8 @@ const t = {
     podcastCompact: "Episódios a cada 3 dias com os 3 melhores artigos de newsletters tech.",
     experience: "Experiência",
     projects: "Projetos",
-    openSourceApps: "Apps Open-source",
+    openSourceApps: "Open Source",
+    ossPlaybook: "Um framework completo com 15 agentes de IA (Java, Kotlin, Go, React, Flutter e mais), 14 bases de conhecimento, arquitetura de memória persistente e integração OpenSpec — dando às suas ferramentas de IA tudo que precisam pra entregar código de produção.",
     recommended: "Recomendados",
     viewCode: "Ver Código",
     new: "Novo",
@@ -351,6 +357,19 @@ const Index = () => {
               SpaceMetrics.ai
             </a>
             {i18n.heroDescCont}
+          </p>
+
+          <p className="text-base text-muted-foreground/80 leading-relaxed mb-6">
+            {i18n.heroPlaybook}{" "}
+            <a
+              href="https://github.com/space-metrics-ai/engineering-delivery-playbook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Engineering Delivery Playbook
+            </a>
+            {i18n.heroPlaybookDesc}
           </p>
 
           <div className="mb-6">
@@ -581,6 +600,30 @@ const Index = () => {
           </h2>
 
           <div className="space-y-6">
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+                <a
+                  href="https://github.com/space-metrics-ai/engineering-delivery-playbook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-foreground hover:text-primary transition-colors"
+                >
+                  Engineering Delivery Playbook
+                </a>
+                <a
+                  href="https://github.com/space-metrics-ai/engineering-delivery-playbook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {i18n.viewCode}
+                </a>
+              </div>
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+                {i18n.ossPlaybook}
+              </p>
+            </div>
+
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
