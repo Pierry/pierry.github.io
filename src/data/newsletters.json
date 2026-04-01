@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-01",
+      "date": "2026-04-01",
+      "tokensUsed": 9339,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim & Fran Soto",
+          "title": {
+            "en": "I struggled with AI agents until I built an incident response agent",
+            "pt": "Eu lutava com agentes de IA até construir um agente de resposta a incidentes"
+          },
+          "summary": {
+            "en": "Most engineers say they understand AI agents, but building one in production reveals how fuzzy that understanding really is. This issue walks through building an incident response agent from scratch — an LLM-powered system that monitors alerts, correlates signals, queries runbooks, decides autonomously whether to escalate, and drafts an incident summary for the on-call engineer. The architecture breakdown exposes the real challenges: tool selection (which APIs the agent can call), memory management (what context to retain across steps), loop control (how to avoid infinite reasoning chains), and the observability problem (how do you debug a system that makes decisions you cannot always predict). The agent pattern emerging from this example is broadly applicable — it is not Python or a specific framework, it is a design pattern for any system that needs to take multi-step actions with partial information. The key architectural insight: treat agents as state machines with LLM-powered transitions, not as magic black boxes.",
+            "pt": "A maioria dos engenheiros diz que entende agentes de IA, mas construir um em produção revela o quanto essa compreensão é vaga. Este artigo percorre a construção de um agente de resposta a incidentes do zero — um sistema movido a LLM que monitora alertas, correlaciona sinais, consulta runbooks, decide autonomamente se deve escalar e redige um resumo de incidente para o engenheiro de plantão. A análise da arquitetura expõe os desafios reais: seleção de ferramentas (quais APIs o agente pode chamar), gerenciamento de memória (qual contexto reter entre as etapas), controle de loop (como evitar cadeias infinitas de raciocínio) e o problema de observabilidade (como debugar um sistema que toma decisões que você nem sempre pode prever). O padrão de agente emergente deste exemplo é amplamente aplicável — não é Python ou um framework específico, é um padrão de design para qualquer sistema que precise executar ações em múltiplas etapas com informação parcial. O insight arquitetural chave: trate agentes como máquinas de estado com transições movidas por LLM, não como caixas pretas mágicas."
+          },
+          "insights": {
+            "en": [
+              "Agent architecture = state machine + LLM transitions: the mental model shift from prompting an AI to designing state machines with LLM-powered transitions is what separates toy demos from production-ready agents",
+              "Four core agent design decisions most tutorials skip: tool selection scope, memory retention strategy, loop termination conditions, and observability hooks — getting these wrong is why most agent PoCs never reach production",
+              "The incident response pattern is a blueprint for any async agentic system: monitor > correlate > decide > act > report; the same loop applies to code review agents, deployment agents, and any system that needs to autonomously handle events"
+            ],
+            "pt": [
+              "Arquitetura de agente = máquina de estado + transições LLM: a mudança de mentalidade de fazer prompt de uma IA para projetar máquinas de estado com transições movidas por LLM é o que separa demos brinquedo de agentes prontos para produção",
+              "Quatro decisões centrais de design de agente que a maioria dos tutoriais pula: escopo de seleção de ferramentas, estratégia de retenção de memória, condições de término de loop e hooks de observabilidade — errar esses é o motivo pelo qual a maioria dos PoCs de agentes nunca chega à produção",
+              "O padrão de resposta a incidentes é um blueprint para qualquer sistema agêntico assíncrono: monitorar > correlacionar > decidir > agir > reportar; o mesmo loop se aplica a agentes de revisão de código, agentes de deployment e qualquer sistema que precise lidar autonomamente com eventos"
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/how-do-ai-agents-work"
+        }
+      ]
+    },
+    {
       "id": "2026-03-31",
       "date": "2026-03-31",
       "tokensUsed": 8396,
