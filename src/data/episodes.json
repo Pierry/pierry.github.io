@@ -1,8 +1,24 @@
 {
   "episodes": [
     {
-      "title": "Ep #10 [EN] From Pattern Recognition to Scientific Discovery: The Global Race for Agentic AI",
-      "description": "In this milestone 10th episode of <strong>Pierry&#39;s Tech Digest</strong>, we explore a week of massive breakthroughs that are fundamentally shifting the AI landscape from simple assistants to sophisticated, creative collaborators.<strong>What we cover in this episode:</strong><ul><ul><li><strong>",
+      "title": "Ep #12 [EN] - The Month AI Agents Went Mainstream: March 2026 Digest",
+      "description": "Welcome to the 1a Monthly Digest, your executive summary of the most important developments in software engineering and AI from the past month. <strong>March 2026</strong> will be remembered as the turning point when AI agents stopped being experimental and started becoming infrastructure. In this e",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117816330/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-1%2Fb6527217-5f53-0628-332a-40bd920ea56e.m4a",
+      "pubDate": "2026-04-01",
+      "duration": "00:21:43",
+      "language": "en"
+    },
+    {
+      "title": "Ep #11 [PTBR] - System Design Mobile, RAG e DeepSeek Engram",
+      "description": "Neste episódio: <ul><li>Como mandar bem em entrevistas de System Design Mobile;</li><li>Por que RAG é essencial pra IA em produção</li><li>Como o DeepSeek resolveu o problema de memória dos LLMs. </li></ul>Três insights que todo dev precisa conhecer!<br>",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/117741521/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-31%2F8b738d4e-8ee0-9702-811d-89cec82628a8.m4a",
+      "pubDate": "2026-03-31",
+      "duration": "00:24:43",
+      "language": "pt"
+    },
+    {
+      "title": "Ep #10 [EN] - From Pattern Recognition to Scientific Discovery: The Global Race for Agentic AI",
+      "description": "In this milestone 10th episode of <strong>Pierry's Tech Digest</strong>, we explore a week of massive breakthroughs that are fundamentally shifting the AI landscape from simple assistants to sophisticated, creative collaborators.<strong>What we cover in this episode:</strong><ul><ul><li><strong>Deep",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/117665818/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-30%2F6654849c-6176-acb3-d4c9-40acff26fa16.m4a",
       "pubDate": "2026-03-30",
       "duration": "00:19:38",
