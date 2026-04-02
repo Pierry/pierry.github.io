@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-02",
+      "date": "2026-04-02",
+      "tokensUsed": 7953,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Hayk Simonyan & Neo Kim",
+          "title": {
+            "en": "Amazon S3 - A Deep Dive: How S3 Actually Works",
+            "pt": "Amazon S3 - Um Mergulho Profundo: Como o S3 Realmente Funciona"
+          },
+          "summary": {
+            "en": "Most engineers think of object storage as upload-a-file-get-a-URL. That understanding breaks down fast when designing systems at AWS scale: 100 trillion objects today, up from 2 trillion in 2013. This deep dive builds S3 from scratch, starting with the fundamental difference between block storage, file storage, and object storage, then walking through requirements, capacity estimation, high-level architecture, disk-based data persistence, durability strategies (erasure coding, replication), metadata design, object versioning, multipart uploads for large files, and garbage collection. Each design decision is explained with the why — why S3 chose eventual consistency over strong consistency for years, why metadata is stored separately from object data, why multipart uploads exist and how they enable resumable transfers at petabyte scale. This is the exact type of deep system design problem that separates mid-level engineers from seniors: understanding tradeoffs across storage types, designing for durability when hardware failures occur daily, and reasoning about cost, performance, and consistency at extreme scale.",
+            "pt": "A maioria dos engenheiros pensa em object storage como enviar-um-arquivo-receber-uma-URL. Esse entendimento quebra rápido ao projetar sistemas na escala da AWS: 100 trilhões de objetos hoje, contra 2 trilhões em 2013. Este deep dive constrói o S3 do zero, começando com a diferença fundamental entre block storage, file storage e object storage, depois percorrendo requisitos, estimativa de capacidade, arquitetura de alto nível, persistência de dados em disco, estratégias de durabilidade (erasure coding, replicação), design de metadata, versionamento de objetos, multipart uploads para arquivos grandes e garbage collection. Cada decisão de design é explicada com o porquê: por que o S3 escolheu consistência eventual em vez de consistência forte por anos, por que metadata é armazenado separadamente dos dados de objetos, por que multipart uploads existem e como habilitam transferências retomáveis em escala de petabytes. Esse é exatamente o tipo de problema de system design profundo que separa engenheiros de nível médio de seniores: entender tradeoffs entre tipos de storage, projetar para durabilidade quando falhas de hardware ocorrem diariamente e raciocinar sobre custo, performance e consistência em escala extrema."
+          },
+          "insights": {
+            "en": [
+              "The three storage tiers (block, file, object) each exist to serve fundamentally different access patterns: block for raw performance and database workloads, file for shared POSIX access, object for massive-scale unstructured data with flat namespace and HTTP APIs. Picking the wrong tier at design time is architecturally expensive to undo.",
+              "S3 durability (11 nines = 99.999999999%) is built on layered redundancy: erasure coding across availability zones, checksums on every read/write, and background scrubbing processes that continuously verify data integrity. Durability at this scale is an active process, not a passive one.",
+              "Metadata and data are intentionally decoupled: object data lives on distributed storage nodes, while metadata (bucket name, key, version ID, size, checksum) lives in a separate highly-available service. This separation makes list/head operations fast without touching object data — a design pattern directly applicable to any large-scale storage system."
+            ],
+            "pt": [
+              "Os três tiers de storage (block, file, object) existem para servir padrões de acesso fundamentalmente diferentes: block para performance bruta e workloads de banco de dados, file para acesso POSIX compartilhado, object para dados não estruturados em escala massiva com namespace plano e APIs HTTP. Escolher o tier errado no momento do design é arquiteturalmente caro de desfazer.",
+              "A durabilidade do S3 (11 noves = 99.999999999%) é construída em redundância em camadas: erasure coding entre zonas de disponibilidade, checksums em cada leitura/escrita e processos de background scrubbing que verificam continuamente a integridade dos dados. Durabilidade nessa escala é um processo ativo, não passivo.",
+              "Metadata e dados são intencionalmente desacoplados: os dados de objetos vivem em nós de storage distribuídos, enquanto metadata (nome do bucket, chave, ID de versão, tamanho, checksum) vive em um serviço separado e altamente disponível. Essa separação torna as operações de list/head rápidas sem tocar nos dados do objeto — um padrão de design diretamente aplicável a qualquer sistema de storage de grande escala."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/aws-s3-system-design"
+        }
+      ]
+    },
+    {
       "id": "2026-04-01",
       "date": "2026-04-01",
       "tokensUsed": 9339,
