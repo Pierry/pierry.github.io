@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-03",
+      "date": "2026-04-03",
+      "tokensUsed": 26750,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Google DeepMind",
+          "title": {
+            "en": "Google releases Gemma 4 open models",
+            "pt": "Google lança modelos abertos Gemma 4"
+          },
+          "summary": {
+            "en": "Google DeepMind released Gemma 4, its latest generation of open-weight language models. With 1,515 points and 417 comments on Hacker News within hours, it is the biggest AI release of the day. Gemma 4 continues Google's aggressive push in the open-weight LLM space, offering models developers can run locally, fine-tune freely, and deploy anywhere — no API keys or billing required. This is directly relevant for any team building AI-powered products: open models reduce vendor lock-in, cut inference costs dramatically, and enable use cases that are impossible or too sensitive for cloud APIs (private data, offline scenarios, edge deployments).",
+            "pt": "O Google DeepMind lançou o Gemma 4, sua mais nova geração de modelos de linguagem com pesos abertos. Com 1.515 pontos e 417 comentários no Hacker News em poucas horas, é o maior lançamento de IA do dia. O Gemma 4 consolida a aposta agressiva do Google no espaço de LLMs com pesos abertos, oferecendo modelos que desenvolvedores podem rodar localmente, fine-tunar livremente e implantar em qualquer lugar — sem API keys ou cobranças. Isso é diretamente relevante para qualquer equipe construindo produtos com IA: modelos abertos reduzem o lock-in de fornecedor, cortam drasticamente os custos de inferência e habilitam casos de uso impossíveis ou sensíveis demais para APIs na nuvem (dados privados, cenários offline, implantações em edge)."
+          },
+          "insights": {
+            "en": [
+              "Open-weight models like Gemma 4 fundamentally change the build-vs-buy calculus for AI features: teams can now self-host capable models for a fraction of cloud API costs, making AI economically viable at much lower usage volumes.",
+              "The race between Google (Gemma), Meta (LLaMA), and Mistral for open-weight dominance benefits every developer — each release pushes capability benchmarks higher and forces competitors to respond faster.",
+              "Engineering managers should assess which AI workloads in their stack can shift from paid APIs to self-hosted open models — the operational complexity tradeoff is increasingly worth it as model quality converges with closed-source alternatives."
+            ],
+            "pt": [
+              "Modelos com pesos abertos como o Gemma 4 mudam fundamentalmente o cálculo de build-vs-buy para features de IA: equipes agora podem hospedar modelos capazes por uma fração dos custos de APIs na nuvem, tornando a IA economicamente viável em volumes de uso muito menores.",
+              "A corrida entre Google (Gemma), Meta (LLaMA) e Mistral pela dominância em pesos abertos beneficia todo desenvolvedor — cada lançamento eleva os benchmarks de capacidade e força os concorrentes a responder mais rápido.",
+              "Engineering managers devem avaliar quais workloads de IA em seu stack podem migrar de APIs pagas para modelos abertos auto-hospedados — o tradeoff de complexidade operacional é cada vez mais válido à medida que a qualidade dos modelos converge com as alternativas de código fechado."
+            ]
+          },
+          "link": "https://deepmind.google/models/gemma/gemma-4/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-02",
       "date": "2026-04-02",
       "tokensUsed": 7953,
