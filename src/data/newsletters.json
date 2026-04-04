@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-04",
+      "date": "2026-04-04",
+      "tokensUsed": 10962,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Mintlify Engineering",
+          "title": {
+            "en": "We replaced RAG with a virtual filesystem for our AI documentation assistant",
+            "pt": "Substituímos RAG por um sistema de arquivos virtual para nosso assistente de documentação"
+          },
+          "summary": {
+            "en": "Mintlify replaced standard RAG with ChromaFs, a virtual filesystem built on top of their existing Chroma vector database. The switch dropped session creation time from 46 seconds to 100ms while reducing per-conversation compute cost to near zero.",
+            "pt": "A Mintlify substituiu o RAG tradicional pelo ChromaFs, um sistema de arquivos virtual construído sobre seu banco de dados Chroma já existente. A mudança reduziu o tempo de criação de sessão de 46 segundos para 100ms, enquanto o custo computacional por conversa caiu para quase zero."
+          },
+          "insights": {
+            "en": [
+              "AI agents converge on filesystems as their primary interface (grep, cat, ls, find) — modeling docs as files lets agents explore like a codebase, not just keyword-match chunks",
+              "Infrastructure costs matter at scale: spinning micro-VMs at 850k conversations/month would exceed $70k/year; virtual FS reuses existing DB at $0 marginal cost",
+              "The pattern is universal: whenever you need filesystem semantics for an agent without real disk I/O, a virtual FS layer over your existing data store can yield a 460x performance boost"
+            ],
+            "pt": [
+              "Agentes de IA convergem para filesystems como interface primária (grep, cat, ls, find) — modelar docs como arquivos permite explorar a estrutura como um codebase, não apenas buscar chunks por keyword",
+              "Custos de infraestrutura importam em escala: criar micro-VMs a 850k conversas/mês custaria +$70k/ano; o filesystem virtual reutiliza o DB existente com custo marginal zero",
+              "O padrão é universal: sempre que precisar de semântica de filesystem para o agente sem I/O real em disco, uma camada FS virtual sobre sua store existente pode gerar um ganho de 460x em performance"
+            ]
+          },
+          "link": "https://www.mintlify.com/blog/how-we-built-a-virtual-filesystem-for-our-assistant"
+        }
+      ]
+    },
+    {
       "id": "2026-04-03",
       "date": "2026-04-03",
       "tokensUsed": 26750,
