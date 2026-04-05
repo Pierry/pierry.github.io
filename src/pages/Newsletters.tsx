@@ -236,12 +236,7 @@ const Newsletters = () => {
                   const entryId = generateEntryId(digest.id, entry.rank);
                   return (
                   <article key={idx} id={entryId} className="relative scroll-mt-24">
-                    {/* Rank Badge */}
                     <div className="flex items-start gap-4">
-                      <span className="text-2xl" title={`Rank #${entry.rank}`}>
-                        {rankEmoji(entry.rank)}
-                      </span>
-                      
                       <div className="flex-1">
                         {/* Newsletter & Author */}
                         <div className="flex flex-wrap items-center gap-2 mb-2">
