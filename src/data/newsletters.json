@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-05",
+      "date": "2026-04-05",
+      "tokensUsed": 13199,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Good System Design Starts With Constraints, Not Diagrams, Not Tools",
+            "pt": "Bom Design de Sistema Começa com Restrições, Não com Diagramas ou Ferramentas"
+          },
+          "summary": {
+            "en": "Most engineers learn system design backwards — they start with tools and diagrams instead of constraints. Real design starts by deeply understanding the problem's constraints: scale, consistency, latency, cost. Only then do the right tools become obvious.",
+            "pt": "A maioria dos engenheiros aprende design de sistemas de trás para frente — começam com ferramentas e diagramas em vez de restrições. Design real começa entendendo profundamente as restrições do problema: escala, consistência, latência, custo. Só então as ferramentas certas se tornam óbvias."
+          },
+          "insights": {
+            "en": [
+              "Constraints are the actual design problem — latency budgets, consistency requirements, failure tolerance, and scale define every architectural decision you'll make",
+              "Diagrams and tools are outputs of good design thinking, not inputs — drawing boxes before understanding trade-offs is cargo-cult engineering",
+              "This applies universally: whether you're an IC or an EM, scoping a feature or designing a platform, starting from constraints forces clarity and prevents over-engineering"
+            ],
+            "pt": [
+              "Restrições são o problema de design real — orçamentos de latência, requisitos de consistência, tolerância a falhas e escala definem todas as decisões de arquitetura",
+              "Diagramas e ferramentas são outputs de um bom raciocínio de design, não inputs — desenhar caixas antes de entender os trade-offs é engenharia cargo-cult",
+              "Isso se aplica universalmente: seja você IC ou EM, ao escopar uma feature ou projetar uma plataforma, começar pelas restrições força clareza e evita over-engineering"
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/most-engineers-learn-system-design-backwards"
+        }
+      ]
+    },
+    {
       "id": "2026-04-04",
       "date": "2026-04-04",
       "tokensUsed": 10962,
