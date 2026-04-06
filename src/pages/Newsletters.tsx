@@ -32,7 +32,7 @@ const Newsletters = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <Link
-                to="/#/newsletters"
+                to="/newsletters"
                 className="text-sm text-foreground font-medium"
               >
                 Newsletters
