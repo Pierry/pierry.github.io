@@ -675,30 +675,6 @@ const Index = () => {
             <div>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
                 <a
-                  href="https://where-i-would-have-been-born.web.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-foreground hover:text-primary transition-colors"
-                >
-                  Where I Would Have Been Born
-                </a>
-                <a
-                  href="https://github.com/Pierry/where-i-would-have-been-born"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {i18n.viewCode}
-                </a>
-              </div>
-              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-                {i18n.ossWhere}
-              </p>
-            </div>
-
-            <div>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-                <a
                   href="https://plugins.jetbrains.com/plugin/29931-cloud-dancer-theme"
                   target="_blank"
                   rel="noopener noreferrer"
