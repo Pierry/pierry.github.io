@@ -27,7 +27,7 @@ const PodcastEpisodes = ({ lang }: PodcastEpisodesProps) => {
 
   // Format date
   const formatDate = (dateStr: string) => {
-    const date = new Date(dateStr);
+    const date = new Date(dateStr + 'T12:00:00');
     return date.toLocaleDateString(lang === 'en' ? 'en-US' : 'pt-BR', {
       month: 'short',
       day: 'numeric',
