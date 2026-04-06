@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-06",
+      "date": "2026-04-06",
+      "tokensUsed": 14049,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér",
+          "title": {
+            "en": "DeepMind's New AI Just Changed Science Forever",
+            "pt": "A Nova IA da DeepMind Acabou de Mudar a Ciência Para Sempre"
+          },
+          "summary": {
+            "en": "Two Minute Papers covers DeepMind's breakthrough AI model that is transforming scientific research. The paper (arxiv 2602.10177) demonstrates how AI can now act as a genuine scientific collaborator — autonomously generating hypotheses, running experiments, and advancing fields like biology and chemistry at a pace impossible for humans alone.",
+            "pt": "Two Minute Papers cobre o modelo de IA revolucionário da DeepMind que está transformando a pesquisa científica. O paper (arxiv 2602.10177) demonstra como a IA agora pode atuar como um verdadeiro colaborador científico — gerando hipóteses de forma autônoma, executando experimentos e avançando áreas como biologia e química em um ritmo impossível para humanos sozinhos."
+          },
+          "insights": {
+            "en": [
+              "DeepMind's model demonstrates emergent scientific reasoning — it doesn't just process data, it formulates and tests hypotheses autonomously, marking a qualitative shift in what AI can do",
+              "The implications for engineering extend beyond science: the same autonomous reasoning loops could transform how we debug complex distributed systems or optimize infrastructure at scale",
+              "AI is transitioning from tool to collaborator — teams that learn to work alongside models with genuine reasoning capabilities will have a massive advantage over those still treating AI as a fancy autocomplete"
+            ],
+            "pt": [
+              "O modelo da DeepMind demonstra raciocínio científico emergente — ele não apenas processa dados, formula e testa hipóteses de forma autônoma, marcando uma mudança qualitativa no que a IA consegue fazer",
+              "As implicações para engenharia vão além da ciência: os mesmos loops de raciocínio autônomo poderiam transformar como depuramos sistemas distribuídos complexos ou otimizamos infraestrutura em escala",
+              "A IA está transitando de ferramenta para colaboradora — equipes que aprenderem a trabalhar ao lado de modelos com capacidade de raciocínio genuíno terão uma vantagem enorme sobre as que ainda tratam IA como autocomplete sofisticado"
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=Io_GqmbNBbY"
+        }
+      ]
+    },
+    {
       "id": "2026-04-05",
       "date": "2026-04-05",
       "tokensUsed": 13199,
