@@ -104,7 +104,6 @@ const t = {
     // Open-source descriptions
     ossJsonEditor: "A modern, fast, and beautiful JSON editor built with React and Material Design 3. Features auto-format, multiple themes, and local storage.",
     ossMeeting: "A simple messaging app for meetings and team communication.",
-    ossWhere: "A fun visualization that shows where in the world you would have been born based on global population distribution at your birth date.",
     ossCloudDancer: "A serene, light theme for JetBrains IDEs inspired by Pantone's 2026 Color of the Year.",
     ossAwesome: "A curated collection of awesome use cases, prompts, workflows, and resources for Clawdbot.",
     // Newsletter section
@@ -160,7 +159,6 @@ const t = {
     // Open-source descriptions
     ossJsonEditor: "Um editor JSON moderno, rápido e bonito feito com React e Material Design 3. Auto-formatação, múltiplos temas e armazenamento local.",
     ossMeeting: "Um app simples de mensagens para reuniões e comunicação de times.",
-    ossWhere: "Uma visualização divertida que mostra onde no mundo você teria nascido baseado na distribuição populacional global na sua data de nascimento.",
     ossCloudDancer: "Um tema sereno e claro para IDEs JetBrains inspirado na Cor do Ano 2026 da Pantone.",
     ossAwesome: "Uma coleção curada de casos de uso, prompts, workflows e recursos para o Clawdbot.",
     // Newsletter section
