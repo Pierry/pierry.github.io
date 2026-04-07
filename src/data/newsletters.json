@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-07",
+      "date": "2026-04-07",
+      "tokensUsed": 10871,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Most Engineers Learn System Design Backwards",
+            "pt": "A Maioria dos Engenheiros Aprende System Design ao Contrário"
+          },
+          "summary": {
+            "en": "Engineers typically learn tools first (Kubernetes, microservices, queues) and architectures second—but that order creates a tool-first mental model that crumbles under production pressure. Real system design starts with understanding the underlying constraints: latency, consistency, access patterns, and failure modes. Without that foundation, architects can describe a system but not reason about it.",
+            "pt": "Engenheiros geralmente aprendem ferramentas primeiro (Kubernetes, microsserviços, filas) e arquiteturas depois — mas essa ordem cria um modelo mental orientado a ferramentas que desmorona sob pressão de produção. Design de sistemas real começa com a compreensão das restrições subjacentes: latência, consistência, padrões de acesso e modos de falha. Sem essa base, arquitetos conseguem descrever um sistema, mas não raciocinar sobre ele."
+          },
+          "insights": {
+            "en": [
+              "Systems often fail for simple, unglamorous reasons — a missing index, a bad retry policy, a skewed partition key — not because the architecture diagram looked wrong.",
+              "Learning tools before constraints leads to \"tool-first\" thinking: you can choose microservices but still not understand why retries made the outage worse.",
+              "The correct learning sequence: start with trade-offs and constraints (latency, consistency, access patterns), then understand why specific tools exist to address those constraints."
+            ],
+            "pt": [
+              "Sistemas costumam falhar por razões simples e nada glamorosas — um índice faltando, uma política de retry ruim, uma partition key enviesada — não porque o diagrama de arquitetura parecia errado.",
+              "Aprender ferramentas antes das restrições leva ao pensamento 'tool-first': você escolhe microsserviços mas ainda não entende por que retries pioraram o outage.",
+              "A sequência correta de aprendizado: comece com trade-offs e restrições (latência, consistência, padrões de acesso), depois entenda por que ferramentas específicas existem para endereçar essas restrições."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/most-engineers-learn-system-design-backwards"
+        }
+      ]
+    },
+    {
       "id": "2026-04-06",
       "date": "2026-04-06",
       "tokensUsed": 14049,
