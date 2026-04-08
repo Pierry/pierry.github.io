@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-08",
+      "date": "2026-04-08",
+      "tokensUsed": 16458,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Louis-François Bouchard & Neo Kim",
+          "title": {
+            "en": "Everything You Need to Know to Design GenAI Systems From Scratch",
+            "pt": "Tudo que Você Precisa Saber para Projetar Sistemas de GenAI do Zero"
+          },
+          "summary": {
+            "en": "Building products like ChatGPT, Perplexity, or GitHub Copilot goes far beyond just calling an LLM API. This masterclass series unpacks the complete architecture of Generative AI systems: model landscape, data pipelines, multi-stage training, evaluation, safety controls, and the serving infrastructure that handles millions of requests. The key insight is that the model is just one piece of a much larger system — and understanding all the pieces is what separates someone who uses AI from someone who can design and build it.",
+            "pt": "Criar produtos como ChatGPT, Perplexity ou GitHub Copilot vai muito além de chamar uma API de LLM. Esta série masterclass desvenda a arquitetura completa de sistemas de IA Generativa: landscape de modelos, pipelines de dados, treinamento multi-estágio, avaliação, controles de segurança e a infraestrutura de serving que suporta milhões de requisições. O insight central: o modelo é apenas uma peça de um sistema muito maior — e entender todas as peças é o que separa quem usa IA de quem consegue projetar e construir."
+          },
+          "insights": {
+            "en": [
+              "Context engineering is a first-class concern: everything fed to the model (system instructions, conversation history, retrieved docs, user query) must fit within the context window — deciding what goes in and what gets cut is a critical design decision.",
+              "Tokens, embeddings, and parameters are the atomic building blocks of every GenAI system; understanding their cost and memory implications directly impacts architecture trade-offs and API pricing at scale.",
+              "The same infrastructure patterns (model selection, data layer, training pipeline, evaluation, safety) apply whether you're building a chatbot, a coding assistant, or an image generator — making this knowledge universally transferable across any AI product."
+            ],
+            "pt": [
+              "Context engineering é uma preocupação de primeira classe: tudo que é enviado ao modelo (instruções do sistema, histórico de conversa, documentos recuperados, query do usuário) precisa caber na janela de contexto — decidir o que entra e o que fica de fora é uma decisão de design crítica.",
+              "Tokens, embeddings e parâmetros são os blocos atômicos de todo sistema de GenAI; entender seus custos e implicações de memória impacta diretamente os trade-offs de arquitetura e o pricing de API em escala.",
+              "Os mesmos padrões de infraestrutura (seleção de modelo, camada de dados, pipeline de treinamento, avaliação, segurança) se aplicam tanto para um chatbot quanto para um assistente de código ou gerador de imagens — tornando esse conhecimento universalmente transferível para qualquer produto de IA."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/generative-ai-system-design"
+        }
+      ]
+    },
+    {
       "id": "2026-04-07",
       "date": "2026-04-07",
       "tokensUsed": 10871,
