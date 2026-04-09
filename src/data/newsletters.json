@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-09",
+      "date": "2026-04-09",
+      "tokensUsed": 11942,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim & Logan Thorneloe",
+          "title": {
+            "en": "11 AI Concepts Explained, Simply — Break into AI Engineering",
+            "pt": "11 Conceitos de IA Explicados de Forma Simples — Entre na Engenharia de IA"
+          },
+          "summary": {
+            "en": "AI engineering is simply good software engineering plus a handful of new principles. In this primer, Google ML infra engineer Logan Thorneloe (guest-authored on System Design One) breaks down the 11 core AI concepts every software engineer needs today — from tokens and embeddings to context windows, model selection, and multi-agent orchestration. The central argument: the gap between software engineering and AI engineering is smaller than most people think, and understanding these building blocks is what turns a developer who uses AI into one who can design and ship AI-powered systems.",
+            "pt": "Engenharia de IA é simplesmente boa engenharia de software acrescida de alguns novos princípios. Neste primer, Logan Thorneloe — engenheiro de infraestrutura de ML no Google — explica os 11 conceitos fundamentais de IA que todo engenheiro de software precisa conhecer hoje: tokens, embeddings, janelas de contexto, seleção de modelos e orquestração multi-agente. O argumento central: a distância entre engenharia de software e engenharia de IA é menor do que parece, e dominar esses blocos básicos é o que transforma quem usa IA em quem consegue projetar e construir sistemas baseados em IA."
+          },
+          "insights": {
+            "en": [
+              "AI engineering fundamentals are transferable: tokens, embeddings, context windows, and model selection map directly onto classic system design concepts (bandwidth, memory, caching, service selection) — the mental model just needs a small update, not a complete rewrite.",
+              "Multi-agent workflows shift the human role from driver to director: running agents in parallel is already the new norm, and the bottleneck is no longer compute — it's your own attention managing blocked tasks, missed completions, and cascading failures across 10 concurrent agents.",
+              "The hottest programming language is English (per Karpathy): prompt engineering and context engineering are becoming first-class engineering skills, not afterthoughts — which means any engineer who masters them today holds a significant structural advantage over peers still treating AI as a black box."
+            ],
+            "pt": [
+              "Os fundamentos de engenharia de IA são transferíveis: tokens, embeddings, janelas de contexto e seleção de modelos se mapeiam diretamente em conceitos clássicos de system design (bandwidth, memória, cache, seleção de serviço) — o modelo mental precisa apenas de uma pequena atualização, não de uma reescrita completa.",
+              "Workflows multi-agente mudam o papel humano de motorista para diretor: rodar agentes em paralelo já é a nova norma, e o gargalo não é mais computação — é a sua própria atenção gerenciando tarefas bloqueadas, conclusões ignoradas e falhas em cascata em 10 agentes simultâneos.",
+              "A linguagem de programação mais quente é o inglês (segundo Karpathy): prompt engineering e context engineering estão se tornando habilidades de engenharia de primeira classe, não afterthoughts — o que significa que qualquer engenheiro que as domine hoje tem uma vantagem estrutural significativa sobre colegas que ainda tratam IA como caixa-preta."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/ai-concepts"
+        }
+      ]
+    },
+    {
       "id": "2026-04-08",
       "date": "2026-04-08",
       "tokensUsed": 16458,
