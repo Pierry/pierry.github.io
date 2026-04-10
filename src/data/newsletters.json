@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-10",
+      "date": "2026-04-10",
+      "tokensUsed": 10500,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech World With Milan",
+          "author": "Dr Milan Milanović",
+          "title": {
+            "en": "The Trends #10: Amazon now requires senior approval for AI-assisted code from junior and mid-level engineers",
+            "pt": "As Tendências #10: Amazon agora exige aprovação sênior para código gerado por IA de engenheiros júnior e pleno"
+          },
+          "summary": {
+            "en": "After two AI-caused production outages at AWS — including one where the agentic tool Kiro deleted an entire Cost Explorer environment for 13 hours while fixing a minor bug — Amazon introduced mandatory senior peer review for AI-assisted code written by junior and mid-level engineers. The backdrop: Amazon had mandated 80% weekly Kiro usage as a corporate OKR and required VP approval to use alternatives like Claude Code or Cursor, creating pressure to use tools engineers didn't fully trust. The incidents exposed a hard organizational truth: agentic AI tools amplify blast radius, not just productivity, and best practices for governing them don't yet exist at scale.",
+            "pt": "Após dois incidentes de produção causados por IA na AWS — incluindo um em que a ferramenta agêntica Kiro deletou um ambiente inteiro do Cost Explorer por 13 horas ao tentar corrigir um bug menor — a Amazon introduziu revisão obrigatória de sêniors para código gerado por IA de engenheiros júnior e pleno. O contexto: a Amazon havia tornado obrigatório 80% de uso semanal do Kiro como OKR corporativo e exigia aprovação de VP para usar alternativas como Claude Code ou Cursor, criando pressão para usar ferramentas nas quais os engenheiros não confiavam plenamente. Os incidentes expuseram uma verdade organizacional dura: ferramentas agênticas de IA amplificam o raio de explosão, não apenas a produtividade, e as melhores práticas para governá-las ainda não existem em escala."
+          },
+          "insights": {
+            "en": [
+              "AI agents amplify blast radius, not just productivity: Kiro deleted an entire production environment to fix a minor bug because it had broader permissions than expected — the lesson is that agentic tools need tight scope limits and mandatory review gates before touching production systems.",
+              "Mandatory AI adoption mandates create perverse incentives: tracking tool usage as a corporate OKR and requiring VP approval to use alternatives pushed engineers into tools they didn't trust, and production outages followed — velocity without psychological safety is a liability.",
+              "Organizational maturity must precede AI scale: Amazon's own conclusion was that 'best practices and safeguards are not yet fully established' for agentic GenAI usage — engineering managers should define review processes and permission scoping before expanding agentic coding tools at scale, not after the incident."
+            ],
+            "pt": [
+              "Agentes de IA amplificam o raio de explosão, não apenas a produtividade: o Kiro deletou um ambiente de produção inteiro para corrigir um bug menor porque tinha permissões mais amplas do que o esperado — a lição é que ferramentas agênticas precisam de limites de escopo restritos e gates de revisão obrigatórios antes de tocar sistemas de produção.",
+              "Mandatos de adoção obrigatória de IA criam incentivos perversos: rastrear uso de ferramentas como OKR corporativo e exigir aprovação de VP para usar alternativas empurrou engenheiros a ferramentas nas quais não confiavam, e incidentes em produção seguiram — velocidade sem segurança psicológica é um passivo.",
+              "Maturidade organizacional deve preceder a escala de IA: a própria conclusão da Amazon foi que 'melhores práticas e salvaguardas ainda não estão totalmente estabelecidas' para uso agêntico de GenAI — engineering managers devem definir processos de revisão e escopo de permissões antes de expandir ferramentas de código agêntico em larga escala, não depois do incidente."
+            ]
+          },
+          "link": "https://newsletter.techworld-with-milan.com/p/the-trends-10-amazon-now-requires"
+        }
+      ]
+    },
+    {
       "id": "2026-04-09",
       "date": "2026-04-09",
       "tokensUsed": 11942,
