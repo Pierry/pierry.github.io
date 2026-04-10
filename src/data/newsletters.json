@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-10-eng",
+      "date": "2026-04-10",
+      "tokensUsed": 8349,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Arnaud, David Wright, Suzanne",
+          "title": {
+            "en": "Putting Agentic Platform Engineering to the Test",
+            "pt": "Colocando a Engenharia de Plataforma Agêntica à Prova"
+          },
+          "summary": {
+            "en": "Microsoft details how AI agents are reshaping platform engineering by replacing CLIs, SDKs, and bespoke workflows with natural-language-driven automation. The post introduces 'Git-ape', a GitHub Copilot-powered agent that generates and manages cloud infrastructure on Azure via MCP servers — representing a fundamental shift in what 'good' internal platform design looks like in the agentic AI era.",
+            "pt": "Microsoft detalha como agentes de IA estão remodelando a engenharia de plataforma ao substituir CLIs, SDKs e workflows manuais por automação em linguagem natural. O post apresenta o 'Git-ape', um agente baseado no GitHub Copilot que gera e gerencia infraestrutura na Azure via servidores MCP — representando uma mudança fundamental no que significa ter uma boa plataforma interna na era da IA agêntica."
+          },
+          "insights": {
+            "en": [
+              "Agentic platforms require raising the bar on guardrails, policy, and self-service interfaces so teams can move fast without sacrificing safety or governance.",
+              "Git-ape integrates GitHub Copilot + Azure MCP Server to let developers deploy and manage cloud resources in natural language directly from VS Code.",
+              "This shift redefines what 'good' means for internal developer platforms — API design, control schemas, and policy enforcement become first-class concerns that unlock team velocity."
+            ],
+            "pt": [
+              "Plataformas agênticas exigem guardrails mais robustos, políticas claras e interfaces de self-service para que times se movam rápido sem sacrificar segurança ou governança.",
+              "Git-ape integra GitHub Copilot + Azure MCP Server para que devs implantem e gerenciem recursos na nuvem em linguagem natural, diretamente do VS Code.",
+              "Essa mudança redefine o que 'bom' significa para plataformas internas de developer experience — design de APIs, schemas de controle e aplicação de políticas viram prioridades de primeira classe que desbloqueiam velocidade dos times."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/all-things-azure/putting-agentic-platform-engineering-to-the-test"
+        }
+      ]
+    },
+    {
       "id": "2026-04-10",
       "date": "2026-04-10",
       "tokensUsed": 10500,
