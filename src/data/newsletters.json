@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-11",
+      "date": "2026-04-11",
+      "tokensUsed": 9711,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Fireship",
+          "author": "Fireship",
+          "title": {
+            "en": "Claude Mythos is too dangerous for public consumption...",
+            "pt": "O Claude Mythos é perigoso demais para o público geral..."
+          },
+          "summary": {
+            "en": "Anthropic reportedly locked down its latest model — codenamed Mythos — because it was deemed too dangerous for public access. Fireship investigates what this means for the AI safety narrative and what engineers can glean about the model's capabilities from Anthropic's own safety reports.",
+            "pt": "A Anthropic teria bloqueado seu mais novo modelo — codinome Mythos — por considerá-lo perigoso demais para acesso público. Fireship investiga o que isso significa para a narrativa de segurança em IA e o que é possível deduzir sobre as capacidades do modelo pelos relatórios de segurança da própria Anthropic."
+          },
+          "insights": {
+            "en": [
+              "Anthropic is openly publishing safety evaluations showing capabilities that concern even its own teams — a sign the frontier is moving faster than public trust allows.",
+              "This is a pivotal moment for AI governance: the decision to withhold a capable model sets a new precedent for how labs balance capability vs. safety commitments.",
+              "For engineers and managers, this signals that 'AI safety' is no longer abstract — it's becoming an engineering and product constraint that shapes what gets built and deployed."
+            ],
+            "pt": [
+              "A Anthropic está publicando avaliações de segurança que revelam capacidades que preocupam até seus próprios times — sinal de que a fronteira avança mais rápido do que a confiança pública permite.",
+              "Este é um momento decisivo para governança de IA: a decisão de não lançar um modelo capaz estabelece um novo precedente de como os labs equilibram capacidade com compromissos de segurança.",
+              "Para engenheiros e managers, isso sinaliza que 'segurança em IA' não é mais abstrata — está se tornando uma restrição de engenharia e produto que molda o que é construído e implantado."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=d3Qq-rkp_to"
+        }
+      ]
+    },
+    {
       "id": "2026-04-10-eng",
       "date": "2026-04-10",
       "tokensUsed": 8349,
