@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-11-eng",
+      "date": "2026-04-11",
+      "tokensUsed": 13752,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "LinkedIn Engineering",
+          "author": "Fedor Borisyuk et al.",
+          "title": {
+            "en": "Reimagining LinkedIn's Search Tech Stack",
+            "pt": "Reimaginando a Stack de Busca do LinkedIn"
+          },
+          "summary": {
+            "en": "LinkedIn rebuilt its entire search infrastructure using LLMs, deploying a scalable semantic search system that serves millions of real-time queries per second. The new stack replaces keyword matching with true natural language understanding via GPU-accelerated embedding-based retrieval (EBR), LLM judges for continuous relevance measurement, and a cross-encoder Small Language Model for final ranking.",
+            "pt": "O LinkedIn reconstruiu toda sua infraestrutura de busca usando LLMs, implantando um sistema de busca semântica escalável que atende milhões de consultas em tempo real por segundo. A nova stack substitui a correspondência de palavras-chave por compreensão real de linguagem natural via recuperação baseada em embeddings acelerada por GPU, juízes LLM para medição contínua de relevância e um Small Language Model cross-encoder para ranking final."
+          },
+          "insights": {
+            "en": [
+              "GPU-accelerated embedding search (CUDA/PyTorch) enables exhaustive vector similarity over millions of job postings at LinkedIn's scale with acceptable latency",
+              "LLM judges distilled to 8B-parameter models evaluate tens of millions of query-document pairs daily, enabling automated relevance measurement at a scale impossible with manual labeling",
+              "A cross-encoder SLM deployed on SGLang combines query, job, and member features for final ranking — with score caching and traffic shaping to manage peak load without sacrificing quality"
+            ],
+            "pt": [
+              "Busca por embeddings acelerada por GPU (CUDA/PyTorch) permite similaridade vetorial exaustiva sobre milhões de vagas na escala do LinkedIn com latência aceitável",
+              "Juízes LLM destilados para modelos de 8B parâmetros avaliam dezenas de milhões de pares query-documento diariamente, viabilizando medição automatizada de relevância em escala impossível com rotulagem manual",
+              "Um SLM cross-encoder implantado no SGLang combina features de query, vaga e membro para o ranking final — com cache de scores e traffic shaping para gerenciar pico de carga sem sacrificar qualidade"
+            ]
+          },
+          "link": "https://www.linkedin.com/blog/engineering/search/reimagining-linkedins-search-stack"
+        }
+      ]
+    },
+    {
       "id": "2026-04-11",
       "date": "2026-04-11",
       "tokensUsed": 9711,
