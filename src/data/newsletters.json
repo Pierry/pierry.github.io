@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-12",
+      "date": "2026-04-12",
+      "tokensUsed": 9214,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "AISLE Security Research",
+          "title": {
+            "en": "AI Cybersecurity After Mythos: The Jagged Frontier",
+            "pt": "Cibersegurança com IA Após o Mythos: A Fronteira Irregular"
+          },
+          "summary": {
+            "en": "AISLE Security tested the vulnerabilities showcased by Anthropic's Mythos model against small, cheap, open-weights models — and found they replicated most of the same analysis. AI cybersecurity capability is jagged: it does not scale smoothly with model size. A 3.6B parameter model detected 8/8 of Mythos's flagship exploits at $0.11/million tokens.",
+            "pt": "A AISLE Security testou as vulnerabilidades demonstradas pelo modelo Mythos da Anthropic em modelos menores open-weights — e descobriu que eles replicavam a maior parte da análise. A capacidade de IA em cibersegurança é irregular: não cresce linearmente com o tamanho do modelo. Um modelo com 3,6B parâmetros detectou 8/8 dos exploits do Mythos por apenas $0,11/milhão de tokens."
+          },
+          "insights": {
+            "en": [
+              "The 'jagged frontier' means AI capability rankings shuffle completely across tasks — there is no stable best model across cybersecurity use cases, so task-specific evaluation matters far more than general leaderboard scores.",
+              "Small open-weights models can match frontier model security analysis at a fraction of the cost, suggesting the real moat is the system and domain expertise built around the model, not the model itself.",
+              "Broad implication for any AI engineering team: benchmark scores from general leaderboards are poor proxies for real-world task performance — always evaluate on your specific problem."
+            ],
+            "pt": [
+              "A 'fronteira irregular' significa que os rankings de capacidade da IA se reorganizam completamente entre tarefas — não existe o melhor modelo estável para cibersegurança, então avaliação por caso de uso importa muito mais que scores de leaderboard.",
+              "Modelos open-weights pequenos conseguem igualar análise de segurança de modelos frontier a uma fração do custo — o diferencial real é o sistema e a expertise de domínio ao redor do modelo, não o modelo em si.",
+              "Implicação ampla para qualquer time de engenharia com IA: scores de benchmarks gerais são proxies ruins para desempenho em tarefas reais — sempre avalie no seu problema específico."
+            ]
+          },
+          "link": "https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier"
+        }
+      ]
+    },
+    {
       "id": "2026-04-11-eng",
       "date": "2026-04-11",
       "tokensUsed": 13752,
