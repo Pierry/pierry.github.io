@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-12-eng",
+      "date": "2026-04-12",
+      "tokensUsed": 9295,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Google Research Team",
+          "title": {
+            "en": "Improving the Academic Workflow: Introducing Two AI Agents for Better Figures and Peer Review",
+            "pt": "Melhorando o Fluxo Acadêmico: Dois Agentes de IA para Figuras e Revisão por Pares"
+          },
+          "summary": {
+            "en": "Google Research released PaperVizAgent and ScholarPeer — two production multi-agent systems designed to automate the hardest parts of academic publishing. PaperVizAgent uses a 5-agent pipeline (retriever, planner, stylist, visualizer, critic) to generate publication-ready figures from manuscript text, scoring 60.2 on a 0-100 quality scale and surpassing the human baseline of 50.0. ScholarPeer uses a dual-stream architecture — a domain historian sub-agent plus a baseline scout — to deliver literature-grounded peer reviews that beat state-of-the-art automated reviewers in side-by-side evaluations.",
+            "pt": "O Google Research lançou PaperVizAgent e ScholarPeer — dois sistemas multi-agente para automatizar as partes mais difíceis da publicação acadêmica. O PaperVizAgent usa um pipeline de 5 agentes (retriever, planner, stylist, visualizer, critic) para gerar figuras publication-ready a partir de texto, alcançando nota 60,2 em 100 e superando o baseline humano de 50,0. O ScholarPeer usa arquitetura dual-stream com um agente historiador de domínio e um auditor adversarial para entregar revisões fundamentadas em literatura real, superando revisores automatizados state-of-the-art."
+          },
+          "insights": {
+            "en": [
+              "The iterative critic-loop pattern — where a dedicated critic agent triggers refinement cycles until output meets quality thresholds — is directly applicable to any multi-agent AI pipeline, not just academic figures.",
+              "ScholarPeer's 'baseline scout' adversarial agent (hunting for missed comparisons) is a powerful pattern for building self-auditing AI systems that catch their own blind spots before humans do.",
+              "Both systems demonstrate that specialization beats generalization in agent design: five narrow agents with clear contracts outperform a single powerful LLM asked to do everything at once."
+            ],
+            "pt": [
+              "O padrão de loop crítico iterativo — onde um agente crítico dedicado dispara ciclos de refinamento até o output atingir limiares de qualidade — é diretamente aplicável a qualquer pipeline multi-agente, não apenas para figuras acadêmicas.",
+              "O agente adversarial 'baseline scout' do ScholarPeer (que caça comparações faltantes) é um padrão poderoso para sistemas de IA auto-auditáveis que detectam seus próprios pontos cegos antes dos humanos.",
+              "Ambos os sistemas demonstram que especialização supera generalização no design de agentes: cinco agentes estreitos com contratos claros superam um único LLM poderoso tentando fazer tudo de uma vez."
+            ]
+          },
+          "link": "https://research.google/blog/improving-the-academic-workflow-introducing-two-ai-agents-for-better-figures-and-peer-review/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-12",
       "date": "2026-04-12",
       "tokensUsed": 9214,
