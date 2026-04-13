@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-13",
+      "date": "2026-04-13",
+      "tokensUsed": 14000,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Viktor Cessan",
+          "title": {
+            "en": "The Economics of Software Teams: Why Most Engineering Organizations Are Flying Blind",
+            "pt": "A Economia dos Times de Software: Por Que a Maioria das Organizações de Engenharia Está Voando às Cegas"
+          },
+          "summary": {
+            "en": "A rigorous financial breakdown of what a software team actually costs — and what it needs to generate to be economically viable. An 8-engineer team costs ~€87K/month (~€4K/day), yet most engineers and even their managers don't know this number. The post examines how organizations have structurally kept financial context away from engineering decisions for two decades, and why the arrival of LLMs is now forcing a reckoning. A platform team serving 100 engineers must save each of them at least 3 hours per week just to break even — and break-even isn't even the real bar.",
+            "pt": "Uma análise financeira rigorosa do custo real de um time de software — e o que ele precisa gerar para ser economicamente viável. Um time de 8 engenheiros custa ~€87K/mês (~€4K/dia), mas a maioria dos engenheiros e seus managers não conhece esse número. O artigo examina como as organizações estruturalmente mantiveram o contexto financeiro longe das decisões de engenharia por duas décadas, e por que a chegada dos LLMs agora força um acerto de contas. Um time de plataforma atendendo 100 engenheiros precisa poupar cada um deles ao menos 3 horas por semana só para atingir o break-even — e break-even nem é a barra real."
+          },
+          "insights": {
+            "en": [
+              "Every engineering decision is a capital allocation decision: spending 3 weeks on a feature serving 2% of users is a €60K decision — knowing this number changes how you prioritize.",
+              "Most orgs have structurally kept financial context away from engineers, creating a two-decade blind spot that LLMs are now exposing by slashing team size benchmarks.",
+              "For platform/infra teams, time-saved-per-engineer is the north star metric: calculate your break-even number (hours saved per engineer per week) and use it to drive the roadmap."
+            ],
+            "pt": [
+              "Toda decisão de engenharia é uma decisão de alocação de capital: gastar 3 semanas em uma feature que serve 2% dos usuários é uma decisão de €60K — conhecer esse número muda como você prioriza.",
+              "A maioria das orgs estruturalmente manteve o contexto financeiro longe dos engenheiros, criando um ponto cego de duas décadas que os LLMs agora estão expondo ao reduzir benchmarks de tamanho de time.",
+              "Para times de plataforma/infra, tempo-economizado-por-engenheiro é a métrica norte: calcule seu número de break-even (horas economizadas por engenheiro por semana) e use-o para guiar o roadmap."
+            ]
+          },
+          "link": "https://www.viktorcessan.com/the-economics-of-software-teams/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-12-eng",
       "date": "2026-04-12",
       "tokensUsed": 9295,
