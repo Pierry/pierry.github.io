@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-13-eng",
+      "date": "2026-04-13",
+      "tokensUsed": 8610,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "AWS Architecture Blog",
+          "author": "Koshal Agrawal, Ishita Gupta, Vijit Vashishtha",
+          "title": {
+            "en": "Build a Multi-Tenant Configuration System with Tagged Storage Patterns",
+            "pt": "Construindo um Sistema de Configuração Multi-Tenant com Padrões de Armazenamento Taggado"
+          },
+          "summary": {
+            "en": "AWS demonstrates how to build a scalable, multi-tenant configuration service using the tagged storage pattern — an architectural approach that uses key prefixes (like tenant_config_ or param_config_) to automatically route configuration requests to the most appropriate storage service. The pattern maintains strict tenant isolation and supports real-time, zero-downtime configuration updates through event-driven architecture.",
+            "pt": "A AWS demonstra como construir um serviço de configuração escalável e multi-tenant usando o padrão de armazenamento taggado — uma abordagem arquitetural que usa prefixos de chave (como tenant_config_ ou param_config_) para rotear automaticamente requisições de configuração para o serviço de armazenamento mais adequado. O padrão mantém isolamento estrito entre tenants e suporta atualizações de configuração em tempo real sem downtime, usando arquitetura event-driven."
+          },
+          "insights": {
+            "en": [
+              "The tagged storage pattern uses key prefixes to route requests to the right backend (DynamoDB, SSM Parameter Store, etc.), avoiding a central routing service that becomes a bottleneck at scale",
+              "Event-driven updates via Amazon EventBridge solve the cache staleness problem — tenants get config changes propagated in real-time without polling",
+              "Strict tenant isolation is enforced at the storage layer, not application layer — a critical architectural decision for multi-tenant SaaS systems handling regulated industries like financial services"
+            ],
+            "pt": [
+              "O padrão usa prefixos de chave para rotear requisições ao backend correto (DynamoDB, SSM Parameter Store etc.), evitando um serviço central de roteamento que se torna gargalo em escala",
+              "Atualizações event-driven via Amazon EventBridge resolvem o problema de cache stale — tenants recebem mudanças de config em tempo real sem polling",
+              "O isolamento de tenant é aplicado na camada de armazenamento, não na de aplicação — decisão arquitetural crítica para sistemas SaaS multi-tenant em setores regulados como financeiro"
+            ]
+          },
+          "link": "https://aws.amazon.com/blogs/architecture/build-a-multi-tenant-configuration-system-with-tagged-storage-patterns/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-13",
       "date": "2026-04-13",
       "tokensUsed": 14000,
