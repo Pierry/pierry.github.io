@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-14",
+      "date": "2026-04-14",
+      "tokensUsed": 15151,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Product for Engineers (PostHog)",
+          "author": "Jina Yoon",
+          "title": {
+            "en": "The Golden Rules of Agent-First Product Engineering",
+            "pt": "As Regras de Ouro da Engenharia de Produto Agent-First"
+          },
+          "summary": {
+            "en": "PostHog rebuilt their AI architecture twice in a year and distilled five golden rules for building agent-first products. The core insight: agents are a new interaction layer, not a bolt-on feature. If a human can do something in your product, an agent must be able to do it too — or you will always be limited by the human in the loop. Their MCP and agent now serve 6K+ daily active users.",
+            "pt": "O PostHog reconstruiu sua arquitetura de IA duas vezes em um ano e extraiu cinco regras de ouro para construir produtos agent-first. O insight central: agentes são uma nova camada de interação, não um recurso adicional. Se um humano consegue fazer algo no produto, um agente também deve conseguir — ou você sempre estará limitado pelo humano no loop. O MCP e o agente deles já atendem 6K+ usuários ativos diários."
+          },
+          "insights": {
+            "en": [
+              "Build agent parity: if a human can do it in your product, an agent must be able to too — deliberate exceptions (e.g., sensitive data) are fine, accidental gaps are not",
+              "Avoid raw endpoint exposure (v1 mistake): PostHog autogenerates OpenAPI specs and uses YAML opt-in configs so each product team controls what agents can access — security and semantics baked in",
+              "Meet agents at their semantic layer: the more \"raw\" your agent interface, the more creative potential you unlock; too granular and you waste precious context, too coarse and you lose flexibility"
+            ],
+            "pt": [
+              "Construa paridade com agentes: se um humano consegue fazer algo no produto, um agente também deve — exceções deliberadas (ex: dados sensíveis) são ok, lacunas acidentais não",
+              "Evite expor endpoints brutos (erro do v1): o PostHog gera specs OpenAPI automaticamente e usa configs YAML de opt-in para cada área do produto controlar o que os agentes acessam",
+              "Encontre os agentes na camada semântica deles: quanto mais \"bruta\" a interface do agente, mais potencial criativo você desbloqueia; granular demais desperdiça contexto, grosseiro demais perde flexibilidade"
+            ]
+          },
+          "link": "https://newsletter.posthog.com/p/the-golden-rules-of-agent-first-product"
+        }
+      ]
+    },
+    {
       "id": "2026-04-13-eng",
       "date": "2026-04-13",
       "tokensUsed": 8610,
