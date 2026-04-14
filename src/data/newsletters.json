@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-14-eng",
+      "date": "2026-04-14",
+      "tokensUsed": 12825,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": ".NET Team",
+          "title": {
+            "en": ".NET 11 Preview 3 is now available!",
+            "pt": ".NET 11 Preview 3 já está disponível!"
+          },
+          "summary": {
+            "en": "Microsoft released the third preview of .NET 11, packed with meaningful engineering improvements: the JIT compiler now better optimizes switches, bounds checks, and casts; Runtime async removes its preview-API opt-in requirement; C# gains union type support; HTTP/3 starts processing requests earlier; and .NET container images are now signed for supply chain security.",
+            "pt": "A Microsoft lançou o terceiro preview do .NET 11 com melhorias técnicas significativas: o compilador JIT otimiza melhor switches, bounds checks e casts; Runtime async remove o requisito de opt-in de API preview; C# ganha suporte a union types; HTTP/3 inicia o processamento de requisições mais cedo; e imagens de container do .NET agora são assinadas para segurança da cadeia de suprimentos."
+          },
+          "insights": {
+            "en": [
+              "JIT optimizations for switches and bounds checks reduce CPU cycles in hot paths — a sign the runtime team is squeezing performance from the inside out.",
+              "C# union types is a long-awaited language feature that reduces boilerplate in domain modeling and makes discriminated unions idiomatic in C#.",
+              "Signed container images signal that Microsoft is prioritizing software supply chain security as a first-class runtime concern."
+            ],
+            "pt": [
+              "Otimizações de JIT para switches e bounds checks reduzem ciclos de CPU em hot paths — sinal de que o time de runtime está espremendo performance de dentro para fora.",
+              "Union types em C# é uma feature aguardada há muito tempo que reduz boilerplate em modelagem de domínio e torna unions discriminadas idiomáticas na linguagem.",
+              "Imagens de container assinadas mostram que a Microsoft está priorizando segurança da cadeia de suprimentos de software como uma preocupação de runtime de primeira classe."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/dotnet/dotnet-11-preview-3/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-14",
       "date": "2026-04-14",
       "tokensUsed": 15151,
