@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-15-eng",
+      "date": "2026-04-15",
+      "tokensUsed": 9545,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "David Sanchez",
+          "title": {
+            "en": "DevOps Playbook for the Agentic Era",
+            "pt": "Guia de DevOps para a Era dos Agentes de IA"
+          },
+          "summary": {
+            "en": "Software delivery has entered a new phase. Microsoft's engineering blog lays out a strategic playbook for engineering leaders navigating the transition from human-only to human-agent software delivery. It covers how AI agents are now opening PRs, generating code across multiple files, and executing multi-step engineering tasks — and why the DevOps practices that worked in a human-only world are no longer sufficient.",
+            "pt": "A entrega de software entrou em uma nova fase. O blog de engenharia da Microsoft apresenta um guia estratégico para líderes de engenharia navegando na transição de entrega de software apenas humana para humana+agente. Cobre como agentes de IA já estão abrindo PRs, gerando código em múltiplos arquivos e executando tarefas multi-etapas — e por que as práticas de DevOps do mundo só-humano não são mais suficientes."
+          },
+          "insights": {
+            "en": [
+              "Agents don't fix broken DevOps practices — they scale them. Fragile pipelines, thin test coverage and manual infra become critical liabilities the moment agents start shipping code at speed.",
+              "Engineers are evolving into three new roles: System Designer (defining constraints for agents), Agent Operator (orchestrating agents), and Quality Steward (reviewing agent output for intent and correctness).",
+              "A six-dimension checklist for 'Agentic Readiness' covers CI/CD, automated testing, IaC, security scanning, branch protection, and observability — all must be solid before scaling agent adoption."
+            ],
+            "pt": [
+              "Agentes não consertam práticas ruins de DevOps — elas escalam. Pipelines frágeis, cobertura de testes rasa e infra manual tornam-se riscos críticos quando agentes passam a shipar código em velocidade.",
+              "Engenheiros estão evoluindo para três novos papéis: Designer de Sistemas (definindo restrições para agentes), Operador de Agentes (orquestrando agentes) e Guardião de Qualidade (revisando output dos agentes para intent e correção).",
+              "Um checklist de 6 dimensões para 'Prontidão Agêntica' cobre CI/CD, testes automatizados, IaC, escaneamento de segurança, proteção de branch e observabilidade — tudo deve estar sólido antes de escalar o uso de agentes."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/all-things-azure/agentic-devops-practices-principles-strategic-direction/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-15",
       "date": "2026-04-15",
       "tokensUsed": 15356,
