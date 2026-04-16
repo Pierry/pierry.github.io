@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-16-eng",
+      "date": "2026-04-16",
+      "tokensUsed": 9643,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Raphael Lopes (with Tobi Lütke)",
+          "title": {
+            "en": "Autoresearch Isn't Just for Training Models",
+            "pt": "Autoresearch Não É Só Para Treinar Modelos"
+          },
+          "summary": {
+            "en": "A Shopify engineer took Karpathy's Autoresearch concept — AI running in a loop to self-improve — and applied it to a completely different domain: improving engineering metrics like CI build time. By letting an AI agent iterate autonomously on a targeted metric (instead of asking it to 'fix everything'), the team improved 40+ metrics across Shopify, cutting one key build pipeline by 65%. Tobi Lütke himself jumped in with 32 commits to co-author the extension, which was then open-sourced.",
+            "pt": "Um engenheiro da Shopify pegou o conceito de Autoresearch do Karpathy — IA rodando em loop para auto-melhorar — e aplicou em um domínio completamente diferente: melhorar métricas de engenharia como tempo de build de CI. Ao deixar um agente de IA iterar autonomamente sobre uma métrica específica (em vez de pedir pra 'resolver tudo'), o time melhorou 40+ métricas na Shopify, cortando um pipeline de build em 65%. O próprio Tobi Lütke entrou com 32 commits para co-criar a extensão, que depois foi open-sourced."
+          },
+          "insights": {
+            "en": [
+              "The key insight: autonomous AI loops excel at *boring, high-value toil* that humans correctly deprioritize. An agent has no competing priorities, doesn't get bored, and doesn't need to justify ROI to a PM.",
+              "Targeting a specific metric (e.g., build time in seconds) is far more effective than open-ended prompts like 'improve performance' — the agent forms hypotheses, tests them, and keeps only what actually moves the needle.",
+              "For engineering managers: this opens a new category of autonomous improvement work — CI optimization, test flakiness reduction, dependency upgrades — that rarely makes sprint plans despite being genuinely valuable."
+            ],
+            "pt": [
+              "O insight chave: loops de IA autônomos brilham no *toil chato e valioso* que humanos corretamente desprioritizam. Um agente não tem prioridades concorrentes, não enjoa, e não precisa justificar ROI para um PM.",
+              "Focar em uma métrica específica (ex: tempo de build em segundos) é muito mais eficaz do que prompts abertos como 'melhore a performance' — o agente forma hipóteses, testa e mantém só o que realmente move a agulha.",
+              "Para gerentes de engenharia: isso abre uma nova categoria de trabalho autônomo de melhoria — otimização de CI, redução de flakiness em testes, atualização de dependências — que raramente entra no sprint mesmo sendo genuinamente valioso."
+            ]
+          },
+          "link": "https://shopify.engineering/autoresearch"
+        }
+      ]
+    },
+    {
       "id": "2026-04-16",
       "date": "2026-04-16",
       "tokensUsed": 10182,
