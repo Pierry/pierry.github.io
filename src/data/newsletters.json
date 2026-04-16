@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-16",
+      "date": "2026-04-16",
+      "tokensUsed": 10182,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hussein Nasser",
+          "author": "Hussein Nasser",
+          "title": {
+            "en": "Root Cause: Stories from Two Decades of Backend Bugs",
+            "pt": "Root Cause: Histórias de Duas Décadas de Bugs em Backend"
+          },
+          "summary": {
+            "en": "Hussein Nasser, a veteran backend engineer with 20+ years of experience, announced his new book Root Cause — a collection of 15 chapters, each telling the story of a real-world backend bug. From performance bottlenecks and race conditions to data corruption and non-deterministic crashes, the book dives deep into how production backend systems behave under pressure. The goal: understand not just what breaks and how, but *why* — tracing every request from the network through the database engine, down to kernel data structures.",
+            "pt": "Hussein Nasser, engenheiro de backend veterano com mais de 20 anos de experiência, anunciou seu novo livro Root Cause — uma coleção de 15 capítulos, cada um contando a história de um bug real de backend. De gargalos de performance e race conditions a corrupção de dados e crashes não-determinísticos, o livro mergulha fundo em como sistemas de backend em produção se comportam sob pressão. O objetivo: entender não apenas o que quebra e como, mas o *porquê* — rastreando cada requisição desde a rede, passando pelo engine do banco de dados, até as estruturas de dados do kernel."
+          },
+          "insights": {
+            "en": [
+              "Understanding *why* systems break — not just *what* breaks — is what separates senior engineers from the rest. This book is a masterclass in root cause analysis for production backend systems.",
+              "Race conditions, data inconsistencies, and non-deterministic crashes are language/framework agnostic. The mental models to debug them apply whether you run Java, Node.js, Go, or anything else.",
+              "For engineering managers: investing in deep backend fundamentals across your team pays dividends when production incidents hit — and they will."
+            ],
+            "pt": [
+              "Entender *por quê* os sistemas quebram — não apenas *o que* quebra — é o que separa engenheiros seniores dos demais. Este livro é uma aula de análise de causa raiz para sistemas de backend em produção.",
+              "Race conditions, inconsistências de dados e crashes não-determinísticos são agnósticos de linguagem/framework. Os modelos mentais para depurá-los valem para Java, Node.js, Go ou qualquer outra stack.",
+              "Para gerentes de engenharia: investir em fundamentos profundos de backend na equipe tem retorno quando os incidentes de produção chegam — e eles vão chegar."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=Jx_4kfrQsiA"
+        }
+      ]
+    },
+    {
       "id": "2026-04-15-eng",
       "date": "2026-04-15",
       "tokensUsed": 9545,
