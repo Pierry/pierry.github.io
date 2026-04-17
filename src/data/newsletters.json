@@ -1,6 +1,31 @@
 {
   "digests": [
     {
+      "id": "2026-04-17-harness",
+      "date": "2026-04-17",
+      "tokensUsed": 0,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Pierry's Tech Digest - Episódio Especial",
+          "author": "Pierry Borges",
+          "title": {
+            "en": "Test Harness: From PRD to Deploy - Complete Guide",
+            "pt": "Test Harness: do PRD ao Deploy - Guia Completo"
+          },
+          "summary": {
+            "en": "A deep-dive episode covering every stage of test harness implementation: PRD, planning, development, testing and finalization. From legacy codebases to greenfield projects.",
+            "pt": "Um episódio especial mergulhando fundo em Test Harness — do PRD até o deploy em produção. Cobrimos como arquitetar, implementar e manter sua infraestrutura de testes em projetos novos e legado, com exemplos práticos e casos reais."
+          },
+          "insights": {
+            "en": ["Test harness starts at PRD, not at coding", "Legacy code needs a strangler fig approach to harness", "Flaky tests are an architecture problem, not a test problem"],
+            "pt": ["Harness começa no PRD, não no código", "Legacy code precisa da abordagem strangler fig para harness", "Testes frágeis são problema de arquitetura, não de teste"]
+          },
+          "link": "https://anchor.fm/pierry-borges"
+        }
+      ]
+    },
+    {
       "id": "2026-04-17",
       "date": "2026-04-17",
       "tokensUsed": 7989,
