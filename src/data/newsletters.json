@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-17-eng",
+      "date": "2026-04-17",
+      "tokensUsed": 9325,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Google Research Team",
+          "title": {
+            "en": "Designing Synthetic Datasets for the Real World: Mechanism Design and Reasoning from First Principles",
+            "pt": "Projetando Datasets Sintéticos para o Mundo Real: Design de Mecanismos e Raciocínio a Partir dos Princípios"
+          },
+          "summary": {
+            "en": "Google Research introduces Simula, a reasoning-first framework that treats synthetic data generation as a mechanism design problem. Unlike existing approaches that rely on seeds or manual prompts, Simula uses LLMs to build deep hierarchical taxonomies and generates datasets from scratch — covering diversity, complexity, and quality as independently controllable variables. Evaluated across cybersecurity, legal reasoning, and standard AI benchmarks using Gemini 2.5 Flash and Gemma-3 4B.",
+            "pt": "O Google Research apresenta o Simula, um framework com abordagem 'reasoning-first' que trata a geração de dados sintéticos como um problema de design de mecanismos. Diferente das abordagens existentes que dependem de seeds ou prompts manuais, o Simula usa LLMs para construir taxonomias hierárquicas profundas e gera datasets do zero — com diversidade, complexidade e qualidade como variáveis de controle independentes. Avaliado em cibersegurança, raciocínio jurídico e benchmarks padrão usando Gemini 2.5 Flash e Gemma-3 4B."
+          },
+          "insights": {
+            "en": [
+              "Simula decomposes data generation into 4 independent axes: global diversity, local diversity, complexity, and quality — enabling fine-grained control without human intervention",
+              "A 'dual-critic' loop validates data quality automatically, mitigating model sycophancy in self-evaluation",
+              "Treating synthetic data like code (versioned, reproducible, inspectable) unlocks programmable ML workflows and proactive safety stress-testing"
+            ],
+            "pt": [
+              "O Simula decompõe a geração de dados em 4 eixos independentes: diversidade global, local, complexidade e qualidade — com controle granular sem intervenção humana",
+              "Um loop 'dual-critic' valida a qualidade dos dados automaticamente, mitigando a sycophancy dos modelos na auto-avaliação",
+              "Tratar dados sintéticos como código (versionado, reproduzível, inspecionável) abre workflows de ML programáveis e testes proativos de segurança"
+            ]
+          },
+          "link": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-17-harness",
       "date": "2026-04-17",
       "tokensUsed": 0,
@@ -18,8 +51,16 @@
             "pt": "Um episódio especial mergulhando fundo em Test Harness — do PRD até o deploy em produção. Cobrimos como arquitetar, implementar e manter sua infraestrutura de testes em projetos novos e legado, com exemplos práticos e casos reais."
           },
           "insights": {
-            "en": ["Test harness starts at PRD, not at coding", "Legacy code needs a strangler fig approach to harness", "Flaky tests are an architecture problem, not a test problem"],
-            "pt": ["Harness começa no PRD, não no código", "Legacy code precisa da abordagem strangler fig para harness", "Testes frágeis são problema de arquitetura, não de teste"]
+            "en": [
+              "Test harness starts at PRD, not at coding",
+              "Legacy code needs a strangler fig approach to harness",
+              "Flaky tests are an architecture problem, not a test problem"
+            ],
+            "pt": [
+              "Harness começa no PRD, não no código",
+              "Legacy code precisa da abordagem strangler fig para harness",
+              "Testes frágeis são problema de arquitetura, não de teste"
+            ]
           },
           "link": "https://anchor.fm/pierry-borges"
         }
