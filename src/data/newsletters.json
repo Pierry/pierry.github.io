@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-17",
+      "date": "2026-04-17",
+      "tokensUsed": 7989,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "ByteByteGo",
+          "author": "ByteByteGo",
+          "title": {
+            "en": "What is a Data Lakehouse?",
+            "pt": "O Que É um Data Lakehouse?"
+          },
+          "summary": {
+            "en": "ByteByteGo explains the Data Lakehouse architecture — a hybrid design that combines the low-cost, flexible storage of a data lake with the ACID transactions and query performance of a traditional data warehouse. Built on open table formats like Apache Iceberg, a Lakehouse collapses two systems into one unified platform for BI, ML, and real-time analytics — without proprietary lock-in.",
+            "pt": "O ByteByteGo explica a arquitetura Data Lakehouse — um design híbrido que combina o armazenamento barato e flexível de um data lake com as transações ACID e performance de um data warehouse tradicional. Construído sobre formatos de tabela abertos como Apache Iceberg, o Lakehouse colapsa dois sistemas em uma plataforma unificada para BI, ML e analytics em tempo real — sem lock-in proprietário."
+          },
+          "insights": {
+            "en": [
+              "The Lakehouse solves a hidden architectural tax: most orgs run a data lake (cheap, schema-on-read) AND a warehouse (fast, structured, expensive) in parallel — the Lakehouse collapses both into a single layer, cutting operational complexity.",
+              "Open table formats like Apache Iceberg are the key enabler — they bring ACID semantics, time travel, and schema evolution directly to object storage (S3/GCS), making warehousing features available without proprietary systems.",
+              "For engineering managers: if your team maintains separate ETL pipelines to sync lake and warehouse, a Lakehouse migration can radically simplify your data platform and cut infrastructure costs significantly."
+            ],
+            "pt": [
+              "O Lakehouse resolve um imposto arquitetural oculto: a maioria das organizações opera lake (barato, schema-on-read) E warehouse (rápido, estruturado, caro) em paralelo — o Lakehouse colapsa ambos em uma camada, cortando complexidade operacional.",
+              "Formatos de tabela abertos como Apache Iceberg são o habilitador chave — eles trazem semântica ACID, time travel e evolução de schema diretamente para object storage (S3/GCS), sem sistemas proprietários.",
+              "Para gerentes de engenharia: se seu time mantém ETL separado pra sincronizar lake e warehouse, migrar para Lakehouse pode simplificar radicalmente a plataforma de dados e reduzir custos de infraestrutura de forma significativa."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=taSmwcqdkQk"
+        }
+      ]
+    },
+    {
       "id": "2026-04-16-eng",
       "date": "2026-04-16",
       "tokensUsed": 9643,
