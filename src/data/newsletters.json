@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-18",
+      "date": "2026-04-18",
+      "tokensUsed": 22343,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér",
+          "title": {
+            "en": "DeepMind's New AI: A Gift To Humanity",
+            "pt": "A Nova IA da DeepMind: Um Presente para a Humanidade"
+          },
+          "summary": {
+            "en": "Two Minute Papers covers the release of Gemma 4, Google DeepMind's latest open-source model family. Gemma 4 is truly open (Apache 2.0 license), outperforms many closed models on benchmarks, supports multimodal inputs, and can be fine-tuned and run locally — making it a significant moment for democratizing AI.",
+            "pt": "Two Minute Papers cobre o lançamento do Gemma 4, a mais nova família de modelos open-source da Google DeepMind. O Gemma 4 é verdadeiramente aberto (licença Apache 2.0), supera muitos modelos fechados em benchmarks, suporta entradas multimodais e pode ser fine-tunado e executado localmente — marcando um momento significativo para a democratização da IA."
+          },
+          "insights": {
+            "en": [
+              "Gemma 4 is released under Apache 2.0 — meaning you can use it commercially, fine-tune it, and deploy it without restrictions, unlike most frontier models.",
+              "Despite being a smaller open model, Gemma 4 beats several closed-source competitors on key reasoning and multimodal benchmarks — challenging the 'bigger = better' narrative.",
+              "The combination of open weights + multimodal capability + local deployment makes Gemma 4 a practical tool for teams wanting AI without cloud dependency or data privacy concerns."
+            ],
+            "pt": [
+              "O Gemma 4 é lançado sob Apache 2.0 — ou seja, você pode usá-lo comercialmente, fazer fine-tuning e fazer deploy sem restrições, ao contrário da maioria dos modelos frontier.",
+              "Apesar de ser um modelo open menor, o Gemma 4 supera vários concorrentes de código fechado em benchmarks-chave de raciocínio e multimodal — desafiando a narrativa de 'maior = melhor'.",
+              "A combinação de pesos abertos + capacidade multimodal + deployment local faz do Gemma 4 uma ferramenta prática para times que querem IA sem dependência de cloud ou preocupações com privacidade de dados."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=Sk9tvyRSCgY"
+        }
+      ]
+    },
+    {
       "id": "2026-04-17-eng",
       "date": "2026-04-17",
       "tokensUsed": 9325,
