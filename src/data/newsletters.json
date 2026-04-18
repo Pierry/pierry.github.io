@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-18-eng",
+      "date": "2026-04-18",
+      "tokensUsed": 15515,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Stripe Engineering",
+          "author": "Stripe Engineering Team",
+          "title": {
+            "en": "Can AI agents build real Stripe integrations? We built a benchmark to find out",
+            "pt": "Agentes de IA conseguem construir integrações reais com Stripe? Construímos um benchmark para descobrir"
+          },
+          "summary": {
+            "en": "Stripe spent months building production-realistic benchmark environments to evaluate whether AI agents can autonomously build complete payment integrations end-to-end. The results surprised them: Claude Opus 4.5 scored 92% on full-stack tasks, GPT-5.2 scored 73% on API gym problems, and all models sustained productive long-horizon work averaging 63 turns. They open-sourced the benchmark.",
+            "pt": "O Stripe passou meses construindo ambientes de benchmark realistas de produção para avaliar se agentes de IA conseguem construir integrações de pagamento completas de ponta a ponta de forma autônoma. Os resultados surpreenderam: Claude Opus 4.5 marcou 92% em tarefas full-stack, GPT-5.2 marcou 73% em problemas de API gym, e todos os modelos sustentaram trabalho de longo horizonte com média de 63 turnos. O benchmark foi open-sourcado."
+          },
+          "insights": {
+            "en": [
+              "AI agents can now handle full-stack engineering tasks with production-level rigor — including UI automation, DB migrations, and live API verification — scoring 92% on end-to-end Stripe integration tasks (Claude Opus 4.5).",
+              "Stripe built a novel benchmark methodology: isolated full-code environments + deterministic graders + MCP server tooling (terminal + browser + docs search) — a replicable pattern any API-first company could adopt.",
+              "The gap between \"coding capability\" and \"autonomous engineering\" is closing fast: all models maintained coherent 63+ turn sessions, suggesting agents are ready for more complex production workflows than previously assumed."
+            ],
+            "pt": [
+              "Agentes de IA agora conseguem lidar com tarefas de engenharia full-stack com rigor de produção — incluindo automação de UI, migrações de banco de dados e verificação de API ao vivo — marcando 92% em tarefas end-to-end de integração Stripe (Claude Opus 4.5).",
+              "O Stripe construiu uma metodologia de benchmark inovadora: ambientes com código completo isolado + avaliadores determinísticos + tooling via servidor MCP (terminal + browser + busca em docs) — um padrão replicável que qualquer empresa API-first pode adotar.",
+              "A lacuna entre \"capacidade de codificação\" e \"engenharia autônoma\" está fechando rápido: todos os modelos mantiveram sessões coerentes de 63+ turnos, sugerindo que agentes estão prontos para workflows de produção mais complexos do que se assumia."
+            ]
+          },
+          "link": "https://stripe.com/blog/can-ai-agents-build-real-stripe-integrations"
+        }
+      ]
+    },
+    {
       "id": "2026-04-18",
       "date": "2026-04-18",
       "tokensUsed": 22343,
