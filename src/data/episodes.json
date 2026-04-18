@@ -1,8 +1,16 @@
 {
   "episodes": [
     {
+      "title": "Ep #15 - Test Harness: do PRD ao Deploy",
+      "description": "Episódio especial mergulhando fundo em Test Harness do começo ao fim: mostramos como estruturar a infraestrutura de testes desde o PRD, passando pelo planejamento, desenvolvimento e deploy em produção. Cobrimos projetos novos e legado, com a abordagem <strong>strangler fig</strong>, exemplos prático",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/118605246/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-17%2Ff9d53e3e-62ec-9e52-4de9-918f2da97678.m4a",
+      "pubDate": "2026-04-17",
+      "duration": "00:28:57",
+      "language": "en"
+    },
+    {
       "title": "Ep #14 - Harnesses de IA: O Novo Jeito de Programar",
-      "description": "Neste episódio do Pierry&#39;s Tech Digest, exploramos por que o <strong>harness de IA</strong> está se tornando o componente mais crítico na produtividade de software, possivelmente superando a importância do modelo em si. Enquanto os modelos (como GPT-4 ou Claude) funcionam como o &quot;motor&quot",
+      "description": "Neste episódio do Pierry's Tech Digest, exploramos por que o <strong>harness de IA</strong> está se tornando o componente mais crítico na produtividade de software, possivelmente superando a importância do modelo em si. Enquanto os modelos (como GPT-4 ou Claude) funcionam como o \"motor\", o harness é",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/118384240/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-13%2Fea42802a-09ca-a05e-301a-fb0dbaea8542.m4a",
       "pubDate": "2026-04-13",
       "duration": "00:27:59",
