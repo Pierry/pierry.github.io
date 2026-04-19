@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-19-eng",
+      "date": "2026-04-19",
+      "tokensUsed": 14624,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Spotify Engineering",
+          "author": "Spotify Ads Engineering Team",
+          "title": {
+            "en": "Our Multi-Agent Architecture for Smarter Advertising",
+            "pt": "Nossa Arquitetura Multi-Agente para Publicidade Mais Inteligente"
+          },
+          "summary": {
+            "en": "Spotify replaced fragmented, per-channel ad workflow logic with a unified multi-agent platform built on Google ADK and Vertex AI (Gemini 2.5 Pro). Instead of maintaining duplicated decision logic across Spotify Ads Manager, Salesforce, and Slack, they decomposed Media Planning into specialized agents (RouterAgent, GoalResolver, AudienceResolver, BudgetAgent, ScheduleAgent, MediaPlannerAgent) that run in parallel and share the same underlying Ads APIs as tools. The system went from a structural problem — the same core decisions re-implemented per channel and drifting over time — to a single decision engine projected across all buying surfaces.",
+            "pt": "O Spotify substituiu a lógica fragmentada de workflows de anúncios por canal por uma plataforma multi-agente unificada construída com Google ADK e Vertex AI (Gemini 2.5 Pro). Em vez de manter lógica duplicada no Spotify Ads Manager, Salesforce e Slack, eles decompuseram o Media Planning em agentes especializados (RouterAgent, GoalResolver, AudienceResolver, BudgetAgent, ScheduleAgent, MediaPlannerAgent) que rodam em paralelo e compartilham as mesmas Ads APIs como ferramentas. O sistema saiu de um problema estrutural — as mesmas decisões re-implementadas por canal e divergindo ao longo do tempo — para um único motor de decisão projetado em todas as superfícies de compra."
+          },
+          "insights": {
+            "en": [
+              "The motivation wasn't to ship an 'AI feature' — it was to fix a structural problem: the same campaign planning logic (budget allocation, audience selection, pacing) was being duplicated and drifting across every buying channel and surface. Multi-agent is a direct answer to that, not a tech trend.",
+              "Designing APIs as tools for agents fundamentally changes how you think about backends: instead of CRUD endpoints, you expose intent-aware interfaces that agents can compose. This shifts observability requirements too — 'what did the agent decide and why?' matters more than p95 latency.",
+              "Parallel agent execution (specialized agents running simultaneously instead of sequentially) was a key architectural win: it reduces latency and improves testability since each agent can be evaluated in isolation, which is critical when behavior is probabilistic rather than deterministic."
+            ],
+            "pt": [
+              "A motivação não foi lançar uma 'feature de IA' — foi resolver um problema estrutural: a mesma lógica de planejamento de campanhas (alocação de budget, seleção de audiência, pacing) era duplicada e divergia entre cada canal de compra e superfície. Multi-agent é uma resposta direta a isso, não uma tendência tecnológica.",
+              "Projetar APIs como ferramentas para agentes muda fundamentalmente como você pensa sobre backends: em vez de endpoints CRUD, você expõe interfaces com consciência de intenção que os agentes podem compor. Isso também muda os requisitos de observabilidade — 'o que o agente decidiu e por quê?' importa mais do que latência p95.",
+              "Execução paralela de agentes (agentes especializados rodando simultaneamente em vez de sequencialmente) foi uma vitória arquitetural chave: reduz latência e melhora testabilidade já que cada agente pode ser avaliado isoladamente, o que é crítico quando o comportamento é probabilístico em vez de determinístico."
+            ]
+          },
+          "link": "https://engineering.atspotify.com/2026/2/our-multi-agent-architecture-for-smarter-advertising"
+        }
+      ]
+    },
+    {
       "id": "2026-04-19",
       "date": "2026-04-19",
       "tokensUsed": 11325,
