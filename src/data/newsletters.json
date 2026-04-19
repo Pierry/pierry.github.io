@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-19",
+      "date": "2026-04-19",
+      "tokensUsed": 11325,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Newsletter",
+          "author": "Neo Kim & Logan Thorneloe",
+          "title": {
+            "en": "11 AI Concepts Explained, Simply — Break into AI Engineering",
+            "pt": "11 Conceitos de IA Explicados de Forma Simples — Como Entrar na Engenharia de IA"
+          },
+          "summary": {
+            "en": "Software engineers are expected to understand AI engineering and integrate AI into their products. This issue bridges the gap from traditional software development to AI engineering by explaining 11 core AI concepts—covering LLMs, embeddings, RAG, AI agents, and more—through the lens of Software 1.0/2.0/3.0 eras as defined by Andrej Karpathy.",
+            "pt": "Engenheiros de software são cada vez mais esperados a entender engenharia de IA e integrá-la em seus produtos. Essa edição cobre 11 conceitos essenciais de IA — incluindo LLMs, embeddings, RAG e agentes de IA — através das eras Software 1.0/2.0/3.0 definidas por Andrej Karpathy."
+          },
+          "insights": {
+            "en": [
+              "The shift from Software 2.0 (ML models trained on data) to Software 3.0 (natural language as programming interface) requires every software engineer to learn AI fundamentals — not just ML specialists.",
+              "LLMs, embeddings, RAG, and AI agents are the core primitives of modern AI engineering; understanding them conceptually unlocks the ability to build with any AI framework or provider.",
+              "The bottleneck in multi-agent development is no longer model capability but human attention management — tools like visual orchestration (Kanban for agents) are becoming essential for shipping AI products at scale."
+            ],
+            "pt": [
+              "A transição do Software 2.0 (modelos de ML treinados em dados) para o Software 3.0 (linguagem natural como interface de programação) exige que todo engenheiro de software aprenda fundamentos de IA — não só especialistas em ML.",
+              "LLMs, embeddings, RAG e agentes de IA são os primitivos centrais da engenharia de IA moderna; entendê-los conceitualmente dá autonomia para construir com qualquer framework ou provedor.",
+              "O gargalo no desenvolvimento multi-agente não é mais a capacidade dos modelos, mas o gerenciamento de atenção humana — ferramentas de orquestração visual (Kanban para agentes) estão se tornando essenciais para escalar produtos de IA."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/ai-concepts"
+        }
+      ]
+    },
+    {
       "id": "2026-04-18-eng",
       "date": "2026-04-18",
       "tokensUsed": 15515,
