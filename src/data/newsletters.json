@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-20-eng",
+      "date": "2026-04-20",
+      "tokensUsed": 12802,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering (.NET Blog)",
+          "author": "Drew Noakes",
+          "title": {
+            "en": "Writing Node.js Addons with .NET Native AOT",
+            "pt": "Escrevendo Addons para Node.js com .NET Native AOT"
+          },
+          "summary": {
+            "en": "The C# Dev Kit team at Microsoft replaced their C++ Node.js native addons with C# and .NET Native AOT, eliminating a dependency on Python (required by node-gyp) and simplifying their engineering setup. The post walks through the full implementation: how N-API works as a stable ABI-compatible C interface, how UnmanagedCallersOnly and LibraryImport enable native interop without C++, and how the team handles string marshalling efficiently using stackalloc and ArrayPool to avoid heap allocations. The result is a clean native addon written entirely in C#, built by the .NET SDK the team already has installed, with no external toolchain required.",
+            "pt": "O time do C# Dev Kit na Microsoft substituiu seus addons nativos para Node.js escritos em C++ por C# e .NET Native AOT, eliminando a dependência do Python (exigido pelo node-gyp) e simplificando o setup de engenharia. O post percorre a implementação completa: como o N-API funciona como uma interface C estável compatível com ABI, como UnmanagedCallersOnly e LibraryImport permitem interop nativa sem C++, e como o time lida com marshalling de strings eficientemente usando stackalloc e ArrayPool para evitar alocações no heap. O resultado é um addon nativo limpo escrito inteiramente em C#, construído pelo próprio .NET SDK que o time já tem instalado, sem nenhuma toolchain externa."
+          },
+          "insights": {
+            "en": [
+              "Dependency on Python just to build Node.js addons is a real friction point — Native AOT eliminates it by compiling C# directly to a platform native shared library (.dll/.so/.dylib) that N-API can load without any external build toolchain.",
+              "UnmanagedCallersOnly and LibraryImport together enable true zero-overhead interop: function pointers are passed directly, P/Invoke sources are generated at compile time, and the entire marshalling layer is trimming-compatible for AOT publishing.",
+              "The stackalloc + ArrayPool pattern for string marshalling (stack for <512 bytes, pool for larger) is a widely applicable technique for any native interop layer — it avoids GC pressure while keeping the common path allocation-free."
+            ],
+            "pt": [
+              "Dependência do Python apenas para compilar addons de Node.js é um ponto de fricção real — o Native AOT elimina isso compilando C# diretamente para uma biblioteca nativa de plataforma (.dll/.so/.dylib) que o N-API pode carregar sem nenhuma toolchain de build externa.",
+              "UnmanagedCallersOnly e LibraryImport juntos habilitam interop com overhead zero de verdade: ponteiros de função são passados diretamente, fontes de P/Invoke são geradas em tempo de compilação, e toda a camada de marshalling é compatível com trimming para publicação AOT.",
+              "O padrão stackalloc + ArrayPool para marshalling de strings (stack para <512 bytes, pool para maiores) é uma técnica amplamente aplicável em qualquer camada de interop nativa — evita pressão no GC enquanto mantém o caminho comum livre de alocações."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/dotnet/writing-nodejs-addons-with-dotnet-native-aot/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-20",
       "date": "2026-04-20",
       "tokensUsed": 10988,
