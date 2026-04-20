@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-20",
+      "date": "2026-04-20",
+      "tokensUsed": 10988,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Ashley Rolfmore",
+          "title": {
+            "en": "Stop trying to engineer your way out of listening to people",
+            "pt": "Pare de tentar engenheirar sua saída de ouvir pessoas"
+          },
+          "summary": {
+            "en": "A sharp critique of how engineers and product people keep creating frameworks, systems, and processes to avoid the harder work of actually listening to stakeholders. The author lists common pitfalls — assuming everyone shares your technical worldview, or that people stay static over time — and argues that most software misalignments trace back to not genuinely listening.",
+            "pt": "Uma crítica direta sobre como engenheiros e pessoas de produto criam frameworks e processos para evitar o trabalho mais difícil: ouvir de verdade os stakeholders. O autor lista armadilhas comuns — assumir que todos compartilham sua visão técnica, ou que as pessoas são estáticas — e argumenta que a maioria dos desalinhamentos em software rastreia a falta de escuta genuína."
+          },
+          "insights": {
+            "en": [
+              "Frameworks and processes are often a proxy for avoiding real conversations — the real fix is listening, not better tooling.",
+              "Engineers underestimate how their specialized worldview blinds them to what others actually know and need.",
+              "Every misunderstanding leaves a mark in the codebase — tech debt is often communication debt in disguise."
+            ],
+            "pt": [
+              "Frameworks e processos geralmente são substitutos para evitar conversas reais — a correção verdadeira é ouvir, não melhores ferramentas.",
+              "Engenheiros subestimam como sua visão especializada os cega para o que os outros realmente sabem e precisam.",
+              "Cada mal-entendido deixa uma marca no código — dívida técnica é frequentemente dívida de comunicação disfarçada."
+            ]
+          },
+          "link": "https://ashley.rolfmore.com/stop-trying-to-engineer-your-way-out-of-listening-to-people/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-19-eng",
       "date": "2026-04-19",
       "tokensUsed": 14624,
