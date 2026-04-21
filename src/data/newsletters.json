@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-21-eng",
+      "date": "2026-04-21",
+      "tokensUsed": 10244,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering (TypeScript)",
+          "author": "Daniel Rosenwasser",
+          "title": {
+            "en": "Announcing TypeScript 7.0 Beta — Rewritten in Go, 10x Faster",
+            "pt": "Anunciando o TypeScript 7.0 Beta — Reescrito em Go, 10x Mais Rápido"
+          },
+          "summary": {
+            "en": "Microsoft has announced TypeScript 7.0 Beta, the most significant architectural change in the language's history: the entire TypeScript compiler has been ported from TypeScript/JavaScript to Go. The result is a compiler that is often 10x faster than TypeScript 6.0, thanks to native code speed and shared memory parallelism. The new compiler supports parallel type-checking, parallel emitting, and parallel project reference builds — with configurable --checkers and --builders flags. Despite the massive rewrite, the type-checking semantics are structurally identical to 6.0, ensuring backward compatibility. The beta has already been tested at Bloomberg, Canva, Figma, Google, Lattice, Linear, Miro, Notion, Slack, Vanta, Vercel, and others — with teams reporting build times cut by the majority. The package is available today via @typescript/native-preview.",
+            "pt": "A Microsoft anunciou o TypeScript 7.0 Beta, a mudança arquitetural mais significativa na história da linguagem: o compilador TypeScript inteiro foi portado de TypeScript/JavaScript para Go. O resultado é um compilador frequentemente 10x mais rápido que o TypeScript 6.0, graças à velocidade de código nativo e paralelismo com memória compartilhada. O novo compilador suporta type-checking paralelo, emissão paralela e builds de referências de projeto em paralelo — com as novas flags --checkers e --builders. Apesar da reescrita massiva, a semântica de type-checking é estruturalmente idêntica à versão 6.0, garantindo retrocompatibilidade. O beta já foi testado em Bloomberg, Canva, Figma, Google, Lattice, Linear, Miro, Notion, Slack, Vanta, Vercel e outros — com times relatando redução expressiva no tempo de build. O pacote já está disponível via @typescript/native-preview."
+          },
+          "insights": {
+            "en": [
+              "Porting a production compiler from TypeScript to Go for a 10x speedup is a bold architectural bet — and it worked. For platform teams managing large TypeScript monorepos, this could cut CI build times dramatically without changing any application code.",
+              "The decision to maintain structural parity with TypeScript 6.0's type-checking semantics shows disciplined engineering: the goal was speed, not behavioral change. This separation of concerns (runtime vs semantics) is the reason the migration to 7.0 can be nearly frictionless.",
+              "Parallelization via shared-memory workers (--checkers, --builders) is now a first-class concern in the TypeScript compiler — signaling that the team is thinking seriously about monorepo scale and the future of developer tooling in multi-core environments."
+            ],
+            "pt": [
+              "Portar um compilador de produção de TypeScript para Go para obter 10x de speedup foi uma aposta arquitetural ousada — e funcionou. Para times de plataforma gerenciando grandes monorepos TypeScript, isso pode reduzir drasticamente o tempo de build no CI sem alterar nenhum código de aplicação.",
+              "A decisão de manter paridade estrutural com a semântica de type-checking do TypeScript 6.0 demonstra engenharia disciplinada: o objetivo era velocidade, não mudança de comportamento. Essa separação de responsabilidades (runtime vs semântica) é a razão pela qual a migração para a 7.0 pode ser quase sem atrito.",
+              "A paralelização via workers com memória compartilhada (--checkers, --builders) agora é uma preocupação de primeira classe no compilador TypeScript — sinalizando que o time está pensando seriamente em escala de monorepo e no futuro do tooling de desenvolvimento em ambientes multi-core."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-21",
       "date": "2026-04-21",
       "tokensUsed": 9071,
