@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-21",
+      "date": "2026-04-21",
+      "tokensUsed": 9071,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech With Tim (YouTube)",
+          "author": "Tech With Tim",
+          "title": {
+            "en": "I Built an AI Agent in 20 Minutes - Here's How",
+            "pt": "Construí um Agente de IA em 20 Minutos — Veja Como"
+          },
+          "summary": {
+            "en": "Tim demonstrates how to build and deploy a functional AI agent in just 20 minutes using the MiniMax Agent platform, which provides pre-built expert workflows for research, content generation, and trend tracking. The video walks through the full setup process, pricing model, and real use cases — including how he configured an assistant for a non-technical user who adopted it immediately for daily tasks. A hands-on look at how agent platforms are lowering the barrier to AI automation for anyone, developer or not.",
+            "pt": "Tim demonstra como construir e implantar um agente de IA funcional em apenas 20 minutos usando a plataforma MiniMax Agent, que oferece fluxos de trabalho especialistas pré-construídos para pesquisa, geração de conteúdo e monitoramento de tendências. O vídeo percorre todo o processo de configuração, modelo de preços e casos de uso reais — incluindo como ele configurou um assistente para uma usuária não técnica que o adotou imediatamente para tarefas diárias. Um olhar prático sobre como as plataformas de agentes estão reduzindo a barreira para automação com IA, seja você dev ou não."
+          },
+          "insights": {
+            "en": [
+              "Agent platforms with pre-built expert workflows let non-engineers deploy AI automation in minutes — the abstraction layer is now at the 'configure, not code' level, which changes who can build agents.",
+              "The fastest path to AI adoption in your team may not be building from scratch: wrapping proven agent infrastructure with domain-specific context (research, ops, support) delivers value faster with less risk.",
+              "Real adoption signal: a non-technical user leveraging an AI agent daily for research and planning — success metrics for AI tools are shifting from 'developer satisfaction' to 'end-user retention'."
+            ],
+            "pt": [
+              "Plataformas de agentes com fluxos especialistas pré-construídos permitem que não-engenheiros implantem automação com IA em minutos — a camada de abstração agora está no nível 'configurar, não codificar', o que muda quem pode construir agentes.",
+              "O caminho mais rápido para adoção de IA no seu time pode não ser construir do zero: envolver infraestrutura de agentes consolidada com contexto de domínio (pesquisa, ops, suporte) entrega valor mais rápido com menos risco.",
+              "Sinal real de adoção: uma usuária não técnica usando um agente de IA diariamente para pesquisa e planejamento — as métricas de sucesso para ferramentas de IA estão mudando de 'satisfação do desenvolvedor' para 'retenção do usuário final'."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=Xx18YRrK-Uk"
+        }
+      ]
+    },
+    {
       "id": "2026-04-20-eng",
       "date": "2026-04-20",
       "tokensUsed": 12802,
