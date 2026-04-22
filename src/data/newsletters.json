@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-22",
+      "date": "2026-04-22",
+      "tokensUsed": 12097,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "lawsofsoftwareengineering.com",
+          "title": {
+            "en": "Laws of Software Engineering",
+            "pt": "Leis da Engenharia de Software"
+          },
+          "summary": {
+            "en": "A curated collection of 56 timeless laws, principles, and patterns that shape how software systems are built, how engineering teams operate, and how technical decisions are made. Currently trending on Hacker News with 1,034+ upvotes and 475+ comments — making it one of the most discussed engineering resources this week. From Conway's Law to Postel's Law to Gall's Law, this site surfaces the mental models that the best engineers use every day, often without naming them.",
+            "pt": "Uma coleção curada de 56 leis, princípios e padrões atemporais que moldam como sistemas de software são construídos, como times de engenharia operam e como decisões técnicas são tomadas. Atualmente em destaque no Hacker News com mais de 1.034 votos e 475 comentários — tornando-se um dos recursos de engenharia mais discutidos da semana. Da Lei de Conway à Lei de Postel e à Lei de Gall, o site traz à superfície os modelos mentais que os melhores engenheiros usam todos os dias, muitas vezes sem os nomear."
+          },
+          "insights": {
+            "en": [
+              "Laws like Conway's Law ('organizations design systems that mirror their own communication structure') and Postel's Law ('be conservative in what you send, liberal in what you accept') are foundational — knowing them by name lets teams call out design problems faster and with more precision.",
+              "Many of these laws apply equally to system architecture and team management: Gall's Law ('a complex system that works evolved from a simple system that worked') is as useful when designing a microservices migration as when onboarding a new team.",
+              "With 1,034+ HN upvotes and 475+ comments, this resource resonated broadly across the engineering community — a strong signal that the industry values shared vocabulary for reasoning about software and organizations."
+            ],
+            "pt": [
+              "Leis como a Lei de Conway ('organizações desenham sistemas que espelham sua própria estrutura de comunicação') e a Lei de Postel ('seja conservador no que envia, liberal no que aceita') são fundamentais — conhecê-las pelo nome permite que os times identifiquem problemas de design mais rapidamente e com mais precisão.",
+              "Muitas dessas leis se aplicam tanto à arquitetura de sistemas quanto à gestão de times: a Lei de Gall ('um sistema complexo que funciona evoluiu a partir de um sistema simples que funcionava') é tão útil ao planejar uma migração para microsserviços quanto ao fazer onboarding de um novo time.",
+              "Com 1.034+ votos no HN e 475+ comentários, este recurso ressoou amplamente na comunidade de engenharia — um forte sinal de que a indústria valoriza um vocabulário compartilhado para raciocinar sobre software e organizações."
+            ]
+          },
+          "link": "https://lawsofsoftwareengineering.com"
+        }
+      ]
+    },
+    {
       "id": "2026-04-21-eng",
       "date": "2026-04-21",
       "tokensUsed": 10244,
