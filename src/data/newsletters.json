@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-22-eng",
+      "date": "2026-04-22",
+      "tokensUsed": 17729,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Shopify Engineering Team",
+          "title": {
+            "en": "Flow Generation Through Natural Language: An Agentic Modeling Approach",
+            "pt": "Geração de Flows por Linguagem Natural: Uma Abordagem de Modelagem Agêntica"
+          },
+          "summary": {
+            "en": "Shopify fine-tuned Qwen3-32B into a production tool-calling agent that generates Shopify Flow automations from plain English — and it outperforms the frontier closed model it replaced. The result: 2.2x faster responses, 68% cheaper to run, with a weekly retraining flywheel built entirely on real merchant interaction data. The post goes deep on the engineering decisions that got them there: reverse-engineering training data from production workflows, using Python as an intermediate DSL to improve accuracy by 22–35 points over native JSON, the painful discovery that token-level formatting details (tool name prefixes, key sort order, extra API fields) can silently tank model accuracy, and a 35% offline-to-production gap that only revealed itself at 1% traffic. The system now retrains weekly on H200 GPUs with FSDP in 12 hours, auto-ingesting high-quality production conversations scored by a calibrated LLM judge.",
+            "pt": "O Shopify fez fine-tuning do Qwen3-32B para criar um agente de chamada de ferramentas em produção que gera automações do Shopify Flow a partir de linguagem natural — e ele supera o modelo proprietário fechado que substituiu. Resultado: respostas 2,2x mais rápidas, 68% mais baratas, com um flywheel de retreinamento semanal construído inteiramente sobre dados reais de interações com lojistas. O post mergulha fundo nas decisões de engenharia: engenharia reversa de dados de treinamento a partir de workflows de produção, uso de Python como DSL intermediário para melhorar acurácia em 22–35 pontos sobre JSON nativo, a descoberta dolorosa de que detalhes de formatação ao nível de token (prefixos de nome de ferramenta, ordem de chaves, campos extras de API) podem silenciosamente arruinar a acurácia, e uma lacuna de 35% entre benchmark e produção que só apareceu com 1% do tráfego. O sistema agora retreina semanalmente em GPUs H200 com FSDP em 12 horas, ingerindo automaticamente conversas de alta qualidade pontuadas por um juiz LLM calibrado."
+          },
+          "insights": {
+            "en": [
+              "Benchmarks lie at production scale: the fine-tuned model matched the prompt-based agent on every offline metric, but a 1% traffic rollout revealed a 35% gap in merchant workflow activation rate — because synthetic training data never covered real user patterns like editing existing workflows or handling third-party integrations.",
+              "Representation design is a first-class engineering decision: switching the model's output format from Flow's native JSON DSL to Python (then transpiling back) improved syntactic correctness by 22 points and semantic correctness by 13 points — not by changing the model, but by aligning the task format with the model's pretraining distribution.",
+              "Production-data flywheels compound quickly: by scoring every production conversation with a calibrated LLM judge, tagging failure slices by type, and retraining weekly, Shopify turned a 35%-lagging model into one that pulls ahead continuously — showing how proprietary data + fast iteration beats raw model capability."
+            ],
+            "pt": [
+              "Benchmarks mentem em escala de produção: o modelo fine-tuned igualou o agente baseado em prompt em todas as métricas offline, mas um rollout de 1% revelou uma lacuna de 35% na taxa de ativação de workflows — porque os dados sintéticos nunca cobriram padrões reais de usuários como editar workflows existentes ou lidar com integrações de terceiros.",
+              "O design de representação é uma decisão de engenharia de primeira classe: trocar o formato de saída do modelo do DSL JSON nativo do Flow para Python (transpilando de volta depois) melhorou a correção sintática em 22 pontos e a semântica em 13 pontos — não mudando o modelo, mas alinhando o formato da tarefa com a distribuição de pré-treinamento do modelo.",
+              "Flywheels de dados de produção se compõem rapidamente: pontuando cada conversa de produção com um juiz LLM calibrado, identificando fatias de falha por tipo e retreinando semanalmente, o Shopify transformou um modelo 35% abaixo em um que melhora continuamente — mostrando como dados proprietários + iteração rápida superam capacidade bruta do modelo."
+            ]
+          },
+          "link": "https://shopify.engineering/fine-tuning-agent-shopify-flow"
+        }
+      ]
+    },
+    {
       "id": "2026-04-22",
       "date": "2026-04-22",
       "tokensUsed": 12097,
