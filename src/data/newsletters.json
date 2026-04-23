@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-23-eng",
+      "date": "2026-04-23",
+      "tokensUsed": 10634,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Agent Framework",
+          "author": "Eduard van Valkenburg",
+          "title": {
+            "en": "CodeAct in Agent Framework: Faster Agents with Fewer Model Turns",
+            "pt": "CodeAct no Agent Framework: Agentes Mais Rápidos com Menos Turnos de Modelo"
+          },
+          "summary": {
+            "en": "Microsoft's Agent Framework now ships CodeAct support via the agent-framework-hyperlight package, enabling AI agents to collapse multi-step tool-call chains into a single executable Python block running inside a Hyperlight micro-VM sandbox. Instead of the classic model → tool → model → tool loop (each step burning a separate LLM round-trip), the agent writes one Python program that orchestrates all tool calls via call_tool(...), executes it once in isolation, and returns a single consolidated result. The approach cuts end-to-end latency by ~50% and token usage by over 60% on representative workloads. The post details how approvals work at the execute_code level vs. individual tool level, how to grant controlled filesystem/network access to sandboxed code while keeping your real tools in trusted host runtime, and the practical rule of thumb: cheap/pure/chainable tools go into the sandbox; side-effecting tools (email, payments) stay as first-class, approval-gated calls.",
+            "pt": "O Agent Framework da Microsoft agora inclui suporte a CodeAct via o pacote agent-framework-hyperlight, permitindo que agentes de IA colapsom cadeias de múltiplas chamadas de ferramentas em um único bloco Python executável dentro de um sandbox Hyperlight micro-VM. Em vez do loop clássico model → tool → model → tool (cada passo consumindo um round-trip de LLM separado), o agente escreve um único programa Python que orquestra todas as chamadas via call_tool(...), executa uma vez em isolamento e retorna um resultado consolidado. A abordagem reduz a latência em ~50% e o uso de tokens em mais de 60% em cargas de trabalho representativas. O post detalha como as aprovações funcionam no nível do execute_code vs. nível de ferramenta individual, como conceder acesso controlado a arquivos/rede para código sandboxado enquanto mantém suas ferramentas reais no runtime confiável do host, e a regra prática: ferramentas baratas/puras/encadeáveis vão para o sandbox; ferramentas com efeitos colaterais (email, pagamentos) permanecem como chamadas diretas com aprovação obrigatória."
+          },
+          "insights": {
+            "en": [
+              "The core insight is architectural: modern agents are bottlenecked by orchestration overhead, not model quality. Collapsing N tool-call round-trips into 1 execute_code turn with a Python script saves ~50% latency and 60%+ tokens — no model changes needed.",
+              "Security model is clean: model-generated code runs inside a Hyperlight micro-VM with no host access by default; your real tools run in trusted host runtime and are bridged via call_tool(). The untrusted glue stays isolated, the trusted logic stays safe.",
+              "Practical design rule: put cheap, chainable, side-effect-free tools inside the sandbox (data lookups, computation, formatting); keep side-effecting tools (send email, charge card, write to prod) as first-class agent tools with approval_mode='always_require' so every call is human-gated."
+            ],
+            "pt": [
+              "O insight central é arquitetural: agentes modernos são limitados pelo overhead de orquestração, não pela qualidade do modelo. Colapsar N round-trips de chamadas de ferramentas em 1 turno execute_code com um script Python economiza ~50% de latência e 60%+ de tokens — sem mudanças no modelo.",
+              "O modelo de segurança é limpo: código gerado pelo modelo roda dentro de um micro-VM Hyperlight sem acesso ao host por padrão; suas ferramentas reais rodam no runtime confiável do host e são acessadas via call_tool(). A cola não-confiável fica isolada, a lógica confiável fica segura.",
+              "Regra prática de design: coloque ferramentas baratas, encadeáveis e sem efeitos colaterais dentro do sandbox (consultas de dados, computação, formatação); mantenha ferramentas com efeitos colaterais (enviar email, cobrar cartão, escrever em produção) como ferramentas diretas do agente com approval_mode='always_require' para que cada chamada seja aprovada por humano."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/agent-framework/codeact-with-hyperlight/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-23",
       "date": "2026-04-23",
       "tokensUsed": 21634,
