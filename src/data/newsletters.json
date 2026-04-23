@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-23",
+      "date": "2026-04-23",
+      "tokensUsed": 21634,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Newsletter",
+          "author": "Neo Kim",
+          "title": {
+            "en": "9 Agentic Patterns, Simply Explained",
+            "pt": "9 Padrões Agênticos Explicados de Forma Simples"
+          },
+          "summary": {
+            "en": "A comprehensive breakdown of 9 agentic design patterns for LLM-powered systems. The article maps out a practical escalation ladder: start with a direct API call, step up to workflow patterns (chaining, routing, parallelization, orchestrator-workers) when you need structured multi-step control, and only reach for agent patterns (reflection, tool use, ReAct, planning) when the number and type of steps are unknown until runtime. Each pattern is explained with real-world analogies, tradeoffs in cost/latency/failure modes, and a case study combining multiple patterns in an AI code review pipeline.",
+            "pt": "Um guia completo sobre 9 padrões de design agêntico para sistemas com LLMs. O artigo apresenta uma escada prática de escalada: comece com uma chamada direta à API, avance para padrões de workflow (encadeamento, roteamento, paralelização, orquestrador-workers) quando precisar de controle estruturado em múltiplas etapas, e só use padrões agênticos (reflexão, uso de ferramentas, ReAct, planejamento) quando o número e tipo de etapas são desconhecidos em tempo de execução. Cada padrão é explicado com analogias do mundo real, tradeoffs de custo/latência/falha e um estudo de caso combinando múltiplos padrões em um pipeline de code review com IA."
+          },
+          "insights": {
+            "en": [
+              "Most tasks don't need agents — a direct LLM API call handles summarization, classification, extraction and code generation. Escalate to workflows only when multiple focused steps improve output quality.",
+              "Workflow patterns keep your code in control (you define every step upfront); agent patterns hand control to the model itself — the right choice depends on whether the number of steps is predictable or not.",
+              "Key signal to upgrade your architecture: you're writing more error-handling and special-case code than actual business logic. That's when a richer pattern is justified, not before."
+            ],
+            "pt": [
+              "A maioria das tarefas não precisa de agentes — uma chamada direta à API do LLM resolve sumarização, classificação, extração e geração de código. Escale para workflows apenas quando múltiplas etapas focadas melhoram a qualidade do output.",
+              "Padrões de workflow mantêm seu código no controle (você define cada etapa de antemão); padrões agênticos passam o controle para o modelo — a escolha certa depende de se o número de etapas é previsível ou não.",
+              "Sinal-chave para evoluir sua arquitetura: você está escrevendo mais código de tratamento de erros e casos especiais do que lógica de negócio real. É aí que um padrão mais rico se justifica, não antes."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/agentic-design-patterns"
+        }
+      ]
+    },
+    {
       "id": "2026-04-22-eng",
       "date": "2026-04-22",
       "tokensUsed": 17729,
