@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-24",
+      "date": "2026-04-24",
+      "tokensUsed": 12800,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "OpenAI",
+          "title": {
+            "en": "Introducing GPT-5.5",
+            "pt": "Apresentando o GPT-5.5"
+          },
+          "summary": {
+            "en": "OpenAI released GPT-5.5, their most capable and efficient model to date, excelling in agentic coding, computer use, and long-horizon tasks. It matches GPT-5.4 latency while delivering significantly higher intelligence, and uses fewer tokens to complete the same tasks — a rare combination of speed, capability, and efficiency.",
+            "pt": "A OpenAI lançou o GPT-5.5, seu modelo mais capaz e eficiente até agora, com excelência em coding agêntico, uso de computador e tarefas de longo horizonte. Mantém a latência do GPT-5.4 enquanto entrega inteligência significativamente superior, e usa menos tokens para completar as mesmas tarefas — uma rara combinação de velocidade, capacidade e eficiência."
+          },
+          "insights": {
+            "en": [
+              "GPT-5.5 hits 82.7% on Terminal-Bench 2.0 and 58.6% on SWE-Bench Pro, surpassing all previous models in agentic coding — it plans, uses tools, checks its work, and keeps going without hand-holding",
+              "The model matches GPT-5.4's per-token latency while performing at a higher intelligence level and using fewer tokens for the same Codex tasks — better, faster, and cheaper at once",
+              "Computer use reaches 78.7% on OSWorld-Verified: GPT-5.5 can operate software, navigate UIs, and complete multi-step tasks autonomously, signaling a shift toward AI that works on your computer, not just in chat"
+            ],
+            "pt": [
+              "GPT-5.5 atinge 82.7% no Terminal-Bench 2.0 e 58.6% no SWE-Bench Pro, superando todos os modelos anteriores em coding agêntico — planeja, usa ferramentas, verifica o trabalho e segue em frente sem precisar de supervisão constante",
+              "O modelo mantém a latência por token do GPT-5.4 operando em nível de inteligência superior e usando menos tokens para as mesmas tarefas do Codex — melhor, mais rápido e mais barato ao mesmo tempo",
+              "Computer use chega a 78.7% no OSWorld-Verified: o GPT-5.5 consegue operar softwares, navegar em interfaces e completar tarefas multi-etapas de forma autônoma, sinalizando uma mudança para IA que trabalha no seu computador, não apenas no chat"
+            ]
+          },
+          "link": "https://openai.com/index/introducing-gpt-5-5/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-23-eng",
       "date": "2026-04-23",
       "tokensUsed": 10634,
