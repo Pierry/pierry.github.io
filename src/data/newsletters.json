@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-26-eng",
+      "date": "2026-04-26",
+      "tokensUsed": 27289,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Dhyanam Vaidya, Prathamesh Deshpande, Mike Ma",
+          "title": {
+            "en": "How Uber Conquered Database Overload: The Journey from Static Rate-Limiting to Intelligent Load Management",
+            "pt": "Como a Uber Venceu a Sobrecarga de Banco de Dados: Da Limitação Estática de Taxa ao Gerenciamento Inteligente de Carga"
+          },
+          "summary": {
+            "en": "Uber details how it redesigned overload protection for its in-house Docstore and Schemaless databases, which span thousands of clusters, store tens of petabytes, and serve tens of millions of requests per second. A first attempt based on static quotas in the stateless query layer failed because the cost model was too coarse, the design depended on Redis for every request, and fixed quotas broke down in a multitenant environment. The replacement is an intelligent load manager pushed down into the stateful storage layer: it uses concurrency instead of QPS as the primary overload signal, combines CoDel-based adaptive queuing to fail stale work fast, and adds per-tenant scorecards plus other regulators to preserve fairness and contain blast radius during incidents.",
+            "pt": "A Uber detalha como redesenhou a proteção contra sobrecarga de seus bancos internos Docstore e Schemaless, que operam em milhares de clusters, armazenam dezenas de petabytes e atendem dezenas de milhões de requisições por segundo. A primeira tentativa, baseada em cotas estáticas na camada stateless de query, falhou porque o modelo de custo era grosseiro demais, o desenho dependia de Redis em toda requisição e cotas fixas se quebravam em um ambiente multitenant. A substituição foi um load manager inteligente empurrado para a camada stateful de storage: ele usa concorrência em vez de QPS como principal sinal de overload, combina filas adaptativas com CoDel para descartar trabalho velho rapidamente e adiciona scorecards por tenant e outros reguladores para preservar fairness e conter blast radius durante incidentes."
+          },
+          "insights": {
+            "en": [
+              "Uber’s key architectural lesson is that overload control must live close to the storage nodes, not in a stateless routing layer that lacks precise, real-time visibility into partition health.",
+              "Using concurrency as the primary signal is smarter than raw QPS: it maps directly to resource pressure through Little’s Law and adapts better to mixed workloads with very different latency profiles.",
+              "The combination of CoDel queues for responsiveness and per-tenant scorecards for fairness is the important pattern here: protect the whole system under stress while also stopping one noisy tenant from monopolizing shared capacity."
+            ],
+            "pt": [
+              "A principal lição arquitetural da Uber é que o controle de overload precisa viver perto dos nós de storage, não numa camada stateless de roteamento sem visibilidade precisa e em tempo real da saúde das partições.",
+              "Usar concorrência como sinal principal é mais inteligente do que olhar só QPS: ela reflete pressão real de recursos via Lei de Little e se adapta melhor a workloads mistos com perfis de latência muito diferentes.",
+              "A combinação de filas CoDel para responsividade com scorecards por tenant para fairness é o padrão importante aqui: proteger o sistema inteiro sob estresse sem deixar um único tenant barulhento monopolizar a capacidade compartilhada."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/from-static-rate-limiting-to-intelligent-load-management/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-24",
       "date": "2026-04-24",
       "tokensUsed": 12800,
