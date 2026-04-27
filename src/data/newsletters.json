@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-27",
+      "date": "2026-04-27",
+      "tokensUsed": 40874,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Event-Driven Systems Are Easy to Build but Hard to Keep Correct",
+            "pt": "Sistemas Orientados a Eventos São Fáceis de Construir, mas Difíceis de Manter Corretos"
+          },
+          "summary": {
+            "en": "Raul Junco explains why event-driven architectures rarely fail through obvious outages and more often fail through quiet correctness bugs. The article breaks down four common failure modes: duplicate delivery, out-of-order processing, dual writes between the database and broker, and schema drift between producers and consumers. The core message is that healthy brokers, online consumers, and green dashboards do not guarantee correct business outcomes. Reliable event-driven systems need explicit defenses like idempotency, entity-level ordering strategies, transactional outbox patterns, and schema contracts designed for evolution.",
+            "pt": "Raul Junco mostra por que arquiteturas orientadas a eventos raramente falham por outages gritantes e, com muito mais frequência, falham por bugs silenciosos de corretude. O artigo detalha quatro modos comuns de falha: entrega duplicada, processamento fora de ordem, dual write entre banco e broker, e schema drift entre produtores e consumidores. A mensagem central é que broker saudável, consumidores online e dashboards verdes não garantem resultado de negócio correto. Sistemas orientados a eventos realmente confiáveis precisam de defesas explícitas como idempotência, estratégias de ordenação por entidade, transactional outbox e contratos de schema preparados para evoluir."
+          },
+          "insights": {
+            "en": [
+              "Idempotency is part of the contract, not an optional hardening step. If consumers can replay the same event without changing the final business state, duplicate delivery becomes a predictable engineering problem instead of a silent financial one.",
+              "Ordering must be scoped to the business entity that actually needs a consistent timeline. Partitioning by order, account, or user is usually practical, while assuming global ordering across the whole system is fragile and expensive.",
+              "The transactional outbox is the key architectural pattern here: move atomicity back to the database you control, persist business change plus publish intent together, and let a separate publisher deliver events safely afterward."
+            ],
+            "pt": [
+              "Idempotência faz parte do contrato, não é um endurecimento opcional. Quando o consumidor consegue reprocessar o mesmo evento sem alterar o estado final do negócio, entrega duplicada vira um problema previsível de engenharia, não um prejuízo silencioso.",
+              "Ordenação deve ser limitada à entidade de negócio que realmente precisa de uma linha do tempo consistente. Particionar por pedido, conta ou usuário costuma ser viável, enquanto assumir ordem global no sistema inteiro é frágil e caro.",
+              "Transactional outbox é o padrão arquitetural mais importante aqui: trazer a atomicidade de volta para o banco que você controla, persistir a mudança de negócio e a intenção de publicação juntas, e deixar um publicador separado entregar os eventos com segurança depois."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/event-driven-systems-are-easy-to-build-but-hard-to-keep-correct"
+        }
+      ]
+    },
+    {
       "id": "2026-04-26-eng",
       "date": "2026-04-26",
       "tokensUsed": 27289,
