@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-27-eng",
+      "date": "2026-04-27",
+      "tokensUsed": 24910,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Alexandr Sudakov, Ivan Shibitov",
+          "title": {
+            "en": "Hybrid Core Allocation: From Overallocation to Reliable Sharing",
+            "pt": "Alocação Híbrida de Cores: De Superalocação para Compartilhamento Confiável"
+          },
+          "summary": {
+            "en": "Uber explains how it evolved Odin, its stateful container orchestration platform, from a model based on fully dedicated CPUs to a hybrid allocation model that combines reserved cores with shared cores. The key idea is to size dedicated CPUs for steady demand, pool shared CPUs for burst handling, and rely on Linux cpusets plus cpu.shares to preserve fairness under contention. The post also shows how Uber made the model NUMA-aware and integrated it with in-place vertical scaling, letting stateful workloads gain or lose CPU capacity without disruptive host moves. The result is better latency, higher host efficiency, and a more reliable way to colocate bursty workloads at scale.",
+            "pt": "A Uber mostra como evoluiu o Odin, sua plataforma de orquestração de containers stateful, saindo de um modelo baseado em CPUs totalmente dedicadas para um modelo híbrido que combina cores reservados com cores compartilhados. A ideia central é dimensionar CPUs dedicadas para a demanda estável, usar um pool de CPUs compartilhadas para absorver picos e confiar em Linux cpusets e cpu.shares para preservar fairness sob contenção. O post também explica como a Uber tornou esse modelo consciente de NUMA e o integrou com vertical scaling in-place, permitindo que workloads stateful ganhem ou percam capacidade de CPU sem migrações disruptivas entre hosts. O resultado é melhor latência, maior eficiência por host e uma forma mais confiável de colocalizar workloads com uso bursty em escala."
+          },
+          "insights": {
+            "en": [
+              "The strongest architectural lesson is to split CPU planning into two tiers: reserve dedicated cores for baseline demand, then use an over-allocated shared pool to absorb bursts instead of sizing every service for peak load.",
+              "NUMA awareness matters as much as raw CPU counts. Uber keeps dedicated cores close to the workload’s shared pool and spreads shared capacity across nodes carefully, reducing memory locality penalties while still maximizing utilization.",
+              "In-place vertical scaling is the operational unlock for stateful systems. If CPU limits can change without moving data-heavy workloads to another host, you cut churn, lower risk, and make autoscaling practical for fleets that cannot afford relocation."
+            ],
+            "pt": [
+              "A principal lição arquitetural é dividir o planejamento de CPU em duas camadas: reservar cores dedicados para a demanda de base e usar um pool compartilhado superalocado para absorver picos, em vez de dimensionar cada serviço para o pico máximo.",
+              "Consciência de NUMA importa tanto quanto a contagem bruta de CPUs. A Uber mantém cores dedicados próximos do pool compartilhado do workload e distribui a capacidade compartilhada entre nós com cuidado, reduzindo penalidades de localidade de memória sem sacrificar utilização.",
+              "Vertical scaling in-place é o grande destravador operacional para sistemas stateful. Quando limites de CPU podem mudar sem mover workloads pesados em dados para outro host, você reduz churn, baixa risco e torna o autoscaling viável em frotas que não podem pagar o custo de realocação."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/hybrid-core-allocation/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-27",
       "date": "2026-04-27",
       "tokensUsed": 40874,
