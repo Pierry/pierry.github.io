@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-28",
+      "date": "2026-04-28",
+      "tokensUsed": 25923,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hungry Minds",
+          "author": "Alex Zajac",
+          "title": {
+            "en": "How OpenAI Agents Got 40% Faster (System Design)",
+            "pt": "Como os agentes da OpenAI ficaram 40% mais rápidos, pela ótica de arquitetura"
+          },
+          "summary": {
+            "en": "Hungry Minds highlights how OpenAI sped up agentic coding workflows by attacking orchestration overhead instead of model latency alone. The core change was moving from repeated synchronous HTTP calls to a persistent WebSocket connection that keeps agent state alive across many tool-use turns. On top of that, OpenAI cached prior response state in memory, reprocessed only incremental inputs, and overlapped side work like logging and billing. The result was a reported 40% end-to-end speedup in agent workflows, plus infrastructure that could sustain roughly 1,000 tokens per second with bursts up to 4,000.",
+            "pt": "A Hungry Minds destaca como a OpenAI acelerou fluxos agênticos de coding atacando o overhead de orquestração, e não apenas a latência do modelo. A principal mudança foi sair de várias chamadas HTTP síncronas para uma conexão WebSocket persistente, mantendo o estado do agente vivo ao longo de muitos turnos com ferramentas. Em cima disso, a OpenAI passou a manter em memória o estado de respostas anteriores, reprocessar só entradas incrementais e sobrepor trabalhos secundários, como logging e billing. O resultado foi um ganho reportado de 40% no tempo fim a fim dos workflows agênticos, além de uma infraestrutura capaz de sustentar cerca de 1.000 tokens por segundo, com picos de 4.000."
+          },
+          "insights": {
+            "en": [
+              "When models get faster, orchestration becomes the bottleneck. Persistent sessions matter because repeatedly rebuilding context and validating the full request stack can erase the gains from better inference.",
+              "Stateful transport changes system design. A long-lived connection plus response-state caching turns an agent loop from a sequence of isolated requests into a continuous interaction, which cuts redundant compute and lowers latency.",
+              "The practical lesson for product teams is to optimize the whole loop, not only the model. Safety checks, tool wiring, logging, and developer ergonomics must all be designed so users actually feel the speedup in real workflows."
+            ],
+            "pt": [
+              "Quando os modelos ficam mais rápidos, a orquestração vira o gargalo. Sessões persistentes importam porque reconstruir contexto e validar a pilha inteira a cada chamada pode anular o ganho de inferência.",
+              "Transporte stateful muda o desenho do sistema. Uma conexão duradoura com cache do estado da resposta transforma o loop do agente, de uma sequência de requisições isoladas, em uma interação contínua, reduzindo computação redundante e latência.",
+              "A lição prática para times de produto é otimizar o loop inteiro, não só o modelo. Checks de segurança, integração de ferramentas, logging e ergonomia para dev precisam ser pensados para que o usuário realmente perceba o ganho de velocidade."
+            ]
+          },
+          "link": "https://www.hungryminds.dev/p/how-openai-agents-got-40-faster-system-design"
+        }
+      ]
+    },
+    {
       "id": "2026-04-27-eng",
       "date": "2026-04-27",
       "tokensUsed": 24910,
