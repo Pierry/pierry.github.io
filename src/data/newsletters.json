@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-28-eng",
+      "date": "2026-04-28",
+      "tokensUsed": 41085,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Tommy Tran, Michael Zetune",
+          "title": {
+            "en": "Capacity Efficiency at Meta: How Unified AI Agents Optimize Performance at Hyperscale",
+            "pt": "Eficiência de Capacidade na Meta: Como agentes de IA unificados otimizam performance em hiperescalabilidade"
+          },
+          "summary": {
+            "en": "Meta describes a unified AI-agent platform that turns years of performance-engineering expertise into reusable tools and skills for both hunting efficiency opportunities and fixing regressions automatically. The same platform powers defensive workflows like FBDetect regression mitigation and offensive workflows that convert optimization opportunities into ready-to-review pull requests. By standardizing MCP-style tool interfaces for profiling, code search, config history, and docs, Meta lets different agent skills share the same infrastructure instead of rebuilding bespoke systems per use case. The result is infrastructure-level impact measured in hundreds of megawatts recovered, while shrinking roughly 10 hours of manual investigation into about 30 minutes.",
+            "pt": "A Meta descreve uma plataforma unificada de agentes de IA que transforma anos de expertise em engenharia de performance em ferramentas e skills reutilizáveis, tanto para caçar oportunidades de eficiência quanto para corrigir regressões automaticamente. A mesma plataforma atende fluxos defensivos, como mitigação de regressões com o FBDetect, e fluxos ofensivos, que convertem oportunidades de otimização em pull requests prontos para revisão. Ao padronizar interfaces de ferramentas no estilo MCP para profiling, busca em código, histórico de configuração e documentação, a Meta permite que diferentes skills compartilhem a mesma infraestrutura em vez de reconstruir sistemas sob medida para cada caso. O resultado é impacto de infraestrutura medido em centenas de megawatts recuperados, reduzindo cerca de 10 horas de investigação manual para algo próximo de 30 minutos."
+          },
+          "insights": {
+            "en": [
+              "The strongest design lesson is to separate reusable tool interfaces from domain-specific skills. Once profiling, code search, experiment data, and docs are exposed in a standardized way, new agent workflows become mostly a matter of composing expertise instead of building new plumbing.",
+              "Meta treats performance engineering as both offense and defense: proactive optimization and regression response share the same shape, so one agent platform can support both. That is a much stronger systems pattern than building isolated copilots for each team.",
+              "The operational payoff is unusually concrete. This is not “AI for developer productivity” in the abstract; it is AI directly reducing infrastructure waste, shortening incident-style investigations, and scaling efficiency work without matching headcount growth."
+            ],
+            "pt": [
+              "A principal lição de design é separar interfaces reutilizáveis de ferramentas das skills específicas de domínio. Quando profiling, busca em código, dados de experimentos e documentação são expostos de forma padronizada, novos workflows viram muito mais composição de expertise do que construção de plumbing.",
+              "A Meta trata engenharia de performance como ataque e defesa: otimização proativa e resposta a regressões têm a mesma forma, então uma única plataforma de agentes consegue atender ambos os lados. Isso é um padrão de sistemas muito mais forte do que criar copilotos isolados por time.",
+              "O ganho operacional é concretíssimo. Não é “IA para produtividade de dev” no abstrato; é IA reduzindo desperdício de infraestrutura, encurtando investigações quase incidentais e escalando trabalho de eficiência sem crescer headcount na mesma proporção."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-28",
       "date": "2026-04-28",
       "tokensUsed": 25923,
