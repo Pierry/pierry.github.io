@@ -1,12 +1,20 @@
 {
   "episodes": [
     {
+      "title": "Ep #18 - Corretude, Resiliência e a Evolução da IA Agêntica",
+      "description": "Este episódio foca em três temas fundamentais para a construção de produtos e plataformas em escala: a <strong>corretude em sistemas orientados a eventos</strong>, estratégias de <strong>proteção de banco de dados</strong> em ambientes multitenant e os novos avanços do <strong>GPT-5.5</strong> para ",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/119225774/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-29%2F04cf6250-c5d1-d77c-cfbe-6d95cba80c16.m4a",
+      "pubDate": "2026-04-29",
+      "duration": "00:29:30",
+      "language": "pt"
+    },
+    {
       "title": "Ep #17 - Claude Code vs Codex vs Cursor: A Guerra das IAs de Código",
       "description": "Neste episódio mergulhamos sem filtros na disputa entre as três ferramentas que estão redefinindo a construção de software: <strong>Claude Code, Codex e Cursor</strong>. Analisamos a transição da era do autocomplete para a era dos <strong>agentes autônomos</strong>, que já respondem por 35% dos pull",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/119003345/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-24%2Ff430b34b-a5c2-33f8-7322-264539bc8aac.m4a",
       "pubDate": "2026-04-24",
       "duration": "00:22:42",
-      "language": "en"
+      "language": "pt"
     },
     {
       "title": "Ep #16 - Harness Engineering na Era dos Agentes de Código",
@@ -14,7 +22,7 @@
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/118835909/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-22%2F422577724-44100-2-2e1d4b1205c8c.m4a",
       "pubDate": "2026-04-22",
       "duration": "00:21:48",
-      "language": "en"
+      "language": "pt"
     },
     {
       "title": "Ep #15 - Test Harness: do PRD ao Deploy",
@@ -22,7 +30,7 @@
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/118605246/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-17%2Ff9d53e3e-62ec-9e52-4de9-918f2da97678.m4a",
       "pubDate": "2026-04-17",
       "duration": "00:28:57",
-      "language": "en"
+      "language": "pt"
     },
     {
       "title": "Ep #14 - Harnesses de IA: O Novo Jeito de Programar",
@@ -30,7 +38,7 @@
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/118384240/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-13%2Fea42802a-09ca-a05e-301a-fb0dbaea8542.m4a",
       "pubDate": "2026-04-13",
       "duration": "00:27:59",
-      "language": "en"
+      "language": "pt"
     },
     {
       "title": "Ep #13 - Gemma 4, a Engenharia por trás do S3 e Agentes de IA em Produção",
@@ -38,7 +46,7 @@
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/118028485/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-6%2Fa220645d-cd93-9a9c-a85f-309ab18053ca.m4a",
       "pubDate": "2026-04-06",
       "duration": "00:14:38",
-      "language": "en"
+      "language": "pt"
     },
     {
       "title": "Ep #12 [EN] - The Month AI Agents Went Mainstream: March 2026 Digest",

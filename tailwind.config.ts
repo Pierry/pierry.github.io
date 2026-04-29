@@ -20,9 +20,10 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Lexend', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-				display: ['Lexend', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-				serif: ['Georgia', 'Charter', 'Times New Roman', 'serif']
+				sans: ['Roboto Flex', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				display: ['Roboto Flex', 'ui-sans-serif', 'sans-serif'],
+				serif: ['Roboto Flex', 'ui-sans-serif', 'sans-serif'],
+				mono: ['Roboto Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace']
 			},
 			colors: {
 				border: 'hsl(var(--border))',

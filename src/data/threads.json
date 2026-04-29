@@ -1,0 +1,48 @@
+{
+  "threads": [
+    {
+      "slug": "agents-in-production",
+      "date": "2026-04-29",
+      "title": {
+        "en": "Agents in production",
+        "pt": "Agentes em produção"
+      },
+      "description": {
+        "en": "Five digests from the same fortnight, all converging on the same shift: agents stopped being demos and started showing up on the critical path.",
+        "pt": "Cinco edições da mesma quinzena apontando pra mesma virada: agente parou de ser demo e foi parar no caminho crítico de produção."
+      },
+      "body": {
+        "en": "A handful of articles, all chipping at the same idea: that **AI agents** are no longer a research toy.\n\n**OpenAI** ships a 40% latency cut for production agents — and the writeup reads like a system-design exam, not a lab note. Caching, speculative tool use, request hedging. The bag of tricks you reach for when the agent is on the hot path.\n\n**Meta**'s Capacity Efficiency post is the org-side mirror image: when agents *are* the workload, you stop tuning microservices and start tuning the agent runtime itself. Different problem, same lesson — agents are infrastructure now.\n\nFrom the IC seat, **9 Agentic Patterns** and the **20-minute agent** post show how the abstractions are settling. A year ago every agent was a snowflake; now there are *patterns* — named, reused, and boring in the good way.\n\n**CodeAct** closes the loop: fewer model turns, more done per call. The whole stack is optimizing for the same thing — agents that *finish*.\n\nStitched together: the question stopped being *can agents do this?* and became *what does the SLO look like when they do?*",
+        "pt": "Um punhado de artigos chegando na mesma conclusão: **agente de IA** parou de ser brinquedo de pesquisa.\n\nA **OpenAI** cortou 40% da latência dos agentes em produção — e o post parece prova de system design, não nota de laboratório. Cache, tool use especulativo, request hedging. O kit de truques que você só usa quando o agente tá no caminho crítico.\n\nO post de Capacity Efficiency da **Meta** mostra o lado oposto, da infra: quando o próprio agente *é* a carga, você para de otimizar microserviço e começa a otimizar o runtime do agente. Problema diferente, lição igual — agente virou infraestrutura.\n\nDo lado do dev, **9 Agentic Patterns** e o post do **agente em 20 minutos** mostram que as abstrações tão se firmando. Há um ano cada agente era um floco de neve único; hoje tem *padrão* — com nome, reuso, e aquele tédio saudável.\n\n**CodeAct** fecha o ciclo: menos turnos com o modelo, mais coisa pronta por chamada. A stack inteira tá otimizando pra mesma coisa — agente que *termina o trabalho*.\n\nJuntando tudo: a pergunta deixou de ser *agente consegue?* e virou *qual o SLO disso em produção?*"
+      },
+      "entries": [
+        "2026-04-28-eng-1",
+        "2026-04-28-1",
+        "2026-04-23-eng-1",
+        "2026-04-23-1",
+        "2026-04-21-1"
+      ]
+    },
+    {
+      "slug": "evals-and-correctness",
+      "date": "2026-04-29",
+      "title": {
+        "en": "Evals and the correctness gap",
+        "pt": "Como saber se a IA funciona de verdade"
+      },
+      "description": {
+        "en": "Three posts from the same week asking the same uncomfortable question: how do you know your AI system actually works?",
+        "pt": "Três posts da mesma semana batendo na pergunta incômoda: como você prova que seu sistema de IA realmente funciona?"
+      },
+      "body": {
+        "en": "The hard part of shipping AI isn't the model — it's the eval.\n\n**29 LLM Evaluation Concepts** is the field guide: BLEU, ROUGE, LLM-as-judge, golden sets, drift detection. Read it once, you'll see why teams keep reinventing the same flawed setup.\n\n**Event-Driven Systems Are Easy to Build but Hard to Keep Correct** isn't an AI post on the surface, but it's the same lesson in disguise: the moment you have async + retries + partial failures, *correctness* becomes the bottleneck. Eventing and agents share this property.\n\n**Laws of Software Engineering** zooms out: every law on the list, from Hyrum's to Conway's, is really a statement about how reality breaks the abstraction. Evals are how you *measure* that breakage before users do.\n\nThe through-line: building works, evaluating is hard, and most teams skip step two until something burns.",
+        "pt": "A parte difícil de colocar IA em produção não é o modelo — é a avaliação.\n\n**29 LLM Evaluation Concepts** é o guia prático: BLEU, ROUGE, LLM-como-juiz, conjuntos de referência, detecção de drift. Lê uma vez e você entende por que tanta equipe reinventa o mesmo setup furado.\n\n**Event-Driven Systems Are Easy to Build but Hard to Keep Correct** não parece post de IA, mas é a mesma lição disfarçada: no momento que você tem async + retry + falha parcial, garantir o resultado correto vira o gargalo. Eventing e agente compartilham esse problema.\n\n**Laws of Software Engineering** abre o zoom: cada lei da lista, de Hyrum a Conway, é uma forma de dizer como a realidade quebra a abstração. Avaliar é como você *mede* essa quebra antes do usuário medir.\n\nO fio condutor: construir funciona; avaliar é difícil; e a maioria das equipes pula o segundo passo — até alguma coisa pegar fogo em produção."
+      },
+      "entries": [
+        "2026-04-29-1",
+        "2026-04-27-1",
+        "2026-04-22-1"
+      ]
+    }
+  ]
+}

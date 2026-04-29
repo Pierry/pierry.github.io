@@ -1,17 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
-import { Menu, X, Github, Linkedin, Globe, ExternalLink, Share2, Check, Headphones, Zap } from "lucide-react";
+import { Menu, X, Github, Linkedin, Globe, ExternalLink, Share2, Check, Headphones, Zap, Mail } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { SubscribeDialog, isSubscribed } from "@/components/SubscribeDialog";
 import newslettersData from "../data/newsletters.json";
 
 type Lang = "en" | "pt";
-
-const rankEmoji = (rank: number): string => {
-  if (rank === 1) return "🥇";
-  if (rank === 2) return "🥈";
-  if (rank === 3) return "🥉";
-  return "📚";
-};
 
 const Newsletters = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,8 +17,14 @@ const Newsletters = () => {
     return 'en';
   });
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [subscribeOpen, setSubscribeOpen] = useState(false);
+  const [alreadySubscribed, setAlreadySubscribed] = useState(false);
   const location = useLocation();
   const { entryId: routeEntryId } = useParams<{ entryId?: string }>();
+
+  useEffect(() => {
+    setAlreadySubscribed(isSubscribed());
+  }, [subscribeOpen]);
 
   const toggleLang = () => {
     const newLang = lang === "en" ? "pt" : "en";
@@ -72,8 +72,14 @@ const Newsletters = () => {
               >
                 Newsletters
               </Link>
+              <Link
+                to="/threads"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Threads
+              </Link>
               <a
-                href="/cv.pdf"
+                href="/PierryBorges.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -124,8 +130,14 @@ const Newsletters = () => {
               >
                 Home
               </Link>
+              <Link
+                to="/threads"
+                className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+              >
+                Threads
+              </Link>
               <a
-                href="/cv.pdf"
+                href="/PierryBorges.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
@@ -147,9 +159,8 @@ const Newsletters = () => {
       <main className="max-w-3xl mx-auto px-6 pt-28 pb-16">
         {/* Podcast Banner */}
         <section className="mb-8">
-          <div className="flex items-center justify-between bg-accent/30 rounded-lg px-5 py-4">
+          <div className="md-card-elevated flex items-center justify-between px-5 py-4">
             <div className="flex items-center gap-3">
-              <span className="text-lg">📰</span>
               <div>
                 <h2 className="text-sm font-semibold text-foreground uppercase tracking-wide">
                   {lang === "en" ? "Daily Tech Digest" : "Tech Digest Diário"}
@@ -179,12 +190,27 @@ const Newsletters = () => {
           <h1 className="text-3xl sm:text-4xl font-semibold text-foreground tracking-tight mb-4">
             {lang === "en" ? "Newsletter Summary" : "Resumo de Newsletters"}
           </h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            {lang === "en" 
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            {lang === "en"
               ? "Curated daily digests from top engineering newsletters. Absorb key insights without leaving this page."
               : "Resumos diários curados das melhores newsletters de engenharia. Absorva os insights principais sem sair desta página."
             }
           </p>
+          {!alreadySubscribed && (
+            <button
+              onClick={() => setSubscribeOpen(true)}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-sm font-medium"
+            >
+              <Mail size={16} />
+              {lang === "en" ? "Subscribe via email" : "Inscrever-se por email"}
+            </button>
+          )}
+          {alreadySubscribed && (
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-muted-foreground text-sm">
+              <Check size={14} className="text-green-500" />
+              {lang === "en" ? "You're subscribed" : "Você está inscrito"}
+            </div>
+          )}
         </section>
 
         {/* Timeline */}
@@ -212,7 +238,7 @@ const Newsletters = () => {
                       title={lang === "en" ? "Listen on Spotify" : "Ouvir no Spotify"}
                     >
                       <Headphones size={14} />
-                      <span>Podcast {(digest as any).podcastLang === "pt" ? "🇧🇷" : "🇺🇸"}</span>
+                      <span>Podcast {(digest as any).podcastLang === "pt" ? "PT" : "EN"}</span>
                     </a>
                   )}
                   {(digest as any).tokensUsed && (
@@ -235,7 +261,7 @@ const Newsletters = () => {
                 {digest.entries.map((entry, idx) => {
                   const entryId = generateEntryId(digest.id, entry.rank);
                   return (
-                  <article key={idx} id={entryId} className="relative scroll-mt-24">
+                  <article key={idx} id={entryId} className="md-card-elevated relative scroll-mt-24 p-6">
                     <div className="flex items-start gap-4">
                       <div className="flex-1">
                         {/* Newsletter & Author */}
@@ -273,7 +299,7 @@ const Newsletters = () => {
                         </p>
 
                         {/* Insights */}
-                        <div className="bg-accent/50 rounded-lg p-4 mb-4">
+                        <div className="md-card-filled p-4 mb-4">
                           <h4 className="text-sm font-medium text-foreground/80 mb-2">
                             {lang === "en" ? "Key Insights" : "Insights Principais"}
                           </h4>
@@ -307,6 +333,12 @@ const Newsletters = () => {
           ))}
         </section>
       </main>
+
+      <SubscribeDialog
+        open={subscribeOpen}
+        onOpenChange={setSubscribeOpen}
+        lang={lang}
+      />
 
       {/* Footer */}
       <footer className="border-t border-border">

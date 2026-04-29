@@ -1,91 +1,158 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    /* Cloud dance theme - Joel Becker inspired minimalist design */
-    --background: 240 5% 96%;           /* Cloud dance: #F5F5F7 */
-    --foreground: 222 47% 11%;          /* Dark slate for text */
+/*
+ * Material Design 3 — Pen Blue scheme (seed #1F2A78)
+ * Strong navy / ballpoint-pen blue with slight indigo lean.
+ */
 
-    --card: 240 5% 96%;
-    --card-foreground: 222 47% 11%;
+:root {
+  /* MD3 light scheme */
+  --md-sys-color-primary: rgb(59 71 160);
+  --md-sys-color-on-primary: rgb(255 255 255);
+  --md-sys-color-primary-container: rgb(220 225 255);
+  --md-sys-color-on-primary-container: rgb(0 17 92);
+  --md-sys-color-secondary: rgb(91 93 114);
+  --md-sys-color-on-secondary: rgb(255 255 255);
+  --md-sys-color-secondary-container: rgb(224 225 249);
+  --md-sys-color-on-secondary-container: rgb(24 26 44);
+  --md-sys-color-tertiary: rgb(118 83 107);
+  --md-sys-color-on-tertiary: rgb(255 255 255);
+  --md-sys-color-tertiary-container: rgb(255 216 236);
+  --md-sys-color-on-tertiary-container: rgb(45 17 38);
+  --md-sys-color-error: rgb(186 26 26);
+  --md-sys-color-on-error: rgb(255 255 255);
+  --md-sys-color-error-container: rgb(255 218 214);
+  --md-sys-color-on-error-container: rgb(65 0 2);
+  --md-sys-color-background: rgb(251 248 255);
+  --md-sys-color-on-background: rgb(27 27 33);
+  --md-sys-color-surface: rgb(251 248 255);
+  --md-sys-color-on-surface: rgb(27 27 33);
+  --md-sys-color-surface-variant: rgb(226 225 236);
+  --md-sys-color-on-surface-variant: rgb(69 70 79);
+  --md-sys-color-outline: rgb(118 118 128);
+  --md-sys-color-outline-variant: rgb(199 197 208);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(48 48 54);
+  --md-sys-color-inverse-on-surface: rgb(243 240 244);
+  --md-sys-color-inverse-primary: rgb(185 195 255);
+  --md-sys-color-surface-dim: rgb(220 217 224);
+  --md-sys-color-surface-bright: rgb(251 248 255);
+  --md-sys-color-surface-container-lowest: rgb(255 255 255);
+  --md-sys-color-surface-container-low: rgb(245 242 250);
+  --md-sys-color-surface-container: rgb(239 236 244);
+  --md-sys-color-surface-container-high: rgb(233 230 238);
+  --md-sys-color-surface-container-highest: rgb(227 224 233);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+  /* Tailwind/shadcn bridge — light */
+  --background: 270 100% 99%;
+  --foreground: 240 10% 12%;
+  --card: 252 24% 95%;
+  --card-foreground: 240 10% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 12%;
+  --primary: 232 47% 43%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 234 11% 40%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 240 24% 93%;
+  --muted-foreground: 232 7% 29%;
+  --accent: 230 100% 93%;
+  --accent-foreground: 232 100% 18%;
+  --destructive: 0 76% 42%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 12% 80%;
+  --input: 240 12% 80%;
+  --ring: 232 47% 43%;
+  --radius: 0.75rem;
+  --sidebar-background: 270 100% 99%;
+  --sidebar-foreground: 240 10% 12%;
+  --sidebar-primary: 232 47% 43%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 230 100% 93%;
+  --sidebar-accent-foreground: 232 100% 18%;
+  --sidebar-border: 240 12% 80%;
+  --sidebar-ring: 232 47% 43%;
 
-    --primary: 217 91% 60%;             /* Blue: #2563EB */
-    --primary-foreground: 0 0% 100%;
+  color-scheme: light;
+}
 
-    --secondary: 224 76% 33%;           /* Deep blue: #1E3A8A */
-    --secondary-foreground: 0 0% 100%;
+.dark {
+  /* MD3 dark scheme */
+  --md-sys-color-primary: rgb(185 195 255);
+  --md-sys-color-on-primary: rgb(6 34 118);
+  --md-sys-color-primary-container: rgb(35 53 135);
+  --md-sys-color-on-primary-container: rgb(220 225 255);
+  --md-sys-color-secondary: rgb(196 197 221);
+  --md-sys-color-on-secondary: rgb(45 47 66);
+  --md-sys-color-secondary-container: rgb(67 69 89);
+  --md-sys-color-on-secondary-container: rgb(224 225 249);
+  --md-sys-color-tertiary: rgb(229 186 211);
+  --md-sys-color-on-tertiary: rgb(68 38 58);
+  --md-sys-color-tertiary-container: rgb(92 60 83);
+  --md-sys-color-on-tertiary-container: rgb(255 216 236);
+  --md-sys-color-error: rgb(255 180 171);
+  --md-sys-color-on-error: rgb(105 0 5);
+  --md-sys-color-error-container: rgb(147 0 10);
+  --md-sys-color-on-error-container: rgb(255 218 214);
+  --md-sys-color-background: rgb(19 19 24);
+  --md-sys-color-on-background: rgb(228 225 233);
+  --md-sys-color-surface: rgb(19 19 24);
+  --md-sys-color-on-surface: rgb(228 225 233);
+  --md-sys-color-surface-variant: rgb(69 70 79);
+  --md-sys-color-on-surface-variant: rgb(199 197 208);
+  --md-sys-color-outline: rgb(144 144 154);
+  --md-sys-color-outline-variant: rgb(69 70 79);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(228 225 233);
+  --md-sys-color-inverse-on-surface: rgb(48 48 54);
+  --md-sys-color-inverse-primary: rgb(59 71 160);
+  --md-sys-color-surface-dim: rgb(19 19 24);
+  --md-sys-color-surface-bright: rgb(57 56 63);
+  --md-sys-color-surface-container-lowest: rgb(14 14 19);
+  --md-sys-color-surface-container-low: rgb(27 27 33);
+  --md-sys-color-surface-container: rgb(31 31 37);
+  --md-sys-color-surface-container-high: rgb(41 41 47);
+  --md-sys-color-surface-container-highest: rgb(52 52 58);
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 35%;     /* Darker muted text for better contrast */
+  /* Tailwind bridge — dark */
+  --background: 240 11% 8%;
+  --foreground: 252 16% 90%;
+  --card: 240 9% 13%;
+  --card-foreground: 252 16% 90%;
+  --popover: 240 9% 13%;
+  --popover-foreground: 252 16% 90%;
+  --primary: 230 100% 86%;
+  --primary-foreground: 222 90% 24%;
+  --secondary: 244 24% 82%;
+  --secondary-foreground: 232 18% 22%;
+  --muted: 240 9% 12%;
+  --muted-foreground: 240 12% 80%;
+  --accent: 232 59% 33%;
+  --accent-foreground: 230 100% 93%;
+  --destructive: 4 100% 70%;
+  --destructive-foreground: 358 100% 21%;
+  --border: 232 7% 29%;
+  --input: 232 7% 29%;
+  --ring: 230 100% 86%;
+  --sidebar-background: 240 11% 8%;
+  --sidebar-foreground: 252 16% 90%;
+  --sidebar-primary: 230 100% 86%;
+  --sidebar-primary-foreground: 222 90% 24%;
+  --sidebar-accent: 232 59% 33%;
+  --sidebar-accent-foreground: 230 100% 93%;
+  --sidebar-border: 232 7% 29%;
+  --sidebar-ring: 230 100% 86%;
 
-    --accent: 220 14% 96%;
-    --accent-foreground: 222 47% 11%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 220 13% 91%;              /* Subtle light gray borders */
-    --input: 220 13% 91%;
-    --ring: 217 91% 60%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 240 5% 96%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 60%;
-  }
-
-  .dark {
-    --background: 0 0% 7%;              /* Dark gray, not pure black */
-    --foreground: 0 0% 95%;             /* Bright white text */
-
-    --card: 0 0% 10%;                   /* Slightly lighter for cards */
-    --card-foreground: 0 0% 95%;
-
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 95%;
-
-    --primary: 217.2 91.2% 59.8%;       /* Keep blue accent */
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 0 0% 16%;              /* Medium dark gray */
-    --secondary-foreground: 0 0% 95%;
-
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 82%;       /* Even brighter muted text */
-
-    --accent: 0 0% 16%;
-    --accent-foreground: 0 0% 95%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 95%;
-
-    --border: 0 0% 20%;                 /* More visible borders */
-    --input: 0 0% 20%;
-    --ring: 217.2 91.2% 59.8%;
-    --sidebar-background: 0 0% 5%;
-    --sidebar-foreground: 0 0% 92%;
-    --sidebar-primary: 217.2 91.2% 59.8%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 0 0% 92%;
-    --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+  color-scheme: dark;
 }
 
 @layer base {
@@ -93,82 +160,119 @@
     @apply border-border;
   }
 
+  html {
+    --md-ref-typeface-brand: 'Roboto Flex', sans-serif;
+    --md-ref-typeface-plain: 'Roboto Flex', sans-serif;
+  }
+
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Lexend', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    background: var(--md-sys-color-background);
+    color: var(--md-sys-color-on-background);
+    font-family: 'Roboto Flex', ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    letter-spacing: 0.01em;
-    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-medium;
-    letter-spacing: -0.02em;
-    line-height: 1.3;
+    font-family: 'Roboto Flex', sans-serif;
+    font-stretch: 100%;
+    letter-spacing: 0;
   }
 
-  h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+  h1 { font-size: 2.5rem; line-height: 1.15; font-weight: 400; }
+  h2 { font-size: 1.75rem; line-height: 1.22; font-weight: 400; }
+  h3 { font-size: 1.375rem; line-height: 1.27; font-weight: 500; }
+
+  code, pre, kbd, samp {
+    font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   }
 
-  h2 {
-    @apply text-3xl md:text-4xl;
-  }
-
-  h3 {
-    @apply text-2xl md:text-3xl;
-  }
-
-  p {
-    @apply text-base md:text-lg;
-    letter-spacing: 0.015em;
-    line-height: 1.8;
+  ::selection {
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
   }
 }
 
 @layer components {
-  .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24 lg:py-32;
+  .md-surface {
+    background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
   }
-  
-  .nav-link {
-    @apply relative text-foreground/80 hover:text-foreground transition-colors duration-200 px-1;
+  .md-surface-container {
+    background: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
   }
-  
-  .nav-link::after {
-    content: '';
-    @apply absolute left-0 right-0 bottom-0 h-[1px] bg-primary scale-x-0 transition-transform duration-300 ease-in-out origin-right;
-  }
-  
-  .nav-link:hover::after {
-    @apply scale-x-100 origin-left;
-  }
-  
-  .card-hover {
-    @apply relative overflow-hidden transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl;
-  }
-  
-  .button-hover {
-    @apply relative overflow-hidden transition-colors duration-300 ease-out;
-  }
-  
-  .button-hover::before {
-    content: '';
-    @apply absolute inset-0 bg-white/10 transform scale-x-0 origin-left transition-transform duration-300;
-  }
-  
-  .button-hover:hover::before {
-    @apply scale-x-100;
+  .md-surface-container-high {
+    background: var(--md-sys-color-surface-container-high);
+    color: var(--md-sys-color-on-surface);
   }
 
-  /* Hide scrollbar but keep functionality */
+  /* MD3 elevation tokens */
+  .md-elevation-1 {
+    box-shadow:
+      0 1px 2px 0 rgb(0 0 0 / 0.30),
+      0 1px 3px 1px rgb(0 0 0 / 0.15);
+  }
+  .md-elevation-2 {
+    box-shadow:
+      0 1px 2px 0 rgb(0 0 0 / 0.30),
+      0 2px 6px 2px rgb(0 0 0 / 0.15);
+  }
+  .md-elevation-3 {
+    box-shadow:
+      0 1px 3px 0 rgb(0 0 0 / 0.30),
+      0 4px 8px 3px rgb(0 0 0 / 0.15);
+  }
+
+  /* MD3 cards */
+  .md-card {
+    background: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface);
+    border-radius: 0.75rem;
+    transition: box-shadow 200ms ease, background-color 200ms ease;
+  }
+  .md-card-elevated {
+    background: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface);
+    border-radius: 0.75rem;
+    box-shadow:
+      0 1px 2px 0 rgb(0 0 0 / 0.30),
+      0 1px 3px 1px rgb(0 0 0 / 0.15);
+    transition: box-shadow 200ms ease, background-color 200ms ease;
+  }
+  .md-card-elevated:hover {
+    box-shadow:
+      0 1px 2px 0 rgb(0 0 0 / 0.30),
+      0 2px 6px 2px rgb(0 0 0 / 0.15);
+    background: var(--md-sys-color-surface-container);
+  }
+  .md-card-filled {
+    background: var(--md-sys-color-surface-container-highest);
+    color: var(--md-sys-color-on-surface);
+    border-radius: 0.75rem;
+    transition: background-color 200ms ease;
+  }
+  .md-card-filled:hover {
+    background: var(--md-sys-color-surface-container);
+  }
+  .md-card-outlined {
+    background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    border-radius: 0.75rem;
+    transition: background-color 200ms ease, border-color 200ms ease;
+  }
+  .md-card-outlined:hover {
+    background: var(--md-sys-color-surface-container-low);
+  }
+
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

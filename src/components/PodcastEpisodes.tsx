@@ -10,13 +10,13 @@ const PodcastEpisodes = ({ lang }: PodcastEpisodesProps) => {
 
   const i18n = {
     en: {
-      title: '🎙️ Latest Episodes',
+      title: 'Latest Episodes',
       subtitle: 'New episodes every 3 days',
       listen: 'Listen',
       listenAll: 'Listen on Spotify',
     },
     pt: {
-      title: '🎙️ Últimos Episódios',
+      title: 'Últimos Episódios',
       subtitle: 'Novos episódios a cada 3 dias',
       listen: 'Ouvir',
       listenAll: 'Ouvir no Spotify',
@@ -87,7 +87,7 @@ const PodcastEpisodes = ({ lang }: PodcastEpisodesProps) => {
                       ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300' 
                       : 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300'
                   }`}>
-                    {episode.language === 'en' ? '🇺🇸 EN' : '🇧🇷 PT'}
+                    {episode.language === 'en' ? 'EN' : 'PT'}
                   </span>
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
                     <Clock size={12} />
