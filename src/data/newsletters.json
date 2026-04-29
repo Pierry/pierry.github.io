@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-29",
+      "date": "2026-04-29",
+      "tokensUsed": 31524,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Newsletter",
+          "author": "Anshuman Mishra and Neo Kim",
+          "title": {
+            "en": "29 LLM Evaluation Concepts Every Engineer Needs to Know",
+            "pt": "29 Conceitos de Avaliação de LLM que Todo Engenheiro Precisa Conhecer"
+          },
+          "summary": {
+            "en": "This article reframes LLM quality as a measurement problem, not a debugging problem. It explains why traditional software-testing instincts break down for AI features because outputs are non-deterministic, correctness is fuzzy, and regressions can stay invisible until users hit them in production. Instead of tweaking prompts by feel, the post gives engineers a practical framework for building evaluation systems, covering the core vocabulary, mental models, and methods needed to judge LLM behavior with more rigor.",
+            "pt": "O artigo reposiciona qualidade de LLM como um problema de medição, não de debugging. Ele mostra por que os instintos clássicos de teste de software quebram em features com IA, já que as saídas são não determinísticas, a corretude é difusa e regressões podem ficar invisíveis até aparecerem em produção. Em vez de ajustar prompts no feeling, o texto oferece um framework prático para engenheiros montarem sistemas de avaliação, cobrindo vocabulário, modelos mentais e métodos para julgar o comportamento de LLMs com mais rigor."
+          },
+          "insights": {
+            "en": [
+              "A successful LLM response is not evidence the system is correct. Because outputs are probabilistic, each run is just one sample, so evaluation needs repeated measurements instead of binary pass or fail thinking.",
+              "Before measuring anything, teams must define what “good” actually means for the task. Helpfulness, completeness, tone, factuality, and policy compliance often pull in different directions, so quality has to be made explicit.",
+              "Eval infrastructure is part of production architecture. Without datasets, judges, and regression tracking, every prompt tweak or model swap risks shipping silent regressions that only show up through user pain."
+            ],
+            "pt": [
+              "Uma resposta boa de LLM não prova que o sistema está correto. Como a saída é probabilística, cada execução é só uma amostra, então avaliação precisa de medições repetidas, não de pensamento binário de passou ou falhou.",
+              "Antes de medir qualquer coisa, o time precisa definir o que significa “bom” para aquela tarefa. Utilidade, completude, tom, factualidade e aderência a políticas muitas vezes puxam em direções diferentes, então qualidade precisa ser explicitada.",
+              "Infra de eval faz parte da arquitetura de produção. Sem datasets, juízes e rastreamento de regressão, qualquer ajuste de prompt ou troca de modelo pode introduzir regressões silenciosas que só aparecem na dor do usuário."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/llm-evals"
+        }
+      ]
+    },
+    {
       "id": "2026-04-28-eng",
       "date": "2026-04-28",
       "tokensUsed": 41085,
