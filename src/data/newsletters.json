@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-29-eng",
+      "date": "2026-04-29",
+      "tokensUsed": 27285,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Shubhojeet Sarkar, Shengbo Guo, Guohao Zhang, Woon Jo, Laura Vig",
+          "title": {
+            "en": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
+            "pt": "Modernizando a busca do Facebook Groups para destravar o conhecimento das comunidades"
+          },
+          "summary": {
+            "en": "Meta rebuilt Facebook Groups Search around a hybrid retrieval architecture that combines lexical search with dense semantic retrieval, then re-ranks the merged candidates with a multi-task model tuned for meaningful engagement. The system uses parallel query paths, Faiss-based ANN search over embeddings, and an automated offline evaluation loop powered by Llama 3 as a relevance judge. The goal is to fix the three hard parts of community search—discovery, consumption, and validation—so users can find answers that match intent rather than exact wording. It is a strong example of modern search architecture moving beyond keyword matching without giving up precision or operational measurability.",
+            "pt": "A Meta reconstruiu a busca do Facebook Groups em torno de uma arquitetura híbrida de recuperação, combinando busca lexical com recuperação semântica densa e depois reclassificando os candidatos com um modelo multitarefa otimizado para engajamento relevante. O sistema usa caminhos paralelos de consulta, busca ANN com Faiss sobre embeddings e um loop de avaliação offline automatizado com Llama 3 atuando como juiz de relevância. A meta é atacar os três pontos difíceis da busca em comunidades — descoberta, consumo e validação — para que as pessoas encontrem respostas alinhadas à intenção, e não apenas às palavras exatas. É um ótimo exemplo de arquitetura moderna de search evoluindo além de keyword matching sem abrir mão de precisão e mensuração operacional."
+          },
+          "insights": {
+            "en": [
+              "The key systems pattern is parallel retrieval: keep an inverted index for exact matches and add a semantic retriever for intent-level matches, then merge both in ranking instead of forcing one method to do everything.",
+              "Meta treats evaluation as part of the architecture, not a side task. Using an LLM judge inside build verification lets the team measure nuanced relevance changes at scale before shipping retrieval changes.",
+              "This is broadly useful because it solves a common product problem: users ask in natural language, while valuable knowledge is stored in inconsistent community wording. Hybrid search is the practical bridge between the two."
+            ],
+            "pt": [
+              "O padrão de sistemas mais importante aqui é a recuperação paralela: manter índice invertido para matches exatos e somar um recuperador semântico para matches por intenção, juntando tudo no ranking em vez de tentar fazer um único método resolver tudo.",
+              "A Meta trata avaliação como parte da arquitetura, não como tarefa lateral. Usar um LLM como juiz dentro da verificação de build permite medir mudanças sutis de relevância em escala antes de publicar alterações de retrieval.",
+              "Isso é útil de forma ampla porque resolve um problema comum de produto: usuários perguntam em linguagem natural, enquanto o conhecimento valioso fica guardado em textos comunitários inconsistentes. Busca híbrida é a ponte prática entre esses dois mundos."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-29",
       "date": "2026-04-29",
       "tokensUsed": 31524,
