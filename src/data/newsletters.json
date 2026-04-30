@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-30",
+      "date": "2026-04-30",
+      "tokensUsed": 50879,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Newsletter",
+          "author": "Neo Kim",
+          "title": {
+            "en": "Multi-Agent Architectures, Clearly Explained",
+            "pt": "Arquiteturas Multiagente, Explicadas com Clareza"
+          },
+          "summary": {
+            "en": "Neo Kim argues that most teams reach for multi-agent systems too early, before they have actually hit the hard limits of a single agent. The article frames those limits around three pressures: context overflow, lack of parallelism, and the need for specialization in tools, models, or permissions. From there, it maps the main coordination patterns, starting with orchestrator-worker, pipeline, and hierarchical designs, and shows how each one trades off speed, control, observability, and failure handling. The practical value is not in glorifying multi-agent setups, but in giving engineers a decision framework for when to stay simple and when coordination overhead is finally justified.",
+            "pt": "Neo Kim defende que a maioria dos times parte cedo demais para sistemas multiagente, antes mesmo de bater nos limites reais de um agente único. O texto organiza esses limites em três pressões: overflow de contexto, falta de paralelismo e necessidade de especialização em ferramentas, modelos ou permissões. A partir daí, ele mapeia os principais padrões de coordenação, começando por orchestrator-worker, pipeline e arquitetura hierárquica, mostrando como cada um troca velocidade, controle, observabilidade e tolerância a falhas. O valor prático não está em glorificar setups multiagente, e sim em dar um framework de decisão para saber quando manter simplicidade e quando o overhead de coordenação passa a fazer sentido."
+          },
+          "insights": {
+            "en": [
+              "The key architectural test is whether a single agent has truly broken on context, parallelism, or specialization. If none of those are real constraints yet, adding more agents mostly adds token cost, latency, and failure modes.",
+              "Orchestrator-worker is a strong default because it preserves central control, but it also creates a new bottleneck: the lead agent becomes both planner and throughput limiter, so vague delegation wastes parallelism through duplicated work.",
+              "The article is useful beyond AI hype because it treats agent architecture like classic systems design, a choice of coordination topology, contracts, and failure boundaries rather than a magic capability upgrade."
+            ],
+            "pt": [
+              "O teste arquitetural mais importante é saber se um agente único realmente quebrou por contexto, paralelismo ou especialização. Se nenhuma dessas restrições existe de verdade, adicionar mais agentes tende a só aumentar custo de tokens, latência e modos de falha.",
+              "Orchestrator-worker é um ótimo padrão inicial porque preserva controle central, mas também cria um novo gargalo: o agente líder vira ao mesmo tempo planejador e limitador de throughput, então delegação vaga desperdiça paralelismo com trabalho duplicado.",
+              "O texto é útil para além do hype de IA porque trata arquitetura de agentes como design clássico de sistemas, uma escolha de topologia de coordenação, contratos e fronteiras de falha, não como um upgrade mágico de capacidade."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/multi-agent-system"
+        }
+      ]
+    },
+    {
       "id": "2026-04-29-eng",
       "date": "2026-04-29",
       "tokensUsed": 27285,
