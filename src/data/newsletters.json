@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-04-30-eng",
+      "date": "2026-04-30",
+      "tokensUsed": 27223,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Slack Engineering",
+          "author": "Dominic Marks",
+          "title": {
+            "en": "Managing context in long-run agentic applications",
+            "pt": "Gerenciando contexto em aplicações agênticas de longa duração"
+          },
+          "summary": {
+            "en": "Slack describes how its security investigation agents stay coherent across hundreds of model calls without drowning in raw history. Instead of replaying everything into a giant prompt, the system splits context into three purpose-built channels: a Director journal for working memory, a Critic review that scores expert findings by evidence quality, and a consolidated Timeline that keeps only credible events in chronological order. This design reduces context bloat while preserving shared situational awareness across specialists. The post is a strong systems-design treatment of memory architecture for multi-agent workflows that need both continuity and independent reasoning over long investigations.",
+            "pt": "A Slack mostra como seus agentes de investigação de segurança mantêm coerência ao longo de centenas de chamadas de modelo sem se afogar em histórico bruto. Em vez de reenviar tudo em um prompt gigante, o sistema divide o contexto em três canais com papéis claros: um diário do Diretor como memória de trabalho, uma revisão do Crítico que pontua os achados dos especialistas pela qualidade das evidências, e uma Timeline consolidada que preserva apenas eventos confiáveis em ordem cronológica. Esse desenho reduz o inchaço de contexto sem perder consciência situacional compartilhada entre especialistas. O post é um ótimo tratamento de design de sistemas para arquitetura de memória em workflows multiagente que precisam de continuidade e raciocínio independente em investigações longas."
+          },
+          "insights": {
+            "en": [
+              "The main architectural move is to separate memory by function, not just by storage. Working notes, evidence review, and final timeline serve different reasoning jobs, so compressing them into one shared transcript would hurt both quality and scalability.",
+              "Slack treats verification as part of context management. The Critic does not merely summarize expert output, it inspects tool calls, results, and methodology, then assigns credibility scores so only well-supported findings shape downstream reasoning.",
+              "The Timeline is the key anti-drift mechanism. By deduplicating events, resolving timestamp conflicts, and explicitly surfacing the top gaps, it gives the Director a stable narrative backbone without forcing every agent to ingest the entire investigation log."
+            ],
+            "pt": [
+              "O principal movimento arquitetural é separar a memória por função, não só por armazenamento. Notas de trabalho, revisão de evidências e timeline final cumprem papéis de raciocínio diferentes, então comprimir tudo em uma única transcrição compartilhada pioraria tanto a qualidade quanto a escalabilidade.",
+              "A Slack trata verificação como parte da gestão de contexto. O Crítico não apenas resume o output dos especialistas, ele inspeciona tool calls, resultados e metodologia, depois atribui scores de credibilidade para que só achados bem sustentados influenciem o raciocínio seguinte.",
+              "A Timeline é o principal mecanismo contra deriva. Ao remover duplicatas, resolver conflitos de timestamp e destacar explicitamente as lacunas mais importantes, ela dá ao Diretor uma espinha dorsal narrativa estável sem obrigar cada agente a ingerir o log inteiro da investigação."
+            ]
+          },
+          "link": "https://slack.engineering/managing-context-in-long-run-agentic-applications/"
+        }
+      ]
+    },
+    {
       "id": "2026-04-30",
       "date": "2026-04-30",
       "tokensUsed": 50879,
