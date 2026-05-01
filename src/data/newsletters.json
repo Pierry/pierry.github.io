@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-01",
+      "date": "2026-05-01",
+      "tokensUsed": 50822,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Codex",
+          "author": "Saurabh Dashora",
+          "title": {
+            "en": "Top Cache Eviction Strategies",
+            "pt": "Principais Estratégias de Evicção de Cache"
+          },
+          "summary": {
+            "en": "This issue breaks cache eviction down into the practical trade-offs behind the policies most teams name but rarely compare carefully. It walks through TTL, LRU, LFU, MRU, and Segmented LRU, explaining not only how each policy removes entries when memory fills up, but what workload assumption each one is really making about access patterns and freshness. The useful takeaway is that eviction strategy is not a low-level implementation detail, it is a product and systems decision that directly shapes hit rate, latency, memory efficiency, and operational simplicity.",
+            "pt": "Esta edição traduz evicção de cache para os trade-offs práticos por trás das políticas que quase todo time cita, mas raramente compara com cuidado. Ela passa por TTL, LRU, LFU, MRU e Segmented LRU, explicando não só como cada política remove itens quando a memória enche, mas também qual hipótese cada uma faz sobre padrão de acesso e frescor dos dados. O ponto mais útil é que estratégia de evicção não é detalhe de implementação, e sim uma decisão de produto e de sistemas que afeta diretamente hit rate, latência, eficiência de memória e simplicidade operacional."
+          },
+          "insights": {
+            "en": [
+              "TTL is the simplest policy when freshness matters more than reuse, but it can simultaneously evict hot data too early and keep cold data around for too long.",
+              "LRU and LFU optimize for different signals. LRU favors recent demand, while LFU preserves long-term popularity, so the right choice depends on whether your workload is bursty or stable.",
+              "Segmented LRU is a strong middle ground because it gives newly seen items a probation period before protecting them, which helps reduce cache pollution without the full complexity of more specialized schemes."
+            ],
+            "pt": [
+              "TTL é a política mais simples quando frescor importa mais que reutilização, mas ela pode ao mesmo tempo expulsar dados quentes cedo demais e manter dados frios por tempo demais.",
+              "LRU e LFU otimizam sinais diferentes. LRU favorece demanda recente, enquanto LFU preserva popularidade de longo prazo, então a escolha certa depende de o workload ser mais explosivo ou mais estável.",
+              "Segmented LRU é um ótimo meio-termo porque dá um período de prova para itens recém-chegados antes de protegê-los, reduzindo poluição de cache sem o custo total de estratégias mais especializadas."
+            ]
+          },
+          "link": "https://newsletter.systemdesigncodex.com/p/top-cache-eviction-strategies"
+        }
+      ]
+    },
+    {
       "id": "2026-04-30-eng",
       "date": "2026-04-30",
       "tokensUsed": 27223,
