@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-01-eng",
+      "date": "2026-05-01",
+      "tokensUsed": 46995,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Airbnb Engineering",
+          "author": "Ricardo Gamba, Andriy Sergiyenko",
+          "title": {
+            "en": "Skipper: Building Airbnb’s embedded workflow engine",
+            "pt": "Skipper: como o Airbnb construiu seu engine embarcado de workflows"
+          },
+          "summary": {
+            "en": "Airbnb presents Skipper, an embedded workflow engine built to give long-running business flows durable execution without introducing a new orchestration cluster as a critical dependency. Instead of pushing teams toward an external Temporal-like control plane, Skipper runs inside each service, persists state in the service’s existing datastore, and uses replay plus checkpointed actions so workflows can survive crashes, waits, and restarts without redoing side effects. The post is especially valuable because it frames workflow orchestration as a systems-design tradeoff between reliability, operational simplicity, and code ergonomics, then shows a pragmatic path that keeps domain logic readable while avoiding central coordination bottlenecks.",
+            "pt": "O Airbnb apresenta o Skipper, um engine embarcado de workflows criado para dar execução durável a fluxos de negócio longos sem introduzir um novo cluster de orquestração como dependência crítica. Em vez de empurrar os times para um control plane externo no estilo Temporal, o Skipper roda dentro de cada serviço, persiste estado no datastore que o próprio serviço já usa e combina replay com ações checkpointadas para que workflows sobrevivam a crashes, esperas e restarts sem repetir efeitos colaterais. O post é especialmente valioso porque trata orquestração de workflows como um trade-off real de design de sistemas entre confiabilidade, simplicidade operacional e ergonomia de código, mostrando um caminho pragmático para manter a lógica de domínio legível sem criar gargalos centrais de coordenação."
+          },
+          "insights": {
+            "en": [
+              "The key architectural bet is embedding durability into the host service instead of introducing a separate workflow control plane. That removes a major failure dependency for Tier 0 paths while reusing existing operational primitives like the service database.",
+              "Skipper’s replay model keeps workflow code linear and readable because actions are checkpointed and reused on re-execution. Engineers get durable waits, retries, and signals without scattering business logic across queues, cron jobs, and callbacks.",
+              "This is broadly relevant because many companies solve durable execution repeatedly with bespoke async plumbing. Airbnb’s design shows how a shared library can standardize crash recovery and orchestration semantics without forcing every team onto a heavyweight external platform."
+            ],
+            "pt": [
+              "A principal aposta arquitetural é embutir durabilidade no serviço hospedeiro em vez de criar um control plane separado de workflows. Isso remove uma dependência importante de falha em caminhos Tier 0 e reaproveita primitivas operacionais que o time já possui, como o banco do próprio serviço.",
+              "O modelo de replay do Skipper mantém o código do workflow linear e legível porque as ações são checkpointadas e reutilizadas na reexecução. Os engenheiros ganham waits duráveis, retries e signals sem espalhar a lógica de negócio entre filas, crons e callbacks.",
+              "Isso é amplamente útil porque muitas empresas resolvem durable execution várias vezes com plumbing assíncrono caseiro. O design do Airbnb mostra como uma biblioteca compartilhada pode padronizar recuperação de crash e semântica de orquestração sem obrigar todo time a adotar uma plataforma externa pesada."
+            ]
+          },
+          "link": "https://medium.com/airbnb-engineering/skipper-building-airbnbs-embedded-workflow-engine-f6c34552146f"
+        }
+      ]
+    },
+    {
       "id": "2026-05-01",
       "date": "2026-05-01",
       "tokensUsed": 50822,
