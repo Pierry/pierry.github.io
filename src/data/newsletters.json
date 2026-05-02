@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-02",
+      "date": "2026-05-02",
+      "tokensUsed": 42016,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech World With Milan Newsletter",
+          "author": "Dr Milan Milanović",
+          "title": {
+            "en": "The 20 Software Engineering Laws",
+            "pt": "As 20 Leis da Engenharia de Software"
+          },
+          "summary": {
+            "en": "Milan Milanović distills 20 enduring software-engineering laws into a practical field guide for why projects slip, architectures decay, and teams optimize for the wrong thing. Instead of treating these ideas as trivia, the piece connects classics like Gall’s Law, Conway’s Law, Brooks’s Law, Goodhart’s Law, and Amdahl’s Law to modern product and AI-era engineering work. The value is in the framing: software problems that feel unique in the moment are often old patterns of coordination, complexity, incentives, and bottlenecks showing up again under new tooling.",
+            "pt": "Milan Milanović condensa 20 leis clássicas da engenharia de software em um guia prático para entender por que projetos atrasam, arquiteturas apodrecem e times acabam otimizando as métricas erradas. Em vez de tratar essas ideias como curiosidades, o texto conecta princípios como Gall’s Law, Conway’s Law, Brooks’s Law, Goodhart’s Law e Amdahl’s Law ao trabalho moderno de produto e à engenharia na era da IA. O valor está no enquadramento: muitos problemas que parecem inéditos são, na verdade, padrões antigos de coordenação, complexidade, incentivos e gargalos reaparecendo com ferramentas novas."
+          },
+          "insights": {
+            "en": [
+              "Gall’s Law and KISS reinforce the same strategic move: start with something small that works in production, then evolve it. Rewrites and overdesigned architectures usually fail because they try to solve future complexity before validating present reality.",
+              "Conway’s Law, Brooks’s Law, Ringelmann Effect, and Price’s Law all point to the same organizational truth: system quality and delivery speed are bounded as much by team structure and communication overhead as by technical skill.",
+              "Goodhart’s Law, Hyrum’s Law, and Amdahl’s Law are especially relevant now because AI tools amplify both leverage and failure modes. Metrics get gamed faster, accidental interfaces turn into dependencies sooner, and bottlenecks shift rather than disappear."
+            ],
+            "pt": [
+              "Gall’s Law e KISS reforçam o mesmo movimento estratégico: começar com algo pequeno que funcione em produção e evoluir dali. Rewrites e arquiteturas superdesenhadas costumam falhar porque tentam resolver complexidade futura antes de validar a realidade atual.",
+              "Conway’s Law, Brooks’s Law, Ringelmann Effect e Price’s Law apontam para a mesma verdade organizacional: qualidade do sistema e velocidade de entrega são limitadas tanto pela estrutura do time e pelo overhead de comunicação quanto pela habilidade técnica.",
+              "Goodhart’s Law, Hyrum’s Law e Amdahl’s Law ficam ainda mais relevantes agora porque ferramentas de IA amplificam tanto a alavancagem quanto os modos de falha. Métricas são manipuladas mais rápido, interfaces acidentais viram dependências mais cedo e os gargalos mudam de lugar em vez de sumirem."
+            ]
+          },
+          "link": "https://newsletter.techworld-with-milan.com/p/the-20-software-engineering-laws"
+        }
+      ]
+    },
+    {
       "id": "2026-05-01-eng",
       "date": "2026-05-01",
       "tokensUsed": 46995,
