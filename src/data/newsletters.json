@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-02-eng",
+      "date": "2026-05-02",
+      "tokensUsed": 35258,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Netflix Tech Blog",
+          "author": "Nipun Kumar, Rajat Shah, Peter Chng",
+          "title": {
+            "en": "State of Routing in Model Serving",
+            "pt": "O estado do roteamento em serving de modelos"
+          },
+          "summary": {
+            "en": "Netflix opens a multi-part series on its centralized ML serving platform by focusing on one of the hardest infrastructure problems at scale: routing each inference request to the right model workflow, shard, and experiment path without forcing every client service to understand ML-serving internals. The system exposes a single domain-independent API that hides model selection, A/B allocation, sharding changes, and feature-fetching complexity from dozens of microservices while supporting hundreds of model types and versions at roughly 1 million requests per second. The real value of the post is architectural: it frames routing not as a networking footnote, but as the control plane that lets product teams iterate on ML safely and quickly without constantly re-integrating client applications.",
+            "pt": "A Netflix abre uma série sobre sua plataforma centralizada de serving de ML focando em um dos problemas mais difíceis de infraestrutura em escala: rotear cada requisição de inferência para o workflow de modelo, shard e caminho experimental corretos sem obrigar cada serviço cliente a entender os detalhes internos do serving de ML. O sistema expõe uma API única e independente de domínio que esconde de dezenas de microsserviços a seleção de modelos, a alocação de A/B tests, as mudanças de sharding e a complexidade de busca de features, enquanto atende centenas de tipos e versões de modelos em algo próximo de 1 milhão de requisições por segundo. O grande valor do post é arquitetural: ele trata roteamento não como detalhe de rede, mas como o control plane que permite aos times iterar em ML com segurança e velocidade sem reintegrar aplicações clientes o tempo todo."
+          },
+          "insights": {
+            "en": [
+              "Netflix’s core abstraction is a single serving API for multiple domains. Client services send standard request context plus domain context, and the platform handles model choice, feature computation, experiment allocation, and logging behind the scenes.",
+              "Routing is doing much more than load balancing: it decouples clients from model-to-cluster mappings, shard VIP changes, and experimental traffic rules, which means researchers can evolve models quickly without forcing coordinated client releases.",
+              "The post’s deeper lesson is that large-scale ML platforms win by turning serving complexity into a control-plane problem. Centralized routing becomes the mechanism that preserves both operational safety and product iteration speed."
+            ],
+            "pt": [
+              "A abstração central da Netflix é uma única API de serving para vários domínios. Os serviços clientes enviam contexto padrão da requisição mais contexto de domínio, e a plataforma resolve por trás dos panos a escolha do modelo, o cálculo de features, a alocação experimental e o logging.",
+              "O roteamento faz muito mais do que balanceamento de carga: ele desacopla os clientes do mapeamento modelo-cluster, das mudanças de VIP por shard e das regras de tráfego experimental, permitindo que pesquisadores evoluam modelos sem exigir releases coordenados dos clientes.",
+              "A lição mais profunda do post é que plataformas de ML em grande escala vencem quando transformam a complexidade de serving em um problema de control plane. O roteamento centralizado vira o mecanismo que preserva ao mesmo tempo segurança operacional e velocidade de iteração de produto."
+            ]
+          },
+          "link": "https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741"
+        }
+      ]
+    },
+    {
       "id": "2026-05-02",
       "date": "2026-05-02",
       "tokensUsed": 42016,
