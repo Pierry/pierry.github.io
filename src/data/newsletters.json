@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-03-eng",
+      "date": "2026-05-03",
+      "tokensUsed": 27242,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Claudia Baz Alvarez, Almaz Rakhimbekov",
+          "title": {
+            "en": "How Ansible® Automation Powers the Uber Corporate Network at a Global Scale",
+            "pt": "Como a automação com Ansible sustenta a rede corporativa global da Uber"
+          },
+          "summary": {
+            "en": "Uber explains how it uses Ansible to keep a globally distributed corporate network consistent across roughly 5,000 devices spanning five regions and multiple hardware vendors. The interesting part is not Ansible itself, but the operating model around it: a desired-state inventory, vendor-specific rendering from shared abstractions, nightly backup and enforcement, and Git-backed configuration history that turns manual drift into visible technical debt. It is a strong example of infrastructure reliability through standardization, showing how large organizations can keep heterogeneous on-prem network estates stable without depending on fragile manual operations.",
+            "pt": "A Uber mostra como usa Ansible para manter consistente sua rede corporativa global, distribuída por cerca de 5.000 dispositivos em cinco regiões e com vários fornecedores de hardware. O ponto mais interessante não é o Ansible em si, mas o modelo operacional ao redor dele: inventário em desired state, renderização específica por vendor a partir de abstrações compartilhadas, backup e enforcement noturnos, e histórico de configuração versionado em Git que transforma drift manual em dívida técnica visível. É um ótimo exemplo de confiabilidade de infraestrutura via padronização, mostrando como organizações grandes conseguem manter estável um parque heterogêneo de rede on-prem sem depender de operação manual frágil."
+          },
+          "insights": {
+            "en": [
+              "Uber separates provisioning from configuration management: Terraform handles cloud creation, while Ansible owns the steady-state configuration of already running network gear. That boundary keeps responsibilities clear and reduces tool sprawl inside each workflow.",
+              "The key systems move is modeling the network as vendor-agnostic desired state plus vendor-specific templates. Devices inherit group variables by region, role, and OS, letting the same intent compile into different hardware syntaxes without duplicating policy logic.",
+              "Nightly backup, golden-config generation, and push form a practical anti-drift loop. Any manual hotfix not reflected in inventory gets overwritten overnight, which makes temporary changes explicit technical debt instead of silently becoming the real architecture."
+            ],
+            "pt": [
+              "A Uber separa provisionamento de gestão de configuração: Terraform fica com a criação da infra em cloud, enquanto o Ansible cuida do estado estável dos equipamentos de rede que já estão rodando. Essa fronteira deixa as responsabilidades claras e reduz confusão entre ferramentas.",
+              "O movimento principal de design é modelar a rede como desired state agnóstico de vendor mais templates específicos por fabricante. Os dispositivos herdam variáveis por região, função e sistema, permitindo compilar a mesma intenção para sintaxes diferentes sem duplicar a lógica de política.",
+              "Backup noturno, geração de golden configs e push formam um loop prático contra drift. Qualquer hotfix manual que não seja refletido no inventário é sobrescrito durante a noite, o que transforma mudanças temporárias em dívida técnica explícita em vez de deixá-las virar a arquitetura real silenciosamente."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/ansible-automation-powers/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-03",
       "date": "2026-05-03",
       "tokensUsed": 41613,
