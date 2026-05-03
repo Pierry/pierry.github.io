@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-03",
+      "date": "2026-05-03",
+      "tokensUsed": 41613,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Newsletter",
+          "author": "Neo Kim",
+          "title": {
+            "en": "Multi-Agent Architectures, Clearly Explained",
+            "pt": "Arquiteturas Multiagente, Explicadas com Clareza"
+          },
+          "summary": {
+            "en": "Neo Kim argues that most teams adopt multi-agent systems too early, before a single agent has truly hit hard limits in context, parallelism, or specialization. The article turns that intuition into a practical decision framework: stay with one agent while prompts, tools, and workflow shape still solve the problem, then move to coordinated architectures only when one agent can no longer hold the needed context, run independent work in parallel, or safely combine different tools and permissions. From there, the piece maps the main coordination topologies, especially orchestrator-worker, pipeline, and hierarchical designs, and explains how each one trades off speed, control, observability, and failure handling.",
+            "pt": "Neo Kim defende que a maioria dos times adota sistemas multiagente cedo demais, antes de um agente único realmente bater nos limites duros de contexto, paralelismo ou especialização. O artigo transforma essa intuição em um framework prático de decisão: ficar com um agente só enquanto prompts, ferramentas e desenho de workflow ainda resolvem o problema, e só migrar para arquiteturas coordenadas quando um agente não consegue mais sustentar o contexto necessário, executar trabalhos independentes em paralelo ou combinar com segurança ferramentas e permissões diferentes. A partir daí, o texto mapeia as principais topologias de coordenação, especialmente orchestrator-worker, pipeline e arquitetura hierárquica, explicando como cada uma troca velocidade, controle, observabilidade e tratamento de falhas."
+          },
+          "insights": {
+            "en": [
+              "The most useful filter is not 'can I use many agents?' but 'has one agent actually failed on context, parallelism, or specialization?'. If not, multi-agent design mostly adds token cost, latency, and coordination overhead.",
+              "Orchestrator-worker is the most practical default because it centralizes control and keeps workers simple, but it also creates a new bottleneck: the lead agent becomes both planner and throughput limiter, so vague delegation causes duplicated work.",
+              "The article treats agent systems like classic systems design, choosing topology, contracts, memory boundaries, and privilege separation, instead of treating multi-agent as a magic upgrade in capability."
+            ],
+            "pt": [
+              "O filtro mais útil não é 'dá para usar vários agentes?', e sim 'um agente único realmente falhou por contexto, paralelismo ou especialização?'. Se não falhou, design multiagente tende a só adicionar custo de tokens, latência e overhead de coordenação.",
+              "Orchestrator-worker é o padrão mais prático porque centraliza o controle e mantém os workers simples, mas também cria um novo gargalo: o agente líder vira ao mesmo tempo planejador e limitador de throughput, então delegação vaga gera trabalho duplicado.",
+              "O texto trata sistemas de agentes como design clássico de sistemas, escolhendo topologia, contratos, fronteiras de memória e separação de privilégios, em vez de tratar multiagente como um upgrade mágico de capacidade."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/multi-agent-system"
+        }
+      ]
+    },
+    {
       "id": "2026-05-02-eng",
       "date": "2026-05-02",
       "tokensUsed": 35258,
