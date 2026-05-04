@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-04-eng",
+      "date": "2026-05-04",
+      "tokensUsed": 41194,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Kamran Zargahi",
+          "title": {
+            "en": "The 5 Layers Every Cloud Commitment Depends On",
+            "pt": "As 5 camadas das quais depende qualquer compromisso de cloud"
+          },
+          "summary": {
+            "en": "Uber argues that a hyperscale cloud commitment is not a procurement exercise but a layered systems-design problem with long-lived architectural consequences. The post lays out a five-layer evaluation sequence—regional and AZ topology, power architecture, fit-for-purpose compute design, SKU and silicon qualification, and network topology—showing how each layer constrains the next. What makes it valuable is the operator mindset: instead of accepting provider defaults, Uber frames cloud migration as an engineering discipline grounded in latency budgets, fault domains, power efficiency, hardware fit, and traffic portability across regions, zones, and even on-prem boundaries.",
+            "pt": "A Uber argumenta que um compromisso de cloud em escala hyperscale não é uma decisão de compras, e sim um problema de design de sistemas em camadas, com consequências arquiteturais de longo prazo. O texto organiza a avaliação em cinco etapas — topologia de regiões e zonas, arquitetura de energia, desenho de compute adequado ao workload, qualificação de SKUs e silício, e topologia de rede — mostrando como cada camada restringe a próxima. O que torna o post valioso é a mentalidade operacional: em vez de aceitar os defaults do provedor, a Uber trata migração para cloud como disciplina de engenharia baseada em orçamento de latência, domínios de falha, eficiência energética, aderência do hardware ao workload e portabilidade de tráfego entre regiões, zonas e até ambientes on-prem."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is sequencing. Uber treats region choice, power design, compute shape, SKU selection, and network routing as dependent layers, which prevents teams from optimizing a later decision before understanding the earlier physical constraints.",
+              "The post challenges the usual cloud-default mindset. Instead of adapting workloads to provider primitives, Uber starts from workload characteristics—latency, memory-to-core ratio, silicon behavior, GPU fabric, portability—and lets those requirements drive the target cloud design.",
+              "Operational autonomy is a first-class design goal. Uber highlights abstraction layers that let it redirect traffic across regions, zones, cloud, and on-prem in minutes, which turns migration architecture into a resilience and leverage strategy rather than a one-way dependency."
+            ],
+            "pt": [
+              "A ideia mais forte é a sequência de decisões. A Uber trata escolha de região, desenho de energia, formato de compute, seleção de SKU e roteamento de rede como camadas dependentes, evitando otimizar uma decisão tardia antes de entender as restrições físicas anteriores.",
+              "O post bate de frente com a mentalidade padrão de cloud. Em vez de adaptar workloads aos primitivos do provedor, a Uber parte das características do workload — latência, proporção memória-core, comportamento do silício, malha de GPUs, portabilidade — e deixa esses requisitos guiarem o desenho final.",
+              "Autonomia operacional aparece como objetivo de arquitetura, não detalhe. A Uber destaca camadas de abstração que permitem redirecionar tráfego entre regiões, zonas, cloud e on-prem em minutos, transformando a arquitetura de migração em estratégia de resiliência e poder de negociação."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/five-layers-cloud/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-04",
       "date": "2026-05-04",
       "tokensUsed": 61140,
