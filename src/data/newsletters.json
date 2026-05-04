@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-04",
+      "date": "2026-05-04",
+      "tokensUsed": 61140,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Newsletter",
+          "author": "Neo Kim and Louis-François Bouchard",
+          "title": {
+            "en": "Design a personal AI chat assistant",
+            "pt": "Como projetar um assistente pessoal de IA"
+          },
+          "summary": {
+            "en": "The article explains when it makes sense to stop relying on generic chat products and build an assistant you fully control. Its core argument is architectural: once the assistant becomes a real product feature, teams need tighter control over privacy, behavior, product integration, security, and cost. From there, it walks through the key system-design choices behind a production-minded conversational assistant, including tokenization, context engineering, persistent memory, streaming, prompt-injection defenses, model routing, and cost-aware conversation management.",
+            "pt": "O artigo mostra quando faz sentido parar de depender de chats genéricos e construir um assistente totalmente controlado pelo seu produto. O argumento central é arquitetural: quando o assistente vira uma funcionalidade de verdade, o time precisa de muito mais controle sobre privacidade, comportamento, integração com o produto, segurança e custo. A partir daí, o texto percorre as principais decisões de design de um assistente conversacional pronto para produção, incluindo tokenização, engenharia de contexto, memória persistente, streaming, defesa contra prompt injection, roteamento de modelos e gestão de custo por conversa."
+          },
+          "insights": {
+            "en": [
+              "The most important shift is treating the assistant as a system, not a prompt. Product-grade assistants need architecture around the model: auth, memory, streaming, policy enforcement, and observability.",
+              "Latency and cost do not depend only on model speed. Long conversations create token overhead, so context compaction, prompt caching, and model routing become first-class design decisions.",
+              "Owning the full request path changes the risk profile. Teams can keep sensitive data on their own infrastructure, restrict model behavior, and add injection defenses and output guardrails before the response reaches the user."
+            ],
+            "pt": [
+              "A principal mudança é tratar o assistente como um sistema, não como um prompt. Um assistente de produto precisa de arquitetura em volta do modelo, com auth, memória, streaming, políticas e observabilidade.",
+              "Latência e custo não dependem só da velocidade do modelo. Conversas longas aumentam muito o overhead de tokens, então compactação de contexto, prompt caching e model routing viram decisões centrais de design.",
+              "Controlar o caminho completo da requisição muda o risco do sistema. O time consegue manter dados sensíveis na própria infraestrutura, restringir o comportamento do modelo e adicionar defesas contra prompt injection e guardrails de saída antes de responder ao usuário."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/ai-chat-assistant"
+        }
+      ]
+    },
+    {
       "id": "2026-05-03-eng",
       "date": "2026-05-03",
       "tokensUsed": 27242,
