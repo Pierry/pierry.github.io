@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-05",
+      "date": "2026-05-05",
+      "tokensUsed": 50096,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "OpenAI Engineering",
+          "author": "Yi Zhang and William McDonald",
+          "title": {
+            "en": "How OpenAI delivers low-latency voice AI at scale",
+            "pt": "Como a OpenAI entrega voz com IA de baixa latência em escala"
+          },
+          "summary": {
+            "en": "OpenAI explains how it rebuilt the infrastructure behind real-time voice interactions so conversational AI can feel as fast as natural speech even at global scale. The post is valuable because it treats voice AI as a systems-design problem: connection setup, WebRTC termination, routing, latency stability, state ownership, and failure isolation all matter as much as the model itself. Instead of pushing WebRTC session state deep into backend services, OpenAI split media relay from transceiver ownership, preserving standard client behavior while making the internal architecture scale more cleanly on Kubernetes.",
+            "pt": "A OpenAI mostra como reconstruiu a infraestrutura por trás das interações de voz em tempo real para que a IA conversacional responda na velocidade natural da fala, mesmo em escala global. O valor do texto está em tratar voz com IA como um problema de design de sistemas: setup de conexão, terminação WebRTC, roteamento, estabilidade de latência, ownership de estado e isolamento de falhas importam tanto quanto o modelo. Em vez de empurrar o estado da sessão WebRTC para os serviços de backend, a OpenAI separou relay de mídia e ownership do transceiver, preservando o comportamento padrão do cliente enquanto deixa a arquitetura interna mais escalável em Kubernetes."
+          },
+          "insights": {
+            "en": [
+              "The main architectural move is separating protocol compatibility from backend simplicity. The transceiver remains the single owner of ICE, DTLS, and SRTP session state, while internal services receive simpler protocols better suited to elastic infrastructure.",
+              "This is a strong reminder that low latency is a full-stack property. Fast models are not enough if connection setup, jitter, packet loss, or routing instability break turn-taking in the conversation.",
+              "The post is broadly useful because it frames real-time AI as infrastructure design, not just model serving. Teams building voice, agents, or interactive copilots need to reason about edge placement, session ownership, and failure boundaries early."
+            ],
+            "pt": [
+              "O principal movimento arquitetural é separar compatibilidade de protocolo de simplicidade no backend. O transceiver continua como dono único do estado de ICE, DTLS e SRTP, enquanto os serviços internos recebem protocolos mais simples e mais fáceis de escalar.",
+              "É um ótimo lembrete de que baixa latência é uma propriedade do sistema inteiro. Modelo rápido não resolve se setup de conexão, jitter, perda de pacote ou instabilidade de roteamento quebram a cadência natural da conversa.",
+              "O texto é amplamente útil porque enquadra IA em tempo real como problema de infraestrutura, não só de serving de modelo. Times que constroem voz, agentes ou copilots interativos precisam pensar cedo em edge placement, ownership de sessão e fronteiras de falha."
+            ]
+          },
+          "link": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-04-eng",
       "date": "2026-05-04",
       "tokensUsed": 41194,
