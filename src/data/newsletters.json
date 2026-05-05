@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-05-eng",
+      "date": "2026-05-05",
+      "tokensUsed": 18300,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Mark Brown",
+          "title": {
+            "en": "Azure Cosmos DB Conf 2026 Recap: Lessons from Production",
+            "pt": "Azure Cosmos DB Conf 2026: lições de produção"
+          },
+          "summary": {
+            "en": "Microsoft turned its Cosmos DB conference recap into a solid systems-design post about what really breaks at scale: partition strategy, query shape, indexing, and data modeling. The strongest thread is that throughput problems often look like capacity problems but are actually access-pattern problems, as shown by a case where fixing a hot partition dropped RU usage from full saturation to roughly a third without adding capacity. For engineering leaders and backend teams, the value is the practical framing: scale failures usually surface bad design decisions early, and databases become an architectural feedback mechanism rather than just storage.",
+            "pt": "A Microsoft transformou o recap do Cosmos DB Conf num bom texto de design de sistemas sobre o que realmente quebra em escala: estratégia de partição, formato das queries, indexação e modelagem de dados. O fio mais forte é que muitos problemas de throughput parecem falta de capacidade, mas na prática são problemas de padrão de acesso, como no caso em que corrigir uma hot partition derrubou o uso de RU de saturação total para algo perto de um terço sem aumentar capacidade. Para líderes de engenharia e times de backend, o valor está no enquadramento prático: falhas de escala normalmente expõem decisões ruins de design cedo, e o banco vira um mecanismo de feedback arquitetural, não só armazenamento."
+          },
+          "insights": {
+            "en": [
+              "Partition keys are not schema details, they are scaling decisions. A key that matches identity but not traffic distribution can cap usable throughput long before the cluster itself is exhausted.",
+              "Query cost is an architectural multiplier. Rewriting access paths to stay partition-local can cut RU cost by orders of magnitude, which directly changes latency and cost envelopes.",
+              "The broader lesson is useful beyond Cosmos DB: adding capacity often masks design flaws temporarily, while better data modeling, indexing, and workload-aware access patterns create durable scale."
+            ],
+            "pt": [
+              "Chave de partição não é detalhe de schema, é decisão de escala. Uma chave que combina com identidade, mas não com distribuição de tráfego, pode limitar o throughput útil muito antes de o cluster acabar de verdade.",
+              "Custo de query é multiplicador arquitetural. Reescrever caminhos de acesso para ficar dentro da partição pode derrubar RU em ordens de magnitude, mudando direto a faixa de latência e custo.",
+              "A lição maior vale além de Cosmos DB: adicionar capacidade costuma só esconder falha de design por um tempo, enquanto modelagem melhor, indexação e padrões de acesso conscientes do workload criam escala durável."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/blog/azure-cosmos-db-conf-2026-recap-lessons-from-production"
+        }
+      ]
+    },
+    {
       "id": "2026-05-05",
       "date": "2026-05-05",
       "tokensUsed": 50096,
