@@ -1,6 +1,28 @@
 {
   "threads": [
     {
+      "slug": "assistants-are-systems",
+      "date": "2026-05-06",
+      "title": {
+        "en": "Assistants are systems now",
+        "pt": "Assistente virou sistema"
+      },
+      "description": {
+        "en": "Four recent digests converging on the same idea: once an assistant touches production, the hard part stops being the model and starts being the system around it.",
+        "pt": "Quatro digests recentes chegando na mesma tese: quando o assistente encosta em produção, a parte difícil deixa de ser o modelo e vira o sistema em volta dele."
+      },
+      "body": {
+        "en": "The most interesting AI posts this week weren't really about prompts. They were about **system design**.\n\n**Cloudflare's agent-to-production demo** is the clearest signal. The breakthrough is not that an agent can click buttons faster. It's that discovery, identity, permissions and billing are being reshaped into a control plane a machine can actually use. Infrastructure is becoming legible to agents.\n\n**The personal AI assistant architecture post** makes the same argument from the product side. The moment the assistant becomes a real feature, the work shifts to memory, auth, context management, cost control, prompt-injection defense and observability. The model is inside the box, but the box is the product.\n\n**The multi-agent architecture piece** adds an important constraint: don't split into many agents just because you can. First prove that a single agent has actually hit a hard limit in context, parallelism or specialization. Coordination is architecture, not magic.\n\nEven **OpenAI's realtime voice infrastructure** fits the pattern. Low-latency conversation is not won by model speed alone. It's won by session ownership, protocol boundaries, routing and failure isolation across the whole stack.\n\nPut together, the through-line is simple: assistants are leaving the chat window and entering the world of control planes, topologies, privileges and SLOs. The question is no longer *which model do we call?* but *what kind of system are we really building around it?*",
+        "pt": "Os posts mais interessantes de IA nesta semana nem eram sobre prompt. Eram sobre **design de sistemas**.\n\nA demo da **Cloudflare**, com agente criando conta, comprando domínio e fazendo deploy, é o sinal mais forte. O avanço não é o agente clicar mais rápido. É descoberta, identidade, permissão e billing virando um control plane que máquina consegue consumir. Infra está ficando legível para agente.\n\nO texto sobre **como projetar um assistente pessoal de IA** faz a mesma defesa do lado de produto. No momento em que o assistente vira feature de verdade, o trabalho muda para memória, auth, contexto, custo, defesa contra prompt injection e observabilidade. O modelo está dentro da caixa, mas a caixa inteira é o produto.\n\nO artigo sobre **arquitetura multiagente** adiciona o freio certo: não quebre tudo em vários agentes só porque dá. Primeiro prove que um agente único realmente bateu no limite de contexto, paralelismo ou especialização. Coordenação é arquitetura, não mágica.\n\nAté o post da **OpenAI sobre voz em tempo real** entra no mesmo fio. Conversa de baixa latência não se resolve só com modelo rápido. Se resolve com ownership de sessão, fronteira de protocolo, roteamento e isolamento de falha na stack inteira.\n\nJuntando tudo, o recado é simples: assistente está saindo da janelinha de chat e entrando no mundo de control plane, topologia, privilégio e SLO. A pergunta deixou de ser *qual modelo chamar?* e virou *que tipo de sistema estamos construindo em volta dele?*"
+      },
+      "entries": [
+        "2026-05-06-1",
+        "2026-05-04-1",
+        "2026-05-03-1",
+        "2026-05-05-1"
+      ]
+    },
+    {
       "slug": "agents-in-production",
       "date": "2026-04-29",
       "title": {
