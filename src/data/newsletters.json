@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-06-eng",
+      "date": "2026-05-06",
+      "tokensUsed": 13670,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Agent Framework",
+          "author": "Shawn Tao",
+          "title": {
+            "en": "From Local to Production: Deploy Your Microsoft Agent Framework Agent with Foundry Hosted Agents",
+            "pt": "Do local para produção: deploy de agentes com Microsoft Agent Framework no Foundry Hosted Agents"
+          },
+          "summary": {
+            "en": "Microsoft lays out what a production deployment path for AI agents should actually include beyond getting a demo working locally. The post presents Foundry Hosted Agents as a managed runtime for Microsoft Agent Framework workloads, combining containerized deployment, built-in identity, per-session isolated sandboxes, persistent session state, observability, versioned endpoints, and automatic scale-to-zero behavior. The useful systems lesson is that agent platforms need a real control plane for lifecycle, state, rollout, and protocol handling, not just model access and tool wiring.",
+            "pt": "A Microsoft mostra o que um caminho real de produção para agentes de IA precisa ter além de um demo funcionando localmente. O post apresenta o Foundry Hosted Agents como runtime gerenciado para workloads do Microsoft Agent Framework, combinando deploy em container, identidade embutida, sandboxes isolados por sessão, persistência de estado, observabilidade, endpoints versionados e scale-to-zero automático. A lição mais útil de arquitetura é que plataformas de agentes precisam de um control plane de verdade para ciclo de vida, estado, rollout e protocolos, não só acesso a modelo e integração de ferramentas."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is treating agent deployment as a stateful systems problem. Session identity, filesystem persistence, and isolated sandboxes are product requirements for long-running agents, not optional infrastructure extras.",
+              "Scale-to-zero plus resume-with-state is a meaningful operational pattern for agent workloads, because many sessions are bursty and expensive to keep warm all the time but still need continuity when the next request arrives.",
+              "The platform focus on stable endpoints, weighted rollouts, and multiple protocols shows that production agent systems need the same release and compatibility discipline as any other application platform."
+            ],
+            "pt": [
+              "A ideia mais forte é tratar deploy de agentes como problema de sistemas stateful. Identidade de sessão, persistência de filesystem e sandboxes isolados são requisitos de produto para agentes de longa duração, não extras opcionais de infra.",
+              "Scale-to-zero com retomada de estado é um padrão operacional bem importante para workloads de agentes, porque muita sessão é bursty e cara para ficar aquecida o tempo todo, mas ainda precisa de continuidade quando a próxima requisição chega.",
+              "O foco da plataforma em endpoints estáveis, rollout ponderado e múltiplos protocolos mostra que sistemas de agentes em produção precisam da mesma disciplina de release e compatibilidade de qualquer plataforma de aplicação."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/agent-framework/from-local-to-production-deploy-your-microsoft-agent-framework-agent-with-foundry-hosted-agents/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-06",
       "date": "2026-05-06",
       "tokensUsed": 49691,
