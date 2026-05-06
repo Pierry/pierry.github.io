@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-06",
+      "date": "2026-05-06",
+      "tokensUsed": 49691,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Sid Chatterjee and Brendan Irvine-Broque",
+          "title": {
+            "en": "Agents can now create Cloudflare accounts, buy domains, and deploy",
+            "pt": "Agentes agora conseguem criar conta na Cloudflare, comprar domínio e fazer deploy"
+          },
+          "summary": {
+            "en": "Cloudflare shows what agent-native infrastructure actually looks like when software agents stop at generation and start owning production workflows. Through a new protocol built with Stripe Projects, an agent can discover available services, provision a Cloudflare account, obtain credentials, register a domain, and deploy an application with the human only stepping in for approvals and terms acceptance when needed. The important architectural idea is not the demo itself, but the control-plane split behind it: service discovery, delegated identity, and payment authorization are exposed in a machine-usable way, so agents can safely complete real infrastructure tasks without copying API keys or billing details by hand.",
+            "pt": "A Cloudflare mostra como fica uma infraestrutura realmente nativa para agentes quando o agente para de só gerar código e passa a fechar o fluxo até produção. Com um novo protocolo feito junto com o Stripe Projects, o agente consegue descobrir serviços disponíveis, provisionar conta na Cloudflare, obter credenciais, registrar um domínio e publicar a aplicação, deixando o humano só para aprovações e aceite de termos quando necessário. A ideia arquitetural mais forte não é a demo em si, e sim a separação de control plane por trás dela: descoberta de serviços, identidade delegada e autorização de pagamento aparecem de forma consumível por máquina, permitindo que agentes executem tarefas reais de infraestrutura sem depender de copiar API key ou dado de cobrança na mão."
+          },
+          "insights": {
+            "en": [
+              "The most important move is turning infrastructure onboarding into protocol design. Discovery, auth, and payment become explicit machine interfaces instead of hidden human workflows in dashboards and forms.",
+              "This is a useful pattern for any agent platform: if services expose catalog metadata, delegated identity, scoped credentials, and budget controls, agents can act safely without getting raw secrets or unrestricted spending power.",
+              "The broader systems lesson is that agent usability depends on control planes as much as model quality. Real-world automation needs identity, permissions, billing, and provisioning to be agent-readable from the start."
+            ],
+            "pt": [
+              "O movimento principal é transformar onboarding de infraestrutura em design de protocolo. Descoberta, auth e pagamento viram interfaces explícitas para máquina, em vez de fluxos escondidos em dashboard e formulário.",
+              "Esse padrão serve para qualquer plataforma de agentes: se o serviço expõe catálogo, identidade delegada, credenciais com escopo e controle de orçamento, o agente consegue agir com segurança sem receber segredo bruto nem acesso sem limite.",
+              "A lição maior de sistemas é que usabilidade para agentes depende tanto de control plane quanto de modelo. Automação real precisa que identidade, permissões, billing e provisionamento já nasçam legíveis para agentes."
+            ]
+          },
+          "link": "https://blog.cloudflare.com/agents-stripe-projects/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-05-eng",
       "date": "2026-05-05",
       "tokensUsed": 18300,
