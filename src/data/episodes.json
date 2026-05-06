@@ -1,6 +1,14 @@
 {
   "episodes": [
     {
+      "title": "Ep #19 - Equilibrando Complexidade e Eficiência na Era da IA e da Escala",
+      "description": "Este episódio explora como as escolhas de arquitetura e organização definem o sucesso de sistemas modernos, abordando três temas fundamentais para a engenharia de software atual:<ol><li><strong>Arquiteturas Multiagente:</strong> Uma análise sobre quando a sofisticação de múltiplos agentes de IA é re",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/119515633/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-5%2F946a8afd-d0a1-a9df-d4a5-146090ec7ea7.m4a",
+      "pubDate": "2026-05-05",
+      "duration": "00:25:07",
+      "language": "en"
+    },
+    {
       "title": "Ep #18 - Corretude, Resiliência e a Evolução da IA Agêntica",
       "description": "Este episódio foca em três temas fundamentais para a construção de produtos e plataformas em escala: a <strong>corretude em sistemas orientados a eventos</strong>, estratégias de <strong>proteção de banco de dados</strong> em ambientes multitenant e os novos avanços do <strong>GPT-5.5</strong> para ",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/119225774/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-29%2F04cf6250-c5d1-d77c-cfbe-6d95cba80c16.m4a",
