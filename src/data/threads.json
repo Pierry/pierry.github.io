@@ -1,6 +1,31 @@
 {
   "threads": [
     {
+      "slug": "assistants-are-systems",
+      "date": "2026-05-06",
+      "title": {
+        "en": "Assistants are systems now",
+        "pt": "Assistente virou sistema"
+      },
+      "description": {
+        "en": "Seven recent digests point to the same shift: once an assistant reaches production, the model is only one component inside a bigger system of memory, coordination, permissions, evaluation and operating constraints.",
+        "pt": "Sete digests recentes batem na mesma virada: quando o assistente entra em produção, o modelo vira só uma peça dentro de um sistema maior de memória, coordenação, permissões, avaliação e restrições operacionais."
+      },
+      "body": {
+        "en": "The best AI writing this cycle was not really about prompts. It was about **system design under agent pressure**.\n\n**Cloudflare's agent-to-production demo** makes the shift obvious. The novelty is not that an agent can click through a flow. The novelty is that discovery, identity, permissions and billing are being reshaped into interfaces a machine can reliably operate. Infra is becoming legible to software that acts.\n\nThe post on **personal AI assistant architecture** says the same thing from the product side. The minute the assistant becomes a real feature, the hard problems move to memory, auth, context boundaries, cost control, prompt-injection defense and observability. The model sits inside the product, but the product is the system around it.\n\nThe newer pieces reinforce that this is not a single-agent story. **Slack's long-running security agents** show that context cannot stay as a giant transcript forever. Production agents need working memory, evidence review and a stable timeline, each with a different job. **The multi-agent architecture essay** adds the missing discipline: only split work across multiple agents when a single one has truly broken on context, parallelism or specialization. Coordination is expensive, so topology has to earn its keep.\n\nThen **Shopify's Flow agent** closes the loop with the production reality. Better benchmarks were not enough. The system only improved when real user traffic exposed the gap, an evaluation flywheel scored failures, and weekly retraining turned operations into product advantage. Even **OpenAI's realtime voice stack** fits the same pattern. Low latency feels magical to users, but it is won through session ownership, routing, protocol boundaries and failure isolation, not model quality alone.\n\nPut together, the message is blunt: assistants are not becoming better chatbots. They are becoming distributed systems with memory policies, permission surfaces, orchestration choices and operational feedback loops. The model matters, but architecture now decides whether the assistant is usable, trustworthy and economically viable.",
+        "pt": "Os melhores textos de IA deste ciclo nem eram sobre prompt. Eram sobre **design de sistemas sob pressão de agente**.\n\nA demo da **Cloudflare**, com agente criando conta, comprando domínio e fazendo deploy, deixa a virada escancarada. A novidade não é o agente clicar num fluxo. A novidade é descoberta, identidade, permissão e billing virando interfaces que uma máquina consegue operar com previsibilidade. Infra está ficando legível para software que age.\n\nO texto sobre **arquitetura de assistente pessoal de IA** faz a mesma defesa do lado de produto. No minuto em que o assistente vira feature real, o problema difícil muda para memória, auth, fronteira de contexto, controle de custo, defesa contra prompt injection e observabilidade. O modelo fica dentro do produto, mas o produto é o sistema em volta dele.\n\nOs textos novos reforçam que isso não é história de agente sozinho. Os **agentes de segurança da Slack**, de longa duração, mostram que contexto não pode ficar para sempre como um transcript gigante. Agente em produção precisa de memória de trabalho, revisão de evidências e timeline estável, cada uma com função própria. O artigo sobre **arquitetura multiagente** adiciona a disciplina que faltava: só vale quebrar o trabalho em vários agentes quando um agente único realmente estourou em contexto, paralelismo ou especialização. Coordenação custa caro, então topologia precisa se pagar.\n\nAí o **agente do Shopify Flow** fecha o ciclo com a realidade de produção. Benchmark melhor não bastou. O sistema só melhorou quando tráfego real expôs a lacuna, um flywheel de avaliação pontuou as falhas e retreino semanal transformou operação em vantagem de produto. Até a stack de **voz em tempo real da OpenAI** entra no mesmo padrão. Baixa latência parece mágica para o usuário, mas se ganha com ownership de sessão, roteamento, fronteira de protocolo e isolamento de falha, não só com modelo melhor.\n\nJuntando tudo, o recado é seco: assistente não está virando chatbot melhor. Está virando sistema distribuído com política de memória, superfície de permissão, escolha de orquestração e loop operacional de feedback. O modelo importa, mas agora a arquitetura decide se o assistente é usável, confiável e viável economicamente."
+      },
+      "entries": [
+        "2026-04-30-eng-1",
+        "2026-04-30-1",
+        "2026-04-22-eng-1",
+        "2026-05-06-1",
+        "2026-05-04-1",
+        "2026-05-03-1",
+        "2026-05-05-1"
+      ]
+    },
+    {
       "slug": "infra-is-control-plane",
       "date": "2026-05-06",
       "title": {
@@ -21,28 +46,6 @@
         "2026-05-03-eng-1",
         "2026-05-02-eng-1",
         "2026-05-01-eng-1"
-      ]
-    },
-    {
-      "slug": "assistants-are-systems",
-      "date": "2026-05-06",
-      "title": {
-        "en": "Assistants are systems now",
-        "pt": "Assistente virou sistema"
-      },
-      "description": {
-        "en": "Four recent digests converging on the same idea: once an assistant touches production, the hard part stops being the model and starts being the system around it.",
-        "pt": "Quatro digests recentes chegando na mesma tese: quando o assistente encosta em produção, a parte difícil deixa de ser o modelo e vira o sistema em volta dele."
-      },
-      "body": {
-        "en": "The most interesting AI posts this week weren't really about prompts. They were about **system design**.\n\n**Cloudflare's agent-to-production demo** is the clearest signal. The breakthrough is not that an agent can click buttons faster. It's that discovery, identity, permissions and billing are being reshaped into a control plane a machine can actually use. Infrastructure is becoming legible to agents.\n\n**The personal AI assistant architecture post** makes the same argument from the product side. The moment the assistant becomes a real feature, the work shifts to memory, auth, context management, cost control, prompt-injection defense and observability. The model is inside the box, but the box is the product.\n\n**The multi-agent architecture piece** adds an important constraint: don't split into many agents just because you can. First prove that a single agent has actually hit a hard limit in context, parallelism or specialization. Coordination is architecture, not magic.\n\nEven **OpenAI's realtime voice infrastructure** fits the pattern. Low-latency conversation is not won by model speed alone. It's won by session ownership, protocol boundaries, routing and failure isolation across the whole stack.\n\nPut together, the through-line is simple: assistants are leaving the chat window and entering the world of control planes, topologies, privileges and SLOs. The question is no longer *which model do we call?* but *what kind of system are we really building around it?*",
-        "pt": "Os posts mais interessantes de IA nesta semana nem eram sobre prompt. Eram sobre **design de sistemas**.\n\nA demo da **Cloudflare**, com agente criando conta, comprando domínio e fazendo deploy, é o sinal mais forte. O avanço não é o agente clicar mais rápido. É descoberta, identidade, permissão e billing virando um control plane que máquina consegue consumir. Infra está ficando legível para agente.\n\nO texto sobre **como projetar um assistente pessoal de IA** faz a mesma defesa do lado de produto. No momento em que o assistente vira feature de verdade, o trabalho muda para memória, auth, contexto, custo, defesa contra prompt injection e observabilidade. O modelo está dentro da caixa, mas a caixa inteira é o produto.\n\nO artigo sobre **arquitetura multiagente** adiciona o freio certo: não quebre tudo em vários agentes só porque dá. Primeiro prove que um agente único realmente bateu no limite de contexto, paralelismo ou especialização. Coordenação é arquitetura, não mágica.\n\nAté o post da **OpenAI sobre voz em tempo real** entra no mesmo fio. Conversa de baixa latência não se resolve só com modelo rápido. Se resolve com ownership de sessão, fronteira de protocolo, roteamento e isolamento de falha na stack inteira.\n\nJuntando tudo, o recado é simples: assistente está saindo da janelinha de chat e entrando no mundo de control plane, topologia, privilégio e SLO. A pergunta deixou de ser *qual modelo chamar?* e virou *que tipo de sistema estamos construindo em volta dele?*"
-      },
-      "entries": [
-        "2026-05-06-1",
-        "2026-05-04-1",
-        "2026-05-03-1",
-        "2026-05-05-1"
       ]
     },
     {
