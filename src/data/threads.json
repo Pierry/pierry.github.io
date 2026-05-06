@@ -1,6 +1,29 @@
 {
   "threads": [
     {
+      "slug": "infra-is-control-plane",
+      "date": "2026-05-06",
+      "title": {
+        "en": "Infra is control plane now",
+        "pt": "Infra virou control plane"
+      },
+      "description": {
+        "en": "Five recent engineering posts converge on the same idea: modern infrastructure wins less by adding raw capacity and more by encoding workload reality into routing, policy, topology and durable operational abstractions.",
+        "pt": "Cinco posts recentes de engenharia chegam na mesma tese: infraestrutura moderna ganha menos por capacidade bruta e mais por codificar a realidade do workload em roteamento, política, topologia e abstrações operacionais duráveis."
+      },
+      "body": {
+        "en": "The best infrastructure writing this week had the same subtext: **scale problems usually start as design problems**.\n\n**Cosmos DB** makes that painfully clear. Teams think they need more database capacity, then discover the real bottleneck was a bad partition key, the wrong query path, or an index model that fights the workload. Throughput is often architecture wearing a cost badge.\n\n**Uber's cloud decision framework** says the same thing at a bigger altitude. Region, power, compute shape, silicon qualification and network topology are not procurement details. They are the stack of constraints that decides whether your workload will behave well before anyone debates price.\n\n**Uber's network automation system** turns this into operating model. Desired state, vendor-specific rendering and nightly enforcement are a statement that infra should not depend on tribal memory or heroic SSH sessions. If the system cannot reassert policy automatically, the policy is fake.\n\n**Netflix's model-serving routing layer** is the software version of the same move. Routing stops being plumbing and becomes the control plane that hides sharding, experiments, feature lookup and model evolution from every caller. The point is not clever forwarding. The point is making change safe.\n\n**Airbnb's embedded workflow engine** lands on the same principle from another angle. Instead of pushing durable execution into a separate orchestration empire, it keeps reliability close to the service and the datastore that already defines that service's reality.\n\nStitched together, the pattern is hard to miss: the strongest systems are the ones that encode constraints where the workload actually lives. More capacity helps. Better control planes compound.",
+        "pt": "Os melhores posts de infraestrutura desta semana tinham o mesmo subtexto: **problema de escala quase sempre começa como problema de design**.\n\nO caso do **Cosmos DB** deixa isso bem cru. O time acha que precisa de mais capacidade no banco, mas o gargalo real era chave de partição ruim, caminho de query errado ou indexação brigando com o workload. Throughput muitas vezes é arquitetura usando crachá de custo.\n\nO framework da **Uber para decisões de cloud** faz a mesma defesa em altitude maior. Região, energia, formato de compute, qualificação de silício e topologia de rede não são detalhes de compras. São a pilha de restrições que define se o workload vai se comportar bem antes mesmo da conversa sobre preço.\n\nA automação de rede da **Uber com Ansible** transforma isso em modelo operacional. Desired state, renderização por vendor e enforcement noturno são uma forma de dizer que infra não pode depender de memória tribal nem de sessão heroica de SSH. Se o sistema não consegue reimpor a política sozinho, a política é de mentira.\n\nA camada de roteamento de serving da **Netflix** é a versão de software do mesmo movimento. Roteamento para de ser encanamento e vira control plane que esconde shard, experimento, busca de features e evolução de modelo de cada cliente. O ponto não é encaminhar requisição com esperteza. O ponto é tornar mudança segura.\n\nO engine embarcado de workflows do **Airbnb** chega na mesma conclusão por outro caminho. Em vez de empurrar execução durável para um império separado de orquestração, ele mantém confiabilidade perto do serviço e do datastore que já definem a realidade daquele domínio.\n\nJuntando tudo, o padrão é claro: os sistemas mais fortes são os que codificam restrição onde o workload realmente vive. Mais capacidade ajuda. Control plane melhor compõe melhor ainda."
+      },
+      "entries": [
+        "2026-05-05-eng-1",
+        "2026-05-04-eng-1",
+        "2026-05-03-eng-1",
+        "2026-05-02-eng-1",
+        "2026-05-01-eng-1"
+      ]
+    },
+    {
       "slug": "assistants-are-systems",
       "date": "2026-05-06",
       "title": {
