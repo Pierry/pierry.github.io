@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-07",
+      "date": "2026-05-07",
+      "tokensUsed": 1273416,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Shefali Jangid",
+          "title": {
+            "en": "Mobile System Design Interview",
+            "pt": "System design mobile para entrevistas"
+          },
+          "summary": {
+            "en": "This issue turns mobile system design into a practical distributed-systems problem instead of a UI exercise. It walks through how serious mobile apps handle offline edits, conflict resolution, delta sync, eventual consistency, background retry queues, token security, lifecycle constraints, and performance limits imposed by phones and unstable networks. The core lesson is that production mobile architecture is about syncing unreliable clients with a reliable backend while preserving trust, battery, speed, and data integrity.",
+            "pt": "Esta edição trata system design mobile como problema real de sistemas distribuídos, não como exercício de interface. Ela passa por edição offline, resolução de conflitos, delta sync, consistência eventual, filas de retry em background, segurança de tokens, limites de lifecycle e restrições de performance impostas por celulares e redes instáveis. A lição central é que arquitetura mobile de produção consiste em sincronizar clientes pouco confiáveis com um backend confiável sem perder confiança do usuário, bateria, velocidade e integridade de dados."
+          },
+          "insights": {
+            "en": [
+              "Conflict resolution is a product decision as much as a storage decision. Choosing between last-write-wins, versioning, or CRDTs directly changes user trust and the risk of silent data loss.",
+              "Delta sync plus server-issued tokens is the key efficiency pattern. Shipping only changes makes background sync viable on mobile, but only if the server owns ordering and deletion tracking.",
+              "Eventual consistency needs explicit UX states. Fast mobile apps often confirm actions later, so pending, confirmed, and failed states become part of the architecture, not just interface polish."
+            ],
+            "pt": [
+              "Resolução de conflitos é decisão de produto tanto quanto de storage. Escolher entre last-write-wins, versionamento ou CRDT muda direto a confiança do usuário e o risco de perder dado sem perceber.",
+              "Delta sync com tokens gerados pelo servidor é o padrão mais importante de eficiência. Enviar só mudanças viabiliza sync em background no mobile, mas só funciona bem quando o servidor controla ordenação e deleções.",
+              "Consistência eventual precisa aparecer na UX. App rápido quase sempre confirma ação depois, então estados como pendente, confirmado e falhou viram parte da arquitetura, não só detalhe de interface."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/mobile-system-design-concepts"
+        }
+      ]
+    },
+    {
       "id": "2026-05-06-eng",
       "date": "2026-05-06",
       "tokensUsed": 13670,
