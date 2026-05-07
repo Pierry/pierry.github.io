@@ -1,6 +1,29 @@
 {
   "threads": [
     {
+      "slug": "latency-is-policy",
+      "date": "2026-05-07",
+      "title": {
+        "en": "Latency is policy now",
+        "pt": "Latência virou política"
+      },
+      "description": {
+        "en": "Five uncovered digests converge on the same lesson: latency is rarely won by raw speed alone. It is usually shaped upstream by sync rules, cache eviction, retrieval strategy, CPU allocation and overload control.",
+        "pt": "Cinco digests ainda não cobertos chegam na mesma lição: latência quase nunca se resolve só com velocidade bruta. Ela normalmente é decidida antes, por regras de sync, política de cache, estratégia de retrieval, alocação de CPU e controle de overload."
+      },
+      "body": {
+        "en": "A lot of performance writing still talks like latency is a hardware problem. These posts argue the opposite. **Latency is mostly the visible output of policy.**\n\nThe mobile system design piece makes that obvious first. Offline edits, conflict resolution, delta sync and background retries are not implementation details. They decide whether a product feels instant, trustworthy and resilient on a weak connection. The app only looks fast because the sync contract was designed carefully.\n\nThe cache eviction essay says the same thing lower in the stack. TTL, LRU, LFU and segmented LRU are really different guesses about what will matter next. Hit rate is not magic. It is the consequence of choosing the right memory policy for the workload you actually have.\n\nMeta's rebuild of Facebook Groups search extends the pattern to retrieval. Exact-match search alone is too brittle, pure semantic search is too fuzzy, so the system runs both and lets ranking reconcile intent with precision. Relevance at speed comes from composition, not purity.\n\nUber's two infrastructure posts show the same lesson under heavier load. Hybrid core allocation treats CPU not as a flat pool but as a mix of guaranteed baseline and shared burst capacity. Intelligent load management moves overload protection next to storage, uses concurrency instead of naive QPS, and enforces fairness before one noisy tenant can drag everyone down. In both cases, latency improves because policy got smarter about contention.\n\nStitched together, the message is simple: performance work gets better when teams stop asking only how to make systems faster and start asking what rules decide who gets memory, compute, freshness and queue time. Speed matters, but the systems that stay fast are usually the ones with better control loops.",
+        "pt": "Muito texto sobre performance ainda fala como se latência fosse problema de hardware. Esses posts defendem o contrário. **Latência é, na maior parte, o resultado visível de política.**\n\nO texto de system design mobile deixa isso óbvio logo de cara. Edição offline, resolução de conflito, delta sync e retry em background não são detalhe de implementação. São eles que decidem se o produto parece instantâneo, confiável e resiliente numa conexão ruim. O app só parece rápido porque o contrato de sincronização foi bem desenhado.\n\nO texto sobre evicção de cache repete a mesma lição mais embaixo na stack. TTL, LRU, LFU e segmented LRU são palpites diferentes sobre o que vai importar em seguida. Hit rate não é mágica. É consequência de escolher a política de memória certa para o workload real.\n\nA reconstrução da busca do Facebook Groups, feita pela Meta, amplia o padrão para retrieval. Busca exata sozinha quebra fácil, busca semântica pura fica solta demais, então o sistema roda as duas e deixa o ranking reconciliar intenção com precisão. Relevância com velocidade vem de composição, não de pureza.\n\nOs dois posts da Uber mostram a mesma lógica sob carga mais pesada. Hybrid core allocation trata CPU não como pool plano, mas como mistura de capacidade garantida com burst compartilhado. O novo load management empurra proteção de overload para perto do storage, usa concorrência no lugar de QPS ingênuo e aplica fairness antes que um tenant barulhento arraste o resto. Nos dois casos, a latência melhora porque a política ficou mais inteligente diante da contenção.\n\nJuntando tudo, o recado é simples: trabalho de performance melhora quando o time para de perguntar só como deixar o sistema mais rápido e passa a perguntar quais regras decidem quem ganha memória, compute, frescor e tempo de fila. Velocidade importa, mas sistema que continua rápido quase sempre é sistema com loop de controle melhor."
+      },
+      "entries": [
+        "2026-05-07-1",
+        "2026-05-01-1",
+        "2026-04-29-eng-1",
+        "2026-04-27-eng-1",
+        "2026-04-26-eng-1"
+      ]
+    },
+    {
       "slug": "assistants-are-systems",
       "date": "2026-05-07",
       "title": {
