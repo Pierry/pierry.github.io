@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-07-eng",
+      "date": "2026-05-07",
+      "tokensUsed": 11355,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Spotify Engineering",
+          "author": "Devon Edwards Joseph",
+          "title": {
+            "en": "Background Coding Agents: Supercharging Downstream Consumer Dataset Migrations (Honk, Part 4)",
+            "pt": "Agentes de código em background acelerando migrações de datasets consumidores (Honk, Parte 4)"
+          },
+          "summary": {
+            "en": "Spotify shows a concrete production use case for coding agents beyond demos: migrating about 1,800 downstream data pipelines across multiple frameworks after deprecating heavily used datasets. Using Backstage lineage, Fleetshift orchestration, and its Honk agent, the team automated 240 migration pull requests and avoided an estimated 10 engineering weeks of manual work. The strongest lesson is that large-scale agentic maintenance succeeds less because of raw model power and more because of standardized repos, rich dependency metadata, explicit field mappings, and verification paths.",
+            "pt": "O Spotify mostra um caso real de produção para agentes de código além de demo: migrar cerca de 1.800 pipelines downstream em múltiplos frameworks depois da descontinuação de datasets muito usados. Com lineage no Backstage, orquestração via Fleetshift e o agente Honk, o time automatizou 240 pull requests de migração e evitou cerca de 10 semanas de trabalho manual. A lição mais forte é que manutenção agentic em larga escala depende menos de força bruta do modelo e mais de padronização de repositórios, metadados ricos de dependência, mapeamentos explícitos de campos e caminhos de verificação."
+          },
+          "insights": {
+            "en": [
+              "Agentic code migration becomes viable when the platform already knows dependency lineage, target repositories, and rollout status. Backstage and Fleetshift acted as the control plane, not just supporting tools.",
+              "Context quality was the main bottleneck. Human-oriented migration guides were too vague, while explicit field mapping tables materially improved the agent output.",
+              "Standardization and automated tests are force multipliers for coding agents. Where frameworks were inconsistent or verification was missing, automation quality dropped sharply."
+            ],
+            "pt": [
+              "Migração de código com agentes só fica viável quando a plataforma já conhece lineage, repositórios alvo e status do rollout. Backstage e Fleetshift funcionaram como control plane, não só como ferramenta auxiliar.",
+              "Qualidade de contexto foi o maior gargalo. Guias pensados para humanos eram vagos demais, enquanto tabelas explícitas de mapeamento de campos melhoraram de forma clara a saída do agente.",
+              "Padronização e testes automáticos multiplicam o valor de agentes de código. Onde os frameworks eram inconsistentes ou faltava verificação, a qualidade da automação caiu bastante."
+            ]
+          },
+          "link": "https://engineering.atspotify.com/2026/4/background-coding-agents-dataset-migrations-honk-part-4"
+        }
+      ]
+    },
+    {
       "id": "2026-05-07",
       "date": "2026-05-07",
       "tokensUsed": 1273416,
