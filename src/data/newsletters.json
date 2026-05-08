@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-08-eng",
+      "date": "2026-05-08",
+      "tokensUsed": 9430,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Agent Framework",
+          "author": "Jacob Alber",
+          "title": {
+            "en": "A Tour of Handoff Orchestration Pattern",
+            "pt": "Um tour pelo padrão de orquestração por handoff"
+          },
+          "summary": {
+            "en": "Microsoft explains a practical orchestration pattern for multi-agent systems once simple router-based flows stop being enough. Instead of a central controller deciding every branch, developers define a bounded graph of allowed agent-to-agent handoffs while each agent decides when to transfer control based on the conversation itself. The important systems lesson is that shared transcript, constrained topology, back-edges, and natural termination give teams a safer path from toy agent demos to production workflows that still need flexibility, follow-up questions, and human-in-the-loop turns.",
+            "pt": "A Microsoft explica um padrão prático de orquestração para sistemas multiagente quando fluxos simples com roteador central deixam de bastar. Em vez de um controlador central decidir cada desvio, o time define um grafo limitado de handoffs permitidos entre agentes, enquanto cada agente decide quando transferir o controle com base na própria conversa. A lição importante de arquitetura é que transcript compartilhado, topologia restrita, back-edges e término natural dão um caminho mais seguro para sair de demos de agentes e chegar em workflows de produção com flexibilidade, perguntas de follow-up e etapas human-in-the-loop."
+          },
+          "insights": {
+            "en": [
+              "The control plane stays with the developer. Agents can choose among declared edges, but they cannot invent new routes, which is a cleaner guardrail model than prompt-only routing.",
+              "Shared conversation state matters more than raw autonomy. Handoff works because specialists inherit the full transcript instead of operating as isolated single-shot tools.",
+              "This is a strong evolution path from sequential workflows. When follow-up questions, reversals, or mid-flow ownership changes appear, bounded handoff graphs are often simpler than custom branching code."
+            ],
+            "pt": [
+              "O control plane continua na mão do desenvolvedor. Os agentes escolhem entre arestas declaradas, mas não inventam novas rotas, o que vira uma guardrail bem mais limpa do que roteamento só por prompt.",
+              "Estado compartilhado da conversa importa mais do que autonomia bruta. O handoff funciona porque especialistas herdam o transcript inteiro, em vez de agir como tools isoladas de um turno só.",
+              "Isto é um caminho forte de evolução para além de workflows sequenciais. Quando aparecem follow-ups, reversões ou troca de dono no meio do fluxo, grafos limitados de handoff costumam ser mais simples do que código customizado de branching."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/agent-framework/a-tour-of-handoff-orchestration-pattern/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-08",
       "date": "2026-05-08",
       "tokensUsed": 1273275,
