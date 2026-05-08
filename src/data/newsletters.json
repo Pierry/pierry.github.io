@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-08",
+      "date": "2026-05-08",
+      "tokensUsed": 1273275,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "AlphaEvolve team",
+          "title": {
+            "en": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+            "pt": "AlphaEvolve, agente de código com Gemini ampliando impacto em várias áreas"
+          },
+          "summary": {
+            "en": "Google DeepMind shows AlphaEvolve maturing from an impressive research demo into a broadly useful algorithm-optimization system with measurable production and scientific impact. The report covers gains in DNA sequencing accuracy, power-grid optimization, geospatial disaster prediction, quantum circuit design, TPU hardware design, Spanner storage efficiency, and commercial workloads such as Klarna and FM Logistic. The important lesson is that the biggest leverage from coding agents may come not from generating application code, but from discovering and refining algorithms inside critical infrastructure, scientific tooling, and high-cost optimization problems.",
+            "pt": "O Google DeepMind mostra o AlphaEvolve saindo de demo de pesquisa impressionante para virar um sistema amplo de otimização de algoritmos com impacto mensurável em produção e ciência. O relatório cobre ganhos em acurácia de sequenciamento de DNA, otimização de rede elétrica, previsão geoespacial de desastres, desenho de circuitos quânticos, design de hardware de TPU, eficiência de storage no Spanner e cargas comerciais como Klarna e FM Logistic. A lição mais importante é que o maior valor de agentes de código pode não estar em gerar código de aplicação, e sim em descobrir e refinar algoritmos dentro de infraestrutura crítica, ferramentas científicas e problemas caros de otimização."
+          },
+          "insights": {
+            "en": [
+              "This is a strong signal that agentic coding systems can create durable value below the application layer, improving compilers, storage engines, hardware circuits, and optimization heuristics that affect entire platforms.",
+              "The most defensible use case is not autonomy for its own sake, but constrained search over hard objective functions where humans can verify quality through benchmarks, error rates, and efficiency gains.",
+              "For engineering leaders, the strategic takeaway is that proprietary data, evaluation loops, and deployable optimization targets matter more than flashy chat interfaces when turning AI into infrastructure advantage."
+            ],
+            "pt": [
+              "Isto sinaliza forte que sistemas agentic de código podem gerar valor durável abaixo da camada de aplicação, melhorando compiladores, engines de storage, circuitos de hardware e heurísticas de otimização que afetam plataformas inteiras.",
+              "O caso de uso mais defensável não é autonomia por autonomia, e sim busca restrita sobre funções objetivo difíceis, onde humanos conseguem verificar qualidade por benchmark, taxa de erro e ganho de eficiência.",
+              "Para liderança de engenharia, a leitura estratégica é clara: dados proprietários, loops de avaliação e alvos concretos de otimização importam mais do que interfaces de chat chamativas na hora de transformar IA em vantagem de infraestrutura."
+            ]
+          },
+          "link": "https://deepmind.google/blog/alphaevolve-impact/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-07-eng",
       "date": "2026-05-07",
       "tokensUsed": 11355,
