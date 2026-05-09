@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-09-eng",
+      "date": "2026-05-09",
+      "tokensUsed": 12139,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Kristen Womack",
+          "title": {
+            "en": "Least privilege AI agents: A new azd template from Curity and Microsoft",
+            "pt": "Agentes de IA com privilégio mínimo: um novo template azd da Curity com a Microsoft"
+          },
+          "summary": {
+            "en": "Microsoft and Curity present a practical reference architecture for deploying production AI agents with least-privilege authorization built in from the start. Instead of trusting the agent to behave correctly, the design uses short-lived OAuth tokens, token exchange, scoped permissions, and API-side filtering so each agent call carries only the exact customer, region, and action rights it should have. The important engineering lesson is that secure agent systems need authorization enforced in the control plane and token design, not only in prompts or application logic.",
+            "pt": "Microsoft e Curity apresentam uma arquitetura de referência prática para publicar agentes de IA em produção com autorização de privilégio mínimo desde o começo. Em vez de confiar que o agente sempre vai se comportar bem, o desenho usa tokens OAuth de curta duração, token exchange, escopos restritos e filtragem no lado da API para que cada chamada carregue apenas as permissões exatas de cliente, região e ação. A lição principal de engenharia é que sistemas de agentes seguros precisam de autorização imposta no control plane e no desenho dos tokens, não só em prompts ou lógica de aplicação."
+          },
+          "insights": {
+            "en": [
+              "The strongest pattern is moving trust out of the agent and into token design. Even if the agent is confused or prompt-injected, downstream APIs still enforce customer, region, and scope boundaries from signed claims.",
+              "The architecture cleanly separates concerns: Entra handles user identity, Curity issues narrowed internal tokens, external and internal gateways perform exchanges and auditing, and the MCP server stays simple by filtering data from claims.",
+              "This is broadly useful for production agents because human approval, partner-to-partner delegation, and tool access all become authorization problems first. Secure agent platforms need short-lived credentials and explicit privilege reduction at every hop."
+            ],
+            "pt": [
+              "O padrão mais forte é tirar a confiança do agente e colocá-la no desenho dos tokens. Mesmo se o agente se confundir ou sofrer prompt injection, as APIs continuam impondo fronteiras de cliente, região e escopo a partir de claims assinadas.",
+              "A arquitetura separa responsabilidades de forma limpa: Entra cuida da identidade do usuário, Curity emite tokens internos mais restritos, gateways externo e interno fazem trocas e auditoria, e o servidor MCP fica simples filtrando dados a partir das claims.",
+              "Isto é útil de forma ampla para agentes em produção porque aprovação humana, delegação entre empresas e acesso a ferramentas viram primeiro um problema de autorização. Plataforma segura para agentes precisa de credenciais curtas e redução explícita de privilégio em cada salto."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/azure-sdk/azd-curity-least-privilege-ai-agents/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-09",
       "date": "2026-05-09",
       "tokensUsed": 1693032,
