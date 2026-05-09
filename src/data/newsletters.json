@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-09",
+      "date": "2026-05-09",
+      "tokensUsed": 1693032,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Gregor Ojstersek",
+          "title": {
+            "en": "Removing AI in Tech Interviews is Wrong",
+            "pt": "Proibir IA em entrevistas técnicas está errado"
+          },
+          "summary": {
+            "en": "Gregor argues that banning AI from technical interviews now tests memorization more than real engineering ability. If modern software work is already AI-assisted, hiring should evaluate judgment, validation, decomposition, and decision-making inside that reality instead of pretending engineers work without tools.",
+            "pt": "Gregor argumenta que proibir IA em entrevistas técnicas hoje mede mais memorização do que habilidade real de engenharia. Se o trabalho moderno já é assistido por IA, o processo de contratação deveria avaliar julgamento, validação, decomposição e tomada de decisão dentro dessa realidade, em vez de fingir que engenheiros trabalham sem ferramentas."
+          },
+          "insights": {
+            "en": [
+              "The core skill is no longer solving canned problems from memory, but using AI with strong judgment and verifying the output before trusting it.",
+              "LeetCode-style interviews were already a weak proxy for real work, and AI makes that gap even more obvious because routine coding puzzles are now trivial to generate or solve.",
+              "A better hiring loop should allow AI in selected stages while observing how candidates reason, constrain tools, review outputs, and adapt when the first answer is wrong."
+            ],
+            "pt": [
+              "A habilidade central já não é resolver problemas decorados de memória, e sim usar IA com bom julgamento e validar a saída antes de confiar nela.",
+              "Entrevistas estilo LeetCode já eram um proxy fraco do trabalho real, e a IA deixa essa distância ainda mais clara porque puzzles rotineiros ficaram triviais de gerar ou resolver.",
+              "Um processo melhor deveria permitir IA em etapas selecionadas, observando como a pessoa raciocina, limita a ferramenta, revisa saídas e reage quando a primeira resposta vem errada."
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/companies-should-allow-ai-usage-in"
+        }
+      ]
+    },
+    {
       "id": "2026-05-08-eng",
       "date": "2026-05-08",
       "tokensUsed": 9430,
