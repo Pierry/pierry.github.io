@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-10",
+      "date": "2026-05-10",
+      "tokensUsed": 39140,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Dochia",
+          "title": {
+            "en": "Idempotency Is Easy Until the Second Request Is Different",
+            "pt": "Idempotência é fácil até a segunda requisição ser diferente"
+          },
+          "summary": {
+            "en": "This piece explains why idempotency gets hard only after real production edge cases appear. A simple replay cache handles identical retries, but real systems also face concurrent retries, partial success, uncertain downstream effects, expired keys, and the dangerous case where the same idempotency key is reused with a different request. The key lesson is that robust idempotency is really a correctness contract around operation identity, request canonicalization, concurrency control, and replay semantics, not just a header plus a cache lookup.",
+            "pt": "Este texto mostra por que idempotência só fica difícil quando aparecem os casos reais de produção. Um replay cache simples resolve tentativas idênticas, mas sistemas de verdade também enfrentam retries concorrentes, sucesso parcial, efeitos externos incertos, chaves expiradas e o caso perigoso em que a mesma chave de idempotência é reutilizada com uma requisição diferente. A lição principal é que idempotência robusta é um contrato de corretude sobre identidade da operação, canonização da requisição, controle de concorrência e semântica de replay, não só um header com consulta em cache."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is rejecting same-key, different-payload requests loudly. Silent replay hides client bugs and can make callers believe a different operation succeeded.",
+              "Hashing the canonical command matters more than hashing raw bytes. Field order, defaults, and semantic headers need a stable contract before idempotency can be trusted across deploys.",
+              "Idempotency is deeply tied to distributed systems behavior. Once retries overlap or downstream state becomes uncertain, the idempotency layer also becomes part of concurrency and recovery design."
+            ],
+            "pt": [
+              "A ideia mais forte é rejeitar de forma explícita requisições com mesma chave e payload diferente. Replay silencioso esconde bug do cliente e pode fazer o chamador acreditar que outra operação deu certo.",
+              "Hashear o comando canônico importa mais do que hashear bytes crus. Ordem de campos, defaults e headers semânticos precisam de um contrato estável para a idempotência continuar confiável entre deploys.",
+              "Idempotência está colada no comportamento de sistemas distribuídos. Quando retries se sobrepõem ou o estado downstream fica incerto, a camada de idempotência vira parte do desenho de concorrência e recuperação."
+            ]
+          },
+          "link": "https://blog.dochia.dev/blog/idempotency/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-09-eng",
       "date": "2026-05-09",
       "tokensUsed": 12139,
