@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-10-eng",
+      "date": "2026-05-10",
+      "tokensUsed": 20672,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Airbnb Engineering",
+          "author": "Abdurrahman J. Allawala",
+          "title": {
+            "en": "Monitoring reliably at scale",
+            "pt": "Monitoramento confiável em escala"
+          },
+          "summary": {
+            "en": "Airbnb explains how it redesigned its observability stack so monitoring stays available during the very outages it must diagnose. The core problem was circular dependency: metrics, alerts, and dashboards relied on the same Kubernetes, service mesh, and shared infrastructure that could fail during an incident. Their solution combines dedicated managed clusters, an Envoy-based ingress path outside the service mesh, and meta-monitoring with an external dead man’s switch so incident visibility survives degraded conditions.",
+            "pt": "A Airbnb mostra como redesenhou sua stack de observabilidade para que o monitoramento continue disponível justamente nas falhas que ele precisa diagnosticar. O problema central era dependência circular: métricas, alertas e dashboards dependiam do mesmo Kubernetes, service mesh e infraestrutura compartilhada que podia falhar durante um incidente. A solução combina clusters dedicados porém gerenciados, um caminho de ingestão com Envoy fora da service mesh e meta monitoramento com dead man’s switch externo para preservar visibilidade mesmo em condições degradadas."
+          },
+          "insights": {
+            "en": [
+              "The most important systems lesson is that observability must have a smaller failure domain than the workloads it watches. If monitoring shares the same control plane and data plane, outages can blind the responders exactly when they need signal.",
+              "Airbnb chose a pragmatic middle ground on compute: dedicated Kubernetes clusters managed by the central cloud team. That reduces coupling without forcing the observability team to become a full cluster-operations team.",
+              "The meta-monitoring design is strong because it avoids infinite regress. Prometheus and Alertmanager watch the observability stack, and an external AWS-backed dead man’s switch pages on-call if that monitoring layer itself goes silent."
+            ],
+            "pt": [
+              "A principal lição de sistemas é que a observabilidade precisa ter domínio de falha menor que os workloads observados. Se o monitoramento divide o mesmo control plane e data plane, a pane pode cegar quem está respondendo bem na hora crítica.",
+              "A Airbnb escolheu um meio termo pragmático na camada de compute: clusters dedicados de Kubernetes, mas administrados pelo time central de cloud. Isso reduz acoplamento sem obrigar o time de observabilidade a virar operador completo de cluster.",
+              "O desenho de meta monitoramento é forte porque evita regressão infinita. Prometheus e Alertmanager observam a própria stack, e um dead man’s switch externo apoiado em AWS aciona o on call se essa camada também ficar silenciosa."
+            ]
+          },
+          "link": "https://medium.com/airbnb-engineering/monitoring-reliably-at-scale-ca6483040930"
+        }
+      ]
+    },
+    {
       "id": "2026-05-10",
       "date": "2026-05-10",
       "tokensUsed": 39140,
