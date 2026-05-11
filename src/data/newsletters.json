@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-11",
+      "date": "2026-05-11",
+      "tokensUsed": 55264,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "James Shore",
+          "title": {
+            "en": "You Need AI That Reduces Maintenance Costs",
+            "pt": "Você precisa de IA que reduza o custo de manutenção"
+          },
+          "summary": {
+            "en": "James Shore argues that AI coding gains only matter if the code produced becomes dramatically cheaper to maintain. If an agent helps a team ship twice as much code but leaves maintenance costs unchanged or worse, the organization quickly trades a short burst of delivery speed for a long tail of bugs, cleanup, upgrades, and architectural drag. The core idea is that sustainable AI leverage must improve long-term software economics, not only short-term code output.",
+            "pt": "James Shore argumenta que ganho com IA para programar só vale se o código produzido ficar muito mais barato de manter. Se um agente ajuda o time a entregar o dobro de código, mas deixa o custo de manutenção igual ou pior, a organização troca um pico curto de velocidade por uma cauda longa de bugs, limpeza, upgrades e arrasto arquitetural. A ideia central é que alavancagem sustentável com IA precisa melhorar a economia de longo prazo do software, não só a quantidade de código entregue no curto prazo."
+          },
+          "insights": {
+            "en": [
+              "The sharpest insight is inversion of the usual productivity story: if AI doubles code output, maintenance cost per unit must fall enough to offset that expansion. Otherwise the team compounds future drag faster than it compounds value.",
+              "This frames AI adoption as a software economics problem, not a novelty problem. Engineering leaders should measure debugging load, cleanup time, review quality, and dependency churn, not just ticket throughput.",
+              "The article is useful because it speaks to any stack. Whether the agent writes backend, frontend, or infra code, the real question is the same: does it leave behind code the team can understand and evolve more cheaply tomorrow?"
+            ],
+            "pt": [
+              "O insight mais forte é inverter a história comum de produtividade: se a IA dobra a saída de código, o custo de manutenção por unidade precisa cair o bastante para compensar essa expansão. Senão o time compõe arrasto futuro mais rápido do que compõe valor.",
+              "Isso coloca adoção de IA como problema de economia de software, não de novidade. Liderança de engenharia deve medir carga de debug, tempo de limpeza, qualidade de review e churn de dependências, não só throughput de tickets.",
+              "O texto é útil porque vale para qualquer stack. Seja backend, frontend ou infra, a pergunta real é a mesma: a IA deixa código que o time entende e evolui mais barato amanhã?"
+            ]
+          },
+          "link": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs"
+        }
+      ]
+    },
+    {
       "id": "2026-05-10-eng",
       "date": "2026-05-10",
       "tokensUsed": 20672,
