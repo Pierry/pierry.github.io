@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-11-eng",
+      "date": "2026-05-11",
+      "tokensUsed": 13778,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "AWS Architecture Blog",
+          "author": "John White and Michael Wilson",
+          "title": {
+            "en": "Choosing between single or multiple organizations in AWS Organizations",
+            "pt": "Escolhendo entre uma ou várias organizações no AWS Organizations"
+          },
+          "summary": {
+            "en": "AWS examines a foundational cloud architecture choice for large enterprises: keep all accounts inside one AWS Organization or split them across multiple organizations. The post compares governance, security isolation, billing leverage, resource sharing, and operational overhead, arguing that while multiple organizations can help in highly independent or regulated environments, a single organization usually provides the best long-term balance of control, efficiency, and manageability.",
+            "pt": "A AWS analisa uma decisão estrutural de arquitetura cloud para empresas grandes: manter todas as contas dentro de uma única AWS Organization ou dividir em várias organizações. O texto compara governança, isolamento de segurança, poder de negociação em billing, compartilhamento de recursos e overhead operacional, concluindo que, embora múltiplas organizações possam ajudar em cenários muito independentes ou regulados, uma organização única costuma oferecer o melhor equilíbrio de longo prazo entre controle, eficiência e capacidade de operação."
+          },
+          "insights": {
+            "en": [
+              "The strongest systems lesson is that org topology becomes a control-plane decision, not just an accounting decision. It changes how teams enforce policy, share infrastructure, and absorb future reorganizations or acquisitions.",
+              "AWS makes the tradeoff concrete: multiple organizations buy stronger isolation and bespoke governance, but they also increase friction in billing, resource sharing, and centralized operations.",
+              "This is broadly useful for engineering leaders because many multi-account strategies start tactically and become hard to unwind. Choosing the right organizational boundary early can prevent years of governance and platform drag."
+            ],
+            "pt": [
+              "A principal lição de arquitetura é que topologia de organizações vira decisão de control plane, não só de contabilidade. Isso muda como times impõem políticas, compartilham infraestrutura e absorvem futuras reorganizações ou aquisições.",
+              "A AWS deixa o tradeoff concreto: múltiplas organizações compram isolamento mais forte e governança sob medida, mas aumentam atrito em billing, compartilhamento de recursos e operação centralizada.",
+              "Isto é útil de forma ampla para líderes de engenharia porque muita estratégia multi-account nasce tática e depois fica cara de desfazer. Escolher cedo a fronteira organizacional certa evita anos de arrasto de governança e plataforma."
+            ]
+          },
+          "link": "https://aws.amazon.com/blogs/architecture/choosing-between-single-or-multiple-organizations-in-aws-organizations/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-11",
       "date": "2026-05-11",
       "tokensUsed": 55264,
