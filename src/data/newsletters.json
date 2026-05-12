@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-12",
+      "date": "2026-05-12",
+      "tokensUsed": 44771,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Paolo Perrone and Neo Kim",
+          "title": {
+            "en": "How ML Systems Actually Work: From Data to Deployment",
+            "pt": "Como sistemas de ML realmente funcionam, dos dados ao deploy"
+          },
+          "summary": {
+            "en": "This issue turns machine learning system design into a practical architecture map instead of a bag of jargon. It explains the end-to-end pipeline, from feature engineering and labels to train-validation-test splits, data leakage, class imbalance, ETL pipelines, and the operational reality of keeping models reliable after deployment. The core value is making ML systems legible for engineers and managers who need to reason about production AI without getting lost in model math.",
+            "pt": "Esta edição transforma system design de machine learning em um mapa prático de arquitetura, em vez de um monte de jargão solto. Ela explica o pipeline ponta a ponta, de feature engineering e labels até divisão entre treino, validação e teste, data leakage, class imbalance, pipelines de ETL e a realidade operacional de manter modelos confiáveis depois do deploy. O valor central é deixar sistemas de ML legíveis para engenheiros e gestores que precisam raciocinar sobre IA em produção sem se perder em matemática de modelo."
+          },
+          "insights": {
+            "en": [
+              "The strongest takeaway is that ML system design is mostly data and pipeline design. Features, labels, training splits, and leakage control matter as much as, or more than, model choice.",
+              "The article makes production tradeoffs concrete by showing that bad ground truth, imbalanced data, and silent ETL failures can break a system long before fancy modeling becomes the bottleneck.",
+              "It is broadly useful because it gives leaders and generalist engineers a shared vocabulary for discussing recommendation, ranking, and prediction systems without depending on framework-specific knowledge."
+            ],
+            "pt": [
+              "O insight mais forte é que system design de ML é principalmente desenho de dados e pipeline. Features, labels, splits de treino e controle de leakage importam tanto quanto, ou mais do que, a escolha do modelo.",
+              "O texto deixa os tradeoffs de produção concretos ao mostrar que ground truth ruim, dados desbalanceados e falhas silenciosas de ETL quebram o sistema muito antes de modelagem sofisticada virar o gargalo.",
+              "Ele é útil de forma ampla porque dá para líderes e engenheiros generalistas um vocabulário comum para discutir sistemas de recomendação, ranking e predição sem depender de conhecimento específico de framework."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/machine-learning-system-design-interview"
+        }
+      ]
+    },
+    {
       "id": "2026-05-11-eng",
       "date": "2026-05-11",
       "tokensUsed": 13778,
