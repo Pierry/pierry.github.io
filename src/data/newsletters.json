@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-12-eng",
+      "date": "2026-05-12",
+      "tokensUsed": 16142,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Zihao Tao, Mohan Perumal Swamy, Grace Gong, Ailyn Tong, Peishan Wang, Nilay Kapadia, Md Mustafijur Rahman Faysal, Saurav Sen, Jameel Mohamed",
+          "title": {
+            "en": "Migrating Data Ingestion Systems at Meta Scale",
+            "pt": "Migrando sistemas de ingestão de dados em escala Meta"
+          },
+          "summary": {
+            "en": "Meta explains how it migrated one of its most critical data pipelines, responsible for incrementally scraping several petabytes of social graph data from MySQL into the warehouse, from customer-owned pipelines to a simpler self-managed architecture. The post is valuable because it focuses less on the destination architecture alone and more on the migration system around it: shadow phases, reverse shadow rollout, automated promotion and rollback, hourly data-quality analysis, and CDC-aware safeguards to stop bad data propagation before customers are impacted.",
+            "pt": "A Meta mostra como migrou um dos seus pipelines de dados mais críticos, responsável por raspar incrementalmente vários petabytes do social graph em MySQL para o data warehouse, saindo de pipelines geridos pelos times clientes para uma arquitetura própria mais simples e confiável. O valor do texto está menos na arquitetura final isolada e mais no sistema de migração ao redor dela: fases de shadow e reverse shadow, promoção e rollback automáticos, análise horária de qualidade de dados e proteções conscientes de CDC para impedir propagação de dado ruim antes de afetar consumidores."
+          },
+          "insights": {
+            "en": [
+              "The strongest systems lesson is that large migrations need their own control plane. Meta defined explicit lifecycle stages, promotion criteria, automatic demotion, and dashboards so thousands of jobs could move safely without relying on manual orchestration.",
+              "The reverse-shadow rollout pattern is especially strong because it preserves continuous correctness checks after cutover while keeping rollback fast. The old pipeline keeps running as the shadow path, so discrepancies can be caught before downstream teams absorb the blast radius.",
+              "Meta also treats CDC failure modes seriously. By marking bad partitions in metadata and stopping or rerouting data propagation early, the migration design limits corruption spread instead of merely detecting it after consumers complain."
+            ],
+            "pt": [
+              "A lição mais forte de sistemas é que migração grande precisa do próprio control plane. A Meta definiu estágios explícitos de ciclo de vida, critérios de promoção, rebaixamento automático e dashboards para mover milhares de jobs com segurança sem depender de orquestração manual.",
+              "O padrão de reverse shadow é especialmente forte porque mantém checagem contínua de corretude depois do cutover e ainda deixa rollback rápido. O pipeline antigo continua rodando como caminho sombra, então divergências podem ser pegas antes de explodirem nos times downstream.",
+              "A Meta também trata os modos de falha de CDC com seriedade. Ao marcar partições ruins em metadata e parar ou redirecionar a propagação cedo, o desenho da migração limita espalhamento de corrupção em vez de apenas detectar o problema depois que consumidor reclama."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-12",
       "date": "2026-05-12",
       "tokensUsed": 44771,
