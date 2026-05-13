@@ -1,6 +1,27 @@
 {
   "threads": [
     {
+      "slug": "tooling-became-runtime-work",
+      "date": "2026-05-13",
+      "title": {
+        "en": "Tooling became runtime work",
+        "pt": "Tooling virou trabalho de runtime"
+      },
+      "description": {
+        "en": "Three engineering posts converge on the same shift: developer tooling no longer wins by adding another wrapper script or nicer DX layer. The serious gains now come from runtime-level moves like native compilers, ABI-stable interop, JIT work and supply-chain guarantees that treat tooling like systems software.",
+        "pt": "Três posts de engenharia chegam na mesma virada: tooling de desenvolvimento não ganha mais com mais uma camada de script ou DX bonitinha. O salto real agora vem de mexida de runtime, compilador nativo, interop com ABI estável, trabalho de JIT e garantia de supply chain que trata tooling como software de sistemas."
+      },
+      "body": {
+        "en": "A lot of developer tooling still gets discussed like packaging, workflow polish or IDE convenience. These three posts point somewhere more serious. Tooling is increasingly becoming runtime work.\n\nThe TypeScript 7 rewrite makes that impossible to ignore. A 10x speedup did not come from a clever flag or a better cache key. It came from moving the compiler into Go, embracing native execution and parallelism, and preserving semantics while replacing the engine underneath. That is a systems move, not a DX tweak.\n\nThe Node addon post reaches the same conclusion from the interop side. Replacing C++ and node-gyp friction with .NET Native AOT is not just about nicer ergonomics. It is about collapsing toolchain sprawl, generating native binaries directly and making the boundary between ecosystems cheaper to operate. Once your build path depends less on accidental glue and more on stable ABI surfaces, tooling becomes infrastructure.\n\nThen the .NET 11 preview widens the thesis. Better JIT behavior, earlier HTTP/3 processing, union types and signed container images are not random release-note confetti. They show a platform team treating performance, language expressiveness and supply-chain trust as one continuous runtime surface.\n\nPut together, the pattern is clear. The next gains in developer productivity are not coming from prettier wrappers around slow or fragile foundations. They are coming from treating compilers, runtimes, interop layers and build artifacts as first-class systems software. Tooling is no longer the layer above the machine. It is becoming part of the machine.",
+        "pt": "Muito tooling de desenvolvimento ainda é discutido como embalagem, polimento de workflow ou conveniência de IDE. Esses três posts apontam para algo mais sério. Tooling está virando trabalho de runtime.\n\nA reescrita do TypeScript 7 deixa isso impossível de ignorar. Ganho de 10x não veio de flag esperta nem de cache melhor. Veio de mover o compilador para Go, abraçar execução nativa e paralelismo, e preservar a semântica enquanto trocava o motor por baixo. Isso é movimento de sistemas, não ajuste de DX.\n\nO post sobre addon de Node chega na mesma conclusão pelo lado da interop. Trocar C++ e o atrito do node-gyp por .NET Native AOT não é só ergonomia mais bonita. É cortar a bagunça de toolchain, gerar binário nativo direto e baratear a fronteira entre ecossistemas. Quando o caminho de build depende menos de cola acidental e mais de superfície ABI estável, tooling vira infraestrutura.\n\nO preview do .NET 11 amplia a tese. JIT melhor, processamento mais cedo no HTTP/3, union types e imagens de container assinadas não são confete de release note. Mostram um time de plataforma tratando performance, expressividade de linguagem e confiança de supply chain como uma superfície contínua de runtime.\n\nJuntando tudo, o padrão fica claro. O próximo salto de produtividade de engenharia não vai vir de wrapper mais bonito em cima de fundação lenta ou frágil. Vai vir de tratar compilador, runtime, camada de interop e artefato de build como software de sistemas de primeira classe. Tooling não é mais a camada acima da máquina. Está virando parte da máquina."
+      },
+      "entries": [
+        "2026-04-21-eng-1",
+        "2026-04-20-eng-1",
+        "2026-04-14-eng-1"
+      ]
+    },
+    {
       "slug": "infra-is-control-plane",
       "date": "2026-05-13",
       "title": {
