@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-13-eng",
+      "date": "2026-05-13",
+      "tokensUsed": 9832,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Shopify Engineering",
+          "title": {
+            "en": "We replaced Redis with MySQL for inventory reservations, and it scaled",
+            "pt": "Trocamos Redis por MySQL nas reservas de inventário, e escalou"
+          },
+          "summary": {
+            "en": "Shopify explains how it moved checkout inventory reservations from Redis into MySQL so reservations and the inventory ledger could share ACID guarantees. The post is valuable because it goes beyond the headline swap and shows the real engineering work: modeling one row per sellable unit, using SKIP LOCKED to avoid contention, bounding row growth with replenishment pools, redesigning primary keys to reduce lock counts, changing isolation level to avoid gap locks, and instrumenting connection hold time to find the true throughput bottleneck.",
+            "pt": "A Shopify mostra como moveu as reservas de inventário do checkout de Redis para MySQL para que reservas e ledger de inventário passassem a compartilhar garantias ACID. O valor do texto vai muito além da troca de tecnologia e entra no trabalho real de engenharia: modelagem com uma linha por unidade vendável, uso de SKIP LOCKED para reduzir contenção, pools de reposição para limitar crescimento de linhas, redesenho de chave primária para cortar locks, ajuste do nível de isolamento para evitar gap locks e instrumentação do tempo de retenção de conexões para achar o gargalo verdadeiro de throughput."
+          },
+          "insights": {
+            "en": [
+              "The strongest systems lesson is that correctness and scale were solved together by collapsing reservation state and source-of-truth inventory into the same transactional boundary, removing failure modes that came from Redis and MySQL living apart.",
+              "The article is especially good on database mechanics. Shopify shows how SKIP LOCKED, composite primary keys, lock ordering, and READ COMMITTED materially changed contention behavior, not just query syntax.",
+              "The best surprise is operational: the main limit was not query CPU but connection hold time across the checkout path. Tagging business flows at the app layer and measuring them at the proxy exposed the real bottleneck and unlocked the final scale gains."
+            ],
+            "pt": [
+              "A lição mais forte de sistemas é que corretude e escala foram resolvidas juntas ao colocar o estado da reserva e o inventário fonte da verdade dentro da mesma fronteira transacional, eliminando modos de falha que existiam quando Redis e MySQL moravam separados.",
+              "O texto é especialmente bom na mecânica de banco. A Shopify mostra como SKIP LOCKED, chave primária composta, ordem consistente de locks e READ COMMITTED mudaram de forma concreta o comportamento de contenção, não só a sintaxe da query.",
+              "A melhor surpresa é operacional: o limite principal não era CPU de query, era tempo de retenção de conexão ao longo do checkout. Marcar fluxos de negócio na aplicação e medir isso no proxy expôs o gargalo real e liberou o ganho final de escala."
+            ]
+          },
+          "link": "https://shopify.engineering/scaling-inventory-reservations"
+        }
+      ]
+    },
+    {
       "id": "2026-05-13",
       "date": "2026-05-13",
       "tokensUsed": 36040,
