@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-13",
+      "date": "2026-05-13",
+      "tokensUsed": 36040,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Product for Engineers",
+          "author": "Charles Cook",
+          "title": {
+            "en": "The stuff nobody tells you about startup marketing",
+            "pt": "O que ninguém te conta sobre marketing de startup"
+          },
+          "summary": {
+            "en": "Charles Cook reframes early startup marketing as a sequence of learning loops, not a bag of channels or a brand exercise. The article argues that early teams should treat marketing as the work of closing the gap between what they are building and the people who would care, then go deep on the first signals that work instead of spreading across many half-baked tactics. It is especially useful because it connects channel choice, ICP clarity, experiment design, attribution limits, agency timing, and the first marketing hire into one pragmatic operating model.",
+            "pt": "Charles Cook reposiciona o marketing inicial de startup como uma sequência de loops de aprendizado, não como uma lista de canais ou um exercício de marca. O texto defende que times no começo devem tratar marketing como o trabalho de fechar a distância entre o que estão construindo e as pessoas que realmente se importariam com isso, depois aprofundar no primeiro sinal que funciona em vez de se espalhar por várias táticas meia-boca. Ele é especialmente útil porque conecta escolha de canal, clareza de ICP, desenho de experimento, limites de atribuição, timing para agência e a primeira contratação de marketing em um único modelo operacional bem prático."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is depth over breadth. When one channel shows life, the right move is usually to double down and learn from it instead of opening five new experiments and losing the signal.",
+              "Cook treats attribution as directionally useful, not as truth. A simple 'where did you hear about us?' box can outperform fancy multi-touch models when a startup still needs clarity more than precision.",
+              "The piece is broadly useful for engineering leaders because it frames marketing like product work: define the ICP, form a hypothesis, run bounded experiments, and only scale what clearly works."
+            ],
+            "pt": [
+              "A ideia mais forte é profundidade antes de amplitude. Quando um canal dá sinal de vida, o movimento certo quase sempre é dobrar a aposta e aprender com ele, em vez de abrir cinco experimentos novos e perder o sinal.",
+              "Cook trata atribuição como algo útil para direção, não como verdade absoluta. Uma caixa simples de 'onde você ouviu falar da gente?' pode bater modelos sofisticados de multi-touch quando a startup ainda precisa mais de clareza do que de precisão.",
+              "O texto é amplamente útil para líderes de engenharia porque enquadra marketing como trabalho de produto: definir ICP, criar hipótese, rodar experimento com limite claro e escalar só o que funciona de forma óbvia."
+            ]
+          },
+          "link": "https://newsletter.posthog.com/p/the-stuff-nobody-tells-you-about"
+        }
+      ]
+    },
+    {
       "id": "2026-05-12-eng",
       "date": "2026-05-12",
       "tokensUsed": 16142,
