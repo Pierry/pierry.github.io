@@ -1,6 +1,14 @@
 {
   "episodes": [
     {
+      "title": "Ep #21 - Tech Digest, IA prática, AWS e custo de manutenção",
+      "description": "Neste episódio, discutimos por que a tecnologia só se torna uma vantagem real quando simplifica a operação e reduz os custos de longo prazo. Analisamos três pilares fundamentais para quem lidera times e produtos de tecnologia:<strong>- System Design de Machine Learning:</strong> Por que o sucesso da",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/119873718/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-12%2F9fe7fe47-9c70-aa1c-bf72-43407dbee462.m4a",
+      "pubDate": "2026-05-12",
+      "duration": "00:24:25",
+      "language": "en"
+    },
+    {
       "title": "Ep #20 - Harness Engineering na prática, como Guides, Sensors, Skills, References, Evals, Agentes e Pipeline viram um sistema vivo",
       "description": "Um episódio sobre o que quase ninguém explica direito: O sistema inteiro por trás de agentes úteis. A abordagem demonstra que o sucesso de um agente não depende apenas do prompt, mas de uma estrutura conectada envolvendo guide, sensor, skill, reference, eval, Wilson score, task(), síntese cruzada, h",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/119576965/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-6%2F2449d5b3-8e06-c968-2d90-6b52e852d52f.m4a",
