@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-14-eng",
+      "date": "2026-05-14",
+      "tokensUsed": 9429,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Krishna Ganeriwal, Plawan Rath, Ashwini Verma",
+          "title": {
+            "en": "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines",
+            "pt": "Como a Meta usou IA para mapear conhecimento tribal em pipelines de dados de larga escala"
+          },
+          "summary": {
+            "en": "Meta describes how it turned a brittle, tribal-knowledge-heavy data pipeline into something AI agents could navigate reliably. Instead of letting agents wander across four repositories, three languages, and more than 4,100 files, the team orchestrated 50+ specialized agents to read the codebase, distill 59 compact context files, document 50+ hidden engineering patterns, and keep the knowledge fresh with automated validation. The result is a model-agnostic navigation layer that raised AI coverage from roughly 5% of the codebase to full module coverage and cut agent tool calls by about 40% on real tasks.",
+            "pt": "A Meta mostra como transformou um pipeline de dados pesado em conhecimento tribal em algo que agentes de IA conseguem navegar com confiança. Em vez de deixar agentes tateando por quatro repositórios, três linguagens e mais de 4.100 arquivos, o time orquestrou mais de 50 agentes especializados para ler a base, destilar 59 arquivos curtos de contexto, documentar mais de 50 padrões escondidos de engenharia e manter tudo fresco com validação automática. O resultado foi uma camada de navegação agnóstica de modelo que levou a cobertura de IA de algo perto de 5% da base para cobertura total dos módulos e cortou em cerca de 40% as tool calls dos agentes em tarefas reais."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is treating context as infrastructure. Meta did not just add prompts, it built a maintained knowledge layer with critics, fixers, gap detection, and periodic refresh so AI help stays useful as the codebase evolves.",
+              "Their “compass, not encyclopedia” design is broadly reusable. Short routing files with key commands, critical files, hidden pitfalls, and cross-references gave agents enough guidance without flooding the context window.",
+              "This is one of the clearest production examples of AI improving software work by encoding undocumented conventions and dependency maps, not by replacing engineers. The payoff was fewer exploratory steps and faster, safer changes."
+            ],
+            "pt": [
+              "A ideia mais forte é tratar contexto como infraestrutura. A Meta não só mexeu em prompt, ela construiu uma camada de conhecimento mantida com críticos, corretores, detecção de lacunas e refresh periódico para a ajuda de IA continuar útil conforme a base muda.",
+              "O desenho de “bússola, não enciclopédia” é bem reaproveitável. Arquivos curtos de roteamento com comandos-chave, arquivos críticos, armadilhas escondidas e referências cruzadas deram direção suficiente sem explodir a janela de contexto.",
+              "Esse é um dos exemplos mais claros de IA melhorando trabalho de software ao codificar convenções não documentadas e mapas de dependência, não ao substituir engenheiros. O ganho veio em menos exploração cega e mudanças mais rápidas e seguras."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-14",
       "date": "2026-05-14",
       "tokensUsed": 34352,
