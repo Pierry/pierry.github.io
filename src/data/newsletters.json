@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-14",
+      "date": "2026-05-14",
+      "tokensUsed": 34352,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech World With Milan",
+          "author": "Dr Milan Milanović",
+          "title": {
+            "en": "How corporate politics actually work",
+            "pt": "Como a política corporativa realmente funciona"
+          },
+          "summary": {
+            "en": "Dr Milan Milanović interviews former Amazon VP Ethan Evans to explain why promotions rarely go to the most technically brilliant person alone. The piece reframes corporate politics as the operating layer where visibility, trust, timing, relationship quality, and manager perception shape outcomes long before formal reviews or PIPs appear. Its value is that it strips away the polite fiction around performance, influence, and career progression, then translates those hidden mechanics into practical signals engineers and managers can actually act on.",
+            "pt": "Dr Milan Milanović entrevista o ex-VP da Amazon Ethan Evans para mostrar por que promoções quase nunca vão só para a pessoa tecnicamente mais brilhante. O texto reposiciona política corporativa como a camada operacional onde visibilidade, confiança, timing, qualidade de relacionamento e percepção da liderança moldam resultados muito antes de review formal ou PIP aparecer. O valor está em desmontar a ficção educada sobre performance, influência e progressão de carreira, depois traduzir esses mecanismos escondidos em sinais práticos que engenheiros e gestores conseguem usar no dia a dia."
+          },
+          "insights": {
+            "en": [
+              "Strong technical output is necessary but not sufficient. Managers reward business impact, collaboration, and visible reliability more often than raw brilliance hidden in the background.",
+              "Many career outcomes are decided before the official process. Soft feedback, relationship drift, and reduced sponsorship often show up months earlier than a formal warning or PIP.",
+              "The piece is especially useful because it separates healthy influence from manipulation. Building trust, making work legible, and pre-wiring decisions are part of effective leadership, not dirty politics."
+            ],
+            "pt": [
+              "Entrega técnica forte é necessária, mas não suficiente. Gestores premiam mais impacto no negócio, colaboração e confiabilidade visível do que brilhantismo bruto escondido no fundo do time.",
+              "Muitos resultados de carreira são decididos antes do processo oficial. Feedbacks suaves, perda de patrocínio e desgaste de relação costumam aparecer meses antes de um alerta formal ou PIP.",
+              "O texto é especialmente útil porque separa influência saudável de manipulação. Construir confiança, deixar o trabalho legível e preparar decisões faz parte de liderança eficaz, não de política suja."
+            ]
+          },
+          "link": "https://newsletter.techworld-with-milan.com/p/how-corporate-politics-actually-work"
+        }
+      ]
+    },
+    {
       "id": "2026-05-13-eng",
       "date": "2026-05-13",
       "tokensUsed": 9832,
