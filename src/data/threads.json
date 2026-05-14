@@ -1,6 +1,29 @@
 {
   "threads": [
     {
+      "slug": "engineering-is-social-economics",
+      "date": "2026-05-14",
+      "title": {
+        "en": "Engineering is social economics",
+        "pt": "Engenharia virou economia social"
+      },
+      "description": {
+        "en": "Five digests land on the same uncomfortable truth: technical strength alone does not move software work very far. Career growth, distribution, maintainability, prioritization, and alignment are all decided by trust, economics, and communication long before code review or architecture diagrams enter the scene.",
+        "pt": "Cinco digests chegam na mesma verdade meio incômoda: força técnica sozinha leva software só até certo ponto. Carreira, distribuição, manutenção, prioridade e alinhamento são decididos por confiança, economia e comunicação muito antes de code review ou diagrama de arquitetura entrar na conversa."
+      },
+      "body": {
+        "en": "A lot of engineering pain starts when teams pretend software is a purely technical game. One post shows that career outcomes are shaped upstream by visibility, trust, and sponsorship, not just raw brilliance. Another reframes startup marketing as product learning loops, because building the right thing is useless if the right people never discover it. A third argues AI coding only pays off if maintenance gets cheaper, which turns productivity back into long-term software economics. The remaining pieces complete the picture: listening is often more valuable than another framework, and team decisions are capital allocation whether engineers admit it or not. The connective idea is simple: software work is social and economic before it is mechanical, and teams that ignore that keep mistaking local technical wins for real leverage.",
+        "pt": "Muita dor em engenharia começa quando o time finge que software é jogo puramente técnico. Um texto mostra que resultado de carreira é decidido antes, por visibilidade, confiança e patrocínio, não só por brilhantismo bruto. Outro trata marketing inicial como loop de aprendizado de produto, porque construir direito adianta pouco se a pessoa certa nunca descobre o que existe. Um terceiro lembra que IA para programar só compensa se baixar custo de manutenção, o que traz produtividade de volta para a economia real do software. Os outros fecham a conta: ouvir gente costuma valer mais que inventar mais um framework, e decisão de engenharia é alocação de capital mesmo quando ninguém fala desse jeito. A tese é simples: trabalho de software é social e econômico antes de ser mecânico, e time que ignora isso continua confundindo vitória técnica local com alavancagem de verdade."
+      },
+      "entries": [
+        "2026-05-14-1",
+        "2026-05-13-1",
+        "2026-05-11-1",
+        "2026-04-20-1",
+        "2026-04-13-1"
+      ]
+    },
+    {
       "slug": "infra-is-control-plane",
       "date": "2026-05-14",
       "title": {
