@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-15-eng",
+      "date": "2026-05-15",
+      "tokensUsed": 6862,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Ashwin Kumar, Erwin Gao, Matan Levi, Sheela Yadawad, Sherman Wong, Sneha Iyer, Vinodh Kumar Sunkara",
+          "title": {
+            "en": "Ranking Engineer Agent (REA): The Autonomous AI Agent Accelerating Meta’s Ads Ranking Innovation",
+            "pt": "Ranking Engineer Agent (REA): o agente autônomo que acelera a inovação em ranking de anúncios na Meta"
+          },
+          "summary": {
+            "en": "Meta presents REA, an autonomous agent built to run the end-to-end experimentation loop for ads ranking models. Instead of stopping at copiloting, REA generates hypotheses, launches training jobs, waits across multiday runs, debugs routine failures, and iterates within engineer-approved compute budgets. The strongest result is not just the architecture but the production impact: across six models, REA-driven iterations doubled average model accuracy over baseline and let three engineers drive launch proposals for eight models, work that historically needed roughly two engineers per model.",
+            "pt": "A Meta apresenta o REA, um agente autônomo criado para tocar o loop inteiro de experimentação dos modelos de ranking de anúncios. Em vez de parar no modo copiloto, o REA gera hipóteses, dispara jobs de treino, espera execuções de vários dias, depura falhas rotineiras e itera dentro de budgets de compute aprovados pelos engenheiros. O ponto mais forte não é só a arquitetura, mas o impacto em produção: em seis modelos, as iterações guiadas pelo REA dobraram a acurácia média contra o baseline e permitiram que três engenheiros levassem propostas de melhoria para oito modelos, algo que antes pedia algo perto de dois engenheiros por modelo."
+          },
+          "insights": {
+            "en": [
+              "The key systems idea is long-horizon autonomy. REA persists context across jobs that run for days or weeks, hibernates while training runs execute, and wakes back up with enough state to continue without a human re-briefing it.",
+              "Its hypothesis engine is stronger because it combines two feedback loops: a historical experiment memory and a research agent that explores new ML ideas. That turns experimentation into a compounding system instead of isolated one-off runs.",
+              "The production lesson is that autonomy needs hard guardrails. REA asks for compute-budget approval up front, works inside a narrow domain, and handles common failures through runbooks and bounded recovery rather than pretending all exploration is safe."
+            ],
+            "pt": [
+              "A ideia de sistema mais forte é autonomia de longo prazo. O REA mantém contexto entre jobs que duram dias ou semanas, hiberna enquanto o treino roda e volta com estado suficiente para seguir sem um humano precisar reexplicar tudo.",
+              "O motor de hipóteses fica mais forte porque junta dois loops de feedback: memória de experimentos passados e um agente de pesquisa que explora ideias novas de ML. Isso transforma experimentação em sistema cumulativo, não em rodada isolada.",
+              "A lição de produção é que autonomia precisa de guardrails duros. O REA pede aprovação de budget de compute antes, opera em domínio estreito e trata falhas comuns com runbooks e recuperação limitada, em vez de fingir que toda exploração é segura."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/03/17/developer-tools/ranking-engineer-agent-rea-autonomous-ai-system-accelerating-meta-ads-ranking-innovation/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-15",
       "date": "2026-05-15",
       "tokensUsed": 44872,
