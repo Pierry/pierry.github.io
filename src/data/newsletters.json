@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-15",
+      "date": "2026-05-15",
+      "tokensUsed": 44872,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Craft Better Software",
+          "author": "Daniel Moka",
+          "title": {
+            "en": "Create Your First AI Agent In 5 Minutes",
+            "pt": "Crie seu primeiro agente de IA em 5 minutos"
+          },
+          "summary": {
+            "en": "Daniel Moka argues that the fastest practical path to useful AI agents is not building a giant autonomous system, but creating narrow Claude Code subagents with a clear role, limited tools, and concrete outputs. The piece walks through how subagents work, why their description acts as a routing rule, how scoped permissions reduce noise, and why artifacts like bug reports or summaries matter more than chatty demos. Its strongest section is the browser QA tester example, which shows how an agent can inspect an app, derive scenarios from the codebase, exercise real flows with Playwright, and leave behind structured bug reports a team can actually use.",
+            "pt": "Daniel Moka defende que o caminho mais rápido para agentes de IA realmente úteis não é montar um monstro autônomo genérico, e sim criar subagentes estreitos no Claude Code, com papel claro, poucas ferramentas e saídas concretas. O texto explica como esses subagentes funcionam, por que a descrição deles vira regra de roteamento, como permissões enxutas reduzem ruído e por que artefatos como bug reports ou resumos valem mais do que demos falantes. A parte mais forte é o exemplo de um tester de QA via browser, mostrando um agente que entende o app, deriva cenários da base, executa fluxos reais com Playwright e deixa relatórios estruturados que o time consegue usar de verdade."
+          },
+          "insights": {
+            "en": [
+              "The core lesson is specialization over breadth. Small agents with one job, a crisp trigger, and limited tools produce more reliable results than a “super agent” that tries to do everything.",
+              "Agent descriptions are not decoration, they are routing logic. Being explicit about when to invoke an agent is what makes delegation predictable at scale.",
+              "Useful agents should leave artifacts behind. Bug reports, summaries, and structured findings turn an agent from a demo into durable team infrastructure."
+            ],
+            "pt": [
+              "A lição central é especialização acima de abrangência. Agentes pequenos, com um trabalho só, gatilho claro e poucas ferramentas, tendem a ser mais confiáveis que um “super agente” que tenta fazer tudo.",
+              "A descrição do agente não é enfeite, é lógica de roteamento. Ser explícito sobre quando invocar o agente é o que torna a delegação previsível em escala.",
+              "Agente útil precisa deixar artefato. Bug report, resumo e achado estruturado transformam o agente de demo em infraestrutura real de time."
+            ]
+          },
+          "link": "https://craftbettersoftware.com/p/create-your-first-ai-agent-in-5-minutes"
+        }
+      ]
+    },
+    {
       "id": "2026-05-14-eng",
       "date": "2026-05-14",
       "tokensUsed": 9429,
