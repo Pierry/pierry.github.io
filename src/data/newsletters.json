@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-16-eng",
+      "date": "2026-05-16",
+      "tokensUsed": 19446,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Pinterest Engineering",
+          "author": "Tan Wang",
+          "title": {
+            "en": "Building an MCP Ecosystem at Pinterest",
+            "pt": "Construindo um ecossistema de MCP no Pinterest"
+          },
+          "summary": {
+            "en": "Pinterest describes how it turned Model Context Protocol from an interesting standard into internal production infrastructure for AI agents. Instead of one giant tool server, the company built a registry plus many small domain-specific MCP servers, then wired them into chat, IDEs, and internal agent surfaces with centralized auth, policy, and approval flows. What makes the piece stand out is that it treats agent tooling as a platform problem: secure discovery, ownership, observability, and human-in-the-loop controls matter as much as the model itself.",
+            "pt": "O Pinterest mostra como transformou o Model Context Protocol de padrão promissor em infraestrutura interna de produção para agentes de IA. Em vez de um servidor gigante de ferramentas, o time montou um registry e vários servidores MCP pequenos e especializados por domínio, depois conectou isso em chat, IDEs e superfícies internas de agentes com autenticação centralizada, políticas e fluxos de aprovação. O texto se destaca porque trata tooling de agentes como problema de plataforma: descoberta segura, ownership, observabilidade e controle humano importam tanto quanto o modelo em si."
+          },
+          "insights": {
+            "en": [
+              "The architecture choice is the key lesson: many small MCP servers with a central registry gave Pinterest better access control, lower context noise, and clearer ownership than a monolithic tool gateway.",
+              "Security is built into the platform, not bolted on later. JWT-based user identity, service-mesh controls, registry approval, and tool-level authorization let agents touch real systems without turning into a blind trust exercise.",
+              "Pinterest measured MCP as product infrastructure, with usage telemetry and time-saved estimates. That operational framing is what makes agent tooling durable instead of staying a demo."
+            ],
+            "pt": [
+              "A escolha de arquitetura é a lição principal: vários servidores MCP pequenos, com registry central, deram ao Pinterest mais controle de acesso, menos ruído de contexto e ownership mais claro do que um gateway monolítico de ferramentas.",
+              "Segurança entra na plataforma desde o começo, não como remendo depois. Identidade via JWT, controles de service mesh, aprovação no registry e autorização por ferramenta deixam agentes mexerem em sistemas reais sem virar aposta cega.",
+              "O Pinterest mediu MCP como infraestrutura de produto, com telemetria de uso e estimativas de tempo economizado. Esse olhar operacional é o que faz tooling de agentes virar algo durável, não só demo."
+            ]
+          },
+          "link": "https://medium.com/pinterest-engineering/building-an-mcp-ecosystem-at-pinterest-d881eb4c16f1"
+        }
+      ]
+    },
+    {
       "id": "2026-05-16",
       "date": "2026-05-16",
       "tokensUsed": 33467,
