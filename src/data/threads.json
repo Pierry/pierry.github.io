@@ -1,6 +1,28 @@
 {
   "threads": [
     {
+      "slug": "system-design-is-constraint-literacy",
+      "date": "2026-05-16",
+      "title": {
+        "en": "System design is constraint literacy",
+        "pt": "System design é alfabetização em restrição"
+      },
+      "description": {
+        "en": "Four uncovered digests converge on the same lesson: strong system design does not start with a stack diagram or favorite tool. It starts with understanding failure modes, transaction boundaries, durability, latency and the constraints that stay true when production gets ugly.",
+        "pt": "Quatro digests ainda não cobertos chegam na mesma lição: system design forte não começa com diagrama bonito nem ferramenta favorita. Começa por entender modo de falha, fronteira transacional, durabilidade, latência e as restrições que continuam valendo quando produção fica feia."
+      },
+      "body": {
+        "en": "A lot of system design content still gets taught like architecture is mostly a vocabulary test. Pick the right boxes, name the right tools, repeat the standard tradeoffs. These four entries argue for a harsher and more useful view. System design is really constraint literacy.\n\nThe two primers from System Design Classroom say it most directly. Engineers often learn Kubernetes, queues and microservices before they learn how to reason about latency budgets, access patterns, consistency and failure. That reverses cause and effect. Tools are outputs. Constraints are the actual input.\n\nThe retry piece shows why this matters in production. A retry policy is not a reliability garnish. It is a bet about uncertainty, state and downstream stress. If you cannot say whether the first request already committed, then retry logic becomes part of the transaction design. Bad retries do not just waste work. They create incidents.\n\nThe S3 deep dive closes the loop at infrastructure scale. Durability, metadata separation, multipart upload and eventual consistency were not arbitrary implementation details. They were design responses to the real constraints of object storage at extreme scale. The system looks elegant only because the constraints were taken seriously first.\n\nPut together, the lesson is blunt. Good system design is not memorizing patterns. It is learning to see the invisible boundaries that decide what the system can promise under load, failure and growth. Teams that start with tools build diagrams. Teams that start with constraints build systems.",
+        "pt": "Muito conteúdo de system design ainda é ensinado como se arquitetura fosse prova de vocabulário. Escolhe as caixas certas, fala as ferramentas certas, repete os trade-offs clássicos. Essas quatro entradas defendem uma visão mais dura e mais útil. System design é, no fundo, alfabetização em restrição.\n\nOs dois textos do System Design Classroom falam isso do jeito mais direto. Muita gente aprende Kubernetes, fila e microsserviço antes de aprender a raciocinar sobre budget de latência, padrão de acesso, consistência e falha. Isso inverte causa e efeito. Ferramenta é output. Restrição é input.\n\nO texto sobre retries mostra por que isso importa em produção. Política de retry não é enfeite de confiabilidade. É aposta sobre incerteza, estado e estresse na dependência. Se você não consegue dizer se a primeira requisição já comitou ou não, então a lógica de retry vira parte do desenho transacional. Retry ruim não desperdiça só trabalho. Cria incidente.\n\nO mergulho no S3 fecha a conta em escala de infraestrutura. Durabilidade, separação de metadata, multipart upload e consistência eventual não foram detalhes arbitrários. Foram respostas de design para as restrições reais de object storage em escala extrema. O sistema parece elegante só porque as restrições vieram primeiro.\n\nJuntando tudo, a lição é seca. Bom system design não é decorar padrão. É aprender a enxergar as fronteiras invisíveis que decidem o que o sistema consegue prometer sob carga, falha e crescimento. Time que começa por ferramenta faz diagrama. Time que começa por restrição faz sistema."
+      },
+      "entries": [
+        "2026-05-16-1",
+        "2026-04-07-1",
+        "2026-04-05-1",
+        "2026-04-02-1"
+      ]
+    },
+    {
       "slug": "assistants-are-systems",
       "date": "2026-05-16",
       "title": {
