@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-16",
+      "date": "2026-05-16",
+      "tokensUsed": 33467,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Bad Retries Can Break Good Systems",
+            "pt": "Retries ruins podem quebrar sistemas bons"
+          },
+          "summary": {
+            "en": "Raul Junco explains why retry logic is not a harmless reliability trick, but a system-wide design choice that can turn small transient faults into real incidents. Using an order service and inventory service example, he shows how timeouts create uncertainty about state, why naive retries amplify load on already struggling dependencies, and why teams need safeguards like backoff, jitter, idempotency, retry budgets, and circuit breakers instead of blind repetition.",
+            "pt": "Raul Junco mostra que lógica de retry não é um truque inocente de confiabilidade, mas uma decisão de arquitetura que pode transformar falhas transitórias pequenas em incidentes reais. Usando o exemplo de um serviço de pedidos chamando um serviço de inventário, ele explica como timeouts criam incerteza sobre o estado, por que retries ingênuos amplificam carga em dependências já frágeis e por que o time precisa de backoff, jitter, idempotência, retry budgets e circuit breakers, em vez de repetição cega."
+          },
+          "insights": {
+            "en": [
+              "Retries shift pressure, they do not remove failure. When a dependency is slow or unstable, aggressive retries can multiply traffic and deepen the outage.",
+              "The real question is not only whether a request might succeed on a second try, but whether the retry is safe after state may already have changed.",
+              "Reliable recovery needs guardrails. Backoff, jitter, idempotency keys, retry budgets, and circuit breakers are what keep transient faults from becoming cascading failures."
+            ],
+            "pt": [
+              "Retry move pressão, não remove falha. Quando a dependência já está lenta ou instável, retry agressivo multiplica tráfego e aprofunda o problema.",
+              "A pergunta certa não é só se a requisição pode funcionar na segunda tentativa, mas se o retry é seguro depois que o estado talvez já tenha mudado.",
+              "Recuperação confiável precisa de guardrails. Backoff, jitter, chaves de idempotência, retry budgets e circuit breakers evitam que falhas transitórias virem falhas em cascata."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/bad-retries-can-break-good-systems"
+        }
+      ]
+    },
+    {
       "id": "2026-05-15-eng",
       "date": "2026-05-15",
       "tokensUsed": 6862,
