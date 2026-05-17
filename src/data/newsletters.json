@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-17",
+      "date": "2026-05-17",
+      "tokensUsed": 44360,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Sivasankar Natarajan",
+          "title": {
+            "en": "AI Agent Memory - A Deep Dive",
+            "pt": "Memória de agentes de IA, um mergulho profundo"
+          },
+          "summary": {
+            "en": "This piece explains why the hardest part of building reliable AI agents is not the model, but the machinery around state, memory, and consistency. It separates what belongs to short-lived workflow state versus long-term memory, then shows how checkpointing, versioning, and controlled memory updates help agents survive multi-step work, recover from failures, and avoid contradictory behavior over time. The result is a practical architecture for agents that need to stay coherent across sessions instead of merely sounding smart in a single prompt.",
+            "pt": "Este texto mostra que a parte mais difícil de construir agentes de IA confiáveis não é o modelo, mas a estrutura em volta de estado, memória e consistência. Ele separa o que pertence ao estado temporário do fluxo do que deve virar memória de longo prazo, depois mostra como checkpointing, versionamento e atualização controlada de memória ajudam o agente a sobreviver a tarefas com várias etapas, se recuperar de falhas e evitar comportamento contraditório ao longo do tempo. O resultado é uma arquitetura prática para agentes que precisam manter coerência entre sessões, não só parecer inteligentes em um prompt isolado."
+          },
+          "insights": {
+            "en": [
+              "State and memory solve different problems. State tracks the current workflow and next step, while memory preserves durable preferences, prior decisions, and reference knowledge across tasks.",
+              "Checkpointing and schema versioning are production requirements, not extras. Without them, long-running agents break on crashes, redeploys, or workflow changes.",
+              "Consistency needs a write discipline. Immediate user changes should update state right away, but long-term memory should only absorb stable information that survives validation over time."
+            ],
+            "pt": [
+              "Estado e memória resolvem problemas diferentes. Estado acompanha o fluxo atual e o próximo passo, enquanto memória guarda preferências duráveis, decisões passadas e conhecimento reaproveitável entre tarefas.",
+              "Checkpointing e versionamento de schema são requisito de produção, não luxo. Sem isso, agentes de longa duração quebram em crash, redeploy ou mudança de workflow.",
+              "Consistência precisa de disciplina de escrita. Mudança imediata do usuário entra no estado na hora, mas memória de longo prazo só deve absorver informação que se mantém válida com o tempo."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/ai-agent-memory"
+        }
+      ]
+    },
+    {
       "id": "2026-05-16-eng",
       "date": "2026-05-16",
       "tokensUsed": 19446,
