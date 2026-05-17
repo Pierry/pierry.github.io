@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-17-eng",
+      "date": "2026-05-17",
+      "tokensUsed": 15517,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Airbnb Engineering",
+          "author": "Ryan Tanner, Raymie Stata, Adam Miskiewicz",
+          "title": {
+            "en": "Viaduct 1.0 and the future of Airbnb’s data mesh",
+            "pt": "Viaduct 1.0 e o futuro do data mesh do Airbnb"
+          },
+          "summary": {
+            "en": "Airbnb presents Viaduct 1.0, its production-hardened data-oriented service mesh built on GraphQL, now evolving from an internal platform into a stable open source project. The core idea is to let many teams contribute to a central schema without each team owning a separate GraphQL server, using a shared multi-tenant runtime that hosts independent tenant modules. It is a strong architecture piece because it tackles decentralization, schema governance, observability, and operational scale in one design instead of treating GraphQL as just an API layer.",
+            "pt": "O Airbnb apresenta o Viaduct 1.0, seu service mesh orientado a dados baseado em GraphQL, já endurecido em produção e agora evoluindo de plataforma interna para projeto open source estável. A ideia central é permitir que muitos times contribuam para um schema central sem exigir que cada time opere um servidor GraphQL separado, usando um runtime multi-tenant compartilhado que hospeda módulos independentes. É um texto forte de arquitetura porque ataca descentralização, governança de schema, observabilidade e escala operacional em um desenho só, sem tratar GraphQL apenas como camada de API."
+          },
+          "insights": {
+            "en": [
+              "Viaduct chooses module-level multi-tenancy over a fleet of subgraph servers. That reduces operational sprawl while still letting domain teams own their slice of the shared graph.",
+              "A central schema only scales if contribution is decentralized. Airbnb’s design separates platform concerns like runtime, scaling, and integration from domain logic owned by service teams.",
+              "The 1.0 release shows production maturity, with stable and experimental API annotations, binary compatibility checks in CI, Maven Central publishing, and a clearer community governance model."
+            ],
+            "pt": [
+              "O Viaduct escolhe multi-tenancy por módulos, no lugar de uma frota de servidores de subgraph. Isso corta espalhamento operacional sem tirar dos times o controle sobre sua fatia do grafo compartilhado.",
+              "Schema central só escala se a contribuição for descentralizada. O desenho do Airbnb separa preocupações de plataforma, como runtime, escala e integração, da lógica de domínio dos times donos do serviço.",
+              "A release 1.0 mostra maturidade de produção, com anotações de API estável e experimental, checagem de compatibilidade binária no CI, publicação no Maven Central e governança open source mais clara."
+            ]
+          },
+          "link": "https://medium.com/airbnb-engineering/viaduct-1-0-and-the-future-of-airbnbs-data-mesh-6bab4ec98b89"
+        }
+      ]
+    },
+    {
       "id": "2026-05-17",
       "date": "2026-05-17",
       "tokensUsed": 44360,
