@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-18-eng",
+      "date": "2026-05-18",
+      "tokensUsed": 33746,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Uber Engineering",
+          "title": {
+            "en": "Beyond Prediction: Solving the Multiple Knapsack Problem at Scale: How Uber Optimizes Incentives",
+            "pt": "Além da predição, como a Uber resolve o problema de múltiplas mochilas em escala para otimizar incentivos"
+          },
+          "summary": {
+            "en": "Uber explains how Tarot, its targeting orchestrator, turns incentive allocation into a production-grade optimization system. Instead of picking the locally best offer for each user, the platform combines uplift models, budget pacing, and a CP-SAT solver to maximize total ROI across millions of users, many concurrent treatments, and hard quarterly budget constraints. The post stands out because it connects ML prediction, systems design, and operations economics into one concrete architecture with clear trade-offs.",
+            "pt": "A Uber mostra como o Tarot, seu orquestrador de targeting, transforma alocação de incentivos em um sistema de otimização pronto para produção. Em vez de escolher a melhor oferta local para cada usuário, a plataforma combina modelos de uplift, pacing de orçamento e um solver CP-SAT para maximizar ROI total com milhões de usuários, muitos tratamentos concorrentes e limites trimestrais rígidos de budget. O texto se destaca porque junta predição por ML, desenho de sistema e economia operacional em uma arquitetura concreta, com trade-offs bem claros."
+          },
+          "insights": {
+            "en": [
+              "The clever move is separating prediction from valuation. Uber predicts raw uplift on multiple marketplace metrics, then applies dynamic business weights without retraining models every time priorities change.",
+              "Budget pacing is treated as a feedback-control problem, not a finance spreadsheet. By reconciling configured budget, observed spend, and predicted liability, the system keeps utilization high without overshooting the quarter.",
+              "The big scaling win came from choosing the right optimization model. Uber abandoned linear programming when it collapsed at scale and moved to CP-SAT, which solved the same class of allocation problems in minutes instead of more than a day."
+            ],
+            "pt": [
+              "A sacada forte é separar predição de valoração. A Uber prevê uplift bruto em várias métricas do marketplace e depois aplica pesos de negócio dinâmicos sem precisar retreinar modelo toda vez que prioridade muda.",
+              "Pacing de orçamento aqui vira problema de controle em feedback, não planilha financeira. Ao reconciliar budget configurado, gasto observado e passivo previsto, o sistema mantém uso alto sem estourar o trimestre.",
+              "O ganho grande de escala veio de escolher o modelo de otimização certo. A Uber largou programação linear quando ela travou em escala e migrou para CP-SAT, que resolveu a mesma classe de problema em minutos, não em mais de um dia."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/solving-multiple-knapsack/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-18",
       "date": "2026-05-18",
       "tokensUsed": 44590,
