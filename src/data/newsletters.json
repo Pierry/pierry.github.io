@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-18",
+      "date": "2026-05-18",
+      "tokensUsed": 44590,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Craft Better Software",
+          "author": "Daniel Moka",
+          "title": {
+            "en": "Human Code Reviews are Dead",
+            "pt": "Code review humano morreu"
+          },
+          "summary": {
+            "en": "Daniel Moka argues that AI has broken the old assumption that humans can reliably review every pull request line by line. As code generation accelerates, the real bottleneck shifts from writing code to verifying intent, behavior, and system safety. His answer is to replace manual diff inspection with a layered quality system: acceptance tests, deterministic guardrails, static analysis, AI reviewers, and adversarial QA agents, while humans spend their energy on judgment, trade-offs, and architecture.",
+            "pt": "Daniel Moka bate na ideia de que time humano ainda consegue revisar pull request linha por linha no ritmo que IA gera código. Quando gerar código fica barato, o gargalo sai da escrita e vai para validação de intenção, comportamento e segurança do sistema. A resposta dele é trocar inspeção manual de diff por uma camada de qualidade mais forte, com testes de aceitação, guardrails determinísticos, análise estática, revisores por IA e agentes adversariais de QA, enquanto humanos focam em julgamento, trade-off e arquitetura."
+          },
+          "insights": {
+            "en": [
+              "The important shift is from reviewing code text to reviewing system behavior. Acceptance tests become the contract that lets AI implement safely without humans policing every line.",
+              "Quality needs to be encoded into the delivery system. Architecture tests, linting, type constraints, dependency policies, and CI checks scale better than reviewer discipline alone.",
+              "Human leverage moves up the stack. Engineers are most valuable when they define intent, compare options, challenge assumptions, and pressure-test risky changes instead of rubber-stamping diffs."
+            ],
+            "pt": [
+              "A virada importante é sair de revisar texto de código e passar a revisar comportamento do sistema. Teste de aceitação vira contrato para deixar IA implementar sem humano vigiar cada linha.",
+              "Qualidade precisa virar parte do sistema de entrega. Teste de arquitetura, lint, restrição de tipos, política de dependência e CI escalam melhor que disciplina manual de reviewer.",
+              "Alavancagem humana sobe de nível. Engenheiro vale mais definindo intenção, comparando opções, quebrando premissa fraca e pressionando mudança arriscada, não carimbando diff."
+            ]
+          },
+          "link": "https://craftbettersoftware.com/p/human-code-reviews-are-dead"
+        }
+      ]
+    },
+    {
       "id": "2026-05-17-eng",
       "date": "2026-05-17",
       "tokensUsed": 15517,
