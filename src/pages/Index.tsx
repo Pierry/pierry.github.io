@@ -22,8 +22,8 @@ const t = {
     home: "Home",
     heroGreeting: "Hey, I'm Pierry.",
     heroIntro: "Engineering leader scaling multi-squad organizations across fintech, healthtech, and logistics. I run on metrics (DORA, SPACE), invest in managers, and tie technical strategy to business outcomes.",
-    heroDesc: "14 years shipping software across fintech, healthtech, and logistics. Currently leading engineering at Intelipost and building",
-    heroDescCont: ", a platform for engineering delivery metrics.",
+    heroDesc: "14 years shipping software across fintech, healthtech, and logistics. Currently leading engineering at Intelipost.",
+    heroDescCont: "",
     heroTech: "I care about backend development (Java, Kotlin, Python, Node, Go), mobile (Android, iOS, Flutter, KMP, React Native), TypeScript, architecture, and actually solving problems that matter.",
     heroPodcast: "I also run a podcast every 3 days with curated tech insights —",
     newsletterLabel: "Daily Newsletter",
@@ -55,7 +55,7 @@ const t = {
     impactDeloitte: "Built a low-latency mobile app integrating rural producers with BRF's supply chain.",
     // Projects
     projJsonEditor: "Modern JSON editor with themes",
-    projSpaceMetrics: "Engineering delivery analytics",
+    projSpaceMetrics: "",
     projHowMuch: "iOS App",
     projTodone: "Task management app",
     projDevSimulator: "Indie game",
@@ -103,8 +103,8 @@ const t = {
     home: "Início",
     heroGreeting: "E aí, sou o Pierry.",
     heroIntro: "Liderança de engenharia escalando organizações multi-squad em fintech, healthtech e logística. Trabalho com métricas (DORA, SPACE), invisto em managers e amarro estratégia técnica a resultado de negócio.",
-    heroDesc: "14 anos entregando software em fintech, healthtech e logística. Atualmente liderando engenharia na Intelipost e construindo",
-    heroDescCont: ", uma plataforma de métricas de delivery de engenharia.",
+    heroDesc: "14 anos entregando software em fintech, healthtech e logística. Atualmente liderando engenharia na Intelipost.",
+    heroDescCont: "",
     heroTech: "Curto desenvolvimento backend (Java, Kotlin, Python, Node), mobile (Android, iOS, Flutter, KMP), arquitetura, e resolver problemas que realmente importam.",
     heroPodcast: "Também tenho um podcast a cada 3 dias com insights de tech curados —",
     newsletterLabel: "Newsletter diária",
@@ -136,7 +136,7 @@ const t = {
     impactDeloitte: "Construí app mobile com protocolos de baixa latência integrando produtores rurais à cadeia da BRF.",
     // Projects
     projJsonEditor: "Editor JSON moderno com temas",
-    projSpaceMetrics: "Analytics de delivery de engenharia",
+    projSpaceMetrics: "",
     projHowMuch: "App iOS",
     projTodone: "App de gestão de tarefas",
     projDevSimulator: "Jogo indie",
@@ -352,10 +352,7 @@ const Index = () => {
           </p>
 
           <p className="text-base text-muted-foreground/80 leading-relaxed mb-6">
-            {i18n.heroDesc}{" "}
-            <a href="https://spacemetrics.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              SpaceMetrics.ai
-            </a>
+            {i18n.heroDesc}
             {i18n.heroDescCont}
           </p>
 
@@ -686,17 +683,6 @@ const Index = () => {
           </h2>
 
           <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-              <a
-                href="https://spacemetrics.ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-base text-foreground hover:text-primary transition-colors"
-              >
-                SpaceMetrics.ai
-              </a>
-              <span className="text-sm text-muted-foreground">{i18n.projSpaceMetrics}</span>
-            </div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
               <a
                 href="https://apps.apple.com/us/app/how-much-i-run/id6748591105"
