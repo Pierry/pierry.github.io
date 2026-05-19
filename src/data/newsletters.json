@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-19-eng",
+      "date": "2026-05-19",
+      "tokensUsed": 21491,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Netflix Tech Blog",
+          "author": "Saish Sali, Nipun Kumar, Sura Elamurugu",
+          "title": {
+            "en": "Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph",
+            "pt": "Democratizando machine learning na Netflix com o Model Lifecycle Graph"
+          },
+          "summary": {
+            "en": "Netflix presents the Metadata Service, a production metadata platform that unifies models, features, pipelines, datasets, and experiments into a single Model Lifecycle Graph. Instead of leaving ML artifacts trapped inside siloed registries and orchestration tools, the system ingests heterogeneous metadata in real time, enriches it with inferred relationships, and exposes cross-domain lineage queries such as which experiments run a model or which models share features. It stands out because it treats ML discovery as a graph architecture problem, making reuse, impact analysis, and collaboration practical across many business domains.",
+            "pt": "A Netflix apresenta o Metadata Service, uma plataforma de metadados em produção que unifica modelos, features, pipelines, datasets e experimentos em um único Model Lifecycle Graph. Em vez de deixar artefatos de ML presos em registries e orquestradores isolados, o sistema ingere metadados heterogêneos em tempo real, enriquece isso com relações inferidas e expõe consultas de lineage entre domínios, como quais experimentos usam um modelo ou quais modelos compartilham features. O post se destaca porque trata descoberta em ML como problema de arquitetura em grafo, tornando reuso, análise de impacto e colaboração algo prático em vários domínios de negócio."
+          },
+          "insights": {
+            "en": [
+              "The key move is separating source systems from discovery. Netflix keeps existing ML tools but adds a metadata layer that normalizes their outputs into one connected entity model.",
+              "Enrichment is where the graph becomes valuable. Background jobs infer transitive relationships, such as model to pipeline to A/B test, so practitioners can answer impact questions without manual cross-tool investigation.",
+              "This is broadly useful beyond ML platforms. Any organization with fragmented internal tooling can gain leverage by building a graph-shaped metadata control plane instead of forcing every team onto one monolithic system."
+            ],
+            "pt": [
+              "A jogada principal é separar sistemas de origem da descoberta. A Netflix mantém as ferramentas de ML existentes, mas adiciona uma camada de metadados que normaliza a saída delas em um modelo único e conectado.",
+              "O enriquecimento é onde o grafo ganha valor de verdade. Jobs em background inferem relações transitivas, como modelo para pipeline para teste A/B, então o time responde perguntas de impacto sem investigação manual entre várias ferramentas.",
+              "Isso é útil bem além de plataforma de ML. Qualquer empresa com tooling interno fragmentado pode ganhar alavancagem ao construir um control plane de metadados em forma de grafo, em vez de tentar empurrar todo mundo para um sistema monolítico."
+            ]
+          },
+          "link": "https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1"
+        }
+      ]
+    },
+    {
       "id": "2026-05-19",
       "date": "2026-05-19",
       "tokensUsed": 46624,
