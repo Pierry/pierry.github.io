@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-19",
+      "date": "2026-05-19",
+      "tokensUsed": 46624,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Computerphile",
+          "author": "Azalea Raad, Computerphile",
+          "title": {
+            "en": "Why Multi-Threaded Code Can Sometimes Misbehave (Weak Memory Concurrency)",
+            "pt": "Por que código multithread às vezes se comporta mal, concorrência com memória fraca"
+          },
+          "summary": {
+            "en": "Computerphile’s new episode with professor Azalea Raad explains a systems idea that quietly breaks real software: modern CPUs and compilers do not always preserve the intuitive step-by-step order developers imagine when threads run concurrently. The video shows why code that looks obviously correct can still produce surprising outcomes under weak memory models, and why correctness in concurrent systems depends on explicit synchronization, not just good intentions. It stands out because it translates a notoriously subtle topic into something directly useful for engineers building high-performance or distributed software.",
+            "pt": "O novo episódio da Computerphile com a professora Azalea Raad explica uma ideia de sistemas que quebra software real em silêncio: CPUs e compiladores modernos nem sempre preservam a ordem intuitiva, passo a passo, que o dev imagina quando várias threads rodam ao mesmo tempo. O vídeo mostra por que um código que parece obviamente correto ainda pode gerar resultados surpreendentes sob modelos de memória fraca, e por que correção em sistemas concorrentes depende de sincronização explícita, não só de boa intenção. Ele se destaca porque traduz um tema bem traiçoeiro em algo diretamente útil para quem constrói software de alta performance ou sistemas distribuídos."
+          },
+          "insights": {
+            "en": [
+              "Concurrency bugs are not only about race conditions in source code. Hardware and compiler reordering can make two threads observe memory in ways that violate the programmer’s mental model.",
+              "The safe takeaway is that locks, atomics, memory barriers, and language-level guarantees are not optional ceremony. They are the contract that turns concurrent code from wishful thinking into something correct.",
+              "This matters beyond low-level systems work. Datastores, queues, caches, runtimes, and any performance-sensitive backend eventually run into the same correctness trade-off between speed and ordering guarantees."
+            ],
+            "pt": [
+              "Bug de concorrência não nasce só de race condition visível no código. Reordenação de hardware e compilador pode fazer duas threads enxergarem memória de um jeito que quebra o modelo mental do programador.",
+              "A lição prática é simples: lock, atômico, barreira de memória e garantia da linguagem não são cerimônia. São o contrato que transforma código concorrente em algo correto de verdade.",
+              "Isso importa muito além de sistema de baixo nível. Banco, fila, cache, runtime e qualquer backend sensível a performance acaba trombando no mesmo trade-off entre velocidade e garantias de ordenação."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=E3hvLz717zM"
+        }
+      ]
+    },
+    {
       "id": "2026-05-18-eng",
       "date": "2026-05-18",
       "tokensUsed": 33746,
