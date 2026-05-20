@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-20",
+      "date": "2026-05-20",
+      "tokensUsed": 47050,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér",
+          "title": {
+            "en": "NVIDIA New AI Is An Efficiency Monster",
+            "pt": "Nova IA da NVIDIA vira um monstro de eficiência"
+          },
+          "summary": {
+            "en": "Two Minute Papers highlights NVIDIA's Nemotron-3 Nano Omni, a multimodal open model built to deliver strong agentic reasoning with unusually low compute cost. The core appeal is not just raw benchmark performance, but the architectural trade-off: keeping text, vision, and reasoning capabilities in a compact model that can run more cheaply and more widely than giant frontier systems. It stands out because it points to a practical direction for AI products, where efficiency and deployability may matter more than chasing the absolute largest model.",
+            "pt": "O Two Minute Papers destaca o Nemotron-3 Nano Omni, da NVIDIA, um modelo aberto multimodal feito para entregar raciocínio agentic forte com custo computacional bem menor. O ponto central não é só benchmark bruto, mas o trade-off de arquitetura: manter texto, visão e raciocínio em um modelo compacto, mais barato e mais fácil de espalhar que os gigantes de fronteira. Ele se destaca porque aponta para uma direção mais prática para produtos de IA, onde eficiência e deploy importam mais do que correr atrás do maior modelo possível."
+          },
+          "insights": {
+            "en": [
+              "Efficiency is becoming a product moat. A smaller multimodal model with good reasoning can unlock cheaper copilots, internal agents, and embedded AI features that are financially hard to justify with frontier-scale models.",
+              "This reinforces a broader industry shift from model maximalism to deployment realism. Teams increasingly win by optimizing latency, cost, and reliability, not only top-line intelligence.",
+              "For engineering leaders, the practical takeaway is to evaluate AI systems as architecture decisions. Model size, inference budget, and operational fit can matter more than leaderboard prestige."
+            ],
+            "pt": [
+              "Eficiência está virando moat de produto. Um modelo multimodal menor, mas com raciocínio bom, pode destravar copilots, agentes internos e features embarcadas que seriam caros demais com modelos gigantes.",
+              "Isso reforça uma virada maior da indústria, sair do maximalismo de modelo e entrar no realismo de deploy. Time ganha mais otimizando latência, custo e confiabilidade do que só inteligência de topo no benchmark.",
+              "Para liderança de engenharia, a lição prática é tratar sistema de IA como decisão de arquitetura. Tamanho do modelo, orçamento de inferência e encaixe operacional podem valer mais que prestígio em leaderboard."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=4wC8hnQawiA"
+        }
+      ]
+    },
+    {
       "id": "2026-05-19-eng",
       "date": "2026-05-19",
       "tokensUsed": 21491,
