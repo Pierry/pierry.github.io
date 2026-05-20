@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-20-eng",
+      "date": "2026-05-20",
+      "tokensUsed": 8459,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Spotify Engineering",
+          "author": "Spotify Engineering",
+          "title": {
+            "en": "Better Experiments with LLM Evals — A funnel, not a fork",
+            "pt": "Experimentos melhores com evals de LLM, funil, não atalho"
+          },
+          "summary": {
+            "en": "Spotify argues that LLM evals should improve experimentation, not replace it. The post separates offline verification from online validation: evals are useful for screening candidates, checking qualitative dimensions like relevance and coherence, and generating better hypotheses before an A/B test ever starts, but only live experiments can prove whether those improvements actually move user and business outcomes without causing regressions elsewhere. What makes the piece stand out is the operating model around it: evals become an upstream filter and a downstream calibration loop, so teams continuously compare judge scores against real production outcomes and refine both systems over time.",
+            "pt": "O Spotify defende que evals de LLM devem melhorar a experimentação, não substituir ela. O texto separa verificação offline de validação online: evals servem para filtrar candidatos, checar qualidades como relevância e coerência e gerar hipóteses melhores antes mesmo do A/B test começar, mas só experimento em produção prova se a melhora mexe de verdade em resultado de usuário e negócio sem criar regressão escondida. O que faz o post se destacar é o modelo operacional: eval vira filtro antes do teste e também loop de calibração depois dele, comparando a nota do juiz com o resultado real em produção para melhorar os dois com o tempo."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is verification versus validation. Evals can tell you whether an output looks better, but they cannot prove that better-looking output improves retention, trust, revenue, or other production metrics.",
+              "Spotify treats LLM judges as proxies that need constant calibration. Running evals against A/B test data closes the loop and exposes when the judge is rewarding surface-level patterns instead of real user value.",
+              "This is broadly useful beyond AI features. Any team adopting automated quality scoring should position it as a funnel that raises experiment hit rate, while keeping live experiments and guardrail metrics as the final safety net."
+            ],
+            "pt": [
+              "A ideia mais forte é separar verificação de validação. Eval consegue dizer se a saída parece melhor, mas não prova que isso melhora retenção, confiança, receita ou qualquer métrica real de produção.",
+              "O Spotify trata juiz de LLM como proxy que precisa calibração constante. Rodar eval em cima dos dados do A/B test fecha o loop e mostra quando o juiz está premiando padrão superficial em vez de valor real para usuário.",
+              "Isso é útil muito além de feature com IA. Qualquer time que usar score automático de qualidade deveria colocar isso como funil para subir a taxa de acerto dos testes, mantendo experimento real e guardrails como rede final de segurança."
+            ]
+          },
+          "link": "https://engineering.atspotify.com/2026/5/better-experiments-with-llm-evals-a-funnel-not-a-fork/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-20",
       "date": "2026-05-20",
       "tokensUsed": 47050,
