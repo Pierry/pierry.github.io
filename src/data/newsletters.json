@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-21-eng",
+      "date": "2026-05-21",
+      "tokensUsed": 9749,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Shopify Engineering",
+          "title": {
+            "en": "We replaced Redis with MySQL for inventory reservations, and it scaled",
+            "pt": "A Shopify trocou Redis por MySQL nas reservas de inventário, e escalou"
+          },
+          "summary": {
+            "en": "Shopify explains how it rebuilt oversell protection for checkout by moving inventory reservations from Redis into MySQL, so reservations and the inventory ledger could live inside the same ACID boundary. The key design was to stop modeling quantity as a single hot row and instead use one row per sellable unit with SKIP LOCKED, a bounded pool per item-location, and careful lock, isolation, and key design. What makes the post stand out is that the final scaling limit was not query speed but connection pressure across the wider checkout path, which turned the project into both a data consistency story and a systems observability story.",
+            "pt": "A Shopify mostra como reconstruiu a proteção contra oversell no checkout movendo as reservas de inventário do Redis para o MySQL, para que reserva e ledger de inventário vivessem dentro da mesma fronteira ACID. A peça central foi parar de modelar quantidade como uma linha quente única e passar para uma linha por unidade vendável com SKIP LOCKED, pool limitado por item e localização, e decisões cuidadosas de lock, isolamento e chave primária. O post se destaca porque o limite final de escala não estava na query em si, mas na pressão de conexões ao longo de todo o fluxo de checkout, virando ao mesmo tempo uma história de consistência de dados e de observabilidade de sistemas."
+          },
+          "insights": {
+            "en": [
+              "The strongest design move was collapsing reservations and inventory truth into the same transactional system. That removes cross-system failure modes that Redis plus MySQL could not close safely.",
+              "Shopify used MySQL 8 features tactically, not magically. SKIP LOCKED only worked after redesigning the schema, choosing composite primary keys, lowering isolation to READ COMMITTED in the right path, and standardizing lock order.",
+              "The best lesson for engineering leaders is that the apparent bottleneck may be a symptom. Query latency looked fine, but end-to-end connection hold time elsewhere in checkout was the real throughput ceiling."
+            ],
+            "pt": [
+              "A jogada mais forte foi juntar reserva e fonte de verdade do inventário no mesmo sistema transacional. Isso elimina falhas entre sistemas que Redis mais MySQL não conseguiam fechar com segurança.",
+              "A Shopify usou recursos do MySQL 8 com precisão, não por mágica. SKIP LOCKED só funcionou depois de redesenhar esquema, escolher chave primária composta, baixar isolamento para READ COMMITTED no ponto certo e padronizar ordem de lock.",
+              "A melhor lição para liderança de engenharia é que gargalo aparente pode ser sintoma. Latência de query parecia boa, mas o teto real de throughput estava no tempo de retenção de conexão em outras partes do checkout."
+            ]
+          },
+          "link": "https://shopify.engineering/scaling-inventory-reservations"
+        }
+      ]
+    },
+    {
       "id": "2026-05-21",
       "date": "2026-05-21",
       "tokensUsed": 21687,
