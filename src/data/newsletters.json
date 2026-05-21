@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-21",
+      "date": "2026-05-21",
+      "tokensUsed": 21687,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "OpenAI",
+          "title": {
+            "en": "An OpenAI model has disproved a central conjecture in discrete geometry",
+            "pt": "Um modelo da OpenAI derrubou uma conjectura central da geometria discreta"
+          },
+          "summary": {
+            "en": "OpenAI says one of its general-purpose reasoning models found a valid proof that breaks a long-standing Erdős conjecture in the planar unit distance problem. The result matters less for the specific math alone and more for what it signals: a non-specialized model appears to have produced an original, externally checked research contribution on a famous open problem, suggesting frontier reasoning systems are starting to move from assistive math tooling toward independent discovery in tightly verifiable domains.",
+            "pt": "A OpenAI diz que um de seus modelos gerais de raciocínio encontrou uma prova válida que derruba uma conjectura antiga de Erdős no problema da distância unitária no plano. O peso da notícia não está só na matemática em si, mas no sinal que ela dá: um modelo não especializado parece ter produzido uma contribuição original de pesquisa, checada por matemáticos externos, mostrando que sistemas de raciocínio de ponta estão começando a sair de ferramenta de apoio e entrar em descoberta mais independente em domínios onde dá para verificar tudo com rigor."
+          },
+          "insights": {
+            "en": [
+              "The strongest signal is not benchmark score, but autonomous contribution. A general reasoning model appears to have advanced a real open problem instead of merely explaining known solutions.",
+              "Mathematics is a useful proving ground because verification is strict. If models can hold together long chains of reasoning here, that increases confidence in their potential for research-grade work in other formal domains.",
+              "For engineering leaders, the practical takeaway is to watch where AI moves from acceleration into discovery. The biggest shift may come when models stop just helping experts work faster and start generating novel paths experts can validate."
+            ],
+            "pt": [
+              "O sinal mais forte aqui não é benchmark, é contribuição autônoma. Um modelo geral de raciocínio parece ter avançado um problema aberto real em vez de só explicar solução já conhecida.",
+              "Matemática é campo de prova perfeito porque a verificação é dura. Se modelo consegue sustentar cadeia longa de raciocínio aqui, sobe a confiança no uso para trabalho de pesquisa em outros domínios formais.",
+              "Para liderança de engenharia, a lição prática é vigiar o ponto onde IA sai de aceleração e entra em descoberta. A virada grande pode vir quando modelo parar de só ajudar especialista a ser mais rápido e começar a sugerir caminhos novos que humano valida."
+            ]
+          },
+          "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-20-eng",
       "date": "2026-05-20",
       "tokensUsed": 8459,
