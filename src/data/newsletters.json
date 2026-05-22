@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-22-eng",
+      "date": "2026-05-22",
+      "tokensUsed": 9758,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Richard Lander",
+          "title": {
+            "en": "Improving C# Memory Safety",
+            "pt": "Melhorando a segurança de memória no C#"
+          },
+          "summary": {
+            "en": "Microsoft lays out a new safety model for C# that turns unsafe from a loose syntactic marker into an explicit, compiler-enforced contract that propagates through the call graph. Unsafe operations must live inside scoped unsafe blocks, APIs can republish or discharge obligations at boundaries, and safety documentation becomes part of the formal interface. The post stands out because it connects language design, supply-chain risk, and AI-assisted coding into one practical model for making low-level code more reviewable and less error-prone at scale.",
+            "pt": "A Microsoft descreve um novo modelo de segurança para C# que transforma unsafe, saindo de um marcador sintático solto e virando um contrato explícito, propagado e reforçado pelo compilador ao longo do grafo de chamadas. Operações inseguras passam a viver em blocos unsafe com escopo claro, APIs podem repassar ou descarregar obrigações nas fronteiras, e a documentação de segurança vira parte formal da interface. O post se destaca porque junta design de linguagem, risco de supply chain e código assistido por IA num modelo prático para tornar código de baixo nível mais revisável e menos sujeito a erro em escala."
+          },
+          "insights": {
+            "en": [
+              "The key architectural move is to make safety boundaries explicit in code structure. Instead of relying on tribal knowledge around pointers and interop, the compiler now helps surface where obligations start, propagate, and end.",
+              "This is directly relevant in an AI-assisted world. As code generation gets cheaper, the cost of hidden unsafe assumptions rises, so enforced contracts and visible review points become more valuable than ever.",
+              "For engineering leaders, the deeper lesson is that guardrails work best when they are part of the toolchain, not just documentation. Strong defaults, opt-in rollout, and analyzable boundaries scale better than policy alone."
+            ],
+            "pt": [
+              "A jogada principal de arquitetura é deixar a fronteira de segurança explícita na estrutura do código. Em vez de depender de conhecimento tribal sobre ponteiros e interop, o compilador ajuda a mostrar onde a obrigação nasce, se propaga e termina.",
+              "Isso fica ainda mais relevante num mundo com código assistido por IA. Quando gerar código fica barato, o custo de suposições unsafe escondidas sobe, então contrato reforçado e ponto visível de revisão valem muito mais.",
+              "Para liderança de engenharia, a lição maior é que guardrail funciona melhor quando mora no toolchain, não só na documentação. Default forte, rollout opt-in e fronteira analisável escalam melhor que política solta."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/dotnet/improving-csharp-memory-safety/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-22",
       "date": "2026-05-22",
       "tokensUsed": 32503,
