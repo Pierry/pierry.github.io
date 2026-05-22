@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-22",
+      "date": "2026-05-22",
+      "tokensUsed": 32503,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech World With Milan",
+          "author": "Dr Milan Milanović",
+          "title": {
+            "en": "Code was the smallest part of the job",
+            "pt": "Código era a menor parte do trabalho"
+          },
+          "summary": {
+            "en": "Dr Milan Milanović argues that after years in software, the highest-leverage parts of the job are rarely writing code. In an AI-assisted era where implementation is cheaper, the real differentiators become debugging, choosing the right problem, planning before coding, keeping systems simple, documenting decisions, and operating well with people. What makes the piece stand out is that it reframes engineering growth away from syntax and toward judgment, recovery, trade-offs, and durable impact.",
+            "pt": "Dr Milan Milanović argumenta que, depois de anos em software, as partes de maior alavancagem do trabalho quase nunca são escrever código. Numa era em que IA barateia implementação, o diferencial real vira debug, escolha do problema certo, planejamento antes de codar, simplicidade de sistema, documentação de decisões e boa operação com pessoas. O texto se destaca porque reposiciona crescimento em engenharia, saindo de sintaxe e indo para julgamento, recuperação, trade-off e impacto durável."
+          },
+          "insights": {
+            "en": [
+              "Debugging and recovery are still core engineering skills. AI helps write code, but production understanding, calm incident response, and root-cause thinking remain deeply human leverage.",
+              "Code should be treated as liability, not trophy. The best engineers minimize moving parts, avoid over-engineering, and optimize for readability and future maintenance.",
+              "Career impact compounds outside the editor. Planning, writing decisions down, solving the right problem, and making work legible to other people matter more than raw coding speed."
+            ],
+            "pt": [
+              "Debug e recuperação continuam sendo skill central de engenharia. IA ajuda a escrever código, mas entendimento de produção, calma em incidente e raciocínio de causa raiz ainda são alavancagem humana forte.",
+              "Código deve ser tratado como passivo, não troféu. Os melhores engenheiros reduzem peças em movimento, evitam over-engineering e otimizam para legibilidade e manutenção futura.",
+              "Impacto de carreira compõe fora do editor. Planejar, escrever decisões, atacar o problema certo e deixar o trabalho legível para outras pessoas pesa mais que velocidade bruta de código."
+            ]
+          },
+          "link": "https://newsletter.techworld-with-milan.com/p/code-was-the-smallest-part-of-the"
+        }
+      ]
+    },
+    {
       "id": "2026-05-21-eng",
       "date": "2026-05-21",
       "tokensUsed": 9749,
