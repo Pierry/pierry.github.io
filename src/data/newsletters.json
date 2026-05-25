@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-25-eng",
+      "date": "2026-05-25",
+      "tokensUsed": 732588,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Slack Engineering",
+          "author": "Mahendran Vasagam",
+          "title": {
+            "en": "From SSH to REST: A Security-Driven Modernization of Slack’s EMR Data Pipelines",
+            "pt": "De SSH para REST, a modernização guiada por segurança dos pipelines de dados em EMR da Slack"
+          },
+          "summary": {
+            "en": "Slack explains how it removed SSH from more than 700 production EMR jobs spread across eight data regions without downtime, replacing brittle direct cluster access with a REST-based submission layer. The key design was to route Spark, Hive, MapReduce, and even arbitrary shell workloads through Quarry, a unified job gateway, while using YARN APIs and Distributed Shell so job lifecycle, retries, resource limits, and observability moved server-side. The post stands out because it turns a security cleanup into a broader platform modernization story, improving reliability, auditability, and the team’s ability to evolve its data infrastructure safely.",
+            "pt": "A Slack mostra como eliminou SSH de mais de 700 jobs de produção em EMR, espalhados por oito regiões de dados, sem downtime, trocando acesso direto e frágil ao cluster por uma camada de submissão via REST. A peça central foi rotear workloads de Spark, Hive, MapReduce e até comandos arbitrários de shell pelo Quarry, um gateway unificado de jobs, usando APIs do YARN e Distributed Shell para empurrar ciclo de vida, retry, limite de recurso e observabilidade para o lado do servidor. O texto se destaca porque transforma uma limpeza de segurança em uma modernização maior de plataforma, melhorando confiabilidade, auditabilidade e a capacidade do time de evoluir a infraestrutura de dados com segurança."
+          },
+          "insights": {
+            "en": [
+              "The strongest architectural move was replacing stateful SSH sessions with server-managed job identities. Once job state lives behind REST APIs, orchestrators can crash and restart without losing control of long-running work.",
+              "Slack found a pragmatic migration path by leaning on existing platform primitives instead of inventing a new remote-execution system. YARN Distributed Shell let even generic CLI workloads run inside proper containers with isolation, retries, and logs.",
+              "For engineering leaders, the deeper lesson is that security fixes often unlock platform leverage. Removing direct cluster access also improved auditability, observability, and future migrations such as Kubernetes-based compute paths and account isolation."
+            ],
+            "pt": [
+              "A jogada de arquitetura mais forte foi trocar sessão SSH com estado por identidade de job gerida no servidor. Quando o estado do job mora atrás de API REST, o orquestrador pode cair e voltar sem perder controle de trabalho longo.",
+              "A Slack achou um caminho pragmático de migração apoiando em primitivas já existentes da plataforma, em vez de inventar outro sistema de execução remota. O YARN Distributed Shell deixou até workload genérico de CLI rodar em container com isolamento, retry e logs.",
+              "Para liderança de engenharia, a lição mais funda é que correção de segurança muitas vezes destrava alavancagem de plataforma. Tirar acesso direto ao cluster também melhorou auditabilidade, observabilidade e futuras migrações, como compute em Kubernetes e isolamento por conta."
+            ]
+          },
+          "link": "https://slack.engineering/from-ssh-to-rest-a-security-driven-modernization-of-slacks-emr-data-pipelines/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-25",
       "date": "2026-05-25",
       "tokensUsed": 46576,
