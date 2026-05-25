@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-25",
+      "date": "2026-05-25",
+      "tokensUsed": 46576,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim and Ayaan",
+          "title": {
+            "en": "How Virtual Machines Work - A Deep Dive",
+            "pt": "Como máquinas virtuais funcionam, um mergulho profundo"
+          },
+          "summary": {
+            "en": "System Design One explains the architectural foundations of virtualization, from the difference between emulation and virtualization to the role of the hypervisor in isolating CPU, memory, storage, and networking across many guest systems on one physical host. The piece stands out because it connects low-level infrastructure mechanics directly to modern cloud computing, showing why virtual machines remain the core abstraction behind scalable, multi-tenant platforms.",
+            "pt": "A System Design One explica os fundamentos de arquitetura da virtualização, desde a diferença entre emulação e virtualização até o papel do hypervisor em isolar CPU, memória, storage e rede entre vários sistemas convidados sobre uma única máquina física. O texto se destaca porque liga a mecânica de infraestrutura de baixo nível direto com a nuvem moderna, mostrando por que máquinas virtuais ainda são a abstração central por trás de plataformas escaláveis e multi-tenant."
+          },
+          "insights": {
+            "en": [
+              "The key systems idea is resource illusion with isolation. A hypervisor lets each guest behave like it owns the machine while carefully arbitrating access to shared hardware underneath.",
+              "This is still foundational for cloud architecture. Before containers, Kubernetes, or serverless, the real enabler was being able to carve one server into many reliable compute boundaries.",
+              "For engineering leaders, the practical takeaway is that abstractions only scale when their operational contract is clear. Virtual machines won because they balanced portability, isolation, and efficient hardware utilization."
+            ],
+            "pt": [
+              "A ideia principal de sistemas aqui é ilusão de recurso com isolamento. O hypervisor deixa cada guest agir como se fosse dono da máquina, enquanto arbitra com cuidado o acesso ao hardware compartilhado por baixo.",
+              "Isso continua sendo base da arquitetura de nuvem. Antes de containers, Kubernetes ou serverless, o habilitador real foi conseguir fatiar um servidor em várias fronteiras confiáveis de computação.",
+              "Para liderança de engenharia, a lição prática é que abstração só escala quando o contrato operacional é claro. Máquina virtual venceu porque equilibra portabilidade, isolamento e uso eficiente do hardware."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/virtualization-architecture"
+        }
+      ]
+    },
+    {
       "id": "2026-05-22-eng",
       "date": "2026-05-22",
       "tokensUsed": 9758,
