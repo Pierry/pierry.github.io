@@ -1,6 +1,38 @@
 {
   "threads": [
     {
+      "slug": "system-design-is-constraint-literacy",
+      "date": "2026-05-25",
+      "title": {
+        "en": "System design is constraint literacy",
+        "pt": "System design é alfabetização em restrição"
+      },
+      "description": {
+        "en": "Fourteen digests now converge on the same harder lesson: strong system design does not begin with a clean diagram or fashionable stack. It begins by making constraints explicit, so isolation, safety, ordering and shared truth stay enforceable when production turns hostile.",
+        "pt": "Quatorze digests agora chegam na mesma lição mais dura: system design forte não começa com diagrama limpo nem stack da moda. Começa por explicitar restrições, para isolamento, segurança, ordenação e verdade compartilhada continuarem imponíveis quando produção fica hostil."
+      },
+      "body": {
+        "en": "A lot of system design material still teaches architecture like a shopping list. Pick queue, cache, replica, database and move on. The stronger writing in this cycle keeps arguing for something less cosmetic and more useful. System design is really the skill of making constraints visible before the system makes them visible for you through incidents.\n\nThe earlier entries in this thread already pushed that thesis through latency budgets, access patterns, retries, durability and safe evolution. The newly uncovered pieces reinforce it in three places teams still underestimate: isolation boundaries, transactional truth and compiler-enforced safety.\n\nThe virtualization deep dive is the cleanest infrastructure version of the lesson. A VM only works because the hypervisor makes the boundary explicit. CPU, memory, storage and networking look private to each guest because the system is disciplined about what is shared, what is isolated and how the illusion is enforced. Abstraction scales when the contract underneath is brutally clear.\n\nShopify's inventory-reservation rewrite tells the same story at the data boundary. Moving reservations from Redis into MySQL was not about preferring one tool over another. It was about putting reservation and source of truth inside one ACID contract, then shaping lock ordering, contention and connection pressure around the real semantics of checkout. Scale improved because the constraint moved into the system that could actually enforce it.\n\nMicrosoft's new C# memory-safety model brings the same logic into the language boundary. Unsafe code stops being a hidden local trick and becomes an explicit obligation that propagates through APIs and compiler checks. In an era of AI-assisted code, that matters even more. When code generation gets cheaper, visible safety contracts get more valuable.\n\nPut together, the message gets sharper. Good system design is not memorizing patterns or naming trendy infrastructure. It is learning to expose the limits that matter early enough for the system to uphold them, whether the boundary lives in a hypervisor, a transaction, a lock graph or a compiler. Teams that start with tools make diagrams. Teams that start with explicit constraints make systems that survive contact with reality.",
+        "pt": "Muito material de system design ainda ensina arquitetura como lista de compras. Escolhe fila, cache, réplica, banco e segue o jogo. Os textos mais fortes deste ciclo insistem em algo menos cosmético e mais útil. System design é, no fundo, a habilidade de deixar restrição visível antes que o sistema deixe isso visível para você em forma de incidente.\n\nAs entradas anteriores desta thread já empurravam essa tese por budget de latência, padrão de acesso, retry, durabilidade e evolução segura. As peças descobertas agora reforçam o mesmo ponto em três lugares que time ainda subestima, fronteira de isolamento, verdade transacional e segurança imposta pelo compilador.\n\nO mergulho em virtualização é a versão de infra mais limpa dessa lição. Máquina virtual só funciona porque o hypervisor deixa a fronteira explícita. CPU, memória, storage e rede parecem privados para cada guest porque o sistema disciplina com rigor o que é compartilhado, o que é isolado e como essa ilusão é imposta. Abstração só escala quando o contrato por baixo é brutalmente claro.\n\nA reescrita da Shopify para reserva de inventário conta a mesma história na fronteira de dados. Mover a reserva de Redis para MySQL não foi preferência de ferramenta. Foi decisão de colocar reserva e fonte de verdade dentro do mesmo contrato ACID, depois moldar ordem de lock, contenção e pressão de conexão em volta da semântica real do checkout. A escala melhorou porque a restrição passou a morar no sistema que de fato conseguia impor regra.\n\nO novo modelo de segurança de memória do C# leva a mesma lógica para a fronteira da linguagem. Código unsafe deixa de ser truque local escondido e vira obrigação explícita que se propaga por API e checagem do compilador. Em era de código assistido por IA, isso pesa ainda mais. Quando gerar código fica barato, contrato visível de segurança fica mais valioso.\n\nJuntando tudo, o recado fica mais afiado. Bom system design não é decorar padrão nem citar infra da moda. É aprender a expor cedo os limites que importam, para o sistema conseguir sustentá-los, seja a fronteira morando num hypervisor, numa transação, num grafo de locks ou no compilador. Time que começa por ferramenta faz diagrama. Time que começa por restrição explícita faz sistema que sobrevive ao contato com a realidade."
+      },
+      "entries": [
+        "2026-05-25-1",
+        "2026-05-22-eng-1",
+        "2026-05-21-eng-1",
+        "2026-05-19-1",
+        "2026-05-17-eng-1",
+        "2026-04-17-harness-1",
+        "2026-05-18-eng-1",
+        "2026-04-16-1",
+        "2026-03-31-1",
+        "2026-03-16-1",
+        "2026-05-16-1",
+        "2026-04-07-1",
+        "2026-04-05-1",
+        "2026-04-02-1"
+      ]
+    },
+    {
       "slug": "assistants-are-systems",
       "date": "2026-05-21",
       "title": {
@@ -72,35 +104,6 @@
         "2026-03-17-1",
         "2026-03-28-1",
         "2026-05-18-1"
-      ]
-    },
-    {
-      "slug": "system-design-is-constraint-literacy",
-      "date": "2026-05-20",
-      "title": {
-        "en": "System design is constraint literacy",
-        "pt": "System design é alfabetização em restrição"
-      },
-      "description": {
-        "en": "Eleven digests now converge on the same harder lesson: strong system design does not begin with a clean diagram or fashionable stack. It begins with learning the constraints that govern ordering, shared truth, change safety, budget, failure and recovery once production gets hostile.",
-        "pt": "Onze digests agora chegam na mesma lição mais dura: system design forte não começa com diagrama limpo nem stack da moda. Começa por aprender as restrições que governam ordenação, verdade compartilhada, segurança de mudança, budget, falha e recuperação quando produção fica hostil."
-      },
-      "body": {
-        "en": "A lot of system design material still teaches architecture like a shopping list. Pick queue, cache, replica, database and move on. The stronger writing in this cycle keeps arguing for something less cosmetic and more useful. System design is really the skill of reading constraints before the system reads them back to you through incidents.\n\nThe earlier entries in this thread already made that point through latency budgets, access patterns, retries, durability and optimization under hard business limits. The newly uncovered pieces tighten the same thesis around three places teams still underestimate: ordering, shared interfaces and change safety.\n\nThe weak-memory concurrency piece is the bluntest version of the lesson. Code that looks obviously correct can still misbehave when CPUs and compilers reorder observations. That means correctness is not just what your source code seems to say. It is what the execution model actually guarantees. Locks, atomics and memory barriers are not low-level trivia. They are architecture decisions about what reality the system is allowed to expose.\n\nAirbnb's Viaduct story makes the same point at the platform boundary. A shared GraphQL schema only scales when contribution, tenancy, observability and runtime ownership are designed as constraints from the start. Without that, decentralization becomes operational sprawl wearing a developer-experience costume.\n\nThe test harness piece brings the thesis into delivery. If your confidence starts only after code exists, you are already late. Good harness design begins at the PRD because change safety is part of the system, not a final inspection step. Legacy migrations, brittle tests and deployment fear are usually signs that the architecture never made room for safe evolution.\n\nPut together, the message gets even sharper. Good system design is not memorizing patterns or naming trendy infrastructure. It is learning to see the limits that stay true when threads race, many teams share one control surface and production changes need to land without drama. Teams that start with tools make diagrams. Teams that start with constraints make systems that survive contact with reality.",
-        "pt": "Muito material de system design ainda ensina arquitetura como lista de compras. Escolhe fila, cache, réplica, banco e segue o jogo. Os textos mais fortes deste ciclo insistem em algo menos cosmético e mais útil. System design é, no fundo, a habilidade de ler restrição antes que o sistema devolva isso em forma de incidente.\n\nAs entradas anteriores desta thread já batiam nessa tecla por budget de latência, padrão de acesso, retry, durabilidade e otimização sob limite duro de negócio. As peças descobertas agora apertam a mesma tese em três lugares que time ainda subestima: ordenação, interface compartilhada e segurança de mudança.\n\nO texto sobre concorrência com memória fraca é a versão mais seca da lição. Código que parece obviamente correto ainda pode se comportar mal quando CPU e compilador reordenam observações. Isso significa que corretude não é só o que o source parece dizer. É o que o modelo de execução realmente garante. Lock, atômico e barreira de memória não são curiosidade de baixo nível. São decisão de arquitetura sobre qual realidade o sistema pode expor.\n\nA história do Viaduct no Airbnb repete a mesma lógica na fronteira de plataforma. Um schema GraphQL compartilhado só escala quando contribuição, tenancy, observabilidade e ownership do runtime entram como restrição desde o começo. Sem isso, descentralização vira espalhamento operacional fantasiado de experiência de desenvolvedor.\n\nO episódio sobre test harness traz a tese para entrega. Se a sua confiança começa só depois que o código existe, você já chegou atrasado. Harness bom nasce no PRD porque segurança de mudança faz parte do sistema, não da inspeção final. Migração em legado, teste frágil e medo de deploy costumam ser sinal de que a arquitetura nunca abriu espaço para evolução segura.\n\nJuntando tudo, o recado fica mais afiado. Bom system design não é decorar padrão nem citar infra da moda. É aprender a enxergar os limites que continuam verdadeiros quando thread corre, muitos times compartilham a mesma superfície de controle e mudança em produção precisa entrar sem drama. Time que começa por ferramenta faz diagrama. Time que começa por restrição faz sistema que sobrevive ao contato com a realidade."
-      },
-      "entries": [
-        "2026-05-19-1",
-        "2026-05-17-eng-1",
-        "2026-04-17-harness-1",
-        "2026-05-18-eng-1",
-        "2026-04-16-1",
-        "2026-03-31-1",
-        "2026-03-16-1",
-        "2026-05-16-1",
-        "2026-04-07-1",
-        "2026-04-05-1",
-        "2026-04-02-1"
       ]
     },
     {
