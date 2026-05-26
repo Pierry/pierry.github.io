@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-26-eng",
+      "date": "2026-05-26",
+      "tokensUsed": 12616,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "LinkedIn Engineering",
+          "author": "Jiahao Xu et al.",
+          "title": {
+            "en": "Reimagining LinkedIn’s search tech stack",
+            "pt": "Reimaginando a stack de busca do LinkedIn"
+          },
+          "summary": {
+            "en": "LinkedIn details how it rebuilt search around a semantic, LLM-powered stack that serves millions of real-time queries while balancing relevance, latency, and cost. The system combines GPU-based embedding retrieval, a small cross-encoder language model for ranking, and a hybrid offline-plus-nearline inference pipeline for embeddings and concise job representations. What makes the post stand out is that it treats LLM search as a full production architecture problem, not just a model choice, covering retrieval, ranking, evaluation, caching, traffic shaping, and business-aware final-stage optimization.",
+            "pt": "O LinkedIn mostra como reconstruiu a busca em cima de uma stack semântica com LLM rodando milhões de queries em tempo real, equilibrando relevância, latência e custo. O sistema junta recuperação por embeddings em GPU, um modelo pequeno cross-encoder para ranking e um pipeline híbrido, parte offline e parte nearline, para gerar embeddings e representações curtas das vagas. O texto se destaca porque trata busca com LLM como problema completo de arquitetura de produção, não só escolha de modelo, cobrindo retrieval, ranking, avaliação, cache, traffic shaping e otimização final guiada por negócio."
+          },
+          "insights": {
+            "en": [
+              "The biggest architectural move is splitting search into specialized stages. LinkedIn uses embedding retrieval for broad semantic recall, then a smaller ranking model for precision, which keeps the system tractable at very high query volume.",
+              "Its evaluation stack is unusually strong. Product-policy rubrics, product-manager golden labels, and distilled LLM judges let the team continuously score tens of millions of query-document pairs and align training with product intent.",
+              "For engineering leaders, the real lesson is that production AI search is an infrastructure problem as much as a modeling problem. Caching, ranking-depth control, traffic shaping, and hybrid feature pipelines are what make LLM quality usable at scale."
+            ],
+            "pt": [
+              "A jogada de arquitetura mais forte é separar a busca em estágios especializados. O LinkedIn usa retrieval por embeddings para abrir recall semântico e depois um modelo menor de ranking para ganhar precisão, o que deixa o sistema viável em volume altíssimo.",
+              "A camada de avaliação é forte demais. Rubricas de política de produto, labels dourados feitos por PMs e juízes LLM destilados deixam o time medir dezenas de milhões de pares query-documento e alinhar treino com intenção real do produto.",
+              "Para liderança de engenharia, a lição real é que busca com IA em produção é problema de infraestrutura tanto quanto de modelagem. Cache, controle de profundidade de ranking, traffic shaping e pipeline híbrido de features são o que transformam qualidade de LLM em algo usável em escala."
+            ]
+          },
+          "link": "https://www.linkedin.com/blog/engineering/search/reimagining-linkedins-search-stack"
+        }
+      ]
+    },
+    {
       "id": "2026-05-26",
       "date": "2026-05-26",
       "tokensUsed": 37121,
