@@ -1,6 +1,14 @@
 {
   "episodes": [
     {
+      "title": "Ep #21 - Engineering Manager 2.0: Do Gerente de Status ao Operador de Sistema",
+      "description": "Neste episódio, exploramos a evolução da liderança de engenharia para o cenário de 2026, onde o modelo clássico de gestão baseado em cobrança de prazos e rituais burocráticos deu lugar à figura do <strong>Engineering Manager 2.0</strong>.Diferente do gestor tradicional, o EM 2.0 atua como um <strong",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/120519968/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-25%2Fed47dde8-a56d-c969-b5ac-ec252264ecda.m4a",
+      "pubDate": "2026-05-25",
+      "duration": "00:29:33",
+      "language": "en"
+    },
+    {
       "title": "Ep #20 - Harness Engineering na prática, como Guides, Sensors, Skills, References, Evals, Agentes e Pipeline viram um sistema vivo",
       "description": "Um episódio sobre o que quase ninguém explica direito: O sistema inteiro por trás de agentes úteis. A abordagem demonstra que o sucesso de um agente não depende apenas do prompt, mas de uma estrutura conectada envolvendo guide, sensor, skill, reference, eval, Wilson score, task(), síntese cruzada, h",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/119576965/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-6%2F2449d5b3-8e06-c968-2d90-6b52e852d52f.m4a",
