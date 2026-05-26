@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-26",
+      "date": "2026-05-26",
+      "tokensUsed": 37121,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Nolan Lawson",
+          "title": {
+            "en": "Using AI to write better code more slowly",
+            "pt": "Usando IA para escrever código melhor, mais devagar"
+          },
+          "summary": {
+            "en": "Nolan Lawson argues that the best use of AI coding tools is not to maximize raw output, but to increase code quality through slower, more adversarial review loops. Instead of shipping giant AI-written pull requests, he uses multiple models and agents to inspect changes, surface bugs, challenge assumptions, and force deeper understanding before merging. What makes the piece stand out is that it reframes AI from a speed multiplier into a quality multiplier, especially valuable for teams that care more about maintainability, correctness, and long-term codebase health than short-term throughput.",
+            "pt": "Nolan Lawson argumenta que o melhor uso de ferramentas de IA para código não é maximizar saída bruta, e sim aumentar qualidade por meio de loops de revisão mais lentos e mais adversariais. Em vez de despachar PR gigante escrito por IA, ele usa vários modelos e agentes para inspecionar mudanças, achar bugs, desafiar premissas e forçar entendimento mais fundo antes do merge. O texto se destaca porque reposiciona IA, saindo de multiplicador de velocidade e virando multiplicador de qualidade, algo muito valioso para times que ligam mais para manutenção, corretude e saúde de longo prazo da base do que para throughput de curto prazo."
+          },
+          "insights": {
+            "en": [
+              "The strongest shift is using AI as an opposing reviewer, not an unchecked generator. Multiple agents debating the same PR reduce false positives and expose bugs humans might miss in large or subtle changes.",
+              "This turns code review into a prioritization problem. Finding bugs is getting cheaper, but validating severity, deciding what is worth fixing, and knowing when to abandon the approach still require engineering judgment.",
+              "For leaders, the key lesson is that AI ROI should be measured in codebase health, not lines shipped. A slower workflow that prevents fragile design and surfaces hidden defects can outperform a faster workflow that compounds maintenance debt."
+            ],
+            "pt": [
+              "A virada mais forte é usar IA como revisora opositora, não como geradora sem freio. Vários agentes debatendo o mesmo PR reduzem falso positivo e expõem bug que humano pode deixar passar em mudança grande ou sutil.",
+              "Isso transforma code review em problema de priorização. Achar bug está ficando barato, mas validar severidade, decidir o que vale corrigir e saber quando abandonar a abordagem ainda depende de julgamento de engenharia.",
+              "Para liderança, a lição principal é medir retorno da IA pela saúde da base, não por linha entregue. Um fluxo mais lento que evita design frágil e revela defeito escondido pode ganhar de um fluxo mais rápido que só acumula dívida de manutenção."
+            ]
+          },
+          "link": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-25-eng",
       "date": "2026-05-25",
       "tokensUsed": 732588,
