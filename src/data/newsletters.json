@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-27",
+      "date": "2026-05-27",
+      "tokensUsed": 2756815,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "80% of the time, scaling is not a rewrite problem",
+            "pt": "Em 80% dos casos, escalar não é problema de reescrita"
+          },
+          "summary": {
+            "en": "Raul Junco argues that when a production monolith starts collapsing under peak traffic, the right response is usually not a rewrite but a disciplined 90-day stabilization plan. The article reframes scaling as an exercise in judgment under constraints: first clarify the real goal, then gain observability, harden the hot path with reversible changes, modularize pressure points, move non-critical work async, and only consider extraction after the system is stable. What makes it strong is that it treats scale as operational leverage and blast-radius reduction, not architecture theater.",
+            "pt": "Raul Junco defende que, quando um monólito de produção começa a cair sob pico de tráfego, a resposta certa quase nunca é reescrever tudo, e sim executar um plano disciplinado de 90 dias para estabilização. O texto reposiciona escala como exercício de julgamento sob restrição: primeiro esclarecer o objetivo real, depois ganhar observabilidade, endurecer o hot path com mudanças reversíveis, modularizar pontos de pressão, mover trabalho não crítico para assíncrono e só considerar extração depois que o sistema estiver estável. O que deixa a peça forte é tratar escala como alavancagem operacional e redução de blast radius, não como teatro de arquitetura."
+          },
+          "insights": {
+            "en": [
+              "The first move is reframing the problem correctly. If peak traffic is breaking a revenue-critical production system and a rewrite is off the table, the goal is survival, stability, and buying time, not elegance.",
+              "Month one is about visibility and reversible pressure relief. Latency, error rate, query timing, pool saturation, caching, timeouts, circuit breakers, and infra tuning often create more immediate headroom than structural rewrites.",
+              "Senior judgment shows up in sequencing. Clean domain boundaries, async offloading, and selective extraction matter, but only after the hot path is understood and failures degrade instead of cascading."
+            ],
+            "pt": [
+              "O primeiro passo é enquadrar o problema direito. Se o pico está quebrando um sistema crítico de receita e rewrite está proibido, o objetivo vira sobreviver, estabilizar e comprar tempo, não buscar elegância.",
+              "O mês um é visibilidade e alívio reversível de pressão. Latência, erro, tempo de query, saturação de pool, cache, timeout, circuit breaker e tuning de infra costumam abrir mais fôlego imediato que mudança estrutural grande.",
+              "Julgamento sênior aparece na ordem das coisas. Limite de domínio, trabalho assíncrono e extração seletiva importam, mas só depois que o hot path está entendido e a falha passa a degradar, não a virar cascata."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/scaling-is-not-a-rewrite-problem"
+        }
+      ]
+    },
+    {
       "id": "2026-05-26-eng",
       "date": "2026-05-26",
       "tokensUsed": 12616,
