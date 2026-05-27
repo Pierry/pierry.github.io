@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-27-eng",
+      "date": "2026-05-27",
+      "tokensUsed": 18020,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Google Research team",
+          "title": {
+            "en": "Private analytics via zero-trust aggregation",
+            "pt": "Analytics privado com agregação zero-trust"
+          },
+          "summary": {
+            "en": "Google Research presents a production-oriented private analytics architecture for on-device AI systems that combines one-shot secure aggregation with trusted execution environments. The design lets millions of devices contribute telemetry about model effectiveness, drift, and safety behavior without exposing individual user data, while reducing dependence on any single trust boundary. What makes the post stand out is that it treats privacy-preserving analytics as a full-scale systems problem spanning cryptography, attestation, device constraints, and operational deployability.",
+            "pt": "O Google Research apresenta uma arquitetura de analytics privado, pensada para produção, em sistemas de IA on-device que combina secure aggregation de mensagem única com trusted execution environments. O desenho permite que milhões de dispositivos contribuam com telemetria sobre efetividade, drift e comportamento de segurança do modelo sem expor dado individual, reduzindo ao mesmo tempo a dependência de uma única fronteira de confiança. O texto se destaca porque trata analytics com preservação de privacidade como problema completo de sistemas, juntando criptografia, attestation, restrições de dispositivo e viabilidade operacional em escala."
+          },
+          "insights": {
+            "en": [
+              "The strongest systems move is layering cryptographic secure aggregation with TEE attestation instead of trusting hardware alone. Even if one protection boundary weakens, raw per-user data still stays shielded until after anonymized aggregation.",
+              "Google solves a real deployment bottleneck by moving from interactive multi-round secure aggregation to a one-shot submission model. That matters because phones do not stay reliably online long enough for elegant but impractical protocols.",
+              "For engineering leaders, the deeper lesson is that privacy-preserving AI telemetry is an architecture problem, not just a compliance box. You need deployable protocols, operational transparency, and failure assumptions that survive at fleet scale."
+            ],
+            "pt": [
+              "A jogada de sistemas mais forte é empilhar secure aggregation criptográfica com attestation de TEE, em vez de confiar só no hardware. Mesmo se uma fronteira enfraquecer, dado bruto por usuário continua protegido até depois da agregação anonimizada.",
+              "O Google resolve um gargalo real de deploy ao sair de secure aggregation interativa, com várias rodadas, para um modelo de envio único. Isso importa porque celular não fica online tempo suficiente para protocolo bonito mas impraticável.",
+              "Para liderança de engenharia, a lição funda é que telemetria privada para IA é problema de arquitetura, não só checkbox de compliance. Precisa de protocolo implantável, transparência operacional e hipótese de falha que aguenta frota em escala."
+            ]
+          },
+          "link": "https://research.google/blog/private-analytics-via-zero-trust-aggregation/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-27",
       "date": "2026-05-27",
       "tokensUsed": 1926031,
