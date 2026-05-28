@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-28",
+      "date": "2026-05-28",
+      "tokensUsed": 996961,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "How to get ahead of 99% of software engineers with AI agents",
+            "pt": "Como ficar na frente de 99% dos engenheiros de software com agentes de IA"
+          },
+          "summary": {
+            "en": "System Design One maps AI agents across the software development lifecycle and makes a sharper point than most agent hype pieces: the real leverage is not just code generation, but preserving shared context as work moves through planning, coding, testing, review, incidents, and maintenance. The article breaks the lifecycle into stages, shows where agents already create value, where they still fail badly, and why the limiting factor is often memory, verification speed, and the cost of being wrong. It stands out because it treats agentic engineering as an operating model problem, not a prompt trick.",
+            "pt": "A System Design One mapeia agentes de IA ao longo de todo o ciclo de desenvolvimento e bate num ponto mais forte que a maioria dos textos de hype: a alavanca real não é só gerar código, e sim preservar contexto compartilhado enquanto o trabalho passa por planejamento, código, testes, revisão, incidentes e manutenção. O artigo divide o ciclo em estágios, mostra onde agentes já criam valor, onde ainda falham feio e por que o limite costuma ser memória, velocidade de verificação e custo do erro. O texto se destaca porque trata engenharia agentic como problema de modelo operacional, não truque de prompt."
+          },
+          "insights": {
+            "en": [
+              "The most useful framing is stage-by-stage delegation. Agents shine where feedback is fast and reversible, like coding and testing, but become much riskier in planning, architecture, and irreversible operational decisions.",
+              "The hidden bottleneck is context continuity across tools and handoffs. Shared memory between IDE, tickets, reviews, and incident workflows may matter more than raw model quality for real team productivity.",
+              "For engineering leaders, the practical play is spec-driven work with tight review loops. Small scoped tasks, explicit plans, and externalized context beat long autonomous runs that slowly drift and forget their own decisions."
+            ],
+            "pt": [
+              "O enquadramento mais útil é delegar por estágio. Agentes brilham onde o feedback é rápido e reversível, como código e teste, mas ficam muito mais perigosos em planejamento, arquitetura e decisão operacional irreversível.",
+              "O gargalo escondido é continuidade de contexto entre ferramentas e handoffs. Memória compartilhada entre IDE, ticket, review e fluxo de incidente pode importar mais que qualidade bruta do modelo para produtividade real do time.",
+              "Para liderança de engenharia, a jogada prática é trabalho guiado por spec com loop curto de revisão. Tarefa pequena, plano explícito e contexto externalizado ganham de execução autônoma longa que vai derivando e esquecendo as próprias decisões."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/agentic-ai-use-cases"
+        }
+      ]
+    },
+    {
       "id": "2026-05-27-eng",
       "date": "2026-05-27",
       "tokensUsed": 18020,
