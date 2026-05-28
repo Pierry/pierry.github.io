@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-28-eng",
+      "date": "2026-05-28",
+      "tokensUsed": 16034,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Burke Libbey",
+          "title": {
+            "en": "Under the River",
+            "pt": "Debaixo do River"
+          },
+          "summary": {
+            "en": "Shopify explains how an internal Slack-native coding agent called River emerged from earlier platform bets on a monorepo, reproducible Nix environments, and written-down operational knowledge. The post is strongest when it moves past agent hype and details Aquifer, the durable platform underneath River that separates session identity, agent harness, and execution sandbox so conversations survive process death while code execution stays replaceable, observable, and safer. It reads as a real systems story about building multiplayer agents against a production codebase, not a demo of prompts.",
+            "pt": "A Shopify mostra como o agente interno River, nativo do Slack, nasceu de apostas anteriores em monorepo, ambientes reproduzíveis com Nix e conhecimento operacional documentado em arquivos. O texto fica forte quando sai do hype de agente e entra no Aquifer, a plataforma durável por baixo do River que separa identidade da sessão, harness do agente e sandbox de execução, para a conversa sobreviver à morte de processo enquanto a execução de código fica mais trocável, observável e segura. É uma história real de sistemas para agentes multiplayer em cima de base de código de produção, não uma demo de prompt."
+          },
+          "insights": {
+            "en": [
+              "The core architectural move is separating durable session state from disposable execution. Shopify keeps the canonical event log in Postgres and treats harnesses and sandboxes as cattle, which makes long-lived agent workflows resilient to crashes and host churn.",
+              "River is useful because the surrounding substrate was made agent-friendly first: monorepo visibility, reproducible dev and CI environments, written-down skills, and fast feedback loops. Those same investments also improve human engineering velocity.",
+              "The multiplayer Slack surface matters as much as the model. Public threads turn one person’s investigation into reusable organizational memory that can be fed back into skills, prompts, and defaults without retraining the model."
+            ],
+            "pt": [
+              "A jogada central de arquitetura é separar estado durável da sessão da execução descartável. A Shopify guarda o log canônico em Postgres e trata harness e sandbox como gado, o que deixa fluxo longo de agente resistente a crash e troca de host.",
+              "O River funciona porque o substrato ficou agent-friendly antes: visibilidade de monorepo, ambiente reprodutível em dev e CI, skills escritas e loop rápido de feedback. O mesmo investimento também melhora a velocidade dos humanos.",
+              "A superfície multiplayer no Slack importa tanto quanto o modelo. Threads públicas transformam a investigação de uma pessoa em memória organizacional reutilizável, depois reciclada em skills, prompts e defaults sem retreinar modelo."
+            ]
+          },
+          "link": "https://shopify.engineering/under-the-river"
+        }
+      ]
+    },
+    {
       "id": "2026-05-28",
       "date": "2026-05-28",
       "tokensUsed": 996961,
