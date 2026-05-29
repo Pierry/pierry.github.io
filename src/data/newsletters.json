@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-29",
+      "date": "2026-05-29",
+      "tokensUsed": 1955964,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Codex",
+          "author": "System Design Codex",
+          "title": {
+            "en": "How to Move from Monolith to a Service Based Architecture",
+            "pt": "Como sair de um monólito para uma arquitetura baseada em serviços"
+          },
+          "summary": {
+            "en": "System Design Codex lays out a pragmatic migration path from a monolith to services without treating microservices as a rewrite religion. The strongest part is the sequencing: front the monolith with controlled routing, validate critical flows in parallel, add new behavior by surrounding rather than gutting the core, and use change data capture to separate data ownership gradually. It is useful because it frames the move as risk management, traffic control, and boundary design, not a heroic rebuild.",
+            "pt": "A System Design Codex mostra um caminho pragmático para sair de um monólito rumo a serviços sem tratar microservices como religião de reescrita. A parte mais forte é a sequência: colocar roteamento controlado na frente do monólito, validar fluxos críticos em paralelo, adicionar comportamento novo ao redor do core em vez de arrebentar o core, e usar change data capture para separar ownership de dados aos poucos. O valor do texto é tratar a migração como gestão de risco, controle de tráfego e desenho de fronteiras, não como rebuild heroico."
+          },
+          "insights": {
+            "en": [
+              "The article argues for combining patterns instead of betting on one grand migration. Strangler Fig handles routing, Parallel Run builds confidence, Collaborator adds value fast, and CDC decouples data over time.",
+              "The real migration unit is not the service, but the risk boundary. Teams should extract high-value or high-instability paths first, where reversible routing and production comparison give fast learning.",
+              "Data separation is the hardest part, so CDC matters less as a buzzword and more as a temporary bridge that lets new services evolve without tight synchronous dependence on the monolith database."
+            ],
+            "pt": [
+              "O texto defende combinar padrões, não apostar numa migração grandona. Strangler Fig cuida do roteamento, Parallel Run constrói confiança, Collaborator entrega valor rápido, e CDC ajuda a desgrudar dados com o tempo.",
+              "A unidade real da migração não é o serviço, é a fronteira de risco. O time deve extrair primeiro caminhos de alto valor ou alta instabilidade, onde roteamento reversível e comparação em produção geram aprendizado rápido.",
+              "Separação de dados é a parte mais dura, então CDC importa menos como buzzword e mais como ponte temporária, permitindo que serviços novos evoluam sem dependência síncrona apertada no banco do monólito."
+            ]
+          },
+          "link": "https://newsletter.systemdesigncodex.com/p/how-to-move-from-monolith-to-a-service"
+        }
+      ]
+    },
+    {
       "id": "2026-05-28-eng",
       "date": "2026-05-28",
       "tokensUsed": 16034,
