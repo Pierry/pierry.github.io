@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-30",
+      "date": "2026-05-30",
+      "tokensUsed": 40648,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Obelisk",
+          "title": {
+            "en": "SQLite is all you need for durable workflows",
+            "pt": "SQLite é tudo que você precisa para workflows duráveis"
+          },
+          "summary": {
+            "en": "This post makes a strong minimalist architecture argument for agent and workflow systems: durable execution does not always need a network database, orchestrator, or heavy control plane. If the real asset is workflow state, keeping that state in a local SQLite file, replaying from an execution log, and backing it up asynchronously with Litestream can be simpler, cheaper, and easier to inspect than introducing Postgres and extra infrastructure on day one. The useful idea is not that SQLite replaces everything forever, but that many AI and experimentation workloads are better served by tiny isolated durable units than by one shared always-on platform.",
+            "pt": "Esse texto faz uma defesa forte de arquitetura minimalista para agentes e sistemas de workflow: execução durável nem sempre precisa de banco em rede, orquestrador ou control plane pesado. Se o ativo principal é o estado do workflow, guardar esse estado num arquivo SQLite local, reexecutar a partir de um log de execução e fazer backup assíncrono com Litestream pode ser mais simples, barato e inspecionável do que colocar Postgres e infraestrutura extra logo no dia 1. A ideia valiosa não é que SQLite substitui tudo para sempre, e sim que muitas cargas de IA e experimentação funcionam melhor em unidades duráveis pequenas e isoladas do que numa plataforma compartilhada sempre ligada."
+          },
+          "insights": {
+            "en": [
+              "The key design move is separating durable state from disposable compute. Workflow progress must survive crashes, while workers and runtimes can stay cheap and replaceable.",
+              "SQLite fits early and mid-stage agent systems because it removes the network hop and the operational tax of a separate database service, while still giving transactional state and easy local inspection.",
+              "Litestream changes the tradeoff: asynchronous backup to object storage is often enough for bursty AI workloads, but the article is clear that Postgres still wins when you need stronger availability, shared scale, or stricter durability guarantees."
+            ],
+            "pt": [
+              "A jogada principal de design é separar estado durável de compute descartável. O progresso do workflow precisa sobreviver a crash, enquanto worker e runtime podem continuar baratos e trocáveis.",
+              "SQLite encaixa bem em sistemas de agentes no começo e no meio da curva porque remove o salto de rede e o custo operacional de um banco separado, mas ainda entrega estado transacional e inspeção local fácil.",
+              "Litestream muda o trade-off: backup assíncrono para object storage já basta para muita carga bursty de IA, mas o texto deixa claro que Postgres ainda ganha quando você precisa de disponibilidade mais forte, escala compartilhada ou garantias mais rígidas de durabilidade."
+            ]
+          },
+          "link": "https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-29",
       "date": "2026-05-29",
       "tokensUsed": 1955964,
