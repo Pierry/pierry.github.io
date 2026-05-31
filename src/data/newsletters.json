@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-31",
+      "date": "2026-05-31",
+      "tokensUsed": 35520,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "The T-Shaped Dev",
+          "author": "Petar Ivanov",
+          "title": {
+            "en": "Database Design Doesn't Start With Table. It Starts With Consequences",
+            "pt": "Design de banco não começa pela tabela, começa pelas consequências"
+          },
+          "summary": {
+            "en": "The T-Shaped Dev argues that database design should be treated as a long-term architecture decision, not a quick schema sketch before shipping v1. The article’s strongest point is that most production pain blamed on scaling often starts much earlier, when teams model tables before modeling the domain, skip constraints, denormalize without evidence, and add indexes without understanding the write cost. It is useful because it reframes schema work as consequence management: encode reality in the data model first, then optimize with real query patterns instead of guesses.",
+            "pt": "A The T-Shaped Dev defende que design de banco deve ser tratado como decisão de arquitetura de longo prazo, não como rascunho rápido de schema antes de soltar a v1. O ponto mais forte é que muita dor de produção atribuída a escala começa bem antes, quando o time modela tabela antes de modelar domínio, pula constraint, desnormaliza sem evidência e sai criando índice sem entender o custo de escrita. O valor do texto é reposicionar schema como gestão de consequência: primeiro codificar a realidade no modelo de dados, depois otimizar com padrão real de query, não com chute."
+          },
+          "insights": {
+            "en": [
+              "The core lesson is domain first, table later. If the schema allows states that cannot exist in the business, production data will eventually drift into those invalid states.",
+              "Normalization is the safe default, but not the destination. Start clean, then denormalize only when measured read patterns justify the tradeoff and you know the write and maintenance cost.",
+              "Constraints and indexes are architectural tools, not cleanup tasks. Foreign keys, NOT NULL, CHECK constraints, and targeted indexes move correctness and performance guarantees closer to the data itself."
+            ],
+            "pt": [
+              "A lição central é domínio primeiro, tabela depois. Se o schema permite estados que não existem no negócio, mais cedo ou mais tarde a produção vai cair nesses estados inválidos.",
+              "Normalização é default seguro, não destino final. Começa limpo, depois desnormaliza só quando padrão medido de leitura justificar o trade-off e você souber o custo em escrita e manutenção.",
+              "Constraint e índice são ferramenta de arquitetura, não faxina tardia. Foreign key, NOT NULL, CHECK e índice bem escolhido empurram corretude e performance para perto do dado."
+            ]
+          },
+          "link": "https://thetshaped.dev/p/database-design-foundations-backend-engineers-mistakes-and-lessons"
+        }
+      ]
+    },
+    {
       "id": "2026-05-30",
       "date": "2026-05-30",
       "tokensUsed": 40648,
