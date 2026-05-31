@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-05-31-eng",
+      "date": "2026-05-31",
+      "tokensUsed": 10642,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Lei Chen et al.",
+          "title": {
+            "en": "SilverTorch: Index as Model, a new retrieval paradigm for recommendation systems",
+            "pt": "SilverTorch: Index as Model, um novo paradigma de retrieval para sistemas de recomendação"
+          },
+          "summary": {
+            "en": "Meta presents SilverTorch, a production retrieval architecture that collapses the usual recommendation microservice mesh into one integrated PyTorch model. Instead of keeping ANN search, eligibility filtering, reranking, and scoring in separate services with separate deployment cycles, Meta turns the index itself into a model component and executes the whole retrieval path as one forward pass on GPUs. The important engineering point is not just speed, but the removal of architectural ceilings: fewer network hops, one versioned artifact, tighter co-optimization across stages, and enough efficiency headroom to run more sophisticated retrieval under strict sub-100 ms latency budgets.",
+            "pt": "A Meta apresenta o SilverTorch, uma arquitetura de retrieval em produção que desmonta a malha tradicional de microserviços de recomendação e a substitui por um único modelo integrado em PyTorch. Em vez de manter ANN search, filtro de elegibilidade, reranking e scoring em serviços separados, com ciclos próprios de deploy, a Meta transforma o próprio índice em componente do modelo e executa todo o caminho de retrieval como um forward pass único em GPU. O ponto forte de engenharia não é só velocidade, e sim remover tetos arquiteturais: menos hop de rede, um artefato versionado só, otimização conjunta entre etapas e folga de eficiência suficiente para rodar retrieval mais sofisticado dentro de budgets rígidos de menos de 100 ms."
+          },
+          "insights": {
+            "en": [
+              "The big design move is turning the retrieval index into part of the model itself. That replaces a chain of loosely coupled services with one execution graph, which removes serialization overhead and version skew between embeddings, filters, and scorers.",
+              "Reimplementing retrieval primitives as pure PyTorch modules matters because it unlocks compiler and GPU optimizations from the broader AI stack. Meta is effectively treating systems infrastructure as model architecture, not as glue around the model.",
+              "The practical payoff is scale with better quality, not just benchmark vanity. Higher throughput and lower cost make it feasible to evaluate more candidates and run neural reranking earlier, which directly improves recommendation quality under real latency constraints."
+            ],
+            "pt": [
+              "A grande jogada é transformar o índice de retrieval em parte do próprio modelo. Isso troca uma corrente de serviços frouxamente acoplados por um grafo único de execução, cortando custo de serialização e desalinhamento de versão entre embedding, filtro e scorer.",
+              "Reimplementar os primitivos de retrieval como módulos puros de PyTorch importa porque libera otimizações de compilador e GPU vindas do ecossistema maior de IA. A Meta está tratando infra de sistemas como arquitetura de modelo, não como cola em volta do modelo.",
+              "O ganho prático é escala com qualidade melhor, não só benchmark bonito. Mais throughput e menos custo deixam viável avaliar mais candidatos e empurrar reranking neural para mais cedo, o que melhora recomendação sob restrição real de latência."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/05/26/ml-applications/silvertorch-index-as-model-new-retrieval-paradigm-recommendation-systems/"
+        }
+      ]
+    },
+    {
       "id": "2026-05-31",
       "date": "2026-05-31",
       "tokensUsed": 35520,
