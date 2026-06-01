@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-01-eng",
+      "date": "2026-06-01",
+      "tokensUsed": 9238,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Pinterest Engineering",
+          "author": "Ajay Venkatakrishnan, Le Zhang, Eric Shang, Pihui Wei, Connor Votroubek, Yi He, Camilo Munoz e Simin Li",
+          "title": {
+            "en": "Making User-Sequence Data More Cost-Efficient, Faster, and Easier to Use",
+            "pt": "Como o Pinterest deixou dados de sequência de usuário mais baratos, rápidos e fáceis de usar"
+          },
+          "summary": {
+            "en": "Pinterest describes a redesign of the platform that builds user-behavior sequences for ranking, retrieval, and recommendation models across training, offline analysis, and online inference. The key engineering move is treating sequence construction as a shared product with one definition reused across streaming, batch backfills, and serving, instead of letting each runtime assemble its own version. That matters because user-sequence data is one of the most expensive and failure-prone layers in large ML stacks, and Pinterest shows a concrete path to reduce drift, cut storage and network cost, and make new signals faster to onboard without spawning bespoke pipelines.",
+            "pt": "O Pinterest mostra um redesenho da plataforma que monta sequências de comportamento de usuário para modelos de ranking, retrieval e recomendação em treino, análise offline e inferência online. A jogada principal de engenharia foi tratar a construção dessas sequências como um produto compartilhado, com uma definição única reutilizada em streaming, backfill batch e serving, em vez de cada runtime montar sua própria versão. Isso importa porque dado de sequência costuma ser uma das camadas mais caras e frágeis da stack de ML em escala, e o texto mostra um caminho concreto para reduzir drift, cortar custo de storage e rede, e acelerar a entrada de novos sinais sem criar pipeline artesanal toda vez."
+          },
+          "insights": {
+            "en": [
+              "The strongest architecture decision is one definition, many runtimes. Pinterest keeps event filtering, enrichments, and sequence assembly aligned across real-time indexing, batch processing, and online serving so training and production stop drifting apart.",
+              "Configuration-as-code is not just convenience here, it is the scalability lever. New event types and enrichments can be reviewed, versioned, rolled back, and deployed much faster without creating another one-off pipeline.",
+              "The platform is designed around ML reality, not abstract elegance. Columnar time-partitioned storage, shared execution, and a stable sequence contract make freshness, completeness, and schema stability first-class concerns for production models."
+            ],
+            "pt": [
+              "A decisão mais forte de arquitetura é uma definição, muitos runtimes. O Pinterest mantém filtro de evento, enrichment e montagem da sequência alinhados entre indexação em tempo real, batch e serving online, evitando que treino e produção virem dois mundos diferentes.",
+              "Configuration-as-code aqui não é perfumaria, é alavanca de escala. Novos tipos de evento e enrichments entram com review, versionamento, rollback e deploy muito mais rápido, sem abrir mais um pipeline sob medida.",
+              "A plataforma foi desenhada para a realidade de ML, não para elegância abstrata. Storage colunar particionado por tempo, execução compartilhada e contrato estável de sequência colocam freshness, completeness e estabilidade de schema como preocupação de produção."
+            ]
+          },
+          "link": "https://medium.com/pinterest-engineering/making-user-sequence-data-more-cost-efficient-faster-and-easier-to-use-2a56a928cae1"
+        }
+      ]
+    },
+    {
       "id": "2026-06-01",
       "date": "2026-06-01",
       "tokensUsed": 46461,
