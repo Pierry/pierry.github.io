@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-01",
+      "date": "2026-06-01",
+      "tokensUsed": 46461,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "The System Design Newsletter",
+          "author": "Neo Kim",
+          "title": {
+            "en": "How to get ahead of 99% of software engineers with AI agents",
+            "pt": "Como ficar na frente de 99% dos engenheiros de software com agentes de IA"
+          },
+          "summary": {
+            "en": "System Design One maps AI agents across the full software delivery lifecycle instead of treating them as just code generators. The strongest idea is that agent usefulness depends less on raw model power and more on the stage of work, how fast mistakes are detected, whether outputs are reversible, and how much business context the agent actually has. It is a practical read because it separates where agents already create real leverage, like coding and repetitive planning work, from where human judgment still dominates, like product prioritization and architecture decisions with long delayed consequences.",
+            "pt": "A System Design One posiciona agentes de IA ao longo de todo o ciclo de entrega de software, em vez de tratá-los só como geradores de código. A ideia mais forte é que a utilidade do agente depende menos do poder bruto do modelo e mais da etapa do trabalho, da velocidade para detectar erro, da reversibilidade da saída e da quantidade de contexto de negócio que o agente realmente tem. O texto é prático porque separa onde agentes já geram alavancagem real, como código e trabalho repetitivo de planejamento, de onde julgamento humano ainda manda, como priorização de produto e decisões de arquitetura com consequências que demoram a aparecer."
+          },
+          "insights": {
+            "en": [
+              "The right question is not whether agents are smart, but how expensive their mistakes are in each stage. Tasks with quick feedback and easy rollback are natural agent territory. Tasks with slow feedback and irreversible impact still need strong human control.",
+              "Shared context is becoming the bottleneck. The article argues the real systems problem is not code generation itself, but context loss between tickets, chats, reviews, and operational tools as work moves across the SDLC.",
+              "Coding gains come mostly from harness quality, not just model quality. Repo rules, tests, linting, and explicit operating constraints decide whether an agent behaves like a productive teammate or a fast producer of expensive noise."
+            ],
+            "pt": [
+              "A pergunta certa não é se o agente é inteligente, e sim quanto custa o erro dele em cada etapa. Tarefas com feedback rápido e rollback fácil são território natural de agente. Tarefas com feedback lento e impacto irreversível ainda precisam de controle humano forte.",
+              "Contexto compartilhado está virando gargalo. O texto defende que o problema real de sistemas não é geração de código em si, e sim perda de contexto entre ticket, chat, review e ferramenta operacional quando o trabalho anda pelo SDLC.",
+              "O ganho em código vem mais da qualidade do harness do que só da qualidade do modelo. Regras do repo, testes, lint e restrições explícitas definem se o agente vira parceiro produtivo ou fábrica rápida de ruído caro."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/agentic-ai-use-cases"
+        }
+      ]
+    },
+    {
       "id": "2026-05-31-eng",
       "date": "2026-05-31",
       "tokensUsed": 10642,
