@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-02-eng",
+      "date": "2026-06-02",
+      "tokensUsed": 9629,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Zihao Tao, Mohan Perumal Swamy, Grace Gong, Ailyn Tong, Peishan Wang, Nilay Kapadia, Md Mustafijur Rahman Faysal, Saurav Sen, Jameel Mohamed",
+          "title": {
+            "en": "Migrating Data Ingestion Systems at Meta Scale",
+            "pt": "Migrando sistemas de ingestão de dados na escala da Meta"
+          },
+          "summary": {
+            "en": "Meta details a full migration of the data ingestion platform that continuously moves social-graph data from one of the world’s largest MySQL fleets into the company’s warehouse and downstream data products. The strongest engineering lesson is not the new stack alone, but the migration method: a rigorously defined lifecycle with shadow jobs, reverse shadowing, automated promotion and rollback, and data-quality tooling built to compare checksums, landing latency, and resource use before and after every cutover. It stands out because it treats hyperscale migration as a reliability architecture problem, where observability, rollback speed, and containment of bad data matter as much as the target design itself.",
+            "pt": "A Meta detalha a migração completa da plataforma de ingestão de dados que move continuamente dados do grafo social de uma das maiores frotas de MySQL do mundo para o data warehouse e para produtos de dados downstream. A lição mais forte de engenharia não está só na nova stack, mas no método de migração: um ciclo rigoroso com shadow jobs, reverse shadowing, promoção e rollback automáticos, além de tooling de qualidade para comparar checksum, latência de landing e uso de recursos antes e depois de cada virada. O texto se destaca porque trata migração em hiperescalabilidade como problema de arquitetura de confiabilidade, onde observabilidade, velocidade de rollback e contenção de dado ruim importam tanto quanto o desenho final."
+          },
+          "insights": {
+            "en": [
+              "Shadow plus reverse-shadow rollout is the key pattern. Meta kept both systems alive long enough to compare real outputs continuously, then swapped write paths so rollback stayed fast and operationally cheap.",
+              "Bad data propagation was treated as a first-class failure mode. Because CDC pipelines can reuse already corrupted outputs, Meta added partition-level quality metadata and stop-the-bleeding controls before trusting the new system.",
+              "Migration at this scale only works with automation. Lifecycle signals, dashboards, batch planning, and automatic promotion or demotion turned tens of thousands of jobs from a heroic manual project into a controllable program."
+            ],
+            "pt": [
+              "Shadow mais reverse shadow foi o padrão central. A Meta manteve os dois sistemas vivos tempo suficiente para comparar saída real o tempo todo, depois trocou o caminho de escrita para deixar o rollback rápido e barato na operação.",
+              "Propagação de dado ruim virou modo de falha de primeira classe. Como pipeline CDC pode reaproveitar saída já corrompida, a Meta adicionou metadado de qualidade por partição e controles para estancar o sangramento antes de confiar no sistema novo.",
+              "Migração nessa escala só fecha com automação. Sinais de ciclo de vida, dashboards, planejamento por lotes e promoção ou demissão automática de jobs transformaram dezenas de milhares de migrações de projeto heroico manual em programa controlável."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-02",
       "date": "2026-06-02",
       "tokensUsed": 21883,
