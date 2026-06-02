@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-02",
+      "date": "2026-06-02",
+      "tokensUsed": 21883,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Two Minute Papers",
+          "author": "Károly Zsolnai-Fehér, com Jeff Dean",
+          "title": {
+            "en": "What Happens After A 1,000,000x AI Compute Leap?",
+            "pt": "O que acontece depois de um salto de 1.000.000x em compute para IA?"
+          },
+          "summary": {
+            "en": "This new Two Minute Papers interview with Jeff Dean is the strongest item of the day because it zooms out from model hype and looks at the next operating realities of AI systems. The discussion ties together the shift from training-heavy economics to inference-heavy infrastructure, the growing importance of distillation and efficient open models, the pressure created by multi-agent workflows, and the idea that future gains will come not only from bigger pretraining runs but from better system design around data, serving, memory, and long-lived AI usage. It is broadly useful because it helps engineering leaders think about AI as a production architecture problem, not just a model leaderboard race.",
+            "pt": "Esta nova entrevista do Two Minute Papers com Jeff Dean foi o item mais forte do dia porque sai do hype de modelo e olha para a próxima realidade operacional dos sistemas de IA. A conversa junta a mudança de uma economia centrada em treino para uma infraestrutura cada vez mais centrada em inferência, a importância crescente de distillation e de modelos abertos mais eficientes, a pressão criada por workflows com múltiplos agentes e a ideia de que os próximos ganhos não virão só de pretraining maior, mas de melhor arquitetura em volta de dados, serving, memória e uso prolongado de IA. É útil para qualquer liderança de engenharia porque força a tratar IA como problema de arquitetura de produção, não como corrida de leaderboard."
+          },
+          "insights": {
+            "en": [
+              "The center of gravity is moving from training to inference. That changes what matters operationally: serving efficiency, latency, memory pressure, and cost per real task become more strategic than raw training spectacle.",
+              "Distillation is becoming a leverage multiplier. Frontier research still matters, but practical value increasingly comes from compressing intelligence into cheaper models that teams can actually deploy widely.",
+              "Multi-agent systems raise a systems question, not just a prompting question. More cooperating models mean more context movement, coordination overhead, and state management challenges across longer-lived workflows."
+            ],
+            "pt": [
+              "O centro de gravidade está saindo do treino e indo para inferência. Isso muda o que importa na operação: eficiência de serving, latência, pressão de memória e custo por tarefa real passam a valer mais do que espetáculo de treino.",
+              "Distillation está virando multiplicador de alavancagem. Pesquisa de fronteira continua importante, mas o valor prático cresce quando a inteligência é comprimida em modelos baratos o bastante para deploy amplo.",
+              "Sistemas multiagente levantam um problema de sistemas, não só de prompting. Mais modelos cooperando significam mais movimento de contexto, mais custo de coordenação e mais desafio de estado em workflows longos."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=yz6I23VRbdg"
+        }
+      ]
+    },
+    {
       "id": "2026-06-01-eng",
       "date": "2026-06-01",
       "tokensUsed": 9238,
