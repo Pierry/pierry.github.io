@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-03",
+      "date": "2026-06-03",
+      "tokensUsed": 35542,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Matteo Bortoletto",
+          "title": {
+            "en": "How we index images for RAG",
+            "pt": "Como indexar imagens para RAG sem explodir custo por consulta"
+          },
+          "summary": {
+            "en": "Kapa explains a practical multimodal RAG architecture built for technical documentation at scale. Instead of sending raw images to a vision model at query time, the system captions each screenshot, diagram, and table once during indexing with a cheap vision model, stores those captions as retrievable text chunks, and then serves queries through a text-only pipeline. The core insight is architectural, not prompt-level: shift image understanding from recurring query-time cost to one-time ingestion cost. That keeps per-query overhead tiny while still improving answer quality, especially for screenshots and load-bearing figures that contain operational details users actually need.",
+            "pt": "A kapa.ai mostra uma arquitetura prática de RAG multimodal feita para documentação técnica em escala. Em vez de mandar imagens brutas para um modelo de visão a cada pergunta, o sistema descreve cada screenshot, diagrama e tabela uma única vez durante a indexação com um modelo de visão barato, salva essas descrições como chunks de texto recuperáveis e depois atende as consultas por um pipeline só de texto. O insight central é de arquitetura, não de prompt: mover a leitura da imagem de um custo recorrente em tempo de consulta para um custo único na ingestão. Isso mantém o overhead por consulta baixo e ainda melhora a qualidade das respostas, principalmente quando screenshots e figuras carregam detalhes operacionais que o usuário realmente precisa."
+          },
+          "insights": {
+            "en": [
+              "The winning pattern is ingest-time vision, not query-time vision. Read each image once, convert it into text, and let standard retrieval do the rest.",
+              "Separate caption chunks beat inline captions. They keep normal queries lean and only add image cost when the retriever believes the image actually matters.",
+              "Production multimodal systems fail on economics before they fail on model quality. Payload limits, tokenized image cost, and irrelevant screenshots make naive query-time multimodal RAG hard to scale."
+            ],
+            "pt": [
+              "O padrão vencedor é visão na ingestão, não na consulta. Lê a imagem uma vez, transforma em texto e deixa o retrieval padrão fazer o resto.",
+              "Chunks separados de legenda ganham de legenda inline. Mantêm consulta normal mais leve e só puxam custo de imagem quando o retriever acha que ela importa mesmo.",
+              "Sistema multimodal de produção quebra na economia antes de quebrar no modelo. Limite de payload, custo por imagem tokenizada e screenshot irrelevante tornam RAG multimodal ingênuo difícil de escalar."
+            ]
+          },
+          "link": "https://www.kapa.ai/blog/how-we-index-images-for-rag"
+        }
+      ]
+    },
+    {
       "id": "2026-06-02-eng",
       "date": "2026-06-02",
       "tokensUsed": 9629,
