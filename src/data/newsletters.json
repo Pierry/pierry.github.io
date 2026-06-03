@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-03-eng",
+      "date": "2026-06-03",
+      "tokensUsed": 11070,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Sebastian Kohlmeier",
+          "title": {
+            "en": "Build 2026: From observability to ROI for AI agents on any framework",
+            "pt": "Build 2026: de observabilidade a ROI para agentes de IA em qualquer framework"
+          },
+          "summary": {
+            "en": "Microsoft lays out a production architecture for AI agents that treats observability as the control plane, not as an afterthought. The post connects end-to-end tracing, multi-turn evaluation, rubric-based quality scoring, optimization loops, and business ROI into one operating model that works across different agent frameworks. What makes it strong is the systems view: production agent quality is framed as a continuous engineering loop of observe, evaluate, optimize, and prove value, instead of a one-time prompt tuning exercise.",
+            "pt": "A Microsoft descreve uma arquitetura de produção para agentes de IA que trata observabilidade como plano de controle, não como acessório. O texto junta tracing ponta a ponta, avaliação multi turn, score de qualidade por rubrica, loops de otimização e ROI de negócio num mesmo modelo operacional que funciona em frameworks diferentes. O ponto forte é a visão de sistemas: qualidade de agente em produção aparece como ciclo contínuo de observar, avaliar, otimizar e provar valor, não como sessão isolada de ajuste de prompt."
+          },
+          "insights": {
+            "en": [
+              "The key design move is interoperability. One trace model across LangChain, OpenAI SDK, Microsoft Agent Framework, and custom OpenTelemetry pipelines reduces observability fragmentation in mixed agent stacks.",
+              "Multi-turn evaluation matters more than single-response benchmarking. Real agent failures often emerge through context drift, missed procedures, and inconsistent decisions across a full workflow.",
+              "Optimization and ROI close the loop. It is not enough to detect bad traces, teams need ranked improvement candidates and evidence that changes improved both quality and business outcomes."
+            ],
+            "pt": [
+              "A jogada principal é interoperabilidade. Um modelo único de trace entre LangChain, OpenAI SDK, Microsoft Agent Framework e pipelines custom com OpenTelemetry reduz fragmentação de observabilidade em stacks mistos de agentes.",
+              "Avaliação multi turn vale mais que benchmark de resposta única. Falha real de agente costuma nascer de drift de contexto, passo de procedimento perdido e decisão inconsistente ao longo do workflow inteiro.",
+              "Otimização e ROI fecham o ciclo. Não basta detectar trace ruim, o time precisa de candidatos priorizados de melhoria e prova de que a mudança elevou qualidade e resultado de negócio."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-03",
       "date": "2026-06-03",
       "tokensUsed": 35542,
