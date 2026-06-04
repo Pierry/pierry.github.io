@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-04-eng",
+      "date": "2026-06-04",
+      "tokensUsed": 10106,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Deepak Sharma",
+          "title": {
+            "en": "Building a File Semantic Analyzer: Guarding Outbound Data at Scale with AI",
+            "pt": "Construindo um analisador semântico de arquivos para proteger saída de dados em escala com IA"
+          },
+          "summary": {
+            "en": "Uber describes an AI-powered file semantic analyzer built to classify outbound files by meaning instead of relying on brittle keyword or regex matching. The system extracts text from many document formats, applies OCR for image-based files, chunks content for LLM processing, generates summaries and entity extraction, then feeds those signals into rule-based enforcement. What makes the post strong is the production framing: GenAI is used as a semantic interpretation layer inside a real data protection pipeline, with human validation, explainability, and feedback loops to reduce false positives while catching sensitive data at scale.",
+            "pt": "A Uber mostra um analisador semântico de arquivos feito com IA para classificar arquivos saindo da empresa pelo significado, não por palavra solta ou regex frágil. O sistema extrai texto de vários formatos, usa OCR em arquivo baseado em imagem, quebra conteúdo para caber no LLM, gera resumo e entidades, depois joga isso numa camada de decisão com regras. O ponto forte é a pegada de produção: GenAI vira camada semântica dentro de um pipeline real de proteção de dados, com explicação da decisão, validação humana e feedback loop para cortar falso positivo sem deixar dado sensível escapar em escala."
+          },
+          "insights": {
+            "en": [
+              "Semantic understanding beats classic DLP pattern matching when the job is to separate truly sensitive business documents from harmless files at enterprise scale.",
+              "The architecture is practical: extraction, OCR, chunking, LLM summarization, entity detection, and a rule engine each do a narrow job instead of forcing one model to do everything.",
+              "Human-in-the-loop stays critical. Uber uses AI to compress analyst effort and speed response, not to hand fully autonomous enforcement to an opaque model."
+            ],
+            "pt": [
+              "Entender semântica ganha de DLP clássico por padrão e regex quando a missão é separar documento sensível de arquivo bobo em escala de empresa grande.",
+              "A arquitetura é pé no chão: extração, OCR, chunking, resumo por LLM, detecção de entidades e motor de regras, cada peça faz seu trabalho sem jogar tudo nas costas de um modelo só.",
+              "Humano continua no circuito. A Uber usa IA para comprimir trabalho do analista e acelerar resposta, não para soltar bloqueio automático cego em cima de modelo opaco."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/ubers-file-analyzer/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-04",
       "date": "2026-06-04",
       "tokensUsed": 69458,
