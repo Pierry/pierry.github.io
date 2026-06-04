@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-04",
+      "date": "2026-06-04",
+      "tokensUsed": 69458,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Most System Design Mistakes Hide Between the Boxes",
+            "pt": "A maioria dos erros de system design mora entre as caixas"
+          },
+          "summary": {
+            "en": "System Design Classroom makes a sharp point that the hardest failures in modern systems rarely live inside a single service. They appear in the gaps between components, when a write succeeds but an event is not published, when replicas lag behind primaries, or when downstream consumers silently drift from the source of truth. The article is especially strong because it turns distributed-systems reliability into a set of concrete failure patterns, like dual writes, replication lag, and eventual consistency tradeoffs, then shows how to reason about them with practical guardrails such as the transactional outbox and read-your-writes strategies.",
+            "pt": "A System Design Classroom bate numa tecla boa: as falhas mais duras de sistemas modernos quase nunca moram dentro de um serviço isolado. Elas aparecem nos buracos entre componentes, quando o write dá certo mas o evento não sai, quando réplica atrasa em relação ao primário, ou quando consumidor downstream vai derivando da fonte de verdade sem ninguém notar. O texto fica forte porque transforma confiabilidade em sistemas distribuídos num conjunto de padrões concretos de falha, como dual write, replication lag e tradeoff de consistência eventual, depois mostra como pensar nisso com guardrails práticos, tipo transactional outbox e estratégias de read your writes."
+          },
+          "insights": {
+            "en": [
+              "The real failure boundary is between systems, not inside boxes. Clean service diagrams hide the messy reality where state changes and side effects fall out of sync.",
+              "Transactional outbox is the key pattern for dual-write risk. Persist the business fact and the event intent in one transaction, then publish asynchronously with retries and idempotent consumers.",
+              "Read scaling changes consistency semantics. Once replicas enter the picture, product teams need to classify which reads demand freshness and which can tolerate staleness."
+            ],
+            "pt": [
+              "A fronteira real de falha fica entre sistemas, não dentro das caixinhas. Diagrama limpinho esconde a bagunça onde mudança de estado e efeito colateral saem de sincronia.",
+              "Transactional outbox é o padrão chave contra risco de dual write. Persiste o fato de negócio e a intenção do evento na mesma transação, depois publica assíncrono com retry e consumidor idempotente.",
+              "Escalar leitura muda a semântica de consistência. Quando entram réplicas, o produto precisa classificar quais leituras exigem frescor e quais aguentam dado atrasado."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/most-system-design-mistakes-hide--between-the-boxes"
+        }
+      ]
+    },
+    {
       "id": "2026-06-03-eng",
       "date": "2026-06-03",
       "tokensUsed": 11070,
