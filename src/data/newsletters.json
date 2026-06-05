@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-05-eng",
+      "date": "2026-06-05",
+      "tokensUsed": 21246,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Google Research team",
+          "title": {
+            "en": "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG",
+            "pt": "Como o Google montou um agentic RAG que só para quando acha contexto suficiente"
+          },
+          "summary": {
+            "en": "Google Research presents a production-oriented agentic RAG architecture for enterprise knowledge retrieval across multiple corpora. Instead of stopping after one retrieval pass, the system breaks complex questions into sub-queries, routes them across data sources, checks whether the collected evidence is actually sufficient, and iterates until the missing pieces are found. What makes the post strong is the systems framing: planning, query rewriting, routing, grounding, and a dedicated sufficient-context control step are treated as architecture components, not prompt tricks, and the approach nearly preserved accuracy even in a cross-corpus setting while improving factual performance by up to 34% over standard RAG baselines.",
+            "pt": "O Google Research mostra uma arquitetura de agentic RAG pensada para produção, focada em buscar conhecimento empresarial espalhado em múltiplos corpus. Em vez de parar depois da primeira busca, o sistema quebra perguntas complexas em subconsultas, roteia isso entre fontes diferentes, checa se a evidência coletada é suficiente de verdade e itera até achar o pedaço que falta. O ponto forte é a visão de sistema: planejamento, reescrita de query, roteamento, grounding e uma etapa explícita de checagem de contexto suficiente viram componentes de arquitetura, não truque de prompt. No experimento, o método segurou quase a mesma acurácia até no cenário cross-corpus e ainda melhorou factualidade em até 34% contra RAG padrão."
+          },
+          "insights": {
+            "en": [
+              "The key design move is adding a sufficient-context gate between retrieval and final synthesis. The system does not just ask whether it found documents, it asks whether it found enough evidence to answer every part of the question.",
+              "Agentic RAG works because responsibilities are decomposed: planner, query rewriter, search fanout, retrieval, context checker, and synthesis each do a narrow job, which makes multi-hop retrieval more reliable than one giant prompt.",
+              "The cross-corpus result is the real production signal. Accuracy stayed around 90% even when the system had to choose the right corpus among distracting datasets, which is much closer to messy enterprise reality."
+            ],
+            "pt": [
+              "A jogada central é botar uma trava de contexto suficiente entre busca e resposta final. O sistema não pergunta só se achou documento, pergunta se achou evidência bastante para responder cada pedaço da pergunta.",
+              "Agentic RAG funciona melhor porque as responsabilidades foram quebradas: planner, rewriter, fanout de busca, retrieval, checador de contexto e síntese, cada peça faz um trabalho estreito e isso deixa multi-hop retrieval mais confiável que um promptzão só.",
+              "O sinal mais forte de produção está no teste cross-corpus. A acurácia ficou perto de 90% mesmo quando o sistema precisava escolher o corpus certo no meio de bases distratoras, bem mais perto da bagunça real de empresa grande."
+            ]
+          },
+          "link": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-05",
       "date": "2026-06-05",
       "tokensUsed": 996994,
