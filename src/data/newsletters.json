@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-05",
+      "date": "2026-06-05",
+      "tokensUsed": 996994,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Louis-François Bouchard",
+          "title": {
+            "en": "AI Based Knowledge Management System",
+            "pt": "Sistema de gestão de conhecimento com IA e RAG na prática"
+          },
+          "summary": {
+            "en": "System Design One explains a practical RAG architecture for answering questions over large private knowledge bases without stuffing every document into the prompt. The piece walks through ingestion, OCR, chunking, embeddings, hybrid retrieval, reranking, citation grounding, evaluation, and production safeguards such as caching and access control. What makes it strong is that it treats RAG as a system design problem with failure modes, cost tradeoffs, and operational constraints, not as a prompt trick.",
+            "pt": "A System Design One explica uma arquitetura prática de RAG para responder perguntas em bases privadas grandes sem entupir o prompt com documento demais. O texto passa por ingestão, OCR, chunking, embeddings, busca híbrida, reranking, citação ancorada, avaliação e guardrails de produção como cache e controle de acesso. O ponto forte é simples: tratar RAG como problema de arquitetura, com falha real, custo real e restrição real, não como truque de prompt."
+          },
+          "insights": {
+            "en": [
+              "The core move is shifting from full-context prompting to retrieval at query time, which keeps answers current and lowers both latency and token cost.",
+              "Good RAG quality depends less on the model alone and more on the pipeline details: extraction quality, chunk boundaries, metadata, reranking, and evaluation metrics.",
+              "Production RAG needs system concerns from day one, especially access control, caching, citations, and refusal behavior when the evidence is weak."
+            ],
+            "pt": [
+              "A jogada central é trocar prompt gigante por recuperação na hora da pergunta, isso segura custo, latência e mantém resposta atualizada.",
+              "Qualidade de RAG depende menos do modelo sozinho e mais do pipeline inteiro, extração boa, chunk bem cortado, metadata, reranking e métrica de avaliação.",
+              "RAG de produção precisa nascer com preocupação de sistema, principalmente acesso, cache, citação e recusa quando a evidência está fraca."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/ai-based-knowledge-management-system"
+        }
+      ]
+    },
+    {
       "id": "2026-06-04-eng",
       "date": "2026-06-04",
       "tokensUsed": 10106,
