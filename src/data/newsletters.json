@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-06-eng",
+      "date": "2026-06-06",
+      "tokensUsed": 15072,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Uber Engineering",
+          "title": {
+            "en": "Modernizing Artifact Storage at Uber",
+            "pt": "Como a Uber modernizou storage de artefatos sem explodir custo nem confiabilidade"
+          },
+          "summary": {
+            "en": "Uber describes the migration of a decade-old on-prem artifact platform to a managed SaaS backend, then adds a purpose-built validation proxy to avoid cloud egress blowups. The old design depended on local disks, async replication, manual node recovery, and risky upgrades across two data centers. The new architecture keeps the SaaS platform as source of truth, validates every request with conditional headers, serves unchanged artifacts from internal cache, and preserves active-active failover. The interesting part is the trade-off: Uber gave up direct control of storage internals, but used a thin correctness-first proxy layer to recover cost efficiency, observability, and operational safety at multi-petabyte scale.",
+            "pt": "A Uber conta como trocou uma plataforma de artefatos on-prem com mais de uma década por um backend SaaS gerenciado, mas sem aceitar explosão de custo de egress. O desenho antigo dependia de disco local, replicação assíncrona, recuperação manual de nó e upgrade arriscado em dois data centers. O novo desenho mantém o SaaS como fonte de verdade, valida toda requisição com conditional headers, serve artefato imutável de cache interno e preserva failover active-active. A parte forte está no trade-off: a Uber abre mão de controlar o storage por dentro, mas recupera custo, observabilidade e segurança operacional com uma camada fina de proxy guiada por correção, em escala de petabytes por mês."
+          },
+          "insights": {
+            "en": [
+              "The architectural move is not just lift-and-shift to SaaS. Uber inserted a validation proxy so every fetch is checked against the source of truth while unchanged bytes stay local, which cuts egress by more than 99% without relying on stale TTL-based caching.",
+              "This is a good example of replacing operational fragility with narrower control points. Local disks, manual rebalancing, node evacuation, and schema-heavy upgrades disappear, while correctness and failover become easier to reason about.",
+              "The broader lesson is that managed infrastructure often needs a custom control layer at extreme scale. Buying the backend is not enough when your economics and consistency requirements are unusual."
+            ],
+            "pt": [
+              "A jogada de arquitetura não foi só lift and shift para SaaS. A Uber enfiou um proxy de validação no meio para checar toda leitura contra a fonte de verdade, mas manter byte imutável perto do consumidor, cortando mais de 99% do egress sem depender de cache com TTL cego.",
+              "Isso mostra bem a troca de fragilidade operacional por ponto de controle mais estreito. Somem disco local, rebalanceamento manual, evacuação de nó e upgrade tenso, e correção com failover ficam bem mais fáceis de raciocinar.",
+              "Lição grande, infra gerenciada em escala extrema quase sempre pede uma camada própria de controle. Comprar o backend sozinho não basta quando economia e consistência fogem do padrão."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/modernizing-artifact-storage/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-06",
       "date": "2026-06-06",
       "tokensUsed": 31030,
