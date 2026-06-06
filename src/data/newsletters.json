@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-06",
+      "date": "2026-06-06",
+      "tokensUsed": 31030,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Microsoft",
+          "title": {
+            "en": "pg_durable: Microsoft open sources in-database durable execution",
+            "pt": "pg_durable, execução durável dentro do PostgreSQL, sem cola de fila e worker por fora"
+          },
+          "summary": {
+            "en": "Microsoft open sourced pg_durable, a PostgreSQL extension that brings durable execution directly into the database. Instead of spreading workflow state across cron jobs, workers, queues, retry tables, and app glue, teams can define long-running SQL workflows as checkpointed step graphs that resume after crashes, restarts, or failed steps. What makes it especially relevant is the architectural simplification: background execution moves closer to the data, operational visibility stays inside Postgres, and many reliability concerns that usually live in app-tier orchestration can be expressed as SQL-native primitives.",
+            "pt": "A Microsoft abriu o código do pg_durable, uma extensão de PostgreSQL que leva execução durável para dentro do banco. Em vez de espalhar estado de workflow entre cron, worker, fila, tabela de retry e cola na aplicação, o time pode definir fluxos longos em SQL como grafos de passos com checkpoint, que retomam depois de crash, restart ou falha de etapa. O que deixa isso muito relevante é a simplificação de arquitetura: execução em background vai para perto do dado, visibilidade operacional continua dentro do Postgres, e uma parte grande da confiabilidade que antes morava em orquestrador externo passa a virar primitiva nativa de SQL."
+          },
+          "insights": {
+            "en": [
+              "The strongest move is collapsing workflow state and business data into the same durability boundary. That cuts a whole class of partial-failure bugs created by app workers, queues, and status tables drifting apart.",
+              "pg_durable treats durable execution as a database concern, with checkpointing, retries, fan-out, scheduling, and visibility exposed through SQL instead of another control plane.",
+              "The trade-off is deliberate: this is best when the workflow already lives near Postgres and maps cleanly to SQL steps. It is less compelling for heterogeneous cross-system orchestration or logic that depends on rich application runtimes."
+            ],
+            "pt": [
+              "A jogada mais forte é juntar estado do workflow e dado de negócio na mesma fronteira de durabilidade. Isso corta uma classe inteira de bug de falha parcial criada quando worker, fila e tabela de status ficam fora de sincronia.",
+              "O pg_durable trata execução durável como preocupação de banco, com checkpoint, retry, fan-out, agendamento e visibilidade expostos em SQL, sem pedir mais um control plane separado.",
+              "O trade-off é claro: isso brilha quando o workflow já mora perto do Postgres e cabe bem em passos SQL. Fica menos atraente para orquestração muito heterogênea entre sistemas ou lógica que depende pesado de runtime de aplicação."
+            ]
+          },
+          "link": "https://github.com/microsoft/pg_durable"
+        }
+      ]
+    },
+    {
       "id": "2026-06-05-eng",
       "date": "2026-06-05",
       "tokensUsed": 21246,
