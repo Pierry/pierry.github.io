@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-07",
+      "date": "2026-06-07",
+      "tokensUsed": 67398,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Milan Milanović",
+          "title": {
+            "en": "How OpenAI Codex Tech Lead Does AI-Assisted Engineering",
+            "pt": "Como o tech lead do Codex na OpenAI usa engenharia assistida por IA sem virar bagunça"
+          },
+          "summary": {
+            "en": "Engineering Leadership breaks down Michael Bolin's workflow leading work on the Codex CLI permissions system at OpenAI. The striking part is how unglamorous the loop is: write a real spec, point Codex at the source material, ask it to plan the work into reviewable PRs, and keep humans responsible for judgment and review. Instead of chasing exotic agent patterns, the team optimizes around context quality, small PRs, fast CI feedback, and disciplined handling of merge conflicts. The post is strong because it frames AI-assisted engineering as a software delivery system problem, not a prompting trick.",
+            "pt": "A Engineering Leadership mostra o fluxo do Michael Bolin liderando o trabalho do sistema de permissões do Codex CLI na OpenAI. A parte forte é que o loop não tem firula, escreve uma spec de verdade, aponta o Codex para a fonte original, manda quebrar o trabalho em PRs revisáveis e deixa o julgamento final com humanos. Em vez de correr atrás de agente mirabolante, o time otimiza contexto bom, PR pequeno, feedback rápido de CI e disciplina para resolver conflito de merge. O texto fica forte porque trata engenharia com IA como problema de sistema de entrega de software, não como truque de prompt."
+          },
+          "insights": {
+            "en": [
+              "The real leverage comes before code generation. A well-reviewed spec plus direct access to the original context, like a Notion doc and related PRs, improves output more than complicated prompting rituals.",
+              "Small PRs are even more important with AI. If humans still own review quality, the unit of AI-generated change must stay understandable, testable, and easy to merge.",
+              "Fast CI and PR babysitting change the workflow economics. Letting the agent open PRs early and react to failures in the pipeline keeps parallel work moving without frying a developer laptop."
+            ],
+            "pt": [
+              "A alavanca real vem antes de gerar código. Spec bem revisada e acesso direto ao contexto original, tipo doc no Notion e PRs relacionados, melhoram mais o resultado do que ritual complicado de prompt.",
+              "PR pequeno fica ainda mais importante com IA. Se humano continua dono da revisão, a unidade de mudança gerada por IA precisa seguir entendível, testável e fácil de mergear.",
+              "CI rápido e babysitting de PR mudam a economia do fluxo. Deixar o agente abrir PR cedo e reagir a falha no pipeline mantém trabalho paralelo andando sem torrar a máquina do dev."
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/how-openai-codex-tech-lead-does-ai"
+        }
+      ]
+    },
+    {
       "id": "2026-06-06-eng",
       "date": "2026-06-06",
       "tokensUsed": 15072,
