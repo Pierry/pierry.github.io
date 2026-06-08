@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-08-eng",
+      "date": "2026-06-08",
+      "tokensUsed": 18182,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Airbnb Engineering",
+          "author": "Ryan Tanner, Raymie Stata, Adam Miskiewicz",
+          "title": {
+            "en": "Viaduct 1.0 and the future of Airbnb’s data mesh",
+            "pt": "Viaduct 1.0 e o futuro da malha de dados do Airbnb"
+          },
+          "summary": {
+            "en": "Airbnb presents Viaduct 1.0, the production-ready evolution of its GraphQL-based data mesh. Instead of forcing every domain team to run and operate its own subgraph server, Viaduct lets teams contribute tenant modules into a shared multi-tenant runtime that handles execution, scaling, observability, and schema governance. The post is strong because it treats decentralized GraphQL not as a tooling fad, but as an architectural answer to a real organizational problem: how to give domain teams autonomy without fragmenting the data layer.",
+            "pt": "O Airbnb apresenta o Viaduct 1.0, evolução pronta para produção da sua malha de dados baseada em GraphQL. Em vez de obrigar cada time de domínio a subir e operar o próprio servidor de subgrafo, o Viaduct deixa os times contribuírem com módulos tenants dentro de um runtime multi-tenant compartilhado, que cuida de execução, escala, observabilidade e governança de schema. O texto fica forte porque trata GraphQL descentralizado não como modinha de ferramenta, mas como resposta de arquitetura para um problema organizacional real, dar autonomia para os times sem quebrar a camada de dados em pedaços soltos."
+          },
+          "insights": {
+            "en": [
+              "Viaduct chooses module-level decentralization instead of server-level decentralization. Teams own schema slices and resolvers, while the platform owns the runtime, which cuts operational overhead without centralizing domain knowledge.",
+              "The interesting trade-off versus GraphQL Federation is blast radius and operating model. Federation distributes ownership through many services, while Viaduct concentrates execution into fewer shared runtimes with stronger platform control.",
+              "The 1.0 release matters because Airbnb is turning an internal platform into a stable open source contract, with API stability markers, binary compatibility checks, and community-facing governance."
+            ],
+            "pt": [
+              "O Viaduct escolhe descentralização por módulo, não por servidor. Cada time cuida do seu pedaço de schema e resolver, enquanto a plataforma segura o runtime, cortando peso operacional sem centralizar conhecimento de domínio.",
+              "O trade-off mais interessante contra GraphQL Federation está no raio de explosão e no modelo operacional. Federation espalha posse por vários serviços, o Viaduct concentra execução em menos runtimes compartilhados com controle mais forte de plataforma.",
+              "O lançamento 1.0 importa porque o Airbnb está transformando uma plataforma interna em contrato open source estável, com marcação de estabilidade de API, checagem de compatibilidade binária e governança voltada para comunidade."
+            ]
+          },
+          "link": "https://medium.com/airbnb-engineering/viaduct-1-0-and-the-future-of-airbnbs-data-mesh-6bab4ec98b89"
+        }
+      ]
+    },
+    {
       "id": "2026-06-08",
       "date": "2026-06-08",
       "tokensUsed": 43553,
