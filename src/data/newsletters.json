@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-08",
+      "date": "2026-06-08",
+      "tokensUsed": 43553,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Dennis Brotzky",
+          "title": {
+            "en": "How's Linear so fast? A technical breakdown",
+            "pt": "Por que o Linear parece tão rápido, um raio X técnico do que elimina a latência visível"
+          },
+          "summary": {
+            "en": "Dennis Brotzky breaks down why Linear feels instant while most CRUD apps still feel like the network is in charge. The core move is local-first architecture: the UI reads and writes against a browser-side database, applies mutations optimistically, and lets the sync engine reconcile with the server in the background. Around that foundation, Linear compounds speed with aggressive code-splitting, preload discipline, modern-browser assumptions, and many small product decisions that remove spinners and waiting states. The piece matters because it frames performance as an architectural system, not a bag of micro-optimizations.",
+            "pt": "Dennis Brotzky desmonta por que o Linear parece instantâneo enquanto muita app CRUD ainda deixa a rede mandar no ritmo da interface. A jogada central é arquitetura local-first: a UI lê e escreve contra um banco no navegador, aplica mutações de forma otimista e deixa o motor de sync acertar as contas com o servidor em background. Em volta dessa base, o Linear empilha velocidade com code splitting agressivo, preload disciplinado, foco em browsers modernos e várias decisões pequenas de produto que matam spinner e tempo morto. O texto importa porque trata performance como sistema de arquitetura, não como saco de micro-otimização solta."
+          },
+          "insights": {
+            "en": [
+              "The highest-leverage performance move is to stop putting user feedback behind a network round-trip. Local state first, remote confirmation later, changes the perceived speed of the entire product.",
+              "Linear shows that fast apps are built from compounding decisions: browser-side storage, optimistic sync, smaller bundles, module preloading, and UI design that avoids visible waiting.",
+              "This is a useful reminder for engineering managers too: performance is rarely a late-stage polish task. The strongest gains come from early architectural bets and consistent product discipline."
+            ],
+            "pt": [
+              "A alavanca maior de performance é parar de deixar feedback do usuário preso em ida e volta de rede. Estado local primeiro, confirmação remota depois, muda a sensação de velocidade do produto inteiro.",
+              "O Linear mostra que app rápida nasce de decisão acumulada: storage no browser, sync otimista, bundle menor, preload de módulo e interface desenhada para esconder espera visível.",
+              "Bom lembrete para manager também: performance quase nunca é polimento do fim. O ganho pesado vem de aposta de arquitetura cedo e disciplina de produto o tempo todo."
+            ]
+          },
+          "link": "https://performance.dev/how-is-linear-so-fast-a-technical-breakdown"
+        }
+      ]
+    },
+    {
       "id": "2026-06-07",
       "date": "2026-06-07",
       "tokensUsed": 67398,
