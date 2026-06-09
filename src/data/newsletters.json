@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-09",
+      "date": "2026-06-09",
+      "tokensUsed": 15563,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "The Anatomy of OpenClaw",
+            "pt": "A anatomia do OpenClaw"
+          },
+          "summary": {
+            "en": "System Design One breaks OpenClaw down as an always-on orchestration layer that sits between an LLM and the real world. The article explains why the key architectural move is not the model itself, but the gateway that stays running, normalizes messages from many channels, enforces approvals, loads memory, routes tool calls, and keeps long-lived sessions alive even when the human is away. It stands out because it treats agentic AI as infrastructure and systems design, not as a better chat UI.",
+            "pt": "A System Design One desmonta o OpenClaw como uma camada de orquestração sempre ligada, sentada entre o LLM e o mundo real. O texto mostra que a jogada central de arquitetura não é o modelo em si, e sim o gateway que fica rodando sem parar, normaliza mensagens de vários canais, aplica aprovações, carrega memória, roteia tool calls e mantém sessões longas vivas mesmo quando o humano sumiu. O destaque é tratar IA agentic como problema de infra e system design, não como chat bonitinho com superpoder."
+          },
+          "insights": {
+            "en": [
+              "The gateway is the real backbone. Persistent runtime is what unlocks proactive jobs, approvals, shared context across channels, and durable sessions instead of one-off prompt interactions.",
+              "OpenClaw separates concerns cleanly: the model reasons, the gateway orchestrates, channels translate protocols, plugins extend behavior, and markdown memory preserves continuity under user control.",
+              "The security model matters as much as the feature set. Approval gates, allowlists, local storage, and pluggable policies are what make autonomous actions usable without blindly trusting the agent."
+            ],
+            "pt": [
+              "O gateway é a espinha dorsal de verdade. Runtime persistente é o que libera job proativo, aprovação, contexto compartilhado entre canais e sessão durável no lugar de prompt solto.",
+              "O OpenClaw separa as responsabilidades direito: o modelo raciocina, o gateway orquestra, os canais traduzem protocolo, os plugins estendem comportamento e a memória em markdown segura continuidade na mão do usuário.",
+              "O modelo de segurança pesa tanto quanto a lista de features. Aprovação, allowlist, storage local e políticas plugáveis são o que deixam ação autônoma usável sem confiar cegamente no agente."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/openclaw-architecture"
+        }
+      ]
+    },
+    {
       "id": "2026-06-08-eng",
       "date": "2026-06-08",
       "tokensUsed": 18182,
