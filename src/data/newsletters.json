@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-09-eng",
+      "date": "2026-06-09",
+      "tokensUsed": 26398,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "LinkedIn Engineering",
+          "author": "Fedor Borisyuk et al.",
+          "title": {
+            "en": "Reimagining LinkedIn’s search tech stack",
+            "pt": "Repensando a stack de busca do LinkedIn com semântica em escala"
+          },
+          "summary": {
+            "en": "LinkedIn details how it rebuilt search around semantic retrieval and LLM-powered ranking while still serving millions of real-time queries per second. The architecture combines query embeddings on GPUs, a cross-encoder SLM for ranking, aggressive latency controls such as score caching and traffic shaping, and a hybrid offline-plus-nearline feature pipeline. What makes the post stand out is that it treats LLM search as a systems problem: quality measurement, inference efficiency, product policy, and serving architecture all have to evolve together for semantic search to work at production scale.",
+            "pt": "O LinkedIn mostra como refez a busca em cima de recuperação semântica e ranking com modelo de linguagem, sem perder capacidade de atender milhões de queries por segundo em tempo real. A arquitetura junta embeddings de query em GPU, um SLM cross-encoder para ranking, controles pesados de latência como cache de score e traffic shaping, além de um pipeline híbrido offline mais nearline para features. O texto fica forte porque trata busca com LLM como problema de sistema completo, medição de qualidade, custo de inferência, política de produto e arquitetura de serving precisam evoluir juntos para a busca semântica funcionar em escala real."
+          },
+          "insights": {
+            "en": [
+              "LinkedIn split the stack into retrieval and ranking layers that are both LLM-informed, using GPU embedding search for broad recall and a smaller cross-encoder for precision where latency budgets are tighter.",
+              "The evaluation system is as important as the serving path. Product managers define policy, golden labels calibrate quality, and an 8B distilled judge scores tens of millions of query-document pairs daily.",
+              "This is a good blueprint for production AI search: use offline and nearline pipelines to prepare rich representations, then spend expensive inference only where it materially improves ranking."
+            ],
+            "pt": [
+              "O LinkedIn separou a stack em recuperação e ranking, com os dois lados informados por LLM, busca vetorial em GPU para recall largo e um cross-encoder menor para precisão onde a latência aperta.",
+              "O sistema de avaliação pesa tanto quanto o caminho de serving. Product manager define política, labels dourados calibram qualidade e um juiz destilado de 8B nota dezenas de milhões de pares query-documento por dia.",
+              "Bom blueprint de busca com IA em produção, preparar representações ricas no offline e no nearline, depois gastar inferência cara só onde ela melhora o ranking de verdade."
+            ]
+          },
+          "link": "https://www.linkedin.com/blog/engineering/search/reimagining-linkedins-search-stack"
+        }
+      ]
+    },
+    {
       "id": "2026-06-09",
       "date": "2026-06-09",
       "tokensUsed": 15563,
