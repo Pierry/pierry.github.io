@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-10",
+      "date": "2026-06-10",
+      "tokensUsed": 34190,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Hayk Simonyan, Neo Kim",
+          "title": {
+            "en": "Design a Payment System",
+            "pt": "Como desenhar um sistema de pagamentos correto, resiliente e integrado com Stripe"
+          },
+          "summary": {
+            "en": "System Design One lays out a full blueprint for a Stripe-based payment backend with the right emphasis: correctness under failure. Instead of treating payments as just another CRUD flow, the article maps the end-to-end lifecycle from authorization to capture and settlement, then shows how to structure synchronous APIs, async workers, idempotency keys, recovery points, webhook handling, and state transitions so the system never double-charges or loses track of money. It stands out because the architecture is driven by failure modes and operational safety, not by superficial feature coverage.",
+            "pt": "A System Design One monta um blueprint completo de backend de pagamentos com Stripe, mas com o foco certo, correção sob falha. Em vez de tratar pagamento como mais um CRUD, o texto percorre autorização, captura e liquidação, depois mostra como separar API síncrona, workers assíncronos, idempotency keys, recovery points, processamento de webhook e máquina de estados para o sistema não cobrar em dobro nem perder o rastro do dinheiro. O destaque é que a arquitetura nasce dos modos de falha e da segurança operacional, não de checklist de feature bonitinha."
+          },
+          "insights": {
+            "en": [
+              "The key design move is modeling payment processing as explicit atomic phases with recovery points, so a crash in the middle of a transaction can be resumed safely instead of guessed or retried blindly.",
+              "Webhook handling is treated as a first-class systems problem. Duplicate and out-of-order events are expected, which means the database state machine and idempotent event processing matter more than queue throughput alone.",
+              "The article is a strong reminder that payment architecture is mostly about failure semantics. Availability, retries, circuit breakers, capture expiration, and state correctness are the real product features."
+            ],
+            "pt": [
+              "A jogada principal é modelar o processamento de pagamento em fases atômicas com recovery points, então se o sistema cair no meio da transação ele retoma com segurança, em vez de chutar ou repetir no escuro.",
+              "Webhook entra como problema de sistema de verdade. Evento duplicado e fora de ordem é esperado, então máquina de estados no banco e processamento idempotente valem mais do que só throughput de fila.",
+              "Bom lembrete, arquitetura de pagamentos é quase toda sobre semântica de falha. Disponibilidade, retry, circuit breaker, expiração de captura e correção de estado são as features que importam."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/design-a-payment-system"
+        }
+      ]
+    },
+    {
       "id": "2026-06-09-eng",
       "date": "2026-06-09",
       "tokensUsed": 26398,
