@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-10-eng",
+      "date": "2026-06-10",
+      "tokensUsed": 18409,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering at Meta",
+          "author": "Meta Engineering",
+          "title": {
+            "en": "Lights Out, Systems On: Validating Instant Power Loss Readiness",
+            "pt": "Luzes apagadas, sistemas ligados, como a Meta valida prontidão para perda instantânea de energia"
+          },
+          "summary": {
+            "en": "Meta details a disaster-readiness program built to survive sudden region-wide power loss in production data centers with no advance warning. The post is strong because it is not just a resilience story about backup power. It shows how the company hardened the full stack, from racks and storage to its Twine orchestrator, then used incremental testing, dependency analysis, jumpstart recovery tooling, and carefully chosen tradeoffs to make whole-region failure a rehearsed engineering scenario instead of an existential surprise.",
+            "pt": "A Meta detalha um programa de readiness para aguentar perda súbita de energia em uma região inteira de data center, sem aviso prévio e em produção. O texto fica forte porque não é só história de gerador e bateria. Ele mostra como a empresa endureceu a stack inteira, de rack e storage até o orquestrador Twine, depois usou testes incrementais, análise de dependências, tooling de jumpstart e trade-offs explícitos para transformar falha regional completa em cenário ensaiado de engenharia, não em surpresa existencial."
+          },
+          "insights": {
+            "en": [
+              "The key architectural lesson is defense in depth across layers. Region-wide resilience required mechanical, electrical, storage, compute, orchestration, and signaling systems to all tolerate abrupt failure together.",
+              "Meta treated bootstrap and dependency recovery as first-class problems. Belljar tests and a Twine recovery kit exist specifically to break circular dependencies and restart the control plane after a dark start.",
+              "The post is a good example of reliability tradeoff discipline. Meta explicitly defined which outcomes were unacceptable, such as data loss or cross-region impact, and accepted bounded transient errors where recovery was operationally manageable."
+            ],
+            "pt": [
+              "A lição principal de arquitetura é defesa em profundidade entre camadas. Resiliência regional exigiu que mecânica, elétrica, storage, compute, orquestração e sinalização tolerassem falha abrupta juntas.",
+              "A Meta tratou bootstrap e recuperação de dependência como problema de primeira classe. Testes Belljar e um kit de recuperação do Twine existem para quebrar dependência circular e religar o control plane depois de um dark start.",
+              "O post é bom exemplo de disciplina de trade-off em confiabilidade. A Meta definiu claramente o que era inaceitável, como perda de dados ou impacto além de uma região, e aceitou erros transitórios limitados quando a recuperação era operacionalmente controlável."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-10",
       "date": "2026-06-10",
       "tokensUsed": 34190,
