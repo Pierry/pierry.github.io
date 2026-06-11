@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-11",
+      "date": "2026-06-11",
+      "tokensUsed": 17993,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "ByteByteGo",
+          "author": "ByteByteGo",
+          "title": {
+            "en": "How to Run LLMs Locally (Great For Learning and Privacy)",
+            "pt": "Como rodar LLMs localmente, bom para aprender e preservar privacidade"
+          },
+          "summary": {
+            "en": "ByteByteGo's latest video is the strongest pick today because it turns a noisy AI trend into a systems-level decision. Instead of selling local LLMs as a gimmick, it frames them as a practical tradeoff across privacy, cost control, latency, hardware limits, and learning value. That makes it broadly relevant for engineers and managers who want to understand where local inference actually fits, without getting trapped in framework trivia or vendor hype.",
+            "pt": "O vídeo novo da ByteByteGo foi a melhor escolha de hoje porque transforma uma moda barulhenta de IA em decisão de sistema. Em vez de vender LLM local como truque bonitinho, ele trata o tema como trade-off prático entre privacidade, controle de custo, latência, limite de hardware e ganho de aprendizado. Isso deixa o conteúdo útil para qualquer dev ou manager que queira entender onde inferência local faz sentido, sem cair em trivia de framework ou hype de fornecedor."
+          },
+          "insights": {
+            "en": [
+              "Running models locally is not only about saving API costs. It is a strategic choice when privacy, offline access, predictable latency, or experimentation speed matter more than raw frontier-model quality.",
+              "The real constraint is systems capacity, not prompt cleverness. Model size, VRAM, memory bandwidth, and throughput determine whether a local setup is practical for everyday work.",
+              "For technical leaders, local LLM workflows are worth understanding because they change tooling choices, developer ergonomics, and the boundary between hosted AI services and on-device capability."
+            ],
+            "pt": [
+              "Rodar modelo local não é só cortar custo de API. É escolha estratégica quando privacidade, uso offline, latência previsível ou velocidade de experimento pesam mais que qualidade bruta de modelo de fronteira.",
+              "A trava real é capacidade de sistema, não esperteza de prompt. Tamanho do modelo, VRAM, largura de banda de memória e throughput decidem se setup local serve para trabalho do dia a dia.",
+              "Para liderança técnica, workflow com LLM local vale atenção porque muda escolha de ferramenta, ergonomia de dev e a fronteira entre serviço hospedado e capacidade rodando na própria máquina."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=U8lGbSaCCYI"
+        }
+      ]
+    },
+    {
       "id": "2026-06-10-eng",
       "date": "2026-06-10",
       "tokensUsed": 18409,
