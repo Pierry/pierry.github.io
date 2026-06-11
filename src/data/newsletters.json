@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-11-eng",
+      "date": "2026-06-11",
+      "tokensUsed": 26831,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Uber Engineering",
+          "title": {
+            "en": "Simplifying Data and Product Integrations with a Data Abstraction Layer",
+            "pt": "Como a Uber simplificou integração entre produto e dados com uma camada de abstração"
+          },
+          "summary": {
+            "en": "Uber describes a data abstraction layer that sits between product consumers and evolving data sources, letting teams request a logical table instead of binding themselves to physical schemas, storage engines, and freshness windows. The architecture matters because it turns a common scale problem, brittle analytics and reporting coupled to ever-changing datasets, into a resolution and orchestration problem handled by one service. By separating what data consumers want from how the data is sourced, joined, rolled up, and assembled, Uber cut report delivery time from weeks to under two days while preserving flexibility across heterogeneous systems.",
+            "pt": "A Uber mostra uma data abstraction layer que fica entre consumidores de produto e fontes de dados que mudam o tempo todo, deixando o time pedir uma tabela lógica em vez de acoplar tudo em schema físico, engine específica e janela de disponibilidade. A arquitetura importa porque transforma um problema clássico de escala, analytics e relatórios frágeis presos a datasets que vivem mudando, em problema centralizado de resolução e orquestração. Separando o que o consumidor quer de como o dado é buscado, combinado, agregado e montado, a Uber derrubou o tempo de entrega de novos relatórios de semanas para menos de dois dias, sem perder flexibilidade entre sistemas heterogêneos."
+          },
+          "insights": {
+            "en": [
+              "The key move is serving logical tables, not physical ones. Consumers ask for the shape of data they need, and the DAL decides which datasets, time windows, and transformations can satisfy that request.",
+              "Uber treats schema drift and mixed storage backends as a planning problem. Resolution rules handle availability, continuity, complementary metrics, and rollups before queries run, which reduces coupling and protects product teams from storage churn.",
+              "This is broadly useful because it shows how to scale reporting without cloning business logic into every consumer. A central abstraction layer can speed delivery while still preserving room for producers to evolve their models."
+            ],
+            "pt": [
+              "A jogada central é servir tabela lógica, não tabela física. O consumidor pede o formato do dado e a DAL decide quais datasets, janelas de tempo e transformações atendem aquilo.",
+              "A Uber trata drift de schema e backend misto como problema de planejamento. Regras de resolução cuidam de disponibilidade, continuidade, métricas complementares e rollup antes da query rodar, reduzindo acoplamento e blindando produto contra churn de storage.",
+              "Isso é útil para qualquer time porque mostra como escalar reporting sem copiar lógica de negócio em cada consumidor. Uma camada central de abstração acelera entrega e ainda deixa os produtores evoluírem o modelo com menos trauma."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/data-abstraction-layer/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-11",
       "date": "2026-06-11",
       "tokensUsed": 17993,
