@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-12-eng",
+      "date": "2026-06-12",
+      "tokensUsed": 27182,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Uber Engineering",
+          "title": {
+            "en": "Solving the Identity Crisis for AI Agents",
+            "pt": "Como a Uber resolveu a crise de identidade de agentes de IA"
+          },
+          "summary": {
+            "en": "Uber details the identity architecture it built after AI agents started acting across thousands of internal services on behalf of engineers. The key move is treating agent identity as a first-class security and systems problem: every hop gets a short-lived token minted by a central security token service, every agent is registered to a verified workload, and the full actor chain is carried forward so downstream systems can see not just the last caller, but the originating human and intermediate agents. It stands out because it connects AI autonomy, zero-trust security, auditability, and production-scale tool use into one coherent architecture instead of relying on generic service accounts and partial logs.",
+            "pt": "A Uber detalha a arquitetura de identidade que precisou construir quando agentes de IA começaram a agir em milhares de serviços internos em nome de engenheiros. A jogada principal foi tratar identidade de agente como problema de segurança e de sistemas de primeira classe: cada salto recebe token curto emitido por um security token service central, cada agente fica registrado em um workload verificado, e a cadeia completa de atores segue junto para que o sistema downstream enxergue não só o último chamador, mas também o humano de origem e os agentes intermediários. O texto se destaca porque junta autonomia de IA, segurança zero trust, auditoria e uso de ferramentas em produção numa arquitetura coerente, em vez de depender de service accounts genéricas e logs picados."
+          },
+          "insights": {
+            "en": [
+              "The core architecture decision is single-hop, short-lived identity tokens with explicit audience. That sharply limits replay risk while making every agent-to-agent or agent-to-tool call individually attestable.",
+              "Uber treats provenance as part of authorization, not just observability. Carrying the full actor chain lets downstream systems apply policy based on who requested the action and which agents participated, not only on the immediate caller.",
+              "This is broadly useful because agentic systems break traditional human-versus-service identity models. Production agent platforms need registry, token exchange, policy enforcement, and end-to-end lineage before autonomy can be trusted at scale."
+            ],
+            "pt": [
+              "A decisão central de arquitetura é usar token curto, de um salto só, com audience explícita. Isso derruba risco de replay e deixa cada chamada entre agentes ou ferramentas com atestado individual.",
+              "A Uber trata proveniência como parte da autorização, não só da observabilidade. Carregar a cadeia completa de atores deixa o downstream aplicar política com base em quem pediu a ação e quais agentes participaram, não só no chamador imediato.",
+              "Isso é útil para qualquer time porque sistema agentic quebra o modelo clássico de identidade humano versus serviço. Plataforma de agente em produção precisa de registry, troca de token, enforcement de política e lineage ponta a ponta antes de autonomia virar coisa confiável em escala."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/solving-the-agent-identity-crisis/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-12",
       "date": "2026-06-12",
       "tokensUsed": 43090,
