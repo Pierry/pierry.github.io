@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-13-eng",
+      "date": "2026-06-13",
+      "tokensUsed": 9901,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Spotify Engineering",
+          "author": "Niklas Gustavsson",
+          "title": {
+            "en": "Coding Is No Longer the Constraint: Scaling Developer Experience to Teams and Agents at Spotify",
+            "pt": "Na Spotify, código deixou de ser o gargalo, agora o jogo é escalar experiência de dev para times e agentes"
+          },
+          "summary": {
+            "en": "Spotify explains how years of investment in internal platforms, standardized stacks, and automated fleet-wide maintenance created the right substrate for coding agents to work in production. The interesting architectural move is not the model alone, but the combination of Fleetshift for orchestrating large-scale code changes, Honk as a background agent running in Kubernetes with trusted tools and CI verification, and Backstage plus Soundcheck as the shared catalog and guardrail layer for both humans and agents. The result is a system where migrations that once took hundreds of teams weeks or months can now be run by one engineer in days, while the new bottleneck shifts from coding to review and decision-making.",
+            "pt": "A Spotify mostra como anos investindo em plataforma interna, stack padronizada e manutenção automatizada em toda a frota criaram o terreno certo para agente de código funcionar em produção. A jogada de arquitetura mais importante não é só o modelo, e sim a combinação de Fleetshift para orquestrar mudanças em larga escala, Honk como agente em background rodando em Kubernetes com ferramentas confiáveis e verificação por CI, e Backstage com Soundcheck como camada compartilhada de catálogo e guardrails para humanos e agentes. O resultado é um sistema em que migrações que antes consumiam centenas de times por semanas ou meses agora podem ser tocadas por um engenheiro em poucos dias, enquanto o gargalo sai do código e vai para revisão e decisão."
+          },
+          "insights": {
+            "en": [
+              "The real leverage comes from platform readiness before AI. Standardized services, a strong internal developer portal, linting, ownership metadata, and reproducible workflows gave the agent consistent context and fast feedback instead of letting it improvise in a fragmented codebase.",
+              "Spotify separates orchestration from code generation. Fleetshift handles targeting, scheduling, and rollout visibility, while Honk performs the code modifications and uses CI across environments to verify correctness before humans need to care.",
+              "This is broadly useful for engineering leaders because it reframes agent adoption as an operating model problem. If coding gets faster, the next constraints become review capacity, prioritization, and deciding what should still require human judgment."
+            ],
+            "pt": [
+              "A alavanca real veio da plataforma pronta antes da IA. Serviço padronizado, portal interno forte, lint, metadado de ownership e workflow reproduzível deram contexto consistente e feedback rápido para o agente, em vez de soltar ele numa base fragmentada.",
+              "A Spotify separa orquestração de geração de código. Fleetshift cuida de alvo, agendamento e visibilidade do rollout, enquanto Honk faz a modificação e usa CI em múltiplos ambientes para provar correção antes de pedir atenção humana.",
+              "Isso é útil para qualquer liderança porque reposiciona adoção de agente como problema de modelo operacional. Se escrever código fica mais rápido, o próximo gargalo vira revisão, priorização e decidir onde julgamento humano ainda precisa mandar."
+            ]
+          },
+          "link": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint"
+        }
+      ]
+    },
+    {
       "id": "2026-06-12-eng",
       "date": "2026-06-12",
       "tokensUsed": 27182,
