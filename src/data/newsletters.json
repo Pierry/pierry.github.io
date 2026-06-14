@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-14",
+      "date": "2026-06-14",
+      "tokensUsed": 72702,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "A Good System Design Tackles Down the Hot Path First",
+            "pt": "Bom system design ataca primeiro o hot path do sistema"
+          },
+          "summary": {
+            "en": "This issue argues that many scaling mistakes happen because teams optimize the whole system abstractly instead of identifying the specific read paths where real heat and business value concentrate. Using an e-commerce example, it shows why the right first move is not blindly adding Redis, replicas, or microservices, but separating hot read paths from correctness-sensitive write paths and scaling each according to its actual traffic shape. It stands out because it turns a very common architecture failure mode into a practical decision lens any engineer or manager can apply before adding infrastructure complexity.",
+            "pt": "Esta edição defende que boa parte dos erros de escala acontece quando o time tenta otimizar o sistema inteiro no abstrato, em vez de localizar os caminhos de leitura onde o calor real e o valor de negócio de fato se concentram. Usando um exemplo de e-commerce, o texto mostra por que o primeiro passo certo não é sair jogando Redis, réplica ou microserviço, e sim separar o hot path de leitura do caminho de escrita sensível à consistência e escalar cada lado de acordo com o formato real do tráfego. O destaque aqui é transformar uma falha de arquitetura muito comum em uma lente prática de decisão que qualquer dev ou manager pode aplicar antes de aumentar a complexidade da infra."
+          },
+          "insights": {
+            "en": [
+              "The main architectural move is to model traffic asymmetry first. Read-heavy flows often need speed, caching, and fan-out capacity, while write-heavy flows need correctness, serialization, and trust preservation.",
+              "The article is useful because it reframes tools as consequences, not starting points. Cache, replicas, load balancers, and service splits only make sense after you know which endpoint is truly hot and what staleness or coupling it can tolerate.",
+              "For engineering leaders, the broader lesson is that scaling conversations should begin with production shape and business impact, not architecture fashion. Hot-path clarity prevents teams from paying complexity tax in the wrong places."
+            ],
+            "pt": [
+              "A jogada principal de arquitetura é modelar primeiro a assimetria do tráfego. Fluxo puxado por leitura costuma pedir velocidade, cache e capacidade de fan-out, enquanto fluxo puxado por escrita pede correção, serialização e preservação de confiança.",
+              "O texto é útil porque reposiciona ferramenta como consequência, não como ponto de partida. Cache, réplica, load balancer e split de serviço só fazem sentido depois que você sabe qual endpoint está quente de verdade e quanta staleness ou acoplamento ele aguenta.",
+              "Para liderança, a lição mais ampla é que conversa sobre escala deve começar pelo formato da produção e pelo impacto no negócio, não por moda de arquitetura. Clareza de hot path evita pagar imposto de complexidade no lugar errado."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/a-good-system-design-tackles-down-the-hot-path-first"
+        }
+      ]
+    },
+    {
       "id": "2026-06-13-eng",
       "date": "2026-06-13",
       "tokensUsed": 9901,
