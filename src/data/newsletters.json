@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-14-eng",
+      "date": "2026-06-14",
+      "tokensUsed": 16699,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Slack Engineering",
+          "author": "Slack Engineering",
+          "title": {
+            "en": "From Custom to Open: Scalable Network Probing and HTTP/3 Readiness with Prometheus",
+            "pt": "Como o Slack abriu o caminho para observabilidade de HTTP/3 em escala com Prometheus"
+          },
+          "summary": {
+            "en": "Slack explains how an HTTP/3 rollout exposed a real observability gap at the edge: existing SaaS probes and its internal Prometheus Blackbox setup could not measure QUIC-based endpoints with the client-side visibility needed for a safe migration. The engineering move that stands out is not just adding another monitor, but extending Prometheus Blackbox Exporter with open-source QUIC support, then wiring that into Slack’s internal measurement stack so HTTP/1.1, HTTP/2, and HTTP/3 could be observed in one place. It is broadly useful because it shows a practical reliability pattern for protocol migrations: close the telemetry gap before traffic shifts, prefer composable open tooling over fragmented vendor setups, and make new protocols operationally visible before declaring them production ready.",
+            "pt": "O Slack mostra como o rollout de HTTP/3 escancarou um buraco real de observabilidade na borda: as sondas SaaS existentes e o Blackbox Exporter interno com Prometheus não conseguiam medir endpoints baseados em QUIC com a visibilidade do lado do cliente necessária para uma migração segura. A jogada de engenharia que mais importa não foi só criar mais um monitor, e sim estender o Prometheus Blackbox Exporter com suporte open source a QUIC e ligar isso na stack interna de medição para observar HTTP/1.1, HTTP/2 e HTTP/3 no mesmo lugar. Isso é útil para qualquer time porque mostra um padrão prático de confiabilidade em migração de protocolo: fechar o buraco de telemetria antes de mover tráfego, preferir tooling aberto e componível no lugar de um mosaico de fornecedores, e tornar o novo protocolo operacionalmente visível antes de chamar de pronto para produção."
+          },
+          "insights": {
+            "en": [
+              "The key systems lesson is monitor first, migrate second. Slack could not responsibly expand HTTP/3 usage until it had client-side probes that measured QUIC behavior directly instead of inferring health from older protocols.",
+              "Open source was part of the architecture, not a side effect. By adding QUIC support to Prometheus Blackbox Exporter, Slack reduced dependence on fragmented proprietary tooling and kept its observability model unified in Grafana and Prometheus.",
+              "This is a strong example of migration readiness as an operational discipline. New protocols need testability, alerting, and debugging paths before they need more rollout percentage."
+            ],
+            "pt": [
+              "A lição principal de sistema é simples, monitora primeiro, migra depois. O Slack não tinha como expandir HTTP/3 com responsabilidade sem sonda do lado do cliente medindo comportamento QUIC de verdade, em vez de inferir saúde a partir de protocolo antigo.",
+              "Open source entrou como parte da arquitetura, não como efeito colateral. Ao colocar suporte a QUIC dentro do Prometheus Blackbox Exporter, o Slack reduziu dependência de ferramenta proprietária fragmentada e manteve o modelo de observabilidade unificado em Grafana e Prometheus.",
+              "Isso é um bom exemplo de readiness de migração como disciplina operacional. Protocolo novo precisa de testabilidade, alerta e caminho de debug antes de pedir mais porcentagem de rollout."
+            ]
+          },
+          "link": "https://slack.engineering/from-custom-to-open-scalable-network-probing-and-http-3-readiness-with-prometheus/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-14",
       "date": "2026-06-14",
       "tokensUsed": 72702,
