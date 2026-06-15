@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-15",
+      "date": "2026-06-15",
+      "tokensUsed": 18783,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "The System Design Newsletter",
+          "author": "Neo Kim and Ayaan",
+          "title": {
+            "en": "How do Docker containers work",
+            "pt": "Como os containers Docker funcionam por baixo dos panos"
+          },
+          "summary": {
+            "en": "This issue is the strongest pick today because it explains Docker as a runtime stack instead of a black-box developer tool. It walks from the CLI through dockerd, containerd, runc, namespaces, cgroups, layered images, OverlayFS, networking, and storage, showing how a simple docker run becomes an isolated process on Linux. The piece is broadly relevant because containers sit underneath modern delivery and platform work, yet many engineers only know the commands and not the mechanics or tradeoffs that matter when something breaks, scales poorly, or needs stronger isolation.",
+            "pt": "Essa edição foi a mais forte de hoje porque explica o Docker como uma pilha de runtime, não como caixinha mágica de dev. O texto percorre CLI, dockerd, containerd, runc, namespaces, cgroups, imagens em camadas, OverlayFS, rede e storage, mostrando como um simples docker run vira um processo isolado no Linux. Isso é amplamente útil porque container está embaixo de quase toda entrega moderna, mas muita gente só conhece comando e não entende a mecânica nem os trade-offs que importam quando algo quebra, escala mal ou pede isolamento mais forte."
+          },
+          "insights": {
+            "en": [
+              "Docker matters less as one tool and more as a chain of responsibilities. The CLI forwards intent, dockerd manages the API surface, containerd handles lifecycle, and lower layers finally create the isolated process through kernel primitives.",
+              "The real breakthrough was productizing existing Linux primitives. Namespaces and cgroups already existed, but Docker turned them into a reproducible workflow with portable images, layered filesystems, and a usable developer interface.",
+              "For engineering leaders and platform teams, the useful lesson is that container reliability depends on understanding the boundaries: image layering, runtime stack, filesystem behavior, networking, and where containers stop being enough and stronger isolation is needed."
+            ],
+            "pt": [
+              "Docker importa menos como ferramenta única e mais como corrente de responsabilidades. A CLI manda a intenção, o dockerd cuida da superfície de API, o containerd gerencia ciclo de vida, e as camadas mais baixas criam o processo isolado usando primitiva do kernel.",
+              "O salto real foi empacotar primitivas que o Linux já tinha. Namespace e cgroup já existiam, mas o Docker transformou isso em workflow reproduzível com imagem portável, filesystem em camadas e interface usável para dev.",
+              "Para liderança e plataforma, a lição útil é simples, confiabilidade com container depende de entender fronteiras: camadas de imagem, stack de runtime, comportamento de filesystem, rede, e o ponto onde container já não basta e isolamento mais forte vira necessidade."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/how-do-docker-containers-work"
+        }
+      ]
+    },
+    {
       "id": "2026-06-14-eng",
       "date": "2026-06-14",
       "tokensUsed": 16699,
