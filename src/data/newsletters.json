@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-15-eng",
+      "date": "2026-06-15",
+      "tokensUsed": 9690,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Uber Engineering",
+          "title": {
+            "en": "Modernizing Artifact Storage at Uber",
+            "pt": "Como a Uber modernizou storage de artefatos sem sacrificar confiabilidade nem custo"
+          },
+          "summary": {
+            "en": "Uber explains how it replaced a decade-old on-prem artifact platform that had become a reliability and operations liability at extreme scale. The key architectural move was not simply migrating to a managed SaaS artifact service, but inserting a purpose-built validation proxy in front of it so every request is still checked against the source of truth while unchanged binaries are served locally. That combination let Uber remove local-disk replication headaches, risky upgrades, and manual recoveries, while cutting repeated artifact egress by more than 99% and keeping reliability around 99.99%.",
+            "pt": "A Uber mostra como trocou uma plataforma on-prem de artefatos com mais de dez anos, que já tinha virado risco operacional e de confiabilidade em escala extrema. A jogada principal não foi só migrar para um serviço gerenciado de artefatos, e sim colocar na frente dele um proxy de validação feito sob medida, onde cada requisição ainda confere a fonte da verdade, mas binário sem mudança pode ser servido localmente. Essa combinação tirou da frente o caos de replicação em disco local, upgrade arriscado e recuperação manual, enquanto derrubou em mais de 99% o egress repetido de artefatos e manteve confiabilidade na casa de 99,99%."
+          },
+          "insights": {
+            "en": [
+              "The strongest systems decision is validating every artifact request against the SaaS origin instead of trusting a TTL cache. Uber preserved correctness as a first-class property while still avoiding repeated downloads of unchanged binaries.",
+              "The migration shows that managed services do not remove architecture work, they relocate it. Once SaaS introduced egress costs, Uber designed an internal proxy, metadata store, and fail-safe passthrough mode to make the economics work at more than 5 PB of monthly downloads.",
+              "For platform teams, this is a clean example of replacing fragile replication and manual recovery with cloud storage, regional isolation, and observable control points, without giving up latency or reliability on a critical build path."
+            ],
+            "pt": [
+              "A decisão de sistema mais forte foi validar cada pedido de artefato contra a origem SaaS, em vez de confiar em cache com TTL. A Uber manteve correção como propriedade de primeira classe e ainda evitou baixar de novo binário que não mudou.",
+              "A migração mostra que serviço gerenciado não mata trabalho de arquitetura, só muda ele de lugar. Quando o SaaS trouxe custo de egress, a Uber desenhou proxy interno, store de metadado e modo passthrough seguro para fechar a conta em mais de 5 PB de download por mês.",
+              "Para time de plataforma, isso é exemplo limpo de trocar replicação frágil e recuperação manual por storage em cloud, isolamento regional e ponto observável de controle, sem perder latência nem confiabilidade no caminho crítico de build."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/modernizing-artifact-storage/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-15",
       "date": "2026-06-15",
       "tokensUsed": 18783,
