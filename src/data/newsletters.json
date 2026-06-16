@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-16-eng",
+      "date": "2026-06-16",
+      "tokensUsed": 14594,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Uber Engineering",
+          "title": {
+            "en": "Cart Assistant: Agentic Grocery Shopping on Uber Eats",
+            "pt": "Como a Uber montou um assistente agentic de compras que transforma intenção solta em carrinho editável"
+          },
+          "summary": {
+            "en": "Uber details the architecture behind Cart Assistant, a grocery-shopping system that converts open-ended text or image input into a draft cart that users can review before checkout. The strongest engineering move is decomposing the problem into a multi-prompt state graph where each step has a narrow responsibility, such as planning, candidate retrieval, semantic relevance, quantity resolution, constraint enforcement, guardrails, and cart assembly, while deterministic systems remain responsible for inventory, pricing, eligibility, validation, and aggregation. It stands out because it treats agentic commerce as a systems design problem with structure, observability, and evaluation, rather than as one giant prompt expected to reason about messy real-world shopping on its own.",
+            "pt": "A Uber detalha a arquitetura por trás do Cart Assistant, um sistema de compras de mercado que transforma texto aberto ou imagem em um carrinho rascunho para o usuário revisar antes do checkout. A jogada de engenharia mais forte foi quebrar o problema em um state graph com múltiplos prompts, onde cada etapa tem responsabilidade estreita, como planejamento, busca de candidatos, julgamento semântico, resolução de quantidade, enforcement de restrição, guardrails e montagem do carrinho, enquanto sistemas determinísticos continuam donos de inventário, preço, elegibilidade, validação e agregação. O destaque é tratar comércio agentic como problema de system design com estrutura, observabilidade e avaliação, não como um promptzão tentando raciocinar sozinho sobre a bagunça do mundo real."
+          },
+          "insights": {
+            "en": [
+              "The core architecture decision is separating ambiguous reasoning from deterministic execution. LLMs interpret intent and judge relevance, while inventory lookup, pricing, eligibility, validation, and cart assembly stay in conventional systems.",
+              "Quantity handling is treated as a first-class systems problem, not a post-processing detail. Uber adds a dedicated reasoning stage plus deterministic arithmetic because everyday requests like eggs, flour, or party snacks do not map cleanly to purchasable units.",
+              "The eval loop is part of the product architecture. Uber combines rule-based checks with LLM-as-a-judge so prompt changes, guardrail tweaks, and logic updates can be measured against curated and production-derived cases before rollout."
+            ],
+            "pt": [
+              "A decisão central de arquitetura é separar raciocínio ambíguo de execução determinística. LLM interpreta intenção e julga relevância, enquanto busca de inventário, preço, elegibilidade, validação e montagem do carrinho ficam em sistemas convencionais.",
+              "Tratamento de quantidade entra como problema de sistema de primeira classe, não como detalhe depois. A Uber cria uma etapa própria de raciocínio somada a aritmética determinística porque pedido comum, como ovos, farinha ou snack para festa, não bate limpo com unidade vendável.",
+              "O loop de eval faz parte da arquitetura do produto. A Uber mistura checagem por regra com LLM como juiz para medir mudança de prompt, guardrail e lógica contra casos curados e derivados de produção antes de rollout."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/uber-cart-assistant/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-16",
       "date": "2026-06-16",
       "tokensUsed": 40419,
