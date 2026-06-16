@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-16",
+      "date": "2026-06-16",
+      "tokensUsed": 40419,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Craft Better Software",
+          "author": "Daniel Moka",
+          "title": {
+            "en": "Loop Engineering 101",
+            "pt": "Loop engineering 101, como fazer agente trabalhar em ciclo com meta, gate e memória"
+          },
+          "summary": {
+            "en": "This was the strongest new pick because it turns AI coding from one-off prompting into an engineering system with repeatable control points. Daniel Moka argues that the bottleneck is often the human manually steering every step, then lays out a closed-loop pattern where agents discover, plan, execute, verify, and iterate until a measurable definition of done is met. What makes it broadly useful is the emphasis on gates, durable memory, and human-owned rules, which reframes agent adoption as workflow and reliability design instead of prompt cleverness.",
+            "pt": "Essa foi a novidade mais forte porque transforma uso de IA para código, de prompt solto, em sistema de engenharia com ponto de controle repetível. Daniel Moka defende que o gargalo costuma ser o humano guiando cada passo na mão, e então monta um padrão de loop fechado onde agente descobre, planeja, executa, verifica e itera até bater uma definição de pronto mensurável. O que deixa isso útil para qualquer time é o foco em gate, memória durável e regras sob controle humano, mudando a conversa de truque de prompt para desenho de workflow e confiabilidade."
+          },
+          "insights": {
+            "en": [
+              "The key idea is not more autonomy by default, but constrained autonomy. Agents can loop only inside a frame defined by goals, checks, and stopping conditions.",
+              "The article makes verification the center of the workflow. Compilers, tests, CI, and other deterministic gates matter more than the agent's own confidence that the work is done.",
+              "Persistent memory on disk, such as a rules file, is what allows the loop to improve over time instead of repeating the same mistakes every run."
+            ],
+            "pt": [
+              "A ideia central não é mais autonomia solta, e sim autonomia cercada. Agente pode rodar em loop, mas dentro de meta, checagem e condição de parada bem definidas.",
+              "O texto coloca verificação no centro do workflow. Compilador, testes, CI e outros gates determinísticos importam mais do que a confiança do próprio agente dizendo que terminou.",
+              "Memória persistente em disco, como arquivo de regras, é o que deixa o loop melhorar com o tempo em vez de repetir o mesmo erro a cada rodada."
+            ]
+          },
+          "link": "https://craftbettersoftware.com/p/loop-engineering-101"
+        }
+      ]
+    },
+    {
       "id": "2026-06-15-eng",
       "date": "2026-06-15",
       "tokensUsed": 9690,
