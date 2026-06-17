@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-17-eng",
+      "date": "2026-06-17",
+      "tokensUsed": 18084,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Mariya Mansurova",
+          "title": {
+            "en": "Clustering billions of products for agentic commerce with Catalog API",
+            "pt": "Como a Shopify agrupa bilhões de produtos para agentic commerce com o Catalog API"
+          },
+          "summary": {
+            "en": "Shopify explains how it built the product-clustering layer behind its Catalog API so AI shopping agents can understand when wildly different merchant listings actually refer to the same real-world product. The strongest engineering move is combining precision-first product identity rules, deterministic filters, approximate-nearest-neighbor retrieval, and a two-stage LLM pipeline instead of asking one giant model prompt to solve global matching alone. It stands out because it treats agentic commerce as a large-scale systems problem, balancing recall, correctness, cost, and model judgment across billions of products and millions of stores.",
+            "pt": "A Shopify mostra como construiu a camada de clustering de produtos por trás do Catalog API para que agentes de compra consigam entender quando listings bem diferentes de lojistas distintos apontam para o mesmo produto do mundo real. A decisão de engenharia mais forte foi juntar regra de identidade com foco em precisão, filtros determinísticos, busca por vizinhos aproximados e um pipeline de LLM em duas etapas, em vez de jogar o problema inteiro em um prompt gigante. O destaque é tratar agentic commerce como problema sério de sistemas em escala, equilibrando recall, correção, custo e julgamento de modelo em bilhões de produtos e milhões de lojas."
+          },
+          "insights": {
+            "en": [
+              "The key product decision is precision first. Shopify accepts some missed matches, but avoids wrong merges that would surface the wrong item to buyers and poison agentic shopping flows.",
+              "LLMs are used where judgment matters, not everywhere. Deterministic rules and theme analysis eliminate many easy cases, while ANN pre-chunking and a two-stage LLM pipeline preserve context for the ambiguous ones.",
+              "This is a clean example of AI embedded inside systems architecture. Evaluation uses ground-truth datasets plus LLM judges, and the whole design is constrained by scale, token limits, and operational cost."
+            ],
+            "pt": [
+              "A decisão central de produto é precisão primeiro. A Shopify aceita perder alguns matches, mas evita merge errado que mostraria item incorreto para o comprador e bagunçaria o fluxo agentic.",
+              "LLM entra onde julgamento importa, não em tudo. Regra determinística e análise de theme matam muitos casos fáceis, enquanto pre-chunking com ANN e pipeline em duas etapas preservam contexto para os casos ambíguos.",
+              "Isso é exemplo limpo de IA embutida dentro de arquitetura de sistemas. A avaliação usa dataset com ground truth mais LLM como juiz, e o desenho inteiro é limitado por escala, janela de contexto e custo operacional."
+            ]
+          },
+          "link": "https://shopify.engineering/catalog-clustering"
+        }
+      ]
+    },
+    {
       "id": "2026-06-17",
       "date": "2026-06-17",
       "tokensUsed": 16536,
