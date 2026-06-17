@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-17",
+      "date": "2026-06-17",
+      "tokensUsed": 16536,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "The System Design Newsletter",
+          "author": "Neo Kim and Paul Hoekstra",
+          "title": {
+            "en": "30 Core Agentic Engineering Concepts, Explained Simply",
+            "pt": "30 conceitos centrais de agentic engineering, explicados sem enrolação"
+          },
+          "summary": {
+            "en": "This was the strongest new item because it organizes the current wave of AI agents as a systems design discipline instead of a parade of tools. The piece argues that the names keep changing, but the durable ideas stay the same: agents run in loops, rely on tools, carry state, need explicit configuration, benefit from orchestration, and become safe only when guardrails, observability, and approval boundaries are designed in from the start. It is broadly useful because it gives engineers and managers a stable mental model for evaluating agent stacks without getting distracted by weekly framework churn.",
+            "pt": "Essa foi a novidade mais forte porque organiza a onda atual de agentes de IA como disciplina de system design, não como desfile de ferramenta da semana. O texto bate na tecla de que os nomes mudam, mas as ideias duráveis ficam: agente roda em loop, usa ferramenta, carrega estado, precisa de configuração explícita, ganha valor com orquestração e só fica seguro quando guardrail, observabilidade e fronteira de aprovação entram no desenho desde o começo. Isso é útil para dev e manager porque dá um modelo mental estável para avaliar stack agentic sem se perder no churn de framework toda semana."
+          },
+          "insights": {
+            "en": [
+              "The core lesson is to learn patterns, not products. Skills, rules, memory files, tool adapters, and prompts often solve the same class of problems under different names.",
+              "Agent quality depends on architecture around the model. Configuration, state handling, tool reach, orchestration, and context hygiene matter as much as raw model capability.",
+              "Safety is a design property, not a patch. Sandboxing, permission gates, hooks, commit checks, tracing, and replay need to exist before agents are trusted with real work."
+            ],
+            "pt": [
+              "A lição central é aprender padrão, não produto. Skill, rule, arquivo de memória, adapter de tool e prompt muitas vezes resolvem a mesma classe de problema com nome diferente.",
+              "Qualidade de agente depende da arquitetura em volta do modelo. Configuração, tratamento de estado, alcance de tools, orquestração e higiene de contexto pesam tanto quanto capacidade bruta do modelo.",
+              "Segurança é propriedade de desenho, não remendo depois. Sandbox, gate de permissão, hook, check de commit, tracing e replay precisam existir antes de confiar trabalho real ao agente."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/agentic-engineering"
+        }
+      ]
+    },
+    {
       "id": "2026-06-16-eng",
       "date": "2026-06-16",
       "tokensUsed": 14594,
