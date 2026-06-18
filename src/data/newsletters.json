@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-18",
+      "date": "2026-06-18",
+      "tokensUsed": 45445,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Product for Engineers",
+          "author": "Ian Vanagas",
+          "title": {
+            "en": "Why we're bullish on loops",
+            "pt": "Por que loops viraram aposta forte para engenharia agentic"
+          },
+          "summary": {
+            "en": "This was the strongest new item because it turns the current agent hype into an operating model engineers can actually use. Instead of treating agents like one-shot prompt machines, the piece argues for explicit loops with a goal, curated context, built-in evaluation, and harnesses that let agents verify themselves, spawn subagents, and keep making progress without constant human steering. It stands out because it connects agent reliability to familiar engineering ideas like tests, CI, metrics, and scoped automation, making the concept useful for both developers and engineering leaders evaluating where agentic workflows are genuinely practical.",
+            "pt": "Essa foi a novidade mais forte porque transforma o hype de agentes em modelo operacional que time de engenharia consegue usar de verdade. Em vez de tratar agente como máquina de prompt único, o texto defende loop explícito com objetivo claro, contexto curado, avaliação embutida e harness que deixa o agente se verificar, chamar subagentes e continuar avançando sem humano guiando cada passo. O destaque é ligar confiabilidade agentic com coisa familiar de engenharia, como testes, CI, métricas e automação bem escopada, então o conteúdo serve tanto para dev quanto para manager avaliando onde workflow com agente faz sentido real."
+          },
+          "insights": {
+            "en": [
+              "The key design pattern is not the model, but the loop: goal, context, evaluation, and harness. Without those pieces, agent autonomy quickly degrades into expensive slop.",
+              "Verification is the real unlock. Tests, CI, evals, logs, and LLM-as-judge let agents check their own work instead of waiting for a human to inspect every step.",
+              "The long-term product idea is self-driving execution for low-level engineering work. Bugs, flaky tests, and small optimizations are good candidates because they have measurable outcomes and bounded risk."
+            ],
+            "pt": [
+              "O padrão central não é o modelo, é o loop: objetivo, contexto, avaliação e harness. Sem isso, autonomia de agente vira slop caro bem rápido.",
+              "Verificação é o grande destravador. Teste, CI, eval, log e LLM como juiz deixam o agente checar o próprio trabalho em vez de esperar humano revisar tudo.",
+              "A ideia de produto no longo prazo é execução quase autônoma para trabalho de engenharia mais baixo nível. Bug, teste flaky e otimização pequena são bons candidatos porque têm resultado mensurável e risco limitado."
+            ]
+          },
+          "link": "https://newsletter.posthog.com/p/why-were-bullish-on-loops"
+        }
+      ]
+    },
+    {
       "id": "2026-06-17-eng",
       "date": "2026-06-17",
       "tokensUsed": 18084,
