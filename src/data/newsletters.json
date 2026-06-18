@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-18-eng",
+      "date": "2026-06-18",
+      "tokensUsed": 22035,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Govind Kamtamneni",
+          "title": {
+            "en": "Outcome-driven learning systems: Enterprise RL with OpenEnv and Foundry",
+            "pt": "Como a Microsoft encaixou ambiente, eval e sandbox num loop de aprendizado para agentes em produção"
+          },
+          "summary": {
+            "en": "Microsoft lays out a production architecture for agents that improve through a governed learning loop instead of one-off prompting. The core design ties together a realistic environment, rubric-based evaluation, an isolated sandbox, and two improvement paths: non-parametric optimization of prompts, skills, tools, and model choice, plus parametric post-training when the economics justify owning the weights. It stands out because it frames enterprise agent systems as a repeatable systems design problem, where the durable asset is the eval loop and the environment contract, not the rented model of the week.",
+            "pt": "A Microsoft mostra uma arquitetura de produção para agentes que melhoram em loop governado, não em prompt solto. O desenho junta ambiente realista, eval com rubrica, sandbox isolado e dois caminhos de melhoria: otimização não paramétrica de prompt, skill, tool e escolha de modelo, mais pós treino paramétrico quando fizer sentido econômico ser dono dos pesos. O post se destaca porque trata agente enterprise como problema repetível de system design, onde o ativo durável é o loop de eval e o contrato do ambiente, não o modelo alugado da semana."
+          },
+          "insights": {
+            "en": [
+              "The central systems move is making environment plus eval the product boundary. Once workflow and rubric are codified, the model becomes swappable and the learning loop stays owned by the team.",
+              "Microsoft separates cheap improvement from expensive improvement. First optimize prompts, skills, tools, retrieval, and model selection, then retrain weights only when lower serving cost or stronger task ownership justifies it.",
+              "Sandboxing is part of the architecture, not an ops afterthought. The same isolated runtime is used for agent execution, evaluation, and post-training rollouts, which tightens safety and makes results more reproducible."
+            ],
+            "pt": [
+              "A jogada central de sistema é fazer ambiente mais eval virar fronteira do produto. Quando workflow e rubrica ficam codificados, o modelo vira peça trocável e o loop de aprendizado continua na mão do time.",
+              "A Microsoft separa melhora barata de melhora cara. Primeiro otimiza prompt, skill, tool, retrieval e escolha de modelo, depois mexe nos pesos só quando custo de serving menor ou posse maior da tarefa justificar isso.",
+              "Sandbox entra como parte da arquitetura, não como detalhe de operação. O mesmo runtime isolado serve para execução do agente, avaliação e rollout de pós treino, apertando segurança e reprodutibilidade."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/foundry/outcome-driven-learning-systems-enterprise-rl-with-openenv-and-foundry/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-18",
       "date": "2026-06-18",
       "tokensUsed": 45445,
