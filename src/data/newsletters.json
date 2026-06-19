@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-19",
+      "date": "2026-06-19",
+      "tokensUsed": 40599,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "The System Design Newsletter",
+          "author": "Neo Kim and Ashish",
+          "title": {
+            "en": "The Secret Architecture Behind AI Data Centers",
+            "pt": "A arquitetura secreta por trás dos data centers de IA"
+          },
+          "summary": {
+            "en": "This was the strongest new item because it explains AI progress as an infrastructure and systems problem, not just a model problem. The piece breaks AI data centers into power, cooling, GPUs, memory tiers, networking, and orchestration, then shows how each layer becomes a bottleneck when you scale training and inference. It stands out for giving engineers and managers a clean mental model of why AI performance depends on feeding and coordinating compute efficiently, which is more durable than any one model release.",
+            "pt": "Essa foi a novidade mais forte porque explica avanço de IA como problema de infraestrutura e sistemas, não só de modelo. O texto quebra o data center de IA em energia, resfriamento, GPUs, camadas de memória, rede e orquestração, depois mostra como cada camada vira gargalo quando treino e inferência escalam. O destaque é dar para dev e manager um modelo mental bem limpo de por que performance em IA depende de alimentar e coordenar compute com eficiência, coisa mais durável do que qualquer release de modelo."
+          },
+          "insights": {
+            "en": [
+              "The core framing is excellent: AI data centers behave like factories. GPUs do the work, but throughput is constrained by power delivery, heat removal, storage, and networking moving data into the hot path.",
+              "The real bottleneck is often data movement, not raw compute. Fast GPUs become expensive idle assets when HBM, RAM, SSD, or network layers cannot feed them quickly enough.",
+              "This is useful system design thinking for the AI era: CPUs coordinate, GPUs parallelize, DPUs handle logistics, and the winning architecture is the one that keeps the whole pipeline balanced."
+            ],
+            "pt": [
+              "O framing central é forte: data center de IA funciona como fábrica. GPU faz o trabalho, mas vazão fica limitada por entrega de energia, remoção de calor, storage e rede empurrando dado para o caminho quente.",
+              "O gargalo real muitas vezes é movimento de dado, não compute bruto. GPU rápida vira ativo caro parado quando HBM, RAM, SSD ou rede não conseguem alimentar o ritmo.",
+              "Isso vira system design útil para era da IA: CPU coordena, GPU paraleliza, DPU cuida da logística, e a arquitetura vencedora é a que mantém o pipeline inteiro equilibrado."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/what-is-ai-infrastructure"
+        }
+      ]
+    },
+    {
       "id": "2026-06-18-eng",
       "date": "2026-06-18",
       "tokensUsed": 22035,
