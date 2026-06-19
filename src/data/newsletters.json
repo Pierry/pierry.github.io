@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-19-eng",
+      "date": "2026-06-19",
+      "tokensUsed": 7326,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Stripe Engineering",
+          "author": "Carol Liang, Kevin Ho",
+          "title": {
+            "en": "Can AI agents build real Stripe integrations? We built a benchmark to find out",
+            "pt": "Como a Stripe mediu se agentes conseguem fechar integração real de pagamentos de ponta a ponta"
+          },
+          "summary": {
+            "en": "Stripe built a production-like benchmark to test whether coding agents can complete full Stripe integrations, not just isolated coding tasks. The important systems move is the benchmark design itself: realistic repos, databases, browser flows, deterministic graders, and a common harness with terminal, browser, and Stripe-specific tools. It stands out because payments are an unforgiving domain where “mostly correct” is failure, so the post turns agentic software engineering into a measurable end-to-end verification problem instead of a prompt demo.",
+            "pt": "A Stripe montou um benchmark realista para medir se agente de código consegue fechar integração completa com Stripe, não só resolver tarefa isolada de código. A jogada forte de sistema está no desenho do benchmark: repositório realista, banco, fluxo de browser, grader determinístico e um harness comum com terminal, navegador e tools da própria Stripe. O post se destaca porque pagamento é domínio onde “quase certo” continua errado, então ele transforma engenharia agentic em problema mensurável de verificação ponta a ponta, não em demo de prompt."
+          },
+          "insights": {
+            "en": [
+              "The key contribution is evaluation architecture, not model hype. Stripe built replayable environments plus deterministic checks so teams can measure whether an agent truly shipped a working integration.",
+              "Full-stack agent work breaks on glue code and verification, not only on API comprehension. The benchmark forces agents to handle package upgrades, data setup, browser flows, and validation of created Stripe artifacts.",
+              "This is broadly useful for engineering leaders because it reframes agent adoption around rigor. In high-stakes domains, the winning loop is environment plus grader plus recovery path, not “the smartest model”."
+            ],
+            "pt": [
+              "A contribuição principal é arquitetura de avaliação, não hype de modelo. A Stripe montou ambiente reproduzível com checagem determinística para medir se o agente realmente entregou integração funcionando.",
+              "Trabalho agentic full stack quebra no glue code e na verificação, não só no entendimento da API. O benchmark obriga o agente a lidar com upgrade de pacote, setup de dados, fluxo em browser e validação dos artefatos criados na Stripe.",
+              "Isso é útil para liderança porque reposiciona adoção de agente em cima de rigor. Em domínio crítico, o loop vencedor é ambiente mais grader mais caminho de recuperação, não “o modelo mais inteligente”."
+            ]
+          },
+          "link": "https://stripe.com/blog/can-ai-agents-build-real-stripe-integrations"
+        }
+      ]
+    },
+    {
       "id": "2026-06-19",
       "date": "2026-06-19",
       "tokensUsed": 40599,
