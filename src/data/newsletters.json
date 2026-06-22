@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-22",
+      "date": "2026-06-22",
+      "tokensUsed": 53334,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Tech World With Milan",
+          "author": "Dr Milan Milanović",
+          "title": {
+            "en": "The Trends #11: AI agents still can't build software from scratch",
+            "pt": "Trends #11, agentes de IA ainda não conseguem construir software do zero"
+          },
+          "summary": {
+            "en": "This was the strongest new item because it cuts through agent hype with evidence that matters to engineering leaders and senior developers. The piece combines multiple fresh signals, a Carnegie Mellon study on post-Cursor code quality, the latest ThoughtWorks Radar, ProgramBench results, and State of AI survey data, to show that agentic coding is getting more powerful but still depends heavily on architecture, verification, and human judgment. It stands out because it frames AI-assisted engineering as a systems and operating-model problem, not a magic-model problem.",
+            "pt": "Essa foi a novidade mais forte porque corta o hype de agentes com evidência que importa para liderança e para dev sênior. O texto junta vários sinais frescos, um estudo da Carnegie Mellon sobre qualidade depois do Cursor, o novo ThoughtWorks Radar, resultados do ProgramBench e dados do State of AI, para mostrar que coding agentic está mais forte, mas ainda depende muito de arquitetura, verificação e julgamento humano. O destaque é tratar engenharia com IA como problema de sistema e de modelo operacional, não como problema mágico de modelo."
+          },
+          "insights": {
+            "en": [
+              "The most practical takeaway is that short-term speed gains can hide long-term drag. More AI-generated code without stronger review loops and quality gates tends to compound technical debt.",
+              "ProgramBench is a useful reality check. Frontier models can patch and accelerate existing codebases, but rebuilding non-trivial software end to end from binaries and docs is still largely unsolved.",
+              "The article reinforces a durable pattern for teams: adopt agents together with harnesses, evals, context discipline, and security boundaries. The architecture around the model is what turns raw capability into reliable engineering output."
+            ],
+            "pt": [
+              "O takeaway mais prático é que ganho curto de velocidade pode esconder arrasto longo. Mais código gerado por IA, sem loop forte de review e gate de qualidade, tende a acumular dívida técnica.",
+              "ProgramBench serve como belo choque de realidade. Modelo de ponta consegue acelerar e remendar codebase existente, mas reconstruir software não trivial ponta a ponta, a partir de binário e docs, ainda está muito longe de resolvido.",
+              "O texto reforça um padrão durável para times, adotar agentes junto com harness, eval, disciplina de contexto e fronteira de segurança. A arquitetura em volta do modelo é o que transforma capacidade bruta em entrega confiável."
+            ]
+          },
+          "link": "https://newsletter.techworld-with-milan.com/p/the-trends-11-ai-agents-still-cant"
+        }
+      ]
+    },
+    {
       "id": "2026-06-19-eng",
       "date": "2026-06-19",
       "tokensUsed": 7326,
