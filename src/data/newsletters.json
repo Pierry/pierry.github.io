@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-22-eng",
+      "date": "2026-06-22",
+      "tokensUsed": 21669,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Pinterest Engineering",
+          "author": "Guangtong Bai, Shantam Shorewala, Chi Zhang, Neha Upadhyay, Haoyang Li",
+          "title": {
+            "en": "Optimizing ML Workload Network Efficiency (Part I): Feature Trimmer",
+            "pt": "Como o Pinterest cortou gargalo de rede no serving de ML com o Feature Trimmer"
+          },
+          "summary": {
+            "en": "Pinterest describes a clean systems fix for a scaling problem inside its online ML serving stack. In a root-leaf architecture, the root fetched and fanned out the union of features needed by many models, which kept feature-store load low but made network bandwidth the real bottleneck, leaving GPU capacity underused. The interesting move was not just enabling compression, but building Feature Trimmer so each leaf receives only the features required by the exact model signature currently deployed, turning a network bound inference path into a more balanced system.",
+            "pt": "O Pinterest mostrou uma correção de sistema bem limpa para um problema de escala dentro do stack de serving online de ML. Na arquitetura root-leaf, o root buscava e distribuía a união de features exigidas por vários modelos, o que segurava o custo no feature store, mas transformava banda de rede no gargalo real e deixava GPU subutilizada. A jogada forte não foi só ligar compressão, foi criar o Feature Trimmer para cada leaf receber só as features exigidas pela assinatura exata do modelo em produção, deixando o caminho de inferência bem mais equilibrado."
+          },
+          "insights": {
+            "en": [
+              "The best optimization came from changing data shape, not adding hardware. Pinterest first used lz4 for an easy win, then removed waste by sending only the features each model actually consumes.",
+              "Model signatures became the contract between training, deploy, and serving. That let the root stay synchronized with fast model rollouts without brittle manual config.",
+              "This is a strong reminder for ML platforms: once CPU and GPU are separated, network and serialization can become the true limiter. Measure the path end to end before scaling the fleet."
+            ],
+            "pt": [
+              "A melhor otimização veio de mudar o formato do dado, não de jogar mais máquina. O Pinterest primeiro usou lz4 para ganho rápido, depois tirou desperdício ao enviar só as features que cada modelo realmente consome.",
+              "A assinatura do modelo virou contrato entre treino, deploy e serving. Isso deixou o root sincronizado com rollout rápido de modelo sem config manual frágil.",
+              "Lição boa para plataforma de ML: quando CPU e GPU se separam, rede e serialização podem virar o limitador real. Tem que medir o caminho inteiro antes de escalar frota."
+            ]
+          },
+          "link": "https://medium.com/pinterest-engineering/optimizing-ml-workload-network-efficiency-part-i-feature-trimmer-ae20beb08d69"
+        }
+      ]
+    },
+    {
       "id": "2026-06-22",
       "date": "2026-06-22",
       "tokensUsed": 53334,
