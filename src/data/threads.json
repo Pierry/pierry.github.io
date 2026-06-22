@@ -1,6 +1,32 @@
 {
   "threads": [
     {
+      "slug": "evals-and-correctness",
+      "date": "2026-06-22",
+      "title": {
+        "en": "Correctness became a discipline",
+        "pt": "Corretude virou disciplina"
+      },
+      "description": {
+        "en": "Eight digests now converge on the same harder lesson: proving a system works is no longer a side task. Between eval design, reward hacking, synthetic data quality, idempotent execution and now model generated mathematical proof, correctness has become an operational discipline with contracts, adversarial tests and rigorous verification boundaries.",
+        "pt": "Oito digests agora chegam na mesma lição mais dura: provar que um sistema funciona deixou de ser tarefa lateral. Entre desenho de avaliação, reward hacking, qualidade de dado sintético, execução idempotente e agora prova matemática gerada por modelo, corretude virou disciplina operacional, com contrato, teste adversarial e fronteira rigorosa de verificação."
+      },
+      "body": {
+        "en": "The difficult part of modern software keeps drifting away from shipping features and toward proving that the system behaves correctly when reality pushes back. The newer writing across AI and backend work keeps landing on the same point from different angles: correctness is no longer a finishing touch. It is its own engineering discipline.\n\nThe evaluation material made that obvious first. A model can look impressive in demos and still fail once the target becomes real. Reward hacking is the blunt warning: if a metric becomes the game, the system learns to satisfy the score instead of the intent. The synthetic data work from Google pushed the same lesson deeper. Good datasets do not emerge from vibes. They need explicit control over diversity, complexity and quality, plus critics that assume the model will flatter itself if left unchecked.\n\nThe software engineering side closes the loop. The laws of engineering matter here not as trivia, but as reminders that abstractions always leak under incentives, scale and organizational pressure. Idempotency shows what that means in production. Retries, partial failures and concurrent requests do not merely test implementation quality. They test whether the team defined the operation clearly enough that the system can say what counts as the same action, what must be rejected and what can be replayed safely.\n\nNow the new OpenAI geometry result sharpens the thesis from a different direction. A model producing a proof for a real open problem matters less as hype and more as a stress test for verification itself. Mathematics is useful here because the acceptance bar is unforgiving. Either the reasoning survives external scrutiny or it does not. That makes it a clean example of where AI starts to move from fluent assistance toward novel contribution, but only inside domains with hard correctness boundaries.\n\nStitched together, the message gets sharper. Correctness is not something you infer from a green demo, a benchmark win or a confident answer. You build it with contracts, adversarial evaluation, explicit replay semantics, quality controls and verification surfaces that stay honest when the system becomes more autonomous.",
+        "pt": "A parte difícil do software moderno continua saindo da entrega de feature e indo para provar que o sistema se comporta direito quando a realidade reage. Os textos novos sobre IA e backend batem na mesma tecla por lados diferentes: corretude não é mais detalhe de acabamento. Virou disciplina de engenharia.\n\nO material de avaliação deixou isso claro primeiro. Modelo pode parecer brilhante em demo e mesmo assim quebrar quando o alvo vira realidade. Reward hacking é o aviso mais direto: quando a métrica vira o jogo, o sistema aprende a satisfazer a nota, não a intenção. O trabalho do Google com dados sintéticos empurrou a mesma lição mais fundo. Dataset bom não nasce no feeling. Precisa de controle explícito de diversidade, complexidade e qualidade, além de críticos que já partem do princípio de que o modelo vai se elogiar se ninguém o confrontar.\n\nA parte de engenharia de software fecha o circuito. As leis da engenharia ajudam aqui não como curiosidade, mas como lembrete de que abstração sempre vaza quando encontra incentivo, escala e pressão organizacional. Idempotência mostra como isso aparece em produção. Retry, falha parcial e concorrência não testam só a qualidade da implementação. Testam se o time definiu a operação com clareza suficiente para o sistema saber o que conta como a mesma ação, o que deve ser rejeitado e o que pode ser reexecutado sem mentira.\n\nAgora o caso novo da OpenAI na geometria afia a tese por outro ângulo. Um modelo produzir prova para problema aberto real importa menos como hype e mais como teste de estresse da própria verificação. Matemática vale aqui porque a barra de aceitação é cruel. Ou o raciocínio aguenta escrutínio externo, ou não aguenta. Isso vira exemplo limpo de onde IA começa a sair de assistência fluente e entrar em contribuição nova, mas só dentro de domínios com fronteira dura de corretude.\n\nJuntando tudo, o recado fica mais afiado. Corretude não é algo que você deduz de demo verde, benchmark vencido ou resposta confiante. Você constrói corretude com contrato, avaliação adversarial, semântica explícita de replay, controle de qualidade e superfície de verificação que continua honesta quando o sistema fica mais autônomo."
+      },
+      "entries": [
+        "2026-05-21-1",
+        "2026-05-10-1",
+        "2026-05-02-1",
+        "2026-04-29-1",
+        "2026-04-27-1",
+        "2026-04-22-1",
+        "2026-04-17-eng-1",
+        "2026-04-15-eng-1"
+      ]
+    },
+    {
       "slug": "system-design-is-constraint-literacy",
       "date": "2026-05-29",
       "title": {
@@ -187,31 +213,6 @@
         "2026-04-21-eng-1",
         "2026-04-20-eng-1",
         "2026-04-14-eng-1"
-      ]
-    },
-    {
-      "slug": "evals-and-correctness",
-      "date": "2026-05-11",
-      "title": {
-        "en": "Correctness became a discipline",
-        "pt": "Corretude virou disciplina"
-      },
-      "description": {
-        "en": "Seven digests now converge on the same harder lesson: proving a system works is no longer a side task. Between eval design, reward hacking, synthetic data quality and idempotent execution, correctness has become an operational discipline with contracts, adversarial tests and explicit failure semantics.",
-        "pt": "Sete digests agora chegam na mesma lição mais dura: provar que um sistema funciona deixou de ser tarefa lateral. Entre desenho de avaliação, reward hacking, qualidade de dado sintético e execução idempotente, corretude virou disciplina operacional, com contrato, teste adversarial e semântica explícita de falha."
-      },
-      "body": {
-        "en": "The difficult part of modern software is drifting away from feature delivery and toward **proving that the system behaves correctly under pressure**. The new writing on AI and backend systems keeps landing on the same point from different directions: correctness is no longer a nice-to-have afterthought. It is its own engineering discipline.\n\nThe evaluation material makes that obvious first. A model can look impressive in demos and still fail once the target becomes real. Reward hacking is the blunt warning: if a metric becomes the game, the system learns to satisfy the score instead of the intent. The synthetic data work from Google pushes the same lesson deeper. Good datasets are not generated by vibes. They need explicit control over diversity, complexity and quality, plus critics that assume the model will flatter itself if left unchecked.\n\nThen the software engineering side closes the loop. The laws of engineering are useful here not as trivia, but as reminders that abstractions always leak under incentives, scale and organizational pressure. Idempotency shows what that means in production. Retries, partial failures and concurrent requests do not merely test implementation quality. They test whether the team defined the operation clearly enough that the system can say what counts as the same action, what must be rejected and what can be replayed safely.\n\nStitched together, the message is simple and uncomfortable: correctness is not something you infer from a green demo or a passing benchmark. You build it with contracts, adversarial evaluation, explicit replay semantics, quality controls and measurements that stay honest when reality pushes back.",
-        "pt": "A parte difícil do software moderno está saindo da entrega de feature e indo para **provar que o sistema se comporta direito quando a pressão chega**. Os textos novos sobre IA e backend batem na mesma tecla por lados diferentes: corretude não é mais detalhe de acabamento. Virou disciplina de engenharia.\n\nO material de avaliação deixa isso claro primeiro. Modelo pode parecer brilhante em demo e mesmo assim quebrar quando o alvo vira realidade. Reward hacking é o aviso mais direto: quando a métrica vira o jogo, o sistema aprende a satisfazer a nota, não a intenção. O trabalho do Google com dados sintéticos empurra a mesma lição mais fundo. Dataset bom não nasce no feeling. Precisa de controle explícito de diversidade, complexidade e qualidade, além de críticos que já partem do princípio de que o modelo vai se elogiar se ninguém o confrontar.\n\nA parte de engenharia de software fecha o circuito. As leis da engenharia ajudam aqui não como curiosidade, mas como lembrete de que abstração sempre vaza quando encontra incentivo, escala e pressão organizacional. Idempotência mostra como isso aparece em produção. Retry, falha parcial e concorrência não testam só a qualidade da implementação. Testam se o time definiu a operação com clareza suficiente para o sistema saber o que conta como a mesma ação, o que deve ser rejeitado e o que pode ser reexecutado sem mentira.\n\nJuntando tudo, o recado é simples e incômodo: corretude não é algo que você deduz de demo bonita nem de benchmark passando. Você constrói corretude com contrato, avaliação adversarial, semântica explícita de replay, controle de qualidade e métricas que continuam honestas quando a realidade reage."
-      },
-      "entries": [
-        "2026-05-10-1",
-        "2026-05-02-1",
-        "2026-04-29-1",
-        "2026-04-27-1",
-        "2026-04-22-1",
-        "2026-04-17-eng-1",
-        "2026-04-15-eng-1"
       ]
     },
     {
