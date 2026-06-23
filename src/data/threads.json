@@ -1,6 +1,50 @@
 {
   "threads": [
     {
+      "slug": "system-design-is-constraint-literacy",
+      "date": "2026-06-23",
+      "title": {
+        "en": "System design is constraint literacy",
+        "pt": "System design é alfabetização em restrição"
+      },
+      "description": {
+        "en": "Twenty six digests now converge on the same harder lesson: strong system design does not start with a neat diagram or fashionable stack. It starts by making the real constraints explicit, so throughput, truth, observability, failure recovery and workload control remain enforceable when production turns hostile.",
+        "pt": "Vinte e seis digests agora convergem na mesma lição mais dura: system design forte não começa com diagrama bonito nem stack da moda. Começa por explicitar as restrições reais, para vazão, verdade, observabilidade, recuperação de falha e controle do workload continuarem imponíveis quando produção fica hostil."
+      },
+      "body": {
+        "en": "A lot of system design content still gets taught like a catalog of components. Pick cache, queue, database, replica, and move on. The stronger pattern across this thread says the opposite. Good design begins by naming the constraint early enough that the system can still enforce it later under pressure.\n\nThe earlier entries already pushed that thesis through privacy boundaries, migration sequencing, transactional truth and workload control. The newly uncovered wave makes it sharper because it shows the same discipline reappearing across the most physical parts of infrastructure too. Pinterest did not fix ML serving by throwing more hardware at it. It made feature shape explicit so the network stopped carrying waste. The AI data center piece lands the same point at larger scale: compute only matters if power, memory, cooling and transport stay balanced enough to feed it.\n\nThe operational stories reinforce the same lesson from different edges of production. Slack treated HTTP/3 rollout as an observability problem before a traffic problem, because a protocol you cannot measure safely is not production ready. Meta treated sudden power loss as a control-plane and recovery-contract problem, not as a generator anecdote, and practiced the restart path until failure became legible. Uber's artifact platform and data abstraction layer both make the same architectural move too: put validation, source of truth and resolution logic where the system can enforce them centrally instead of hoping consumers and caches stay honest on their own.\n\nEven the hot-path essay fits the pattern because it strips away architecture cosplay. You do not scale a system by optimizing everything in theory. You scale it by identifying where truth must stay strict, where reads dominate, where latency is really born and which trade-off the business can actually afford.\n\nPut together, the message gets harder to miss. System design is not pattern trivia. It is the skill of exposing the real bottleneck, truth boundary and recovery contract before reality exposes them for you. The teams that win are rarely the ones with the prettiest diagram. They are the ones that turn constraints into rules the system can actually keep.",
+        "pt": "Muito material de system design ainda é ensinado como catálogo de componente. Escolhe cache, fila, banco, réplica, e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando a pressão chega.\n\nAs entradas anteriores já empurravam essa tese por fronteira de privacidade, sequência de migração, verdade transacional e controle de workload. A onda recém descoberta deixa o ponto mais afiado porque mostra a mesma disciplina reaparecendo até nas partes mais físicas da infraestrutura. O Pinterest não resolveu serving de ML jogando mais hardware. Expôs a forma real do dado para a rede parar de carregar desperdício. O texto sobre data center de IA bate na mesma tecla em escala maior: compute só importa quando energia, memória, resfriamento e transporte continuam equilibrados o bastante para alimentar a máquina.\n\nAs histórias operacionais reforçam a mesma lição por outros cantos da produção. O Slack tratou rollout de HTTP/3 primeiro como problema de observabilidade, depois como problema de tráfego, porque protocolo que você não mede com segurança ainda não está pronto para produção. A Meta tratou perda súbita de energia como problema de control plane e contrato de recuperação, não como anedota de gerador, e ensaiou o caminho de volta até a falha ficar legível. A plataforma de artefatos da Uber e a camada de abstração de dados fazem o mesmo movimento arquitetural: colocam validação, fonte de verdade e lógica de resolução num ponto central onde o sistema consegue impor regra, em vez de torcer para consumidor e cache se comportarem sozinhos.\n\nAté o texto sobre hot path encaixa porque corta o teatro de arquitetura. Você não escala sistema otimizando tudo no abstrato. Escala sistema descobrindo onde a verdade precisa continuar rígida, onde leitura domina, onde latência nasce de fato e qual trade-off o negócio realmente pode pagar.\n\nJuntando tudo, o recado fica mais difícil de ignorar. System design não é trivia de padrão. É a habilidade de expor o gargalo real, a fronteira de verdade e o contrato de recuperação antes que a realidade exponha por você. Ganha raramente o time com diagrama mais bonito. Ganha o time que transforma restrição em regra que o sistema consegue cumprir."
+      },
+      "entries": [
+        "2026-06-22-eng-1",
+        "2026-06-19-1",
+        "2026-06-15-eng-1",
+        "2026-06-14-eng-1",
+        "2026-06-14-1",
+        "2026-06-11-eng-1",
+        "2026-06-10-eng-1",
+        "2026-05-29-1",
+        "2026-05-27-eng-1",
+        "2026-05-27-1",
+        "2026-05-26-eng-1",
+        "2026-05-25-eng-1",
+        "2026-05-25-1",
+        "2026-05-22-eng-1",
+        "2026-05-21-eng-1",
+        "2026-05-19-1",
+        "2026-05-17-eng-1",
+        "2026-04-17-harness-1",
+        "2026-05-18-eng-1",
+        "2026-04-16-1",
+        "2026-03-31-1",
+        "2026-03-16-1",
+        "2026-05-16-1",
+        "2026-04-07-1",
+        "2026-04-05-1",
+        "2026-04-02-1"
+      ]
+    },
+    {
       "slug": "assistants-are-systems",
       "date": "2026-06-22",
       "title": {
@@ -109,43 +153,6 @@
         "2026-04-22-1",
         "2026-04-17-eng-1",
         "2026-04-15-eng-1"
-      ]
-    },
-    {
-      "slug": "system-design-is-constraint-literacy",
-      "date": "2026-05-29",
-      "title": {
-        "en": "System design is constraint literacy",
-        "pt": "System design é alfabetização em restrição"
-      },
-      "description": {
-        "en": "Nineteen digests now converge on the same harder lesson: strong system design does not start with a neat diagram or fashionable stack. It starts by making the real constraints explicit, so truth, privacy, latency, migration risk, failure handling and workload control remain enforceable when production turns hostile.",
-        "pt": "Dezenove digests agora convergem na mesma lição mais dura: system design forte não começa com diagrama bonito nem stack da moda. Começa por explicitar as restrições reais, para verdade, privacidade, latência, risco de migração, falha e controle de workload continuarem imponíveis quando produção fica hostil."
-      },
-      "body": {
-        "en": "A lot of system design content still teaches architecture like a shopping list. Pick queue, cache, replica, database and move on. The stronger pattern across these entries says the opposite. Good design begins by naming the constraints early enough that the system can uphold them later under stress.\n\nThe earlier entries in this thread already pushed that thesis through isolation boundaries, transactional truth, compiler-enforced safety and server-owned job control. The newly uncovered pieces make the same point in four other places teams routinely get wrong: privacy telemetry, migration sequencing, scaling under pressure and semantic retrieval at production volume.\n\nGoogle's private analytics architecture is a clean reminder that privacy is not a policy layer you sprinkle on top. If millions of devices need to report model effectiveness and safety signals, the architecture has to encode what can be observed, when trust can be assumed and which boundary still protects users when another one fails. Secure aggregation plus TEE attestation matters because the constraint is explicit all the way down.\n\nThe monolith migration piece tells the same story from a more common battlefield. The hard part is not declaring microservices as the destination. The hard part is controlling risk in the order reality allows: route traffic through a reversible front door, run critical flows in parallel, wrap the core before replacing it, and use CDC as a temporary bridge while data ownership separates. Migration works when constraints become staged contracts, not when ambition outruns control.\n\nThe monolith scaling piece reinforces the same lesson once the traffic is already there. When the system is saturating, the hard part is not imagining a prettier target architecture. The hard part is making the current system's limits visible enough to act on them in order: hot path, saturation points, cache behavior, timeout policy, async escape hatches and domain seams. Survival comes from disciplined constraint management, not rewrite theater.\n\nLinkedIn's semantic search stack extends the thesis into AI infrastructure. LLM search at massive query volume only works because retrieval, ranking, evaluation, cache depth and traffic shaping are split into enforceable stages with clear budgets. The intelligence is useful because the system keeps cost, latency and relevance inside boundaries the product can actually operate.\n\nPut together, the message gets sharper. System design is not memorizing patterns or admiring components. It is learning to expose the limits that matter before reality exposes them for you. Whether the boundary lives in privacy aggregation, a monolith migration, a monolith under stress, a ranking pipeline, a transaction or a compiler, the teams that win are the ones that turn constraints into contracts the system can enforce.",
-        "pt": "Muito material de system design ainda ensina arquitetura como lista de compras. Escolhe fila, cache, réplica, banco e segue o jogo. O padrão mais forte nestas entradas diz o contrário. Bom design começa quando o time nomeia cedo as restrições importantes, cedo o bastante para o sistema conseguir sustentá-las depois, debaixo de estresse.\n\nAs entradas anteriores desta thread já empurravam essa tese por fronteira de isolamento, verdade transacional, segurança imposta pelo compilador e controle de job no lado do servidor. As peças descobertas agora reforçam o mesmo ponto em mais quatro lugares que time erra sempre, telemetria privada, sequência de migração, escala sob pressão e retrieval semântico em volume de produção.\n\nA arquitetura de analytics privado do Google lembra de forma limpa que privacidade não é camada de policy jogada por cima. Se milhões de dispositivos precisam reportar efetividade, drift e sinais de segurança do modelo, a arquitetura precisa codificar o que pode ser observado, quando confiança pode ser assumida e qual fronteira ainda protege o usuário quando outra falha. Secure aggregation com attestation de TEE importa porque a restrição fica explícita até o fim.\n\nO texto sobre sair do monólito conta a mesma história num campo de batalha comum. A parte difícil não é declarar microservices como destino. A parte difícil é controlar risco na ordem que a realidade permite, roteamento reversível na frente, fluxos críticos rodando em paralelo, comportamento novo em volta do core antes da troca e CDC como ponte temporária enquanto ownership de dados se separa. Migração funciona quando restrição vira contrato em etapas, não quando ambição corre mais rápido que controle.\n\nO texto sobre escalar monólito reforça a mesma lição quando o tráfego já explodiu. A parte difícil não é imaginar uma arquitetura alvo mais bonita. A parte difícil é deixar visível o limite do sistema atual para agir na ordem certa, hot path, saturação, comportamento de cache, política de timeout, escape assíncrono e costura de domínio. Sobrevivência vem de gestão disciplinada de restrição, não de teatro de rewrite.\n\nA stack de busca semântica do LinkedIn estende a tese para infraestrutura de IA. Busca com LLM em volume massivo só funciona porque retrieval, ranking, avaliação, profundidade de cache e traffic shaping foram quebrados em estágios imponíveis, cada um com budget claro. A inteligência fica útil porque o sistema mantém custo, latência e relevância dentro de fronteiras que o produto consegue operar de verdade.\n\nJuntando tudo, o recado fica mais afiado. System design não é decorar padrão nem admirar componente. É aprender a expor os limites que importam antes que a realidade exponha por você. Seja a fronteira morando em agregação privada, numa migração de monólito, num monólito sob estresse, num pipeline de ranking, numa transação ou no compilador, ganha o time que transforma restrição em contrato que o sistema consegue impor."
-      },
-      "entries": [
-        "2026-05-29-1",
-        "2026-05-27-eng-1",
-        "2026-05-27-1",
-        "2026-05-26-eng-1",
-        "2026-05-25-eng-1",
-        "2026-05-25-1",
-        "2026-05-22-eng-1",
-        "2026-05-21-eng-1",
-        "2026-05-19-1",
-        "2026-05-17-eng-1",
-        "2026-04-17-harness-1",
-        "2026-05-18-eng-1",
-        "2026-04-16-1",
-        "2026-03-31-1",
-        "2026-03-16-1",
-        "2026-05-16-1",
-        "2026-04-07-1",
-        "2026-04-05-1",
-        "2026-04-02-1"
       ]
     },
     {
