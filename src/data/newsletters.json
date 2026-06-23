@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-23-eng",
+      "date": "2026-06-23",
+      "tokensUsed": 24208,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Shopify Engineering",
+          "title": {
+            "en": "Teaching Sidekick to say no: automated data curation with LLM judge consensus",
+            "pt": "Como a Shopify ensinou o Sidekick a recusar pedidos impossíveis com consenso entre juízes LLM"
+          },
+          "summary": {
+            "en": "Shopify shows a very practical production lesson for agentic systems: the hard part is not only teaching a model to do the right thing, but teaching it to refuse the wrong thing. While improving Sidekick's customer-segmentation skill, the team found that production logs only contained successful queries, so the model learned to improvise when a merchant asked for something impossible. The strong engineering move was turning a small human-labeled refusal dataset into an automated curation pipeline, where multiple frontier LLM judges relabel conflicting examples by strict consensus before the next fine-tuning cycle. That makes the piece broadly useful because it treats model behavior as a data and evaluation architecture problem, not just a prompt or weights problem.",
+            "pt": "A Shopify mostrou uma lição bem prática de sistema agentic, o difícil não é só ensinar o modelo a fazer a coisa certa, é ensinar a recusar a coisa errada. Ao melhorar a skill de segmentação do Sidekick, o time viu que log de produção só carregava caso de sucesso, então o modelo aprendia a improvisar quando o lojista pedia algo impossível. A jogada forte de engenharia foi transformar um pequeno dataset humano de recusas em um pipeline automático de curadoria, onde vários juízes LLM relabelam exemplos conflitantes por consenso estrito antes do próximo ciclo de fine-tuning. Isso deixa o post útil para qualquer time porque trata comportamento do modelo como problema de arquitetura de dados e avaliação, não só de prompt ou pesos."
+          },
+          "insights": {
+            "en": [
+              "The key systems decision is to optimize for precision in the labeling loop. Shopify required unanimous agreement across multiple LLM judges before changing a label, which reduced noisy corrections and kept the training set stable.",
+              "Refusals are product behavior, not model failure. If the model cannot satisfy a request, returning a fake zero-result query is worse than saying no clearly, because it corrupts user trust and downstream decisions.",
+              "The durable asset is the curation flywheel. A small high-quality seed set, an explicit taxonomy, consensus labeling, and new production traffic together create a repeatable loop that keeps improving the model after launch."
+            ],
+            "pt": [
+              "A decisão de sistema mais importante foi otimizar precisão no loop de rotulagem. A Shopify exigiu concordância unânime entre vários juízes LLM antes de trocar um rótulo, reduzindo correção barulhenta e deixando o treino mais estável.",
+              "Recusa é comportamento de produto, não falha do modelo. Se o modelo não consegue cumprir um pedido, devolver uma query falsa com zero resultado é pior do que dizer não, porque corrói confiança e contamina decisão depois.",
+              "O ativo durável é o flywheel de curadoria. Um seed pequeno e bom, taxonomia explícita, rotulagem por consenso e tráfego novo de produção criam um loop repetível que continua melhorando o modelo depois do lançamento."
+            ]
+          },
+          "link": "https://shopify.engineering/sidekick-curation"
+        }
+      ]
+    },
+    {
       "id": "2026-06-23",
       "date": "2026-06-23",
       "tokensUsed": 45581,
