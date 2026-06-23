@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-23",
+      "date": "2026-06-23",
+      "tokensUsed": 45581,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Armin Ronacher",
+          "title": {
+            "en": "The Coming Loop",
+            "pt": "O loop que está chegando, e como ele muda a engenharia de software"
+          },
+          "summary": {
+            "en": "Armin Ronacher argues that the real shift in AI coding is no longer the model acting inside a single tool loop, but the outer harness loop that keeps tasks alive, judges outcomes, and decides whether work should continue. The piece is strong because it does not just celebrate autonomous coding. It pressure-tests where loops already work, like porting, experimentation, security research, and mechanical transformations, and where they still create brittle, over-defensive, hard-to-understand software. That makes it highly relevant for engineering leaders and senior developers thinking about agentic workflows as a systems and governance problem, not just a productivity trick.",
+            "pt": "Armin Ronacher defende que a virada real no coding com IA não está mais só no modelo rodando dentro de um loop de tools, mas no loop externo do harness que mantém a tarefa viva, julga o resultado e decide se o trabalho continua. O texto é forte porque não cai no oba oba da autonomia. Ele testa onde loops já funcionam bem, como porting, experimentação, pesquisa de segurança e transformação mecânica, e onde ainda geram software frágil, defensivo demais e difícil de entender. Isso deixa o conteúdo muito relevante para liderança e dev sênior pensando workflow agentic como problema de sistema e governança, não só truque de produtividade."
+          },
+          "insights": {
+            "en": [
+              "The important architectural shift is from the agent loop to the harness loop. The durable system is increasingly the queue, judge, memory, and continuation logic around the model, not just the model itself.",
+              "Loops shine when outputs are cheap to discard or mechanically verifiable, like migrations, benchmark exploration, and security triage. They are much weaker for code that needs lasting clarity, strong invariants, and human comprehension.",
+              "Even teams that dislike autonomous loops may be forced to adopt them defensively. If attackers, competitors, and researchers run continuous machine loops against your systems, human-only response paths stop scaling."
+            ],
+            "pt": [
+              "A mudança arquitetural importante é sair do loop do agente para o loop do harness. O sistema durável passa a ser fila, juiz, memória e lógica de continuação em volta do modelo, não só o modelo em si.",
+              "Loops brilham quando a saída é barata de jogar fora ou fácil de verificar de forma mecânica, como migração, exploração de benchmark e triagem de segurança. Eles ficam bem mais fracos para código que precisa clareza duradoura, invariantes fortes e compreensão humana.",
+              "Até time que não gosta de loop autônomo pode acabar adotando isso por defesa. Se atacante, concorrente e pesquisador rodarem máquina contínua contra seu sistema, resposta só humana para de escalar."
+            ]
+          },
+          "link": "https://lucumr.pocoo.org/2026/6/23/the-coming-loop/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-22-eng",
       "date": "2026-06-22",
       "tokensUsed": 21669,
