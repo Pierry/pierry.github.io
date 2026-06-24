@@ -1,6 +1,56 @@
 {
   "threads": [
     {
+      "slug": "system-design-is-constraint-literacy",
+      "date": "2026-06-24",
+      "title": {
+        "en": "System design is constraint literacy",
+        "pt": "System design é alfabetização em restrição"
+      },
+      "description": {
+        "en": "Thirty two digests now converge on the same harder lesson: strong system design does not start with a neat diagram or fashionable stack. It starts by making the real constraints explicit, so latency, truth, recovery, locality and workload control remain enforceable when production turns hostile.",
+        "pt": "Trinta e dois digests agora convergem na mesma lição mais dura: system design forte não começa com diagrama bonito nem stack da moda. Começa por explicitar as restrições reais, para latência, verdade, recuperação, localidade e controle do workload continuarem imponíveis quando produção fica hostil."
+      },
+      "body": {
+        "en": "A lot of system design content still gets taught like a catalog of components. Pick cache, queue, database, replica, and move on. The stronger pattern across this thread says the opposite. Good design begins by naming the constraint early enough that the system can still enforce it later under pressure.\n\nThe newly uncovered wave strengthens that thesis because it keeps showing teams win by pulling the critical rule closer to the place where failure actually happens. The Docker deep dive matters less as tooling trivia and more as a reminder that containers work because Linux isolation, filesystem layering and runtime boundaries are explicit. The Linear breakdown lands the same lesson at the product edge. It feels fast because the architecture moved responsiveness into a local first sync contract instead of waiting for the network to bless every click.\n\nThe backend stories sharpen the pattern around truth and recovery. The Stripe system design piece treats payments as a failure semantics problem before a feature problem, with recovery points, idempotency and webhook state handling defining the architecture. Microsoft's pg_durable pushes in the same direction by moving long running execution closer to the database so workflow state and business truth stop drifting apart. Uber's artifact storage migration repeats the move from an infrastructure angle. A thin validation layer plus immutable caching beats blind trust in either SaaS or local cache alone because the system keeps source of truth and cost control legible.\n\nEven Airbnb's Viaduct fits the same arc. The interesting choice is not GraphQL itself. It is deciding where ownership should stay decentralized and where runtime, observability and governance must stay centralized so the whole data plane does not dissolve into operational tax.\n\nPut together, the message gets harder to miss. System design is not pattern trivia. It is the skill of exposing the real bottleneck, truth boundary, locality rule and recovery contract before reality exposes them for you. The teams that win are rarely the ones with the prettiest diagram. They are the ones that turn constraints into rules the system can actually keep.",
+        "pt": "Muito material de system design ainda é ensinado como catálogo de componente. Escolhe cache, fila, banco, réplica, e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando a pressão chega.\n\nA onda recém descoberta reforça essa tese porque mostra repetidamente times ganhando ao puxar a regra crítica para mais perto do lugar onde a falha realmente nasce. O mergulho no Docker importa menos como trivia de tooling e mais como lembrete de que container funciona porque isolamento de Linux, camadas de filesystem e fronteiras de runtime foram explicitadas. O raio X do Linear bate na mesma tecla na ponta do produto. Ele parece rápido porque a arquitetura moveu responsividade para um contrato local first de sync, em vez de esperar a rede abençoar cada clique.\n\nAs histórias de backend afiam o padrão em verdade e recuperação. O texto de pagamentos com Stripe trata pagamento primeiro como problema de semântica de falha, depois como problema de feature, com recovery point, idempotência e tratamento de estado de webhook definindo a arquitetura. O pg_durable da Microsoft empurra na mesma direção ao levar execução longa para mais perto do banco, para estado de workflow e verdade de negócio pararem de se desencontrar. A migração de storage de artefatos da Uber repete o movimento pelo lado de infraestrutura. Uma camada fina de validação com cache imutável vence a confiança cega tanto no SaaS quanto no cache local, porque o sistema mantém fonte de verdade e controle de custo legíveis.\n\nAté o Viaduct do Airbnb encaixa no mesmo arco. A escolha interessante não é GraphQL em si. É decidir onde a posse fica descentralizada e onde runtime, observabilidade e governança precisam continuar centralizados para o plano de dados inteiro não virar imposto operacional.\n\nJuntando tudo, o recado fica mais difícil de ignorar. System design não é trivia de padrão. É a habilidade de expor o gargalo real, a fronteira de verdade, a regra de localidade e o contrato de recuperação antes que a realidade exponha isso por você. Ganha raramente o time com diagrama mais bonito. Ganha o time que transforma restrição em regra que o sistema consegue cumprir."
+      },
+      "entries": [
+        "2026-06-22-eng-1",
+        "2026-06-19-1",
+        "2026-06-15-eng-1",
+        "2026-06-14-eng-1",
+        "2026-06-14-1",
+        "2026-06-11-eng-1",
+        "2026-06-10-eng-1",
+        "2026-05-29-1",
+        "2026-05-27-eng-1",
+        "2026-05-27-1",
+        "2026-05-26-eng-1",
+        "2026-05-25-eng-1",
+        "2026-05-25-1",
+        "2026-05-22-eng-1",
+        "2026-05-21-eng-1",
+        "2026-05-19-1",
+        "2026-05-18-eng-1",
+        "2026-05-17-eng-1",
+        "2026-05-16-1",
+        "2026-04-17-harness-1",
+        "2026-04-16-1",
+        "2026-04-07-1",
+        "2026-04-05-1",
+        "2026-04-02-1",
+        "2026-03-31-1",
+        "2026-03-16-1",
+        "2026-06-15-1",
+        "2026-06-10-1",
+        "2026-06-08-eng-1",
+        "2026-06-08-1",
+        "2026-06-06-eng-1",
+        "2026-06-06-1"
+      ]
+    },
+    {
       "slug": "assistants-are-systems",
       "date": "2026-06-23",
       "title": {
@@ -89,50 +139,6 @@
         "2026-03-17-1",
         "2026-03-28-1",
         "2026-05-18-1"
-      ]
-    },
-    {
-      "slug": "system-design-is-constraint-literacy",
-      "date": "2026-06-23",
-      "title": {
-        "en": "System design is constraint literacy",
-        "pt": "System design é alfabetização em restrição"
-      },
-      "description": {
-        "en": "Twenty six digests now converge on the same harder lesson: strong system design does not start with a neat diagram or fashionable stack. It starts by making the real constraints explicit, so throughput, truth, observability, failure recovery and workload control remain enforceable when production turns hostile.",
-        "pt": "Vinte e seis digests agora convergem na mesma lição mais dura: system design forte não começa com diagrama bonito nem stack da moda. Começa por explicitar as restrições reais, para vazão, verdade, observabilidade, recuperação de falha e controle do workload continuarem imponíveis quando produção fica hostil."
-      },
-      "body": {
-        "en": "A lot of system design content still gets taught like a catalog of components. Pick cache, queue, database, replica, and move on. The stronger pattern across this thread says the opposite. Good design begins by naming the constraint early enough that the system can still enforce it later under pressure.\n\nThe earlier entries already pushed that thesis through privacy boundaries, migration sequencing, transactional truth and workload control. The newly uncovered wave makes it sharper because it shows the same discipline reappearing across the most physical parts of infrastructure too. Pinterest did not fix ML serving by throwing more hardware at it. It made feature shape explicit so the network stopped carrying waste. The AI data center piece lands the same point at larger scale: compute only matters if power, memory, cooling and transport stay balanced enough to feed it.\n\nThe operational stories reinforce the same lesson from different edges of production. Slack treated HTTP/3 rollout as an observability problem before a traffic problem, because a protocol you cannot measure safely is not production ready. Meta treated sudden power loss as a control-plane and recovery-contract problem, not as a generator anecdote, and practiced the restart path until failure became legible. Uber's artifact platform and data abstraction layer both make the same architectural move too: put validation, source of truth and resolution logic where the system can enforce them centrally instead of hoping consumers and caches stay honest on their own.\n\nEven the hot-path essay fits the pattern because it strips away architecture cosplay. You do not scale a system by optimizing everything in theory. You scale it by identifying where truth must stay strict, where reads dominate, where latency is really born and which trade-off the business can actually afford.\n\nPut together, the message gets harder to miss. System design is not pattern trivia. It is the skill of exposing the real bottleneck, truth boundary and recovery contract before reality exposes them for you. The teams that win are rarely the ones with the prettiest diagram. They are the ones that turn constraints into rules the system can actually keep.",
-        "pt": "Muito material de system design ainda é ensinado como catálogo de componente. Escolhe cache, fila, banco, réplica, e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando a pressão chega.\n\nAs entradas anteriores já empurravam essa tese por fronteira de privacidade, sequência de migração, verdade transacional e controle de workload. A onda recém descoberta deixa o ponto mais afiado porque mostra a mesma disciplina reaparecendo até nas partes mais físicas da infraestrutura. O Pinterest não resolveu serving de ML jogando mais hardware. Expôs a forma real do dado para a rede parar de carregar desperdício. O texto sobre data center de IA bate na mesma tecla em escala maior: compute só importa quando energia, memória, resfriamento e transporte continuam equilibrados o bastante para alimentar a máquina.\n\nAs histórias operacionais reforçam a mesma lição por outros cantos da produção. O Slack tratou rollout de HTTP/3 primeiro como problema de observabilidade, depois como problema de tráfego, porque protocolo que você não mede com segurança ainda não está pronto para produção. A Meta tratou perda súbita de energia como problema de control plane e contrato de recuperação, não como anedota de gerador, e ensaiou o caminho de volta até a falha ficar legível. A plataforma de artefatos da Uber e a camada de abstração de dados fazem o mesmo movimento arquitetural: colocam validação, fonte de verdade e lógica de resolução num ponto central onde o sistema consegue impor regra, em vez de torcer para consumidor e cache se comportarem sozinhos.\n\nAté o texto sobre hot path encaixa porque corta o teatro de arquitetura. Você não escala sistema otimizando tudo no abstrato. Escala sistema descobrindo onde a verdade precisa continuar rígida, onde leitura domina, onde latência nasce de fato e qual trade-off o negócio realmente pode pagar.\n\nJuntando tudo, o recado fica mais difícil de ignorar. System design não é trivia de padrão. É a habilidade de expor o gargalo real, a fronteira de verdade e o contrato de recuperação antes que a realidade exponha por você. Ganha raramente o time com diagrama mais bonito. Ganha o time que transforma restrição em regra que o sistema consegue cumprir."
-      },
-      "entries": [
-        "2026-06-22-eng-1",
-        "2026-06-19-1",
-        "2026-06-15-eng-1",
-        "2026-06-14-eng-1",
-        "2026-06-14-1",
-        "2026-06-11-eng-1",
-        "2026-06-10-eng-1",
-        "2026-05-29-1",
-        "2026-05-27-eng-1",
-        "2026-05-27-1",
-        "2026-05-26-eng-1",
-        "2026-05-25-eng-1",
-        "2026-05-25-1",
-        "2026-05-22-eng-1",
-        "2026-05-21-eng-1",
-        "2026-05-19-1",
-        "2026-05-17-eng-1",
-        "2026-04-17-harness-1",
-        "2026-05-18-eng-1",
-        "2026-04-16-1",
-        "2026-03-31-1",
-        "2026-03-16-1",
-        "2026-05-16-1",
-        "2026-04-07-1",
-        "2026-04-05-1",
-        "2026-04-02-1"
       ]
     },
     {
