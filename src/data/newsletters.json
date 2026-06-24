@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-24",
+      "date": "2026-06-24",
+      "tokensUsed": 987174,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Vinay Perneti, via Engineering Leadership",
+          "title": {
+            "en": "AI Transformation Journey: 3 Myths and Learnings",
+            "pt": "Jornada de transformação com IA, 3 mitos e aprendizados reais para times de engenharia"
+          },
+          "summary": {
+            "en": "This piece stands out because it treats AI adoption as an organizational systems problem, not a tooling problem. Drawing from Augment Code’s internal transformation, it argues that better models alone did not unlock the expected 2 to 3x productivity jump. The real constraints were shared context, team operating model, changing bottlenecks, and the emotional friction of adoption. That makes it broadly useful for engineering leaders and senior developers, because the core lesson is that AI-native engineering requires redesigning feedback loops, incentives, and collaboration patterns around the team, not just handing everyone a stronger coding agent.",
+            "pt": "Esse texto se destaca porque trata adoção de IA como problema de sistema organizacional, não só de ferramenta. A partir da transformação interna da Augment Code, ele mostra que modelo melhor sozinho não entregou o salto de 2x ou 3x que muita gente esperava. Os gargalos reais estavam em contexto compartilhado, modelo operacional do time, gargalos que mudam com o tempo e no atrito humano da adoção. Isso deixa o conteúdo útil para qualquer liderança ou dev sênior, porque a lição central é que engenharia AI-native exige redesenhar loops de feedback, incentivos e colaboração do time, não só entregar um agente de código mais forte."
+          },
+          "insights": {
+            "en": [
+              "The biggest mistake is treating AI transformation as a top-down tooling rollout. Teams move faster when adoption is bottom-up and people are encouraged to solve the new bottlenecks themselves.",
+              "A local productivity gain does not automatically become system productivity. If review, context sharing, coordination, and trust do not evolve too, the organization hits a hard ceiling quickly.",
+              "The human side is infrastructure too. Fear, uncertainty, and role anxiety directly affect adoption, so engineering leaders need explicit space for reflection and learning, not only new tools."
+            ],
+            "pt": [
+              "O maior erro é tratar transformação com IA como rollout top-down de ferramenta. Time anda mais quando a adoção nasce de baixo para cima e as pessoas se sentem donas de resolver o próximo gargalo.",
+              "Ganho local de produtividade não vira produtividade do sistema automaticamente. Se review, compartilhamento de contexto, coordenação e confiança não evoluem juntos, a organização bate no teto rápido.",
+              "O lado humano também é infraestrutura. Medo, incerteza e ansiedade de papel afetam adoção direto, então liderança precisa abrir espaço explícito para reflexão e aprendizado, não só comprar ferramenta nova."
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/ai-transformation-journey-3-myths"
+        }
+      ]
+    },
+    {
       "id": "2026-06-23-eng",
       "date": "2026-06-23",
       "tokensUsed": 24208,
