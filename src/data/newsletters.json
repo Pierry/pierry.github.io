@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-24-eng",
+      "date": "2026-06-24",
+      "tokensUsed": 18688,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Zorik Gekhman and Jonathan Herzig, Research Scientists, Google Research",
+          "title": {
+            "en": "Thinking to recall: How reasoning unlocks parametric knowledge in LLMs",
+            "pt": "Como o raciocínio desbloqueia memória paramétrica escondida em LLMs"
+          },
+          "summary": {
+            "en": "Google Research explores a subtle but important systems question: why does chain-of-thought help even on simple factual questions that do not require visible reasoning? The post matters because it moves beyond benchmark folklore and isolates two concrete mechanisms. First, extra reasoning tokens act as a computational buffer, giving the model more internal runway to refine its hidden state before answering. Second, the model can surface adjacent facts that semantically prime the correct answer, effectively using self-generated context as a retrieval bridge. That makes the piece broadly relevant for anyone building or evaluating production LLM systems, because it reframes reasoning not just as step-by-step logic, but as a controllable recall mechanism with direct implications for latency, reliability, and hallucination handling.",
+            "pt": "O Google Research ataca uma pergunta sutil, mas muito importante para sistemas de IA, por que chain-of-thought ajuda até em pergunta factual simples, onde não existe raciocínio visível para fazer. O valor do post está em sair do folclore de benchmark e isolar dois mecanismos concretos. Primeiro, tokens extras de raciocínio funcionam como buffer computacional, dando mais pista interna para o modelo refinar o estado oculto antes de responder. Segundo, o modelo puxa fatos vizinhos que fazem priming semântico da resposta certa, usando contexto gerado por ele mesmo como ponte de recuperação. Isso deixa o texto útil para qualquer time que constrói ou avalia LLM em produção, porque reposiciona raciocínio não só como lógica passo a passo, mas como mecanismo controlável de recall, com impacto direto em latência, confiabilidade e tratamento de alucinação."
+          },
+          "insights": {
+            "en": [
+              "Reasoning can improve factual recall even when the question itself is simple. The gain is not only semantic, extra generated tokens give the model more effective compute time before the final answer.",
+              "The strongest traces are not long proofs, they are factual stepping stones. Related intermediate facts can prime the network toward the right answer, which suggests retrieval-style behavior is happening inside the model itself.",
+              "Hallucinated intermediate facts sharply reduce final-answer accuracy. For production systems, this points toward better selection, verification, and reward strategies for reasoning traces instead of blindly maximizing chain-of-thought length."
+            ],
+            "pt": [
+              "Raciocínio pode melhorar recall factual mesmo quando a pergunta é simples. O ganho não é só semântico, token extra dá mais tempo efetivo de computação antes da resposta final.",
+              "Os melhores traces não são provas longas, são degraus factuais. Fatos relacionados fazem priming da rede até a resposta certa, sugerindo um comportamento de retrieval acontecendo dentro do próprio modelo.",
+              "Fato intermediário alucinado derruba bastante a chance de acerto final. Para sistema de produção, isso aponta mais para seleção, verificação e reward de traces do que para só esticar chain-of-thought sem critério."
+            ]
+          },
+          "link": "https://research.google/blog/thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-24",
       "date": "2026-06-24",
       "tokensUsed": 987174,
