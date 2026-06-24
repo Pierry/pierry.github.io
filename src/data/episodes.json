@@ -1,6 +1,14 @@
 {
   "episodes": [
     {
+      "title": "Ep #22 - System Design #1 - Encurtador de URLs em Escala",
+      "description": "Neste episódio, mergulhamos no clássico desafio de <strong>System Design: o Encurtador de URLs</strong>. Embora a superfície funcional pareça simples — transformar uma URL longa em uma curta e redirecionar o usuário — a implementação em escala real revela temas complexos de arquitetura distribuída. ",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/121915529/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-24%2Fd0f302d8-726d-c19a-ae6d-d96dee569506.m4a",
+      "pubDate": "2026-06-24",
+      "duration": "00:22:42",
+      "language": "en"
+    },
+    {
       "title": "Ep #21 - Engineering Manager 2.0: Do Gerente de Status ao Operador de Sistema",
       "description": "Neste episódio, exploramos a evolução da liderança de engenharia para o cenário de 2026, onde o modelo clássico de gestão baseado em cobrança de prazos e rituais burocráticos deu lugar à figura do <strong>Engineering Manager 2.0</strong>.Diferente do gestor tradicional, o EM 2.0 atua como um <strong",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/120519968/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-25%2Fed47dde8-a56d-c969-b5ac-ec252264ecda.m4a",
