@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-25-eng",
+      "date": "2026-06-25",
+      "tokensUsed": 10575,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Google Research",
+          "title": {
+            "en": "Optimizing cloud economics with linear elastic caching",
+            "pt": "Como cache elástico linear corta custo de cloud sem derrubar performance"
+          },
+          "summary": {
+            "en": "Google Research presents a clean systems idea for cache-heavy distributed infrastructure: stop treating memory as a fixed budget and start treating it as a time-varying economic resource. The post reframes cache eviction as a ski-rental problem, where the system continuously weighs the rental cost of keeping data in RAM against the future miss cost of evicting it. What makes the piece stand out is that the theory was translated into a lightweight production policy inside Spanner, using simple TTL prediction and conventional eviction only as a fallback. That makes it broadly relevant for platform and infrastructure teams because it connects performance engineering directly to cloud economics instead of optimizing latency and memory footprint in isolation.",
+            "pt": "O Google Research mostra uma ideia de sistemas bem forte para infraestrutura pesada em cache: parar de tratar memória como orçamento fixo e passar a tratar como recurso econômico que varia no tempo. O texto reinterpreta a decisão de eviction como problema de ski rental, onde o sistema pesa o custo de manter dado em RAM contra o custo futuro de miss ao expulsar a página. O que faz o post se destacar é que a teoria virou política leve de produção dentro do Spanner, usando previsão simples de TTL e eviction convencional só como fallback. Isso deixa o conteúdo útil para qualquer time de plataforma ou infra porque conecta performance direto com economia de cloud, em vez de otimizar latência e footprint de memória de forma isolada."
+          },
+          "insights": {
+            "en": [
+              "The key architecture move is decoupling rental duration from eviction policy. A predicted TTL decides how long a page deserves paid memory, and a standard policy like LRU only steps in when physical capacity is truly exhausted.",
+              "Lightweight ML was enough to matter in the hot path. Google used a shallow decision tree, cheap enough for Spanner-scale traffic, and still cut memory usage 15.5% with only a small miss-rate increase concentrated on cheap-to-fetch data.",
+              "This is a useful cloud-era lesson: infrastructure optimization should minimize total cost of ownership, not only miss rate. As memory pricing becomes more granular, elastic resource policies become a first-class systems design tool."
+            ],
+            "pt": [
+              "A jogada principal de arquitetura é separar duração do aluguel da política de eviction. Um TTL previsto decide quanto tempo cada página merece ocupar memória paga, e uma política padrão como LRU só entra quando a capacidade física realmente aperta.",
+              "ML leve já foi suficiente para mexer no hot path. O Google usou uma árvore de decisão rasa, barata o bastante para tráfego na escala do Spanner, e ainda assim cortou 15,5% de uso de memória com aumento pequeno de miss concentrado em dado barato de buscar.",
+              "Boa lição para era da cloud: otimização de infra precisa minimizar custo total de propriedade, não só taxa de miss. Quando preço de memória fica granular, política elástica de recurso vira ferramenta de system design de primeira classe."
+            ]
+          },
+          "link": "https://research.google/blog/optimizing-cloud-economics-with-linear-elastic-caching/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-25",
       "date": "2026-06-25",
       "tokensUsed": 36536,
