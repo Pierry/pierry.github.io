@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-25",
+      "date": "2026-06-25",
+      "tokensUsed": 36536,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Product for Engineers",
+          "author": "Edwin Lim",
+          "title": {
+            "en": "We used context engineering to 5x conversion and 2x activation",
+            "pt": "Como context engineering levou a 5x mais conversão e 2x mais ativação"
+          },
+          "summary": {
+            "en": "PostHog argues that the biggest bottleneck in production agents is often not reasoning quality, but missing context. While building an AI onboarding wizard that installs and configures PostHog inside arbitrary codebases, the team found that better prompting and agent orchestration produced only marginal gains. The real jump came from building a dedicated context supply chain: extracting knowledge from docs, SDKs, source code, examples, and API specs, packaging it into versioned skills, and delivering it independently of the agent harness. That makes this piece broadly relevant because it reframes agent quality as an information architecture and distribution problem, not just a model or prompting problem.",
+            "pt": "A PostHog defende que o maior gargalo de agentes em produção muitas vezes não é a qualidade do raciocínio, mas a falta de contexto. Ao construir um wizard de onboarding com IA para instalar e configurar PostHog dentro de codebases variadas, o time viu que prompt melhor e orquestração de agente deram só ganho marginal. O salto real veio de criar uma cadeia de suprimento de contexto: extrair conhecimento de docs, SDKs, código-fonte, exemplos e especificações de API, empacotar isso em skills versionadas e entregar tudo desacoplado do harness do agente. Isso deixa o texto relevante de forma ampla porque ele reposiciona qualidade de agente como problema de arquitetura e distribuição de informação, não só de modelo ou prompting."
+          },
+          "insights": {
+            "en": [
+              "For high-variance agent tasks, context supply is often a harder constraint than reasoning. If the agent lacks framework, SDK, and product-specific details, better planning loops alone will not rescue accuracy.",
+              "Knowledge should be decoupled from the agent runtime. PostHog's \"context mill\" turns maintained sources of truth into portable, versioned skill bundles that can be updated without redeploying the agent.",
+              "Fast product teams need a closed-loop docs system. When engineering ships faster than documentation updates, agent behavior silently degrades, so documentation and context maintenance become part of the production reliability stack."
+            ],
+            "pt": [
+              "Para tarefas agentic com alta variância, suprimento de contexto costuma ser gargalo maior que raciocínio. Se o agente não conhece detalhes de framework, SDK e produto, loop de planning sozinho não salva a precisão.",
+              "Conhecimento precisa ficar desacoplado do runtime do agente. O \"context mill\" da PostHog transforma fontes de verdade mantidas pelo time em pacotes portáveis e versionados de skills, atualizáveis sem redeploy do agente.",
+              "Time que entrega rápido precisa de loop fechado de documentação. Quando engenharia muda mais rápido que a doc, o comportamento do agente degrada em silêncio, então manutenção de contexto vira parte da confiabilidade de produção."
+            ]
+          },
+          "link": "https://newsletter.posthog.com/p/we-used-ai-to-5x-conversion-and-2x"
+        }
+      ]
+    },
+    {
       "id": "2026-06-24-eng",
       "date": "2026-06-24",
       "tokensUsed": 18688,
