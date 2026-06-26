@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-26",
+      "date": "2026-06-26",
+      "tokensUsed": 1659683,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Ilia Karelin, via System Design One",
+          "title": {
+            "en": "You Won’t Use Claude The Same Way After Understanding This Folder",
+            "pt": "Depois de entender esta pasta, você não usa Claude Code do mesmo jeito"
+          },
+          "summary": {
+            "en": "This issue maps the hidden configuration layer behind Claude Code and argues that reliable AI coding workflows depend less on one-off prompts and more on persistent project operating context. The post explains how global and repo-local .claude folders, CLAUDE.md, rules, commands, permissions, and MCP configuration stack together before a session even starts. What makes it especially useful is that it reframes agent quality as a systems design problem: behavior becomes a function of layered configuration, reusable commands, and constrained memory, not just model intelligence.",
+            "pt": "Esta edição mapeia a camada escondida de configuração por trás do Claude Code e defende que workflow confiável com IA para código depende menos de prompt solto e mais de contexto operacional persistente do projeto. O texto mostra como pastas .claude globais e locais do repositório, CLAUDE.md, rules, commands, permissões e configuração de MCP se empilham antes mesmo da sessão começar. O ponto forte é reposicionar qualidade de agente como problema de system design: o comportamento vira função de configuração em camadas, comandos reutilizáveis e memória restrita, não só da inteligência do modelo."
+          },
+          "insights": {
+            "en": [
+              "The real control plane is not the chat prompt, but the startup stack Claude loads before work begins. Global config, project config, rules, and local tool wiring together define the operating envelope.",
+              "Persistent AI workflows improve when reusable behavior is encoded as structure, not repeated instructions. Commands, rules, and scoped permissions turn tribal workflow habits into durable team infrastructure.",
+              "Long CLAUDE.md files are not automatically better. Instruction quality degrades when critical rules compete with noise, so agent context should be designed like any constrained production system."
+            ],
+            "pt": [
+              "O plano de controle real não é o prompt do chat, mas a pilha de inicialização que o Claude carrega antes de começar. Config global, config do projeto, rules e ferramentas locais juntas definem o envelope de operação.",
+              "Workflow persistente com IA melhora quando comportamento reutilizável vira estrutura, não instrução repetida. Commands, rules e permissões escopadas transformam hábito tácito do time em infraestrutura durável.",
+              "CLAUDE.md grande não significa melhor. A qualidade das instruções cai quando regra crítica compete com ruído, então contexto de agente precisa ser desenhado como qualquer sistema de produção com limite de capacidade."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/claude-folder"
+        }
+      ]
+    },
+    {
       "id": "2026-06-25-eng",
       "date": "2026-06-25",
       "tokensUsed": 10575,
