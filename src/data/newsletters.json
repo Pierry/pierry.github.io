@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-26-eng",
+      "date": "2026-06-26",
+      "tokensUsed": 15277,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Google Research",
+          "title": {
+            "en": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction",
+            "pt": "Como o Google acelerou o Gemini Nano no Pixel com Multi-Token Prediction congelado"
+          },
+          "summary": {
+            "en": "Google Research details a production optimization for on-device LLMs that matters well beyond mobile: how to retrofit speculative-style multi-token decoding onto an already-deployed model without retraining the backbone. Instead of shipping a separate drafter model, the team freezes Gemini Nano v3 and attaches a lightweight Multi-Token Prediction head to the final layers, letting it draft multiple future tokens while reusing the backbone’s internal state. The key engineering win is a zero-copy design that cross-attends directly to the main model’s KV cache, cutting redundant memory use and prefill overhead. In production on Pixel 9 and 10 workloads, the approach delivered 50%+ speedups on some tasks while preserving exact model outputs, which makes it a strong example of systems-level AI optimization under strict latency, memory, and energy constraints.",
+            "pt": "O Google Research mostrou uma otimização de produção para LLM on-device que vai muito além de mobile: como encaixar decoding com previsão de múltiplos tokens em um modelo já implantado, sem retreinar o backbone. Em vez de embarcar um drafter separado, o time congela o Gemini Nano v3 e acopla uma cabeça leve de Multi-Token Prediction nas últimas camadas, deixando essa cabeça prever vários tokens futuros enquanto reaproveita o estado interno já calculado pelo backbone. A jogada forte de engenharia é um desenho zero-copy que faz cross-attention direto no KV cache do modelo principal, cortando uso redundante de memória e custo de prefill. Em workloads reais de Pixel 9 e 10, a abordagem entregou aceleração acima de 50% em alguns casos, preservando exatamente a mesma saída final do modelo, bom exemplo de otimização de IA em nível de sistema sob restrições duras de latência, memória e energia."
+          },
+          "insights": {
+            "en": [
+              "The architectural move is to retrofit speed, not retrain intelligence. By freezing the main model and training only the MTP head, Google turns inference acceleration into a deploy-safe systems upgrade instead of a full model lifecycle event.",
+              "The zero-copy KV-cache design is the real infrastructure trick. Reusing the verifier cache avoids the RAM and latency tax of a standalone drafter, which is exactly the constraint that makes speculative decoding hard on phones.",
+              "This is a strong reminder that production AI wins often come from systems engineering around the model. Matching output quality while improving latency, battery use, and memory footprint is more valuable than squeezing out another benchmark point."
+            ],
+            "pt": [
+              "A grande jogada de arquitetura aqui é acelerar sem retreinar inteligência. Ao congelar o modelo principal e treinar só a cabeça MTP, o Google transforma ganho de inferência em upgrade seguro de sistema, não em novo ciclo completo de modelo.",
+              "O truque de infra mais forte é o desenho zero-copy do KV cache. Reusar o cache do verificador evita o imposto de RAM e latência de um drafter separado, exatamente o gargalo que torna speculative decoding difícil em celular.",
+              "Boa lição de produção: ganho real em IA muitas vezes vem da engenharia ao redor do modelo. Manter a mesma qualidade de saída enquanto melhora latência, bateria e memória vale mais do que arrancar mais um ponto de benchmark."
+            ]
+          },
+          "link": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/"
+        }
+      ]
+    },
+    {
       "id": "2026-06-26",
       "date": "2026-06-26",
       "tokensUsed": 1659683,
