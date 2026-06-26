@@ -1,62 +1,6 @@
 {
   "threads": [
     {
-      "slug": "system-design-is-constraint-literacy",
-      "date": "2026-06-26",
-      "title": {
-        "en": "System design is constraint literacy",
-        "pt": "System design é alfabetização em restrição"
-      },
-      "description": {
-        "en": "Thirty eight digests now converge on the same harder lesson: strong system design starts by naming the real constraints early enough that truth, recovery, locality, cost and freshness can still be enforced when production turns hostile.",
-        "pt": "Trinta e oito digests agora convergem na mesma lição mais dura: system design forte começa por nomear cedo as restrições reais, cedo o bastante para verdade, recuperação, localidade, custo e frescor continuarem imponíveis quando produção fica hostil."
-      },
-      "body": {
-        "en": "A lot of system design still gets taught like a shopping list of components. Pick queue, cache, replica, warehouse and move on. The stronger pattern across this thread says the opposite. Good design starts by naming the constraint early enough that the system can still enforce it when traffic spikes, state diverges or humans make the wrong local optimization.\n\nThis newly uncovered piece sharpens the thesis by showing that even caching is really constraint management, not just a speed trick. Google's linear elastic caching reframes memory as an economic resource with time-varying value. Instead of asking only which page should be evicted, the system asks how long each page deserves paid memory before the miss cost becomes cheaper than the rent. That is a much stronger design move than tuning LRU harder, because it turns cloud cost into an explicit rule the system can optimize for.\n\nThat fits the rest of the thread almost too well. The dangerous failures keep appearing at boundaries where teams refuse to state the real invariant: between writes and side effects, between schema and invalid states, between migration and recovery, between serving freshness and semantic consistency, and now between memory footprint and total cost of ownership. Put together, the message gets sharper, not broader. System design is the discipline of deciding which constraints deserve first-class enforcement, then embedding those constraints where the system can still keep them under pressure.",
-        "pt": "Muito material de system design ainda é ensinado como lista de compra de componente. Escolhe fila, cache, réplica, warehouse e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando tráfego sobe, estado diverge ou alguém faz a otimização local errada.\n\nEsta entrada recém descoberta afia a tese porque mostra que até cache, no fundo, é gestão de restrição, não só truque de velocidade. O linear elastic caching do Google reinterpreta memória como recurso econômico com valor variável no tempo. Em vez de perguntar só qual página deve sair, o sistema pergunta por quanto tempo cada página merece memória paga antes de o custo de miss ficar mais barato que o aluguel. Isso é muito mais forte do que apertar LRU, porque transforma custo de cloud em regra explícita que o sistema consegue otimizar.\n\nIsso encaixa no resto da thread quase perfeitamente. As falhas perigosas continuam aparecendo nas fronteiras onde o time evita declarar a invariante real: entre escrita e efeito colateral, entre schema e estado inválido, entre migração e recuperação, entre frescor de serving e consistência semântica, e agora entre footprint de memória e custo total de propriedade. Juntando tudo, a mensagem fica mais afiada, não mais ampla. System design é a disciplina de decidir quais restrições merecem imposição de primeira classe, e depois embutir essas restrições no lugar onde o sistema ainda consegue cumpri-las sob pressão."
-      },
-      "entries": [
-        "2026-06-25-eng-1",
-        "2026-06-22-eng-1",
-        "2026-06-19-1",
-        "2026-06-15-eng-1",
-        "2026-06-14-eng-1",
-        "2026-06-14-1",
-        "2026-06-11-eng-1",
-        "2026-06-10-eng-1",
-        "2026-05-29-1",
-        "2026-05-27-eng-1",
-        "2026-05-27-1",
-        "2026-05-26-eng-1",
-        "2026-05-25-eng-1",
-        "2026-05-25-1",
-        "2026-05-22-eng-1",
-        "2026-05-21-eng-1",
-        "2026-05-19-1",
-        "2026-05-18-eng-1",
-        "2026-05-17-eng-1",
-        "2026-05-16-1",
-        "2026-04-17-harness-1",
-        "2026-04-16-1",
-        "2026-04-07-1",
-        "2026-04-05-1",
-        "2026-04-02-1",
-        "2026-03-31-1",
-        "2026-03-16-1",
-        "2026-06-15-1",
-        "2026-06-10-1",
-        "2026-06-08-eng-1",
-        "2026-06-08-1",
-        "2026-06-06-eng-1",
-        "2026-06-06-1",
-        "2026-06-04-1",
-        "2026-06-02-eng-1",
-        "2026-06-01-eng-1",
-        "2026-05-31-1",
-        "2026-05-30-1"
-      ]
-    },
-    {
       "slug": "assistants-are-systems",
       "date": "2026-06-26",
       "title": {
@@ -64,14 +8,15 @@
         "pt": "Assistente virou sistema"
       },
       "description": {
-        "en": "Eighty seven digests now converge on the same reality: once AI meets real work, model quality matters less than the surrounding system for context supply, memory, retrieval, tool boundaries, runtime economics and human supervision.",
-        "pt": "Oitenta e sete digests agora convergem na mesma realidade: quando IA encosta no trabalho real, qualidade de modelo pesa menos que o sistema em volta, cadeia de contexto, memória, retrieval, fronteira de tool, economia de runtime e supervisão humana."
+        "en": "Eighty eight digests now converge on the same reality: once AI meets real work, model quality matters less than the surrounding system for context supply, memory, retrieval, tool boundaries, runtime economics and human supervision.",
+        "pt": "Oitenta e oito digests agora convergem na mesma realidade: quando IA encosta no trabalho real, qualidade de modelo pesa menos que o sistema em volta, cadeia de contexto, memória, retrieval, fronteira de tool, economia de runtime e supervisão humana."
       },
       "body": {
-        "en": "The center of gravity in AI keeps moving away from the standalone model and toward the operating system around it. A good assistant is no longer the one that writes the prettiest answer in isolation. It is the one embedded in a runtime that can remember, retrieve, route, verify, stay inside cost and latency budgets, and keep a human legibly in charge when work becomes consequential.\n\nThis newly uncovered block makes the thesis sharper because it turns context into an explicit production dependency. The PostHog story is useful precisely because better prompting and agent orchestration were not the real unlock. The big gain came from building a supply chain for context: extracting knowledge from docs, SDKs, source code, examples and API specs, packaging that knowledge into versioned skills, and shipping it independently of the harness. That is not prompt tuning. That is systems design for assistants.\n\nIt also fills a missing middle layer across the rest of the thread. Retrieval, memory and tool control only work when the assistant can ingest maintained sources of truth fast enough to keep up with the product it is meant to operate. If engineering ships faster than documentation and context refresh, the agent degrades silently no matter how capable the base model looks in demos. Put together, the pattern is even harder to miss now. Assistants are not becoming better chats. They are becoming full work systems, and the teams that win will treat context supply as seriously as runtime, evals, cost and human control.",
-        "pt": "O centro de gravidade da IA continua saindo do modelo isolado e indo para o sistema operacional em volta. Assistente bom já não é o que escreve a resposta mais bonita sozinho. É o que roda dentro de um runtime que lembra, recupera, roteia, verifica, respeita budget de custo e latência, e mantém o humano claramente no controle quando o trabalho fica consequente.\n\nEsta entrada recém descoberta deixa a tese mais afiada porque transforma contexto em dependência explícita de produção. A história da PostHog é útil justamente porque prompt melhor e orquestração de agente não foram o destrave real. O salto veio de montar uma cadeia de suprimento de contexto: extrair conhecimento de docs, SDKs, código-fonte, exemplos e specs de API, empacotar isso em skills versionadas, e distribuir tudo separado do harness. Isso não é tuning de prompt. Isso é system design para assistente.\n\nEla também preenche uma camada intermediária que faltava no resto da thread. Retrieval, memória e controle de tool só funcionam quando o assistente consegue absorver fontes de verdade mantidas pelo time rápido o bastante para acompanhar o produto que ele precisa operar. Se engenharia entrega mais rápido que a atualização de doc e contexto, o agente degrada em silêncio, por melhor que o modelo pareça na demo. Juntando tudo, o padrão fica ainda mais difícil de ignorar. Assistente não está virando chat melhor. Está virando sistema completo de trabalho, e o time que vence vai tratar suprimento de contexto com a mesma seriedade de runtime, eval, custo e controle humano."
+        "en": "The center of gravity in AI keeps moving away from the standalone model and toward the operating system around it. A good assistant is no longer the one that writes the prettiest answer in isolation. It is the one embedded in a runtime that can remember, retrieve, route, verify, stay inside cost and latency budgets, and keep a human legibly in charge when work becomes consequential.\n\nThis newly uncovered piece sharpens the thesis again by showing that the real control plane often exists before the chat even starts. The Claude Code folder model is interesting not because it offers better prompts, but because it turns behavior into layered infrastructure: global config, repo config, project memory, rules, commands, permissions and tool wiring. Once that stack exists, assistant quality becomes a function of initialization discipline and context architecture, not just raw model cleverness.\n\nThat matters because it closes the loop across the rest of the thread. Retrieval, memory and tool control only hold up when teams package their operating knowledge into durable artifacts the runtime can actually load and enforce. If critical behavior lives only in tribal habit or repeated prompting, the agent stays brittle no matter how good the demo looks. Put together, the pattern is now even harder to miss. Assistants are not becoming better chats. They are becoming full work systems, and the teams that win will treat context supply, boot configuration, runtime control and human oversight as one design problem.",
+        "pt": "O centro de gravidade da IA continua saindo do modelo isolado e indo para o sistema operacional em volta. Assistente bom já não é o que escreve a resposta mais bonita sozinho. É o que roda dentro de um runtime que lembra, recupera, roteia, verifica, respeita budget de custo e latência, e mantém o humano claramente no controle quando o trabalho fica consequente.\n\nEsta entrada recém descoberta afia de novo a tese porque mostra que o control plane real muitas vezes já existe antes de o chat começar. O modelo de pasta do Claude Code importa não por oferecer prompt melhor, mas por transformar comportamento em infraestrutura em camadas: config global, config do repositório, memória do projeto, rules, commands, permissões e ligação de tools. Quando essa pilha existe, a qualidade do assistente vira função de disciplina de inicialização e arquitetura de contexto, não só de esperteza bruta do modelo.\n\nIsso importa porque fecha o ciclo com o resto da thread. Retrieval, memória e controle de tool só se sustentam quando o time empacota conhecimento operacional em artefatos duráveis que o runtime realmente consegue carregar e impor. Se comportamento crítico vive só em hábito tribal ou prompt repetido, o agente continua frágil por melhor que a demo pareça. Juntando tudo, o padrão fica ainda mais difícil de ignorar. Assistente não está virando chat melhor. Está virando sistema completo de trabalho, e o time que vence vai tratar suprimento de contexto, configuração de boot, controle de runtime e supervisão humana como um único problema de design."
       },
       "entries": [
+        "2026-06-26-1",
         "2026-06-25-1",
         "2026-06-24-1",
         "2026-06-23-eng-1",
@@ -159,6 +104,62 @@
         "2026-06-02-1",
         "2026-06-01-1",
         "2026-05-31-eng-1"
+      ]
+    },
+    {
+      "slug": "system-design-is-constraint-literacy",
+      "date": "2026-06-26",
+      "title": {
+        "en": "System design is constraint literacy",
+        "pt": "System design é alfabetização em restrição"
+      },
+      "description": {
+        "en": "Thirty eight digests now converge on the same harder lesson: strong system design starts by naming the real constraints early enough that truth, recovery, locality, cost and freshness can still be enforced when production turns hostile.",
+        "pt": "Trinta e oito digests agora convergem na mesma lição mais dura: system design forte começa por nomear cedo as restrições reais, cedo o bastante para verdade, recuperação, localidade, custo e frescor continuarem imponíveis quando produção fica hostil."
+      },
+      "body": {
+        "en": "A lot of system design still gets taught like a shopping list of components. Pick queue, cache, replica, warehouse and move on. The stronger pattern across this thread says the opposite. Good design starts by naming the constraint early enough that the system can still enforce it when traffic spikes, state diverges or humans make the wrong local optimization.\n\nThis newly uncovered piece sharpens the thesis by showing that even caching is really constraint management, not just a speed trick. Google's linear elastic caching reframes memory as an economic resource with time-varying value. Instead of asking only which page should be evicted, the system asks how long each page deserves paid memory before the miss cost becomes cheaper than the rent. That is a much stronger design move than tuning LRU harder, because it turns cloud cost into an explicit rule the system can optimize for.\n\nThat fits the rest of the thread almost too well. The dangerous failures keep appearing at boundaries where teams refuse to state the real invariant: between writes and side effects, between schema and invalid states, between migration and recovery, between serving freshness and semantic consistency, and now between memory footprint and total cost of ownership. Put together, the message gets sharper, not broader. System design is the discipline of deciding which constraints deserve first-class enforcement, then embedding those constraints where the system can still keep them under pressure.",
+        "pt": "Muito material de system design ainda é ensinado como lista de compra de componente. Escolhe fila, cache, réplica, warehouse e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando tráfego sobe, estado diverge ou alguém faz a otimização local errada.\n\nEsta entrada recém descoberta afia a tese porque mostra que até cache, no fundo, é gestão de restrição, não só truque de velocidade. O linear elastic caching do Google reinterpreta memória como recurso econômico com valor variável no tempo. Em vez de perguntar só qual página deve sair, o sistema pergunta por quanto tempo cada página merece memória paga antes de o custo de miss ficar mais barato que o aluguel. Isso é muito mais forte do que apertar LRU, porque transforma custo de cloud em regra explícita que o sistema consegue otimizar.\n\nIsso encaixa no resto da thread quase perfeitamente. As falhas perigosas continuam aparecendo nas fronteiras onde o time evita declarar a invariante real: entre escrita e efeito colateral, entre schema e estado inválido, entre migração e recuperação, entre frescor de serving e consistência semântica, e agora entre footprint de memória e custo total de propriedade. Juntando tudo, a mensagem fica mais afiada, não mais ampla. System design é a disciplina de decidir quais restrições merecem imposição de primeira classe, e depois embutir essas restrições no lugar onde o sistema ainda consegue cumpri-las sob pressão."
+      },
+      "entries": [
+        "2026-06-25-eng-1",
+        "2026-06-22-eng-1",
+        "2026-06-19-1",
+        "2026-06-15-eng-1",
+        "2026-06-14-eng-1",
+        "2026-06-14-1",
+        "2026-06-11-eng-1",
+        "2026-06-10-eng-1",
+        "2026-05-29-1",
+        "2026-05-27-eng-1",
+        "2026-05-27-1",
+        "2026-05-26-eng-1",
+        "2026-05-25-eng-1",
+        "2026-05-25-1",
+        "2026-05-22-eng-1",
+        "2026-05-21-eng-1",
+        "2026-05-19-1",
+        "2026-05-18-eng-1",
+        "2026-05-17-eng-1",
+        "2026-05-16-1",
+        "2026-04-17-harness-1",
+        "2026-04-16-1",
+        "2026-04-07-1",
+        "2026-04-05-1",
+        "2026-04-02-1",
+        "2026-03-31-1",
+        "2026-03-16-1",
+        "2026-06-15-1",
+        "2026-06-10-1",
+        "2026-06-08-eng-1",
+        "2026-06-08-1",
+        "2026-06-06-eng-1",
+        "2026-06-06-1",
+        "2026-06-04-1",
+        "2026-06-02-eng-1",
+        "2026-06-01-eng-1",
+        "2026-05-31-1",
+        "2026-05-30-1"
       ]
     },
     {
