@@ -1,6 +1,63 @@
 {
   "threads": [
     {
+      "slug": "system-design-is-constraint-literacy",
+      "date": "2026-06-27",
+      "title": {
+        "en": "System design is constraint literacy",
+        "pt": "System design é alfabetização em restrição"
+      },
+      "description": {
+        "en": "Thirty nine digests now converge on the same harder lesson: strong system design starts by naming the real constraints early enough that truth, locality, freshness, memory, latency, energy and cost can still be enforced when production turns hostile.",
+        "pt": "Trinta e nove digests agora convergem na mesma lição mais dura: system design forte começa por nomear cedo as restrições reais, cedo o bastante para verdade, localidade, frescor, memória, latência, energia e custo continuarem imponíveis quando produção fica hostil."
+      },
+      "body": {
+        "en": "A lot of system design material is still taught like a shopping list of components. Pick a queue, cache, replica, warehouse and move on. The stronger pattern in this thread says the opposite. Good design starts when a team names the constraint that actually matters early enough for the system to keep enforcing it when traffic rises, state drifts or someone makes the wrong local optimization.\n\nThis newly uncovered piece sharpens the thesis because it shows that even LLM acceleration is mostly a constraint problem, not a model bragging contest. Google did not chase a fresh backbone to speed Gemini Nano on Pixel. It froze the deployed model, attached a light multi token prediction head to the last layers, and then designed zero copy cross attention straight into the main KV cache. That choice matters because the real enemy on device is not abstract intelligence. It is latency, memory pressure, battery and prefill cost, all at once, without changing the final answer.\n\nThat fits the rest of the thread almost perfectly. The dangerous failures keep appearing where teams refuse to declare the real invariant, between write and side effect, schema and invalid state, migration and recovery, serving freshness and semantic consistency, memory footprint and total cost of ownership, and now between decoding speed and the physical budget of the device itself. Put together, the message gets sharper, not broader. System design is the discipline of deciding which constraints deserve first class enforcement, then embedding those constraints where the system can still honor them under pressure.",
+        "pt": "Muito material de system design ainda é ensinado como lista de compra de componente. Escolhe fila, cache, réplica, warehouse e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando tráfego sobe, estado diverge ou alguém faz a otimização local errada.\n\nEsta entrada recém descoberta afia a tese porque mostra que até aceleração de LLM é principalmente problema de restrição, não campeonato de modelo. O Google não precisou trocar o backbone para acelerar o Gemini Nano no Pixel. Congelou o modelo já implantado, acoplou uma cabeça leve de multi token prediction nas últimas camadas e desenhou cross attention zero copy direto no KV cache principal. Essa escolha importa porque o inimigo real no device não é inteligência abstrata. É latência, pressão de memória, bateria e custo de prefill ao mesmo tempo, sem mudar a resposta final.\n\nIsso encaixa no resto da thread quase perfeitamente. As falhas perigosas continuam aparecendo nas fronteiras onde o time evita declarar a invariante real, entre escrita e efeito colateral, entre schema e estado inválido, entre migração e recuperação, entre frescor de serving e consistência semântica, entre footprint de memória e custo total de propriedade, e agora entre velocidade de decoding e o orçamento físico do próprio device. Juntando tudo, a mensagem fica mais afiada, não mais ampla. System design é a disciplina de decidir quais restrições merecem imposição de primeira classe, e depois embutir essas restrições no lugar onde o sistema ainda consegue cumpri-las sob pressão."
+      },
+      "entries": [
+        "2026-06-26-eng-1",
+        "2026-06-25-eng-1",
+        "2026-06-22-eng-1",
+        "2026-06-19-1",
+        "2026-06-15-eng-1",
+        "2026-06-14-eng-1",
+        "2026-06-14-1",
+        "2026-06-11-eng-1",
+        "2026-06-10-eng-1",
+        "2026-05-29-1",
+        "2026-05-27-eng-1",
+        "2026-05-27-1",
+        "2026-05-26-eng-1",
+        "2026-05-25-eng-1",
+        "2026-05-25-1",
+        "2026-05-22-eng-1",
+        "2026-05-21-eng-1",
+        "2026-05-19-1",
+        "2026-05-18-eng-1",
+        "2026-05-17-eng-1",
+        "2026-05-16-1",
+        "2026-04-17-harness-1",
+        "2026-04-16-1",
+        "2026-04-07-1",
+        "2026-04-05-1",
+        "2026-04-02-1",
+        "2026-03-31-1",
+        "2026-03-16-1",
+        "2026-06-15-1",
+        "2026-06-10-1",
+        "2026-06-08-eng-1",
+        "2026-06-08-1",
+        "2026-06-06-eng-1",
+        "2026-06-06-1",
+        "2026-06-04-1",
+        "2026-06-02-eng-1",
+        "2026-06-01-eng-1",
+        "2026-05-31-1",
+        "2026-05-30-1"
+      ]
+    },
+    {
       "slug": "assistants-are-systems",
       "date": "2026-06-26",
       "title": {
@@ -104,62 +161,6 @@
         "2026-06-02-1",
         "2026-06-01-1",
         "2026-05-31-eng-1"
-      ]
-    },
-    {
-      "slug": "system-design-is-constraint-literacy",
-      "date": "2026-06-26",
-      "title": {
-        "en": "System design is constraint literacy",
-        "pt": "System design é alfabetização em restrição"
-      },
-      "description": {
-        "en": "Thirty eight digests now converge on the same harder lesson: strong system design starts by naming the real constraints early enough that truth, recovery, locality, cost and freshness can still be enforced when production turns hostile.",
-        "pt": "Trinta e oito digests agora convergem na mesma lição mais dura: system design forte começa por nomear cedo as restrições reais, cedo o bastante para verdade, recuperação, localidade, custo e frescor continuarem imponíveis quando produção fica hostil."
-      },
-      "body": {
-        "en": "A lot of system design still gets taught like a shopping list of components. Pick queue, cache, replica, warehouse and move on. The stronger pattern across this thread says the opposite. Good design starts by naming the constraint early enough that the system can still enforce it when traffic spikes, state diverges or humans make the wrong local optimization.\n\nThis newly uncovered piece sharpens the thesis by showing that even caching is really constraint management, not just a speed trick. Google's linear elastic caching reframes memory as an economic resource with time-varying value. Instead of asking only which page should be evicted, the system asks how long each page deserves paid memory before the miss cost becomes cheaper than the rent. That is a much stronger design move than tuning LRU harder, because it turns cloud cost into an explicit rule the system can optimize for.\n\nThat fits the rest of the thread almost too well. The dangerous failures keep appearing at boundaries where teams refuse to state the real invariant: between writes and side effects, between schema and invalid states, between migration and recovery, between serving freshness and semantic consistency, and now between memory footprint and total cost of ownership. Put together, the message gets sharper, not broader. System design is the discipline of deciding which constraints deserve first-class enforcement, then embedding those constraints where the system can still keep them under pressure.",
-        "pt": "Muito material de system design ainda é ensinado como lista de compra de componente. Escolhe fila, cache, réplica, warehouse e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando tráfego sobe, estado diverge ou alguém faz a otimização local errada.\n\nEsta entrada recém descoberta afia a tese porque mostra que até cache, no fundo, é gestão de restrição, não só truque de velocidade. O linear elastic caching do Google reinterpreta memória como recurso econômico com valor variável no tempo. Em vez de perguntar só qual página deve sair, o sistema pergunta por quanto tempo cada página merece memória paga antes de o custo de miss ficar mais barato que o aluguel. Isso é muito mais forte do que apertar LRU, porque transforma custo de cloud em regra explícita que o sistema consegue otimizar.\n\nIsso encaixa no resto da thread quase perfeitamente. As falhas perigosas continuam aparecendo nas fronteiras onde o time evita declarar a invariante real: entre escrita e efeito colateral, entre schema e estado inválido, entre migração e recuperação, entre frescor de serving e consistência semântica, e agora entre footprint de memória e custo total de propriedade. Juntando tudo, a mensagem fica mais afiada, não mais ampla. System design é a disciplina de decidir quais restrições merecem imposição de primeira classe, e depois embutir essas restrições no lugar onde o sistema ainda consegue cumpri-las sob pressão."
-      },
-      "entries": [
-        "2026-06-25-eng-1",
-        "2026-06-22-eng-1",
-        "2026-06-19-1",
-        "2026-06-15-eng-1",
-        "2026-06-14-eng-1",
-        "2026-06-14-1",
-        "2026-06-11-eng-1",
-        "2026-06-10-eng-1",
-        "2026-05-29-1",
-        "2026-05-27-eng-1",
-        "2026-05-27-1",
-        "2026-05-26-eng-1",
-        "2026-05-25-eng-1",
-        "2026-05-25-1",
-        "2026-05-22-eng-1",
-        "2026-05-21-eng-1",
-        "2026-05-19-1",
-        "2026-05-18-eng-1",
-        "2026-05-17-eng-1",
-        "2026-05-16-1",
-        "2026-04-17-harness-1",
-        "2026-04-16-1",
-        "2026-04-07-1",
-        "2026-04-05-1",
-        "2026-04-02-1",
-        "2026-03-31-1",
-        "2026-03-16-1",
-        "2026-06-15-1",
-        "2026-06-10-1",
-        "2026-06-08-eng-1",
-        "2026-06-08-1",
-        "2026-06-06-eng-1",
-        "2026-06-06-1",
-        "2026-06-04-1",
-        "2026-06-02-eng-1",
-        "2026-06-01-eng-1",
-        "2026-05-31-1",
-        "2026-05-30-1"
       ]
     },
     {
