@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-27-eng",
+      "date": "2026-06-27",
+      "tokensUsed": 10608,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Netflix Tech Blog",
+          "author": "Alvin Bao, Alex Petrov, Jennifer Lai, Aidan Sherr, and Samartha Chandrashekar",
+          "title": {
+            "en": "How Netflix Simplified Batch Compute with Kueue",
+            "pt": "Como a Netflix simplificou computação batch com Kueue"
+          },
+          "summary": {
+            "en": "Netflix explains how it replaced the custom queuing and scheduling core of its managed batch platform with Kueue, the Kubernetes-native job queuing system, while keeping the existing user-facing API intact. The interesting part is not just tool adoption, but the migration strategy: preserve API parity, map the old tenant hierarchy onto Kueue cohorts and queues, and push the new control plane underneath the existing platform so end users feel almost no disruption. Running millions of production batch workloads through Kueue also unlocked capabilities that were difficult in the old system, such as preemption-based fair sharing, better reserved-capacity utilization, and tighter alignment with the Kubernetes ecosystem.",
+            "pt": "A Netflix mostra como trocou o núcleo customizado de fila e scheduling da sua plataforma batch gerenciada pelo Kueue, sistema nativo de fila de jobs para Kubernetes, sem quebrar a API já usada pelos times internos. O ponto forte não é só adoção de ferramenta, mas a estratégia de migração: manter paridade de API, mapear a hierarquia antiga de tenants para cohorts e queues do Kueue, e empurrar o novo plano de controle por baixo da plataforma existente para o usuário quase não sentir a troca. Rodar milhões de workloads batch em produção com Kueue também liberou capacidades que eram difíceis no sistema anterior, como fair sharing com preempção, melhor uso de capacidade reservada e alinhamento mais forte com o ecossistema Kubernetes."
+          },
+          "insights": {
+            "en": [
+              "The key architecture move was swapping the internals without forcing customers onto a new API. That reduced migration risk and let Netflix modernize scheduling as an infrastructure change instead of a platform rewrite.",
+              "Kueue gave Netflix features its old batch layer struggled to add cleanly, especially preemption-based fair sharing and better use of idle reserved capacity across tenants.",
+              "One of the sharpest migration lessons is to move the hardest customer first. Proving the design on the biggest, messiest workload made the rest of the rollout much faster and safer."
+            ],
+            "pt": [
+              "A jogada principal de arquitetura foi trocar o motor interno sem obrigar cliente a migrar para API nova. Isso derrubou risco e transformou a modernização do scheduling em mudança de infra, não reescrita completa da plataforma.",
+              "O Kueue entregou funções que a camada antiga de batch sofria para adicionar direito, principalmente fair sharing com preempção e uso melhor da capacidade reservada ociosa entre tenants.",
+              "Uma das melhores lições de migração foi atacar primeiro o cliente mais complexo. Validar o desenho no workload maior e mais bagunçado deixou o resto do rollout muito mais rápido e seguro."
+            ]
+          },
+          "link": "https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c"
+        }
+      ]
+    },
+    {
       "id": "2026-06-27",
       "date": "2026-06-27",
       "tokensUsed": 4708752,
