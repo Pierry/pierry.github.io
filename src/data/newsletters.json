@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-27",
+      "date": "2026-06-27",
+      "tokensUsed": 4708752,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Eric Roby, via System Design One",
+          "title": {
+            "en": "A2A Protocol - Deep Dive",
+            "pt": "A2A Protocol em profundidade, como agentes colaboram de forma padronizada"
+          },
+          "summary": {
+            "en": "This issue explains why MCP alone is not enough for serious multi-agent systems. MCP standardizes how one agent talks to tools, but it does not define how many agents discover each other, advertise capabilities, delegate tasks, stream progress, or return results safely. The post frames Google’s emerging A2A protocol as that missing coordination layer, a shared contract for agent cards, task lifecycles, delegation, and interoperability across vendors. For engineers and leaders, the core value is architectural: it turns multi-agent collaboration from custom glue code into a protocol design problem with implications for latency, trust, security, debugging, and production governance.",
+            "pt": "Esta edição mostra por que MCP sozinho não basta para sistemas multiagente sérios. MCP padroniza como um agente conversa com ferramentas, mas não resolve como vários agentes se descobrem, anunciam capacidades, delegam tarefas, acompanham progresso em streaming e devolvem resultados com segurança. O texto posiciona o protocolo A2A, puxado pelo Google, como essa camada que faltava de coordenação, um contrato comum para agent cards, ciclo de vida de tarefas, delegação e interoperabilidade entre vendors. Para engenharia e liderança, o valor central é arquitetural: colaboração entre agentes deixa de ser cola customizada e vira problema de desenho de protocolo, com impacto direto em latência, confiança, segurança, debug e governança de produção."
+          },
+          "insights": {
+            "en": [
+              "The important distinction is tool access versus agent coordination. MCP helps an agent use databases, files, and APIs, while A2A defines how specialized agents cooperate without bespoke integrations everywhere.",
+              "Protocol design becomes the scalability lever. Once capabilities, delegation, and task status are standardized, teams can compose agent ecosystems more like services on a network and less like one-off demos.",
+              "The hard production problems are not hidden, they move up a layer. A2A makes interoperability possible, but reliability still depends on handling latency, authorization, observability, trust boundaries, and failure recovery well."
+            ],
+            "pt": [
+              "A distinção importante é acesso a ferramenta versus coordenação entre agentes. MCP ajuda um agente a usar banco, arquivos e APIs, enquanto A2A define como agentes especializados cooperam sem integrações artesanais por todo lado.",
+              "Desenho de protocolo vira a alavanca de escala. Quando capacidades, delegação e status de tarefa ficam padronizados, o time monta ecossistema de agentes mais como serviços em rede e menos como demo isolada.",
+              "Os problemas pesados de produção não somem, eles sobem de camada. A2A abre interoperabilidade, mas confiabilidade continua dependendo de latência, autorização, observabilidade, fronteiras de confiança e boa recuperação de falha."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/agent-to-agent-protocol"
+        }
+      ]
+    },
+    {
       "id": "2026-06-26-eng",
       "date": "2026-06-26",
       "tokensUsed": 15277,
