@@ -1,78 +1,22 @@
 {
   "threads": [
     {
-      "slug": "system-design-is-constraint-literacy",
-      "date": "2026-06-27",
-      "title": {
-        "en": "System design is constraint literacy",
-        "pt": "System design é alfabetização em restrição"
-      },
-      "description": {
-        "en": "Thirty nine digests now converge on the same harder lesson: strong system design starts by naming the real constraints early enough that truth, locality, freshness, memory, latency, energy and cost can still be enforced when production turns hostile.",
-        "pt": "Trinta e nove digests agora convergem na mesma lição mais dura: system design forte começa por nomear cedo as restrições reais, cedo o bastante para verdade, localidade, frescor, memória, latência, energia e custo continuarem imponíveis quando produção fica hostil."
-      },
-      "body": {
-        "en": "A lot of system design material is still taught like a shopping list of components. Pick a queue, cache, replica, warehouse and move on. The stronger pattern in this thread says the opposite. Good design starts when a team names the constraint that actually matters early enough for the system to keep enforcing it when traffic rises, state drifts or someone makes the wrong local optimization.\n\nThis newly uncovered piece sharpens the thesis because it shows that even LLM acceleration is mostly a constraint problem, not a model bragging contest. Google did not chase a fresh backbone to speed Gemini Nano on Pixel. It froze the deployed model, attached a light multi token prediction head to the last layers, and then designed zero copy cross attention straight into the main KV cache. That choice matters because the real enemy on device is not abstract intelligence. It is latency, memory pressure, battery and prefill cost, all at once, without changing the final answer.\n\nThat fits the rest of the thread almost perfectly. The dangerous failures keep appearing where teams refuse to declare the real invariant, between write and side effect, schema and invalid state, migration and recovery, serving freshness and semantic consistency, memory footprint and total cost of ownership, and now between decoding speed and the physical budget of the device itself. Put together, the message gets sharper, not broader. System design is the discipline of deciding which constraints deserve first class enforcement, then embedding those constraints where the system can still honor them under pressure.",
-        "pt": "Muito material de system design ainda é ensinado como lista de compra de componente. Escolhe fila, cache, réplica, warehouse e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando tráfego sobe, estado diverge ou alguém faz a otimização local errada.\n\nEsta entrada recém descoberta afia a tese porque mostra que até aceleração de LLM é principalmente problema de restrição, não campeonato de modelo. O Google não precisou trocar o backbone para acelerar o Gemini Nano no Pixel. Congelou o modelo já implantado, acoplou uma cabeça leve de multi token prediction nas últimas camadas e desenhou cross attention zero copy direto no KV cache principal. Essa escolha importa porque o inimigo real no device não é inteligência abstrata. É latência, pressão de memória, bateria e custo de prefill ao mesmo tempo, sem mudar a resposta final.\n\nIsso encaixa no resto da thread quase perfeitamente. As falhas perigosas continuam aparecendo nas fronteiras onde o time evita declarar a invariante real, entre escrita e efeito colateral, entre schema e estado inválido, entre migração e recuperação, entre frescor de serving e consistência semântica, entre footprint de memória e custo total de propriedade, e agora entre velocidade de decoding e o orçamento físico do próprio device. Juntando tudo, a mensagem fica mais afiada, não mais ampla. System design é a disciplina de decidir quais restrições merecem imposição de primeira classe, e depois embutir essas restrições no lugar onde o sistema ainda consegue cumpri-las sob pressão."
-      },
-      "entries": [
-        "2026-06-26-eng-1",
-        "2026-06-25-eng-1",
-        "2026-06-22-eng-1",
-        "2026-06-19-1",
-        "2026-06-15-eng-1",
-        "2026-06-14-eng-1",
-        "2026-06-14-1",
-        "2026-06-11-eng-1",
-        "2026-06-10-eng-1",
-        "2026-05-29-1",
-        "2026-05-27-eng-1",
-        "2026-05-27-1",
-        "2026-05-26-eng-1",
-        "2026-05-25-eng-1",
-        "2026-05-25-1",
-        "2026-05-22-eng-1",
-        "2026-05-21-eng-1",
-        "2026-05-19-1",
-        "2026-05-18-eng-1",
-        "2026-05-17-eng-1",
-        "2026-05-16-1",
-        "2026-04-17-harness-1",
-        "2026-04-16-1",
-        "2026-04-07-1",
-        "2026-04-05-1",
-        "2026-04-02-1",
-        "2026-03-31-1",
-        "2026-03-16-1",
-        "2026-06-15-1",
-        "2026-06-10-1",
-        "2026-06-08-eng-1",
-        "2026-06-08-1",
-        "2026-06-06-eng-1",
-        "2026-06-06-1",
-        "2026-06-04-1",
-        "2026-06-02-eng-1",
-        "2026-06-01-eng-1",
-        "2026-05-31-1",
-        "2026-05-30-1"
-      ]
-    },
-    {
       "slug": "assistants-are-systems",
-      "date": "2026-06-26",
+      "date": "2026-06-27",
       "title": {
         "en": "Assistants are systems now",
         "pt": "Assistente virou sistema"
       },
       "description": {
-        "en": "Eighty eight digests now converge on the same reality: once AI meets real work, model quality matters less than the surrounding system for context supply, memory, retrieval, tool boundaries, runtime economics and human supervision.",
-        "pt": "Oitenta e oito digests agora convergem na mesma realidade: quando IA encosta no trabalho real, qualidade de modelo pesa menos que o sistema em volta, cadeia de contexto, memória, retrieval, fronteira de tool, economia de runtime e supervisão humana."
+        "en": "Eighty nine digests now converge on the same reality: once AI meets real work, model quality matters less than the surrounding system for context supply, memory, retrieval, tool boundaries, runtime economics, inter-agent coordination and human supervision.",
+        "pt": "Oitenta e nove digests agora convergem na mesma realidade: quando IA encosta no trabalho real, qualidade de modelo pesa menos que o sistema em volta, cadeia de contexto, memória, retrieval, fronteira de tool, economia de runtime, coordenação entre agentes e supervisão humana."
       },
       "body": {
-        "en": "The center of gravity in AI keeps moving away from the standalone model and toward the operating system around it. A good assistant is no longer the one that writes the prettiest answer in isolation. It is the one embedded in a runtime that can remember, retrieve, route, verify, stay inside cost and latency budgets, and keep a human legibly in charge when work becomes consequential.\n\nThis newly uncovered piece sharpens the thesis again by showing that the real control plane often exists before the chat even starts. The Claude Code folder model is interesting not because it offers better prompts, but because it turns behavior into layered infrastructure: global config, repo config, project memory, rules, commands, permissions and tool wiring. Once that stack exists, assistant quality becomes a function of initialization discipline and context architecture, not just raw model cleverness.\n\nThat matters because it closes the loop across the rest of the thread. Retrieval, memory and tool control only hold up when teams package their operating knowledge into durable artifacts the runtime can actually load and enforce. If critical behavior lives only in tribal habit or repeated prompting, the agent stays brittle no matter how good the demo looks. Put together, the pattern is now even harder to miss. Assistants are not becoming better chats. They are becoming full work systems, and the teams that win will treat context supply, boot configuration, runtime control and human oversight as one design problem.",
-        "pt": "O centro de gravidade da IA continua saindo do modelo isolado e indo para o sistema operacional em volta. Assistente bom já não é o que escreve a resposta mais bonita sozinho. É o que roda dentro de um runtime que lembra, recupera, roteia, verifica, respeita budget de custo e latência, e mantém o humano claramente no controle quando o trabalho fica consequente.\n\nEsta entrada recém descoberta afia de novo a tese porque mostra que o control plane real muitas vezes já existe antes de o chat começar. O modelo de pasta do Claude Code importa não por oferecer prompt melhor, mas por transformar comportamento em infraestrutura em camadas: config global, config do repositório, memória do projeto, rules, commands, permissões e ligação de tools. Quando essa pilha existe, a qualidade do assistente vira função de disciplina de inicialização e arquitetura de contexto, não só de esperteza bruta do modelo.\n\nIsso importa porque fecha o ciclo com o resto da thread. Retrieval, memória e controle de tool só se sustentam quando o time empacota conhecimento operacional em artefatos duráveis que o runtime realmente consegue carregar e impor. Se comportamento crítico vive só em hábito tribal ou prompt repetido, o agente continua frágil por melhor que a demo pareça. Juntando tudo, o padrão fica ainda mais difícil de ignorar. Assistente não está virando chat melhor. Está virando sistema completo de trabalho, e o time que vence vai tratar suprimento de contexto, configuração de boot, controle de runtime e supervisão humana como um único problema de design."
+        "en": "The center of gravity in AI keeps moving away from the standalone model and toward the operating system around it. A good assistant is no longer the one that writes the prettiest answer in isolation. It is the one embedded in a runtime that can remember, retrieve, route, verify, stay inside cost and latency budgets, and keep a human legibly in charge when work becomes consequential.\n\nThe newly uncovered A2A piece sharpens the thesis from another angle. MCP already helped define how one agent reaches tools, but production systems break once multiple specialized agents need to discover each other, advertise capabilities, delegate work, stream progress and return results safely. At that point, assistant quality depends less on a clever prompt and more on whether coordination itself has a durable protocol, explicit trust boundaries and observable task lifecycles.\n\nThat closes the loop across the rest of the thread. Retrieval, memory, tool control and runtime policy were already turning assistants into infrastructure. Now even collaboration between agents is being pulled out of custom glue code and promoted into system design. If critical behavior lives only in ad hoc orchestration, the stack stays brittle no matter how strong the model demo looks. Put together, the pattern is harder than ever to ignore. Assistants are not becoming better chats. They are becoming full work systems, and the teams that win will treat context supply, protocol design, runtime control and human oversight as one operating problem.",
+        "pt": "O centro de gravidade da IA continua saindo do modelo isolado e indo para o sistema operacional em volta. Assistente bom já não é o que escreve a resposta mais bonita sozinho. É o que roda dentro de um runtime que lembra, recupera, roteia, verifica, respeita budget de custo e latência, e mantém o humano claramente no controle quando o trabalho fica consequente.\n\nA entrada nova sobre A2A afia a tese por outro lado. MCP já ajudava a definir como um agente alcança tools, mas sistema de produção quebra quando vários agentes especializados precisam se descobrir, anunciar capacidades, delegar trabalho, transmitir progresso e devolver resultado com segurança. Nessa hora, qualidade do assistente depende menos de prompt esperto e mais de existir protocolo durável de coordenação, fronteira explícita de confiança e ciclo de vida observável das tarefas.\n\nIsso fecha o ciclo com o resto da thread. Retrieval, memória, controle de tool e política de runtime já estavam transformando assistente em infraestrutura. Agora até a colaboração entre agentes está saindo de cola artesanal e virando problema formal de system design. Se comportamento crítico vive só em orquestração ad hoc, a pilha continua frágil por melhor que a demo do modelo pareça. Juntando tudo, o padrão fica mais gritante. Assistente não está virando chat melhor. Está virando sistema completo de trabalho, e o time que vence vai tratar suprimento de contexto, desenho de protocolo, controle de runtime e supervisão humana como um único problema operacional."
       },
       "entries": [
+        "2026-06-27-1",
         "2026-06-26-1",
         "2026-06-25-1",
         "2026-06-24-1",
@@ -161,6 +105,63 @@
         "2026-06-02-1",
         "2026-06-01-1",
         "2026-05-31-eng-1"
+      ]
+    },
+    {
+      "slug": "system-design-is-constraint-literacy",
+      "date": "2026-06-27",
+      "title": {
+        "en": "System design is constraint literacy",
+        "pt": "System design é alfabetização em restrição"
+      },
+      "description": {
+        "en": "Thirty nine digests now converge on the same harder lesson: strong system design starts by naming the real constraints early enough that truth, locality, freshness, memory, latency, energy and cost can still be enforced when production turns hostile.",
+        "pt": "Trinta e nove digests agora convergem na mesma lição mais dura: system design forte começa por nomear cedo as restrições reais, cedo o bastante para verdade, localidade, frescor, memória, latência, energia e custo continuarem imponíveis quando produção fica hostil."
+      },
+      "body": {
+        "en": "A lot of system design material is still taught like a shopping list of components. Pick a queue, cache, replica, warehouse and move on. The stronger pattern in this thread says the opposite. Good design starts when a team names the constraint that actually matters early enough for the system to keep enforcing it when traffic rises, state drifts or someone makes the wrong local optimization.\n\nThis newly uncovered piece sharpens the thesis because it shows that even LLM acceleration is mostly a constraint problem, not a model bragging contest. Google did not chase a fresh backbone to speed Gemini Nano on Pixel. It froze the deployed model, attached a light multi token prediction head to the last layers, and then designed zero copy cross attention straight into the main KV cache. That choice matters because the real enemy on device is not abstract intelligence. It is latency, memory pressure, battery and prefill cost, all at once, without changing the final answer.\n\nThat fits the rest of the thread almost perfectly. The dangerous failures keep appearing where teams refuse to declare the real invariant, between write and side effect, schema and invalid state, migration and recovery, serving freshness and semantic consistency, memory footprint and total cost of ownership, and now between decoding speed and the physical budget of the device itself. Put together, the message gets sharper, not broader. System design is the discipline of deciding which constraints deserve first class enforcement, then embedding those constraints where the system can still honor them under pressure.",
+        "pt": "Muito material de system design ainda é ensinado como lista de compra de componente. Escolhe fila, cache, réplica, warehouse e segue. O padrão mais forte desta thread diz o contrário. Bom design começa quando o time nomeia cedo a restrição que importa, cedo o bastante para o sistema ainda conseguir impor essa regra quando tráfego sobe, estado diverge ou alguém faz a otimização local errada.\n\nEsta entrada recém descoberta afia a tese porque mostra que até aceleração de LLM é principalmente problema de restrição, não campeonato de modelo. O Google não precisou trocar o backbone para acelerar o Gemini Nano no Pixel. Congelou o modelo já implantado, acoplou uma cabeça leve de multi token prediction nas últimas camadas e desenhou cross attention zero copy direto no KV cache principal. Essa escolha importa porque o inimigo real no device não é inteligência abstrata. É latência, pressão de memória, bateria e custo de prefill ao mesmo tempo, sem mudar a resposta final.\n\nIsso encaixa no resto da thread quase perfeitamente. As falhas perigosas continuam aparecendo nas fronteiras onde o time evita declarar a invariante real, entre escrita e efeito colateral, entre schema e estado inválido, entre migração e recuperação, entre frescor de serving e consistência semântica, entre footprint de memória e custo total de propriedade, e agora entre velocidade de decoding e o orçamento físico do próprio device. Juntando tudo, a mensagem fica mais afiada, não mais ampla. System design é a disciplina de decidir quais restrições merecem imposição de primeira classe, e depois embutir essas restrições no lugar onde o sistema ainda consegue cumpri-las sob pressão."
+      },
+      "entries": [
+        "2026-06-26-eng-1",
+        "2026-06-25-eng-1",
+        "2026-06-22-eng-1",
+        "2026-06-19-1",
+        "2026-06-15-eng-1",
+        "2026-06-14-eng-1",
+        "2026-06-14-1",
+        "2026-06-11-eng-1",
+        "2026-06-10-eng-1",
+        "2026-05-29-1",
+        "2026-05-27-eng-1",
+        "2026-05-27-1",
+        "2026-05-26-eng-1",
+        "2026-05-25-eng-1",
+        "2026-05-25-1",
+        "2026-05-22-eng-1",
+        "2026-05-21-eng-1",
+        "2026-05-19-1",
+        "2026-05-18-eng-1",
+        "2026-05-17-eng-1",
+        "2026-05-16-1",
+        "2026-04-17-harness-1",
+        "2026-04-16-1",
+        "2026-04-07-1",
+        "2026-04-05-1",
+        "2026-04-02-1",
+        "2026-03-31-1",
+        "2026-03-16-1",
+        "2026-06-15-1",
+        "2026-06-10-1",
+        "2026-06-08-eng-1",
+        "2026-06-08-1",
+        "2026-06-06-eng-1",
+        "2026-06-06-1",
+        "2026-06-04-1",
+        "2026-06-02-eng-1",
+        "2026-06-01-eng-1",
+        "2026-05-31-1",
+        "2026-05-30-1"
       ]
     },
     {
