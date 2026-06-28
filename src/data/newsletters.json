@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-28-eng",
+      "date": "2026-06-28",
+      "tokensUsed": 1361780,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Gregor Ojstersek, com insights de Andrew Churchill (Weave)",
+          "title": {
+            "en": "What the Top 1% of Engineering Teams Do Differently with AI",
+            "pt": "O que o top 1% dos times de engenharia faz diferente com IA"
+          },
+          "summary": {
+            "en": "This piece distills patterns observed across hundreds of companies and 10k+ engineers to explain what separates the highest-output engineering teams in the AI era. The main argument is that the biggest gains do not come from prompting tricks alone, but from operating model choices: flatter organizations, smaller high-agency teams, heavier but more efficient AI tool usage, spec-first review, and AI-assisted QA. For engineering leaders, the useful takeaway is that AI leverage looks less like individual heroics and more like a redesign of team structure, review flow, and cost discipline.",
+            "pt": "Este texto junta padrões observados em centenas de empresas e mais de 10 mil engenheiros para mostrar o que separa os times de engenharia com maior output na era da IA. A tese principal é que os maiores ganhos não vêm só de truques de prompt, mas de escolhas no modelo operacional: organizações mais planas, times menores com mais autonomia, uso mais intenso porém mais eficiente de ferramentas de IA, review orientado por spec e QA assistido por IA. Para liderança, a lição útil é que alavancagem com IA parece menos heroísmo individual e mais redesenho de estrutura de time, fluxo de revisão e disciplina de custo."
+          },
+          "insights": {
+            "en": [
+              "The strongest teams reduce coordination load. Small, high-agency teams with clearer ownership seem to convert AI assistance into shipped work better than larger structures full of handoffs.",
+              "High AI spend is not the signal by itself. The better pattern is higher spend with better output per dollar, usually supported by custom context, tuned workflows, and focused use cases.",
+              "Spec review is becoming more important than code review. Reviewing 300 lines of intent before generation is often cheaper and safer than reviewing 3000 lines of generated code afterward."
+            ],
+            "pt": [
+              "Os times mais fortes cortam custo de coordenação. Times pequenos, com autonomia alta e dono claro do problema, parecem transformar ajuda de IA em entrega real melhor do que estruturas grandes cheias de handoff.",
+              "Gastar mais com IA sozinho não diz muita coisa. O padrão melhor é gastar mais e tirar mais output por dólar, normalmente com contexto próprio, workflow afinado e uso bem focado.",
+              "Review de spec está ficando mais importante que review de código. Revisar 300 linhas de intenção antes da geração costuma ser mais barato e mais seguro do que revisar 3000 linhas de código gerado depois."
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/what-the-top-1-of-engineering-teams"
+        }
+      ]
+    },
+    {
       "id": "2026-06-27-eng",
       "date": "2026-06-27",
       "tokensUsed": 10608,
