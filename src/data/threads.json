@@ -1,6 +1,31 @@
 {
   "threads": [
     {
+      "slug": "engineering-is-social-economics",
+      "date": "2026-06-28",
+      "title": {
+        "en": "Engineering is social economics",
+        "pt": "Engenharia virou economia social"
+      },
+      "description": {
+        "en": "Seven digests now point to the same uncomfortable truth: engineering leverage rarely comes from code alone. Team shape, trust, review flow, maintenance, visibility and operating discipline decide impact long before coding speed does.",
+        "pt": "Sete digests agora apontam para a mesma verdade meio incômoda: alavancagem em engenharia quase nunca vem só de código. Formato do time, confiança, fluxo de review, manutenção, visibilidade e disciplina operacional decidem impacto muito antes da velocidade para codar."
+      },
+      "body": {
+        "en": "A lot of engineering pain starts when teams pretend software is a purely technical game. The stronger pattern across these entries is that impact gets decided earlier and elsewhere. Trust decides whose ideas move. Distribution decides whether a product gets discovered. Maintenance decides whether productivity was real. And the newly uncovered leadership piece makes the point even harder to dodge in the AI era: once implementation gets cheaper, the operating model of the team matters more than heroic individual output.\n\nThe new piece sharpens the thesis by showing where top teams actually pull leverage from. Smaller teams with clearer ownership convert AI help into delivery better because they cut coordination cost. Spending more on AI only matters when the workflow turns that spend into output per dollar. And review itself shifts upstream, from inspecting huge volumes of generated code toward reviewing intent, constraints and specs while the problem is still cheap to reshape.\n\nThat fits cleanly with the older entries in this thread. Career progress depends on trust and sponsorship, not just brilliance. Startup marketing matters because software nobody finds creates no leverage. AI coding only pays if long term maintenance gets cheaper. Listening often beats another framework. Engineering decisions are capital allocation whether teams use that language or not. Put together, the thesis gets sharper, not broader. Software work is social and economic before it is mechanical, and AI raises the price of sloppy coordination even as it lowers the price of typing.",
+        "pt": "Muita dor em engenharia começa quando o time finge que software é jogo puramente técnico. O padrão mais forte nessas entradas é outro, impacto costuma ser decidido antes e fora do teclado. Confiança decide qual ideia anda. Distribuição decide se produto é descoberto. Manutenção decide se produtividade era real. E a peça nova de liderança deixa o ponto ainda mais difícil de escapar na era da IA: quando implementar fica mais barato, o modelo operacional do time passa a valer mais que heroísmo individual.\n\nO texto novo afia a tese mostrando de onde os times mais fortes realmente tiram alavancagem. Times menores, com dono claro, convertem ajuda de IA em entrega melhor porque cortam custo de coordenação. Gastar mais com IA só importa quando o workflow transforma esse gasto em output por dólar. E o review sobe de nível, sai da inspeção de montanhas de código gerado e vai para intenção, restrição e spec, quando o problema ainda está barato de ajustar.\n\nIsso encaixa limpo com as entradas anteriores desta thread. Progresso de carreira depende de confiança e patrocínio, não só de brilhantismo. Marketing de startup importa porque software que ninguém encontra não gera alavancagem. IA para programar só compensa se o custo de manutenção cair no longo prazo. Escutar gente costuma valer mais que inventar mais um framework. Decisão de engenharia é alocação de capital mesmo quando o time não fala assim. Juntando tudo, a tese fica mais afiada, não mais larga. Trabalho de software é social e econômico antes de ser mecânico, e IA aumenta o preço de coordenação ruim mesmo enquanto derruba o preço de digitar código."
+      },
+      "entries": [
+        "2026-06-28-eng-1",
+        "2026-05-22-1",
+        "2026-05-14-1",
+        "2026-05-13-1",
+        "2026-05-11-1",
+        "2026-04-20-1",
+        "2026-04-13-1"
+      ]
+    },
+    {
       "slug": "infra-is-control-plane",
       "date": "2026-06-28",
       "title": {
@@ -219,30 +244,6 @@
         "2026-04-22-1",
         "2026-04-17-eng-1",
         "2026-04-15-eng-1"
-      ]
-    },
-    {
-      "slug": "engineering-is-social-economics",
-      "date": "2026-05-27",
-      "title": {
-        "en": "Engineering is social economics",
-        "pt": "Engenharia virou economia social"
-      },
-      "description": {
-        "en": "Six digests now land on the same uncomfortable truth: engineering leverage rarely comes from code alone. Problem selection, debugging, maintainability, visibility, trust and communication shape impact long before architecture diagrams or coding speed do.",
-        "pt": "Seis digests agora chegam na mesma verdade meio incômoda: alavancagem em engenharia quase nunca vem só de código. Escolha de problema, debug, manutenção, visibilidade, confiança e comunicação passam a mandar no impacto muito antes de diagrama de arquitetura ou velocidade de implementação."
-      },
-      "body": {
-        "en": "A lot of engineering pain starts when teams pretend software is a purely technical game. The stronger pattern across these entries is that impact is decided earlier and elsewhere. Trust decides whose ideas move. Distribution decides whether a product is discovered. Maintenance decides whether productivity was real. And now the latest piece makes the blind spot even harder to dodge: even inside the day-to-day work, writing code is often the smallest part of the job.\n\nThe new Milan piece sharpens the thesis by moving the argument from career advice into daily engineering practice. Once implementation gets cheaper through AI, the differentiator shifts toward judgment. Debugging production, choosing the right problem, planning before coding, documenting decisions and keeping systems simple are not supporting activities around the real work. They are the real work. Code is just one artifact inside that operating loop.\n\nThat fits perfectly with the older entries in this thread. Career progress depends on trust and sponsorship, not just brilliance. Startup marketing matters because software nobody finds creates no leverage. AI coding only pays if long-term maintenance gets cheaper. Listening often beats another framework. Engineering decisions are capital allocation whether teams use that language or not.\n\nPut together, the thesis gets sharper, not broader. Software work is social and economic before it is mechanical. The engineers who compound are usually the ones who reduce complexity, pick better battles, recover faster from failure and make decisions legible to other humans. They may write great code too. But the code is rarely the whole job, and more and more often it is not even the highest leverage part.",
-        "pt": "Muita dor em engenharia começa quando o time finge que software é jogo puramente técnico. O padrão mais forte nessas entradas é outro, impacto costuma ser decidido antes e fora do teclado. Confiança decide qual ideia anda. Distribuição decide se produto é descoberto. Manutenção decide se produtividade era real. E agora a peça nova deixa o ponto ainda mais difícil de ignorar, até dentro do trabalho do dia a dia, escrever código muitas vezes é a menor parte do serviço.\n\nO texto novo do Milan afia a tese porque tira a discussão do campo de conselho de carreira e joga dentro da prática diária de engenharia. Quando implementar fica mais barato com IA, o diferencial sobe para julgamento. Debug de produção, escolha do problema certo, planejamento antes de codar, documentação de decisão e busca por simplicidade não são atividade de apoio em volta do trabalho real. São o trabalho real. Código vira só um artefato dentro desse loop operacional.\n\nIsso encaixa limpo com as entradas anteriores desta thread. Progresso de carreira depende de confiança e patrocínio, não só de brilhantismo. Marketing de startup importa porque software que ninguém encontra não gera alavancagem. IA para programar só compensa se o custo de manutenção cair no longo prazo. Escutar gente costuma valer mais que inventar mais um framework. Decisão de engenharia é alocação de capital mesmo quando o time não fala assim.\n\nJuntando tudo, a tese fica mais afiada, não mais larga. Trabalho de software é social e econômico antes de ser mecânico. Os engenheiros que compõem melhor quase sempre são os que reduzem complexidade, escolhem batalha melhor, se recuperam mais rápido de falha e deixam decisão legível para outras pessoas. Eles podem escrever ótimo código também. Mas o código raramente é o trabalho inteiro, e cada vez mais ele nem é a parte de maior alavancagem."
-      },
-      "entries": [
-        "2026-05-22-1",
-        "2026-05-14-1",
-        "2026-05-13-1",
-        "2026-05-11-1",
-        "2026-04-20-1",
-        "2026-04-13-1"
       ]
     },
     {
