@@ -1,6 +1,37 @@
 {
   "threads": [
     {
+      "slug": "infra-is-control-plane",
+      "date": "2026-06-28",
+      "title": {
+        "en": "Infra became the control plane",
+        "pt": "Infra virou control plane"
+      },
+      "description": {
+        "en": "Thirteen engineering digests now point to the same thesis: modern infrastructure wins less by raw capacity and more by encoding workload reality into the control surface, migration path, data contract, routing policy, and fairness rules that still hold under stress.",
+        "pt": "Treze digests de engenharia agora convergem na mesma tese: infraestrutura moderna ganha menos por capacidade bruta e mais por codificar a realidade do workload na superfície de controle, no caminho de migração, no contrato de dados, na política de roteamento e nas regras de fairness que continuam valendo sob estresse."
+      },
+      "body": {
+        "en": "The strongest infra writing in this cycle keeps landing on the same point. Scale problems rarely stay about hardware for long. They turn into control problems: where policy lives, how migrations happen, which invariants stay enforceable, and whether the platform can express the workload clearly enough to keep operating when reality gets messy.\n\nThe newly uncovered Netflix post sharpens that thesis instead of widening it. Replacing a custom batch scheduler with Kueue was not interesting because it swapped one queue for another. It mattered because Netflix changed the control plane underneath a live platform while preserving the API teams already depended on. That choice turned a dangerous migration into an infrastructure substitution problem. Users did not need to relearn the product for the platform to gain fair sharing, preemption, and better use of reserved capacity.\n\nThat pattern matches the rest of the thread almost exactly. Meta showed migration as a governed system with shadow stages, automated promotion, and rollback. Shopify moved inventory truth into an ACID boundary that could actually enforce reservation semantics. Lakehouse infrastructure kept more analytical rules near the data itself. AWS multi tenant config pushed isolation and routing into storage conventions and event driven refresh. Now Netflix adds another angle: even scheduling modernization pays off most when the platform preserves interfaces, embeds fairness in the scheduler, and lets operators evolve the engine without forcing every tenant through a rewrite.\n\nPut together, the lesson gets sharper. Strong infrastructure is not just bigger plumbing. It is a control plane that captures workload reality well enough to change the machinery without breaking the contract.",
+        "pt": "Os melhores textos de infra deste ciclo continuam batendo na mesma tecla. Problema de escala quase nunca fica sendo só problema de hardware. Ele vira problema de controle: onde a política mora, como a migração acontece, quais invariantes continuam imponíveis e se a plataforma consegue representar o workload bem o bastante para seguir operando quando a realidade fica bagunçada.\n\nO post recém descoberto da Netflix afia essa tese, não amplia. Trocar um scheduler batch customizado por Kueue não foi interessante por substituir uma fila por outra. Foi importante porque a Netflix mudou o control plane por baixo de uma plataforma viva, preservando a API da qual os times já dependiam. Essa escolha transformou uma migração perigosa em problema de substituição de infraestrutura. O usuário não precisou reaprender o produto para a plataforma ganhar fair sharing, preempção e uso melhor da capacidade reservada.\n\nIsso encaixa quase perfeito no resto da thread. A Meta mostrou migração como sistema governado com shadow stages, promoção automática e rollback. A Shopify levou a verdade do inventário para uma fronteira ACID que realmente consegue impor semântica de reserva. A arquitetura lakehouse manteve mais regra analítica perto do dado. A configuração multi tenant da AWS empurrou isolamento e roteamento para convenção de storage e atualização orientada a evento. Agora a Netflix soma outro ângulo: até modernização de scheduling rende mais quando a plataforma preserva interfaces, embute fairness no scheduler e deixa operador evoluir o motor sem obrigar cada tenant a passar por reescrita.\n\nJuntando tudo, a lição fica mais afiada. Infra forte não é só encanamento maior. É control plane que captura a realidade do workload bem o bastante para trocar a máquina sem quebrar o contrato."
+      },
+      "entries": [
+        "2026-06-27-eng-1",
+        "2026-05-13-eng-1",
+        "2026-04-17-1",
+        "2026-04-13-eng-1",
+        "2026-05-12-eng-1",
+        "2026-05-12-1",
+        "2026-05-11-eng-1",
+        "2026-05-10-eng-1",
+        "2026-05-05-eng-1",
+        "2026-05-04-eng-1",
+        "2026-05-03-eng-1",
+        "2026-05-02-eng-1",
+        "2026-05-01-eng-1"
+      ]
+    },
+    {
       "slug": "assistants-are-systems",
       "date": "2026-06-27",
       "title": {
@@ -212,36 +243,6 @@
         "2026-05-11-1",
         "2026-04-20-1",
         "2026-04-13-1"
-      ]
-    },
-    {
-      "slug": "infra-is-control-plane",
-      "date": "2026-05-14",
-      "title": {
-        "en": "Infra is control plane now",
-        "pt": "Infra virou control plane"
-      },
-      "description": {
-        "en": "Twelve engineering posts now converge on the same idea: modern infrastructure wins less by adding raw capacity and more by encoding workload reality into transaction boundaries, data layout, routing, governance and failure isolation that keep operating under stress.",
-        "pt": "Doze posts de engenharia agora chegam na mesma tese: infraestrutura moderna ganha menos por capacidade bruta e mais por codificar a realidade do workload em fronteira transacional, layout de dados, roteamento, governança e isolamento de falha que continuam operando sob estresse."
-      },
-      "body": {
-        "en": "The best infrastructure writing in this cycle keeps landing on the same subtext: scale problems usually start as design problems, resilience problems do too, and governance problems are rarely separate from either. Modern infra gets stronger when it stops treating compute, networking, storage and observability as neutral plumbing and starts encoding the real shape of the workload into a control plane.\n\nThe new Meta migration story made that thesis sharp because it showed that even moving a critical pipeline now needs its own operating system. Shadow stages, reverse shadow, automatic promotion, automatic rollback and hourly data-quality checks are not migration ceremony. They are the control plane that lets thousands of jobs move safely without trusting heroics or hope.\n\nThe Shopify inventory post pushes the same logic straight into the transaction boundary. Replacing Redis with MySQL was not a database-fashion move. It was a decision to put reservations and inventory truth under the same ACID contract, then shape contention with SKIP LOCKED, key design, lock ordering and connection-hold instrumentation. Capacity improved because the workload semantics finally lived where the system could enforce them.\n\nThe Lakehouse piece makes the data-plane version of the same point. A lake plus a warehouse is often just duplicated architecture carrying duplicated policy. Once table formats like Iceberg bring ACID semantics, schema evolution and time travel into object storage, the platform stops bouncing between systems and starts expressing analytics rules in one place. Architecture gets simpler because control moves closer to the data.\n\nThe AWS multi-tenant configuration design sharpens the governance side. Tagged storage is not just a naming trick. Prefixes become routing policy, tenant isolation lives at the storage boundary and event-driven updates keep config fresh without central coordination bottlenecks. Again, the infrastructure wins by embedding the workload model directly into the control surface.\n\nThe older pieces in this thread already made the same case from cloud topology, model routing, network automation, observability isolation and org design. These newer entries reinforce the pattern from three more angles: transactions, data layout and tenant config. Put together, the lesson is hard to miss. Strong infrastructure is not just bigger infrastructure. It is infrastructure that encodes the rules of the workload where the system can actually enforce them. More capacity helps. Better control planes compound.",
-        "pt": "Os melhores posts de infraestrutura deste ciclo batem na mesma tecla: problema de escala quase sempre começa como problema de design, problema de resiliência também, e problema de governança quase nunca fica separado dos dois. Infra moderna fica mais forte quando para de tratar compute, rede, storage e observabilidade como encanamento neutro e passa a codificar a forma real do workload dentro de um control plane.\n\nA história da Meta sobre migração já deixava isso afiado porque mostrava que até mover pipeline crítico agora precisa do próprio sistema operacional. Shadow stage, reverse shadow, promoção automática, rollback automático e checagem horária de qualidade de dados não são cerimônia de migração. São o control plane que deixa milhares de jobs mudarem com segurança sem depender de heroísmo nem esperança.\n\nO texto da Shopify empurra a mesma lógica direto para a fronteira transacional. Trocar Redis por MySQL não foi moda de banco. Foi decisão de colocar reserva e verdade de inventário dentro do mesmo contrato ACID, depois moldar contenção com SKIP LOCKED, desenho de chave, ordem de lock e instrumentação do tempo de retenção de conexão. A capacidade melhorou porque a semântica do workload finalmente passou a morar onde o sistema consegue impor regra.\n\nO texto de Lakehouse mostra a versão de plano de dados da mesma tese. Lake mais warehouse muitas vezes é só arquitetura duplicada carregando política duplicada. Quando formatos como Iceberg levam semântica ACID, evolução de schema e time travel para o object storage, a plataforma para de quicar entre sistemas e começa a expressar regra analítica num lugar só. A arquitetura simplifica porque o controle chega mais perto do dado.\n\nO design da AWS para configuração multi-tenant deixa o lado de governança mais nítido. Tagged storage não é só truque de nome. Prefixo vira política de roteamento, isolamento de tenant passa a morar na fronteira de storage e atualização orientada a evento mantém config fresca sem gargalo de coordenação central. De novo, a infra ganha por embutir o modelo do workload direto na superfície de controle.\n\nOs textos anteriores desta thread já defendiam a mesma coisa por topologia de cloud, roteamento de modelo, automação de rede, isolamento de observabilidade e desenho organizacional. Esses novos reforços fecham mais três ângulos, transação, layout de dados e configuração de tenant. Juntando tudo, o padrão fica ainda mais claro. Infra forte não é só infra maior. É infra que codifica as regras do workload onde o sistema realmente consegue impor essas regras. Mais capacidade ajuda. Control plane melhor compõe melhor ainda."
-      },
-      "entries": [
-        "2026-05-13-eng-1",
-        "2026-04-17-1",
-        "2026-04-13-eng-1",
-        "2026-05-12-eng-1",
-        "2026-05-12-1",
-        "2026-05-11-eng-1",
-        "2026-05-10-eng-1",
-        "2026-05-05-eng-1",
-        "2026-05-04-eng-1",
-        "2026-05-03-eng-1",
-        "2026-05-02-eng-1",
-        "2026-05-01-eng-1"
       ]
     },
     {
