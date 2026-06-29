@@ -1,6 +1,38 @@
 {
   "threads": [
     {
+      "slug": "infra-is-control-plane",
+      "date": "2026-06-29",
+      "title": {
+        "en": "Infra became the control plane",
+        "pt": "Infra virou control plane"
+      },
+      "description": {
+        "en": "Fourteen engineering digests now converge on the same thesis: modern infrastructure wins less by raw capacity and more by encoding workload reality into the control surface, migration path, data contract, routing policy, and validation loops that still hold under stress.",
+        "pt": "Quatorze digests de engenharia agora convergem na mesma tese: infraestrutura moderna ganha menos por capacidade bruta e mais por codificar a realidade do workload na superfície de controle, no caminho de migração, no contrato de dados, na política de roteamento e nos ciclos de validação que continuam valendo sob estresse."
+      },
+      "body": {
+        "en": "The strongest infra writing in this cycle keeps landing on the same point. Scale problems rarely stay about hardware for long. They turn into control problems: where policy lives, how migrations happen, which invariants stay enforceable, and whether the platform can express the workload clearly enough to keep operating when reality gets messy.\n\nThe newly uncovered monolith migration piece sharpens that thesis instead of widening it. Its best lesson is that modernization is not a one shot architecture choice. It is a controlled sequence of routing, validation and data ownership moves. Strangler patterns reduce blast radius by moving traffic selectively. Parallel runs turn migration into an evidence problem by comparing live behavior before commitment. CDC matters because service extraction breaks if the data contract is still implicit. The migration succeeds when the control surface can route, compare and synchronize change without asking the business to bet everything at once.\n\nThat pattern matches the rest of the thread almost exactly. Meta showed migration as a governed system with shadow stages, automated promotion and rollback. Shopify moved inventory truth into an ACID boundary that could actually enforce reservation semantics. Lakehouse infrastructure kept more analytical rules near the data itself. AWS multi tenant config pushed isolation and routing into storage conventions and event driven refresh. Netflix modernized scheduling by swapping the engine under a stable API while preserving fairness and tenant expectations. Now the monolith to services piece makes the broader point harder to dodge: infra earns trust when it turns architectural change into a staged control problem with explicit interfaces, observable validation and durable ownership boundaries.\n\nPut together, the lesson gets sharper. Strong infrastructure is not just bigger plumbing. It is a control plane that captures workload reality well enough to change the machinery without breaking the contract.",
+        "pt": "Os melhores textos de infra deste ciclo continuam batendo na mesma tecla. Problema de escala quase nunca fica sendo só problema de hardware. Ele vira problema de controle: onde a política mora, como a migração acontece, quais invariantes continuam imponíveis e se a plataforma consegue representar o workload bem o bastante para seguir operando quando a realidade fica bagunçada.\n\nO texto recém descoberto sobre migração de monólito afia essa tese, não amplia. A melhor lição dele é que modernização não é uma decisão única de arquitetura. É uma sequência controlada de movimentos de roteamento, validação e ownership de dados. Strangler reduz blast radius ao mover tráfego de forma seletiva. Parallel run transforma migração em problema de evidência, comparando comportamento real antes da aposta. CDC importa porque extração de serviço quebra quando o contrato de dados ainda é implícito. A transição funciona quando a superfície de controle consegue rotear, comparar e sincronizar mudança sem pedir que o negócio aposte tudo de uma vez.\n\nIsso encaixa quase perfeito no resto da thread. A Meta mostrou migração como sistema governado com shadow stages, promoção automática e rollback. A Shopify levou a verdade do inventário para uma fronteira ACID que realmente consegue impor semântica de reserva. A arquitetura lakehouse manteve mais regra analítica perto do dado. A configuração multi tenant da AWS empurrou isolamento e roteamento para convenção de storage e atualização orientada a evento. A Netflix modernizou scheduling trocando o motor por baixo de uma API estável, preservando fairness e expectativa dos tenants. Agora o texto de monólito para serviços deixa o ponto mais difícil de escapar: infra ganha confiança quando transforma mudança arquitetural em problema de controle em etapas, com interface explícita, validação observável e fronteira durável de ownership.\n\nJuntando tudo, a lição fica mais afiada. Infra forte não é só encanamento maior. É control plane que captura a realidade do workload bem o bastante para trocar a máquina sem quebrar o contrato."
+      },
+      "entries": [
+        "2026-06-29-1",
+        "2026-06-27-eng-1",
+        "2026-05-13-eng-1",
+        "2026-04-17-1",
+        "2026-04-13-eng-1",
+        "2026-05-12-eng-1",
+        "2026-05-12-1",
+        "2026-05-11-eng-1",
+        "2026-05-10-eng-1",
+        "2026-05-05-eng-1",
+        "2026-05-04-eng-1",
+        "2026-05-03-eng-1",
+        "2026-05-02-eng-1",
+        "2026-05-01-eng-1"
+      ]
+    },
+    {
       "slug": "engineering-is-social-economics",
       "date": "2026-06-28",
       "title": {
@@ -23,37 +55,6 @@
         "2026-05-11-1",
         "2026-04-20-1",
         "2026-04-13-1"
-      ]
-    },
-    {
-      "slug": "infra-is-control-plane",
-      "date": "2026-06-28",
-      "title": {
-        "en": "Infra became the control plane",
-        "pt": "Infra virou control plane"
-      },
-      "description": {
-        "en": "Thirteen engineering digests now point to the same thesis: modern infrastructure wins less by raw capacity and more by encoding workload reality into the control surface, migration path, data contract, routing policy, and fairness rules that still hold under stress.",
-        "pt": "Treze digests de engenharia agora convergem na mesma tese: infraestrutura moderna ganha menos por capacidade bruta e mais por codificar a realidade do workload na superfície de controle, no caminho de migração, no contrato de dados, na política de roteamento e nas regras de fairness que continuam valendo sob estresse."
-      },
-      "body": {
-        "en": "The strongest infra writing in this cycle keeps landing on the same point. Scale problems rarely stay about hardware for long. They turn into control problems: where policy lives, how migrations happen, which invariants stay enforceable, and whether the platform can express the workload clearly enough to keep operating when reality gets messy.\n\nThe newly uncovered Netflix post sharpens that thesis instead of widening it. Replacing a custom batch scheduler with Kueue was not interesting because it swapped one queue for another. It mattered because Netflix changed the control plane underneath a live platform while preserving the API teams already depended on. That choice turned a dangerous migration into an infrastructure substitution problem. Users did not need to relearn the product for the platform to gain fair sharing, preemption, and better use of reserved capacity.\n\nThat pattern matches the rest of the thread almost exactly. Meta showed migration as a governed system with shadow stages, automated promotion, and rollback. Shopify moved inventory truth into an ACID boundary that could actually enforce reservation semantics. Lakehouse infrastructure kept more analytical rules near the data itself. AWS multi tenant config pushed isolation and routing into storage conventions and event driven refresh. Now Netflix adds another angle: even scheduling modernization pays off most when the platform preserves interfaces, embeds fairness in the scheduler, and lets operators evolve the engine without forcing every tenant through a rewrite.\n\nPut together, the lesson gets sharper. Strong infrastructure is not just bigger plumbing. It is a control plane that captures workload reality well enough to change the machinery without breaking the contract.",
-        "pt": "Os melhores textos de infra deste ciclo continuam batendo na mesma tecla. Problema de escala quase nunca fica sendo só problema de hardware. Ele vira problema de controle: onde a política mora, como a migração acontece, quais invariantes continuam imponíveis e se a plataforma consegue representar o workload bem o bastante para seguir operando quando a realidade fica bagunçada.\n\nO post recém descoberto da Netflix afia essa tese, não amplia. Trocar um scheduler batch customizado por Kueue não foi interessante por substituir uma fila por outra. Foi importante porque a Netflix mudou o control plane por baixo de uma plataforma viva, preservando a API da qual os times já dependiam. Essa escolha transformou uma migração perigosa em problema de substituição de infraestrutura. O usuário não precisou reaprender o produto para a plataforma ganhar fair sharing, preempção e uso melhor da capacidade reservada.\n\nIsso encaixa quase perfeito no resto da thread. A Meta mostrou migração como sistema governado com shadow stages, promoção automática e rollback. A Shopify levou a verdade do inventário para uma fronteira ACID que realmente consegue impor semântica de reserva. A arquitetura lakehouse manteve mais regra analítica perto do dado. A configuração multi tenant da AWS empurrou isolamento e roteamento para convenção de storage e atualização orientada a evento. Agora a Netflix soma outro ângulo: até modernização de scheduling rende mais quando a plataforma preserva interfaces, embute fairness no scheduler e deixa operador evoluir o motor sem obrigar cada tenant a passar por reescrita.\n\nJuntando tudo, a lição fica mais afiada. Infra forte não é só encanamento maior. É control plane que captura a realidade do workload bem o bastante para trocar a máquina sem quebrar o contrato."
-      },
-      "entries": [
-        "2026-06-27-eng-1",
-        "2026-05-13-eng-1",
-        "2026-04-17-1",
-        "2026-04-13-eng-1",
-        "2026-05-12-eng-1",
-        "2026-05-12-1",
-        "2026-05-11-eng-1",
-        "2026-05-10-eng-1",
-        "2026-05-05-eng-1",
-        "2026-05-04-eng-1",
-        "2026-05-03-eng-1",
-        "2026-05-02-eng-1",
-        "2026-05-01-eng-1"
       ]
     },
     {
