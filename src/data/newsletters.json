@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-29",
+      "date": "2026-06-29",
+      "tokensUsed": 77668,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Codex",
+          "author": "Saurabh Dashora",
+          "title": {
+            "en": "Monolith to Service Architecture",
+            "pt": "Como migrar de monólito para arquitetura de serviços sem se destruir no caminho"
+          },
+          "summary": {
+            "en": "This piece explains four practical transition patterns for moving from a monolith to services without a risky big-bang rewrite: Strangler Fig, Parallel Run, Collaborator, and Change Data Capture. The core idea is that migration is not a one-shot architecture decision, but an incremental risk-management problem where routing, validation, and data ownership need to evolve in stages. For engineering teams, the value is in treating modernization as a controlled sequence of experiments rather than a full replacement project.",
+            "pt": "Este texto explica quatro padrões práticos para sair de um monólito e ir para serviços sem cair numa reescrita big bang arriscada: Strangler Fig, Parallel Run, Collaborator e Change Data Capture. A ideia central é que migração não é uma decisão única de arquitetura, mas um problema incremental de gestão de risco, onde roteamento, validação e ownership de dados precisam evoluir em etapas. Para times de engenharia, o valor está em tratar modernização como uma sequência controlada de experimentos, não como projeto de substituição total."
+          },
+          "insights": {
+            "en": [
+              "The strongest takeaway is to migrate around the monolith before replacing it. A gateway plus selective extraction reduces blast radius and lets teams move high-value flows first.",
+              "Parallel run is useful because it turns migration into an evidence problem. You can compare behavior under real traffic before betting the business on the new path.",
+              "CDC matters because service extraction is not only about request routing. Data ownership and synchronization are usually the hardest part of the transition."
+            ],
+            "pt": [
+              "A melhor lição é migrar ao redor do monólito antes de substituí-lo. Um gateway com extração seletiva reduz blast radius e deixa o time atacar primeiro os fluxos de maior valor.",
+              "Parallel run é útil porque transforma migração em problema de evidência. Dá para comparar comportamento com tráfego real antes de apostar o negócio no caminho novo.",
+              "CDC importa porque extrair serviços não é só roteamento de request. Ownership e sincronização de dados normalmente são a parte mais difícil da transição."
+            ]
+          },
+          "link": "https://newsletter.systemdesigncodex.com/p/monolith-to-service-architecture"
+        }
+      ]
+    },
+    {
       "id": "2026-06-28-eng",
       "date": "2026-06-28",
       "tokensUsed": 1361780,
