@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-29-eng",
+      "date": "2026-06-29",
+      "tokensUsed": 24745,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "LinkedIn Engineering",
+          "author": "Fedor Borisyuk e coautores",
+          "title": {
+            "en": "Reimagining LinkedIn’s search tech stack",
+            "pt": "Como o LinkedIn refez sua stack de busca semântica com LLMs em escala massiva"
+          },
+          "summary": {
+            "en": "LinkedIn details how it rebuilt search around a semantic stack that combines query understanding, GPU-based embedding retrieval, and a small cross-encoder model for final ranking. The part that matters is not simply adding LLMs to search, but turning them into a production system that can serve millions of real-time queries per second while balancing latency, quality, and business constraints. The architecture also includes LLM judges as a product-policy layer, so evaluation, training data generation, and ranking improvements stay tied to explicit relevance rules instead of ad hoc tuning.",
+            "pt": "O LinkedIn detalha como refez sua busca em cima de uma stack semântica que junta entendimento de query, recuperação por embeddings em GPU e um modelo menor cross-encoder para o ranking final. O ponto forte não é só colocar LLM na busca, mas transformar isso num sistema de produção capaz de atender milhões de queries em tempo real equilibrando latência, qualidade e restrições de negócio. A arquitetura ainda coloca juízes LLM como camada de política de produto, para que avaliação, geração de dados de treino e evolução do ranking fiquem presos a regras explícitas de relevância, não a ajuste solto."
+          },
+          "insights": {
+            "en": [
+              "The key architecture move is splitting the problem into stages with different cost profiles: embeddings widen recall on GPUs, then a smaller cross-encoder spends heavier reasoning only on narrowed candidates.",
+              "LinkedIn treats evaluation as infrastructure. LLM judges are calibrated against product-manager gold labels, then used to score millions of query-document pairs and feed both monitoring and model training.",
+              "This is a strong production AI pattern: combine offline pipelines, nearline feature generation, score caching, traffic shaping, and explicit policy metrics so semantic quality can scale without blowing up latency or operations."
+            ],
+            "pt": [
+              "A jogada principal de arquitetura é quebrar o problema em estágios com custos diferentes: embeddings abrem recall em GPU, depois um cross-encoder menor gasta raciocínio mais pesado só nos candidatos já afunilados.",
+              "O LinkedIn trata avaliação como infraestrutura. Juízes LLM são calibrados contra notas ouro de product managers, depois usados para pontuar milhões de pares query-documento e alimentar tanto monitoramento quanto treino.",
+              "Esse é um padrão forte de IA em produção: juntar pipeline offline, geração nearline de features, score cache, traffic shaping e métricas explícitas de política para escalar qualidade semântica sem explodir latência nem operação."
+            ]
+          },
+          "link": "https://www.linkedin.com/blog/engineering/search/reimagining-linkedins-search-stack"
+        }
+      ]
+    },
+    {
       "id": "2026-06-29",
       "date": "2026-06-29",
       "tokensUsed": 77668,
