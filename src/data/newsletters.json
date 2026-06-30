@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-06-30",
+      "date": "2026-06-30",
+      "tokensUsed": 67921,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "A Good System Design Tackles Down the Hot Path First",
+            "pt": "Bom system design começa pelo hot path, não pela ferramenta da moda"
+          },
+          "summary": {
+            "en": "This piece argues that scaling decisions should start with the hottest paths in the system, not with generic infrastructure upgrades. Instead of reaching for caches, replicas, or service splits by reflex, teams should map where traffic, business value, and correctness risks actually concentrate, then shape read paths, write paths, and consistency guarantees around that reality. The result is a more grounded architecture: optimize speed where users feel it most, protect truth where the business cannot tolerate drift, and only add complexity when the access pattern truly justifies it.",
+            "pt": "Este texto defende que decisões de escala devem começar pelos hot paths reais do sistema, não por upgrades genéricos de infraestrutura. Em vez de sair adicionando cache, réplicas ou microserviços por reflexo, o time precisa mapear onde tráfego, valor de negócio e risco de corretude realmente se concentram, e então desenhar caminhos de leitura, escrita e garantias de consistência a partir disso. O resultado é uma arquitetura mais sólida: otimizar velocidade onde o usuário mais sente, proteger verdade onde o negócio não tolera desvio e só adicionar complexidade quando o padrão de acesso realmente justificar."
+          },
+          "insights": {
+            "en": [
+              "The central move is to separate access patterns before separating services. Read-heavy and write-heavy flows have different goals, so the first split should often be in traffic strategy, not in deployment topology.",
+              "Consistency is a business rule, not an infrastructure checkbox. Product browsing, search, and recommendations may accept staleness, while checkout, inventory, and payment flows often cannot.",
+              "Caches and read replicas are useful only when attached to explicit endpoint behavior. The article is strongest when it shows that the right question is not “should we add Redis?” but “which repeated reads can safely become cheaper?”"
+            ],
+            "pt": [
+              "A jogada central é separar padrão de acesso antes de separar serviço. Fluxos dominados por leitura e fluxos dominados por escrita têm objetivos diferentes, então a primeira divisão muitas vezes deve ser de estratégia de tráfego, não de topologia de deploy.",
+              "Consistência é regra de negócio, não checklist de infraestrutura. Navegação de catálogo, busca e recomendações podem tolerar alguma defasagem, enquanto checkout, estoque e pagamento normalmente não podem.",
+              "Cache e read replica só fazem sentido quando ligados a comportamento explícito de endpoint. O texto acerta em cheio ao trocar “devemos colocar Redis?” por “quais leituras repetidas podem ficar mais baratas sem quebrar verdade?”"
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/a-good-system-design-tackles-down-the-hot-path-first"
+        }
+      ]
+    },
+    {
       "id": "2026-06-29-eng",
       "date": "2026-06-29",
       "tokensUsed": 24745,
