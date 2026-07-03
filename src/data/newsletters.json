@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-03-eng",
+      "date": "2026-07-03",
+      "tokensUsed": 9457,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Netflix Tech Blog",
+          "author": "Saish Sali, Nipun Kumar e Sura Elamurugu",
+          "title": {
+            "en": "Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph",
+            "pt": "Como a Netflix criou um grafo do ciclo de vida de ML para quebrar silos entre modelos, dados e experimentos"
+          },
+          "summary": {
+            "en": "Netflix describes how it built a metadata service and Model Lifecycle Graph to connect models, pipelines, features, datasets, experiments, and owners across many internal ML platforms. The important engineering move is turning fragmented metadata from heterogeneous systems into a unified graph with stable URIs, real-time event ingestion, and relationship inference, so teams can answer cross-domain questions about lineage, impact, reuse, and ownership without manually hopping across tools.",
+            "pt": "A Netflix mostra como construiu um serviço de metadados e um Model Lifecycle Graph para conectar modelos, pipelines, features, datasets, experimentos e owners espalhados por várias plataformas internas de ML. A jogada forte de engenharia foi transformar metadados fragmentados de sistemas heterogêneos em um grafo unificado com URIs estáveis, ingestão em tempo real e inferência de relacionamentos, para que os times consigam responder perguntas de linhagem, impacto, reuso e ownership sem pular manualmente entre ferramentas."
+          },
+          "insights": {
+            "en": [
+              "The core architecture decision is to treat metadata as a first-class platform. Instead of building another registry UI, Netflix built an event-driven graph that links assets across the full ML lifecycle and makes discovery and impact analysis queryable.",
+              "Stable URIs and normalized entity models are the leverage point. Once pipelines, models, experiments, datasets, and people share a common identity scheme, cross-system relationships become easier to infer, enrich, and traverse at scale.",
+              "The hydration pattern is especially practical: source systems emit thin change events, and the metadata service fetches current state from the source of truth. That keeps producers simple while making the graph resilient to dropped or out-of-order events."
+            ],
+            "pt": [
+              "A principal decisão de arquitetura foi tratar metadado como plataforma de primeira classe. Em vez de criar só mais uma UI de registry, a Netflix montou um grafo orientado a eventos que liga ativos do ciclo inteiro de ML e torna descoberta e análise de impacto consultáveis.",
+              "URIs estáveis e um modelo normalizado de entidades são a grande alavanca. Quando pipelines, modelos, experimentos, datasets e pessoas compartilham o mesmo esquema de identidade, fica muito mais fácil inferir, enriquecer e navegar relações entre sistemas em escala.",
+              "O padrão de hidratação é bem prático: os sistemas de origem emitem eventos finos de mudança, e o serviço de metadados busca o estado atual na fonte da verdade. Isso mantém os produtores simples e deixa o grafo mais robusto contra eventos perdidos ou fora de ordem."
+            ]
+          },
+          "link": "https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1"
+        }
+      ]
+    },
+    {
       "id": "2026-07-03",
       "date": "2026-07-03",
       "tokensUsed": 1526244,
