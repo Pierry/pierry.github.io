@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-03",
+      "date": "2026-07-03",
+      "tokensUsed": 1526244,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "Content Delivery Network (CDN) - A Deep Dive",
+            "pt": "CDN em profundidade, como aproximar conteúdo do usuário sem quebrar a operação"
+          },
+          "summary": {
+            "en": "This issue explains CDNs from the angle that matters most in architecture: distance is part of system design. Instead of treating CDN as a generic performance add-on, it frames global delivery as a latency, resilience, and traffic-distribution problem. The piece walks through why centralizing content behind one origin creates avoidable user delay and operational fragility, then shows how edge servers, DNS steering, and geographically distributed delivery turn proximity into a design primitive for modern internet systems.",
+            "pt": "Esta edição explica CDN pelo ângulo que mais importa em arquitetura: distância também é parte do design do sistema. Em vez de tratar CDN como um simples extra de performance, o texto enquadra entrega global como um problema de latência, resiliência e distribuição de tráfego. Ele mostra por que concentrar tudo em uma origem cria atraso desnecessário para o usuário e fragilidade operacional, e depois explica como edge servers, roteamento por DNS e entrega geograficamente distribuída transformam proximidade em um elemento central de arquitetura na internet moderna."
+          },
+          "insights": {
+            "en": [
+              "The main architectural lesson is that latency is not only a code or database problem. Physical distance between user and origin can dominate response time, so distribution strategy needs to be part of the design from day one.",
+              "A CDN is also a resilience pattern. By absorbing traffic at the edge and reducing direct pressure on the origin, it helps systems survive spikes and localized failures with a smaller blast radius.",
+              "The strongest mental model here is to see CDN as traffic shaping infrastructure, not just static asset caching. DNS, edge placement, and request routing together define how globally distributed systems feel in practice."
+            ],
+            "pt": [
+              "A principal lição de arquitetura é que latência não é só problema de código ou banco. A distância física entre usuário e origem pode dominar o tempo de resposta, então a estratégia de distribuição precisa entrar no desenho desde o começo.",
+              "CDN também é padrão de resiliência. Ao absorver tráfego na borda e aliviar pressão direta na origem, ela ajuda o sistema a sobreviver melhor a picos e falhas localizadas com menor blast radius.",
+              "O melhor modelo mental aqui é ver CDN como infraestrutura de traffic shaping, não só cache de arquivo estático. DNS, posicionamento de edge e roteamento de requests juntos definem como um sistema global realmente é sentido pelo usuário."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/how-does-cdn-work"
+        }
+      ]
+    },
+    {
       "id": "2026-06-30",
       "date": "2026-06-30",
       "tokensUsed": 67921,
