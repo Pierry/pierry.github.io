@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-04",
+      "date": "2026-07-04",
+      "tokensUsed": 30604,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Computerphile",
+          "author": "Dr Mike Pound",
+          "title": {
+            "en": "Why AI Tokens are so Expensive",
+            "pt": "Por que tokens de IA ficam tão caros em fluxos agentic"
+          },
+          "summary": {
+            "en": "This video explains why AI costs spike so quickly once you move from a single prompt to an agentic workflow. The important idea is that the expensive part is usually not the final answer, but the repeated loop of reading context, revisiting files, planning, checking results, and carrying all that state forward. For engineers and managers, it is a sharp reminder that token burn is really a systems-design problem around workflow shape, context boundaries, and how much autonomy you give the model.",
+            "pt": "Este vídeo explica por que o custo de IA dispara quando você sai de um prompt isolado e entra em um fluxo agentic. A ideia central é que a parte cara normalmente não é a resposta final, mas o loop repetido de ler contexto, revisitar arquivos, planejar, validar resultados e carregar todo esse estado adiante. Para devs e managers, é um lembrete forte de que gasto com tokens é, no fundo, um problema de desenho de workflow, fronteiras de contexto e nível de autonomia dado ao modelo."
+          },
+          "insights": {
+            "en": [
+              "Token cost compounds through loops, not just prompts. Every extra inspection, retry, or review step can multiply spend because the model keeps reprocessing accumulated context.",
+              "Agent design needs tighter scope control. Smaller tasks, narrower context windows, and explicit handoff boundaries are often more important than model quality for cost efficiency.",
+              "This is useful for management too: if teams adopt AI without workflow discipline, cost and latency can rise together while output quality barely improves."
+            ],
+            "pt": [
+              "O custo de tokens cresce em loops, não só em prompts. Cada inspeção, retry ou revisão extra pode multiplicar o gasto porque o modelo reprocessa contexto acumulado o tempo todo.",
+              "O desenho do agente precisa de escopo mais apertado. Tarefas menores, janelas de contexto mais estreitas e limites explícitos de handoff costumam importar mais para eficiência do que trocar de modelo.",
+              "Isso também serve para gestão: se o time adota IA sem disciplina de workflow, custo e latência sobem juntos enquanto a qualidade entregue quase não melhora."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=-0HRzXk8vlk"
+        }
+      ]
+    },
+    {
       "id": "2026-07-03-eng",
       "date": "2026-07-03",
       "tokensUsed": 9457,
