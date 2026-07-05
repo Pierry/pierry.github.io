@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-05",
+      "date": "2026-07-05",
+      "tokensUsed": 2642189,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Consistency is negotiable. But the bill always lands somewhere.",
+            "pt": "Consistencia e negociavel, mas a conta sempre cai em algum lugar"
+          },
+          "summary": {
+            "en": "This issue makes a strong architecture point: consistency is not a virtue you maximize everywhere, but a cost you allocate per workflow. Raul Junco walks through the trade-offs between linearizable, causal, eventual, and quorum-based models and argues that the right choice depends on what kind of failure the business can tolerate. The practical takeaway for engineering teams is to stop asking for one consistency model for the whole system and instead map guarantees to specific product paths such as ledgers, checkout, feeds, and analytics.",
+            "pt": "Esta edicao bate num ponto importante de arquitetura: consistencia nao e uma virtude para maximizar em todo lugar, mas um custo para distribuir por workflow. Raul Junco percorre os trade-offs entre modelos linearizable, causal, eventual e baseados em quorum e mostra que a escolha certa depende do tipo de falha que o negocio consegue tolerar. O recado pratico para times de engenharia e parar de procurar um unico modelo de consistencia para o sistema inteiro e passar a mapear garantias por fluxo de produto, como ledger, checkout, feed e analytics."
+          },
+          "insights": {
+            "en": [
+              "Strong consistency should be reserved for correctness-critical transitions such as money movement, inventory allocation, locks, and leader election, where stale reads create real business damage.",
+              "Causal and eventual consistency are not weaker by definition; they are often the smarter choice for user-facing flows like feeds, counters, recommendations, and other paths where short-lived staleness is acceptable.",
+              "Quorum is useful because it turns consistency into a tunable workflow decision. Instead of one global rule, teams can balance read freshness, write safety, latency, and availability per boundary."
+            ],
+            "pt": [
+              "Consistencia forte deve ficar reservada para transicoes criticas de corretude, como movimentacao de dinheiro, alocacao de estoque, locks e eleicao de lider, onde leitura defasada vira dano real para o negocio.",
+              "Consistencia causal e eventual nao sao automaticamente piores; em muitos casos sao a escolha mais inteligente para fluxos visiveis ao usuario, como feeds, contadores, recomendacoes e outros caminhos onde alguma defasagem curta e aceitavel.",
+              "Quorum e util porque transforma consistencia em uma decisao ajustavel por workflow. Em vez de uma regra global, o time consegue equilibrar frescor de leitura, seguranca de escrita, latencia e disponibilidade por fronteira do sistema."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/consistency-is-negotiable-but"
+        }
+      ]
+    },
+    {
       "id": "2026-07-04-eng",
       "date": "2026-07-04",
       "tokensUsed": 10335,
