@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-04-eng",
+      "date": "2026-07-04",
+      "tokensUsed": 10335,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Waldek",
+          "title": {
+            "en": "Stop overloading your skills",
+            "pt": "Pare de sobrecarregar suas skills"
+          },
+          "summary": {
+            "en": "Microsoft argues that most AI coding skills fail because they repeat documentation the model already knows instead of focusing on the narrow gaps where the model actually fails. The post makes the case for measuring baseline performance first, then designing lean skills that spend tokens only on recent quirks, unusual configuration paths, and hard-to-learn edge cases. For engineering teams, the main takeaway is that token efficiency is a systems problem: oversized context hurts not only one workflow, but every other tool and skill competing for the same budget.",
+            "pt": "A Microsoft argumenta que a maioria das skills para agentes de código falha porque repete documentação que o modelo já conhece, em vez de atacar exatamente os pontos em que ele ainda erra. O texto defende medir primeiro o baseline sem a skill e, só depois, criar uma versão enxuta focada em quirks recentes, configurações pouco comuns e casos de borda difíceis de aprender no pré-treino. Para times de engenharia, o recado principal é que eficiência de tokens é um problema de sistema: contexto inchado prejudica não só um fluxo, mas todas as outras tools e skills disputando o mesmo orçamento."
+          },
+          "insights": {
+            "en": [
+              "Measure before you optimize. If the model already handles the common path, the skill should target only the residual failure modes instead of restating the docs.",
+              "Context budget is a shared systems resource. A bloated skill displaces workspace state, conversation history, and outputs from other tools that may be more valuable in the moment.",
+              "Good agent enablement looks more like a cheat sheet than a textbook: small, scenario-driven, and validated by measurable lift per token."
+            ],
+            "pt": [
+              "Meça antes de otimizar. Se o modelo já resolve o caminho comum, a skill deve cobrir apenas os modos de falha restantes, sem reescrever a documentação.",
+              "Orcamento de contexto e um recurso compartilhado do sistema. Uma skill inchada expulsa estado do workspace, historico da conversa e saidas de outras tools que podem ser mais valiosas naquele momento.",
+              "Boa habilitacao de agentes parece mais uma cola do que um livro-texto: pequena, guiada por cenarios e validada por ganho real por token gasto."
+            ]
+          },
+          "link": "https://developer.microsoft.com/blog/stop-overloading-your-skills"
+        }
+      ]
+    },
+    {
       "id": "2026-07-04",
       "date": "2026-07-04",
       "tokensUsed": 30604,
