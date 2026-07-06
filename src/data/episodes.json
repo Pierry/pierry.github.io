@@ -1,6 +1,14 @@
 {
   "episodes": [
     {
+      "title": "Ep #23 - Trade-offs de IA e Arquitetura: Consistência, Skills e o Custo dos Agentes",
+      "description": "O <strong>episódio</strong> de hoje traz um resumo direto sobre as decisões que definem a escalabilidade e o custo de sistemas modernos. Exploramos os insights de Raul Junco sobre como a consistência não deve ser uma regra global, mas uma decisão ajustável por fluxo de produto. No mundo da IA, anali",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/122450688/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-6%2F40a2c315-25b7-6e97-eb66-2b5cfec71cf8.m4a",
+      "pubDate": "2026-07-06",
+      "duration": "00:27:45",
+      "language": "en"
+    },
+    {
       "title": "Ep #22 - System Design #1 - Encurtador de URLs em Escala",
       "description": "Neste episódio, mergulhamos no clássico desafio de <strong>System Design: o Encurtador de URLs</strong>. Embora a superfície funcional pareça simples — transformar uma URL longa em uma curta e redirecionar o usuário — a implementação em escala real revela temas complexos de arquitetura distribuída. ",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/121915529/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-24%2Fd0f302d8-726d-c19a-ae6d-d96dee569506.m4a",
