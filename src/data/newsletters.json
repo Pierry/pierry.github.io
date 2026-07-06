@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-06-eng",
+      "date": "2026-07-06",
+      "tokensUsed": 10835,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Waldek Mastykarz",
+          "title": {
+            "en": "Not all model upgrades are upgrades",
+            "pt": "Nem todo upgrade de modelo e realmente um upgrade"
+          },
+          "summary": {
+            "en": "Microsoft benchmarked 150 agent runs across architecture tasks and SharePoint Framework upgrades to compare Claude Sonnet 4.6 with Sonnet 5 inside GitHub Copilot Chat. The main takeaway is that lower per-token pricing can be economically misleading when a newer model consumes dramatically more tokens, shows wider cost variance, and does not consistently improve output quality. For engineering leaders, the useful lesson is to treat model upgrades as workload-specific experiments and to measure task completion, quality, token burn, and predictability before changing defaults at scale.",
+            "pt": "A Microsoft comparou 150 execucoes de agentes entre tarefas de arquitetura e upgrades de SharePoint Framework para avaliar Claude Sonnet 4.6 contra Sonnet 5 dentro do GitHub Copilot Chat. A principal conclusao e que preco menor por token pode enganar quando o modelo mais novo consome muito mais contexto, tem variacao de custo bem maior e nao melhora a qualidade de forma consistente. Para liderancas e times de engenharia, o recado pratico e tratar upgrade de modelo como experimento por workload, medindo conclusao, qualidade, gasto de tokens e previsibilidade antes de trocar o padrao em escala."
+          },
+          "insights": {
+            "en": [
+              "Unit price is not the same as workload cost. A cheaper rate card can still produce a more expensive system when the model expands token usage by 10x or 12x on realistic agent loops.",
+              "Variance matters as much as averages in production. If the same prompt can swing from thousands to millions of tokens, budgeting and capacity planning become unreliable even when headline pricing looks attractive.",
+              "Better models do not compensate for missing guidance. Both models hit the same ceiling on poorly documented migration steps, which reinforces that content quality and agent extensions often matter more than swapping models."
+            ],
+            "pt": [
+              "Preco por token nao e o mesmo que custo do workload. Uma tabela mais barata ainda pode gerar um sistema mais caro quando o modelo multiplica o consumo em 10x ou 12x dentro de loops agentic reais.",
+              "Variancia importa quase tanto quanto a media em producao. Se o mesmo prompt pode oscilar de milhares para milhoes de tokens, previsao de custo e planejamento de capacidade viram loteria mesmo com preco unitario menor.",
+              "Modelo melhor nao compensa documentacao incompleta. Os dois bateram no mesmo teto em migracoes mal documentadas, reforcando que qualidade de conteudo e extensoes do agente muitas vezes valem mais do que trocar de modelo."
+            ]
+          },
+          "link": "https://developer.microsoft.com/blog/not-all-model-upgrades-are-upgrades"
+        }
+      ]
+    },
+    {
       "id": "2026-07-06",
       "date": "2026-07-06",
       "tokensUsed": 39926,
