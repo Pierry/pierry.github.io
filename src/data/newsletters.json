@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-06",
+      "date": "2026-07-06",
+      "tokensUsed": 39926,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Gregor Ojstersek",
+          "title": {
+            "en": "How Anthropic Builds AI-Native Engineering Teams",
+            "pt": "Como a Anthropic estrutura times de engenharia AI-native"
+          },
+          "summary": {
+            "en": "Gregor Ojstersek distills a conversation with Anthropic platform engineering leader Katelyn Lesse into a practical view of what AI-native engineering really looks like. The core message is that team topology stays largely intact, but the bottleneck moves from implementation to judgment, prioritization, evaluation, and product coordination. Anthropic appears to be using AI to multiply parallel execution while keeping humans responsible for architecture, review quality, testing strategy, and deciding what should be built next.",
+            "pt": "Gregor Ojstersek resume uma conversa com Katelyn Lesse, lider de platform engineering da Anthropic, para mostrar na pratica o que significa operar um time de engenharia AI-native. A mensagem central e que a estrutura do time muda menos do que parece, mas o gargalo sai da implementacao e vai para julgamento, priorizacao, avaliacao e coordenacao de produto. Na pratica, a Anthropic usa IA para multiplicar execucao em paralelo, enquanto humanos seguem responsaveis por arquitetura, qualidade da revisao, estrategia de testes e pela decisao do que vale construir."
+          },
+          "insights": {
+            "en": [
+              "AI-native does not mean fewer cross-functional roles. Anthropic keeps small product teams, but needs stronger PM participation because faster coding increases the number of decisions that must be made well.",
+              "The leverage shift is from coding to orchestration. Engineers can run more projects in parallel, but only if architecture, evaluation systems, and review discipline keep pace with the extra output.",
+              "Reviewing and steering AI-generated work is becoming a core engineering skill. The win is not accepting the first draft from an agent, but iterating until the result meets a clearly defined outcome."
+            ],
+            "pt": [
+              "Ser AI-native nao significa reduzir papeis cross-functional. A Anthropic mantem times pequenos de produto, mas precisa de participacao mais forte de PMs porque codigo mais rapido aumenta o numero de decisoes que precisam ser bem tomadas.",
+              "O ganho de alavancagem sai da digitacao de codigo e vai para a orquestracao. Engenheiros conseguem tocar mais projetos em paralelo, mas isso so funciona se arquitetura, avaliacoes e disciplina de review acompanharem o volume extra.",
+              "Revisar e direcionar trabalho gerado por IA esta virando habilidade central de engenharia. O ganho nao esta em aceitar a primeira resposta do agente, mas em iterar ate o resultado bater num objetivo claramente definido."
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/how-anthropic-builds-ai-native-engineering"
+        }
+      ]
+    },
+    {
       "id": "2026-07-05",
       "date": "2026-07-05",
       "tokensUsed": 2642189,
