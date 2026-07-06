@@ -1,6 +1,40 @@
 {
   "threads": [
     {
+      "slug": "infra-is-control-plane",
+      "date": "2026-07-06",
+      "title": {
+        "en": "Infra became the control plane",
+        "pt": "Infra virou control plane"
+      },
+      "description": {
+        "en": "Sixteen engineering digests now converge on the same thesis: modern infrastructure wins less by raw capacity and more by encoding workload reality into the control surface, from metadata graphs and routing layers to migration paths, data contracts, and validation loops that still hold under stress.",
+        "pt": "Dezesseis digests de engenharia agora convergem na mesma tese: infraestrutura moderna ganha menos por capacidade bruta e mais por codificar a realidade do workload na superfície de controle, do grafo de metadados e da camada de roteamento até o caminho de migração, o contrato de dados e os ciclos de validação que continuam valendo sob estresse."
+      },
+      "body": {
+        "en": "The strongest infra writing in this cycle keeps landing on the same point. Scale problems rarely stay about hardware for long. They turn into control problems: where policy lives, how migrations happen, which invariants stay enforceable, and whether the platform can express the workload clearly enough to keep operating when reality gets messy.\n\nThe two newly uncovered pieces sharpen that thesis from opposite ends of the stack. Netflix's model lifecycle graph shows that metadata only becomes useful when it behaves like platform, not documentation. Stable URIs, event driven updates and relationship inference turn fragmented ML systems into something teams can actually query for lineage, ownership and impact. The CDN deep dive lands a similar lesson on the delivery path. Distance, routing and edge placement are not performance garnish. They are the control surface that decides how latency, resilience and traffic shaping feel to the user in the real world.\n\nThat pattern matches the rest of the thread almost exactly. The monolith migration piece treated modernization as a governed sequence of routing, validation and data ownership moves. Meta showed migration as shadow stages with promotion and rollback. Shopify moved inventory truth into an ACID boundary that could actually enforce reservation semantics. AWS multi tenant config pushed isolation and refresh into storage conventions and events. Now Netflix and CDN push the thesis wider without changing it: infra earns trust when it turns hidden operational reality into explicit control surfaces, so change can happen without losing the contract.\n\nPut together, the lesson gets sharper. Strong infrastructure is not just bigger plumbing. It is a control plane that captures workload reality well enough to route traffic, map dependencies and change the machinery without breaking the promise.",
+        "pt": "Os melhores textos de infra deste ciclo continuam batendo na mesma tecla. Problema de escala quase nunca fica sendo só problema de hardware. Ele vira problema de controle: onde a política mora, como a migração acontece, quais invariantes continuam imponíveis e se a plataforma consegue representar o workload bem o bastante para seguir operando quando a realidade fica bagunçada.\n\nOs dois textos recém descobertos afiam essa tese por lados diferentes da pilha. O grafo de ciclo de vida de ML da Netflix mostra que metadado só vira alavanca quando se comporta como plataforma, não como documentação. URIs estáveis, atualização orientada a eventos e inferência de relacionamento transformam sistemas fragmentados de ML em algo consultável para linhagem, ownership e impacto. O mergulho em CDN chega na mesma lição no caminho de entrega. Distância, roteamento e posicionamento de edge não são perfumaria de performance. São a superfície de controle que decide como latência, resiliência e traffic shaping são sentidos pelo usuário no mundo real.\n\nIsso encaixa quase perfeito no resto da thread. O texto sobre migração de monólito tratou modernização como sequência governada de roteamento, validação e ownership de dados. A Meta mostrou migração como shadow stages com promoção e rollback. A Shopify levou a verdade do inventário para uma fronteira ACID que realmente impõe semântica de reserva. A configuração multi tenant da AWS empurrou isolamento e refresh para convenção de storage e eventos. Agora Netflix e CDN ampliam a tese sem trocá-la: infra ganha confiança quando transforma realidade operacional escondida em superfície explícita de controle, para que a mudança aconteça sem perder o contrato.\n\nJuntando tudo, a lição fica mais afiada. Infra forte não é só encanamento maior. É control plane que captura a realidade do workload bem o bastante para rotear tráfego, mapear dependência e trocar a máquina sem quebrar a promessa."
+      },
+      "entries": [
+        "2026-07-03-eng-1",
+        "2026-07-03-1",
+        "2026-06-29-1",
+        "2026-06-27-eng-1",
+        "2026-05-13-eng-1",
+        "2026-04-17-1",
+        "2026-04-13-eng-1",
+        "2026-05-12-eng-1",
+        "2026-05-12-1",
+        "2026-05-11-eng-1",
+        "2026-05-10-eng-1",
+        "2026-05-05-eng-1",
+        "2026-05-04-eng-1",
+        "2026-05-03-eng-1",
+        "2026-05-02-eng-1",
+        "2026-05-01-eng-1"
+      ]
+    },
+    {
       "slug": "system-design-is-constraint-literacy",
       "date": "2026-07-03",
       "title": {
@@ -57,38 +91,6 @@
         "2026-06-01-eng-1",
         "2026-05-31-1",
         "2026-05-30-1"
-      ]
-    },
-    {
-      "slug": "infra-is-control-plane",
-      "date": "2026-06-29",
-      "title": {
-        "en": "Infra became the control plane",
-        "pt": "Infra virou control plane"
-      },
-      "description": {
-        "en": "Fourteen engineering digests now converge on the same thesis: modern infrastructure wins less by raw capacity and more by encoding workload reality into the control surface, migration path, data contract, routing policy, and validation loops that still hold under stress.",
-        "pt": "Quatorze digests de engenharia agora convergem na mesma tese: infraestrutura moderna ganha menos por capacidade bruta e mais por codificar a realidade do workload na superfície de controle, no caminho de migração, no contrato de dados, na política de roteamento e nos ciclos de validação que continuam valendo sob estresse."
-      },
-      "body": {
-        "en": "The strongest infra writing in this cycle keeps landing on the same point. Scale problems rarely stay about hardware for long. They turn into control problems: where policy lives, how migrations happen, which invariants stay enforceable, and whether the platform can express the workload clearly enough to keep operating when reality gets messy.\n\nThe newly uncovered monolith migration piece sharpens that thesis instead of widening it. Its best lesson is that modernization is not a one shot architecture choice. It is a controlled sequence of routing, validation and data ownership moves. Strangler patterns reduce blast radius by moving traffic selectively. Parallel runs turn migration into an evidence problem by comparing live behavior before commitment. CDC matters because service extraction breaks if the data contract is still implicit. The migration succeeds when the control surface can route, compare and synchronize change without asking the business to bet everything at once.\n\nThat pattern matches the rest of the thread almost exactly. Meta showed migration as a governed system with shadow stages, automated promotion and rollback. Shopify moved inventory truth into an ACID boundary that could actually enforce reservation semantics. Lakehouse infrastructure kept more analytical rules near the data itself. AWS multi tenant config pushed isolation and routing into storage conventions and event driven refresh. Netflix modernized scheduling by swapping the engine under a stable API while preserving fairness and tenant expectations. Now the monolith to services piece makes the broader point harder to dodge: infra earns trust when it turns architectural change into a staged control problem with explicit interfaces, observable validation and durable ownership boundaries.\n\nPut together, the lesson gets sharper. Strong infrastructure is not just bigger plumbing. It is a control plane that captures workload reality well enough to change the machinery without breaking the contract.",
-        "pt": "Os melhores textos de infra deste ciclo continuam batendo na mesma tecla. Problema de escala quase nunca fica sendo só problema de hardware. Ele vira problema de controle: onde a política mora, como a migração acontece, quais invariantes continuam imponíveis e se a plataforma consegue representar o workload bem o bastante para seguir operando quando a realidade fica bagunçada.\n\nO texto recém descoberto sobre migração de monólito afia essa tese, não amplia. A melhor lição dele é que modernização não é uma decisão única de arquitetura. É uma sequência controlada de movimentos de roteamento, validação e ownership de dados. Strangler reduz blast radius ao mover tráfego de forma seletiva. Parallel run transforma migração em problema de evidência, comparando comportamento real antes da aposta. CDC importa porque extração de serviço quebra quando o contrato de dados ainda é implícito. A transição funciona quando a superfície de controle consegue rotear, comparar e sincronizar mudança sem pedir que o negócio aposte tudo de uma vez.\n\nIsso encaixa quase perfeito no resto da thread. A Meta mostrou migração como sistema governado com shadow stages, promoção automática e rollback. A Shopify levou a verdade do inventário para uma fronteira ACID que realmente consegue impor semântica de reserva. A arquitetura lakehouse manteve mais regra analítica perto do dado. A configuração multi tenant da AWS empurrou isolamento e roteamento para convenção de storage e atualização orientada a evento. A Netflix modernizou scheduling trocando o motor por baixo de uma API estável, preservando fairness e expectativa dos tenants. Agora o texto de monólito para serviços deixa o ponto mais difícil de escapar: infra ganha confiança quando transforma mudança arquitetural em problema de controle em etapas, com interface explícita, validação observável e fronteira durável de ownership.\n\nJuntando tudo, a lição fica mais afiada. Infra forte não é só encanamento maior. É control plane que captura a realidade do workload bem o bastante para trocar a máquina sem quebrar o contrato."
-      },
-      "entries": [
-        "2026-06-29-1",
-        "2026-06-27-eng-1",
-        "2026-05-13-eng-1",
-        "2026-04-17-1",
-        "2026-04-13-eng-1",
-        "2026-05-12-eng-1",
-        "2026-05-12-1",
-        "2026-05-11-eng-1",
-        "2026-05-10-eng-1",
-        "2026-05-05-eng-1",
-        "2026-05-04-eng-1",
-        "2026-05-03-eng-1",
-        "2026-05-02-eng-1",
-        "2026-05-01-eng-1"
       ]
     },
     {
