@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-07",
+      "date": "2026-07-07",
+      "tokensUsed": 32675,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Craft Better Software",
+          "author": "Daniel Moka",
+          "title": {
+            "en": "How to Catch AI Mistakes In Your Code",
+            "pt": "Como detectar erros de IA no seu codigo"
+          },
+          "summary": {
+            "en": "Daniel Moka argues that AI has shifted the engineering bottleneck from writing code to reliably reviewing and enforcing quality at scale. His core point is that teams should stop depending on hero reviewers to catch repetitive mistakes and instead move those checks into deterministic guardrails such as lint rules, compiler settings, architecture tests, stronger type models, mutation and contract testing, supply-chain controls, and migration linting. The practical lesson for developers and engineering managers is that AI-generated code becomes safe only when the surrounding system makes low-quality shortcuts impossible to merge.",
+            "pt": "Daniel Moka argumenta que a IA mudou o gargalo da engenharia: escrever codigo ficou barato, mas revisar e garantir qualidade em escala virou o problema real. O ponto central e que times devem parar de depender de reviewers heroicos para achar erros repetitivos e transformar esses checks em guardrails deterministicos, como lint, regras de compilacao, testes de arquitetura, modelos de tipos mais fortes, mutation e contract testing, controles de supply chain e lint de migrations. A licao pratica para devs e engineering managers e que codigo gerado por IA so fica seguro quando o sistema ao redor torna atalhos ruins impossiveis de mergear."
+          },
+          "insights": {
+            "en": [
+              "Repeated PR comments are signals that a rule should be automated. If the team keeps flagging the same async misuse, type escape hatch, or code smell, that review feedback should become a failing lint or CI check.",
+              "Quality guardrails need to protect structure, not just syntax. Architecture tests, strict type systems, mutation testing, contract checks, and migration linters catch the kinds of failures AI can easily hide behind locally passing code.",
+              "Human review becomes more valuable when machines own the mechanical checks. Reviewers should spend their time on intent, tradeoffs, business rules, and product fit instead of policing predictable implementation mistakes."
+            ],
+            "pt": [
+              "Comentarios repetidos em PR sao sinais de que a regra deveria virar automacao. Se o time sempre aponta o mesmo erro de async, escape de tipos ou code smell, isso deveria virar falha de lint ou CI.",
+              "Guardrails de qualidade precisam proteger estrutura, nao so sintaxe. Testes de arquitetura, tipos estritos, mutation testing, contract checks e lint de migrations pegam falhas que a IA consegue esconder atras de codigo que passa localmente.",
+              "Review humano fica mais valioso quando as maquinas assumem os checks mecanicos. O foco do reviewer deve subir para intencao, trade-offs, regras de negocio e aderencia ao produto, nao para erros previsiveis de implementacao."
+            ]
+          },
+          "link": "https://craftbettersoftware.com/p/how-to-catch-ai-mistakes-in-your"
+        }
+      ]
+    },
+    {
       "id": "2026-07-06-eng",
       "date": "2026-07-06",
       "tokensUsed": 10835,
