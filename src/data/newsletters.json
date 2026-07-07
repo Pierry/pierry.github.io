@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-07-eng",
+      "date": "2026-07-07",
+      "tokensUsed": 10882,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Google Research",
+          "title": {
+            "en": "The power of collaboration: How we can reduce traffic congestion",
+            "pt": "O poder da colaboracao: como reduzir congestionamentos"
+          },
+          "summary": {
+            "en": "Google Research published a large real-world routing experiment showing that a navigation platform can improve citywide traffic by coordinating a very small fraction of trips instead of optimizing each driver in isolation. Across 10 US cities, Google Maps alternated a modified routing policy that redirected fewer than 2% of trips away from recurring bottlenecks while preserving similar travel times. The result was a measurable increase in driving speed on targeted segments and a reduction in fuel consumption and CO2 emissions, making the broader engineering lesson clear: local optimizations can leave system-level value on the table, and modest, well-measured coordination can improve the whole network.",
+            "pt": "O Google Research publicou um experimento real de roteamento em larga escala mostrando que uma plataforma de navegacao pode melhorar o transito da cidade inteira quando coordena uma pequena fracao das viagens, em vez de otimizar cada motorista isoladamente. Em 10 cidades dos EUA, o Google Maps alternou uma politica modificada que desviou menos de 2% das rotas de gargalos recorrentes mantendo tempos de viagem parecidos. O resultado foi ganho mensuravel de velocidade nos trechos alvo e reducao de consumo de combustivel e emissoes de CO2, reforcando uma licao importante de engenharia: otimizacoes locais deixam valor sistemico na mesa, e uma coordenacao modesta, mas bem medida, pode melhorar a rede inteira."
+          },
+          "insights": {
+            "en": [
+              "System-wide outcomes can improve even when only a tiny share of requests is rerouted. The leverage came from relieving a few recurring bottlenecks rather than trying to globally optimize every trip.",
+              "The experiment design matters as much as the algorithm. Google used a citywide switchback design and hierarchical Bayesian analysis, which made it possible to measure network effects credibly in production.",
+              "This is a useful architecture reminder for any large platform: optimizing per-user decisions is not always the same as optimizing the shared system those users depend on."
+            ],
+            "pt": [
+              "Resultados de sistema inteiro podem melhorar mesmo quando uma fracao muito pequena das requisicoes muda de caminho. O ganho veio de aliviar alguns gargalos recorrentes, nao de tentar otimizar todas as viagens globalmente.",
+              "O desenho do experimento importa tanto quanto o algoritmo. O Google usou um modelo switchback em escala de cidade e analise bayesiana hierarquica para medir efeito de rede de forma confiavel em producao.",
+              "Fica uma lembranca util para qualquer plataforma grande: otimizar decisoes por usuario nao e o mesmo que otimizar o sistema compartilhado do qual todos dependem."
+            ]
+          },
+          "link": "https://research.google/blog/the-power-of-collaboration-how-we-can-reduce-traffic-congestion/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-07",
       "date": "2026-07-07",
       "tokensUsed": 32675,
