@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-08",
+      "date": "2026-07-08",
+      "tokensUsed": 1499214,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "System Design One",
+          "title": {
+            "en": "How to use AI agents better than 99% of people",
+            "pt": "Como usar agentes de IA melhor do que 99% das pessoas"
+          },
+          "summary": {
+            "en": "This issue argues that shared memory is the missing systems layer for multi-agent workflows. Instead of letting each coding agent, browser chatbot, and background worker keep isolated context, it proposes a typed graph memory where facts and relationships are stored together, so agents can retrieve connected context instead of disconnected text snippets. The most important architectural point is that memory is not just a retrieval problem: once many agents write concurrently, you also need schema control, isolated branches, review and merge policies, and atomic-style coordination over object storage to prevent one bad write from becoming shared truth for every other agent.",
+            "pt": "Esta edicao defende que memoria compartilhada e a camada de sistema que falta em workflows com varios agentes. Em vez de deixar cada coding agent, chatbot no browser e worker de background manter contexto isolado, ela propoe uma memoria em grafo tipado, onde fatos e relacionamentos ficam juntos, permitindo recuperar contexto conectado em vez de apenas trechos soltos de texto. O ponto arquitetural mais importante e que memoria nao e so um problema de busca: quando varios agentes escrevem ao mesmo tempo, voce tambem precisa de schema compartilhado, branches isoladas, politicas de review e merge, e coordenacao estilo transacao sobre object storage para impedir que um erro de um agente vire verdade compartilhada para todos os outros."
+          },
+          "insights": {
+            "en": [
+              "A folder or vector database is not enough for agent memory when the workload is collaborative. Agents need to traverse relationships between entities, not just retrieve semantically similar chunks.",
+              "Concurrency is the real hard problem. Shared memory must separate proposed writes from accepted truth, otherwise one hallucinated update can poison every agent that reads after it.",
+              "The design pattern is surprisingly close to source control: typed schema, isolated branches, immutable versions, and explicit merge approval create safer multi-agent coordination."
+            ],
+            "pt": [
+              "Pasta compartilhada ou vector database nao bastam como memoria de agentes quando o workload e colaborativo. Os agentes precisam navegar relacionamentos entre entidades, nao apenas recuperar chunks semanticamente parecidos.",
+              "Concorrencia e o problema realmente dificil. A memoria compartilhada precisa separar escrita proposta de verdade aceita, senao uma atualizacao alucinada contamina todos os agentes que lerem depois.",
+              "O padrao de design fica surpreendentemente proximo de controle de versao: schema tipado, branches isoladas, versoes imutaveis e merge explicito criam uma coordenacao multiagente muito mais segura."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/graph-based-agent-memory"
+        }
+      ]
+    },
+    {
       "id": "2026-07-07-eng",
       "date": "2026-07-07",
       "tokensUsed": 10882,
