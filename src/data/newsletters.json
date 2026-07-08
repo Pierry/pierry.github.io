@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-08-eng",
+      "date": "2026-07-08",
+      "tokensUsed": 10008,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Sajeetharan Sinnathurai",
+          "title": {
+            "en": "Building on Vercel's eve + Azure Cosmos DB: An Agent That Remembers",
+            "pt": "Construindo um agente com memoria persistente usando eve e Azure Cosmos DB"
+          },
+          "summary": {
+            "en": "Microsoft shows a practical architecture for giving AI agents durable memory by combining Vercel's filesystem-first eve agent framework with Azure Cosmos DB as a single store for operational data and vector search. The post is relevant because it treats memory as an infrastructure problem, not just a prompt trick: reuse a singleton database client, model data for cheap point reads, keep semantic recall inside a single partition, and use native TTL and vector indexes so long-term context becomes a production-ready subsystem instead of a demo add-on.",
+            "pt": "A Microsoft mostra uma arquitetura pratica para dar memoria duravel a agentes de IA combinando o framework eve, da Vercel, com o Azure Cosmos DB como armazenamento unico para dados operacionais e busca vetorial. O texto importa porque trata memoria como problema de infraestrutura, nao como truque de prompt: reuso de cliente singleton, modelagem para point reads baratos, recall semantico dentro de uma unica particao e uso de TTL nativo com indices vetoriais para transformar contexto de longo prazo em subsistema de producao, e nao em demo improvisada."
+          },
+          "insights": {
+            "en": [
+              "The strongest architectural point is collapsing app state and vector memory into the same database. That removes an extra persistence layer and keeps operational data, embeddings, TTL, and recall in one place.",
+              "The production discipline matters more than the agent wrapper. Reusing a singleton Cosmos client, choosing immutable high-cardinality partition keys, and avoiding regular indexing on raw vectors are the kinds of details that determine whether memory stays cheap and reliable at scale.",
+              "Semantic memory becomes useful only when recall stays on the hot path. The design keeps vector search scoped to a single session partition, which is the difference between a neat prototype and a memory system that can support real support, coding, or content agents."
+            ],
+            "pt": [
+              "O ponto arquitetural mais forte e juntar estado da aplicacao e memoria vetorial no mesmo banco. Isso elimina uma camada extra de persistencia e mantem dados operacionais, embeddings, TTL e recall no mesmo lugar.",
+              "A disciplina de producao importa mais do que o wrapper do agente. Reusar um singleton do Cosmos, escolher particoes imutaveis e de alta cardinalidade e tirar vetores brutos do indice regular sao detalhes que definem se a memoria continua barata e confiavel em escala.",
+              "Memoria semantica so vira vantagem quando o recall cabe no hot path. O desenho mantem a busca vetorial dentro da particao da sessao, que e a diferenca entre um prototipo simpatico e um sistema capaz de sustentar agentes reais de suporte, codigo ou conteudo."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/cosmosdb/cosmos-db-agent-memory"
+        }
+      ]
+    },
+    {
       "id": "2026-07-08",
       "date": "2026-07-08",
       "tokensUsed": 1499214,
