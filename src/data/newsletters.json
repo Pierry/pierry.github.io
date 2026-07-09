@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-09-eng",
+      "date": "2026-07-09",
+      "tokensUsed": 17734,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Sidharth Bajaj",
+          "title": {
+            "en": "Meta's AI Storage Blueprint at Scale",
+            "pt": "O blueprint de storage para IA em escala da Meta"
+          },
+          "summary": {
+            "en": "Meta explains how it rebuilt its BLOB storage stack to stop storage from bottlenecking large AI training jobs. The key move was architectural, not incremental: replace layered metadata lookups with a unified O(1) metadata schema backed by ZippyDB, remove the dataplane proxy in favor of a fat client that streams directly from Tectonic, and deploy regional storage stacks colocated with GPUs. On top of that new foundation, Meta added distributed caches, read-plan caching, hedged reads, and dynamic client-side concurrency control to absorb spikes, reduce tail latency, and keep hundreds of thousands of GPUs fed without stalls.",
+            "pt": "A Meta mostra como reconstruiu sua stack de BLOB storage para impedir que storage vire gargalo em workloads grandes de treino de IA. O salto principal foi arquitetural, nao incremental: trocar varias camadas de lookup de metadata por um schema unificado com lookup O(1) sobre ZippyDB, remover o proxy do dataplane em favor de um fat client que faz streaming direto do Tectonic e levar stacks regionais de storage para perto das GPUs. Em cima dessa base, a empresa adicionou caches distribuidos, cache de read plan, hedged reads e controle dinamico de concorrencia no cliente para absorver picos, reduzir tail latency e manter centenas de milhares de GPUs trabalhando sem stalls."
+          },
+          "insights": {
+            "en": [
+              "AI infrastructure changes the optimization target. When GPUs dominate cost and power, storage is no longer optimized for cheapest bytes, but for bounded latency, predictable throughput, and minimal overhead on the hot path.",
+              "The biggest gain came from simplifying the control plane. Flattening metadata into a unified schema and removing the proxy path turned a stack of cross-region lookups into direct reads with near-zero extra layers.",
+              "Meta treats caching and adaptive concurrency as first-class reliability tools, not bolt-ons. Distributed data cache, read-plan cache, hedged reads, and client-side congestion control are what make the new design survive bursts and hot spots in real training clusters."
+            ],
+            "pt": [
+              "Infra de IA muda o alvo da otimizacao. Quando GPU domina custo e energia, storage deixa de ser otimizado pelo byte mais barato e passa a ser otimizado por latencia previsivel, throughput consistente e overhead minimo no hot path.",
+              "O maior ganho veio de simplificar o control plane. Achatar a metadata em um schema unificado e remover o caminho com proxy trocou uma pilha de lookups cross-region por leituras diretas com quase zero camada extra.",
+              "A Meta trata cache e concorrencia adaptativa como mecanismos centrais de confiabilidade, nao como remendos. Cache distribuido de dados, cache de read plan, hedged reads e controle de congestionamento no cliente sao o que faz o desenho sobreviver a picos e hot spots em clusters reais."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-09",
       "date": "2026-07-09",
       "tokensUsed": 24858,
