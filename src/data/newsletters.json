@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-10-eng",
+      "date": "2026-07-10",
+      "tokensUsed": 21741,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Uber Engineering",
+          "title": {
+            "en": "GitFarm: Git as a Service for Large-Scale Monorepos",
+            "pt": "GitFarm: Git como servico para monorepos em larga escala"
+          },
+          "summary": {
+            "en": "Uber presents GitFarm, a platform that turns Git into a centralized cloud service for monorepo-heavy automation. Instead of forcing every CI worker and internal service to clone and sync multi-gigabyte repositories locally, GitFarm exposes a gRPC API that runs standard Git commands inside isolated ephemeral sandboxes backed by pre-warmed repository and container pools. The design cuts checkout access to under 500 ms, reduces client-side compute and I/O by more than 80%, and moves the scaling bottleneck away from thousands of redundant clones toward a shared, policy-controlled execution layer.",
+            "pt": "A Uber apresenta o GitFarm, uma plataforma que transforma Git em um servico centralizado na nuvem para automacoes que dependem de monorepos grandes. Em vez de obrigar cada worker de CI e servico interno a clonar e sincronizar repositorios de muitos gigabytes localmente, o GitFarm expoe uma API gRPC que executa comandos Git padrao em sandboxes efemeros e isolados, apoiados por pools pre-aquecidos de repositorios e containers. O desenho reduz o acesso a checkout para menos de 500 ms, corta em mais de 80% o consumo de compute e I/O do lado cliente e tira o gargalo de milhares de clones redundantes para uma camada compartilhada de execucao com controle de politicas."
+          },
+          "insights": {
+            "en": [
+              "The strongest architectural move is treating Git operations as a shared platform capability, not a side effect that every CI agent reimplements with its own local clone.",
+              "Pre-warmed pools of bare repos, materialized checkouts, and sandboxes are what make the latency story work. The key win is not a new Git feature, but removing repeated cold starts from the workflow.",
+              "GitFarm is a good example of bounded centralization: Uber keeps native Git semantics, per-request freshness controls, and identity-scoped authorization while still gaining cluster-level efficiency."
+            ],
+            "pt": [
+              "O movimento arquitetural mais forte e tratar operacoes de Git como capacidade de plataforma compartilhada, e nao como efeito colateral que cada agente de CI precisa reimplementar com seu proprio clone local.",
+              "Pools pre-aquecidos de bare repos, checkouts materializados e sandboxes sao o que fazem a latencia cair de verdade. O ganho principal nao vem de um novo recurso do Git, mas de remover cold starts repetidos do fluxo.",
+              "O GitFarm e um bom exemplo de centralizacao com limites: a Uber preserva a semantica nativa do Git, controles de freshness por requisicao e autorizacao escopada por identidade enquanto ganha eficiencia no nivel do cluster."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/gitfarm-as-a-service/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-09-eng",
       "date": "2026-07-09",
       "tokensUsed": 17734,
