@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-11-eng",
+      "date": "2026-07-11",
+      "tokensUsed": 10899,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Spotify Engineering",
+          "author": "Pavlina Mitsou and Jonathan Warburton",
+          "title": {
+            "en": "Encoding Your Domain Expert: The Context Layer Behind Spotify's Data Assistant",
+            "pt": "Codificando seu especialista de dominio: a camada de contexto por tras do assistente de dados do Spotify"
+          },
+          "summary": {
+            "en": "Spotify describes the architecture behind an AI data assistant that answers natural-language questions across more than 70,000 datasets without dumping the whole warehouse into a model context window. The key move is a domain-owned context layer called clusters: each cluster packages the right datasets, curated question-and-SQL examples, and business docs so the agent can choose relevant context, generate SQL, and return traceable answers. The system scales because Spotify treats context as a maintained product surface with ownership, health signals, and feedback loops, not as raw schema retrieval.",
+            "pt": "O Spotify descreve a arquitetura de um assistente de dados com IA que responde perguntas em linguagem natural sobre mais de 70 mil datasets sem tentar enfiar o data warehouse inteiro na janela de contexto do modelo. O movimento central e uma camada de contexto orientada por dominio chamada clusters: cada cluster empacota os datasets certos, exemplos curados de pergunta e SQL, e documentacao de negocio para que o agente escolha o contexto relevante, gere SQL e devolva respostas rastreaveis. O sistema escala porque o Spotify trata contexto como superficie de produto mantida com ownership, sinais de saude e feedback continuo, e nao como simples busca em schemas crus."
+          },
+          "insights": {
+            "en": [
+              "The strongest design choice is putting domain experts in charge of context curation instead of trusting raw schema dumps or query history to teach the model what matters.",
+              "Spotify turns reliability into an operating model: clusters have owners, canonical SQL examples, supporting docs, and health scores that degrade when schemas or patterns drift.",
+              "This is a practical production pattern for enterprise AI: narrow the model to a well-owned slice of the warehouse, then close the loop with usage data and expert review."
+            ],
+            "pt": [
+              "A decisao de design mais forte e colocar especialistas de dominio no comando da curadoria de contexto, em vez de confiar que schema bruto ou historico de queries ensinarao sozinho o que importa ao modelo.",
+              "O Spotify transforma confiabilidade em modelo operacional: clusters tem donos, exemplos canonicos de SQL, documentacao de apoio e health scores que degradam quando schema ou padroes mudam.",
+              "Isso vira um padrao pratico para IA em producao: restringir o modelo a uma fatia bem governada do warehouse e fechar o ciclo com dados de uso e revisao de especialistas."
+            ]
+          },
+          "link": "https://engineering.atspotify.com/2026/6/encoding-your-domain-expert-the-context-layer-behind-spotifys-data-assistant/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-11",
       "date": "2026-07-11",
       "tokensUsed": 52510,
