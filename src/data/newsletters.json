@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-11",
+      "date": "2026-07-11",
+      "tokensUsed": 52510,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Good System Design Starts With Constraints, Not Diagrams, Not Tools",
+            "pt": "Bom system design comeca por restricoes, nao por diagramas nem ferramentas"
+          },
+          "summary": {
+            "en": "This issue argues that many engineers learn system design backwards by memorizing tools, diagrams, and platform choices before understanding the constraints that actually shape production behavior. Instead of starting with Kubernetes, queues, or service meshes, the author pushes readers to reason from latency, retries, bottlenecks, network hops, database limits, caching trade-offs, and failure modes. The article then connects that mindset to deliberate practice through classic system design exercises and real postmortems, so architectural knowledge turns into judgment about why systems slow down, become inconsistent, or grow expensive under pressure.",
+            "pt": "Esta edicao defende que muitos engenheiros aprendem system design de tras para frente, memorizando ferramentas, diagramas e escolhas de plataforma antes de entender as restricoes que realmente moldam o comportamento em producao. Em vez de comecar por Kubernetes, filas ou service meshes, o autor propoe raciocinar a partir de latencia, retries, gargalos, hops de rede, limites de banco, trade-offs de cache e modos de falha. O texto liga essa mentalidade a pratica deliberada com exercicios classicos de system design e postmortems reais, para que conhecimento arquitetural vire julgamento sobre por que sistemas ficam lentos, inconsistentes ou caros sob pressao."
+          },
+          "insights": {
+            "en": [
+              "The article's main correction is methodological: start with the forces acting on the system, not with the branded tools that might implement one possible answer.",
+              "Classic design exercises are useful because each one isolates a different family of trade-offs such as fan-out, idempotency, caching, ordering, or backpressure.",
+              "Postmortems matter because they train the missing skill diagrams cannot teach on their own: explaining real behavior when latency spikes, retries amplify failures, and downstream dependencies drift under load."
+            ],
+            "pt": [
+              "A correcao principal do texto e metodologica: comece pelas forcas que agem no sistema, nao pelas ferramentas famosas que implementam apenas uma resposta possivel.",
+              "Exercicios classicos de design sao uteis porque cada um isola uma familia diferente de trade-offs, como fan-out, idempotencia, cache, ordenacao ou backpressure.",
+              "Postmortems importam porque treinam a habilidade que diagramas nao ensinam sozinhos: explicar o comportamento real quando a latencia sobe, retries ampliam falhas e dependencias downstream degradam sob carga."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/most-engineers-learn-system-design-backwards"
+        }
+      ]
+    },
+    {
       "id": "2026-07-10-eng",
       "date": "2026-07-10",
       "tokensUsed": 21741,
