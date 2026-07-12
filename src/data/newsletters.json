@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-12-eng",
+      "date": "2026-07-12",
+      "tokensUsed": 12145,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "David Paquette",
+          "title": {
+            "en": "Shrinking Azure Pipeline task extensions using esbuild",
+            "pt": "Reduzindo extensoes de tasks do Azure Pipelines com esbuild"
+          },
+          "summary": {
+            "en": "Microsoft shows how a small build-system change can remove a surprising amount of CI waste at scale. By bundling a Node-based Azure Pipelines task extension into a single tree-shaken JavaScript file with esbuild, the team cut package size from tens of megabytes and thousands of files down to three shipped artifacts per task. That reduced agent-side download and extraction time from roughly 4.5 seconds to 0.25 seconds per task, turning a packaging optimization into a material infrastructure efficiency win across large numbers of pipeline runs.",
+            "pt": "A Microsoft mostra como uma mudanca pequena no build pode eliminar bastante desperdicio de CI em escala. Ao empacotar uma extensao de task Node-based do Azure Pipelines em um unico arquivo JavaScript com tree-shaking via esbuild, o time reduziu o pacote de dezenas de megabytes e milhares de arquivos para apenas tres artefatos por task. Isso derrubou o tempo de download e extracao no agente de cerca de 4,5 segundos para 0,25 segundo por task, transformando uma otimizacao de packaging em ganho real de eficiencia de infraestrutura em grandes volumes de pipelines."
+          },
+          "insights": {
+            "en": [
+              "The core lesson is architectural, not cosmetic: artifact shape matters when the same package is downloaded and unpacked on every ephemeral CI agent over and over again.",
+              "Bundling for server-side tooling can have the same payoff it has on the frontend, because repeated transfer, zip extraction, and file-system churn are often the real bottlenecks.",
+              "The most useful production detail is the set of gotchas: duplicate stateful modules and broken __dirname-relative asset paths can quietly invalidate an otherwise simple bundling migration."
+            ],
+            "pt": [
+              "A licao principal e arquitetural, nao cosmetica: o formato do artefato importa quando o mesmo pacote e baixado e descompactado repetidamente em agentes efemeros de CI.",
+              "Bundling para tooling server-side pode render o mesmo ganho que no frontend, porque transferencia repetida, extracao de zip e churn de filesystem muitas vezes sao o gargalo real.",
+              "O detalhe mais util de producao esta nos gotchas: modulos stateful duplicados e caminhos relativos com __dirname podem quebrar silenciosamente uma migracao de bundling aparentemente simples."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/devops/shrinking-azure-pipeline-task-extensions-using-esbuild/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-12",
       "date": "2026-07-12",
       "tokensUsed": 26882,
