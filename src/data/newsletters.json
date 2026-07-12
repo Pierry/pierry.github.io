@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-12",
+      "date": "2026-07-12",
+      "tokensUsed": 26882,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hussein Nasser",
+          "author": "Hussein Nasser",
+          "title": {
+            "en": "How a Query Optimization Gave Birth to Infinite Scroll",
+            "pt": "Como uma otimizacao de query deu origem ao infinite scroll"
+          },
+          "summary": {
+            "en": "Hussein Nasser explains that infinite scroll was not born as a pure UX trick but as a systems response to the cost and instability of paginated database queries at scale. The video walks through the tradeoffs of offset pagination, why large offsets become expensive and inconsistent under continuous writes, and how cursor-like scrolling patterns reduce backend strain while changing product behavior. It is a strong architecture lens on how product patterns often emerge from database constraints.",
+            "pt": "Hussein Nasser mostra que o infinite scroll nao nasceu apenas como um truque de UX, mas como uma resposta de sistemas ao custo e a instabilidade de queries paginadas em bases grandes. O video percorre os tradeoffs da paginacao por offset, explica por que offsets altos ficam caros e inconsistentes com escritas continuas, e como padroes de scroll mais proximos de cursores aliviam a carga do backend ao mesmo tempo em que mudam o comportamento do produto. E uma boa lente de arquitetura sobre como padroes de produto nascem de restricoes de banco e escalabilidade."
+          },
+          "insights": {
+            "en": [
+              "Many interface decisions that look purely product-driven are actually downstream of database access patterns and query costs.",
+              "Offset pagination degrades with scale and concurrent writes, so the backend pressure can push teams toward cursor-based or feed-style retrieval models.",
+              "The useful lesson is architectural: when a UX pattern wins, look for the hidden storage and query constraint that made it practical."
+            ],
+            "pt": [
+              "Muitas decisoes de interface que parecem puramente de produto nascem, na pratica, de padroes de acesso a banco e custo de query.",
+              "Paginacao por offset piora com escala e escritas concorrentes, entao a pressao no backend pode empurrar times para modelos de leitura baseados em cursor ou feed.",
+              "A licao arquitetural mais util e esta: quando um padrao de UX vence, vale procurar qual restricao de armazenamento e consulta o tornou viavel."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=Tzt89dHF79Y"
+        }
+      ]
+    },
+    {
       "id": "2026-07-11-eng",
       "date": "2026-07-11",
       "tokensUsed": 10899,
