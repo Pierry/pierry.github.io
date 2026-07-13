@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-13",
+      "date": "2026-07-13",
+      "tokensUsed": 915644,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "How to Survive the Recommendation Engine Question",
+            "pt": "Como sobreviver a uma pergunta de system design sobre mecanismo de recomendacao"
+          },
+          "summary": {
+            "en": "This issue argues that recommendation-engine interviews are usually won or lost outside the ranking algorithm itself. The important architectural move is to separate recommendation generation from recommendation serving, so heavy candidate creation and scoring happen ahead of time while the online path stays fast, cheap, and resilient. From that lens, the real design problem becomes event collection, feature pipelines, freshness windows, fallbacks, cold-start handling, and low-latency delivery rather than trying to invent a perfect model during request time.",
+            "pt": "Esta edicao defende que perguntas de system design sobre recomendacao normalmente nao sao vencidas pelo algoritmo de ranking em si. O movimento arquitetural importante e separar a geracao das recomendacoes da camada de serving, deixando a criacao e pontuacao de candidatos fora do caminho online para manter a leitura rapida, barata e resiliente. Por essa lente, o problema real passa a ser coleta de eventos, pipelines de sinais, janelas de freshness, fallbacks, cold start e entrega com baixa latencia, em vez de tentar calcular tudo em tempo real a cada request."
+          },
+          "insights": {
+            "en": [
+              "The strongest takeaway is to treat recommendation generation and serving as different systems with different latency and reliability budgets.",
+              "A good answer focuses on precomputation, feature pipelines, caches, and fallback strategies because request-time joins and scoring make the serving path fragile fast.",
+              "The interview signal is architectural judgment: showing how you handle stale data, missing signals, and cold starts matters more than naming a fancy ML technique."
+            ],
+            "pt": [
+              "A licao mais forte e tratar geracao e serving de recomendacoes como sistemas diferentes, com orcamentos distintos de latencia e confiabilidade.",
+              "Uma boa resposta privilegia precomputacao, pipelines de sinais, caches e estrategias de fallback, porque joins e scoring em tempo de request fragilizam rapidamente o caminho online.",
+              "O sinal real da entrevista e julgamento arquitetural: mostrar como lidar com dados stale, sinais faltando e cold start importa mais do que citar uma tecnica sofisticada de ML."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/how-to-survive-the-recommendation"
+        }
+      ]
+    },
+    {
       "id": "2026-07-12-eng",
       "date": "2026-07-12",
       "tokensUsed": 12145,
