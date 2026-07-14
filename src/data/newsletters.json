@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-14",
+      "date": "2026-07-14",
+      "tokensUsed": 1848002,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "Kubernetes - A Deep Dive",
+            "pt": "Kubernetes em profundidade"
+          },
+          "summary": {
+            "en": "This issue packages Kubernetes as an architecture lesson rather than a tooling checklist. The valuable angle is how containers, scheduling, service discovery, autoscaling, and declarative control loops fit together to run distributed systems reliably across clusters. Instead of obsessing over commands, it frames Kubernetes as a coordination layer for resilience, deployment velocity, and infrastructure abstraction, which makes it broadly relevant to engineers thinking about platform architecture and operating models.",
+            "pt": "Esta edicao apresenta Kubernetes mais como uma licao de arquitetura do que como uma checklist de ferramenta. O angulo valioso esta em como containers, scheduling, service discovery, autoscaling e control loops declarativos se encaixam para operar sistemas distribuidos com confiabilidade em clusters. Em vez de focar em comandos, o texto enquadra Kubernetes como uma camada de coordenacao para resiliencia, velocidade de deploy e abstracao de infraestrutura, o que o torna amplamente relevante para quem pensa em arquitetura de plataforma e modelo operacional."
+          },
+          "insights": {
+            "en": [
+              "Kubernetes matters less as a product and more as a pattern for separating desired state, reconciliation, and failure recovery in complex distributed systems.",
+              "The architectural value is in the control plane model: scheduling, self-healing, discovery, and scaling become reusable platform capabilities instead of application-specific code.",
+              "For engineering leaders, the useful takeaway is that platform abstraction only pays off when it reduces operational variance and speeds up safe change across many services."
+            ],
+            "pt": [
+              "Kubernetes importa menos como produto e mais como padrao de separacao entre desired state, reconciliacao e recuperacao de falhas em sistemas distribuidos complexos.",
+              "O valor arquitetural esta no modelo de control plane: scheduling, self-healing, discovery e scaling viram capacidades reutilizaveis de plataforma em vez de codigo especifico de cada aplicacao.",
+              "Para lideranca de engenharia, a licao util e que abstracao de plataforma so compensa quando reduz variacao operacional e acelera mudancas seguras em muitos servicos."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/kubernetes-architecture"
+        }
+      ]
+    },
+    {
       "id": "2026-07-13",
       "date": "2026-07-13",
       "tokensUsed": 915644,
