@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-14-eng",
+      "date": "2026-07-14",
+      "tokensUsed": 9256,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Blaise Sanouillet",
+          "title": {
+            "en": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
+            "pt": "Modernizando o servico de Ads da Meta com um scheduler de kernel open source"
+          },
+          "summary": {
+            "en": "Meta describes how it used `sched_ext`, the upstream BPF-based extensible Linux scheduler, to tailor CPU scheduling to the latency profile of its ads serving fleet. The trigger was a kernel upgrade path that introduced latency regressions under the general-purpose EEVDF scheduler, so the team encoded workload-aware priorities directly into a custom policy for request-path threads versus background work. The result was a meaningful production win: lower p99 latency in ads retrieval, more ads ranked per request, and measurable fleet-wide power savings, turning kernel scheduling into an application-level optimization lever.",
+            "pt": "A Meta mostra como usou o `sched_ext`, o scheduler extensivel do Linux baseado em BPF e upstream, para adaptar o agendamento de CPU ao perfil de latencia da sua frota de ad serving. O gatilho foi uma trilha de upgrade de kernel que trouxe regressao de latencia com o scheduler generalista EEVDF, levando o time a codificar prioridades conscientes da carga entre threads do caminho critico e trabalho de fundo. O resultado foi um ganho real em producao: queda relevante no p99 da etapa de retrieval, mais anuncios ranqueados por request e economia mensuravel de energia na frota, transformando scheduling de kernel em alavanca direta de performance da aplicacao."
+          },
+          "insights": {
+            "en": [
+              "The architectural lesson is that the scheduler can be treated as part of the application stack when the workload has clear latency-critical and background execution classes.",
+              "Meta turned a risky kernel migration into a safer operating model by moving policy iteration into user-space BPF, which shortens the feedback loop from months to days.",
+              "This is a strong example of scale engineering where small p99 improvements compound into business metrics, power efficiency, and less operational fragmentation across fleets."
+            ],
+            "pt": [
+              "A licao arquitetural e que o scheduler pode ser tratado como parte da stack da aplicacao quando a carga tem classes bem definidas de execucao critica e de background.",
+              "A Meta transformou uma migracao arriscada de kernel em um modelo operacional mais seguro ao mover a iteracao de politica para BPF em user space, encurtando o ciclo de feedback de meses para dias.",
+              "Este e um exemplo forte de engenharia em escala em que pequenas melhoras de p99 se acumulam em metricas de negocio, eficiencia energetica e menos fragmentacao operacional na frota."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/07/13/ml-applications/modernizing-the-meta-ads-service-with-an-open-source-kernel-scheduler/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-14",
       "date": "2026-07-14",
       "tokensUsed": 1848002,
