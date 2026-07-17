@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-17",
+      "date": "2026-07-17",
+      "tokensUsed": 28210,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Codex",
+          "author": "Saurabh Dashora",
+          "title": {
+            "en": "Top System Design Performance Metrics",
+            "pt": "Principais metricas de performance em system design"
+          },
+          "summary": {
+            "en": "This issue turns system performance into a practical architecture checklist. Instead of staying at the level of patterns and tools, it walks through the core metrics that tell you whether a system is actually healthy: availability, throughput, latency, and scalability. The useful angle is that each metric is tied to concrete design levers such as load balancing, redundancy, caching, asynchronous work, sharding, and horizontal scaling, making it a strong refresher on how operational goals map back to architectural choices.",
+            "pt": "Esta edicao transforma performance de sistemas em uma checklist arquitetural pratica. Em vez de ficar apenas no nivel de padroes e ferramentas, ela percorre as metricas centrais que mostram se um sistema esta realmente saudavel: disponibilidade, throughput, latencia e escalabilidade. O angulo mais util e ligar cada metrica a alavancas concretas de design, como load balancing, redundancia, cache, processamento assincrono, sharding e escalabilidade horizontal, funcionando como um bom refresher de como objetivos operacionais se conectam a decisoes de arquitetura."
+          },
+          "insights": {
+            "en": [
+              "Performance metrics are only useful when they are attached to explicit design levers, not treated as dashboard vanity numbers.",
+              "Availability, throughput, latency, and scalability often trade off against each other, so architecture should be optimized for the workload that matters most.",
+              "The strongest takeaway is operational: system design quality becomes visible when you can explain which metric each architectural choice is protecting."
+            ],
+            "pt": [
+              "Metricas de performance so sao uteis quando estao ligadas a alavancas explicitas de design, e nao tratadas como numeros bonitos de dashboard.",
+              "Disponibilidade, throughput, latencia e escalabilidade frequentemente competem entre si, entao a arquitetura deve ser otimizada para a carga que realmente importa.",
+              "A licao mais forte e operacional: a qualidade do system design aparece quando voce consegue explicar qual metrica cada decisao arquitetural esta protegendo."
+            ]
+          },
+          "link": "https://newsletter.systemdesigncodex.com/p/top-system-design-performance-metrics"
+        }
+      ]
+    },
+    {
       "id": "2026-07-14-eng",
       "date": "2026-07-14",
       "tokensUsed": 9256,
