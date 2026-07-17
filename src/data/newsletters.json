@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-17-eng",
+      "date": "2026-07-17",
+      "tokensUsed": 18507,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Netflix Tech Blog",
+          "author": "Parth Jain, Rakesh Sukumar, Yingwu Zhao, Renzo Sanchez-Silva, Nathan Fisher",
+          "title": {
+            "en": "Building Service Topology at Scale: Architecture, Challenges, and Lessons Learned",
+            "pt": "Construindo topologia de servicos em escala: arquitetura, desafios e licoes aprendidas"
+          },
+          "summary": {
+            "en": "Netflix explains how it built a near real-time service dependency map across a large distributed estate by combining multi-region Kafka ingestion, reactive pipelines with backpressure, staged aggregation, and time-aware graph storage. The most valuable part is not the observability pitch itself, but the architecture trade-offs behind making topology useful in production: resolving intermediary hops before persistence, separating network and IPC layers for independent optimization, and accepting controlled freshness lag instead of dropping data under load. It is a strong systems-design read because the team shows how data partitioning, flow control, and query-path design all had to work together before the platform became operationally trustworthy at scale.",
+            "pt": "A Netflix mostra como construiu um mapa de dependencias entre servicos quase em tempo real em um ambiente distribuido enorme, combinando ingestao por Kafka multi-regiao, pipelines reativos com backpressure, agregacao em estagios e armazenamento de grafo orientado a tempo. A parte mais valiosa nao e a proposta de observabilidade em si, mas os trade-offs de arquitetura para tornar a topologia realmente util em producao: resolver hops intermediarios antes da persistencia, separar as camadas de rede e IPC para otimizacao independente e aceitar algum atraso controlado de freshness em vez de perder dados sob carga. E uma leitura forte de system design porque o time mostra como particionamento de dados, controle de fluxo e desenho do caminho de consulta precisaram funcionar juntos antes de a plataforma virar algo operacionalmente confiavel em escala."
+          },
+          "insights": {
+            "en": [
+              "Backpressure was not an implementation detail but the core reliability mechanism that let the topology pipeline slow down gracefully instead of crashing or dropping flow data.",
+              "The three-stage aggregation design shows that data locality and repartitioning strategy often matter more than raw compute when you need to transform noisy infrastructure signals into application-level relationships.",
+              "A practical architecture lesson is that near real-time systems often win by choosing slightly delayed correctness over instant but incomplete results during incidents."
+            ],
+            "pt": [
+              "Backpressure nao foi um detalhe de implementacao, mas o mecanismo central de confiabilidade que permitiu ao pipeline desacelerar com graca em vez de cair ou perder dados de fluxo.",
+              "O desenho de agregacao em tres estagios mostra que localidade dos dados e estrategia de reparticionamento muitas vezes importam mais do que compute bruto quando voce precisa transformar sinais ruidosos de infraestrutura em relacoes entre aplicacoes.",
+              "A licao arquitetural mais pratica e que sistemas quase em tempo real muitas vezes vencem ao escolher corretude com pequeno atraso, em vez de resultados imediatos porem incompletos durante incidentes."
+            ]
+          },
+          "link": "https://netflixtechblog.com/building-service-topology-at-scale-architecture-challenges-and-lessons-learned-f4b792f3f0d8"
+        }
+      ]
+    },
+    {
       "id": "2026-07-17",
       "date": "2026-07-17",
       "tokensUsed": 28210,
