@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-18-eng",
+      "date": "2026-07-18",
+      "tokensUsed": 9738,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Lily Ma",
+          "title": {
+            "en": "How to build long-running MCP tools on Azure Functions",
+            "pt": "Como construir tools MCP de longa duracao com Azure Functions"
+          },
+          "summary": {
+            "en": "Microsoft explains a practical architecture for MCP tools that outlive the synchronous request window most clients allow. The post is valuable because it treats long-running agent workflows as a systems problem: request/response tool calls break when work takes minutes, so the server needs durable orchestration, resumable state, polling semantics, and clear lifecycle boundaries between agent, client, and backend workflow engine. Using Durable Functions as the bridge until the MCP Tasks extension is widely supported, the article shows how to return fast when possible, hand back workflow identifiers when not, and preserve reliability without forcing fragile in-memory agent state.",
+            "pt": "A Microsoft explica uma arquitetura pratica para tools MCP que vivem alem da janela sincrona que a maioria dos clientes aceita. O texto vale a leitura porque trata workflows longos de agentes como um problema de sistemas: chamadas request/response quebram quando o trabalho leva minutos, entao o servidor precisa de orquestracao duravel, estado retomavel, semantica de polling e fronteiras claras de ciclo de vida entre agente, cliente e o motor de workflow. Usando Durable Functions como ponte ate o MCP Tasks ganhar suporte amplo, o artigo mostra como responder rapido quando der, devolver identificadores de workflow quando nao der e preservar confiabilidade sem depender de estado fragil na memoria do agente."
+          },
+          "insights": {
+            "en": [
+              "The core design lesson is that long-running agent tools should be modeled as workflows with explicit state transitions, not stretched synchronous calls that hope the client timeout is generous enough.",
+              "Durable orchestration gives the backend responsibility for checkpointing, recovery, and scaling, which is much safer than making the agent remember volatile execution state like workflow identifiers and partial progress.",
+              "The MCP Tasks extension points to the right long-term contract: clients own polling and lifecycle management, while servers decide when work should switch from inline response to asynchronous execution."
+            ],
+            "pt": [
+              "A licao central de design e que tools de agentes com execucao longa devem ser modeladas como workflows com transicoes de estado explicitas, e nao como chamadas sincronas esticadas na esperanca de que o timeout do cliente aguente.",
+              "A orquestracao duravel coloca no backend a responsabilidade por checkpoint, recuperacao e escala, o que e bem mais seguro do que fazer o agente lembrar estado volatil como workflow ids e progresso parcial.",
+              "A extensao MCP Tasks aponta para o contrato certo no longo prazo: clientes cuidam de polling e do ciclo de vida, enquanto servidores decidem quando o trabalho precisa sair da resposta inline e virar execucao assincrona."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/azure-sdk/long-running-mcp-tools-azure-functions/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-18",
       "date": "2026-07-18",
       "tokensUsed": 1353480,
