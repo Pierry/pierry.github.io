@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-18",
+      "date": "2026-07-18",
+      "tokensUsed": 1353480,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Louis-François Bouchard and Neo Kim",
+          "title": {
+            "en": "How to Build a Domain Expert AI",
+            "pt": "Como construir uma IA especialista em dominio"
+          },
+          "summary": {
+            "en": "This issue explains fine-tuning as the step that turns a general LLM into a domain-specialized system that writes, reasons, and formats outputs the way a specific profession expects. The useful architecture angle is not just model training itself, but the operating model around it: high-quality domain datasets feed the fine-tune, evaluation harnesses gate release decisions, and teams choose fine-tuning only when prompting or RAG cannot reliably encode the domain conventions they need. It is broadly relevant because it frames domain AI as a systems-design problem around data, defaults, latency, and quality control rather than a prompt-writing trick.",
+            "pt": "Esta edicao explica o fine-tuning como a etapa que transforma um LLM generalista em um sistema especializado em dominio, capaz de escrever, raciocinar e formatar saidas do jeito que uma profissao especifica espera. O angulo mais util nao e apenas o treino do modelo, mas o modelo operacional ao redor dele: datasets de alta qualidade alimentam o fine-tune, harnesses de avaliacao decidem se algo pode ir para producao, e o time so escolhe esse caminho quando prompting ou RAG nao conseguem capturar com confianca as convencoes do dominio. O tema e amplamente relevante porque enquadra IA de dominio como problema de arquitetura de dados, defaults, latencia e controle de qualidade, e nao como um truque de prompt."
+          },
+          "insights": {
+            "en": [
+              "Fine-tuning is most valuable when the missing piece is not factual knowledge but domain-specific structure, tone, shorthand, and output conventions that must become the model default.",
+              "A strong domain AI stack depends on more than the model: curated training examples, evaluation gates, and clear ship criteria are what make specialization operationally trustworthy.",
+              "The key decision is architectural: use prompting or RAG when retrieval is enough, and reserve fine-tuning for cases where consistency, latency, and format fidelity matter on every call."
+            ],
+            "pt": [
+              "Fine-tuning gera mais valor quando o problema nao e falta de conhecimento factual, mas sim estrutura, tom, abreviacoes e convencoes de saida que precisam virar o comportamento padrao do modelo.",
+              "Uma stack forte de IA de dominio depende de mais do que o modelo: exemplos de treino curados, gates de avaliacao e criterios claros de release sao o que tornam a especializacao confiavel na pratica.",
+              "A decisao principal e arquitetural: use prompting ou RAG quando recuperacao de contexto basta, e reserve fine-tuning para casos em que consistencia, latencia e fidelidade de formato importam em toda chamada."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/fine-tuning-ai-models"
+        }
+      ]
+    },
+    {
       "id": "2026-07-17-eng",
       "date": "2026-07-17",
       "tokensUsed": 18507,
