@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-19",
+      "date": "2026-07-19",
+      "tokensUsed": 1038143,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "The T-Shaped Dev",
+          "author": "The T-Shaped Dev",
+          "title": {
+            "en": "7 Things That Break LLM Apps in Production",
+            "pt": "7 coisas que quebram apps com LLM em producao"
+          },
+          "summary": {
+            "en": "This post is a practical production-readiness checklist for LLM applications. Instead of treating an LLM like a magic function call, it reframes it as an unreliable external dependency that needs the same engineering discipline as any other critical service: strict timeouts, bounded retries, prompt-injection controls, schema validation, token budgets, eval harnesses, and real observability. That makes it broadly relevant for any engineering team moving from AI demos to systems that need to survive real traffic, real costs, and real failure modes.",
+            "pt": "Este texto funciona como uma checklist de prontidao para producao em apps com LLM. Em vez de tratar o modelo como uma chamada magica de funcao, ele o reposiciona como uma dependencia externa nao confiavel que exige a mesma disciplina de engenharia de qualquer servico critico: timeouts rigidos, retries limitados, protecao contra prompt injection, validacao por schema, controle de tokens, harness de evals e observabilidade de verdade. Isso o torna amplamente relevante para qualquer time que esteja saindo do demo de IA e entrando em sistemas que precisam sobreviver a trafego real, custo real e falhas reais."
+          },
+          "insights": {
+            "en": [
+              "The biggest shift is architectural: an LLM should be treated like a flaky networked subsystem, not like deterministic business logic.",
+              "Most production failures come from ordinary systems gaps such as missing timeouts, weak guardrails, invisible costs, poor context management, and lack of observability.",
+              "The same contract-first mindset used in mature backends applies here too: validate outputs, constrain tools, run evals, and fail loudly when assumptions break."
+            ],
+            "pt": [
+              "A principal mudanca de mentalidade e arquitetural: um LLM deve ser tratado como um subsistema de rede instavel, e nao como logica de negocio deterministica.",
+              "A maior parte das falhas em producao vem de lacunas normais de engenharia, como ausencia de timeout, guardrails fracos, custo invisivel, contexto mal gerenciado e falta de observabilidade.",
+              "A mesma mentalidade orientada a contratos usada em backends maduros vale aqui: valide saidas, restrinja tools, rode evals e falhe de forma explicita quando as premissas quebrarem."
+            ]
+          },
+          "link": "https://thetshaped.dev/p/7-things-that-break-llm-apps-in-production-ai"
+        }
+      ]
+    },
+    {
       "id": "2026-07-18-eng",
       "date": "2026-07-18",
       "tokensUsed": 9738,
