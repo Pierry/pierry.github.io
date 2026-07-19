@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-19-eng",
+      "date": "2026-07-19",
+      "tokensUsed": 9159,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Netflix Tech Blog",
+          "author": "AI Platform's Model Runtime team and Inference team",
+          "title": {
+            "en": "In-House LLM Serving at Netflix",
+            "pt": "Serving interno de LLMs na Netflix"
+          },
+          "summary": {
+            "en": "Netflix describes how it brought LLM inference into its existing production serving stack instead of treating it as a separate ML silo. The post is valuable because it focuses on the system-design trade-offs behind that move: choosing vLLM for operational flexibility, keeping Triton as the shared GPU runtime, exposing an OpenAI-compatible API without breaking the company's existing gRPC serving path, and adding versioned deployments when model interface changes would otherwise break live consumers. It is a strong architecture read for teams trying to turn LLMs into a first-class production capability rather than a sidecar experiment.",
+            "pt": "A Netflix mostra como trouxe inferencia de LLMs para dentro da sua stack de serving de producao, em vez de tratar isso como um silo separado de ML. O texto vale pela discussao dos trade-offs de system design por tras dessa decisao: escolher vLLM pela flexibilidade operacional, manter o Triton como runtime compartilhado de GPU, expor uma API compativel com OpenAI sem quebrar o caminho existente de gRPC e adicionar deploys versionados quando mudancas de interface do modelo poderiam derrubar consumidores em producao. E uma leitura forte para times que querem transformar LLMs em capacidade nativa de plataforma, e nao em experimento paralelo."
+          },
+          "insights": {
+            "en": [
+              "The key architectural move is organizational as much as technical: LLM inference joins the same production serving platform, rollout controls, and observability model already used for other model types.",
+              "Netflix chose vLLM less for raw benchmark wins and more for operational reasons such as easier debugging, custom decoding hooks, and faster iteration on non-standard models.",
+              "Versioned GPU deployments are the practical answer when model schema changes would otherwise cause old clients to send incompatible requests during rollout."
+            ],
+            "pt": [
+              "A jogada arquitetural principal e tao organizacional quanto tecnica: a inferencia de LLM entra na mesma plataforma de serving, nos mesmos controles de rollout e no mesmo modelo de observabilidade usados pelos outros modelos.",
+              "A escolha por vLLM apareceu menos como disputa de benchmark e mais como decisao operacional, por causa de debugging melhor, hooks para decoding customizado e iteracao mais rapida em modelos nao padrao.",
+              "Deploys versionados em GPU sao a resposta pratica quando mudancas de schema do modelo fariam clientes antigos enviar requests incompativeis durante a migracao."
+            ]
+          },
+          "link": "https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c"
+        }
+      ]
+    },
+    {
       "id": "2026-07-19",
       "date": "2026-07-19",
       "tokensUsed": 1038143,
