@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-20",
+      "date": "2026-07-20",
+      "tokensUsed": 38831,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "AlgoMaster",
+          "author": "Ashish Pratap Singh",
+          "title": {
+            "en": "Kafka vs RabbitMQ vs SQS",
+            "pt": "Kafka vs RabbitMQ vs SQS"
+          },
+          "summary": {
+            "en": "This article is a clear architecture-level comparison of three messaging patterns teams routinely treat as interchangeable when they are not. Its value is in mapping the core model of each system to the workloads it actually fits: Kafka as a retained distributed log for replayable event streams, RabbitMQ as a broker optimized for routing and low-latency task delivery, and SQS as the managed queue for simpler operational overhead. That makes it broadly relevant for engineers and managers because it turns a common infrastructure choice into a trade-off discussion about throughput, replay, routing, operational burden, and the shape of the system you are really trying to build.",
+            "pt": "Este artigo faz uma comparacao arquitetural bem clara entre tres sistemas de mensageria que muita gente trata como se fossem intercambiaveis, quando nao sao. O valor do texto esta em ligar o modelo central de cada opcao ao tipo de carga que ela realmente atende: Kafka como log distribuido com retencao e replay, RabbitMQ como broker otimizado para roteamento e entrega de tarefas com baixa latencia, e SQS como fila gerenciada para quem quer reduzir custo operacional. Isso o torna amplamente relevante para devs e gestores porque transforma uma escolha comum de infraestrutura em uma discussao objetiva sobre throughput, replay, roteamento, operacao e o formato do sistema que se quer construir."
+          },
+          "insights": {
+            "en": [
+              "Kafka is the right fit when events need to remain a durable shared stream that multiple consumers can replay and process independently over time.",
+              "RabbitMQ wins when the hard problem is message routing and fast reliable delivery to the right worker, not long-term retention or stream replay.",
+              "SQS is often the best answer when the queue is operational plumbing rather than strategic infrastructure, because managed simplicity can outweigh feature depth."
+            ],
+            "pt": [
+              "Kafka faz mais sentido quando os eventos precisam continuar disponiveis como stream duravel, com replay e varios consumidores independentes ao longo do tempo.",
+              "RabbitMQ vence quando o problema dificil e rotear mensagens e entregar trabalho rapido ao worker certo, e nao reter historico ou fazer replay de stream.",
+              "SQS costuma ser a melhor resposta quando a fila e mais encanamento operacional do que infraestrutura estrategica, porque simplicidade gerenciada pode valer mais do que profundidade de recursos."
+            ]
+          },
+          "link": "https://blog.algomaster.io/p/kafka-vs-rabbitmq-vs-sqs"
+        }
+      ]
+    },
+    {
       "id": "2026-07-19-eng",
       "date": "2026-07-19",
       "tokensUsed": 9159,
