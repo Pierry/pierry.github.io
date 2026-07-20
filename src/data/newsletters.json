@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-20-eng",
+      "date": "2026-07-20",
+      "tokensUsed": 9450,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Waldek Mastykarz",
+          "title": {
+            "en": "How to test agent skills without hitting real APIs",
+            "pt": "Como testar skills de agentes sem chamar APIs reais"
+          },
+          "summary": {
+            "en": "Microsoft argues that evaluating agent skills against live APIs is the wrong default because it creates cost, mutates production data, and introduces nondeterminism from external state changes. The useful engineering idea is to keep the skill pointed at its real URLs while a local proxy emulates the API with stable payloads and correct HTTP semantics, so teams can run repeatable eval suites without rewriting the skill or maintaining a full fake backend. That makes the post broadly relevant for teams moving from ad hoc agent demos to disciplined test and release workflows.",
+            "pt": "A Microsoft argumenta que avaliar skills de agentes contra APIs reais e o default errado, porque isso gera custo, altera dados de producao e introduz nao determinismo por mudancas de estado externas. A ideia de engenharia mais util e manter a skill apontando para as URLs reais enquanto um proxy local emula a API com payloads estaveis e semantica HTTP correta, permitindo rodar suites repetiveis de eval sem reescrever a skill nem manter um backend fake completo. Isso torna o texto relevante para times que estao saindo de demos ad hoc de agentes e entrando em fluxos disciplinados de teste e release."
+          },
+          "insights": {
+            "en": [
+              "The core lesson is architectural: agent evals should isolate API dependencies the same way mature teams isolate production databases in integration testing.",
+              "Proxy-based emulation is a pragmatic middle ground because it preserves the shipped skill interface while removing API cost, state mutation, and external noise from measurement.",
+              "The real failure mode is cultural as much as technical: teams skip systematic evals when the test harness feels expensive or fragile, then ship blind into model and API regressions."
+            ],
+            "pt": [
+              "A licao central e arquitetural: evals de agentes devem isolar dependencias de API do mesmo jeito que times maduros isolam bancos de producao em testes de integracao.",
+              "Emulacao via proxy e um meio-termo pragmatico porque preserva a interface real da skill enquanto remove custo de API, mutacao de estado e ruido externo da medicao.",
+              "A falha real e tanto cultural quanto tecnica: quando o harness de teste parece caro ou fragil, o time pula evals sistematicos e acaba fazendo release no escuro diante de regressao de modelo e API."
+            ]
+          },
+          "link": "https://developer.microsoft.com/blog/how-to-test-agent-skills-without-hitting-real-apis/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-20",
       "date": "2026-07-20",
       "tokensUsed": 38831,
