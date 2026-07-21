@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-21-eng",
+      "date": "2026-07-21",
+      "tokensUsed": 25030,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Tristan Gibeau",
+          "title": {
+            "en": "Introducing the ETW MCP: AI-assisted ETL trace analysis, headless and in your terminal",
+            "pt": "Apresentando o ETW MCP: analise de traces ETL com IA, headless e no terminal"
+          },
+          "summary": {
+            "en": "Microsoft introduced a headless MCP server for ETW and ETL trace analysis that exposes structured, read-only tools instead of dumping raw events into an LLM. The interesting engineering angle is the split of responsibilities: TraceProcessor performs the heavy trace processing, while the model reasons over bounded queries like CPU usage, critical path, regions of interest, and multi-trace comparisons, making Windows performance investigations scriptable in terminals, CI, and agent workflows.",
+            "pt": "A Microsoft apresentou um servidor MCP headless para analise de traces ETW e ETL que expoe tools estruturadas e somente leitura em vez de despejar eventos brutos em um LLM. O angulo de engenharia mais interessante e a separacao de responsabilidades: o TraceProcessor faz o trabalho pesado no trace, enquanto o modelo raciocina sobre consultas limitadas como uso de CPU, critical path, regioes de interesse e comparacoes entre traces, tornando investigacoes de performance no Windows scriptaveis no terminal, em CI e em workflows com agentes."
+          },
+          "insights": {
+            "en": [
+              "The strongest design choice is grounding: the MCP exposes bounded trace-analysis operations instead of raw event streams, which keeps the model anchored to real ETW evidence and reduces hallucinated conclusions.",
+              "Turning ETW analysis into a headless MCP makes a traditionally expert-only workflow composable in terminals, CI pipelines, and batch investigations, not just inside WPA's UI.",
+              "The post is a good example of AI augmenting an existing systems toolchain by pairing deterministic data processing with model reasoning, rather than replacing the underlying observability stack."
+            ],
+            "pt": [
+              "A escolha de design mais forte e o grounding: o MCP expoe operacoes limitadas de analise de trace em vez de streams brutos de eventos, o que ancora o modelo em evidencia real de ETW e reduz conclusoes alucinadas.",
+              "Transformar a analise de ETW em um MCP headless leva um fluxo antes restrito a especialistas para terminais, pipelines de CI e investigacoes em lote, nao so para a UI do WPA.",
+              "O texto mostra bem IA augmentando uma toolchain de sistemas ja existente ao combinar processamento deterministico de dados com raciocinio do modelo, em vez de substituir a stack de observabilidade."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/performance-diagnostics/etw-mcp-intro/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-21",
       "date": "2026-07-21",
       "tokensUsed": 977304,
