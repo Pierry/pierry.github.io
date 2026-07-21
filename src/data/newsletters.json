@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-21",
+      "date": "2026-07-21",
+      "tokensUsed": 977304,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Engineering Leadership",
+          "title": {
+            "en": "5 Learnings Building Canva for AI Agents",
+            "pt": "5 aprendizados ao construir o Canva para agentes de IA"
+          },
+          "summary": {
+            "en": "This piece distills Canva's shift from designing primarily for human UI interaction to designing for AI agents that discover and use products through APIs and MCP-like integrations. Its broad relevance comes from reframing agent readiness as a product and platform problem: teams need reliable underlying APIs, intentional hosting and scaling choices, observable tool behavior, and an agent experience treated as a first-class surface rather than a thin wrapper over an existing interface.",
+            "pt": "Este texto resume a mudanca da Canva de desenhar produtos principalmente para interfaces humanas para desenhar tambem para agentes de IA que descobrem e usam produtos por meio de APIs e integracoes no estilo MCP. A relevancia ampla vem de enquadrar prontidao para agentes como um problema de produto e plataforma: times precisam de APIs confiaveis, escolhas conscientes de hospedagem e escala, comportamento observavel das tools e uma agent experience tratada como superficie de primeira classe, e nao como uma camada fina sobre a interface existente."
+          },
+          "insights": {
+            "en": [
+              "The strategic shift is distributional as much as technical: when agents become a primary entry point, products need to win on capability, reliability, and discoverability instead of UI preference alone.",
+              "MCP is only a surface layer, so weak API design underneath turns debugging and reliability into a mess; deterministic APIs remain the core contract engineers can inspect, replay, and harden.",
+              "Agent-facing integrations should be managed like products, with real hosting, scaling, and operational decisions, because early shortcut architecture becomes the bottleneck once usage grows."
+            ],
+            "pt": [
+              "A mudanca estrategica e de distribuicao tanto quanto tecnica: quando agentes viram um ponto principal de entrada, produtos precisam vencer por capacidade, confiabilidade e descobribilidade, e nao apenas por preferencia de interface.",
+              "MCP e apenas a camada de superficie, entao uma API fraca embaixo transforma debugging e confiabilidade em caos; APIs deterministicas continuam sendo o contrato central que engenharia consegue inspecionar, repetir e endurecer.",
+              "Integracoes voltadas a agentes devem ser geridas como produtos, com decisoes reais de hospedagem, escala e operacao, porque atalhos iniciais de arquitetura viram gargalo quando o uso cresce."
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/5-learnings-building-canva-for-ai"
+        }
+      ]
+    },
+    {
       "id": "2026-07-20-eng",
       "date": "2026-07-20",
       "tokensUsed": 9450,
