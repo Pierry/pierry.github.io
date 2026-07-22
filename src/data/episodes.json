@@ -1,6 +1,14 @@
 {
   "episodes": [
     {
+      "title": "Ep #24 - Agentes, Testes e Mensageria sem Hype",
+      "description": "3 temas que estão ficando centrais para times de tecnologia: como preparar produtos para agentes de IA com APIs confiáveis, como testar skills sem depender de APIs reais e como fazer escolhas mais inteligentes entre Kafka, RabbitMQ e SQS. A conversa passa por arquitetura, cultura de engenharia e tra",
+      "link": "https://anchor.fm/s/10ffb9108/podcast/play/123120513/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-21%2Fa9912082-57ce-0310-4896-d8d872bf82f5.m4a",
+      "pubDate": "2026-07-21",
+      "duration": "00:30:18",
+      "language": "en"
+    },
+    {
       "title": "Ep #23 - Trade-offs de IA e Arquitetura: Consistência, Skills e o Custo dos Agentes",
       "description": "O <strong>episódio</strong> de hoje traz um resumo direto sobre as decisões que definem a escalabilidade e o custo de sistemas modernos. Exploramos os insights de Raul Junco sobre como a consistência não deve ser uma regra global, mas uma decisão ajustável por fluxo de produto. No mundo da IA, anali",
       "link": "https://anchor.fm/s/10ffb9108/podcast/play/122450688/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-6%2F40a2c315-25b7-6e97-eb66-2b5cfec71cf8.m4a",
