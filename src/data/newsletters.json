@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-22",
+      "date": "2026-07-22",
+      "tokensUsed": 1198513,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim and Gencay",
+          "title": {
+            "en": "What Happens When Your Coding Agent Actually Knows Your Architecture?",
+            "pt": "O que acontece quando seu agente de codigo realmente conhece a sua arquitetura?"
+          },
+          "summary": {
+            "en": "This piece argues that the real bottleneck for coding agents is not raw model capability but access to grounded architectural context. Using NotebookLM as a retrieval layer over ADRs, docs, pull requests, and runbooks, the workflow gives an agent bounded context, line-level citations, and a practical way to check proposed changes against documented decisions before humans spend review time.",
+            "pt": "Este texto defende que o gargalo real de agentes de codigo nao e a capacidade bruta do modelo, mas o acesso a contexto arquitetural confiavel. Ao usar o NotebookLM como camada de recuperacao sobre ADRs, documentacao, pull requests e runbooks, o fluxo entrega contexto limitado, citacoes linha a linha e um jeito pratico de validar mudancas contra decisoes documentadas antes de consumir tempo de revisao humana."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is treating architecture knowledge as an explicit dependency for agents, not as tribal memory spread across wikis, ADRs, and Slack threads.",
+              "Grounding plus citations changes the review loop because the agent can justify why a change violates a decision instead of offering a vague intuition.",
+              "NotebookLM is interesting here not as a general chatbot, but as a lightweight RAG layer teams can stand up quickly before investing in custom knowledge infrastructure."
+            ],
+            "pt": [
+              "A melhor ideia do texto e tratar conhecimento de arquitetura como dependencia explicita dos agentes, e nao como memoria tribal espalhada entre wiki, ADRs e threads no Slack.",
+              "Grounding com citacoes muda o loop de revisao porque o agente consegue justificar por que uma mudanca viola uma decisao, em vez de devolver um palpite vago.",
+              "O NotebookLM fica interessante aqui nao como chatbot generico, mas como uma camada leve de RAG que o time consegue colocar de pe rapido antes de investir em infraestrutura propria de conhecimento."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/how-to-use-notebooklm"
+        }
+      ]
+    },
+    {
       "id": "2026-07-21-eng",
       "date": "2026-07-21",
       "tokensUsed": 25030,
