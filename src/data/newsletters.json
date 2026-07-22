@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-22-eng",
+      "date": "2026-07-22",
+      "tokensUsed": 14415,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Pinterest Engineering",
+          "author": "Ammar Ekbote and Chan Kim",
+          "title": {
+            "en": "Securing Infrastructure at Scale: Introducing Pinterest's Resource Provisioner Pipeline (RPP)",
+            "pt": "Protegendo infraestrutura em escala: o Resource Provisioner Pipeline (RPP) da Pinterest"
+          },
+          "summary": {
+            "en": "Pinterest details a centralized Terraform execution engine built to secure infrastructure changes across a large multi-repository organization. The interesting part is not Terraform itself, but the control model around it: PR-driven execution, workspace isolation, dual approvals, OIDC-authenticated GitHub Actions, strict path-to-workspace validation, and role chaining that downscopes permissions before any apply step. It is a strong blueprint for teams that need safer infrastructure delivery without forcing an immediate monorepo migration.",
+            "pt": "A Pinterest detalha um motor centralizado de execucao de Terraform criado para proteger mudancas de infraestrutura em uma organizacao grande e distribuida em varios repositorios. O ponto mais forte nao e o Terraform em si, mas o modelo de controle ao redor dele: execucao guiada por PR, isolamento por workspace, dupla aprovacao, GitHub Actions autenticado via OIDC, validacao estrita entre caminho e workspace, e role chaining para reduzir privilegios antes de qualquer apply. E um blueprint forte para times que precisam entregar infra com mais seguranca sem depender de uma migracao imediata para monorepo."
+          },
+          "insights": {
+            "en": [
+              "The best architectural move is separating who can propose infrastructure code from the narrowly scoped identity that can actually apply it, which reduces blast radius without killing developer autonomy.",
+              "Centralizing Terraform execution lets Pinterest enforce backend validation, auditing, security scanning, and emergency fixes once instead of trusting every repository to get the workflow right.",
+              "The post is broadly useful because it treats IaC safety as a systems design problem involving identity, workflow boundaries, and review mechanics, not just as a formatting or linting problem."
+            ],
+            "pt": [
+              "A melhor escolha arquitetural e separar quem pode propor codigo de infraestrutura da identidade bem limitada que realmente pode aplicar a mudanca, reduzindo blast radius sem matar a autonomia dos times.",
+              "Centralizar a execucao do Terraform permite que a Pinterest imponha validacao de backend, auditoria, scans de seguranca e correcoes emergenciais uma vez so, em vez de confiar que cada repositorio acerte o workflow.",
+              "O texto e amplamente util porque trata seguranca em IaC como problema de system design envolvendo identidade, fronteiras do workflow e mecanismos de revisao, e nao apenas como problema de lint ou formatacao."
+            ]
+          },
+          "link": "https://medium.com/pinterest-engineering/securing-infrastructure-at-scale-introducing-pinterests-resource-provisioner-pipeline-rpp-8283bb12cbe5"
+        }
+      ]
+    },
+    {
       "id": "2026-07-22",
       "date": "2026-07-22",
       "tokensUsed": 1198513,
