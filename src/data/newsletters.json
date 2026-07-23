@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-23",
+      "date": "2026-07-23",
+      "tokensUsed": 1339613,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "Microservices Design Patterns",
+            "pt": "Padroes de design para microservices"
+          },
+          "summary": {
+            "en": "A practical tour through 22 microservices patterns, from API Gateway and Database per Service to Circuit Breaker, Saga, Transactional Outbox, CQRS, Service Mesh, and Event Sourcing. The piece is strong because it does not just list patterns: it explains when each one matters, the failure mode it addresses, and the tradeoffs teams accept when they choose autonomy, asynchronous workflows, and resilience over simple shared-state designs.",
+            "pt": "Um passeio pratico por 22 padroes de microservices, de API Gateway e Database per Service ate Circuit Breaker, Saga, Transactional Outbox, CQRS, Service Mesh e Event Sourcing. O texto se destaca porque nao apenas lista os padroes: ele explica quando cada um importa, qual modo de falha ele resolve e quais tradeoffs os times aceitam ao trocar simplicidade de estado compartilhado por autonomia, assincronia e resiliencia."
+          },
+          "insights": {
+            "en": [
+              "The most useful framing is that microservices succeed or fail on boundary design: private data ownership, stable service contracts, and explicit coordination patterns matter more than the deployment model itself.",
+              "Resilience patterns such as circuit breakers, retries with backoff, bulkheads, and health checks are not optional polish; they are the operating system of a service ecosystem with unreliable dependencies.",
+              "The article is broadly relevant because it treats patterns as decision tools with costs, which is exactly how engineering managers and senior developers should discuss architecture in real teams."
+            ],
+            "pt": [
+              "O enquadramento mais util e que microservices vivem ou morrem pelo desenho das fronteiras: propriedade privada dos dados, contratos estaveis e padroes explicitos de coordenacao importam mais do que o modelo de deploy em si.",
+              "Padroes de resiliencia como circuit breaker, retry com backoff, bulkhead e health check nao sao acabamento; eles funcionam como sistema operacional de um ecossistema de servicos com dependencias nao confiaveis.",
+              "O texto e amplamente relevante porque trata padroes como ferramentas de decisao com custo, que e exatamente como engineering managers e devs seniores deveriam discutir arquitetura em times reais."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/microservices-design-patterns"
+        }
+      ]
+    },
+    {
       "id": "2026-07-22-eng",
       "date": "2026-07-22",
       "tokensUsed": 14415,
