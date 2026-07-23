@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-23-eng",
+      "date": "2026-07-23",
+      "tokensUsed": 24722,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Linda and Maria",
+          "title": {
+            "en": "Building Agents that Act on Your Behalf with Toolboxes in Foundry",
+            "pt": "Criando agentes que agem em nome do usuario com Toolboxes no Foundry"
+          },
+          "summary": {
+            "en": "Microsoft explains a practical way to let agents call private tools with the real signed-in user identity instead of a shared service account. The useful engineering point is not the Foundry product itself, but the architecture around delegation: token isolation per user, consent handling, refresh flows, and auth configuration live in a toolbox boundary rather than being reimplemented inside every agent. That makes the post broadly relevant for teams building internal agent platforms where identity, safety, and tool governance become part of system design.",
+            "pt": "A Microsoft mostra um jeito pratico de fazer agentes chamarem tools privadas usando a identidade real do usuario logado, em vez de uma service account compartilhada. O ponto de engenharia mais util nao e o produto Foundry em si, mas a arquitetura de delegacao: isolamento de token por usuario, gestao de consentimento, refresh e configuracao de auth ficam concentrados na fronteira do toolbox, em vez de serem reimplementados dentro de cada agente. Isso torna o texto amplamente relevante para times que estao montando plataformas internas de agentes, nas quais identidade, seguranca e governanca viram parte do system design."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is treating user delegation as platform infrastructure, because auth bugs in agent systems are really boundary and isolation bugs, not just SDK mistakes.",
+              "Moving auth, consent, and token refresh into a shared toolbox layer reduces duplicated fragile code and makes it easier to add new tools without reopening identity plumbing every time.",
+              "The post matters beyond Microsoft because it frames agent tooling as an architectural problem involving identity reach, policy enforcement, and safe composition across many tools."
+            ],
+            "pt": [
+              "A melhor ideia e tratar delegacao de usuario como infraestrutura de plataforma, porque bugs de auth em sistemas de agentes sao na pratica bugs de fronteira e isolamento, e nao apenas erros de SDK.",
+              "Mover auth, consentimento e refresh de token para uma camada compartilhada de toolbox reduz codigo fragil duplicado e facilita adicionar novas tools sem reabrir toda a tubulacao de identidade.",
+              "O texto importa para alem da Microsoft porque enquadra tooling para agentes como problema arquitetural envolvendo alcance de identidade, enforcement de politicas e composicao segura entre muitas tools."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/foundry/building-agents-that-act-on-your-behalf-with-toolboxes-in-foundry/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-23",
       "date": "2026-07-23",
       "tokensUsed": 1339613,
