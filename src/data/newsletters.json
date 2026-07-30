@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-30",
+      "date": "2026-07-30",
+      "tokensUsed": 19551,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Safe Database Rollback Starts Before Deployment",
+            "pt": "Rollback seguro de banco comeca antes do deploy"
+          },
+          "summary": {
+            "en": "Raul Junco argues that database rollback is not the inverse of application rollback because production data keeps evolving after a migration ships. The piece reframes schema changes as compatibility planning: instead of asking whether a SQL migration can be reversed, teams should design releases so old code, new code, and intermediate database states can coexist without corrupting data or blocking a fast rollback.",
+            "pt": "Raul Junco defende que rollback de banco nao e o inverso de rollback da aplicacao, porque os dados de producao continuam mudando depois que a migracao entra em producao. O texto reenquadra mudancas de schema como planejamento de compatibilidade: em vez de perguntar se uma migracao SQL pode ser revertida, o time deve desenhar o release para que codigo antigo, codigo novo e estados intermediarios do banco coexistam sem corromper dados nem bloquear um rollback rapido."
+          },
+          "insights": {
+            "en": [
+              "The most important shift is treating rollback as a compatibility problem, not a migration-framework feature, because persistent data outlives every application deploy.",
+              "Schema changes that discard information, rename fields, or tighten constraints can silently destroy rollback options even when the down migration technically succeeds.",
+              "This is broadly relevant because it pushes teams toward expand-and-contract releases, intermediate-state thinking, and explicit blast-radius analysis before touching production data."
+            ],
+            "pt": [
+              "A mudanca mental mais importante e tratar rollback como problema de compatibilidade, e nao como recurso do framework de migracao, porque dados persistentes sobrevivem a qualquer deploy da aplicacao.",
+              "Mudancas de schema que descartam informacao, renomeiam campos ou apertam restricoes podem destruir silenciosamente as opcoes de rollback, mesmo quando a down migration tecnicamente funciona.",
+              "Isso e amplamente relevante porque empurra o time para releases do tipo expand-and-contract, pensamento em estados intermediarios e analise explicita de blast radius antes de mexer em dados de producao."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/safe-database-rollback-starts-before-deployment"
+        }
+      ]
+    },
+    {
       "id": "2026-07-29-eng",
       "date": "2026-07-29",
       "tokensUsed": 9749,
