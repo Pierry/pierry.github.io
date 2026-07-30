@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-29-eng",
+      "date": "2026-07-29",
+      "tokensUsed": 9749,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Zack Deveau",
+          "title": {
+            "en": "Building an agentic harness that outlasts the model",
+            "pt": "Construindo um harness agentic que sobrevive ao modelo"
+          },
+          "summary": {
+            "en": "Shopify describes an internal application-security harness that uses multi-agent orchestration to scan large codebases, generate candidate findings, verify them with real tests, and open Shopify-specific remediation pull requests. The core idea is that model quality matters, but durable leverage comes from the surrounding harness: partitions, reusable architecture artifacts, diff-based rescans, sequential verification, and disciplined post-processing that keep costs down while preserving signal.",
+            "pt": "A Shopify descreve um harness interno de seguranca de aplicacoes que usa orquestracao multiagente para escanear codebases grandes, gerar achados candidatos, valida-los com testes reais e abrir pull requests de remediacao ajustados ao contexto da empresa. A ideia central e que a qualidade do modelo importa, mas a alavanca duradoura esta no harness ao redor: particionamento, artefatos reutilizaveis de arquitetura, rescans baseados em diff, verificacao sequencial e pos-processamento disciplinado para reduzir custo sem perder sinal."
+          },
+          "insights": {
+            "en": [
+              "The strongest architectural move is treating tests as the oracle, so verification becomes the gate between noisy model output and actionable security findings.",
+              "Diff-based rescans and persisted app-specific artifacts are what make repeated large-scale scanning economically viable instead of re-paying full-context costs every run.",
+              "The post is useful beyond security because it shows how to structure multi-agent workflows with bounded context, staged execution, and explicit quality control."
+            ],
+            "pt": [
+              "O movimento arquitetural mais forte e tratar testes como o oraculo, fazendo da verificacao o filtro entre saida ruidosa do modelo e achados de seguranca acionaveis.",
+              "Rescans baseados em diff e artefatos persistidos especificos da aplicacao sao o que tornam a varredura recorrente em larga escala economicamente viavel, sem pagar custo total de contexto a cada execucao.",
+              "O post e util alem de seguranca porque mostra como estruturar fluxos multiagente com contexto limitado, execucao em estagios e controle de qualidade explicito."
+            ]
+          },
+          "link": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model"
+        }
+      ]
+    },
+    {
       "id": "2026-07-29",
       "date": "2026-07-29",
       "tokensUsed": 1125575,
