@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-30-eng",
+      "date": "2026-07-30",
+      "tokensUsed": 19272,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Prakhar Agarwal, Avinash Varma Sagi, Abhay Singh Chauhan, Kranthi Reddy, Divya Rai",
+          "title": {
+            "en": "Scaling Exact COUNT(DISTINCT) for High-Cardinality Non-Rollup Metrics in Distributed Data Pipelines",
+            "pt": "Escalando COUNT(DISTINCT) exato para metricas de alta cardinalidade em pipelines distribuidos"
+          },
+          "summary": {
+            "en": "Uber describes how it made exact high-cardinality distinct counting practical for business-critical metrics such as MAU, retention, and cross-window engagement. Instead of accepting approximate counts or failing against the JVM's 2 GB byte-array ceiling, the team redesigned bitmap aggregation into a chunked buffer keyed by the top 16 bits of each hashed identifier, which bounded peak memory, removed shared dictionary state, and scaled exact computation across quarterly windows with billions of UUIDs.",
+            "pt": "A Uber mostra como viabilizou contagem exata de distintos em alta cardinalidade para metricas criticas como MAU, retencao e engajamento entre janelas. Em vez de aceitar contagens aproximadas ou quebrar no limite de 2 GB dos arrays do JVM, o time redesenhou a agregacao de bitmaps para um buffer em chunks indexado pelos 16 bits mais altos de cada identificador hasheado, limitando o pico de memoria, removendo estado compartilhado de dicionario e escalando o calculo exato para janelas trimestrais com bilhoes de UUIDs."
+          },
+          "insights": {
+            "en": [
+              "The key architectural move is replacing a monolithic serialized bitmap with independently serialized chunks, which turns a hard JVM limit into a partitioning problem.",
+              "This matters beyond Uber because any JVM pipeline computing exact distincts over very large windows can hit the same failure mode in Hive, Spark, or similar aggregation contracts.",
+              "The post is especially strong because the design improved both correctness and operability: zero post-deployment OOMs, concurrent backfills, and materially faster historical recomputation."
+            ],
+            "pt": [
+              "O movimento arquitetural central e trocar um bitmap monolitico serializado por chunks serializados de forma independente, transformando um limite rigido do JVM em um problema de particionamento.",
+              "Isso importa para alem da Uber porque qualquer pipeline em JVM que calcule distinct exato em janelas muito grandes pode bater no mesmo modo de falha em Hive, Spark ou contratos parecidos de agregacao.",
+              "O texto se destaca porque o desenho melhora ao mesmo tempo corretude e operacao: zero OOMs apos o deploy, backfills concorrentes e recomputacao historica muito mais rapida."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/scaling-exact-count/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-30",
       "date": "2026-07-30",
       "tokensUsed": 19551,
