@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-29",
+      "date": "2026-07-29",
+      "tokensUsed": 1125575,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "API Performance",
+            "pt": "Performance de APIs"
+          },
+          "summary": {
+            "en": "This piece treats API performance as a systems design problem rather than a code micro-optimization exercise. It walks through where latency actually accumulates across databases, networks, downstream services, and oversized payloads, then explains how patterns like caching, compression, load balancing, autoscaling, asynchronous processing, and resilience controls combine to reduce work instead of simply throwing more machines at the problem. The useful takeaway is that every optimization has a cost, so high-performance APIs come from choosing the right tradeoffs for each bottleneck.",
+            "pt": "Este texto trata performance de APIs como um problema de system design, e nao como um exercicio de micro-otimizacao de codigo. Ele mostra onde a latencia realmente se acumula entre banco, rede, servicos downstream e payloads grandes, e depois explica como padroes como cache, compressao, load balancing, autoscaling, processamento assincrono e controles de resiliencia se combinam para reduzir trabalho, em vez de apenas jogar mais maquinas no problema. O ponto mais util e que toda otimização cobra um custo, entao APIs de alta performance nascem de escolher os tradeoffs certos para cada gargalo."
+          },
+          "insights": {
+            "en": [
+              "The strongest framing is that APIs usually get slower because the system is doing avoidable work, so the real lever is removing recomputation, unnecessary round trips, and blocking paths.",
+              "Caching, compression, load balancing, autoscaling, and async processing are best understood as complementary layers with distinct failure modes, not as isolated silver bullets.",
+              "The article is broadly relevant because it helps teams connect latency, cost, capacity planning, and reliability before traffic exposes weak architectural assumptions."
+            ],
+            "pt": [
+              "O melhor enquadramento e que APIs costumam ficar lentas porque o sistema esta fazendo trabalho evitavel, entao a alavanca real e remover recomputacao, round trips desnecessarios e caminhos bloqueantes.",
+              "Cache, compressao, load balancing, autoscaling e processamento assincrono devem ser vistos como camadas complementares com modos de falha proprios, e nao como balas de prata isoladas.",
+              "O texto e amplamente relevante porque ajuda o time a ligar latencia, custo, planejamento de capacidade e confiabilidade antes que o trafego revele premissas arquiteturais fracas."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/api-performance"
+        }
+      ]
+    },
+    {
       "id": "2026-07-23-eng",
       "date": "2026-07-23",
       "tokensUsed": 24722,
