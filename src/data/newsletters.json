@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-31-eng",
+      "date": "2026-07-31",
+      "tokensUsed": 8807,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Slack Engineering",
+          "author": "Archie Gunasekara",
+          "title": {
+            "en": "Shipyard: How We Built Slack's Next-Generation EC2 Platform",
+            "pt": "Shipyard: como a Slack construiu sua plataforma de EC2 de nova geracao"
+          },
+          "summary": {
+            "en": "Slack describes Shipyard, its new EC2 platform for workloads that cannot easily move to containers. The platform replaces long-lived mutable instances with immutable AMI-based deployments, layered base images, progressive rollouts, real-time fleet inventory, and scheduled instance rotation to reduce drift and improve safety at scale.",
+            "pt": "A Slack apresenta o Shipyard, sua nova plataforma de EC2 para cargas que nao migram facilmente para containers. A proposta troca instancias mutaveis de longa duracao por deploys imutaveis baseados em AMIs, imagens em camadas, rollouts progressivos, inventario quase em tempo real da frota e rotacao programada de instancias para reduzir drift e aumentar a seguranca em escala."
+          },
+          "insights": {
+            "en": [
+              "The strongest architectural move is treating infrastructure as a deployable artifact, which gives EC2 workloads container-like rollout safety without forcing a full container migration.",
+              "Slack splits responsibilities cleanly: a shared slack-zero base image, service-specific images, Gondola for metric-driven rollouts, and Peekaboo for fleet visibility, which keeps the platform modular and easier to evolve.",
+              "Regular instance rotation plus bake-time configuration directly targets drift, patch latency, and emergency-fix risk, making reliability and security properties part of the platform design rather than an afterthought."
+            ],
+            "pt": [
+              "A decisao arquitetural mais forte e tratar infraestrutura como artefato de deploy, dando a cargas em EC2 uma seguranca de rollout parecida com containers sem exigir migracao total.",
+              "A Slack separa bem as responsabilidades: imagem base compartilhada slack-zero, imagens por servico, Gondola para rollouts guiados por metricas e Peekaboo para visibilidade da frota, o que deixa a plataforma mais modular e evolutiva.",
+              "A rotacao regular de instancias e a configuracao concentrada no bake atacam diretamente drift, atraso de patches e risco em correcoes emergenciais, incorporando confiabilidade e seguranca ao desenho da plataforma."
+            ]
+          },
+          "link": "https://slack.engineering/shipyard-how-we-built-slacks-next-generation-ec2-platform/"
+        }
+      ]
+    },
+    {
       "id": "2026-07-31",
       "date": "2026-07-31",
       "tokensUsed": 38807,
