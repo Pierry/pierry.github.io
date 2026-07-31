@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-07-31",
+      "date": "2026-07-31",
+      "tokensUsed": 38807,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Engineering Leadership",
+          "author": "Gregor Ojstersek",
+          "title": {
+            "en": "How OpenAI Optimized AI Agents For Scale",
+            "pt": "Como a OpenAI otimizou agentes de IA para escalar"
+          },
+          "summary": {
+            "en": "Gregor Ojstersek breaks down the main infrastructure changes OpenAI used to support the growth of Codex and ChatGPT Work at scale. The piece frames agent performance as a three-layer systems problem across harness, API, and inference, then shows how model routing, GPU-serving improvements, speculative decoding, WebSocket-based session transport, and tighter infrastructure tuning compound into large gains in speed, cost efficiency, and reliability.",
+            "pt": "Gregor Ojstersek detalha as principais mudancas de infraestrutura usadas pela OpenAI para sustentar o crescimento do Codex e do ChatGPT Work em larga escala. O texto enquadra performance de agentes como um problema de sistemas em tres camadas, entre harness, API e inferencia, e mostra como roteamento de modelos, melhorias no serving em GPU, speculative decoding, transporte de sessao via WebSocket e tuning mais fino da infraestrutura se combinam para gerar ganhos grandes de velocidade, custo e confiabilidade."
+          },
+          "insights": {
+            "en": [
+              "The strongest takeaway is that agent performance is multiplicative across layers: harness design, transport efficiency, and inference optimization all matter, so bottlenecks cannot be solved at the model layer alone.",
+              "Moving long-running agent sessions from repeated REST calls to WebSockets reduced repeated context transfer and produced roughly 40% faster end-to-end execution, which is a broadly useful systems pattern for stateful agent workflows.",
+              "The piece is especially relevant because it connects low-level serving choices such as kernel optimization, speculative decoding, and smarter routing to user-visible outcomes like lower latency, better availability, and lower token cost."
+            ],
+            "pt": [
+              "O principal aprendizado e que performance de agentes e multiplicativa entre camadas: desenho do harness, eficiencia de transporte e otimizacao de inferencia importam juntos, entao gargalos nao se resolvem apenas na camada do modelo.",
+              "Mover sessoes longas de agentes de chamadas REST repetidas para WebSockets reduziu a retransmissao de contexto e gerou cerca de 40% de ganho no tempo fim a fim, um padrao de sistemas muito util para fluxos agenticos com estado.",
+              "O texto e especialmente relevante porque liga escolhas de serving de baixo nivel, como otimizacao de kernels, speculative decoding e roteamento mais inteligente, a resultados percebidos pelo usuario, como menor latencia, melhor disponibilidade e menor custo por token."
+            ]
+          },
+          "link": "https://newsletter.eng-leadership.com/p/how-openai-optimized-ai-agents-for"
+        }
+      ]
+    },
+    {
       "id": "2026-07-30-eng",
       "date": "2026-07-30",
       "tokensUsed": 19272,
