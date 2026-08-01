@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-01-eng",
+      "date": "2026-08-01",
+      "tokensUsed": 7258,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Spotify Engineering",
+          "author": "Will Edwards",
+          "title": {
+            "en": "Indexing the Data Lake for Online Point Queries",
+            "pt": "Indexando o data lake para consultas pontuais online"
+          },
+          "summary": {
+            "en": "Spotify explains how it serves low-latency point queries directly from Parquet data in its lake instead of copying everything into a dedicated serving store. The core idea is Random Access Parquet, which adds an external index that maps keys to exact file and row locations so online services and AI agents can fetch only the bytes they need.",
+            "pt": "O Spotify mostra como atende consultas pontuais de baixa latencia direto dos arquivos Parquet do data lake, sem copiar tudo para um banco de serving dedicado. A ideia central e o Random Access Parquet, com um indice externo que mapeia chaves para o arquivo e a linha exatos, permitindo que servicos online e agentes de AI leiam so os bytes necessarios."
+          },
+          "insights": {
+            "en": [
+              "The architectural win is separating storage from serving: the lake remains the source of truth while an external index removes the query-planning overhead that makes Trino or BigQuery too slow for interactive lookups.",
+              "Spotify focuses on the real bottleneck, the chain of dependent reads inside Parquet files, and redesigns the path around O(1) key lookups plus precise ranged reads that can run in parallel.",
+              "The piece is especially relevant for teams balancing analytics and production AI workloads because it shows how to reuse shared lake data for user-facing retrieval without paying the full cost of another online database."
+            ],
+            "pt": [
+              "A principal sacada arquitetural e separar armazenamento de serving: o data lake continua como fonte unica da verdade enquanto o indice externo elimina o overhead de planejamento que deixa Trino ou BigQuery lentos demais para consultas interativas.",
+              "O Spotify ataca o gargalo real, a cadeia de leituras dependentes dentro dos arquivos Parquet, e reconstrui o caminho com lookups O(1) por chave e ranged reads precisos que podem rodar em paralelo.",
+              "O texto e muito util para times que equilibram analytics e workloads de AI em producao porque mostra como reaproveitar dados compartilhados do lake em recuperacao user-facing sem pagar o custo total de outro banco online."
+            ]
+          },
+          "link": "https://engineering.atspotify.com/2026/7/indexing-the-data-lake-for-online-point-queries"
+        }
+      ]
+    },
+    {
       "id": "2026-07-31-eng",
       "date": "2026-07-31",
       "tokensUsed": 8807,
