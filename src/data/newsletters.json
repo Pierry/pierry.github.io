@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-02",
+      "date": "2026-08-02",
+      "tokensUsed": 39915,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "ByteByteGo",
+          "author": "ByteByteGo",
+          "title": {
+            "en": "How OpenAI Built Its Data Agent",
+            "pt": "Como a OpenAI construiu seu agente de dados"
+          },
+          "summary": {
+            "en": "ByteByteGo highlights OpenAI's internal data agent through a conversation with Emma Tang, Head of Data Platform Engineering. The video focuses on the system design behind the agent, how Codex is used inside the workflow, and the engineering lessons teams can apply when building reliable AI-assisted data products.",
+            "pt": "O ByteByteGo destaca o agente interno de dados da OpenAI em uma conversa com Emma Tang, Head of Data Platform Engineering. O video foca no system design por tras do agente, em como o Codex entra no fluxo e nas licoes de engenharia que times podem reaproveitar ao construir produtos de dados assistidos por IA com confiabilidade."
+          },
+          "insights": {
+            "en": [
+              "The topic sits at the intersection of system design and AI operations: it is not just about model capability, but about how a production data platform wraps agents with dependable workflows.",
+              "OpenAI's use of Codex inside the data-agent workflow suggests a practical pattern where coding agents become part of the internal toolchain instead of a standalone novelty.",
+              "For engineering leaders, the most useful lens is the translation from one internal case study into reusable design lessons teams can apply to data access, orchestration, and reliability."
+            ],
+            "pt": [
+              "O tema fica bem no cruzamento entre system design e operacao de IA: nao e so capacidade de modelo, mas como uma plataforma de dados de producao envolve agentes com fluxos confiaveis.",
+              "O uso de Codex pela OpenAI dentro do fluxo do agente de dados aponta um padrao pratico em que coding agents viram parte da toolchain interna, e nao apenas uma curiosidade isolada.",
+              "Para liderancas de engenharia, o angulo mais util e transformar esse estudo de caso interno em licoes reaproveitaveis sobre acesso a dados, orquestracao e confiabilidade."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=5V8tP5jDZ8U"
+        }
+      ]
+    },
+    {
       "id": "2026-08-01-eng",
       "date": "2026-08-01",
       "tokensUsed": 7258,
