@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-02-eng",
+      "date": "2026-08-02",
+      "tokensUsed": 11461,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Spotify Engineering",
+          "author": "Jim Whitehead, Ulrik Mikaelsson, John Lagomarsino, and Saunak Jai Chakrabarti",
+          "title": {
+            "en": "Content Ingestion & Podcast Video Incident Report",
+            "pt": "Relatorio do incidente de ingestao de conteudo e video de podcasts"
+          },
+          "summary": {
+            "en": "Spotify details a June 24 incident in which its podcast video publishing pipeline stalled for hours after video transcoding hit maximum capacity. The write-up goes beyond the outage itself, tying together capacity headroom, batch-job interference, a migration-related scheduling bug, and the follow-up reliability program now being rolled out across the pipeline.",
+            "pt": "O Spotify detalha um incidente de 24 de junho em que sua pipeline de publicacao de video para podcasts ficou horas represada depois que a infraestrutura de transcodificacao atingiu a capacidade maxima. O texto vai alem da falha pontual e conecta falta de headroom, interferencia de batch jobs, um bug de agendamento apos migracao e o programa de confiabilidade que agora esta sendo expandido por toda a pipeline."
+          },
+          "insights": {
+            "en": [
+              "The most transferable lesson is classic capacity engineering: steady-state scaling is not enough when burst traffic, background reprocessing, and degraded efficiency stack on top of each other.",
+              "Spotify is explicit that reliability failed at multiple layers, from compute scheduling and prioritization to alerting and creator communication, which makes the post more useful than a narrow postmortem.",
+              "For engineering leaders, the strongest takeaway is the remediation package: more headroom, earlier signals, stricter prioritization of real-time work, and broader backpressure controls across the whole publishing path."
+            ],
+            "pt": [
+              "A licao mais reaproveitavel e de engenharia de capacidade: escalar para o estado normal nao basta quando trafego em pico, reprocessamento em batch e perda de eficiencia se somam ao mesmo tempo.",
+              "O Spotify deixa claro que a confiabilidade falhou em varias camadas, de agendamento de compute e priorizacao ate alertas e comunicacao com creators, o que torna o texto mais util do que um postmortem estreito.",
+              "Para liderancas de engenharia, o principal aprendizado esta no pacote de correcoes: mais headroom, sinais antecipados, priorizacao mais rigida do trabalho em tempo real e mecanismos de backpressure espalhados por toda a trilha de publicacao."
+            ]
+          },
+          "link": "https://engineering.atspotify.com/2026/7/content-ingestion-and-podcast-video-incident-report"
+        }
+      ]
+    },
+    {
       "id": "2026-08-02",
       "date": "2026-08-02",
       "tokensUsed": 39915,
