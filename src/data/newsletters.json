@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-03-eng",
+      "date": "2026-08-03",
+      "tokensUsed": 11447,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Ricardo M. Martins",
+          "title": {
+            "en": "Building an operations assistant on Azure that waits for approval before it acts",
+            "pt": "Construindo um assistente de operacoes no Azure que espera aprovacao antes de agir"
+          },
+          "summary": {
+            "en": "Microsoft shares a deliberately narrow reference architecture for an operations assistant that can answer runbook questions immediately but must wait for explicit human approval before creating incidents. The app runs on Azure Container Apps, grounds responses with Azure AI Search plus Azure OpenAI, records proposed write actions as pending operations, and executes them only when the same authenticated user confirms the action through a separate endpoint.",
+            "pt": "A Microsoft mostra uma arquitetura de referencia, propositalmente estreita, para um assistente de operacoes que responde perguntas sobre runbooks imediatamente, mas precisa esperar aprovacao humana explicita antes de abrir incidentes. A aplicacao roda em Azure Container Apps, usa Azure AI Search com Azure OpenAI para grounding, registra acoes de escrita como operacoes pendentes e so executa a mutacao quando o mesmo usuario autenticado confirma a acao em um endpoint separado."
+          },
+          "insights": {
+            "en": [
+              "The strongest architectural lesson is the hard split between model intent and user authorization: write tools do not execute inline, they create a pending action that the backend later confirms and replays safely.",
+              "The post is practical about production controls, covering actor binding, idempotency keys, backend-owned payloads, partial-ingestion handling in Azure AI Search, and least-privilege managed identities instead of API keys.",
+              "For engineering leaders building agents for ops or support, the transferable idea is to treat mutation approval as a control-plane problem, not a prompt-design problem."
+            ],
+            "pt": [
+              "A principal licao arquitetural e separar com firmeza a intencao do modelo da autorizacao do usuario: ferramentas de escrita nao executam inline, elas criam uma acao pendente que o backend confirma e reaplica com seguranca.",
+              "O texto e bem pratico sobre controles de producao, cobrindo vinculacao do ator autenticado, chaves de idempotencia, payloads de propriedade do backend, tratamento de ingestao parcial no Azure AI Search e managed identities com privilegio minimo em vez de chaves.",
+              "Para liderancas de engenharia construindo agentes para operacoes ou suporte, a ideia reaproveitavel e tratar aprovacao de mutacoes como problema de control plane, nao como problema de prompt."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/all-things-azure/building-an-operations-assistant-on-azure-that-waits-for-approval-before-it-acts/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-03",
       "date": "2026-08-03",
       "tokensUsed": 94500,
