@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-03",
+      "date": "2026-08-03",
+      "tokensUsed": 94500,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim and Kukeshajanth Kodeswaran",
+          "title": {
+            "en": "Vertical Small LLMs: A Deep Dive",
+            "pt": "LLMs pequenos e verticais: um mergulho profundo"
+          },
+          "summary": {
+            "en": "System Design One argues that many production AI workloads should stop defaulting to frontier APIs and instead consider fine-tuned small models for narrow, repetitive decisions. The piece walks through a legal-labeling benchmark where a tuned 3B model outperformed Claude Sonnet 4.6 and GPT-5.5 on one focused task, then explains the operational reasons this can make sense: lower inference cost, lower latency, tighter data control, and cleaner workload routing between specialist and frontier models.",
+            "pt": "A newsletter defende que muitos workloads de IA em producao nao deveriam depender por padrao de APIs frontier e sim considerar modelos pequenos ajustados para decisoes estreitas e repetitivas. O texto mostra um benchmark de classificacao juridica em que um modelo de 3B ajustado superou Claude Sonnet 4.6 e GPT-5.5 em uma tarefa focada, e depois conecta isso aos motivos operacionais: custo de inferencia menor, latencia menor, mais controle sobre dados sensiveis e um roteamento mais inteligente entre modelos especialistas e frontier."
+          },
+          "insights": {
+            "en": [
+              "The strongest takeaway is architectural, not just model-centric: routine high-volume decisions are often better served by a small specialist model, while frontier models remain the fallback for broader reasoning.",
+              "The article makes the economics concrete by linking vertical models to lower serving cost, less network latency, and easier compliance for teams that cannot ship sensitive data to external providers.",
+              "For engineering leaders, the practical playbook is the combination of RAG, LoRA, distillation, and model routing rather than betting on one general-purpose model for every step of the workflow."
+            ],
+            "pt": [
+              "O principal aprendizado e arquitetural, nao apenas sobre modelo: decisoes rotineiras e de alto volume muitas vezes ficam melhores em um modelo pequeno especialista, enquanto modelos frontier continuam como fallback para raciocinio mais amplo.",
+              "O texto deixa a economia bem concreta ao ligar modelos verticais a menor custo de serving, menos latencia de rede e mais facilidade de compliance para times que nao podem enviar dados sensiveis para provedores externos.",
+              "Para liderancas de engenharia, o playbook mais pratico e combinar RAG, LoRA, distillation e roteamento de modelos, em vez de apostar num unico modelo generalista para cada etapa do fluxo."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/fine-tuning-small-language-models"
+        }
+      ]
+    },
+    {
       "id": "2026-08-02-eng",
       "date": "2026-08-02",
       "tokensUsed": 11461,
