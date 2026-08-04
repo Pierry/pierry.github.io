@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-04",
+      "date": "2026-08-04",
+      "tokensUsed": 56498,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hungry Minds",
+          "author": "Alex Zajac",
+          "title": {
+            "en": "How DoorDash Uses LLMs To Predict 10M+ Customer Grocery Lists",
+            "pt": "Como o DoorDash usa LLMs para prever mais de 10 milhoes de listas de compras"
+          },
+          "summary": {
+            "en": "Hungry Minds highlights how DoorDash reframed the cold-start problem in grocery recommendations by mining restaurant order history instead of waiting for explicit grocery behavior. The architecture compresses raw orders into structured tags, narrows the candidate space with retrieval, pushes heavy mapping work offline, and then uses LLM scoring only where it adds value, which let the team serve more than 200 million users with roughly a 10,000x cost reduction versus a naive per-user inference approach.",
+            "pt": "A Hungry Minds mostra como o DoorDash reformulou o problema de cold start em recomendacoes de mercearia aproveitando o historico de pedidos em restaurantes, em vez de esperar por comportamento explicito no grocery. A arquitetura comprime pedidos brutos em tags estruturadas, reduz o espaco de candidatos com retrieval, empurra o trabalho pesado de mapeamento para processamento offline e usa scoring com LLM apenas onde ele agrega valor, o que permitiu atender mais de 200 milhoes de usuarios com cerca de 10.000 vezes menos custo do que uma inferencia ingenua por usuario."
+          },
+          "insights": {
+            "en": [
+              "The strongest systems lesson is that LLM scale comes from architecture, not brute force: DoorDash cut context size, precomputed reusable mappings offline, and reserved model calls for the narrowest decision point.",
+              "The RAG step is practical and high leverage because it shrinks thousands of possible grocery categories to a few hundred relevant candidates before ranking, which improves both cost and quality.",
+              "For engineering leaders, the transferable pattern is to combine product intuition with cost-aware AI design: use existing behavioral data, cache reusable work, and evaluate quality with automated judge-style metrics before scaling a feature."
+            ],
+            "pt": [
+              "A licao de sistemas mais forte e que escalar LLMs depende de arquitetura, nao de forca bruta: o DoorDash reduziu o contexto, precomputou mapeamentos reutilizaveis offline e deixou as chamadas ao modelo apenas para o ponto mais estreito da decisao.",
+              "A etapa de RAG e pratica e muito valiosa porque reduz milhares de categorias possiveis de grocery para algumas centenas relevantes antes do ranking, melhorando custo e qualidade ao mesmo tempo.",
+              "Para liderancas de engenharia, o padrao reaproveitavel e combinar intuicao de produto com desenho de AI orientado a custo: usar dados comportamentais ja existentes, cachear trabalho reutilizavel e avaliar qualidade com metricas automatizadas antes de escalar a feature."
+            ]
+          },
+          "link": "https://www.hungryminds.dev/p/how-doordash-uses-llms-to-predict-10m-customer-grocery-lists"
+        }
+      ]
+    },
+    {
       "id": "2026-08-03-eng",
       "date": "2026-08-03",
       "tokensUsed": 11447,
