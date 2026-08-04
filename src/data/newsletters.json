@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-04-eng",
+      "date": "2026-08-04",
+      "tokensUsed": 11447,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Giles Odigwe",
+          "title": {
+            "en": "Build Production-Ready Agents with the GitHub Copilot Harness and Agent Framework",
+            "pt": "Como construir agentes prontos para producao com o GitHub Copilot Harness e o Agent Framework"
+          },
+          "summary": {
+            "en": "Microsoft presents a practical integration that uses the GitHub Copilot coding harness as the execution engine inside Agent Framework, so teams can keep Copilot's repository-aware agent loop while adding middleware, observability, MCP servers, streaming, and approval workflows from a broader orchestration layer. The core value is architectural: instead of building a coding agent runtime from scratch, teams can compose a production control plane around an existing harness that already knows how to reason over code, run shell commands, edit files, and call tools.",
+            "pt": "A Microsoft apresenta uma integracao pratica que usa o harness de coding agent do GitHub Copilot como motor de execucao dentro do Agent Framework, permitindo manter o loop de agente orientado a repositorio do Copilot enquanto adiciona middleware, observabilidade, servidores MCP, streaming e fluxos de aprovacao de uma camada de orquestracao mais ampla. O valor principal e arquitetural: em vez de criar um runtime de coding agent do zero, os times podem compor um control plane de producao em torno de um harness que ja sabe raciocinar sobre codigo, executar shell, editar arquivos e chamar ferramentas."
+          },
+          "insights": {
+            "en": [
+              "The strongest systems lesson is the split of responsibilities: Copilot owns planning and tool use, while Agent Framework adds governance, telemetry, and approval boundaries around sensitive actions.",
+              "The MCP support matters because it turns a coding agent into a broader engineering agent without rewriting the runtime, letting teams plug local and remote tools into the same execution model.",
+              "For engineering leaders, the transferable idea is to standardize approvals and observability above the agent harness, so model capability and production control can evolve independently."
+            ],
+            "pt": [
+              "A principal licao de sistemas e a separacao de responsabilidades: o Copilot cuida de planejamento e uso de ferramentas, enquanto o Agent Framework adiciona governanca, telemetria e fronteiras de aprovacao para acoes sensiveis.",
+              "O suporte a MCP e importante porque transforma um coding agent em um agente de engenharia mais amplo sem reescrever o runtime, permitindo plugar ferramentas locais e remotas no mesmo modelo de execucao.",
+              "Para liderancas de engenharia, a ideia reaproveitavel e padronizar aprovacoes e observabilidade acima do harness do agente, para que capacidade do modelo e controle de producao evoluam de forma independente."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-04",
       "date": "2026-08-04",
       "tokensUsed": 56498,
