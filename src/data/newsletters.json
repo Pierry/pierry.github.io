@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-05-eng",
+      "date": "2026-08-05",
+      "tokensUsed": 8805,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Steven De Gryze, Parshva Doshi, Sean O'Byrne, Arnold Overwijk, Dinesh Ramasamy, Lee Xiong",
+          "title": {
+            "en": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta's Ads Ranking",
+            "pt": "De sequencias de usuarios a scaling laws: uma arquitetura multi-stage para o ranking de anuncios da Meta"
+          },
+          "summary": {
+            "en": "Meta details how its ads ranking stack evolves from static sparse features toward sequence-aware modeling that captures billions of user interactions across products, ads, and content. The post is strongest as a systems piece: it explains a multi-stage architecture that uses richer temporal representations without blowing up serving cost, connecting model quality gains to production constraints and scale.",
+            "pt": "A Meta detalha como sua stack de ranking de anuncios evolui de features esparsas e estaticas para modelos sensiveis a sequencias, capazes de capturar bilhoes de interacoes de usuarios entre produtos, anuncios e conteudo. O texto se destaca como material de sistemas: explica uma arquitetura multi-stage que usa representacoes temporais mais ricas sem explodir o custo de serving, conectando ganhos de qualidade de modelo com restricoes reais de producao e escala."
+          },
+          "insights": {
+            "en": [
+              "The core lesson is architectural: sequence modeling only becomes practical at Meta scale when ranking is split into stages, so expensive representations are used where they matter most.",
+              "The post is valuable beyond ads because it shows how to connect scaling-law thinking to production ranking systems instead of treating model progress as a pure research exercise.",
+              "For engineering leaders, the transferable pattern is to frame ML upgrades as end-to-end system redesigns that balance retrieval, ranking quality, latency, and serving economics together."
+            ],
+            "pt": [
+              "A principal licao e arquitetural: modelagem de sequencias so vira algo pratico na escala da Meta quando o ranking e dividido em estagios, para que representacoes caras sejam usadas apenas onde geram mais valor.",
+              "O texto vale alem do contexto de ads porque mostra como conectar a ideia de scaling laws a sistemas de ranking em producao, em vez de tratar o progresso do modelo como exercicio puramente de pesquisa.",
+              "Para liderancas de engenharia, o padrao reaproveitavel e tratar evolucoes de ML como redesenhos de sistema ponta a ponta, equilibrando retrieval, qualidade de ranking, latencia e economia de serving ao mesmo tempo."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/08/05/ml-applications/from-user-sequences-to-scaling-laws-a-multi-stage-architecture-for-metas-ads-ranking/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-05",
       "date": "2026-08-05",
       "tokensUsed": 1225077,
