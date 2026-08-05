@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-05",
+      "date": "2026-08-05",
+      "tokensUsed": 1225077,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Cloudflare",
+          "title": {
+            "en": "Cloudflare OS: an open platform for agents, apps, and work",
+            "pt": "Cloudflare OS: uma plataforma aberta para agentes, apps e trabalho"
+          },
+          "summary": {
+            "en": "Cloudflare presents Cloudflare OS as an open platform for building internal apps, automating work, and giving AI agents safe access to organizational context and systems. The core idea is to treat company knowledge, procedures, and permissions as platform primitives, so teams can move beyond code-only agent loops and let agents operate across documents, workflows, and business tools with stronger controls.",
+            "pt": "A Cloudflare apresenta o Cloudflare OS como uma plataforma aberta para criar apps internos, automatizar trabalho e dar a agentes de IA acesso seguro ao contexto e aos sistemas da organizacao. A ideia central e tratar conhecimento, procedimentos e permissoes da empresa como primitivas de plataforma, permitindo ir alem de loops de agentes focados so em codigo e operar sobre documentos, fluxos e ferramentas de negocio com controles mais fortes."
+          },
+          "insights": {
+            "en": [
+              "The strongest architectural idea is expanding the agent feedback loop beyond code: many real workflows need access to documents, approvals, business systems, and organizational memory, not just a terminal and a repo.",
+              "The platform framing matters because safe agent adoption depends on permissions, context binding, and workflow controls being built into the runtime rather than patched on after the fact.",
+              "For engineering leaders, the transferable lesson is to think of agent enablement as an internal platform problem, where knowledge access, safety boundaries, and reusable automation interfaces matter as much as model quality."
+            ],
+            "pt": [
+              "A ideia arquitetural mais forte e ampliar o loop de feedback dos agentes para alem de codigo: muitos fluxos reais precisam acessar documentos, aprovacoes, sistemas de negocio e memoria organizacional, nao apenas terminal e repositorio.",
+              "O enquadramento como plataforma importa porque a adocao segura de agentes depende de permissoes, vinculacao de contexto e controles de workflow embutidos no runtime, e nao adicionados depois.",
+              "Para liderancas de engenharia, a licao reaproveitavel e tratar habilitacao de agentes como problema de plataforma interna, em que acesso a conhecimento, fronteiras de seguranca e interfaces de automacao reutilizaveis importam tanto quanto a qualidade do modelo."
+            ]
+          },
+          "link": "https://blog.cloudflare.com/cloudflare-os/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-04-eng",
       "date": "2026-08-04",
       "tokensUsed": 11447,
