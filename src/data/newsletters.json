@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-06",
+      "date": "2026-08-06",
+      "tokensUsed": 48615,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "10 System Design Solutions Explained in 15 Minutes",
+            "pt": "10 solucoes de system design explicadas em 15 minutos"
+          },
+          "summary": {
+            "en": "System Design One packages ten recurring backend architecture problems into a compact field guide, focusing on the patterns that matter most in real systems rather than abstract interview trivia. The post is valuable because it frames system design as a repertoire of trade-offs: each pattern is introduced through the production problem it solves, how it works at a high level, and the cost or complexity it introduces when pushed into real workloads.",
+            "pt": "A System Design One transforma dez problemas recorrentes de arquitetura backend em um guia compacto, focado nos padroes que mais importam em sistemas reais em vez de trivia abstrata de entrevista. O texto se destaca porque trata system design como um repertorio de trade-offs: cada padrao aparece a partir do problema de producao que resolve, de como funciona em alto nivel e do custo ou complexidade que introduz quando vai para workloads reais."
+          },
+          "insights": {
+            "en": [
+              "The strongest lesson is to start from the failure mode or scaling constraint first, then match the pattern to that constraint instead of memorizing architectures in isolation.",
+              "A compact pattern catalog is useful for engineers and managers because it creates shared vocabulary for design reviews, incident discussions, and roadmap trade-offs.",
+              "The piece is stack-agnostic and broadly reusable: the value is not any one tool, but learning how caching, queues, partitioning, replication, and related patterns shift performance, reliability, and cost."
+            ],
+            "pt": [
+              "A licao mais forte e comecar pelo modo de falha ou pela restricao de escala, e so depois encaixar o padrao adequado, em vez de decorar arquiteturas isoladas.",
+              "Um catalogo compacto de padroes ajuda engenheiros e managers porque cria vocabulario compartilhado para design reviews, discussoes de incidentes e trade-offs de roadmap.",
+              "O texto e agnostico de stack e amplamente reaproveitavel: o valor nao esta em uma ferramenta especifica, mas em entender como cache, filas, particionamento, replicacao e outros padroes mudam performance, confiabilidade e custo."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/system-design-patterns"
+        }
+      ]
+    },
+    {
       "id": "2026-08-05-eng",
       "date": "2026-08-05",
       "tokensUsed": 8805,
