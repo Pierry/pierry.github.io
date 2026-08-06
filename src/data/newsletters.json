@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-06-eng",
+      "date": "2026-08-06",
+      "tokensUsed": 16676,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Eric van Wijk",
+          "title": {
+            "en": "You can now use the Azure DevOps Service Connection instead of a PAT or Build Session token",
+            "pt": "Agora da para usar Azure DevOps Service Connection no lugar de PAT ou Build Session token"
+          },
+          "summary": {
+            "en": "Microsoft details a new authentication path for Azure DevOps pipelines that replaces PATs and build session tokens with Entra-backed service connections. The post is relevant because it turns a common platform security headache into a clearer production pattern: federated identity, least-privilege access, and auditable pipeline integrations without long-lived secrets.",
+            "pt": "A Microsoft detalha um novo caminho de autenticacao para pipelines no Azure DevOps que troca PATs e build session tokens por service connections apoiadas no Entra. O texto importa porque transforma uma dor comum de seguranca de plataforma em um padrao mais solido de producao: identidade federada, acesso de menor privilegio e integracoes auditaveis sem segredos de longa duracao."
+          },
+          "insights": {
+            "en": [
+              "The strongest engineering takeaway is operational: removing PAT lifecycle management reduces both secret sprawl and the human overhead of rotation, revocation, and exception handling.",
+              "This is more than a credential swap because the model pushes teams toward narrower pipeline permissions and better auditability across cross-org repository, artifact, and REST API access.",
+              "For platform and developer-experience teams, the transferable pattern is to standardize machine authentication on federated identity before layering richer internal automation on top."
+            ],
+            "pt": [
+              "A licao de engenharia mais forte e operacional: tirar o ciclo de vida dos PATs da frente reduz tanto a proliferacao de segredos quanto o trabalho humano de rotacao, revogacao e tratamento de excecoes.",
+              "Nao e so uma troca de credencial, porque o modelo empurra times para permissoes mais restritas nos pipelines e melhor auditabilidade no acesso a repositorios, artefatos e APIs entre organizacoes.",
+              "Para times de plataforma e developer experience, o padrao reaproveitavel e padronizar autenticacao de maquinas com identidade federada antes de empilhar automacoes internas mais ricas por cima."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-06",
       "date": "2026-08-06",
       "tokensUsed": 48615,
