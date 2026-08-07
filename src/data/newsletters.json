@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-07",
+      "date": "2026-08-07",
+      "tokensUsed": 30310,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Two Minute Papers",
+          "author": "Two Minute Papers",
+          "title": {
+            "en": "DeepMind Just Changed How AI Sees The World",
+            "pt": "A DeepMind acabou de mudar como a IA enxerga o mundo"
+          },
+          "summary": {
+            "en": "Two Minute Papers highlights a new DeepMind result around multimodal perception, using the newly released Gemma 4 work as the hook. The reason it stands out for a general engineering audience is not the benchmark itself, but the broader implication: vision-language systems are improving their world models in ways that can reshape assistants, search, robotics, and any product that must reason over messy real-world inputs.",
+            "pt": "O Two Minute Papers destaca um novo resultado da DeepMind em percepcao multimodal, usando o trabalho recem-divulgado do Gemma 4 como gancho. O que faz esse item se destacar para um publico amplo de engenharia nao e so o benchmark, mas a implicacao maior: sistemas de visao e linguagem estao melhorando seus modelos de mundo de um jeito que pode mexer com assistentes, busca, robotica e qualquer produto que precise raciocinar sobre entradas confusas do mundo real."
+          },
+          "insights": {
+            "en": [
+              "The reusable lesson for product and platform teams is that better multimodal perception compounds downstream capabilities, because planning, retrieval, and tool use all get stronger when the model interprets visual context more reliably.",
+              "This matters beyond research demos: teams building copilots, document workflows, support agents, or robotics interfaces should expect vision to become a first-class input rather than an optional add-on.",
+              "From a strategy angle, the important signal is competitive pressure around open and semi-open multimodal models, which can lower the barrier for shipping richer AI features in ordinary products."
+            ],
+            "pt": [
+              "A licao reaproveitavel para times de produto e plataforma e que uma percepcao multimodal melhor fortalece tudo que vem depois, porque planejamento, retrieval e uso de ferramentas ficam melhores quando o modelo interpreta contexto visual com mais confianca.",
+              "Isso importa para alem de demo de pesquisa: quem constroi copilots, fluxos com documentos, agentes de suporte ou interfaces de robotica deve esperar que visao vire entrada de primeira classe, e nao um extra opcional.",
+              "No plano estrategico, o sinal mais importante e a pressao competitiva em torno de modelos multimodais abertos ou semiabertos, o que pode baixar a barreira para colocar features mais ricas de IA em produtos comuns."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=vO6SWG-jxvE"
+        }
+      ]
+    },
+    {
       "id": "2026-08-06-eng",
       "date": "2026-08-06",
       "tokensUsed": 16676,
