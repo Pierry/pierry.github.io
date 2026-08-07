@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-07-eng",
+      "date": "2026-08-07",
+      "tokensUsed": 11444,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Netflix Tech Blog",
+          "author": "Nilesh Mishra and Ajit Koti",
+          "title": {
+            "en": "How and Why Netflix Built a Real-Time Distributed Graph: Part 3 - Querying the graph with gRPC",
+            "pt": "Como e por que a Netflix construiu um grafo distribuido em tempo real: Parte 3 - consultando o grafo com gRPC"
+          },
+          "summary": {
+            "en": "Netflix details the serving layer of its Real-Time Distributed Graph, showing how the team answers diverse graph queries over billions of nodes and edges with sub-100ms latency. The post connects concrete production choices such as breadth-first traversal, async execution, selective caching, and opt-in enrichments to the real operating constraints of scale, fan-out, and query depth.",
+            "pt": "A Netflix detalha a camada de serving do seu Real-Time Distributed Graph, mostrando como responde a consultas variadas sobre bilhoes de nos e arestas com latencia abaixo de 100 ms. O texto conecta escolhas concretas de producao, como travessia em largura, execucao assincrona, cache seletivo e enriquecimentos sob demanda, as restricoes reais de escala, fan-out e profundidade de consulta."
+          },
+          "insights": {
+            "en": [
+              "The strongest architecture choice is breadth-first traversal over gRPC, which reduces network round trips on deep queries while still handling wide fan-out workloads in parallel.",
+              "Netflix treats async I/O as a first-class design decision, letting a small set of threads sustain thousands of concurrent queries instead of blocking on storage and enrichment calls.",
+              "Selective caching and opt-in enrichments are the reusable lesson for platform teams: keep the hot path narrow, cache only stable data, and avoid paying enrichment cost unless the client explicitly needs it."
+            ],
+            "pt": [
+              "A decisao arquitetural mais forte e usar travessia em largura sobre gRPC, reduzindo round trips de rede em consultas profundas sem perder paralelismo nos casos de alto fan-out.",
+              "A Netflix trata I/O assincrono como decisao de primeira classe, permitindo que um conjunto pequeno de threads sustente milhares de consultas concorrentes sem bloquear em storage ou enriquecimentos.",
+              "A licao mais reaproveitavel para times de plataforma e combinar cache seletivo com enriquecimentos sob demanda: manter o hot path enxuto, cachear so dados estaveis e nao pagar custo extra sem necessidade explicita do cliente."
+            ]
+          },
+          "link": "https://netflixtechblog.com/how-and-why-netflix-built-a-real-time-distributed-graph-part-3-querying-the-graph-with-grpc-0f3468349607"
+        }
+      ]
+    },
+    {
       "id": "2026-08-07",
       "date": "2026-08-07",
       "tokensUsed": 30310,
