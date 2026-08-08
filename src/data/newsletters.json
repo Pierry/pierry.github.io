@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-08-eng",
+      "date": "2026-08-08",
+      "tokensUsed": 33350,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Nimish Sheth",
+          "title": {
+            "en": "Zero-Sum by Design: 10 Years of Uber's Payments Platform",
+            "pt": "Zero-sum por design: 10 anos da plataforma de pagamentos da Uber"
+          },
+          "summary": {
+            "en": "Uber looks back at a decade of its payments platform and explains the design principles that let it scale from an early microservice foundation into a system moving nearly twice the company's gross bookings. The post stands out as a system architecture piece: immutable money orders, zero-sum accounting, strongly consistent ledgers, async processing, and business-agnostic abstractions gave Uber a financial core that could absorb new lines of business and payment methods without repeated rearchitecture.",
+            "pt": "A Uber revisita uma decada da sua plataforma de pagamentos e explica os principios de design que a fizeram evoluir de uma base inicial de microservicos para um sistema que movimenta quase o dobro do gross bookings da empresa. O texto se destaca como material de arquitetura de sistemas: money orders imutaveis, contabilidade zero-sum, ledgers fortemente consistentes, processamento assincrono e abstracoes agnosticas ao negocio deram a Uber um nucleo financeiro capaz de absorver novas linhas de negocio e meios de pagamento sem reengenharias recorrentes."
+          },
+          "insights": {
+            "en": [
+              "The core architecture lesson is to encode financial invariants directly into the platform data model: immutable money orders and zero-sum validation make correctness auditable instead of relying on downstream reconciliation to catch errors.",
+              "Uber's decision to separate stateless workflow services from a strongly consistent ledger shows how to combine asynchronous scale with a narrow, trustworthy financial source of truth.",
+              "The most reusable platform idea is abstraction discipline: line-of-business-agnostic money orders and payment-instrument-agnostic integrations let the same core serve rides, eats, freight, memberships, and local payment methods with minimal redesign."
+            ],
+            "pt": [
+              "A principal licao arquitetural e codificar invariantes financeiras direto no modelo de dados da plataforma: money orders imutaveis e validacao zero-sum tornam a corretude auditavel, em vez de depender de reconciliacao posterior para achar erros.",
+              "A decisao da Uber de separar servicos stateless de workflow de um ledger fortemente consistente mostra como combinar escala assincrona com uma fonte financeira de verdade estreita e confiavel.",
+              "A ideia de plataforma mais reaproveitavel e a disciplina de abstracao: money orders agnosticas a linha de negocio e integracoes agnosticas ao instrumento de pagamento permitiram que o mesmo core servisse rides, eats, freight, memberships e meios de pagamento locais com minimo redesenho."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/ubers-payments-platform/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-08",
       "date": "2026-08-08",
       "tokensUsed": 2159531,
