@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-08",
+      "date": "2026-08-08",
+      "tokensUsed": 2159531,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "AlgoMaster",
+          "author": "Ashish Pratap Singh",
+          "title": {
+            "en": "Top 10 API Gateway Use Cases in System Design",
+            "pt": "Top 10 casos de uso de API Gateway em system design"
+          },
+          "summary": {
+            "en": "AlgoMaster turns the API Gateway into a practical system design lens instead of a buzzword. The post explains why routing, authentication, authorization, rate limiting, and other cross-cutting concerns become easier to reason about when they are centralized at the edge, letting backend services stay focused on business logic while the platform enforces consistent traffic and security policies.",
+            "pt": "O AlgoMaster transforma o API Gateway em uma lente pratica de system design, e nao em um buzzword. O texto mostra por que roteamento, autenticacao, autorizacao, rate limiting e outras preocupacoes transversais ficam mais simples de operar quando sao centralizadas na borda, deixando os servicos de backend focados na logica de negocio enquanto a plataforma aplica politicas consistentes de trafego e seguranca."
+          },
+          "insights": {
+            "en": [
+              "The strongest takeaway is architectural: move repeated edge concerns such as auth, traffic control, and request logging out of individual services so they stop drifting and breaking in slightly different ways.",
+              "API Gateway is most valuable when paired with service discovery, because it decouples clients from backend topology and lets teams scale, move, or rename services without changing every consumer.",
+              "This is a stack-agnostic design pattern for leaders and senior engineers: keep the gateway responsible for common policy enforcement, and keep domain services narrow, explicit, and business-oriented."
+            ],
+            "pt": [
+              "A licao mais forte e arquitetural: tirar preocupacoes repetidas de borda, como auth, controle de trafego e logging de requisicoes, de dentro de cada servico para evitar deriva e bugs diferentes em cada lugar.",
+              "API Gateway fica ainda mais valioso quando combinado com service discovery, porque desacopla os clientes da topologia do backend e permite escalar, mover ou renomear servicos sem mexer em todos os consumidores.",
+              "Esse e um padrao agnostico de stack para liderancas e seniors: deixar o gateway responsavel por politicas comuns e manter os servicos de dominio enxutos, explicitos e orientados ao negocio."
+            ]
+          },
+          "link": "https://blog.algomaster.io/p/top-10-api-gateway-use-cases"
+        }
+      ]
+    },
+    {
       "id": "2026-08-07-eng",
       "date": "2026-08-07",
       "tokensUsed": 11444,
