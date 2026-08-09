@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-09-eng",
+      "date": "2026-08-09",
+      "tokensUsed": 7806,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Spotify Engineering",
+          "author": "Spotify Engineering",
+          "title": {
+            "en": "Indexing the Data Lake for Online Point Queries",
+            "pt": "Indexando o data lake para consultas pontuais online"
+          },
+          "summary": {
+            "en": "Spotify presents Random Access Parquet (RAP), an approach for serving low-latency point queries directly from Parquet data in the lake instead of copying hot subsets into a separate key-value store. The core idea is to keep one shared storage format for analytics, ML, experimentation, and online retrieval, then add an external key-to-file-and-row index plus precise ranged reads so user-level data can be fetched quickly enough for product experiences and AI agents.",
+            "pt": "A Spotify apresenta o Random Access Parquet (RAP), uma abordagem para servir consultas pontuais de baixa latencia diretamente de dados Parquet no data lake, sem copiar subconjuntos quentes para um key-value store separado. A ideia central e manter um unico formato de armazenamento compartilhado entre analytics, ML, experimentacao e retrieval online, adicionando um indice externo de chave para arquivo e linha, junto com ranged reads precisos, para buscar dados por usuario rapido o bastante para experiencias de produto e agentes de IA."
+          },
+          "insights": {
+            "en": [
+              "The strongest architecture lesson is that the latency bottleneck is often query-planning and scan overhead, not the object store itself, so precomputed lookup paths can make lake data viable for interactive serving.",
+              "RAP is a notable platform pattern because it avoids maintaining separate copies of the same dataset for batch analytics and online retrieval, reducing duplication while keeping Parquet as the shared contract.",
+              "The practical engineering playbook is to prepare files for random access: bucket or sort by key, shrink the bytes per lookup, and collapse dependent reads into a small number of parallel ranged fetches."
+            ],
+            "pt": [
+              "A licao arquitetural mais forte e que o gargalo de latencia muitas vezes esta no planejamento e no scan do motor de consulta, nao no object store em si, entao caminhos de lookup precomputados podem tornar dados de lake viaveis para serving interativo.",
+              "O RAP e um padrao de plataforma interessante porque evita manter copias separadas do mesmo dataset para analytics em batch e retrieval online, reduzindo duplicacao e preservando o Parquet como contrato compartilhado.",
+              "O playbook pratico de engenharia e preparar os arquivos para acesso aleatorio: particionar ou ordenar por chave, reduzir os bytes por lookup e colapsar leituras dependentes em poucos ranged fetches paralelos."
+            ]
+          },
+          "link": "https://engineering.atspotify.com/2026/7/indexing-the-data-lake-for-online-point-queries/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-09",
       "date": "2026-08-09",
       "tokensUsed": 34510,
