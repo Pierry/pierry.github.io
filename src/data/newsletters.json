@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-09",
+      "date": "2026-08-09",
+      "tokensUsed": 34510,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Safe Database Rollback Starts Before Deployment",
+            "pt": "Rollback seguro de banco de dados comeca antes do deploy"
+          },
+          "summary": {
+            "en": "Raul Junco argues that the dangerous part of a release is not the schema migration itself, but the moment after new code starts writing data the old version cannot understand. The article frames database rollback as a compatibility design problem: if old code, new code, and intermediate schema states cannot coexist, an application rollback may leave production data stranded. The practical answer is to design database changes in stages with compatibility, dual writes, backfills, and explicit rollback windows.",
+            "pt": "Raul Junco defende que a parte perigosa de um release nao e a migration em si, mas o momento em que a nova versao comeca a gravar dados que a versao antiga nao entende mais. O texto trata rollback de banco como um problema de compatibilidade: se codigo antigo, codigo novo e estados intermediarios do schema nao conseguem coexistir, um rollback da aplicacao pode deixar os dados de producao encurralados. A resposta pratica e desenhar mudancas em etapas, com compatibilidade, dual writes, backfills e uma janela de rollback explicita."
+          },
+          "insights": {
+            "en": [
+              "The central lesson is that application rollback and database rollback are different problems, because code can be replaced instantly while production data keeps evolving after deployment.",
+              "Expand, migrate, and contract is the reusable pattern: add the new shape first, keep both versions working in parallel, backfill safely, and only remove the old shape after the rollback window closes.",
+              "Migration logic must be production-grade, not one-off glue code: dual writes, backfills, and feature flags need idempotency, observability, bounded batches, and safe pause-resume behavior."
+            ],
+            "pt": [
+              "A licao central e que rollback de aplicacao e rollback de banco sao problemas diferentes, porque o codigo pode ser trocado instantaneamente enquanto os dados de producao continuam evoluindo apos o deploy.",
+              "Expand, migrate e contract e o padrao mais reaproveitavel: adicionar a nova forma primeiro, manter as duas versoes funcionando em paralelo, fazer backfill com seguranca e so remover o formato antigo depois que a janela de rollback passar.",
+              "Logica de migracao precisa ser tratada como software de producao, e nao como cola temporaria: dual writes, backfills e feature flags precisam de idempotencia, observabilidade, lotes limitados e pausa-retomada segura."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/safe-database-rollback-starts-before-deployment"
+        }
+      ]
+    },
+    {
       "id": "2026-08-08-eng",
       "date": "2026-08-08",
       "tokensUsed": 33350,
