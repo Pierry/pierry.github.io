@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-10",
+      "date": "2026-08-10",
+      "tokensUsed": 38584,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Product for Engineers",
+          "author": "Ian Vanagas",
+          "title": {
+            "en": "What nobody tells you about writing agent skills",
+            "pt": "O que ninguem te conta sobre escrever agent skills"
+          },
+          "summary": {
+            "en": "Ian Vanagas explains how PostHog turned skills into a practical layer for AI-assisted engineering by codifying recurring context, tool usage rules, and gotchas into reusable SKILL.md files. The article argues that the real leverage is not in prompting harder, but in progressively loading the right instructions, scripts, and references only when they are relevant, so agents stop rediscovering the same workflows from scratch.",
+            "pt": "Ian Vanagas mostra como a PostHog transformou skills em uma camada pratica para engenharia assistida por IA, codificando contexto recorrente, regras de uso de ferramentas e armadilhas em arquivos SKILL.md reutilizaveis. O ponto central e que o maior ganho nao vem de forcar prompts maiores, mas de carregar instrucoes, scripts e referencias de forma progressiva apenas quando sao relevantes, para que os agentes parem de redescobrir os mesmos fluxos do zero."
+          },
+          "insights": {
+            "en": [
+              "The strongest lesson is architectural: skills are a context-routing mechanism, not just documentation, so the best ones help agents decide when to load deeper instructions instead of dumping everything into the initial prompt.",
+              "This is a durable platform pattern for AI teams because it converts tribal knowledge, shell snippets, and workflow caveats into reusable operational assets that improve consistency and reduce token waste.",
+              "For engineering leaders, the bigger implication is process design: if agents repeatedly make the same mistakes, the answer is often to productize the workflow around them instead of blaming the model alone."
+            ],
+            "pt": [
+              "A licao mais forte e arquitetural: skills funcionam como um mecanismo de roteamento de contexto, e nao apenas como documentacao, entao as melhores ajudam o agente a decidir quando carregar instrucoes mais profundas em vez de despejar tudo no prompt inicial.",
+              "Esse e um padrao de plataforma duradouro para times de IA porque transforma conhecimento tribal, comandos de shell e caveats de fluxo em ativos operacionais reutilizaveis, aumentando consistencia e reduzindo desperdicio de tokens.",
+              "Para liderancas de engenharia, a implicacao maior e de desenho de processo: se agentes repetem sempre os mesmos erros, muitas vezes a resposta e empacotar melhor o workflow ao redor deles, e nao culpar apenas o modelo."
+            ]
+          },
+          "link": "https://newsletter.posthog.com/p/what-nobody-tells-you-about-writing"
+        }
+      ]
+    },
+    {
       "id": "2026-08-09-eng",
       "date": "2026-08-09",
       "tokensUsed": 7806,
