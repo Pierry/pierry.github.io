@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-10-eng",
+      "date": "2026-08-10",
+      "tokensUsed": 8806,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Microsoft Engineering",
+          "author": "Sudhanshu, Iria",
+          "title": {
+            "en": "I Enabled RBAC and Everything Broke. What Did I Do Wrong?",
+            "pt": "Ativei RBAC e tudo quebrou. O que eu fiz de errado?"
+          },
+          "summary": {
+            "en": "Microsoft explains the most common causes of 403 errors after migrating Azure Cosmos DB applications from keys to managed identities and RBAC. The post is useful because it turns a vague security migration failure into a concrete diagnostic model: authentication may already be working, while authorization is failing due to the wrong role type, the wrong principal, an overly narrow scope, propagation delay, or a lingering code path still using account keys.",
+            "pt": "A Microsoft explica as causas mais comuns de erros 403 depois de migrar aplicacoes do Azure Cosmos DB de chaves para managed identities com RBAC. O texto se destaca por transformar uma falha vaga de migracao de seguranca em um modelo diagnostico concreto: a autenticacao pode ja estar funcionando, enquanto a autorizacao falha por causa do tipo errado de role, do principal incorreto, de um escopo estreito demais, de atraso de propagacao ou de algum trecho de codigo ainda usando account keys."
+          },
+          "insights": {
+            "en": [
+              "The strongest operational lesson is to interpret 403s correctly during RBAC migrations: in many cases the identity is valid, and the failure is in authorization boundaries rather than credential setup.",
+              "The control-plane versus data-plane split is the reusable architecture takeaway, because giving an app management permissions does not automatically grant read or write access to production data.",
+              "The safest rollout pattern is staged migration: prove TokenCredential plus data-plane roles while keys are still enabled, then disable local auth only after the identity path is confirmed in production-like conditions."
+            ],
+            "pt": [
+              "A principal licao operacional e interpretar corretamente os 403s durante migracoes para RBAC: em muitos casos a identidade e valida, e a falha esta nos limites de autorizacao, nao na configuracao de credenciais.",
+              "A separacao entre control plane e data plane e a licao arquitetural mais reaproveitavel, porque dar permissoes de gerenciamento para uma aplicacao nao concede automaticamente acesso de leitura e escrita aos dados de producao.",
+              "O rollout mais seguro e em etapas: validar TokenCredential com roles de data plane enquanto as chaves ainda estao habilitadas e so depois desligar o local auth, quando o caminho baseado em identidade ja estiver comprovado."
+            ]
+          },
+          "link": "https://devblogs.microsoft.com/cosmosdb/i-enabled-rbac-and-everything-broke-what-did-i-do-wrong/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-10",
       "date": "2026-08-10",
       "tokensUsed": 38584,
