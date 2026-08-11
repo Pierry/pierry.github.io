@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-11",
+      "date": "2026-08-11",
+      "tokensUsed": 18099,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim and Louis-Francois Bouchard",
+          "title": {
+            "en": "How to build an AI research agent with MCP",
+            "pt": "Como construir um agente de pesquisa com IA usando MCP"
+          },
+          "summary": {
+            "en": "This issue argues that research-heavy questions need a different architecture than one-shot prompting: an agent that decomposes the question, calls search and fetch tools in a loop, evaluates intermediate results, and stops only when it has enough evidence. The practical value is not the buzzword of agents itself, but the runtime control it gives you over tool access, stopping rules, audit trails, and cost, which turns a generic model into a bounded research system.",
+            "pt": "Esta edicao defende que perguntas pesadas de pesquisa exigem uma arquitetura diferente de um prompt unico: um agente que quebra a questao em subproblemas, chama ferramentas de busca e leitura em loop, avalia resultados intermediarios e so para quando ja reuniu evidencia suficiente. O valor pratico nao esta no hype de agentes em si, mas no controle de runtime sobre ferramentas, regras de parada, trilha de auditoria e custo, que transforma um modelo generico em um sistema de pesquisa delimitado."
+          },
+          "insights": {
+            "en": [
+              "The key design move is shifting from answer generation to a think-act-observe loop. For open-ended research, the ability to search, inspect, discard dead ends, and refine sub-questions matters more than a larger context window.",
+              "Owning the runtime is the real moat. Once you control which tools exist, how they are described, and when the loop must stop or escalate, the agent becomes safer, cheaper, and better aligned to your environment than a generic hosted mode.",
+              "Evaluation has to look at the trajectory, not only the final answer. An agent that reaches the right conclusion in 50 tool calls may still be a bad system if a disciplined loop and better tool contracts could have done it in 5."
+            ],
+            "pt": [
+              "A principal decisao de design e trocar geracao de resposta por um ciclo think-act-observe. Para pesquisa aberta, a capacidade de buscar, inspecionar, descartar becos sem saida e refinar subperguntas vale mais do que apenas aumentar a janela de contexto.",
+              "Ter o runtime na mao e a verdadeira vantagem. Quando voce controla quais ferramentas existem, como sao descritas e quando o loop deve parar ou escalar, o agente fica mais seguro, mais barato e mais alinhado ao seu ambiente do que um modo hospedado generico.",
+              "Avaliacao precisa olhar a trajetoria, nao so a resposta final. Um agente que chega a conclusao certa em 50 chamadas de ferramenta ainda pode ser ruim se um loop mais disciplinado e contratos melhores de ferramenta resolveriam em 5."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/how-to-build-an-ai-research-agent-with-mcp"
+        }
+      ]
+    },
+    {
       "id": "2026-08-10-eng",
       "date": "2026-08-10",
       "tokensUsed": 8806,
