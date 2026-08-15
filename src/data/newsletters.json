@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-15-eng",
+      "date": "2026-08-15",
+      "tokensUsed": 8252,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Michael Garfinkle",
+          "title": {
+            "en": "How we raised mobile end-to-end test stability to 98% (2026)",
+            "pt": "Como elevamos a estabilidade dos testes end-to-end mobile para 98% (2026)"
+          },
+          "summary": {
+            "en": "Shopify rebuilt its mobile end-to-end testing stack after flakiness made the suite block more good pull requests than bad ones. The new approach keeps Appium under the hood but wraps it with a strict builder-style API, step-level assertions, computer-vision-based element discovery with PaddleOCR and OpenCV, annotated debugging videos, and promotion gates for flakiness. The result moved test stability from roughly 50% to 98%, turning E2E checks back into reliable blocking CI for a large React Native app.",
+            "pt": "A Shopify reconstruiu sua stack de testes end-to-end mobile depois que a flakiness fez a suite bloquear mais pull requests bons do que ruins. A nova abordagem manteve o Appium por baixo, mas o envolveu com uma API opinativa em estilo builder, asserts em cada etapa, descoberta visual de elementos com PaddleOCR e OpenCV, videos anotados para debug e gates de promocao baseados em flakiness. O resultado foi sair de cerca de 50% para 98% de estabilidade, devolvendo confianca para usar E2E como bloqueio real no CI de um grande app React Native."
+          },
+          "insights": {
+            "en": [
+              "The key design move was reducing framework freedom on purpose: every action must declare the expected post-condition, which prevents timing bugs from surfacing many steps later as noisy false negatives.",
+              "Replacing raw Test IDs with computer-vision matching shifts the abstraction from implementation details to what a real user can see, which makes tests both more reliable and easier for humans or AI agents to author.",
+              "The operational lesson is that flaky suites are often a platform problem, not only a test hygiene problem; Shopify paired the new API with pre-promotion flakiness gates so unstable tests never re-enter the blocking pipeline."
+            ],
+            "pt": [
+              "A principal decisao de design foi reduzir a liberdade do framework de forma intencional: toda acao precisa declarar a condicao esperada depois do passo, evitando que bugs de timing aparecam varias etapas depois como falsos negativos ruidosos.",
+              "Trocar Test IDs crus por matching visual muda a abstracao de detalhes de implementacao para o que um usuario realmente enxerga, deixando os testes mais confiaveis e tambem mais faceis de escrever por humanos ou agentes de IA.",
+              "A licao operacional e que suites flaky muitas vezes sao um problema de plataforma, nao so de higiene de testes; a Shopify combinou a nova API com gates de flakiness antes da promocao, impedindo que testes instaveis voltem ao pipeline bloqueante."
+            ]
+          },
+          "link": "https://shopify.engineering/mobile-e2e-testing"
+        }
+      ]
+    },
+    {
       "id": "2026-08-15",
       "date": "2026-08-15",
       "tokensUsed": 74247,
