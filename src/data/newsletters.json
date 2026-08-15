@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-15",
+      "date": "2026-08-15",
+      "tokensUsed": 74247,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim and Tina Sharma",
+          "title": {
+            "en": "Prompt Engineering - A Deep Dive",
+            "pt": "Engenharia de Prompt em Profundidade"
+          },
+          "summary": {
+            "en": "This issue explains why prompt quality matters, but also why prompts alone are not enough once you care about reliability. It connects tokenization, attention, context windows, examples, retrieval, memory, tool use, and validation into one practical mental model for building AI systems that behave predictably in production.",
+            "pt": "Esta edicao explica por que a qualidade do prompt importa, mas tambem por que prompt sozinho nao basta quando confiabilidade vira requisito. Ela conecta tokenizacao, atencao, janelas de contexto, exemplos, recuperacao, memoria, uso de ferramentas e validacao em um modelo mental pratico para construir sistemas de IA mais previsiveis em producao."
+          },
+          "insights": {
+            "en": [
+              "Relevance beats volume. Once the model already has the needed evidence, extra context often hurts more than helps because it competes for attention and burns the same token budget used by the answer.",
+              "Prompt engineering is only the first layer. Production-grade AI depends just as much on context engineering, retrieval, memory, tool orchestration, and output verification as on the wording of a single prompt.",
+              "Better prompts come from clearer contracts, not magic phrasing. Explicit tasks, examples, stopping rules, and output schemas reduce guesswork and make downstream systems easier to evaluate and trust."
+            ],
+            "pt": [
+              "Relevancia vale mais do que volume. Quando o modelo ja tem a evidencia necessaria, contexto extra muitas vezes atrapalha porque disputa atencao e consome o mesmo orcamento de tokens usado pela resposta.",
+              "Engenharia de prompt e so a primeira camada. IA de producao depende tanto de contexto, recuperacao, memoria, orquestracao de ferramentas e verificacao de saida quanto da formulacao de um unico prompt.",
+              "Prompts melhores nascem de contratos mais claros, nao de frases magicas. Tarefa explicita, exemplos, regras de parada e esquemas de saida reduzem ambiguidade e tornam o sistema mais avaliavel e confiavel."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/prompt-engineering-guide"
+        }
+      ]
+    },
+    {
       "id": "2026-08-11",
       "date": "2026-08-11",
       "tokensUsed": 18099,
