@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-17",
+      "date": "2026-08-17",
+      "tokensUsed": 37274,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hussein Nasser",
+          "author": "Hussein Nasser",
+          "title": {
+            "en": "you won't forget how postgres works after this",
+            "pt": "Voce nao vai esquecer como o Postgres funciona depois disso"
+          },
+          "summary": {
+            "en": "Hussein Nasser uses a whiteboard walkthrough of PostgreSQL internals to rebuild the mental model behind how the database actually works. Instead of focusing on ORM tips or vendor knobs, the video revisits the architecture layers that matter for backend engineers: process model, storage behavior, query flow, and why understanding those pieces changes system design decisions upstream.",
+            "pt": "Hussein Nasser usa uma aula de quadro sobre os internos do PostgreSQL para reconstruir o modelo mental de como o banco realmente funciona. Em vez de focar em dicas de ORM ou ajustes de fornecedor, o video revisita as camadas de arquitetura que importam para backend engineers: modelo de processos, comportamento de armazenamento, fluxo de queries e por que entender essas pecas muda decisoes de system design feitas antes do banco entrar em cena."
+          },
+          "insights": {
+            "en": [
+              "Good system design depends on accurate database mental models; if you misunderstand how Postgres handles processes, memory, and disk, you will make bad scaling and latency tradeoffs higher in the stack.",
+              "This kind of refresher is valuable because it is stack-agnostic: the lesson is not a Postgres trick, but a broader way to reason about databases as living systems instead of black boxes behind an ORM.",
+              "For engineering leaders, it is also a reminder that strong teams benefit from periodic fundamentals reviews, especially when AI tools make it easier to ship code without fully understanding the runtime underneath."
+            ],
+            "pt": [
+              "Bom system design depende de modelos mentais corretos sobre banco de dados; se voce entende errado como o Postgres lida com processos, memoria e disco, vai tomar trade-offs ruins de escala e latencia nas camadas acima.",
+              "Esse tipo de revisao vale porque e agnostico de stack: a licao nao e um truque de Postgres, mas uma forma mais ampla de pensar em bancos como sistemas vivos, e nao como caixas-pretas atras de um ORM.",
+              "Para liderancas de engenharia, tambem fica o lembrete de que times fortes precisam revisitar fundamentos de tempos em tempos, principalmente quando ferramentas de IA deixam facil entregar codigo sem entender totalmente o runtime por baixo."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=q9jixKv4h2I"
+        }
+      ]
+    },
+    {
       "id": "2026-08-15-eng",
       "date": "2026-08-15",
       "tokensUsed": 8252,
