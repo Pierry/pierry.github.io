@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-18-eng",
+      "date": "2026-08-18",
+      "tokensUsed": 9532,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Uber Engineering",
+          "author": "Pankaj Mohapatra",
+          "title": {
+            "en": "Running Cost-Efficient Export Workloads at Uber",
+            "pt": "Como a Uber rodou workloads de export de forma mais eficiente em custo"
+          },
+          "summary": {
+            "en": "Uber details how repeated point-lookups over massive historical Hudi tables were keeping cold lakehouse data hot and expensive in Google Cloud Storage. The team combined Hudi column statistics with predicate-column sorting to prune files before scan time, cutting unnecessary reads, reducing egress and compute, and restoring the economics of storage tiering for privacy and compliance exports.",
+            "pt": "A Uber mostra como consultas super seletivas em tabelas historicas gigantes em Hudi estavam mantendo dados frios do lakehouse sempre quentes e caros no Google Cloud Storage. O time combinou estatisticas de coluna do Hudi com ordenacao pela coluna de predicado para podar arquivos antes do scan, reduzindo leituras desnecessarias, egress e compute, e recuperando a economia do tiering de storage para fluxos de privacidade e compliance."
+          },
+          "insights": {
+            "en": [
+              "The big lesson is that access pattern drives storage cost: tiny result sets can still be ruinous when they force historical full scans that prevent cold data from dropping into cheaper tiers.",
+              "Uber rejected a heavier secondary-index approach because sorted layouts plus Hudi column stats delivered enough pruning with less metadata overhead, which is a strong example of choosing the simplest effective systems design.",
+              "This is broadly useful for any data platform team handling DSARs, audits, fraud investigations, or narrow compliance exports across long retention windows."
+            ],
+            "pt": [
+              "A grande licao e que padrao de acesso dirige custo de storage: resultados minimos ainda podem sair caros quando forcam full scans historicos e impedem dados frios de cair em tiers mais baratos.",
+              "A Uber descartou um secondary index mais pesado porque layout ordenado mais column stats do Hudi ja entregavam poda suficiente com menos overhead de metadata, um bom exemplo de escolher o desenho de sistema mais simples que resolve.",
+              "Isso e util para qualquer time de plataforma de dados que lide com DSAR, auditoria, investigacao de fraude ou exports de compliance em janelas longas de retencao."
+            ]
+          },
+          "link": "https://www.uber.com/us/en/blog/running-cost-efficient-export/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-17",
       "date": "2026-08-17",
       "tokensUsed": 37274,
