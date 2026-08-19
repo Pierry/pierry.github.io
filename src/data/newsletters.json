@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-19-eng",
+      "date": "2026-08-19",
+      "tokensUsed": 9291,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Shopify Engineering",
+          "author": "Cody Mazza-Anthony",
+          "title": {
+            "en": "Gisting: Compressing LLM Agent context to increase throughput and reduce cost (2026)",
+            "pt": "Gisting: comprimindo o contexto de agentes LLM para aumentar throughput e reduzir custo (2026)"
+          },
+          "summary": {
+            "en": "Shopify describes how it compressed the Sidekick GraphQL agent system prompt from about 6,000 tokens to roughly 1,500 learned gist tokens while preserving behavior through knowledge distillation. By freezing the base model and only training special-token embeddings, the team kept the serving path simple and achieved meaningful production gains in latency, throughput, and GPU efficiency.",
+            "pt": "A Shopify mostra como comprimiu o system prompt do agente GraphQL do Sidekick de cerca de 6.000 tokens para algo em torno de 1.500 gist tokens aprendidos, preservando o comportamento via knowledge distillation. Ao congelar o modelo base e treinar apenas embeddings de tokens especiais, o time manteve o serving simples e obteve ganhos reais de latencia, throughput e eficiencia de GPU em producao."
+          },
+          "insights": {
+            "en": [
+              "The most useful systems idea is that prompt compression is not just about token cost; it directly reduces decode-time memory pressure and improves throughput even when prefix caching already exists.",
+              "Shopify picked an operationally elegant design: no custom serving stack, no extra encoder, and no model retraining beyond the gist embeddings written back into the embedding matrix.",
+              "This is broadly relevant to any team running agents with large static instructions, because it turns prompt engineering into an inference optimization problem with measurable infrastructure savings."
+            ],
+            "pt": [
+              "A ideia de sistemas mais valiosa aqui e que compressao de prompt nao mexe so em custo de token; ela reduz a pressao de memoria no decode e melhora throughput mesmo quando prefix caching ja existe.",
+              "A Shopify escolheu um desenho operacional elegante: sem stack de serving customizada, sem encoder extra e sem retreinar o modelo inteiro, apenas gravando os gist embeddings de volta na matriz de embeddings.",
+              "Isso e util para qualquer time que rode agentes com instrucoes estaticas longas, porque transforma prompt engineering em um problema de otimizacao de inferencia com economia de infra mensuravel."
+            ]
+          },
+          "link": "https://shopify.engineering/gisting"
+        }
+      ]
+    },
+    {
       "id": "2026-08-19",
       "date": "2026-08-19",
       "tokensUsed": 45744,
