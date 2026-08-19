@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-19",
+      "date": "2026-08-19",
+      "tokensUsed": 45744,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Craft Better Software",
+          "author": "Daniel Moka",
+          "title": {
+            "en": "Agentic Engineering 101",
+            "pt": "Engenharia Agentica 101"
+          },
+          "summary": {
+            "en": "Daniel Moka argues that building reliable AI agents is no longer mostly about prompt wording. He breaks the job into five layers: prompt, context, harness, loop, and graph engineering, showing how each layer expands control from a single model call to a repeatable, testable workflow that can pause, recover, and parallelize work.",
+            "pt": "Daniel Moka defende que construir agentes de IA confiaveis ja nao e principalmente um problema de escolher as palavras do prompt. Ele divide o trabalho em cinco camadas: prompt, contexto, harness, loop e graph engineering, mostrando como cada uma amplia o controle de uma chamada isolada do modelo para um fluxo repetivel, testavel e capaz de pausar, retomar e paralelizar trabalho."
+          },
+          "insights": {
+            "en": [
+              "The useful mental model is to debug agent failures by layer: wrong format is a prompt issue, missing facts is a context issue, flaky tool execution is a harness issue, fake success is a loop issue, and restart or approval pain is a graph issue.",
+              "The article makes a strong systems point: the model is only one component, and most leverage now comes from engineering the environment around it with tools, permissions, verification, and routing.",
+              "This is broadly relevant for developers and managers because it turns AI agent work from demo magic into an operating model for trustworthy automation."
+            ],
+            "pt": [
+              "O modelo mental mais util e depurar falhas de agentes por camada: formato errado e problema de prompt, fatos esquecidos sao problema de contexto, execucao instavel de ferramentas e problema de harness, falso sucesso e problema de loop, e dor para pausar ou aprovar e problema de grafo.",
+              "O texto bate num ponto forte de sistemas: o modelo e so um componente, e a maior alavanca agora vem de projetar o ambiente em volta dele com ferramentas, permissoes, verificacao e roteamento.",
+              "Isso e relevante para devs e managers porque transforma trabalho com agentes de IA de magia de demo em um modelo operacional para automacao confiavel."
+            ]
+          },
+          "link": "https://craftbettersoftware.com/p/agentic-engineering-101"
+        }
+      ]
+    },
+    {
       "id": "2026-08-18-eng",
       "date": "2026-08-18",
       "tokensUsed": 9532,
