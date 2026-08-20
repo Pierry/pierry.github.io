@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-20-eng",
+      "date": "2026-08-20",
+      "tokensUsed": 30146,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Airbnb Engineering",
+          "author": "Harrison Katz",
+          "title": {
+            "en": "How we knew COVID was over (and what our models had to unlearn)",
+            "pt": "Como soubemos que a COVID tinha acabado (e o que nossos modelos precisaram desaprender)"
+          },
+          "summary": {
+            "en": "Airbnb explains how its forecasting team decides whether a drifting production model should be merely refit, structurally rebuilt, or deliberately left alone. The post turns post-COVID demand forecasting into a practical framework for avoiding overreaction to noise, removing stale assumptions, and treating model updates as risk decisions rather than routine maintenance.",
+            "pt": "A Airbnb mostra como seu time de forecast decide se um modelo de producao que esta derivando deve ser apenas reestimado, estruturalmente redesenhado ou intencionalmente deixado quieto. O post transforma o periodo pos-COVID em um framework pratico para evitar reagir demais a ruido, remover suposicoes obsoletas e tratar atualizacoes de modelo como decisoes de risco, nao como manutencao de rotina."
+          },
+          "insights": {
+            "en": [
+              "The key decision is not simply retrain or not: production teams should separate refitting parameters, changing model structure, and holding steady, because each move carries a different operational cost.",
+              "A model that keeps missing in the same direction often needs respecification, while a short-lived anomaly may justify doing nothing so the system does not absorb temporary noise as a new normal.",
+              "For engineering managers, the strongest lesson is governance: scheduled refreshes are useful, but important model changes should be framed as risk management with explicit tradeoffs, not as blind cadence work."
+            ],
+            "pt": [
+              "A decisao central nao e simplesmente retreinar ou nao: times de producao precisam separar reestimar parametros, mudar a estrutura do modelo e manter tudo como esta, porque cada movimento tem um custo operacional diferente.",
+              "Quando um modelo erra repetidamente na mesma direcao, o problema costuma pedir respecificacao; quando a anomalia e curta, pode ser melhor nao mexer para nao absorver ruido temporario como se fosse o novo normal.",
+              "Para engineering managers, a licao mais forte e de governanca: refresh programado ajuda, mas mudancas importantes em modelos devem ser tratadas como gestao de risco com tradeoffs explicitos, e nao como trabalho cego por cadencia."
+            ]
+          },
+          "link": "https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab"
+        }
+      ]
+    },
+    {
       "id": "2026-08-20",
       "date": "2026-08-20",
       "tokensUsed": 991484,
