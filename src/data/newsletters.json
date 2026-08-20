@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-20",
+      "date": "2026-08-20",
+      "tokensUsed": 991484,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Product for Engineers",
+          "author": "Ian Vanagas",
+          "title": {
+            "en": "This post will save you tokens",
+            "pt": "Este post vai economizar seus tokens"
+          },
+          "summary": {
+            "en": "Ian Vanagas argues that AI teams are moving from tokenmaxxing to tokenminning: reducing context waste without hurting quality. The post connects spend tracking, evals, AGENTS.md hygiene, and MCP tool-surface design into a practical operating model for building cheaper and more reliable AI products and developer workflows.",
+            "pt": "Ian Vanagas defende que times de IA estao saindo do tokenmaxxing para o tokenminning: reduzir desperdicio de contexto sem piorar a qualidade. O texto conecta monitoramento de custo, evals, higiene de AGENTS.md e desenho da superficie de ferramentas via MCP em um modelo pratico para construir produtos e workflows de desenvolvimento com IA mais baratos e confiaveis."
+          },
+          "insights": {
+            "en": [
+              "The strongest systems point is that token cost needs to be analyzed per workflow, not only per bill, because retries, bad queries, and unnecessary context often hide inside apparently normal usage spikes.",
+              "AGENTS.md is framed as an inference optimization tool: keep only expensive-to-discover facts, team intent, and known landmines, while removing obvious or easily discoverable information that bloats context.",
+              "For MCP and agent tooling, the article makes a practical architecture case for fewer, more composable tools, progressive schema discovery, and scoped connections instead of dumping huge tool catalogs into every session."
+            ],
+            "pt": [
+              "O ponto mais forte de sistemas e que custo de token precisa ser analisado por workflow, nao so pela fatura, porque retries, queries ruins e contexto desnecessario costumam ficar escondidos em picos de uso aparentemente normais.",
+              "O texto trata AGENTS.md como ferramenta de otimizacao de inferencia: manter so fatos caros de descobrir, intencao do time e landmines conhecidos, removendo o que e obvio ou facil de achar e so infla contexto.",
+              "Para MCP e ferramentas de agentes, o artigo defende uma arquitetura mais pratica com menos ferramentas, mais composicao, descoberta progressiva de schema e conexoes escopadas, em vez de despejar catálogos gigantes em toda sessao."
+            ]
+          },
+          "link": "https://newsletter.posthog.com/p/this-post-will-save-you-tokens"
+        }
+      ]
+    },
+    {
       "id": "2026-08-19-eng",
       "date": "2026-08-19",
       "tokensUsed": 9291,
