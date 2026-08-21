@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-21",
+      "date": "2026-08-21",
+      "tokensUsed": 36834,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim",
+          "title": {
+            "en": "How to Build AI Agents That Don’t Start Over When They Fail",
+            "pt": "Como construir agentes de IA que nao recomecam do zero quando falham"
+          },
+          "summary": {
+            "en": "Neo Kim explains why long-running AI agent workflows need durable execution instead of naive retry semantics. The piece uses Inngest as a concrete case study to show how checkpointing, resumability, and side-effect control turn fragile chains of LLM calls, tool invocations, and approvals into production-grade workflows that recover from failure without replaying completed work.",
+            "pt": "Neo Kim explica por que workflows longos de agentes de IA precisam de execucao duravel em vez de retries ingenuos. O texto usa a Inngest como estudo de caso para mostrar como checkpointing, retomada e controle de side effects transformam cadeias frageis de chamadas de LLM, ferramentas e aprovacoes em fluxos de producao que se recuperam de falhas sem repetir trabalho ja concluido."
+          },
+          "insights": {
+            "en": [
+              "The core systems lesson is that agent reliability depends as much on the execution layer as on the model itself, because retries become correctness bugs once side effects like emails, writes, or payments are involved.",
+              "Durable execution matters when workflows mix expensive LLM steps, tool calls, external APIs, and human approvals; without checkpoints, a late failure wastes both time and tokens by forcing the whole run to restart.",
+              "For engineering leaders, the practical takeaway is to evaluate AI agents as workflows with state, recovery, and idempotency requirements, not as chat prompts that can safely be replayed from scratch."
+            ],
+            "pt": [
+              "A licao central de sistemas e que a confiabilidade do agente depende tanto da camada de execucao quanto do modelo, porque retries viram bugs de corretude assim que entram side effects como emails, escritas ou cobrancas.",
+              "Execucao duravel importa quando o workflow mistura passos caros de LLM, ferramentas, APIs externas e aprovacoes humanas; sem checkpoints, uma falha tardia desperdiça tempo e tokens ao forcar o restart completo.",
+              "Para liderancas de engenharia, o takeaway pratico e tratar agentes de IA como workflows com estado, recuperacao e requisitos de idempotencia, e nao como prompts de chat que podem ser repetidos do zero sem risco."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/durable-ai-agents"
+        }
+      ]
+    },
+    {
       "id": "2026-08-20-eng",
       "date": "2026-08-20",
       "tokensUsed": 30146,
