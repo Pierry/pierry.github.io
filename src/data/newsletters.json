@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-21-eng",
+      "date": "2026-08-21",
+      "tokensUsed": 8013,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Google Research",
+          "title": {
+            "en": "How mobility gives language models a deeper understanding of place",
+            "pt": "Como dados de mobilidade dao aos modelos de linguagem uma compreensao mais profunda de lugares"
+          },
+          "summary": {
+            "en": "Google Research presents ME-POIs, a framework that enriches language-model representations of places with aggregated mobility patterns such as arrivals, stay durations, and neighborhood movement. The result is a place embedding that captures both semantic identity and real-world behavior, improving predictions for visit intent, price level, busyness, and other physical-world attributes.",
+            "pt": "O Google Research apresenta o ME-POIs, um framework que enriquece representacoes de lugares em modelos de linguagem com padroes agregados de mobilidade, como horarios de chegada, duracao de permanencia e movimento da vizinhanca. O resultado e um embedding de lugar que combina identidade semantica com comportamento do mundo real, melhorando previsoes de intencao de visita, faixa de preco, nivel de movimento e outros atributos fisicos."
+          },
+          "insights": {
+            "en": [
+              "The strongest engineering idea is to treat mobility as an input feature that defines the place itself, not only as a target for next-visit prediction, which creates a richer context layer for downstream models.",
+              "ME-POIs tackles sparse real-world data with multiscale spatial propagation, borrowing signal from nearby high-activity areas so the system can reason better about long-tail businesses and newly opened places.",
+              "For engineering leaders, the broader takeaway is that production AI gets more useful when static metadata is fused with behavioral signals, especially when the system needs to infer operational attributes that text alone cannot explain."
+            ],
+            "pt": [
+              "A ideia de engenharia mais forte e tratar mobilidade como feature de entrada que define o proprio lugar, e nao apenas como alvo de previsao da proxima visita, criando uma camada de contexto mais rica para modelos downstream.",
+              "O ME-POIs ataca a escassez de dados do mundo real com propagacao espacial em multiplas escalas, emprestando sinal de areas vizinhas com alta atividade para raciocinar melhor sobre negocios de cauda longa e lugares recem-abertos.",
+              "Para liderancas de engenharia, o takeaway maior e que IA em producao fica mais util quando metadados estaticos sao fundidos com sinais comportamentais, especialmente quando o sistema precisa inferir atributos operacionais que texto sozinho nao explica."
+            ]
+          },
+          "link": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-21",
       "date": "2026-08-21",
       "tokensUsed": 36834,
