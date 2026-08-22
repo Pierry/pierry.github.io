@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-22-eng",
+      "date": "2026-08-22",
+      "tokensUsed": 23806,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Netflix Tech Blog",
+          "author": "Samuel Yeboah, Francesco Di Chiara, Mingliang Liu",
+          "title": {
+            "en": "A Tale of Two Flink Autoscalers",
+            "pt": "A historia de dois autoscalers de Flink"
+          },
+          "summary": {
+            "en": "Netflix explains how it moved from a homegrown Flink autoscaler to the Apache Flink Autoscaler while running more than 30000 jobs across multiple AWS regions. The post compares the external metric-driven approach with an operator-aware model built around true processing rate, then shows how Netflix wrapped the OSS autoscaler with Temporal workflows and platform integrations to make per-job scaling reliable at production scale.",
+            "pt": "A Netflix explica como migrou de um autoscaler proprio de Flink para o Apache Flink Autoscaler operando mais de 30000 jobs em multiplas regioes da AWS. O post compara a abordagem antiga guiada por metricas externas com um modelo consciente dos operadores baseado em true processing rate, e mostra como a empresa envolveu o autoscaler open source com workflows em Temporal e integracoes de plataforma para tornar o scaling por job confiavel em escala de producao."
+          },
+          "insights": {
+            "en": [
+              "The strongest architecture lesson is that autoscaling gets materially better when decisions are made at operator level instead of resizing an entire Flink cluster with coarse container metrics.",
+              "Netflix used open source pragmatically: it kept the Apache Flink Autoscaler algorithm, but embedded it into its own control plane and Temporal-based orchestration to isolate failures and scale one workflow per job.",
+              "For engineering leaders, the post is a good case study in build-versus-buy maturity: replacing bespoke infra with OSS reduced maintenance burden while expanding support for complex stateful jobs."
+            ],
+            "pt": [
+              "A licao de arquitetura mais forte e que autoscaling melhora de verdade quando as decisoes sao tomadas no nivel de operador, em vez de redimensionar um cluster inteiro de Flink com metricas grosseiras de container.",
+              "A Netflix usou open source de forma pragmatica: manteve o algoritmo do Apache Flink Autoscaler, mas o encaixou no proprio control plane e numa orquestracao com Temporal para isolar falhas e escalar um workflow por job.",
+              "Para liderancas de engenharia, o post e um bom estudo de maturidade em build versus buy: trocar infra bespoke por OSS reduziu o peso de manutencao e ao mesmo tempo ampliou o suporte a jobs stateful mais complexos."
+            ]
+          },
+          "link": "https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b"
+        }
+      ]
+    },
+    {
       "id": "2026-08-21-eng",
       "date": "2026-08-21",
       "tokensUsed": 8013,
