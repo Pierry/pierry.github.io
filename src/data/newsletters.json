@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-23-eng",
+      "date": "2026-08-23",
+      "tokensUsed": 81711,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design Classroom",
+          "author": "Raul Junco",
+          "title": {
+            "en": "Your AI Agent Won't Crash. It Will Happily Pay an Invoice Without Approval",
+            "pt": "Seu agente de IA nao vai cair. Ele vai pagar uma fatura sem aprovacao"
+          },
+          "summary": {
+            "en": "Raul Junco walks through an invoice-processing workflow that looked healthy under classic logs, metrics, and traces, yet still approved a payment incorrectly after an AI agent classified the wrong legal entity. The article argues that agentic systems need observability for decisions, handoffs, policy versions, and business outcomes, then shows how to pair OpenTelemetry GenAI conventions with application-specific attributes and synchronous guardrails to stop silent business errors before money moves.",
+            "pt": "Raul Junco mostra um fluxo de processamento de faturas que parecia saudavel em logs, metricas e traces tradicionais, mas ainda assim aprovou um pagamento errado depois que um agente de IA classificou a entidade juridica incorreta. O artigo defende que sistemas agenticos precisam de observabilidade para decisoes, handoffs, versoes de politica e resultado de negocio, e depois mostra como combinar as convencoes GenAI do OpenTelemetry com atributos da aplicacao e guardrails sincronos para bloquear erros silenciosos antes que o dinheiro saia."
+          },
+          "insights": {
+            "en": [
+              "In agentic workflows, a 200 OK only proves the pipeline executed; it does not prove the business decision was correct, so decision traces must capture classifications, policy selection, tool calls, and the final outcome.",
+              "The most practical instrumentation pattern is to combine vendor-neutral GenAI span attributes with business-owned fields like invoice entity, approval counts, policy version, and authorization result so every step can be audited against real business facts.",
+              "The safest architecture is not observability alone but observability plus a synchronous policy gate: record a stable denial reason, stop the workflow before payment intent creation, and treat traces as evidence of why the guardrail fired."
+            ],
+            "pt": [
+              "Em fluxos agenticos, um 200 OK so prova que o pipeline executou; ele nao prova que a decisao de negocio estava certa, entao os traces precisam registrar classificacoes, selecao de politica, chamadas de ferramentas e o resultado final.",
+              "O padrao de instrumentacao mais pratico e combinar atributos GenAI neutros em spans com campos de negocio como entidade da fatura, contagem de aprovacoes, versao da politica e resultado da autorizacao para auditar cada etapa contra fatos reais.",
+              "A arquitetura mais segura nao e so observabilidade, mas observabilidade com um policy gate sincrono: registrar um motivo estavel para a negacao, interromper o fluxo antes da criacao do pagamento e usar os traces como evidencia do por que o guardrail disparou."
+            ]
+          },
+          "link": "https://newsletter.systemdesignclassroom.com/p/your-ai-agent-wont-crash-the-same"
+        }
+      ]
+    },
+    {
       "id": "2026-08-22-eng",
       "date": "2026-08-22",
       "tokensUsed": 23806,
