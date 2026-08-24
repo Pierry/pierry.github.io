@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-24",
+      "date": "2026-08-24",
+      "tokensUsed": 24299,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "ByteByteGo",
+          "author": "ByteByteGo",
+          "title": {
+            "en": "HTTP vs HTTPS Explained",
+            "pt": "HTTP vs HTTPS explicado"
+          },
+          "summary": {
+            "en": "ByteByteGo revisits one of the most universal web architecture building blocks: why plain HTTP is fundamentally unsafe for modern internet traffic and how HTTPS layers TLS on top to provide encryption, identity verification, and transport integrity. The video is a compact refresher on the request lifecycle, certificate trust, and the practical security guarantees engineering teams rely on every day.",
+            "pt": "O ByteByteGo revisita um dos blocos mais universais da arquitetura web: por que o HTTP puro e fundamentalmente inseguro para o trafego moderno da internet e como o HTTPS adiciona TLS para oferecer criptografia, verificacao de identidade e integridade no transporte. O video funciona como um refresher enxuto sobre ciclo de requisicao, confianca em certificados e as garantias praticas de seguranca em que times de engenharia se apoiam todos os dias."
+          },
+          "insights": {
+            "en": [
+              "The key systems takeaway is that HTTPS is not a cosmetic upgrade to HTTP: it is the layer that prevents credential leakage, content tampering, and man-in-the-middle attacks across otherwise ordinary requests.",
+              "Certificate validation matters as much as encryption itself because transport security only works when the client can verify it is really talking to the intended service.",
+              "For engineering leaders, the useful reminder is that security basics still compound: teams building AI products, APIs, and internal tools all inherit risk immediately when transport guarantees are weak or inconsistently enforced."
+            ],
+            "pt": [
+              "O principal takeaway de sistemas e que HTTPS nao e um upgrade cosmetico do HTTP: e a camada que evita vazamento de credenciais, adulteracao de conteudo e ataques man-in-the-middle em requisicoes comuns.",
+              "A validacao de certificados importa tanto quanto a criptografia, porque seguranca de transporte so funciona quando o cliente consegue verificar que esta falando com o servico correto.",
+              "Para liderancas de engenharia, o lembrete util e que o basico de seguranca continua acumulando valor: times que constroem produtos de IA, APIs e ferramentas internas herdam risco na hora quando as garantias de transporte sao fracas ou aplicadas de forma inconsistente."
+            ]
+          },
+          "link": "https://www.youtube.com/watch?v=WvSVSbGo0wI"
+        }
+      ]
+    },
+    {
       "id": "2026-08-23-eng",
       "date": "2026-08-23",
       "tokensUsed": 81711,
