@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-24-eng",
+      "date": "2026-08-24",
+      "tokensUsed": 747696,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Meta Engineering",
+          "author": "Arvind Srinivasan, Neil Spring, Omar Baldonado, Rajiv Krishnamurthy",
+          "title": {
+            "en": "MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet",
+            "pt": "MetaRoCE: um novo transporte RDMA para Ethernet em escala de IA"
+          },
+          "summary": {
+            "en": "Meta presents MetaRoCE, a clean-sheet RDMA transport designed for AI clusters running at massive Ethernet scale. Instead of relying on strict in-order, lossless fabric behavior, the design moves path intelligence to the NIC, embraces out-of-order delivery and packet spraying, and is being released with a specification, reference implementation, and compliance suite through OCP.",
+            "pt": "A Meta apresenta o MetaRoCE, um transporte RDMA desenhado do zero para clusters de IA rodando em Ethernet em escala massiva. Em vez de depender de um fabric estritamente lossless e em ordem, o design move a inteligencia de caminho para a NIC, abraca entrega fora de ordem e packet spraying, e sera publicado com especificacao, implementacao de referencia e suite de conformidade via OCP."
+          },
+          "insights": {
+            "en": [
+              "The most important architecture shift is endpoint-centric control: the NIC tracks per-path RTT, ECN state, and utilization so the transport can adapt at fine granularity instead of forcing switches to guarantee ideal behavior.",
+              "MetaRoCE treats out-of-order arrival as the default, which removes reorder-buffer dependence and helps large multipath Ethernet fabrics sustain throughput with lower tail-latency penalties.",
+              "For engineering leaders, the open-source angle matters: Meta is packaging the protocol spec, software reference, and compliance tooling in OCP, which makes this more than an internal optimization story."
+            ],
+            "pt": [
+              "A mudanca de arquitetura mais importante e o controle centrado no endpoint: a NIC acompanha RTT por caminho, estado de ECN e utilizacao para adaptar o transporte com granularidade fina, sem exigir que os switches garantam comportamento ideal.",
+              "O MetaRoCE trata a chegada fora de ordem como padrao, o que elimina dependencia de reorder buffer e ajuda fabrics Ethernet multipath muito grandes a sustentar throughput com menos penalidade de tail latency.",
+              "Para liderancas de engenharia, o angulo open source importa: a Meta esta empacotando a especificacao do protocolo, a referencia de software e as ferramentas de conformidade no OCP, entao nao e so uma historia de otimizacao interna."
+            ]
+          },
+          "link": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-24",
       "date": "2026-08-24",
       "tokensUsed": 24299,
