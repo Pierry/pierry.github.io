@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-25",
+      "date": "2026-08-25",
+      "tokensUsed": 1845269,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "System Design One",
+          "author": "Neo Kim and Dimple Sharma",
+          "title": {
+            "en": "Fine Tuning: A Deep Dive",
+            "pt": "Fine-tuning em profundidade"
+          },
+          "summary": {
+            "en": "System Design One lays out a pragmatic decision framework for fine-tuning LLMs instead of treating it as the default answer for every AI quality problem. The piece explains when prompting, RAG, or agent workflows are enough, why LoRA and QLoRA changed the economics of specialization, and what production teams must watch for around evaluation, rollback, safety, and cost before turning model behavior into a baked-in default.",
+            "pt": "A System Design One monta um framework pratico para decidir quando vale fine-tunar um LLM, em vez de tratar isso como resposta padrao para qualquer problema de qualidade em IA. O texto explica quando prompting, RAG ou agentes ja bastam, por que LoRA e QLoRA mudaram a economia da especializacao e o que times de producao precisam observar em avaliacao, rollback, seguranca e custo antes de transformar um comportamento em default do modelo."
+          },
+          "insights": {
+            "en": [
+              "The most useful mental model is separating knowledge, behavior, and action: use prompts for instructions, RAG for fresh knowledge, agents for tool use, and fine-tuning only when you need durable behavior changes.",
+              "LoRA and QLoRA matter because they shrink the cost of specialization enough to make task-specific smaller models a realistic production option, not just a research exercise.",
+              "The article treats fine-tuning as an operational commitment: if you need fast rollback, rapidly changing data, or strong safety guarantees, you must budget for monitoring and retraining, not just training."
+            ],
+            "pt": [
+              "O modelo mental mais util e separar conhecimento, comportamento e acao: prompt para instrucoes, RAG para conhecimento fresco, agentes para uso de ferramentas e fine-tuning so quando voce precisa mudar o comportamento de forma duravel.",
+              "LoRA e QLoRA importam porque reduzem o custo de especializacao a ponto de tornar modelos menores e ajustados por tarefa uma opcao real de producao, e nao so um experimento.",
+              "O artigo trata fine-tuning como compromisso operacional: se voce precisa de rollback rapido, dados mudando o tempo todo ou garantias fortes de seguranca, precisa orcar monitoramento e novos ciclos de treino, nao apenas o treino inicial."
+            ]
+          },
+          "link": "https://newsletter.systemdesign.one/p/llm-fine-tuning-guide-with-lora-and-qlora"
+        }
+      ]
+    },
+    {
       "id": "2026-08-24-eng",
       "date": "2026-08-24",
       "tokensUsed": 747696,
