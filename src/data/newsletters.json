@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-25-eng",
+      "date": "2026-08-25",
+      "tokensUsed": 9668,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Google Research",
+          "author": "Ziyi Liu et al.",
+          "title": {
+            "en": "AgentHands: Generating interactive hand gestures for spatially grounded agent conversations in XR",
+            "pt": "AgentHands: gerando gestos manuais interativos para conversas com agentes ancoradas no espaco em XR"
+          },
+          "summary": {
+            "en": "Google Research presents AgentHands, a prototype that turns LLM responses into synchronized XR hand gestures anchored to objects and locations in the user's environment. The system combines object registration, a gesture behavior library, gesture-embedded reasoning, and local XR execution to make multimodal assistants explain physical tasks with speech plus spatial demonstration instead of flat overlays.",
+            "pt": "O Google Research apresenta o AgentHands, um prototipo que transforma respostas de LLMs em gestos manuais sincronizados em XR, ancorados a objetos e locais do ambiente do usuario. O sistema combina registro de objetos, uma biblioteca de comportamentos gestuais, raciocinio com eventos de gesto e execucao local em XR para que assistentes multimodais expliquem tarefas fisicas com fala e demonstracao espacial, em vez de overlays planos."
+          },
+          "insights": {
+            "en": [
+              "The key systems idea is treating gesture as structured output: the LLM emits inline GestureEvents tied to trigger words, and a local XR parser turns them into timed, spatially grounded motions.",
+              "AgentHands splits the stack cleanly between environment awareness, gesture semantics, reasoning, and rendering, which is a useful architecture pattern for production multimodal assistants beyond XR demos.",
+              "The user study suggests embodied gestures reduce the effort of following physical instructions, which matters for tutoring, technical walkthroughs, and assistants that must guide real-world actions rather than just describe them."
+            ],
+            "pt": [
+              "A principal sacada de sistema e tratar gesto como saida estruturada: o LLM emite GestureEvents inline ligados a palavras-gatilho, e um parser local em XR os converte em movimentos temporizados e ancorados no espaco.",
+              "O AgentHands separa bem a stack entre percepcao do ambiente, semantica gestual, raciocinio e renderizacao, um padrao de arquitetura util para assistentes multimodais de producao alem de demos de XR.",
+              "O estudo com usuarios indica que gestos incorporados reduzem o esforco para seguir instrucoes fisicas, o que importa para tutoria, walkthroughs tecnicos e assistentes que precisam guiar acoes no mundo real, nao so descreve-las."
+            ]
+          },
+          "link": "https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr/"
+        }
+      ]
+    },
+    {
       "id": "2026-08-25",
       "date": "2026-08-25",
       "tokensUsed": 1845269,
