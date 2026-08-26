@@ -1,6 +1,39 @@
 {
   "digests": [
     {
+      "id": "2026-08-26",
+      "date": "2026-08-26",
+      "tokensUsed": 33593,
+      "entries": [
+        {
+          "rank": 1,
+          "newsletter": "Hacker News",
+          "author": "Gaurav Dadhich",
+          "title": {
+            "en": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+            "pt": "Agentic Context Management: resolvendo memoria e custo de agentes como problemas de ciclo de vida e arquitetura"
+          },
+          "summary": {
+            "en": "This paper argues that production AI agents fail less because of raw reasoning limits and more because they mismanage context: long histories, large prompts, tool definitions, and expanding tool output. It reframes memory as an architecture and lifecycle problem spanning what to remember, how to structure it, where to store it, when to retrieve it, and how to compact it to a budget without losing fidelity.",
+            "pt": "O paper defende que agentes de IA em producao falham menos por limite bruto de raciocinio e mais por gerenciarem mal o contexto: historicos longos, prompts grandes, definicoes de ferramentas e saidas de ferramentas que incham a cada turno. A proposta e tratar memoria como um problema de arquitetura e ciclo de vida, cobrindo o que lembrar, como estruturar, onde armazenar, quando recuperar e como compactar tudo dentro do budget sem perder fidelidade."
+          },
+          "insights": {
+            "en": [
+              "The strongest idea is that memory is not just retrieval. The system must continuously decide what to ingest, scope, anticipate, consolidate, and forget as the conversation evolves.",
+              "The paper makes an engineering economics argument: naive context growth becomes quadratically expensive, while validated compaction is the path to linear cost without a sharp accuracy drop.",
+              "For teams building serious agents, the useful framing is organizational context management, not just per-chat memory, because production assistants operate across users, tasks, policies, and provenance."
+            ],
+            "pt": [
+              "A ideia mais forte e que memoria nao e so retrieval. O sistema precisa decidir continuamente o que ingerir, escopar, antecipar, consolidar e esquecer conforme a conversa evolui.",
+              "O paper faz um argumento economico de engenharia: crescimento ingenuo de contexto vira custo quase quadratic, enquanto compactacao validada e o caminho para custo linear sem um tombo brusco de precisao.",
+              "Para times construindo agentes de verdade, o frame util e gestao de contexto organizacional, nao apenas memoria por chat, porque assistentes de producao operam entre usuarios, tarefas, politicas e proveniencia."
+            ]
+          },
+          "link": "https://arxiv.org/abs/2607.21503"
+        }
+      ]
+    },
+    {
       "id": "2026-08-25-eng",
       "date": "2026-08-25",
       "tokensUsed": 9668,
