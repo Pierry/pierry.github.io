@@ -21,25 +21,21 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        
-    - name: Install dependencies
-      run: npm install
-      
-    - name: Build
-      run: npm run build
-      
+
+    # This site moved to no-brainer. What gets published is the redirect in
+    # redirect/, not the app: index.html for the root and 404.html so the old
+    # deep links land on the new site instead of a GitHub error page.
+    #
+    # The React app is still in the repo and still builds. It is simply not
+    # what this domain serves any more, so the install and build steps were
+    # dropped rather than left running to produce output nobody uploads.
     - name: Setup Pages
       uses: actions/configure-pages@v4
-      
+
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: './dist'
+        path: './redirect'
         
   deploy:
     needs: build
